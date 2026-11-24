@@ -22,3 +22,7 @@ Adopt the [Common Engineering Standard](../engineering-standard.md), [Nuxt Layer
 ## Guardrails
 
 Discovery never grants access, proves readiness or installs a component. Do not remove live architectural decisions, unresolved requirements, required compliance evidence or another active branch's work. Do not create a parallel history archive in the current tree.
+
+## Final blueprint reconciliation proposal
+
+Blueprint PR #161 records owner-approved conceptual allocations and eight documentation kinds. Adopt these as responsibility forms, independently of role, implementation and deployment. Technical services own bounded technical facts; presentation may own presentation-specific state but not business facts. Infrastructure owns environment provisioning and operational authority, not domain persistence. Preserve existing descriptor IDs and capability.json during migration. Formal adoption remains proposed until separately authorised. No mandatory repackaging; preserve accepted ADR-0012 and the proposed independent-service composition budget distinction.

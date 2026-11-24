@@ -26,7 +26,9 @@
         "library",
         "adapter",
         "presentation",
-        "architecture"
+        "architecture",
+        "service",
+        "infrastructure"
       ]
     },
     "subtype": {
@@ -391,6 +393,51 @@
             "contains": {
               "const": "nuxt-layer"
             }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "service"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "subtype": {
+            "const": "service"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "infrastructure"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "subtype": {
+            "const": "deployment"
+          },
+          "ownership": {
+            "enum": [
+              "none",
+              "configuration",
+              "technical"
+            ]
           }
         }
       }

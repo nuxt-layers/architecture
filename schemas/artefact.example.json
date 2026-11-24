@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "example-library",
+  "name": "Example Library",
+  "description": "Validates caller-provided values.",
+  "kind": "library",
+  "subtype": "stateless",
+  "classification": "technical",
+  "implementation": [
+    "typescript"
+  ],
+  "deployment": [
+    "in-process"
+  ],
+  "ownership": "none",
+  "repository": "nuxt-layers/example-library",
+  "contract": "CONTRACT.md",
+  "provides": [
+    {
+      "id": "value-validation",
+      "contractVersion": "1"
+    }
+  ],
+  "requires": [],
+  "presentation": "none"
+}

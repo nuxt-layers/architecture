@@ -105,6 +105,14 @@ Longer specifications and threat models belong under `docs/`. Security-critical 
 
 Preserve the **substance and status** of accepted decisions; resolve contradictions against governing architecture instead of deleting valid authoritative requirements. Existing templates or pro-forma headings may be reorganised or removed when they no longer serve the current specification. The document must still cover the capability's required identity, ownership, inputs, outputs, dependencies, security, operational behaviour, GUI/headless needs and unresolved decisions. This applies to blueprint capability records as well as maintained capability specifications; it does not authorise rewriting previously accepted ADRs or deleting another active review's unmerged work.
 
+### Canonical stateless library records in the working blueprint
+
+The working architecture blueprint records a genuine stateless library at `docs/libraries/<library-name>/stateless-library-record.md`, using its established catalogue name. The record states purpose, public inputs and outputs, validation, errors, security boundaries, consumers and outstanding evidence. Library candidates remain candidates; a record does not establish an implemented or published package.
+
+Classify by **responsibility**, not by whether code uses a database or Nuxt. A service owning business rules, authoritative decisions or an independent lifecycle remains a capability even without durable storage. A stateless library instead supplies reusable transformations, validation or generation without its own business-state authority, durable stores, owned infrastructure/provider ports or screens. Inputs such as authorised data, resource bytes or optional adapters may be supplied by callers without transferring ownership to the library. Infrastructure integration libraries and connectors retain their distinct classifications.
+
+The blueprint record is a **non-normative conceptual specification**, not a package's public integration contract. Independently developed packages continue to maintain applicable root documentation under this standard, including a usable `CONTRACT.md` where required. Implemented behaviour and acceptance evidence are verified separately. This path convention applies to the blueprint, **not** to implementation repositories.
+
 Packages use the `@nuxt-layers/` scope where applicable and declare every imported dependency. Public entry points and compatibility requirements must be explicit. The repository's default branch is protected; material changes use pull requests.
 
 ## 4. Manifest and discoverability

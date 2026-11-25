@@ -2,7 +2,7 @@
 
 **Artefact classification:** Technical service (CLS-09, approved 24 November 2026). **Prior governing/review classification:** Platform capability candidate in the governing catalogue; **Platform responsibility owner-approved conceptually** (SEARCH-01–07, 23 November 2026).  
 **Design status:** **Conceptual review complete and owner-approved**, including public contract, sources, standards, permissive libraries, operational relationships and GUI. Not an implemented capability, published Search runtime API, governing-catalogue promotion, compliance certification or merge approval.  
-**Review:** [Draft PR #132](https://github.com/nuxt-layers/architecture-blueprint-review/pull/132) · review protocol (former document: review protocol). Opening governing `master`: `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint: `85c67c33e3e93d12bed5ffc14f78fb7d7bff8995`. Recheck current masters before merge.
+**Review:** Draft PR #132 · review protocol (former document: review protocol). Opening governing `master`: `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint: `85c67c33e3e93d12bed5ffc14f78fb7d7bff8995`. Recheck current masters before merge.
 
 ## Purpose, authority and lifecycle
 
@@ -75,7 +75,7 @@ All relationships are directional **public ports** resolved by a thin host, not 
 
 | Partner | Search supplies | Partner supplies | Boundary |
 |---|---|---|---|
-| [Error Normalisation](../../libraries/error-normalisation/CONTRACT.md) | Search-owned versioned error definitions, known/uncertain query/index outcome, mapping and safe disclosure/correlation | Pure normalised code/category/message key, restricted projections and **advisory** retry qualifier | Library owns no state, retries, logs, audit records or source outcome |
+| [Error Normalisation](../../libraries/error-normalisation/stateless-library-record.md#conceptual-public-contract-inputs-and-outputs) | Search-owned versioned error definitions, known/uncertain query/index outcome, mapping and safe disclosure/correlation | Pure normalised code/category/message key, restricted projections and **advisory** retry qualifier | Library owns no state, retries, logs, audit records or source outcome |
 | [Logging](../logging/services-record.md) | Sanitised structured query, ingestion, provider/rebuild diagnostics and opaque correlation | Accepted/rejected/unknown diagnostic receipt, scoped lookup and sink health | No raw private queries, records, snippets, credentials; log receipt not index completion |
 | [Audit](../../capabilities/audit/capability-record.md) | Risk-selected attributable security/privileged source changes, export, suppression and access decisions with actual outcome | Evidence intake/integrity status and authorised review | Routine queries not automatically audited; critical required evidence uses fail-closed or approved recovery |
 | [Reporting](../../capabilities/reporting/capability-record.md) | Permitted aggregated Search-owned source coverage, lag, throughput, failure/latency, cut-off and completeness | Authorised reports, execution/export status, KPIs, provenance and gaps | Hits are not orders, bookings or verified publications; no private query history by default |

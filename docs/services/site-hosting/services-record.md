@@ -3,7 +3,7 @@
 **Artefact classification:** technical service (CLS-08, owner-approved 24 November 2026), not hosting infrastructure; optional administration screens. Established Platform responsibility in the governing catalogue, pending governing reconciliation.  
 **Conceptual status:** **Complete and owner-approved** (SH-01–SH-06, standards, open-source direction, diagnostic/evidence/reporting boundaries and presentation, 23 November 2026).  
 **Implementation status:** Unverified. The [`nuxt-layers/site-hosting`](https://github.com/nuxt-layers/site-hosting) repository exists, but no root published `CONTRACT.md` or operational API was verified; this is an **idealised conceptual contract**, not an implemented API.  
-**Review:** [draft PR #135](https://github.com/nuxt-layers/architecture-blueprint-review/pull/135) in [`architecture-blueprint-review`](https://github.com/nuxt-layers/architecture-blueprint-review). This blueprint is non-normative; accepted governing ADRs and the Capability Standard take precedence.  
+**Review:** draft PR #135 in [`architecture-blueprint-review`](https://github.com/nuxt-layers/architecture-blueprint-review). This blueprint is non-normative; accepted governing ADRs and the Capability Standard take precedence.  
 **Canonical path:** `docs/services/site-hosting/services-record.md`. The public identifier remains `site-hosting`.
 
 ## Purpose and ownership
@@ -89,7 +89,7 @@ Interactions use **directional host-composed public contracts**, not cyclical pa
 
 **Examples:** A DNS timeout leaves proof `unknown`, with safe error and optional diagnostic log; Reporting must not count it as a confirmed ownership failure. A confirmed activation commits the binding, emits a revisioned event, and supplies independent Audit evidence and Reporting facts; a lost routine log/report does not reverse it. A denied transfer creates no binding change, hides other tenants' details, and sends proportionate security Audit evidence. When critical Audit capture is required, durably hand over the evidence or hold the sensitive operation safely according to policy. The source decides actual outcomes and safe retries; a timeout never proves rollback.
 
-Source and recipient contracts: [error-normalisation](../../libraries/error-normalisation/CONTRACT.md), [logging](../../services/logging/services-record.md), [audit](../../capabilities/audit/capability-record.md), [reporting](../../capabilities/reporting/capability-record.md).
+Source and recipient contracts: [error-normalisation](../../libraries/error-normalisation/stateless-library-record.md#conceptual-public-contract-inputs-and-outputs), [logging](../../services/logging/services-record.md), [audit](../../capabilities/audit/capability-record.md), [reporting](../../capabilities/reporting/capability-record.md).
 
 ## Security, privacy and legal controls
 
@@ -181,4 +181,4 @@ Hide unauthorised links **and** enforce all deep-link, API, export and action ch
 
 **Implementation and acceptance still required:** Published root `nuxt-layers/site-hosting/CONTRACT.md`; versioned exports, provider adapters, capability-owned persistence/outbox, `STORAGE-REGISTER.md`, threat model, independently usable minimal host (ADR-0012), ≤50-line composition, error and event schemas, negative-path tenant/proxy/transfer tests, outage/replay recovery, GUI WCAG 2.2 AA/i18n, monitoring, and CI evidence. CI/user, not this conceptual review, executes builds/tests.
 
-**Review and merge:** Keep [PR #135](https://github.com/nuxt-layers/architecture-blueprint-review/pull/135) in draft until current-master governing/blueprint and overlapping reciprocal changes are reconciled, links/statuses and branch checks are validated, and the owner separately authorises any protected squash merge. The record's approval is **conceptual**, not merge approval.
+**Review and merge:** Keep PR #135 in draft until current-master governing/blueprint and overlapping reciprocal changes are reconciled, links/statuses and branch checks are validated, and the owner separately authorises any protected squash merge. The record's approval is **conceptual**, not merge approval.

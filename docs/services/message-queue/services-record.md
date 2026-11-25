@@ -3,9 +3,9 @@
 **Artefact classification:** Technical service (CLS-09, approved 24 November 2026); any historical Foundation/Platform capability label below refers to governing/review responsibility, not blueprint placement.
 
 **Catalogue name:** `message-queue` · **Directory:** `docs/services/message-queue/` · **Classification:** Platform  
-**Conceptual status:** **Complete and owner-approved** (MQ-01–MQ-10, standards, permissive-library evaluation policy, cross-capability interfaces and optional operator GUI, 22 November 2026). **Design review:** [PR #94](https://github.com/nuxt-layers/architecture-blueprint-review/pull/94); completed with explicit owner approval. Merge and deployment states are tracked by GitHub, not inferred here.  
+**Conceptual status:** **Complete and owner-approved** (MQ-01–MQ-10, standards, permissive-library evaluation policy, cross-capability interfaces and optional operator GUI, 22 November 2026). **Design review:** PR #94; completed with explicit owner approval. Merge and deployment states are tracked by GitHub, not inferred here.  
 **Implementation status:** Unverified. `nuxt-layers/message-queue` has only a minimal README; no root `CONTRACT.md` was retrievable on 22 November 2026. No implemented API, deployment, contract version, operational health, security compliance or test result is asserted.  
-**Authority:** Accepted `architecture-rules` ADRs and [Capability Standard](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/capability-standard.md) take precedence. This is a non-normative design specification, not the implementation's published contract. Reconcile the latest `master` before merge.
+**Authority:** Accepted `architecture-rules` ADRs and [Capability Standard](../../capability-standard.md) take precedence. This is a non-normative design specification, not the implementation's published contract. Reconcile the latest `master` before merge.
 
 ## Purpose, authority and scope
 
@@ -188,7 +188,7 @@ These are **conceptual acceptance cases**, not executed tests or evidence of pub
 
 ## Process conceptual review — reciprocal interface (22 November 2026)
 
-**Status: Process PROC-01–PROC-07 and supplementary safeguards owner-approved conceptually (22 November 2026) in [draft PR #121](https://github.com/nuxt-layers/architecture-blueprint-review/pull/121); this neighbouring capability's design and public runtime integration remain independently unapproved/unverified.** [Process canonical conceptual contract](../../capabilities/process/capability-record.md). Process publishes committed source-owned process-definition and instance transition facts via its own durable outbox; Message Queue transports/retries/deduplicates according to its own contract, never owns Process records or authorises a transition. Delivery acknowledgement is not business completion; Process reconciles uncertain downstream responses. This additive note does not complete the message_queue review or alter its approved authority.
+**Status: Process PROC-01–PROC-07 and supplementary safeguards owner-approved conceptually (22 November 2026) in draft PR #121; this neighbouring capability's design and public runtime integration remain independently unapproved/unverified.** [Process canonical conceptual contract](../../capabilities/process/capability-record.md). Process publishes committed source-owned process-definition and instance transition facts via its own durable outbox; Message Queue transports/retries/deduplicates according to its own contract, never owns Process records or authorises a transition. Delivery acknowledgement is not business completion; Process reconciles uncertain downstream responses. This additive note does not complete the message_queue review or alter its approved authority.
 
 ## Publisher canonical review — reciprocal conceptual interface (22 November 2026; draft PR #125)
 
@@ -202,7 +202,7 @@ Publisher owns committed document lifecycle events and its durable outbox, and e
 
 ## Temporal Gateway infrastructure integration reciprocal note — 23 November 2026
 
-**Status: TG-01–TG-05 owner-approved conceptual technical boundary under accepted ADR-0015 (23 November 2026); not a completed review of this neighbouring capability or a verified implementation API.** [Temporal Gateway approved conceptual infrastructure library contract](../../adapters/temporal-gateway/adapters-record.md); [draft PR #139](https://github.com/nuxt-layers/architecture-blueprint-review/pull/139).
+**Status: TG-01–TG-05 owner-approved conceptual technical boundary under accepted ADR-0015 (23 November 2026); not a completed review of this neighbouring capability or a verified implementation API.** [Temporal Gateway approved conceptual infrastructure library contract](../../adapters/temporal-gateway/adapters-record.md); draft PR #139.
 
 Temporal Gateway does not own transport subscriptions, source outboxes, event custody or MQ acknowledgement semantics. MQ owns committed-message delivery and retry; a technical Temporal signal/worker receipt can be transported or observed through public host ports but cannot substitute for an authoritative MQ delivery receipt or business event. Neither imports the other's private implementation.
 

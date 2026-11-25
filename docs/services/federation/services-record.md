@@ -141,18 +141,18 @@ Federation can transport Verification's bounded age/identity/organisation eviden
 
 ## Comments Engine — reciprocal conceptual proposal (17 November 2026)
 
-**Status:** Proposed for owner review in [Comments Engine PR #52](https://github.com/nuxt-layers/architecture-blueprint-review/pull/52), **not** an approved contract or implementation change. See [Comments Engine conceptual contract](../../capabilities/comments-engine/capability-record.md).
+**Status:** Proposed for owner review in Comments Engine PR #52, **not** an approved contract or implementation change. See [Comments Engine conceptual contract](../../capabilities/comments-engine/capability-record.md).
 
 Comments Engine owns origin-Node comment/revision visibility and withdrawal events. Any outbound public discussion/feed or inbound remote reply is opt-in and subject to origin/publication rights, provenance, local trust, eligibility, audience, expiry, replay and conflict protection. Federation owns peer/subscription/transmission receipts; Hub Search owns derived index state. A local comment withdrawal is not proof of remote Hub/cache removal; reconcile acknowledgements without granting remote peers local authorisation.
 
 
 ## Configuration reciprocal interface — 17 November 2026
 
-**Status: Proposed for [Configuration PR #53](https://github.com/nuxt-layers/architecture-blueprint-review/pull/53), not an implemented contract.** See [Configuration conceptual public inputs](../../capabilities/configuration/capability-record.md#idealised-public-inbound-interfaces). Configuration may supply registered, scoped federation selections; Federation owns peer trust, exchange/reconciliation and withdrawal. Source domains and Authorisation govern actual disclosure. Use public host-composed ports/events only; preserve all prior decisions and dependency acyclicity.
+**Status: Proposed for Configuration PR #53, not an implemented contract.** See [Configuration conceptual public inputs](../../capabilities/configuration/capability-record.md#idealised-public-inbound-interfaces). Configuration may supply registered, scoped federation selections; Federation owns peer trust, exchange/reconciliation and withdrawal. Source domains and Authorisation govern actual disclosure. Use public host-composed ports/events only; preserve all prior decisions and dependency acyclicity.
 
 ## Content Security — reciprocal conceptual interface (17 November 2026)
 
-**Status:** Proposed in [Content Security draft PR #55](https://github.com/nuxt-layers/architecture-blueprint-review/pull/55), not an accepted implementation contract. See [Content Security conceptual record](../../services/content-security/services-record.md).
+**Status:** Proposed in Content Security draft PR #55, not an accepted implementation contract. See [Content Security conceptual record](../../services/content-security/services-record.md).
 
 A Hub/Node may request authorised technical assessment of externally supplied material or links, but remote scan claims are untrusted until provenance and scope validated. Content Security supplies detection evidence only; origin Node controls original publication while receiving Hub controls own listing/index restrictions and withdrawal reconciliation. Do not indiscriminately share private bytes with foreign scanners.
 
@@ -339,7 +339,7 @@ All findings in this section are agreed conceptual recommendations where express
 
 ## Integrations reciprocal conceptual interface — 18 November 2026
 
-**Status: Proposed in [Integrations draft PR #76](https://github.com/nuxt-layers/architecture-blueprint-review/pull/76); not approved as a new decision or implemented.** Federation owns peer relationships, protocol/publishing subscriptions, cross-node disclosure and reconciliation decisions; Integrations may supply optional authenticated external adapters, connection-status and qualified exchange receipts. Connector health must not be construed as peer trust, verified domain truth or federation membership; the domain/Federation owner determines consent and authority. Avoid circular compile-time dependencies using public host-composed contracts. See [Integrations conceptual contract](../integrations/services-record.md#cross-capability-relationships--directional-public-contract-cooperation), proposed PR #76; concurrent Federation PR #69 remains provisional.
+**Status: Proposed in Integrations draft PR #76; not approved as a new decision or implemented.** Federation owns peer relationships, protocol/publishing subscriptions, cross-node disclosure and reconciliation decisions; Integrations may supply optional authenticated external adapters, connection-status and qualified exchange receipts. Connector health must not be construed as peer trust, verified domain truth or federation membership; the domain/Federation owner determines consent and authority. Avoid circular compile-time dependencies using public host-composed contracts. See [Integrations conceptual contract](../integrations/services-record.md#cross-capability-relationships--directional-public-contract-cooperation), proposed PR #76; concurrent Federation PR #69 remains provisional.
 
 **Marketplace reciprocal — owner-approved Marketplace-side conceptual interface (21 November 2026):** [Marketplace review](../../capabilities/marketplace/capability-record.md) exposes only authorised publicly released listing references and changes for optional Node/Hub discovery. Federation owns exchange/derived remote representation, never source listing, seller agreement, local membership or permission; revision/tombstone propagation and request-time source checks prevent stale withdrawn listings from reappearing. **Proposed only.**
 

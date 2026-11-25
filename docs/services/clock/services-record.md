@@ -266,7 +266,7 @@ The regional classifications offered by the NTP Pool Project are **geographical*
 
 ## Configuration decision reconciliation — CFG-05–08 (17 November 2026)
 
-**Status: Owner-approved conceptual decisions in [Configuration PR #53](https://github.com/nuxt-layers/architecture-blueprint-review/pull/53); not an implemented or newly accepted governing contract.** See [Configuration decision register](../../capabilities/configuration/capability-record.md#decision-register-evidence-and-sign-off).
+**Status: Owner-approved conceptual decisions in Configuration PR #53; not an implemented or newly accepted governing contract.** See [Configuration decision register](../../capabilities/configuration/capability-record.md#decision-register-evidence-and-sign-off).
 
 **Owner-approved CFG-07 (Option A) for Configuration's boundary:** Infrastructure is authoritative for NTP/NTS source choices and their application/verification. Clock retains injected trusted time, temporal validation and display semantics. Prior optional Configuration-managed NTP selection remains a historical proposal, *not* the selected architecture; the already approved invariant separating UTC authority and time-zone preferences remains in force.
 
@@ -285,7 +285,7 @@ The Infrastructure approval and GUI review (former review: infrastructure approv
 
 ## Localisation reciprocal conceptual interface — 19 November 2026
 
-**Status: Proposed in [Localisation draft PR #86](https://github.com/nuxt-layers/architecture-blueprint-review/pull/86); not independently approved or implemented.** Localisation uses Clock-owned canonical instants, duration and IANA-zone interpretation when displaying revision/review timestamps, expiry or SLA; linguistic phrasing/localised application strings do not make Localisation a competing Clock formatter or time synchroniser. Clock and host retain temporal precedence and semantics; absence of a verified instant is not evidence of freshness. See [Localisation's proposed public contract](../../capabilities/localisation/capability-record.md). This note creates no private import or mutual package dependency and preserves this capability's prior decisions.
+**Status: Proposed in Localisation draft PR #86; not independently approved or implemented.** Localisation uses Clock-owned canonical instants, duration and IANA-zone interpretation when displaying revision/review timestamps, expiry or SLA; linguistic phrasing/localised application strings do not make Localisation a competing Clock formatter or time synchroniser. Clock and host retain temporal precedence and semantics; absence of a verified instant is not evidence of freshness. See [Localisation's proposed public contract](../../capabilities/localisation/capability-record.md). This note creates no private import or mutual package dependency and preserves this capability's prior decisions.
 
 
 ## Message Queue — approved reciprocal public contract (22 November 2026)
@@ -298,7 +298,7 @@ The Infrastructure approval and GUI review (former review: infrastructure approv
 
 ## Temporal Gateway infrastructure integration reciprocal note — 23 November 2026
 
-**Status: TG-01–TG-05 owner-approved conceptual technical boundary under accepted ADR-0015 (23 November 2026); not a completed review of this neighbouring capability or a verified implementation API.** [Temporal Gateway approved conceptual infrastructure library contract](../../adapters/temporal-gateway/adapters-record.md); [draft PR #139](https://github.com/nuxt-layers/architecture-blueprint-review/pull/139).
+**Status: TG-01–TG-05 owner-approved conceptual technical boundary under accepted ADR-0015 (23 November 2026); not a completed review of this neighbouring capability or a verified implementation API.** [Temporal Gateway approved conceptual infrastructure library contract](../../adapters/temporal-gateway/adapters-record.md); draft PR #139.
 
 Clock owns trusted time semantics, instants, zones, formatting and arithmetic. Hosts may supply Clock-resolved scheduling instants to Temporal Gateway's technical SDK adapter; the gateway validates provider representation and observes clock drift, but does not own time policy, deadlines, Scheduler catch-up or domain result. Temporal history timestamps are provider observations, not proof of domain effective time.
 
@@ -306,4 +306,4 @@ Clock owns trusted time semantics, instants, zones, formatting and arithmetic. H
 
 ## Time & Attendance reciprocal conceptual note — 23 November 2026
 
-**Status: Time & Attendance TA-01–TA-06 owner-approved conceptually on 23 November 2026; [draft PR #143](https://github.com/nuxt-layers/architecture-blueprint-review/pull/143). This does not approve a published clock interface or implementation.** Time & Attendance consumes Clock's canonical instants, zone/DST interpretation and elapsed arithmetic; retains original source timestamps, zone/offset and uncertainty. Clock does not decide whether time was worked, approved, payable or compliant. See [the proposed source-of-truth and input/output contract](../../capabilities/time-attendance/capability-record.md). Existing approved decisions remain authoritative.
+**Status: Time & Attendance TA-01–TA-06 owner-approved conceptually on 23 November 2026; draft PR #143. This does not approve a published clock interface or implementation.** Time & Attendance consumes Clock's canonical instants, zone/DST interpretation and elapsed arithmetic; retains original source timestamps, zone/offset and uncertainty. Clock does not decide whether time was worked, approved, payable or compliant. See [the proposed source-of-truth and input/output contract](../../capabilities/time-attendance/capability-record.md). Existing approved decisions remain authoritative.

@@ -3,7 +3,7 @@
 **Capability:** `content-security`; canonical blueprint directory `docs/services/content-security/`.  
 **Artefact classification:** Technical service (CLS-09, approved 24 November 2026). **Prior governing/review classification:** Platform (established catalogue responsibility).  
 **Review status:** Owner-approved conceptual decisions CS-01–CS-16; documented idealised architecture remains non-normative and not an implemented operational contract.  
-**Evidence (17 November 2026):** Governing `architecture-rules/master@2b5c0628e88b9698c9ad6ad57cc5315c8f879953`; blueprint opening `master@41ce9f3ffba9063407a6af0d0672dcbbd6a8b299`; draft [PR #55](https://github.com/nuxt-layers/architecture-blueprint-review/pull/55). The repository `nuxt-layers/content-security` exists at `master@f27469c66aee3cc13e81a0e0fd0554125ab884cb` (initial commit), but root `CONTRACT.md` is not found; runtime/API/CI/acceptance claims are **unverified**.  
+**Evidence (17 November 2026):** Governing `architecture-rules/master@2b5c0628e88b9698c9ad6ad57cc5315c8f879953`; blueprint opening `master@41ce9f3ffba9063407a6af0d0672dcbbd6a8b299`; draft PR #55. The repository `nuxt-layers/content-security` exists at `master@f27469c66aee3cc13e81a0e0fd0554125ab884cb` (initial commit), but root `CONTRACT.md` is not found; runtime/API/CI/acceptance claims are **unverified**.  
 **Governing rules:** accepted ADR-0012, normative Capability Standard, Security and Privacy; accepted ADR-0001/0002/0009/0011/0016 where applicable. ADR-0018 was marked **proposed** within its file when inspected: do not treat as accepted solely because present on master.
 
 ## Purpose and justification
@@ -215,13 +215,13 @@ Publisher, Comments Engine, Media and Marketplace screens display a compact cont
 
 ## Comments Engine — reciprocal conceptual proposal (17 November 2026)
 
-**Status:** Proposed for owner review in [Comments Engine PR #52](https://github.com/nuxt-layers/architecture-blueprint-review/pull/52), **not** an approved contract or implementation change. See [Comments Engine conceptual contract](../../capabilities/comments-engine/capability-record.md).
+**Status:** Proposed for owner review in Comments Engine PR #52, **not** an approved contract or implementation change. See [Comments Engine conceptual contract](../../capabilities/comments-engine/capability-record.md).
 
 Comments Engine submits bounded candidate text/link evidence with comment/target revision, classification context and purpose. Content Security returns provenance/version-qualified assessment or explicit unknown; it does not approve publication or adjudicate legality. Comments Engine enforces risk-defined hold/pending/reject, reassesses material edits, and must not expose unscanned text when required checks are unavailable. Prohibit private reporter leakage and unrestricted foreign provider transfer.
 
 ## Reciprocal conceptual note — Content Editor review (17 November 2026)
 
-**Status:** Proposed in [Content Editor draft PR #54](https://github.com/nuxt-layers/architecture-blueprint-review/pull/54); not implemented or approved. [Conceptual interface](../../presentation/content-editor/presentation-record.md#dedicated-conceptual-review--content-editor-17-november-2026).
+**Status:** Proposed in Content Editor draft PR #54; not implemented or approved. [Conceptual interface](../../presentation/content-editor/presentation-record.md#dedicated-conceptual-review--content-editor-17-november-2026).
 
 Editor displays source-owned pending, unavailable, quarantine and held safety results; no client indicator substitutes for Publisher/Media server gating or Moderation decisions.
 

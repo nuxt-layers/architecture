@@ -160,7 +160,7 @@ The **governing platform minimum** is OWASP ASVS 5 L2 (L3 for critical operation
 
 ## Error Normalisation, Logging, Audit and Reporting
 
-These **separate** public exchanges do not change the delivery owner. The approved [stateless Error Normalisation contract](../../libraries/error-normalisation/CONTRACT.md) describes pure functions, not an independently deployed logging/queue service.
+These **separate** public exchanges do not change the delivery owner. The approved [stateless Error Normalisation contract](../../libraries/error-normalisation/stateless-library-record.md#conceptual-public-contract-inputs-and-outputs) describes pure functions, not an independently deployed logging/queue service.
 
 | Cooperator | Input supplied by Notifications | Output received; authority |
 |---|---|---|
@@ -201,7 +201,7 @@ These **separate** public exchanges do not change the delivery owner. The approv
 
 ## Reciprocal interface — Profile conceptual review (22 November 2026)
 
-**Status: proposed in [Profile draft PR #123](https://github.com/nuxt-layers/architecture-blueprint-review/pull/123); not independently approved or implemented.** Notifications must obtain an authorised current, preferably verified destination and personal channel/quiet-hour preference through Profile's purpose-scoped public projection at send time; Privacy determines consent/suppression and Notifications owns delivery outcome. A stale or revoked contact route must not be used as fallback; verification code delivery is evidence of transport attempt, not proof of human receipt. Profile does not own message dispatch or destination caches. See [Profile's idealised public contract](../../capabilities/profile/capability-record.md#idealised-public-inbound-contracts). This bounded note does not supersede this capability's approved decisions; reconcile any concurrent unmerged work before integration.
+**Status: proposed in Profile draft PR #123; not independently approved or implemented.** Notifications must obtain an authorised current, preferably verified destination and personal channel/quiet-hour preference through Profile's purpose-scoped public projection at send time; Privacy determines consent/suppression and Notifications owns delivery outcome. A stale or revoked contact route must not be used as fallback; verification code delivery is evidence of transport attempt, not proof of human receipt. Profile does not own message dispatch or destination caches. See [Profile's idealised public contract](../../capabilities/profile/capability-record.md#idealised-public-inbound-contracts). This bounded note does not supersede this capability's approved decisions; reconcile any concurrent unmerged work before integration.
 
 
 ## Profile approved decisions — bounded reciprocal alignment (22 November 2026)
@@ -215,7 +215,7 @@ These **separate** public exchanges do not change the delivery owner. The approv
 
 ## Task conceptual review — reciprocal public boundary (23 November 2026)
 
-**Status: Task TASK-01–08 and operating safeguards owner-approved conceptually 23 November 2026 in [draft PR #138](https://github.com/nuxt-layers/architecture-blueprint-review/pull/138); TASK-09–14 extensions are now owner-approved conceptually (23 November 2026), not implemented or a completed review of notifications.** [Task canonical conceptual contract](../../capabilities/task/capability-record.md). Task may request recipient-scoped assignment/due/blocker notices through a public intent, with revision and minimised payload. Notifications owns orchestration and channel delivery evidence, not Task assignment/acknowledgement/completion. Absent delivery must not alter authoritative Task state. Preserve prior approvals and provisional neighbouring work; reconcile overlaps against latest master before merging.
+**Status: Task TASK-01–08 and operating safeguards owner-approved conceptually 23 November 2026 in draft PR #138; TASK-09–14 extensions are now owner-approved conceptually (23 November 2026), not implemented or a completed review of notifications.** [Task canonical conceptual contract](../../capabilities/task/capability-record.md). Task may request recipient-scoped assignment/due/blocker notices through a public intent, with revision and minimised payload. Notifications owns orchestration and channel delivery evidence, not Task assignment/acknowledgement/completion. Absent delivery must not alter authoritative Task state. Preserve prior approvals and provisional neighbouring work; reconcile overlaps against latest master before merging.
 
 ## Scheduler reciprocal conceptual interface — 23 November 2026 (draft PR #131)
 

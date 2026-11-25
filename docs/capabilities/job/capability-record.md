@@ -4,7 +4,7 @@
 **Status:** JOB-01–JOB-09 **owner-approved conceptual direction, 20 November 2026**, refined by owner's preference for a separate Recruitment Domain and proposed vacancy ownership there. Non-normative blueprint; no published contract, installed/operational implementation, security/compliance acceptance or permission implied.  
 **Classification:** Domain candidate; independent packaging remains subject to capability classification and published contract.  
 **Version / Availability:** Conceptual version unspecified; no accessible `nuxt-layers/job/CONTRACT.md` verified.  
-**Opening evidence:** Governing `architecture-rules@b920ce0d8b361de000a6739a16123dbdc56df7a7`, blueprint `architecture-blueprint-review@6dac83a03da8704f7945ee1bc894f2248300445a`; [review PR #84](https://github.com/nuxt-layers/architecture-blueprint-review/pull/84). The governing catalogue still labels job ambiguous until separate governance adoption.
+**Opening evidence:** Governing `architecture-rules@b920ce0d8b361de000a6739a16123dbdc56df7a7`, blueprint `architecture-blueprint-review@6dac83a03da8704f7945ee1bc894f2248300445a`; review PR #84. The governing catalogue still labels job ambiguous until separate governance adoption.
 
 
 **Companion plain-English review:** Published interface expectations, cooperating capabilities, Logging/Audit/Reporting, standards, permissive libraries and representative GUI (former review: job public contract standards and gui). It is conceptual, not a verified implementation `CONTRACT.md`.
@@ -106,7 +106,7 @@ Configuration owns scoped position taxonomies/templates/default approval setting
 
 ## Recruitment reciprocal contract proposal — 20 November 2026
 
-**Status: Proposed in [Recruitment draft PR #99](https://github.com/nuxt-layers/architecture-blueprint-review/pull/99), not owner-approved or implemented.** Job owns permitted frozen position revisions; Recruitment owns requisitions, openings, adverts, applications and selection, with explicit review on Job changes. Neither depends on the other for native operation. Cooperation uses published contracts/host ports, without private state or mandatory cyclic imports. [Recruitment record](../recruitment/capability-record.md).
+**Status: Proposed in Recruitment draft PR #99, not owner-approved or implemented.** Job owns permitted frozen position revisions; Recruitment owns requisitions, openings, adverts, applications and selection, with explicit review on Job changes. Neither depends on the other for native operation. Cooperation uses published contracts/host ports, without private state or mandatory cyclic imports. [Recruitment record](../recruitment/capability-record.md).
 
 
 ## Legal Compliance reciprocal conceptual contract — 19 November 2026 (draft PR #85)

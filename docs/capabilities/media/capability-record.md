@@ -2,7 +2,7 @@
 
 **Status:** Conceptual design complete subject to final owner confirmation and Git/architectural reconciliation; MEDIA-01–08 and standards/library recommendations approved (21–22 November 2026). **Not** an implemented or published Media contract.
 **Classification:** State-owning Platform capability with optional headless-independent presentation.
-**Review:** [Draft PR #92](https://github.com/nuxt-layers/architecture-blueprint-review/pull/92) · baseline and consistency notes (former review: media review baseline).
+**Review:** Draft PR #92 · baseline and consistency notes (former review: media review baseline).
 **Authority:** Accepted `architecture-rules/master` at `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; working blueprint `master` at `4da120c1683705360fa25bedd98b96412ff01637` when reviewed. This PR began at blueprint `6dac83a03da8704f7945ee1bc894f2248300445a`; rebase/reciprocal reconciliation remains required before merger. Accepted ADRs and normative rules prevail over blueprint proposals.
 
 ## Purpose and supported formats
@@ -206,7 +206,7 @@ Presentation must be optional (`presentation: false` as an *idealised* switch), 
 
 ## Reciprocal conceptual note — Metadata review (19 November 2026)
 
-**Status: Owner-approved conceptual Metadata scope in [Metadata draft PR #95](https://github.com/nuxt-layers/architecture-blueprint-review/pull/95), not a published implementation contract or completed review of this adjacent capability.** [Metadata conceptual contract](../metadata/capability-record.md).
+**Status: Owner-approved conceptual Metadata scope in Metadata draft PR #95, not a published implementation contract or completed review of this adjacent capability.** [Metadata conceptual contract](../metadata/capability-record.md).
 
 Media owns media-asset identity, descriptive media fields and file lifecycle; optional shared vocabulary/assignments are Metadata-owned and source-scoped. Tags cannot reveal unavailable media or override Media's ownership, permissions, safety holds or source removal; the generic taxonomy interface is not a replacement for asset alt text. Conceptual cooperation is optional and host-wired through public contracts; avoid circular required package dependencies.
 

@@ -2,7 +2,7 @@
 
 **Capability:** `events` — generic organised activities and their occurrences, not message transport or timed-job execution.
 **Classification:** independent **Domain responsibility**; no assumption of a new repository, service or framework dependency.
-**Review status (18 November 2026):** **EVT-01–10 and EVT-12–15 expressly owner-approved conceptually**; EVT-11 excluded/not approved. EVT-15 delegates attendee/attendance records to the separate Attendance candidate ([draft PR #79](https://github.com/nuxt-layers/architecture-blueprint-review/pull/79)), not required for standalone Events. Implementation root `CONTRACT.md`, independently verified runtime/CI and Attendance's independent final design are separate future matters.
+**Review status (18 November 2026):** **EVT-01–10 and EVT-12–15 expressly owner-approved conceptually**; EVT-11 excluded/not approved. EVT-15 delegates attendee/attendance records to the separate Attendance candidate (draft PR #79), not required for standalone Events. Implementation root `CONTRACT.md`, independently verified runtime/CI and Attendance's independent final design are separate future matters.
 **Governing baseline:** `nuxt-layers/architecture-rules/master@0725f314abc9ad13f1a65247f54a7ff80772f0b2` (accepted Capability Standard/ADRs incl. 0012/0016/0017/0018). **Blueprint opening:** `a4e40a5cd82a2f79e8edd872af55c22d472b61cb`. Review protocol (former document: review protocol) · detailed contract and handovers (former review: events contract attendance and handover).
 
 ## Owner-approved definition
@@ -142,7 +142,7 @@ Optional GUI: event list/calendar, event/series editor, occurrence/programme edi
 - **EVT-12 — OWNER APPROVED:** no duplicate capacity ledger; preserve previously approved Booking authority and explicit one-owner-per-pool arbitration.
 - **EVT-13 — owner-approved** minimal event/series/occurrence/session hierarchy.
 - **EVT-14 — OWNER APPROVED:** explicit event-source versus independent peer change, acknowledgement and reconciliation handover.
-- **EVT-15 — OWNER APPROVED:** Events delegates participant/attendee register, invitations/RSVP, check-ins, attendance verification and corrections to independent [Attendance candidate draft PR #79](https://github.com/nuxt-layers/architecture-blueprint-review/pull/79), retaining optional GUI and contract association. The Attendance contract itself remains a separate unmerged candidate; no required dependency is introduced.
+- **EVT-15 — OWNER APPROVED:** Events delegates participant/attendee register, invitations/RSVP, check-ins, attendance verification and corrections to independent Attendance candidate draft PR #79, retaining optional GUI and contract association. The Attendance contract itself remains a separate unmerged candidate; no required dependency is introduced.
 
 **Disposition:** Events conceptual contract now covers independent activity lifecycle, explicit input/output and reciprocal port contracts, provider interaction, change handover and acceptance. **Implementation readiness is not claimed**; current-master technical/architecture consistency, CI/mergeability and explicit merge authorisation are still required.
 
@@ -170,4 +170,4 @@ Optional GUI: event list/calendar, event/series editor, occurrence/programme edi
 
 ## Checkout reciprocal conceptual interface — 24 November 2026
 
-**Checkout-side conceptual interface owner-approved (24 November 2026):** [Checkout PR #151](https://github.com/nuxt-layers/architecture-blueprint-review/pull/151), [conceptual contract](../checkout/capability-record.md). Events may initiate a direct checkout for qualified paid participation; event eligibility, Booking capacity and admission/attendance remain with their owners. Checkout returns correlated source outcomes, not admission. Existing approved decisions remain authoritative; host-bound public ports only.
+**Checkout-side conceptual interface owner-approved (24 November 2026):** Checkout PR #151, [conceptual contract](../checkout/capability-record.md). Events may initiate a direct checkout for qualified paid participation; event eligibility, Booking capacity and admission/attendance remain with their owners. Checkout returns correlated source outcomes, not admission. Existing approved decisions remain authoritative; host-bound public ports only.

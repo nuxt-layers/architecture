@@ -183,7 +183,7 @@ Use optional screens/public presentation contributions under ADR-0009; no requir
 
 ## Renewed conceptual design challenge — 18 November 2026 (draft PR #81)
 
-**Status:** Proposed revision for owner consideration. The [prior Inventory conceptual approval (PR #77)](https://github.com/nuxt-layers/architecture-blueprint-review/pull/77) remains recorded and was not silently revoked. This section identifies precise additions/qualifications that would supersede ambiguous parts of the earlier design **only if expressly approved**.
+**Status:** Proposed revision for owner consideration. The prior Inventory conceptual approval (PR #77) remains recorded and was not silently revoked. This section identifies precise additions/qualifications that would supersede ambiguous parts of the earlier design **only if expressly approved**.
 
 **Detailed design, idealised public inbound/outbound contracts, interactions, GUI, standards, dependency matrix, safeguards, acceptance cases and decision gate:** Inventory conceptual reassessment (former review: inventory conceptual reassessment 2026 11 18). That dedicated document forms part of the current Inventory record; it is neither a published runtime `CONTRACT.md` nor an accepted ADR.
 
@@ -275,7 +275,7 @@ The [Quality conceptual proposal](../quality/capability-record.md) (draft PR #10
 
 ## Checkout reciprocal conceptual interface — 24 November 2026
 
-**Checkout-side conceptual interface owner-approved (24 November 2026):** [Checkout PR #151](https://github.com/nuxt-layers/architecture-blueprint-review/pull/151), [conceptual contract](../checkout/capability-record.md). Checkout requests scoped availability/reservation/release and consumes Inventory-owned hold ID, expiry and status; Inventory commits its own movements. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.
+**Checkout-side conceptual interface owner-approved (24 November 2026):** Checkout PR #151, [conceptual contract](../checkout/capability-record.md). Checkout requests scoped availability/reservation/release and consumes Inventory-owned hold ID, expiry and status; Inventory commits its own movements. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.
 
 ## Final completeness approval reconciliation
 

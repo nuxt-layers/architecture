@@ -1,6 +1,6 @@
 # Logistics — Capability Record
 
-**Classification:** Domain capability (approved conceptual boundary). **Conceptual status:** Complete for the owner-approved scope (LGS-01–LGS-09, LGS-11, LGS-12); not implemented or merged. **Implementation gate:** LGS-10 remains open and is **not owner-approved**. **Review:** [draft PR #89](https://github.com/nuxt-layers/architecture-blueprint-review/pull/89). This record specifies the intended public contract, not existing callable endpoints. No accessible `nuxt-layers/logistics` root `CONTRACT.md` has been verified.
+**Classification:** Domain capability (approved conceptual boundary). **Conceptual status:** Complete for the owner-approved scope (LGS-01–LGS-09, LGS-11, LGS-12); not implemented or merged. **Implementation gate:** LGS-10 remains open and is **not owner-approved**. **Review:** draft PR #89. This record specifies the intended public contract, not existing callable endpoints. No accessible `nuxt-layers/logistics` root `CONTRACT.md` has been verified.
 
 ## Purpose and ownership
 

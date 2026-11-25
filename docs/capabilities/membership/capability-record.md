@@ -9,7 +9,7 @@
 
 ## Status, purpose and classification
 
-**Established governing distinction:** [Identity and Access](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/identity.md) gives Identity exclusive authority over identities, tenants, groups and direct group-membership lifecycle. [Capability Standard](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/capability-standard.md) requires cohesive independently justified responsibilities, owned state/outbox and public acyclic contracts. The governing [Catalogue](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/catalogue.md) lists paid/scheme `membership` as a *candidate*, not an implemented capability. Applicable accepted ADRs and normative security/privacy/presentation standards prevail over this working record.
+**Established governing distinction:** [Identity and Access](../../identity.md) gives Identity exclusive authority over identities, tenants, groups and direct group-membership lifecycle. [Capability Standard](../../capability-standard.md) requires cohesive independently justified responsibilities, owned state/outbox and public acyclic contracts. The governing [Catalogue](../../catalogue.md) lists paid/scheme `membership` as a *candidate*, not an implemented capability. Applicable accepted ADRs and normative security/privacy/presentation standards prevail over this working record.
 
 **Agreed responsibility (MEM-01–MEM-02):** Membership operates voluntary or governed **participation in a named scheme**—for example a professional association, sports club programme, charitable supporter scheme or loyalty/benefits membership. It evaluates scheme-specific admission, terms acceptance, classifications, tenure, renewals, suspensions, termination and **benefit eligibility** with attributable effective times. This has an independent business lifecycle even when no purchase, app account, recurring payment or Identity group join occurs. It is therefore a defensible **Domain** boundary, but not automatically an independent package or Nuxt Layer.
 
@@ -155,7 +155,7 @@ No jurisdiction-specific claim about UK consumer cancellation, charity/associati
 
 ## Error handling, Logging, Audit and Reporting — public contract boundary
 
-**Status:** Owner-approved Membership conceptual boundary; cooperating capabilities retain their own contract authority. The blueprint now contains the [owner-approved Error Normalisation conceptual contract](../../libraries/error-normalisation/CONTRACT.md) and [canonical stateless-library record](../../libraries/error-normalisation/stateless-library-record.md). They describe pure, synchronous, deterministic mapping/classification, distinct public and technical projections, safe `messageKey`, caller-supplied catalogues and qualified retry guidance. No implemented package/root `CONTRACT.md` or callable exports are asserted. Error Normalisation is a shared **stateless library**, not the Membership domain owner, Audit store, logging sink or reporting service.
+**Status:** Owner-approved Membership conceptual boundary; cooperating capabilities retain their own contract authority. The blueprint now contains the [owner-approved Error Normalisation conceptual contract](../../libraries/error-normalisation/stateless-library-record.md#conceptual-public-contract-inputs-and-outputs) and [canonical stateless-library record](../../libraries/error-normalisation/stateless-library-record.md). They describe pure, synchronous, deterministic mapping/classification, distinct public and technical projections, safe `messageKey`, caller-supplied catalogues and qualified retry guidance. No implemented package/root `CONTRACT.md` or callable exports are asserted. Error Normalisation is a shared **stateless library**, not the Membership domain owner, Audit store, logging sink or reporting service.
 
 | Cooperating surface | Membership supplies (outbound) | Membership consumes (inbound) | Authority / failure guarantee |
 |---|---|---|---|
@@ -272,7 +272,7 @@ One capability dashboard should show (1) scheme/context selector and permitted a
 
 ## Checkout reciprocal conceptual interface — 24 November 2026
 
-**Checkout-side conceptual interface owner-approved (24 November 2026):** [Checkout PR #151](https://github.com/nuxt-layers/architecture-blueprint-review/pull/151), [conceptual contract](../checkout/capability-record.md). Membership can initiate direct Checkout for joining/renewal, supplies offer/eligibility and receives qualified outcomes. Membership owns admission and scheme rights; no automatic IAM grant. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.
+**Checkout-side conceptual interface owner-approved (24 November 2026):** Checkout PR #151, [conceptual contract](../checkout/capability-record.md). Membership can initiate direct Checkout for joining/renewal, supplies offer/eligibility and receives qualified outcomes. Membership owns admission and scheme rights; no automatic IAM grant. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.
 
 ## FAC-D01–04 — Approved reciprocal responsibility alignment
 

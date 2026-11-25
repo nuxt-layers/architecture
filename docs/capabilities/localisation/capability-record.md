@@ -1,6 +1,6 @@
 # Capability Record — Localisation
 
-**Capability:** `localisation` · **Classification:** Platform candidate · **Review:** [draft PR #86](https://github.com/nuxt-layers/architecture-blueprint-review/pull/86) · **Updated:** 21 November 2026.  
+**Capability:** `localisation` · **Classification:** Platform candidate · **Review:** draft PR #86 · **Updated:** 21 November 2026.  
 **Conceptual status:** The capability boundary and decisions **LOC-D01–LOC-D10 and LOC-R01–LOC-R07 are owner-approved**. The further clarification separating this service from routine i18n rendering and direct Logging/Audit/Reporting dependencies is also approved. Detailed GUI navigation and screen grouping are documented as **recommended conceptual design**, not an implemented user interface.  
 **Implementation status:** No independent operational `nuxt-layers/localisation` repository or published root `CONTRACT.md` was verified when reviewed; all operations below describe an **idealised public contract**, not existing callable APIs. The blueprint is non-normative and does not override accepted governing rules, actual published contracts or implementation evidence. **No merge is authorised.**
 
@@ -193,12 +193,12 @@ These specify **expected outcomes**, not tests performed.
 
 ## Cross-capability note — Mailer conceptual interface (19 November 2026)
 
-**Status: Mailer-side conceptual boundaries owner-approved (MLR-01–MLR-10, 21 November 2026); neighbouring capability approval/implementation not implied; [Mailer PR #90](https://github.com/nuxt-layers/architecture-blueprint-review/pull/90). No public runtime adapter verified.** [Mailer conceptual record](../../services/mailer/services-record.md): Mailer (approved conceptual design) transports only approved content with declared locale/template version; Localisation may supply qualified language/translation results, while the source/template owner approves meaning and Clock handles temporal formatting. Mailer must not silently machine-translate legal/security-critical messages or overwrite their authoritative content. Concurrent Localisation PR is provisional.
+**Status: Mailer-side conceptual boundaries owner-approved (MLR-01–MLR-10, 21 November 2026); neighbouring capability approval/implementation not implied; Mailer PR #90. No public runtime adapter verified.** [Mailer conceptual record](../../services/mailer/services-record.md): Mailer (approved conceptual design) transports only approved content with declared locale/template version; Localisation may supply qualified language/translation results, while the source/template owner approves meaning and Clock handles temporal formatting. Mailer must not silently machine-translate legal/security-critical messages or overwrite their authoritative content. Concurrent Localisation PR is provisional.
 
 
 ## Reciprocal conceptual note — Metadata review (19 November 2026)
 
-**Status: Owner-approved conceptual Metadata scope in [Metadata draft PR #95](https://github.com/nuxt-layers/architecture-blueprint-review/pull/95), not a published implementation contract or completed review of this adjacent capability.** [Metadata conceptual contract](../metadata/capability-record.md).
+**Status: Owner-approved conceptual Metadata scope in Metadata draft PR #95, not a published implementation contract or completed review of this adjacent capability.** [Metadata conceptual contract](../metadata/capability-record.md).
 
 Metadata owns stable term identifiers, reference labels and classification relationships; Localisation may supply translated term labels and review status via public interfaces. A translated display string is not a new term or an authorised assignment; absent translation uses a declared source-locale fallback without cross-tenant leakage. Conceptual cooperation is optional and host-wired through public contracts; avoid circular required package dependencies.
 

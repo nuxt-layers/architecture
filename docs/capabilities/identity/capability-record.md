@@ -44,7 +44,7 @@ Verification is now an owner-approved *candidate* for claims and issuer-status l
 
 ## Comments Engine — reciprocal conceptual proposal (17 November 2026)
 
-**Status:** Proposed for owner review in [Comments Engine PR #52](https://github.com/nuxt-layers/architecture-blueprint-review/pull/52); not an accepted public contract. See [conceptual record](../../capabilities/comments-engine/capability-record.md).
+**Status:** Proposed for owner review in Comments Engine PR #52; not an accepted public contract. See [conceptual record](../../capabilities/comments-engine/capability-record.md).
 
 Comments Engine uses stable Identity subject/tenant/group references and status-change signals but never duplicates identities, personal data, group membership or representation. Source-owned author attribution must honour revocation, erasure and tenant isolation. Guest and remote identities require separately defined trust/provenance, not fabricated local identity records.
 
@@ -56,7 +56,7 @@ Comments Engine uses stable Identity subject/tenant/group references and status-
 
 ## Configuration decision reconciliation — CFG-05–08 (17 November 2026)
 
-**Status: Owner-approved conceptual decisions in [Configuration PR #53](https://github.com/nuxt-layers/architecture-blueprint-review/pull/53); not an implemented or newly accepted governing contract.** See [Configuration decision register](../configuration/capability-record.md#decision-register-evidence-and-sign-off).
+**Status: Owner-approved conceptual decisions in Configuration PR #53; not an implemented or newly accepted governing contract.** See [Configuration decision register](../configuration/capability-record.md#decision-register-evidence-and-sign-off).
 
 **Owner-approved CFG-05/06 (Options B/C):** Identity remains authoritative for account and resource-associated tenant/group identities, membership, group lifecycle and any registered group ancestry; Configuration does not create an alternative user profile or generic resource hierarchy. Resource-specific settings require their *own domain's* stable resource identifier and lifecycle/authority checks.
 
@@ -64,11 +64,11 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 ## Employment reciprocal conceptual interface — 17 November 2026
 
-**Status: Proposed in [Employment PR #59](https://github.com/nuxt-layers/architecture-blueprint-review/pull/59), not an Identity API amendment.** Identity owns principals, tenant/group structures, membership and digital governance, none of which proves employment or legal employer-of-record. Employment consumes scoped standing and identifier facts and provides dated worker-engagement status signals; departures must coordinate revocation and access reviews through published IAM contracts rather than silently deleting memberships or sessions. Tenant/group identifiers do not establish the employing legal entity. Access to remuneration/personnel records requires separate Authorisation and Privacy checks. See [Employment public contract](../employment/capability-record.md).
+**Status: Proposed in Employment PR #59, not an Identity API amendment.** Identity owns principals, tenant/group structures, membership and digital governance, none of which proves employment or legal employer-of-record. Employment consumes scoped standing and identifier facts and provides dated worker-engagement status signals; departures must coordinate revocation and access reviews through published IAM contracts rather than silently deleting memberships or sessions. Tenant/group identifiers do not establish the employing legal entity. Access to remuneration/personnel records requires separate Authorisation and Privacy checks. See [Employment public contract](../employment/capability-record.md).
 
 ## Cross-capability review note — Enrolment (owner-accepted conceptual)
 
-**Enrolment reciprocal interface (owner-accepted; 18 November 2026; [Enrolment review PR #60](https://github.com/nuxt-layers/architecture-blueprint-review/pull/60)).** Identity supplies stable learner/guardian/representative identity references and independently verified authority where supported; Enrolment owns educational admission state, not Identity group membership, tenant hierarchy, guardian relationship or permission. Host-composed scoped authorised lookups must avoid student-data duplication or implied cross-tenant access. Guardian proof and eligibility remain conditional, provenance-bearing. This note is non-normative and cannot claim new Identity published APIs.
+**Enrolment reciprocal interface (owner-accepted; 18 November 2026; Enrolment review PR #60).** Identity supplies stable learner/guardian/representative identity references and independently verified authority where supported; Enrolment owns educational admission state, not Identity group membership, tenant hierarchy, guardian relationship or permission. Host-composed scoped authorised lookups must avoid student-data duplication or implied cross-tenant access. Guardian proof and eligibility remain conditional, provenance-bearing. This note is non-normative and cannot claim new Identity published APIs.
 
 
 ## Attendance ATT-09 — optional guest identity and later account linkage (18 November 2026)
@@ -83,7 +83,7 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 ## Federation — reciprocal conceptual contract (18 November 2026)
 
-**Status: Proposed in [Federation draft PR #69](https://github.com/nuxt-layers/architecture-blueprint-review/pull/69); not an approved implementation API, and does not complete this capability's independent review.** [Federation public contract](../../services/federation/services-record.md#independent-review-contract-completeness-and-authority-18-november-2026).
+**Status: Proposed in Federation draft PR #69; not an approved implementation API, and does not complete this capability's independent review.** [Federation public contract](../../services/federation/services-record.md#independent-review-contract-completeness-and-authority-18-november-2026).
 
 Federation may refer to Identity-owned local tenant, group, principal or service identity references for peer administration, but remote network identities are evidence and do not create Identity principals, group memberships or cross-tenant rights. Trust/endpoint status belongs to Federation; request-time permissions belong to Authorisation. Cross-node identity mapping requires separately governed proof and consent. All cooperation is via public, directional host-composed contracts with scoped failure/absence semantics; preserve existing approvals and avoid package dependency cycles.
 
@@ -99,14 +99,14 @@ Federation may refer to Identity-owned local tenant, group, principal or service
 
 ## Reciprocal conceptual note — IAM Integration (18 November 2026)
 
-**Status: Proposed under [IAM Integration draft PR #73](https://github.com/nuxt-layers/architecture-blueprint-review/pull/73); not a new published implementation contract or owner approval.** Identity remains authoritative for opaque identifiers, group/tenant/membership lifecycle, owner governance, pending changes and source outbox. IAM Integration consumes only its public directory, lifecycle, governance and outbox surfaces; it supplies verified Authentication-subject and Authorisation-decision adapters, status/reconciliation and coordinated calls. Revocation and tenant restriction must remain safe under delivery delay; this note does not introduce an Identity dependency on the integration package. See [IAM Integration conceptual public contract](../../compositions/iam-integration/compositions-record.md).
+**Status: Proposed under IAM Integration draft PR #73; not a new published implementation contract or owner approval.** Identity remains authoritative for opaque identifiers, group/tenant/membership lifecycle, owner governance, pending changes and source outbox. IAM Integration consumes only its public directory, lifecycle, governance and outbox surfaces; it supplies verified Authentication-subject and Authorisation-decision adapters, status/reconciliation and coordinated calls. Revocation and tenant restriction must remain safe under delivery delay; this note does not introduce an Identity dependency on the integration package. See [IAM Integration conceptual public contract](../../compositions/iam-integration/compositions-record.md).
 
 
 ---
 
 # Identity — dedicated conceptual review (18 November 2026)
 
-**Status:** Proposed conceptual specification for owner review in [draft PR #74](https://github.com/nuxt-layers/architecture-blueprint-review/pull/74). Existing owner-approved decisions above remain intact. This chapter is not a replacement for the implementation `CONTRACT.md`, approval of new interfaces, or verification of runtime conformance.
+**Status:** Proposed conceptual specification for owner review in draft PR #74. Existing owner-approved decisions above remain intact. This chapter is not a replacement for the implementation `CONTRACT.md`, approval of new interfaces, or verification of runtime conformance.
 
 **Baselines:** governing `architecture-rules/master@0725f314abc9ad13f1a65247f54a7ff80772f0b2`; blueprint `architecture-blueprint-review/master@a4e40a5cd82a2f79e8edd872af55c22d472b61cb`; published implementation `identity/master@7cfb0d0bc6ebb824575827798e5507f4a511db57` (root `CONTRACT.md`; documented behaviour, not independently tested). Classification: **Foundation / IAM, authoritative state-owning capability**, with headless server contracts and optional Nuxt presentation. A separate Tenancy capability is neither required nor justified.
 
@@ -326,7 +326,7 @@ Proposed elaboration above is ready for review in this draft PR; it does not set
 
 ## Reciprocal interface — Profile conceptual review (22 November 2026)
 
-**Status: proposed in [Profile draft PR #123](https://github.com/nuxt-layers/architecture-blueprint-review/pull/123); not independently approved or implemented.** Identity owns person/group/tenant identifiers, membership, standing, closure, group-departure and tenant-parent facts; Profile owns personal attributes, disclosure and its own rights-part lifecycle. Identity supplies trusted scoped lifecycle and relationship evidence; Profile returns authorised display projections and completion/hold dispositions. A tenant parent, digital governance owner or directory lookup cannot independently reveal Profile data. Unknown standing fails closed; duplicate event delivery is replay-safe. See [Profile's idealised public contract](../profile/capability-record.md#idealised-public-inbound-contracts). This bounded note does not supersede this capability's approved decisions; reconcile any concurrent unmerged work before integration.
+**Status: proposed in Profile draft PR #123; not independently approved or implemented.** Identity owns person/group/tenant identifiers, membership, standing, closure, group-departure and tenant-parent facts; Profile owns personal attributes, disclosure and its own rights-part lifecycle. Identity supplies trusted scoped lifecycle and relationship evidence; Profile returns authorised display projections and completion/hold dispositions. A tenant parent, digital governance owner or directory lookup cannot independently reveal Profile data. Unknown standing fails closed; duplicate event delivery is replay-safe. See [Profile's idealised public contract](../profile/capability-record.md#idealised-public-inbound-contracts). This bounded note does not supersede this capability's approved decisions; reconcile any concurrent unmerged work before integration.
 
 
 ## Profile approved decisions — bounded reciprocal alignment (22 November 2026)
@@ -335,7 +335,7 @@ Proposed elaboration above is ready for review in this draft PR; it does not set
 
 ## Office composition reciprocal note — 22 November 2026
 
-**Status: Office conceptual direction OFF-01–05 and safeguards owner-approved 22 November 2026; integration remains non-normative and unimplemented ([PR #112](https://github.com/nuxt-layers/architecture-blueprint-review/pull/112)).** Identity remains the source for office-associated tenant/group IDs, ancestry, membership and governance. An Office archetype or host dashboard only references an authorised group; it does not create a parallel office group/member registry or infer access from reporting structure, workplace labels or physical occupancy. Group closure and membership revocation invalidate relevant composed office views through published IAM contracts. See the [Office conceptual composition contract](../../compositions/office/compositions-record.md). This note does not amend published interfaces or claim implementation evidence.
+**Status: Office conceptual direction OFF-01–05 and safeguards owner-approved 22 November 2026; integration remains non-normative and unimplemented (PR #112).** Identity remains the source for office-associated tenant/group IDs, ancestry, membership and governance. An Office archetype or host dashboard only references an authorised group; it does not create a parallel office group/member registry or infer access from reporting structure, workplace labels or physical occupancy. Group closure and membership revocation invalidate relevant composed office views through published IAM contracts. See the [Office conceptual composition contract](../../compositions/office/compositions-record.md). This note does not amend published interfaces or claim implementation evidence.
 
 ## Reciprocal interface — Order independent conceptual review (22 November 2026, draft PR #113)
 

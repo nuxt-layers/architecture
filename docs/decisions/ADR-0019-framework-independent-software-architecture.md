@@ -1,28 +1,26 @@
 # ADR-0019 — Framework-independent software architecture
 
-**Status:** Proposed for governing adoption; platform owner approved the direction on 24 November 2026.
+**Status:** Accepted  
+**Accepted:** 2026-11-25
 
 ## Why
 
 Responsibility, packaging, composition and deployment are independent. Nuxt-specific rules do not fit every reusable service, library or composition.
 
-## Decision
+## The decision
 
-- Apply the Common Engineering Standard to all maintained software artefacts. Apply the Capability, Nuxt Layer, Composition and TypeScript Package standards cumulatively where relevant.
-- Preserve ownership, public boundaries, acyclic dependencies, provider-neutral ports, security and the modular-monolith default.
-- Define independently consumable artefacts through a self-contained root CONTRACT.md and a validated artefact.json. Existing capability.json remains supported during migration.
-- Keep one current canonical specification per responsibility. Git and pull requests retain superseded proposals and review history. Transfer still-applicable requirements before deleting obsolete documents.
-- Retain ADR-0012's Nuxt budget; propose the same 50-line ceiling for independent capability service composition. Libraries need no artificial initialisation. Count hidden integration wiring; complete application compositions report integration cost without a universal application-wide limit.
-- No mandatory repackaging of completed implementations solely for classification.
+- Apply the [Common Engineering Standard](../engineering-standard.md) to maintained software artefacts and the Capability, Nuxt Layer, Composition and TypeScript Package standards cumulatively where relevant.
+- Recognise eight artefact kinds: architecture, capability, composition, infrastructure, library, presentation, service and adapter. Kind, classification, ownership, implementation and deployment are distinct.
+- Preserve ownership, public boundaries, acyclic dependencies, provider-neutral ports, security and the modular-monolith default. Technical services may own bounded technical facts; presentation may own presentation-specific state but not business facts. Infrastructure owns environment provisioning and operational authority, not domain persistence.
+- Independently consumable artefacts publish a self-contained root CONTRACT.md. Adopt a common validated artefact.json through a separately reconciled schema and compatibility migration; retain existing capability.json and published identifiers until that migration is approved.
+- Keep one canonical specification per responsibility. Git and pull requests retain superseded proposals and review history. Transfer still-applicable requirements before removing obsolete documents.
+- Apply ADR-0012's 50-line capability-specific integration ceiling to independent capability consumers as well as Nuxt hosts and adapters. Libraries need no artificial initialisation. Complete application compositions measure integration cost without a universal application-wide ceiling.
+- Do not repackage completed implementations solely for classification.
 
-## Adoption
+## Adopting it
 
-Adopt the [Common Engineering Standard](../engineering-standard.md), [Nuxt Layer Standard](../nuxt-layer-standard.md), [Composition Standard](../composition-standard.md), [TypeScript Package Standard](../typescript-package-standard.md) and [Artefact Definition](../artefact-definition.md) after reconciling the existing Capability Standard and accepted ADRs. Until adoption, existing accepted decisions govern. The working blueprint remains non-normative.
+The architecture and applicable engineering requirements are accepted. The [Common Engineering Standard](../engineering-standard.md), [Nuxt Layer Standard](../nuxt-layer-standard.md), [Composition Standard](../composition-standard.md) and [TypeScript Package Standard](../typescript-package-standard.md) apply cumulatively. The [Artefact Definition](../artefact-definition.md), descriptor schema and compatibility migration remain separately gated. Conceptual blueprint adoption and documentation placement follow their own governing reconciliation.
 
 ## Guardrails
 
-Discovery never grants access, proves readiness or installs a component. Do not remove live architectural decisions, unresolved requirements, required compliance evidence or another active branch's work. Do not create a parallel history archive in the current tree.
-
-## Final blueprint reconciliation proposal
-
-Blueprint PR #161 records owner-approved conceptual allocations and eight documentation kinds. Adopt these as responsibility forms, independently of role, implementation and deployment. Technical services own bounded technical facts; presentation may own presentation-specific state but not business facts. Infrastructure owns environment provisioning and operational authority, not domain persistence. Preserve existing descriptor IDs and capability.json during migration. Formal adoption remains proposed until separately authorised. No mandatory repackaging; preserve accepted ADR-0012 and the proposed independent-service composition budget distinction.
+Discovery never grants access, proves readiness or installs a component. No change transfers domain ownership or weakens security. Preserve existing accepted ADRs except the explicit extension of ADR-0012's composition budget. Do not remove live requirements, unresolved decisions, required compliance records or another active branch's work.

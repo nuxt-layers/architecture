@@ -1,6 +1,6 @@
 # Nuxt Layer Standard
 
-**Status:** Proposed under ADR-0019.
+**Status:** Normative under ADR-0019.
 
 Apply to any public Nuxt framework contribution in addition to the applicable responsibility standard.
 

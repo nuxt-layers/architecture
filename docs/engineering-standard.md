@@ -1,6 +1,6 @@
 # Common Engineering Standard
 
-**Status:** Proposed under ADR-0019.
+**Status:** Normative under ADR-0019.
 
 All maintained artefacts declare their purpose, public boundary, dependencies, compatibility, applicable security and privacy obligations, and evidence of correct behaviour. Apply the specialised standards cumulatively. Existing accepted ADRs remain authoritative until reconciliation.
 

@@ -150,7 +150,7 @@ A contract change updates `CONTRACT.md` in the same change. Consumers receive on
 
 A Nuxt capability must satisfy ADR-0012: one package installation, one composition call in a server plugin and **at most 50 lines of capability-specific host code**. Host-supplied values remain limited to documented shared services, connections, secrets, configuration and application decisions. A published Nuxt adapter for a framework-independent capability also meets that budget.
 
-A framework-independent capability provides one documented entry point and a minimal independent consumer example. That example reports integration cost and proves the contract without requiring Nuxt. No separate numeric budget for these consumers has been approved.
+A framework-independent capability provides one documented entry point and a minimal independent consumer example. That example reports integration cost and proves the contract without requiring Nuxt. The same 50-line capability-specific integration ceiling applies under ADR-0012 and ADR-0019.
 
 The host does not implement a capability's stores, fakes, relays or business adapters. Each capability supplies its own stores where needed and test-only fakes, as ADR-0012 requires.
 

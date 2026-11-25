@@ -28,7 +28,7 @@
 8. Every persistent resource needing isolation has explicit ownership and access rules.
 9. Infrastructure is replaceable through ports where practical. Capabilities depend on their own stores, not a hosting vendor's API. PostgreSQL is the preferred relational database; row-level security may add protection but never replaces application authorisation.
 10. Security, privacy, accessibility and internationalisation are designed in from the start, never added late.
-11. A capability declares what it provides and requires, with optional dependencies marked and behaviour without them documented. Nuxt layers retain `capability.json`; other packages document their contracts and exports without an imposed universal manifest (Capability Standard §4). Deliberate Nuxt extension edges are separately declared and tested under ADR-0016. Failures are documented codes; internal exceptions never cross a boundary.
+11. A capability declares what it provides and requires, with optional dependencies marked and behaviour without them documented. Nuxt layers retain `capability.json`; other packages document their contracts and exports pending adoption of the common artefact schema and compatibility migration (Capability Standard §4). Deliberate Nuxt extension edges are separately declared and tested under ADR-0016. Failures are documented codes; internal exceptions never cross a boundary.
 
 ## 3. Deployment
 

@@ -1,6 +1,7 @@
 # ADR-0012 — Trivial Composition
 
 **Status:** Accepted  
+**Amended:** 2026-11-25: ADR-0019 extends the 50-line integration ceiling to framework-independent capability consumers.  
 **Date:** 2026-10-24  
 **Revised:** 2026-10-25: screens follow the amended ADR-0009; every capability has a one-page host contract  
 **Accepted:** 2026-10-25, with the host contract's limit raised from 150 to 200 lines  
@@ -28,7 +29,7 @@ Composing a **Nuxt capability layer** into a Nuxt host takes:
 - one call in one server plugin, passing only what the host already owns;
 - no more than **50 lines** of host code for that capability, counted as every line outside the host's own screens, content and data files that names the capability.
 
-A framework-independent capability MUST offer one documented composition entry point using declared inputs, with no consumer-written stores, relays or adapters for its own rules. Its independent consumer example MUST record integration code size and justify any complexity; it does not require a Nitro plugin. Where that capability is integrated through a Nuxt adapter, the **same 50-line budget** applies to the complete capability-specific host integration, including its adapter setup. A different numerical limit for non-Nuxt consumers requires a separate accepted decision; none is established here.
+A framework-independent capability MUST offer one documented composition entry point using declared inputs, with no consumer-written stores, relays or adapters for its own rules. Its independent consumer example MUST meet the same 50-line capability-specific integration ceiling, report integration code size and require no Nitro plugin. Where that capability is integrated through a Nuxt adapter, the **same 50-line budget** applies to the complete capability-specific host integration, including its adapter setup. A different numerical limit for non-Nuxt consumers requires a separate accepted decision; none is established here.
 
 What the host passes is limited to: services in the shared shapes of decision 2, connections and secrets ([ADR-0002](ADR-0002-composition-supplied-persistence-and-capability-owned-schemas.md)), configuration values, and decisions that belong to the application, such as which document types it registers. Everything else has a default.
 

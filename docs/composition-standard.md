@@ -1,6 +1,6 @@
 # Composition Standard
 
-**Status:** Proposed under ADR-0019.
+**Status:** Normative under ADR-0019.
 
 A suite, application or deployment composition selects and connects documented public components. It may be headless, Nuxt-based or declarative. It owns application decisions, route placement and branding where relevant, and justified configuration or technical coordination state, not another capability's domain facts.
 

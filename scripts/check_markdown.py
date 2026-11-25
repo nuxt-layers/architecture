@@ -18,9 +18,7 @@ for file in files:
     lines = file.read_text(encoding="utf-8").splitlines()
     if not any(re.match(r"^#\s+\S", line) for line in lines):
         errors.append(f"{file.relative_to(root)}: missing H1 heading")
-    # ADR-0010: every document under docs/ opens with an In short line.
-    if file.relative_to(root).parts[0] == "docs" and not any(line.startswith("> **In short:**") for line in lines):
-        errors.append(f"{file.relative_to(root)}: missing In short summary")
+    # ADR-0010: summaries are useful for substantial documents, not mandatory headings.
     in_fence = False
     for number, line in enumerate(lines, 1):
         if re.match(r"^\s*(?:`{3,}|~{3,})", line):

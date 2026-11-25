@@ -2,7 +2,6 @@
 
 **Capability:** `reviews` · **Classification:** Platform capability (owner-approved concept) · **Review date:** 23 November 2026 · **Status:** **conceptual design approved**, not implemented or adopted as a governing standard.  
 **Decisions approved:** REV-D01–REV-D08, REV-R01, REV-S01, REV-L01–REV-L02, REV-X01 and **REV-G01** (optional GUI and host composition), all approved by the owner on 23 November 2026.  
-**Implementation evidence:** no published `nuxt-layers/reviews/CONTRACT.md` or executable API verified. This document describes **idealised public contracts**, not released exports or working screens. Draft review PR #130.  
 **Authority:** accepted `nuxt-layers/architecture-rules` ADRs and normative standards precede this blueprint. Initial governing baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`. Follow review protocol (former document: review protocol).
 
 ## Purpose and ownership
@@ -92,16 +91,16 @@ The following are **approved conceptual design references**, not a claim of ISO 
 
 | Reference | Reviews design requirement |
 |---|---|
-| **[ISO 20488:2018](https://www.iso.org/standard/68193.html)** (primary voluntary review standard) | Neutral collection, moderation/publication, authenticity, clear review sourcing and transparency. A clause-level conformance assessment needs the full licensed text |
+| **[ISO 20488:2018](../../../RESOURCES.md#ref-69c33b8f)** (primary voluntary review standard) | Neutral collection, moderation/publication, authenticity, clear review sourcing and transparency. A clause-level conformance assessment needs the full licensed text |
 | **ISO 10002:2018 / 10003:2018 / 10004:2018** (complaints, external disputes, satisfaction measurement) | Fair correction/appeal pathways and meaningful rating/feedback statistics |
-| **[UK DMCC Act 2024](https://www.legislation.gov.uk/ukpga/2024/13/contents) and [CMA fake reviews guidance](https://www.gov.uk/government/publications/fake-reviews)** (relevant provisions from **6 April 2025**) | Reasonable/proportionate fake-review prevention and removal, no concealed incentives or misleading display |
-| **[UK GDPR / ICO privacy by design](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default)** | Purpose, minimisation, author disclosure, protected evidence, retention, rights and holds |
+| **[UK DMCC Act 2024](../../../RESOURCES.md#ref-49097836) and [CMA fake reviews guidance](../../../RESOURCES.md#ref-ad11aaa1)** (relevant provisions from **6 April 2025**) | Reasonable/proportionate fake-review prevention and removal, no concealed incentives or misleading display |
+| **[UK GDPR / ICO privacy by design](../../../RESOURCES.md#ref-eca8d5ee)** | Purpose, minimisation, author disclosure, protected evidence, retention, rights and holds |
 | **EU Unfair Commercial Practices Directive as amended by (EU) 2019/2161; conditional Digital Services Act obligations** | Transparent authenticity/verification claims, sourcing and, where a host is in scope, notice/action/appeal |
-| **US FTC [16 CFR Part 465](https://www.govinfo.gov/content/pkg/CFR-2025-title16-vol1/xhtml/CFR-2025-title16-vol1-part465.html)** (effective **21 October 2024**) | False endorsements, undisclosed insiders, prohibited incentives and unlawful suppression |
-| **[W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/) AA; WAI-ARIA 1.2** | Accessible review/rating forms, moderation queues, status announcements and keyboard interactions |
-| **W3C [PROV-O](https://www.w3.org/TR/prov-o/)** (optional encoding) | Model attributed versioned evidence and source lineage without requiring RDF |
-| **[Schema.org Review](https://schema.org/Review), Rating and AggregateRating; [Google review snippet guidance](https://developers.google.com/search/docs/appearance/structured-data/review-snippet)** | Publish truthful, visible, authorised source-linked metadata through SEO/Publisher; respect provider eligibility, including self-serving review limits |
-| **[OWASP ASVS 5](https://asvs.owasp.org/) L2 (L3 for critical), ISO/IEC 27001:2022 and ISO/IEC 27701:2025** | Secure input, access, code redemption, privacy/security governance and attributable controls; no implied certification |
+| **US FTC [16 CFR Part 465](../../../RESOURCES.md#ref-614b3b8a)** (effective **21 October 2024**) | False endorsements, undisclosed insiders, prohibited incentives and unlawful suppression |
+| **[W3C WCAG 2.2](../../../RESOURCES.md#ref-0d1f555e) AA; WAI-ARIA 1.2** | Accessible review/rating forms, moderation queues, status announcements and keyboard interactions |
+| **W3C [PROV-O](../../../RESOURCES.md#ref-20aa2e25)** (optional encoding) | Model attributed versioned evidence and source lineage without requiring RDF |
+| **[Schema.org Review](../../../RESOURCES.md#ref-573c4eea), Rating and AggregateRating; [Google review snippet guidance](../../../RESOURCES.md#ref-e70dbec3)** | Publish truthful, visible, authorised source-linked metadata through SEO/Publisher; respect provider eligibility, including self-serving review limits |
+| **[OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2) L2 (L3 for critical), ISO/IEC 27001:2022 and ISO/IEC 27701:2025** | Secure input, access, code redemption, privacy/security governance and attributable controls; no implied certification |
 
 Acceptance evidence should link **applicable reference → qualified obligation → Reviews contract action → responsible owner → scenario/result**. Update versions, licensing and legal scope at implementation and release. Immutable law/security controls cannot be weakened by tenant Configuration.
 
@@ -111,18 +110,18 @@ Acceptance evidence should link **applicable reference → qualified obligation 
 
 | Purpose | Preferred or conditional option, source and licence |
 |---|---|
-| Public input validation | **[Zod](https://github.com/colinhacks/zod)** (MIT), preferred; [Ajv](https://github.com/ajv-validator/ajv) (MIT) *only* for JSON Schema/event interoperability |
-| PostgreSQL driver and queries | **[node-postgres (`pg`)](https://github.com/brianc/node-postgres)** (MIT), **[Kysely](https://github.com/kysely-org/kysely)** (MIT), preferred; [Drizzle ORM core](https://github.com/drizzle-team/drizzle-orm) (Apache-2.0) an *alternative*, not an additional required ORM |
-| Review-code generation | **[Nano ID](https://github.com/ai/nanoid)** (MIT) or Node Web Crypto for high-entropy opaque codes; [jose](https://github.com/panva/jose) (MIT) only where signed tokens are justified. Signed tokens still require durable replay/revocation control |
-| Safe text and abuse | [DOMPurify](https://github.com/cure53/DOMPurify) (Apache-2.0 OR MPL-2.0) if approved rich text/HTML is needed; otherwise prefer safe plain text and reuse Content Security. [rate-limiter-flexible](https://github.com/animir/node-rate-limiter-flexible) (ISC), conditional where host limiter is insufficient |
-| Optional Nuxt GUI | [VueUse](https://github.com/vueuse/vueuse) (MIT); [vee-validate](https://github.com/logaretm/vee-validate) (MIT) for complex forms; [TanStack Query](https://github.com/TanStack/query) (MIT) only if built-in `useFetch/useAsyncData` is inadequate |
-| Acceptance | [Vitest](https://github.com/vitest-dev/vitest) (MIT) and [Playwright](https://github.com/microsoft/playwright) (Apache-2.0) through established CI |
+| Public input validation | **[Zod](../../../RESOURCES.md#ref-1e3efac4)** (MIT), preferred; [Ajv](../../../RESOURCES.md#ref-a164796d) (MIT) *only* for JSON Schema/event interoperability |
+| PostgreSQL driver and queries | **[node-postgres (`pg`)](../../../RESOURCES.md#ref-be910869)** (MIT), **[Kysely](../../../RESOURCES.md#ref-af839a5b)** (MIT), preferred; [Drizzle ORM core](../../../RESOURCES.md#ref-03cb5387) (Apache-2.0) an *alternative*, not an additional required ORM |
+| Review-code generation | **[Nano ID](../../../RESOURCES.md#ref-affc7039)** (MIT) or Node Web Crypto for high-entropy opaque codes; [jose](../../../RESOURCES.md#ref-1841a1db) (MIT) only where signed tokens are justified. Signed tokens still require durable replay/revocation control |
+| Safe text and abuse | [DOMPurify](../../../RESOURCES.md#ref-975d5876) (Apache-2.0 OR MPL-2.0) if approved rich text/HTML is needed; otherwise prefer safe plain text and reuse Content Security. [rate-limiter-flexible](../../../RESOURCES.md#ref-99f82842) (ISC), conditional where host limiter is insufficient |
+| Optional Nuxt GUI | [VueUse](../../../RESOURCES.md#ref-9507482e) (MIT); [vee-validate](../../../RESOURCES.md#ref-bd5a7590) (MIT) for complex forms; [TanStack Query](../../../RESOURCES.md#ref-51cb5e45) (MIT) only if built-in `useFetch/useAsyncData` is inadequate |
+| Acceptance | [Vitest](../../../RESOURCES.md#ref-c28ef17c) (MIT) and [Playwright](../../../RESOURCES.md#ref-12180955) (Apache-2.0) through established CI |
 
 No required Redis/Valkey, Elasticsearch/OpenSearch, Neo4j, hosted review SaaS, independent event broker or undisclosed enterprise-only feature. PostgreSQL holds the review store, own outbox and bounded aggregates. Search owns search indexing; Workflow/Scheduler own orchestration; Message Queue owns event delivery; Integrations owns external review adapters. Avoid separate AI sentiment/fraud scoring engines before explainable, governed evidence and human review exist.
 
 ## Optional GUI and host composition — REV-G01
 
-**Owner-approved conceptual presentation:** the representative [application-test-template](https://github.com/nuxt-layers-test/application-test-template) offers `/` home, `/admin` test dashboard, collapsible responsive capability sidebar, and a Theme Manager link to `/theme-manager`. A derived host can add **Capabilities → Reviews**, pointing to its proposed `/reviews` dashboard, plus an optional Reviews tile on `/admin`. All listed paths are **illustrative**, not shipped exports. The reference host's **Not signed in** placeholder and Theme Manager's unauthenticated local **test** mode are **not production authorisation**.
+**Owner-approved conceptual presentation:** the representative [application-test-template](../../../RESOURCES.md#ref-f1f7cc47) offers `/` home, `/admin` test dashboard, collapsible responsive capability sidebar, and a Theme Manager link to `/theme-manager`. A derived host can add **Capabilities → Reviews**, pointing to its proposed `/reviews` dashboard, plus an optional Reviews tile on `/admin`. All listed paths are **illustrative**, not shipped exports. The reference host's **Not signed in** placeholder and Theme Manager's unauthenticated local **test** mode are **not production authorisation**.
 
 | Screen/entry point | Audience and public-contract behaviour |
 |---|---|

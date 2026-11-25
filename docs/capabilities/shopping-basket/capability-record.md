@@ -2,7 +2,7 @@
 
 **Identity:** `shopping-basket` · **Classification:** Domain capability (conceptual candidate).  
 **Decision:** SB-01–SB-08 and the subsequent public-contract, standards, open-source, Error Normalisation/Logging/Audit/Reporting and GUI recommendations **owner-approved on 23 November 2026**. **Conceptual design complete**; implementation, independent acceptance, legal compliance, release and merge **not verified**.  
-**Authority:** Accepted [Architecture Rules](https://github.com/nuxt-layers/architecture-rules), [Capability Standard](../../capability-standard.md), ADR-0002, ADR-0008, ADR-0009, ADR-0012 and applicable privacy/policy ADRs. This record is a **planned conceptual contract**, not the published root `CONTRACT.md` of an implementation.  
+**Authority:** Accepted [Architecture Rules](../../../RESOURCES.md#ref-6d4a7ae1), [Capability Standard](../../capability-standard.md), ADR-0002, ADR-0008, ADR-0009, ADR-0012 and applicable privacy/policy ADRs. This record is a **planned conceptual contract**, not the published root `CONTRACT.md` of an implementation.  
 **Review:** Initial concept merged in PR #140; approved refinements maintained in draft PR #141. Governing baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`. Refer to version control for evolution, not separate competing specifications.
 
 ## 1. Purpose, ownership and release scope
@@ -102,15 +102,15 @@ These guide **conceptual design** and later independent assessment; citing them 
 
 | Source | Shopping Basket design relevance |
 |---|---|
-| [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/) AA and conditionally [EN 301 549](https://www.etsi.org/) | Accessible basket edit, guest merge, recovery, errors, focus and responsive operator/customer pages; confirm deployment-specific law and edition |
-| [OWASP ASVS 5.0](https://asvs.owasp.org/) L2 baseline/L3 risk-based; [ISO/IEC 27001](https://www.iso.org/standard/27001) and [ISO/IEC 27701](https://www.iso.org/standard/27701) | Security and privacy management guidance, tenant isolation, proof/cookie controls, minimisation and accountable operations |
-| [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) and [ISO 4217](https://www.iso.org/) | Source-qualified expiry/instant and currency identifiers; defer actual semantics to Clock/Pricing |
-| [IETF RFC 9110](https://www.rfc-editor.org/rfc/rfc9110) and [RFC 9457](https://www.rfc-editor.org/rfc/rfc9457) | HTTP request semantics and safe problem details **if** an HTTP adapter is published |
-| [GS1](https://ref.gs1.org/standards/) / GTIN / Digital Link | Conditional Product/Marketplace-controlled merchandise identifiers; Basket preserves references, not authoritative identifiers |
-| [PCI DSS](https://www.pcisecuritystandards.org/standards/pci-dss/) and [W3C WebAuthn](https://www.w3.org/TR/webauthn-3/) | Conditional payment-card boundary and phishing-resistant Authentication integration; Basket owns neither card handling nor credentials |
-| [UK GDPR / Data Protection Act 2018](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/) and [PECR/ICO storage guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/) | Lawful purposes, rights, basket history, justified retention, guest cookies and necessary/consent-dependent technologies; **30/90 days are not legal requirements** |
-| [Consumer Contracts Regulations 2013](https://www.legislation.gov.uk/uksi/2013/3134/contents), [Consumer Rights Act 2015](https://www.legislation.gov.uk/ukpga/2015/15/contents), [DMCC Act 2024/CMA](https://www.gov.uk/government/publications/unfair-commercial-practices-cma207/unfair-commercial-practices) | Correct pre-contract disclosures, item/charge changes, price clarity and non-misleading checkout; Shop presents, Pricing calculates, Order accepts and Legal Compliance qualifies duties |
-| [Equality Act 2010](https://www.legislation.gov.uk/ukpga/2010/15/contents) | Accessibility and applicable reasonable-adjustment duties alongside platform WCAG baseline |
+| [W3C WCAG 2.2](../../../RESOURCES.md#ref-0d1f555e) AA and conditionally [EN 301 549](../../../RESOURCES.md#ref-19a33201) | Accessible basket edit, guest merge, recovery, errors, focus and responsive operator/customer pages; confirm deployment-specific law and edition |
+| [OWASP ASVS 5.0](../../../RESOURCES.md#ref-a1c367d2) L2 baseline/L3 risk-based; [ISO/IEC 27001](../../../RESOURCES.md#ref-42fa42bb) and [ISO/IEC 27701](../../../RESOURCES.md#ref-b948c1e2) | Security and privacy management guidance, tenant isolation, proof/cookie controls, minimisation and accountable operations |
+| [ISO 8601](../../../RESOURCES.md#ref-8bda6c42) and [ISO 4217](../../../RESOURCES.md#ref-262af923) | Source-qualified expiry/instant and currency identifiers; defer actual semantics to Clock/Pricing |
+| [IETF RFC 9110](../../../RESOURCES.md#ref-5a7fc9e7) and [RFC 9457](../../../RESOURCES.md#ref-7754416d) | HTTP request semantics and safe problem details **if** an HTTP adapter is published |
+| [GS1](../../../RESOURCES.md#ref-1bbbdbc6) / GTIN / Digital Link | Conditional Product/Marketplace-controlled merchandise identifiers; Basket preserves references, not authoritative identifiers |
+| [PCI DSS](../../../RESOURCES.md#ref-3cb45b85) and [W3C WebAuthn](../../../RESOURCES.md#ref-389dc62a) | Conditional payment-card boundary and phishing-resistant Authentication integration; Basket owns neither card handling nor credentials |
+| [UK GDPR / Data Protection Act 2018](../../../RESOURCES.md#ref-f4808d92) and [PECR/ICO storage guidance](../../../RESOURCES.md#ref-9cfff74f) | Lawful purposes, rights, basket history, justified retention, guest cookies and necessary/consent-dependent technologies; **30/90 days are not legal requirements** |
+| [Consumer Contracts Regulations 2013](../../../RESOURCES.md#ref-5ffaf50f), [Consumer Rights Act 2015](../../../RESOURCES.md#ref-2e48fac8), [DMCC Act 2024/CMA](../../../RESOURCES.md#ref-f4839874) | Correct pre-contract disclosures, item/charge changes, price clarity and non-misleading checkout; Shop presents, Pricing calculates, Order accepts and Legal Compliance qualifies duties |
+| [Equality Act 2010](../../../RESOURCES.md#ref-517049ab) | Accessibility and applicable reasonable-adjustment duties alongside platform WCAG baseline |
 
 Applicable EU/other national consumer, privacy, accessibility and trade rules depend on selling jurisdiction, customer, activity and effective date. The host declares market context; Legal Compliance supplies qualified rules, not a hard-coded universal basket statute.
 
@@ -120,18 +120,18 @@ Applicable EU/other national consumer, privacy, accessibility and trade rules de
 
 | Candidate | Licence | Decision |
 |---|---|---|
-| [PostgreSQL](https://www.postgresql.org/about/licence/) + [node-postgres / `pg`](https://github.com/brianc/node-postgres) | PostgreSQL Licence + MIT | **Preferred core:** reuse existing infrastructure/ADR-0012 `pg` pool for schema, atomic revisions, retention and outbox |
-| [Zod](https://github.com/colinhacks/zod) | MIT | **Preferred** runtime validation of public commands, configuration and sources |
-| [Kysely](https://github.com/kysely-org/kysely) | MIT | **Optional**, only if typed SQL materially improves maintainability over parameterised `pg` |
-| [Vitest](https://github.com/vitest-dev/vitest) / [Playwright](https://github.com/microsoft/playwright) | MIT / Apache-2.0 | **Reuse** platform unit/contract and browser acceptance tooling; verify browser binary redistribution terms |
-| [fast-check](https://github.com/dubzzz/fast-check) | MIT | **Optional recommended dev tool** for property-based revisions, merges, replay and seller split |
-| [OpenTelemetry JS](https://github.com/open-telemetry/opentelemetry-js) / [H3](https://github.com/unjs/h3) | Apache-2.0 / MIT | **Conditional** through shared Observability or existing Nuxt/Nitro adapter; no duplicate monitoring or HTTP framework |
+| [PostgreSQL](../../../RESOURCES.md#ref-fa79609e) + [node-postgres / `pg`](../../../RESOURCES.md#ref-be910869) | PostgreSQL Licence + MIT | **Preferred core:** reuse existing infrastructure/ADR-0012 `pg` pool for schema, atomic revisions, retention and outbox |
+| [Zod](../../../RESOURCES.md#ref-1e3efac4) | MIT | **Preferred** runtime validation of public commands, configuration and sources |
+| [Kysely](../../../RESOURCES.md#ref-af839a5b) | MIT | **Optional**, only if typed SQL materially improves maintainability over parameterised `pg` |
+| [Vitest](../../../RESOURCES.md#ref-c28ef17c) / [Playwright](../../../RESOURCES.md#ref-12180955) | MIT / Apache-2.0 | **Reuse** platform unit/contract and browser acceptance tooling; verify browser binary redistribution terms |
+| [fast-check](../../../RESOURCES.md#ref-ca191d3a) | MIT | **Optional recommended dev tool** for property-based revisions, merges, replay and seller split |
+| [OpenTelemetry JS](../../../RESOURCES.md#ref-8e380f73) / [H3](../../../RESOURCES.md#ref-21adf099) | Apache-2.0 / MIT | **Conditional** through shared Observability or existing Nuxt/Nitro adapter; no duplicate monitoring or HTTP framework |
 
 Avoid Redis, Elasticsearch, Neo4j, full external commerce engines and additional basket database, queue, search, monetary-calculation, date or workflow service solely for Basket. Reuse the platform's existing IAM, Clock, Scheduler, Message Queue, Integrations, UI, Localisation and Theme Manager public surfaces. No fixed versions are selected here.
 
 ## 9. Presentation and navigation
 
-**Headless first, optional reusable screens.** The host owns route paths, branding, permissions, menu entries and the public storefront; Basket screens/components use **only public Basket/owner contracts**. Verified reference: [`nuxt-layers-test/application-test-template`](https://github.com/nuxt-layers-test/application-test-template) has an `/` homepage, `/admin` test dashboard/card, collapsible mobile **Capabilities** sidebar with **Theme Manager → `/theme-manager`**, appearance controls and an intentionally unauthenticated `Not signed in` placeholder. Its test-mode Theme Manager endpoints **must never be treated as production access control**.
+**Headless first, optional reusable screens.** The host owns route paths, branding, permissions, menu entries and the public storefront; Basket screens/components use **only public Basket/owner contracts**. Verified reference: [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#ref-f1f7cc47) has an `/` homepage, `/admin` test dashboard/card, collapsible mobile **Capabilities** sidebar with **Theme Manager → `/theme-manager`**, appearance controls and an intentionally unauthenticated `Not signed in` placeholder. Its test-mode Theme Manager endpoints **must never be treated as production access control**.
 
 **Recommended acceptance host navigation:** **Capabilities → Shopping Basket** and an `/admin` launch card to the optional admin/test dashboard; example `/shopping-basket` or `/admin/shopping-basket`. Shop instead displays a separate customer basket/cart link, example `/shop/basket`. **These are illustrative, host-configurable routes, not published or mandatory endpoints.** Hiding a menu never substitutes for server-side access control. Optional `presentation: false` disables contributed screens while retaining the full headless contract.
 

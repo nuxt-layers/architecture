@@ -1652,3 +1652,311 @@ Imported design citations are retained here for provenance. External availabilit
 ### ref-bc717cde
 
 [W3C WCAG 2.2 AA](https://www.w3.org/TR/wcag22/) — imported reference; verification pending.
+
+### ref-cbe31bfd
+
+[ISO 15489-1:2016](https://committee.iso.org/sites/tc46sc11/home/projects/published/iso-15489-records-management.html) — imported reference; verification pending.
+
+### ref-0260c838
+
+[ISO 16175-1:2020](https://committee.iso.org/sites/tc46sc11/home/projects/published/records-systems-design-and-requi.html) — imported reference; verification pending.
+
+### ref-54a09287
+
+[IETF RFC 9901](https://datatracker.ietf.org/doc/rfc9901/) — imported reference; verification pending.
+
+### ref-e70dbec3
+
+[Google review snippet guidance](https://developers.google.com/search/docs/appearance/structured-data/review-snippet) — imported reference; verification pending.
+
+### ref-b214f716
+
+[EU eIDAS as amended by Regulation (EU) 2024/1183](https://ec.europa.eu/digital-building-blocks/sites/pages/viewpage.action?pageId=915932148) — imported reference; verification pending.
+
+### ref-4e03dcef
+
+[EU age-verification blueprint](https://ec.europa.eu/digital-building-blocks/sites/pages/viewpage.action?pageId=930451135) — imported reference; verification pending.
+
+### ref-d5b5ce71
+
+[EU Directive 2003/88/EC](https://eur-lex.europa.eu/eli/dir/2003/88/oj/eng) — imported reference; verification pending.
+
+### ref-204c0f81
+
+[Digital Content Directive 2019/770](https://eur-lex.europa.eu/eli/dir/2019/770/oj) — imported reference; verification pending.
+
+### ref-64a0157c
+
+[Consumer Rights Directive 2011/83/EU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083) — imported reference; verification pending.
+
+### ref-bbe12301
+
+[FullCalendar](https://fullcalendar.io/license) — imported reference; verification pending.
+
+### ref-affc7039
+
+[Nano ID](https://github.com/ai/nanoid) — imported reference; verification pending.
+
+### ref-99f82842
+
+[rate-limiter-flexible](https://github.com/animir/node-rate-limiter-flexible) — imported reference; verification pending.
+
+### ref-50a9f435
+
+[Apache Arrow JS Apache-2.0](https://github.com/apache/arrow-js) — imported reference; verification pending.
+
+### ref-995938e7
+
+[Apache-2.0](https://github.com/apache/superset) — imported reference; verification pending.
+
+### ref-54c6128e
+
+[Chart.js](https://github.com/chartjs/Chart.js) — imported reference; verification pending.
+
+### ref-869a7671
+
+[decentralized-identity/veramo](https://github.com/decentralized-identity/veramo) — imported reference; verification pending.
+
+### ref-5a2f744a
+
+[MIT](https://github.com/duckdb/duckdb) — imported reference; verification pending.
+
+### ref-e4419c3b
+
+[JSON Forms](https://github.com/eclipsesource/jsonforms) — imported reference; verification pending.
+
+### ref-6a49fbae
+
+[PDFKit](https://github.com/foliojs/pdfkit) — imported reference; verification pending.
+
+### ref-5404073e
+
+[jStat](https://github.com/jstat/jstat) — imported reference; verification pending.
+
+### ref-5f5b30fe
+
+[Valibot](https://github.com/open-circle/valibot) — imported reference; verification pending.
+
+### ref-40727472
+
+[openwallet-foundation-labs/identity-common-ts](https://github.com/openwallet-foundation-labs/identity-common-ts) — imported reference; verification pending.
+
+### ref-d11f656b
+
+[openwallet-foundation-labs/mdoc-ts](https://github.com/openwallet-foundation-labs/mdoc-ts) — imported reference; verification pending.
+
+### ref-419a0c6b
+
+[oauth4webapi](https://github.com/panva/oauth4webapi) — imported reference; verification pending.
+
+### ref-7d8342de
+
+[simple-statistics](https://github.com/simple-statistics/simple-statistics) — imported reference; verification pending.
+
+### ref-e7023281
+
+[SortableJS](https://github.com/SortableJS/Sortable) — imported reference; verification pending.
+
+### ref-04362b5f
+
+[Sphereon OID4VC](https://github.com/Sphereon-Opensource/OID4VC) — imported reference; verification pending.
+
+### ref-21adf099
+
+[H3](https://github.com/unjs/h3) — imported reference; verification pending.
+
+### ref-12355446
+
+[Reka UI](https://github.com/unovue/reka-ui) — imported reference; verification pending.
+
+### ref-f1b942ab
+
+[Arquero BSD-3](https://github.com/uwdata/arquero) — imported reference; verification pending.
+
+### ref-89e960d9
+
+[Vega-Lite BSD-3](https://github.com/vega/vega-lite) — imported reference; verification pending.
+
+### ref-4266aecd
+
+[Vue Datepicker](https://github.com/Vuepic/vue-datepicker) — imported reference; verification pending.
+
+### ref-14347dfe
+
+[`@zxing/browser`](https://github.com/zxing-js/browser) — imported reference; verification pending.
+
+### ref-fd11603d
+
+[`@zxing/library`](https://github.com/zxing-js/library) — imported reference; verification pending.
+
+### ref-eca8d5ee
+
+[UK GDPR / ICO privacy by design](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default) — imported reference; verification pending.
+
+### ref-3056c706
+
+[ICO workplace monitoring](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/monitoring-workers/) — imported reference; verification pending.
+
+### ref-bf472f50
+
+[ICO transparency](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-be-informed/) — imported reference; verification pending.
+
+### ref-eba7d5b7
+
+[JSON Schema 2020-12](https://json-schema.org/draft/2020-12) — imported reference; verification pending.
+
+### ref-8665fc5e
+
+[ILO NORMLEX](https://normlex.ilo.org/) — imported reference; verification pending.
+
+### ref-83f0e8eb
+
+[OpenID4VC HAIP 1.0](https://openid.net/specs/openid4vc-high-assurance-interoperability-profile-1_0-final.html) — imported reference; verification pending.
+
+### ref-85fea736
+
+[PDF/UA](https://pdfa.org/pdf-standards/) — imported reference; verification pending.
+
+### ref-573c4eea
+
+[Schema.org Review](https://schema.org/Review) — imported reference; verification pending.
+
+### ref-5c332c57
+
+[OpenAPI](https://spec.openapis.org/oas/) — imported reference; verification pending.
+
+### ref-e6b991a3
+
+[OpenAPI 3.1.1](https://spec.openapis.org/oas/v3.1.1.html) — imported reference; verification pending.
+
+### ref-4e72a703
+
+[Acas](https://www.acas.org.uk/working-time-rules) — imported reference; verification pending.
+
+### ref-0b3f1644
+
+[official CAC measures](https://www.cac.gov.cn/2025-05/23/c_1749711107835487.htm) — imported reference; verification pending.
+
+### ref-992b2fc2
+
+[US FLSA/29 CFR Part 516](https://www.dol.gov/general/topic/workhours/hoursrecordkeeping) — imported reference; verification pending.
+
+### ref-19a33201
+
+[EN 301 549](https://www.etsi.org/) — imported reference; verification pending.
+
+### ref-aa9c2495
+
+[ETSI TS 119 461](https://www.etsi.org/standards) — imported reference; verification pending.
+
+### ref-ad11aaa1
+
+[CMA fake reviews guidance](https://www.gov.uk/government/publications/fake-reviews) — imported reference; verification pending.
+
+### ref-076cb1fd
+
+[GPG 45 v1.0](https://www.gov.uk/government/publications/how-to-check-someones-identity-1-0) — imported reference; verification pending.
+
+### ref-5391a4ef
+
+[government subscription guidance](https://www.gov.uk/government/publications/subscription-contracts) — imported reference; verification pending.
+
+### ref-4e7751af
+
+[UK Digital Verification Services Trust Framework 1.0](https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0) — imported reference; verification pending.
+
+### ref-f4839874
+
+[DMCC Act 2024/CMA](https://www.gov.uk/government/publications/unfair-commercial-practices-cma207/unfair-commercial-practices) — imported reference; verification pending.
+
+### ref-614b3b8a
+
+[16 CFR Part 465](https://www.govinfo.gov/content/pkg/CFR-2025-title16-vol1/xhtml/CFR-2025-title16-vol1-part465.html) — imported reference; verification pending.
+
+### ref-c0c6fe85
+
+[ISO 30414](https://www.iso.org/standard/30414) — imported reference; verification pending.
+
+### ref-35a58970
+
+[ISO/IEC 25012](https://www.iso.org/standard/35736.html) — imported reference; verification pending.
+
+### ref-273d2272
+
+[25024](https://www.iso.org/standard/35749.html) — imported reference; verification pending.
+
+### ref-6c90b51f
+
+[ISO 45001](https://www.iso.org/standard/45001) — imported reference; verification pending.
+
+### ref-58f59639
+
+[ISO/IEC TS 29003:2018](https://www.iso.org/standard/62290.html) — imported reference; verification pending.
+
+### ref-69c33b8f
+
+[ISO 20488:2018](https://www.iso.org/standard/68193.html) — imported reference; verification pending.
+
+### ref-99ba669d
+
+[ISO/IEC 18013-5:2021](https://www.iso.org/standard/69084.html) — imported reference; verification pending.
+
+### ref-453a05ff
+
+[ISO/IEC 30107-3:2023](https://www.iso.org/standard/79520.html) — imported reference; verification pending.
+
+### ref-5974714b
+
+[draft 2026 implementing regulations](https://www.legislation.gov.uk/ukdsi/2026/9780348287912/data.html) — imported reference; verification pending.
+
+### ref-517049ab
+
+[Equality Act 2010](https://www.legislation.gov.uk/ukpga/2010/15/contents) — imported reference; verification pending.
+
+### ref-de55a252
+
+[Digital Markets, Competition and Consumers Act 2024, Part 4 Chapter 2](https://www.legislation.gov.uk/ukpga/2024/13/part/4/chapter/2/enacted) — imported reference; verification pending.
+
+### ref-38005802
+
+[UK Working Time Regulations](https://www.legislation.gov.uk/uksi/1998/1833/contents) — imported reference; verification pending.
+
+### ref-5ffaf50f
+
+[Consumer Contracts Regulations 2013](https://www.legislation.gov.uk/uksi/2013/3134/contents) — imported reference; verification pending.
+
+### ref-9c3f04c4
+
+[OMG DMN 1.6](https://www.omg.org/spec/DMN/1.6) — imported reference; verification pending.
+
+### ref-d6226711
+
+[RFC 10051](https://www.rfc-editor.org/rfc/rfc10051) — imported reference; verification pending.
+
+### ref-3519482a
+
+[RFC 3339](https://www.rfc-editor.org/rfc/rfc3339) — imported reference; verification pending.
+
+### ref-65b641d1
+
+[IETF RFC 5545](https://www.rfc-editor.org/rfc/rfc5545) — imported reference; verification pending.
+
+### ref-65b0873b
+
+[RFC 9253](https://www.rfc-editor.org/rfc/rfc9253) — imported reference; verification pending.
+
+### ref-0ad4fc7e
+
+[RFC 9557](https://www.rfc-editor.org/rfc/rfc9557) — imported reference; verification pending.
+
+### ref-f6e15c97
+
+[CSVW](https://www.w3.org/TR/tabular-metadata/) — imported reference; verification pending.
+
+### ref-389dc62a
+
+[W3C WebAuthn](https://www.w3.org/TR/webauthn-3/) — imported reference; verification pending.
+
+### ref-f076dce5
+
+[ARIA APG](https://www.w3.org/WAI/ARIA/apg/) — imported reference; verification pending.

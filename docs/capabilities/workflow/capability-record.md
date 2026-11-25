@@ -1,6 +1,6 @@
 # Workflow — conceptual capability specification
 
-**Capability:** `workflow` · **Class:** Platform · **Status:** owner-approved conceptual direction (WF-01–08, 23 November 2026); no verified implementation contract or acceptance evidence. **Review:** draft PR #150. Accepted [architecture-rules](https://github.com/nuxt-layers/architecture-rules) ADRs and the normative Capability Standard take precedence over this non-normative blueprint.
+**Capability:** `workflow` · **Class:** Platform · **Status:** owner-approved conceptual direction (WF-01–08, 23 November 2026); no verified implementation contract or acceptance evidence. **Review:** draft PR #150. Accepted [architecture-rules](../../../RESOURCES.md#ref-6d4a7ae1) ADRs and the normative Capability Standard take precedence over this non-normative blueprint.
 
 ## 1. Purpose and authoritative boundary
 
@@ -107,7 +107,7 @@ Workflow stores minimal participant references, reasons, evidence metadata and l
 
 ## 7. Optional GUI and host presentation
 
-A usable headless service is **essential**; the graphical interface is **optional**. The actual [application-test-template](https://github.com/nuxt-layers-test/application-test-template) shows the intended pattern: host-owned `app/app.vue` sidebar under **Capabilities**, shared top bar/Appearance, `/admin` test cards, and a capability-owned page displayed through `<NuxtPage />`. Theme Manager appears at `/theme-manager`; a derived Workflow test application would add **Approvals** → `/workflow`, while the host retains its shell and menu.
+A usable headless service is **essential**; the graphical interface is **optional**. The actual [application-test-template](../../../RESOURCES.md#ref-f1f7cc47) shows the intended pattern: host-owned `app/app.vue` sidebar under **Capabilities**, shared top bar/Appearance, `/admin` test cards, and a capability-owned page displayed through `<NuxtPage />`. Theme Manager appears at `/theme-manager`; a derived Workflow test application would add **Approvals** → `/workflow`, while the host retains its shell and menu.
 
 | Conceptual route | Screen and core actions | Audience |
 |---|---|---|
@@ -125,19 +125,19 @@ WCAG 2.2 AA, accessible semantics/keyboard navigation, focus and error summaries
 
 ## 8. Standards and open-source library guidance
 
-**Standards (design references, not automatic certification):** [OMG BPMN 2.0.2 / ISO/IEC 19510](https://www.omg.org/spec/BPMN/2.0.2) for human steps/gateways without taking Process ownership; [OMG DMN 1.6](https://www.omg.org/spec/DMN/1.6) for explainable rule decisions; OASIS WS-HumanTask 1.1/BPEL4People 1.1 for human worklists and delegation (not mandatory legacy protocols); ISO/IEC 27001:2022, 27002:2022 and 27701:2025 for security/privacy; ISO 15489-1:2016 for record provenance and retention; ISO 37301:2021 and ISO 9001 for organisational process governance. Apply [OWASP ASVS 5](https://asvs.owasp.org/), relevant NIST SP 800-53 access/audit controls and SP 800-63-4 assurance guidance; [WCAG 2.2 AA](https://www.w3.org/TR/WCAG22/), WAI-ARIA 1.2 and ATAG 2.0 where the GUI edits routes. UK GDPR/Data Protection Act 2018, UK/EU eIDAS, Electronic Communications Act 2000 and ETSI EN 319 401 apply **only when the relevant data, jurisdiction, signature/trust service and transaction call for them**. A Workflow vote is **not automatically a legally valid electronic signature**; Legal Compliance and specialist providers establish that claim. Sector requirements require separate review.
+**Standards (design references, not automatic certification):** [OMG BPMN 2.0.2 / ISO/IEC 19510](../../../RESOURCES.md#ref-c5383867) for human steps/gateways without taking Process ownership; [OMG DMN 1.6](../../../RESOURCES.md#ref-9c3f04c4) for explainable rule decisions; OASIS WS-HumanTask 1.1/BPEL4People 1.1 for human worklists and delegation (not mandatory legacy protocols); ISO/IEC 27001:2022, 27002:2022 and 27701:2025 for security/privacy; ISO 15489-1:2016 for record provenance and retention; ISO 37301:2021 and ISO 9001 for organisational process governance. Apply [OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2), relevant NIST SP 800-53 access/audit controls and SP 800-63-4 assurance guidance; [WCAG 2.2 AA](../../../RESOURCES.md#ref-0d1f555e), WAI-ARIA 1.2 and ATAG 2.0 where the GUI edits routes. UK GDPR/Data Protection Act 2018, UK/EU eIDAS, Electronic Communications Act 2000 and ETSI EN 319 401 apply **only when the relevant data, jurisdiction, signature/trust service and transaction call for them**. A Workflow vote is **not automatically a legally valid electronic signature**; Legal Compliance and specialist providers establish that claim. Sector requirements require separate review.
 
 **Library admission rule:** prefer complete, current, publicly available code under commercially permissive MIT/Apache-2.0/ISC/PostgreSQL-type licences, including all functionality needed in production; reject hidden paid features, intentionally lagging open-core releases and proprietary design/runtime obligations. Evaluate source, release provenance, transitive licences/SBOM, security and the Node 26/TypeScript 6 support matrix before choosing exact versions.
 
 | Candidate | Use and recommendation |
 |---|---|
-| [XState v5](https://github.com/statelyai/xstate) (MIT) | Preferred evaluation for deterministic case/route transitions; commercial Stately tools are not required. |
-| [json-rules-engine](https://github.com/CacheControl/json-rules-engine) (ISC) | Optional rule evaluator when configured conditions justify it; bound and validate expressions, do not replace Authorisation. |
-| [Ajv](https://github.com/ajv-validator/ajv) (MIT) | Preferred route/contract JSON Schema validation; [Zod](https://github.com/colinhacks/zod) or [Valibot](https://github.com/open-circle/valibot) (MIT) are alternatives, not an automatic second stack. |
-| [node-postgres / pg](https://github.com/brianc/node-postgres) (MIT), optional [Kysely](https://github.com/kysely-org/kysely) (MIT) | Host-passed PostgreSQL pool, capability-owned schema/outbox. |
-| [OpenTelemetry JS](https://github.com/open-telemetry/opentelemetry-js) (Apache-2.0); [fast-check](https://github.com/dubzzz/fast-check) (MIT) | Optional shared Observability instrumentation and property-based CI acceptance. |
-| [JSON Forms](https://github.com/eclipsesource/jsonforms) (MIT) | Optional Vue-capable route form rendering, subject to accessibility and design-token checks. |
-| [Temporal Server/SDK](https://github.com/temporalio/temporal) (MIT) | Optional **only through Temporal Gateway**; [PGMQ](https://github.com/pgmq/pgmq) belongs with Message Queue, and [pg-boss](https://github.com/timgit/pg-boss) with Scheduler, not directly in Workflow. |
+| [XState v5](../../../RESOURCES.md#ref-2318841b) (MIT) | Preferred evaluation for deterministic case/route transitions; commercial Stately tools are not required. |
+| [json-rules-engine](../../../RESOURCES.md#ref-801e24d6) (ISC) | Optional rule evaluator when configured conditions justify it; bound and validate expressions, do not replace Authorisation. |
+| [Ajv](../../../RESOURCES.md#ref-a164796d) (MIT) | Preferred route/contract JSON Schema validation; [Zod](../../../RESOURCES.md#ref-1e3efac4) or [Valibot](../../../RESOURCES.md#ref-5f5b30fe) (MIT) are alternatives, not an automatic second stack. |
+| [node-postgres / pg](../../../RESOURCES.md#ref-be910869) (MIT), optional [Kysely](../../../RESOURCES.md#ref-af839a5b) (MIT) | Host-passed PostgreSQL pool, capability-owned schema/outbox. |
+| [OpenTelemetry JS](../../../RESOURCES.md#ref-8e380f73) (Apache-2.0); [fast-check](../../../RESOURCES.md#ref-ca191d3a) (MIT) | Optional shared Observability instrumentation and property-based CI acceptance. |
+| [JSON Forms](../../../RESOURCES.md#ref-e4419c3b) (MIT) | Optional Vue-capable route form rendering, subject to accessibility and design-token checks. |
+| [Temporal Server/SDK](../../../RESOURCES.md#ref-77f2db20) (MIT) | Optional **only through Temporal Gateway**; [PGMQ](../../../RESOURCES.md#ref-c40afaea) belongs with Message Queue, and [pg-boss](../../../RESOURCES.md#ref-fc345c0f) with Scheduler, not directly in Workflow. |
 
 Avoid mandatory bpmn-js/dmn-js editor watermark terms, commercial/open-core additions (including Graphile Worker Pro and BullMQ Pro), Redis requirements and a second generic workflow engine. **These are evaluation candidates, not adopted dependencies**, and no local tests or implementation changes have occurred.
 

@@ -4,8 +4,8 @@
 **Proposed package:** `@nuxt-layers/file-library` (not implemented or published)  
 **Implementation classification:** Stateless, framework-independent library; **not** an independently stateful capability or Nuxt Layer.  
 **Status:** Owner-approved conceptual requirement and naming, 21 November 2026. No repository, published code, `CONTRACT.md`, acceptance tests or releases are asserted.  
-**Review:** [Location draft PR #98](https://github.com/nuxt-layers/architecture-blueprint-review/pull/98).  
-**Authority:** [Capability Standard](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/capability-standard.md), [ADR-0011](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/decisions/ADR-0011-shared-rich-text-and-configurable-copy.md), [ADR-0012](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/decisions/ADR-0012-trivial-composition.md), [ADR-0016](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/decisions/ADR-0016-controlled-layer-specialisation-and-composition.md), and retired Document decision (former review: document directory removal 2026 11 17). This blueprint record is non-normative until the required governing adoption.
+**Review:** Location draft PR #98.  
+**Authority:** [Capability Standard](../../capability-standard.md), [ADR-0011](../../decisions/ADR-0011-shared-rich-text-and-configurable-copy.md), [ADR-0012](../../decisions/ADR-0012-trivial-composition.md), [ADR-0016](../../decisions/ADR-0016-controlled-layer-specialisation-and-composition.md), and retired Document decision (former review: document directory removal 2026 11 17). This blueprint record is non-normative until the required governing adoption.
 
 ## Purpose
 

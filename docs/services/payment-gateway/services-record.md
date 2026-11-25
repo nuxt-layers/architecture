@@ -121,14 +121,14 @@ These are **public-contract exchanges**, not necessarily mandatory package impor
 
 | Standard/source | Design application |
 |---|---|
-| [PCI DSS v4.0.1](https://www.pcisecuritystandards.org/document_library/?class=pcidss&doc=pci_dss), [PCI Secure Software](https://www.pcisecuritystandards.org/standards/secure-software/) | Assess cardholder environment/provider responsibilities, security, payment-page integrity; Software Standard only if applicable |
-| [EMVCo 3-D Secure](https://www.emvco.com/emv-technologies/3-d-secure/), [Payment Tokenisation](https://www.emvco.com/emv-technologies/payment-tokenisation/) | Provider-mediated authentication, challenge evidence and tokenised references |
-| [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html), [ISO 20022](https://www.iso.org/standard/20022-1), [ISO 8583:2023](https://www.iso.org/standard/79451.html) | Correct currency/scale always; bank and direct card network messages only in applicable provider adapters |
-| [UK Payment Services Regulations 2017](https://www.legislation.gov.uk/uksi/2017/752/contents), [FCA SCA](https://www.fca.org.uk/firms/strong-customer-authentication) | Assess regulated role, SCA, exemptions and financial permissions for each merchant and rail |
-| [PSR / Pay.UK](https://www.psr.org.uk/), [UK Open Banking Standard](https://standards.openbanking.org.uk/api-specifications/latest/) | Conditional bank-transfer, reimbursement and approved payment-initiation requirements |
-| [ICO privacy by design](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default/), [ISO/IEC 27001](https://www.iso.org/standard/27001) | Privacy, governance and proportionate information-security controls; no claim of certification |
-| [OWASP ASVS 5](https://asvs.owasp.org/), [OpenID FAPI 2.0](https://openid.net/specs/fapi-security-profile-2_0-final.html), [IETF RFC 9457](https://www.rfc-editor.org/rfc/rfc9457) | Secure application baseline; optional high-assurance financial OAuth profile; safe HTTP error projection when HTTP is exposed |
-| [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/), [Payment Request](https://www.w3.org/TR/payment-request/), [Payment Handler](https://www.w3.org/TR/web-based-payment-handler/) | Accessible screens; browser payment drafts optional and **not** authoritative payment evidence; BCP 47/CLDR/ECMA-402 for localisation |
+| [PCI DSS v4.0.1](../../../RESOURCES.md#ref-a1ea0e98), [PCI Secure Software](../../../RESOURCES.md#ref-fce3c8df) | Assess cardholder environment/provider responsibilities, security, payment-page integrity; Software Standard only if applicable |
+| [EMVCo 3-D Secure](../../../RESOURCES.md#ref-c2950d2a), [Payment Tokenisation](../../../RESOURCES.md#ref-cde18d45) | Provider-mediated authentication, challenge evidence and tokenised references |
+| [ISO 4217](../../../RESOURCES.md#ref-e1f7a7d3), [ISO 20022](../../../RESOURCES.md#ref-6150761d), [ISO 8583:2023](../../../RESOURCES.md#ref-eb08ffb2) | Correct currency/scale always; bank and direct card network messages only in applicable provider adapters |
+| [UK Payment Services Regulations 2017](../../../RESOURCES.md#ref-23a0a60a), [FCA SCA](../../../RESOURCES.md#ref-26f2dc21) | Assess regulated role, SCA, exemptions and financial permissions for each merchant and rail |
+| [PSR / Pay.UK](../../../RESOURCES.md#ref-1aaf2ddd), [UK Open Banking Standard](../../../RESOURCES.md#ref-7eef8d31) | Conditional bank-transfer, reimbursement and approved payment-initiation requirements |
+| [ICO privacy by design](../../../RESOURCES.md#ref-4ec87ed3), [ISO/IEC 27001](../../../RESOURCES.md#ref-42fa42bb) | Privacy, governance and proportionate information-security controls; no claim of certification |
+| [OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2), [OpenID FAPI 2.0](../../../RESOURCES.md#ref-9cedeefb), [IETF RFC 9457](../../../RESOURCES.md#ref-7754416d) | Secure application baseline; optional high-assurance financial OAuth profile; safe HTTP error projection when HTTP is exposed |
+| [W3C WCAG 2.2](../../../RESOURCES.md#ref-0d1f555e), [Payment Request](../../../RESOURCES.md#ref-ea124a00), [Payment Handler](../../../RESOURCES.md#ref-790384d0) | Accessible screens; browser payment drafts optional and **not** authoritative payment evidence; BCP 47/CLDR/ECMA-402 for localisation |
 
 **Adoption policy:** mandatory law and provider/network contracts apply by scope; standards and draft W3C browser interfaces do not automatically impose an implementation dependency. Record actual rail, provider, merchant/jurisdiction, applicable version, control owner and qualified validation evidence before live operation.
 
@@ -138,14 +138,14 @@ The following are **approved candidate choices**, not installed or version-pinne
 
 | Candidate (source) | Licence | Intended use |
 |---|---|---|
-| [decimal.js](https://github.com/MikeMcl/decimal.js) | MIT | Preferred exact money arithmetic; [big.js](https://github.com/MikeMcl/big.js) (MIT) is a mutually exclusive smaller alternative |
-| [Zod](https://github.com/colinhacks/zod) | MIT | Preferred public input/config/provider adapter validation; [Ajv](https://github.com/ajv-validator/ajv) (MIT) only when JSON Schema interoperation genuinely needs it |
-| [node-postgres (`pg`)](https://github.com/brianc/node-postgres) | MIT | `pg`-compatible transactional persistence and durable outbox; host provides database connection |
-| [jose](https://github.com/panva/jose) | MIT | Conditional JOSE/JWS/JWK verification when required by provider; do not replace provider-specific signature rules |
-| [Undici](https://github.com/nodejs/undici) | MIT | Optional provider HTTP client; prefer built-in Node `fetch` if sufficient |
-| [Stripe Node](https://github.com/stripe/stripe-node), [Adyen Node](https://github.com/Adyen/adyen-node-api-library), [PayPal TypeScript](https://github.com/paypal/PayPal-TypeScript-Server-SDK), [Braintree Node](https://github.com/braintree/braintree_node) | MIT SDK code | **Conditional individual adapters only**, never shared core model. Processing services and provider-hosted scripts remain proprietary/fee-bearing; a permissive SDK is not a fully open-source payment-processing service |
-| [Temporal TypeScript SDK](https://github.com/temporalio/sdk-typescript), [pg-boss](https://github.com/timgit/pg-boss) | MIT | Reuse existing Temporal/Scheduler composition; pg-boss is only an alternative for a documented unmet need, not a second default queue |
-| [Pino](https://github.com/pinojs/pino), [OpenTelemetry JS](https://github.com/open-telemetry/opentelemetry-js) | MIT / Apache 2.0 | Use through Logging / Observability public contracts, without payment-sensitive attributes |
+| [decimal.js](../../../RESOURCES.md#ref-992a7688) | MIT | Preferred exact money arithmetic; [big.js](../../../RESOURCES.md#ref-fcbb731f) (MIT) is a mutually exclusive smaller alternative |
+| [Zod](../../../RESOURCES.md#ref-1e3efac4) | MIT | Preferred public input/config/provider adapter validation; [Ajv](../../../RESOURCES.md#ref-a164796d) (MIT) only when JSON Schema interoperation genuinely needs it |
+| [node-postgres (`pg`)](../../../RESOURCES.md#ref-be910869) | MIT | `pg`-compatible transactional persistence and durable outbox; host provides database connection |
+| [jose](../../../RESOURCES.md#ref-1841a1db) | MIT | Conditional JOSE/JWS/JWK verification when required by provider; do not replace provider-specific signature rules |
+| [Undici](../../../RESOURCES.md#ref-edd6cbb9) | MIT | Optional provider HTTP client; prefer built-in Node `fetch` if sufficient |
+| [Stripe Node](../../../RESOURCES.md#ref-cfa45325), [Adyen Node](../../../RESOURCES.md#ref-11522612), [PayPal TypeScript](../../../RESOURCES.md#ref-8d3327af), [Braintree Node](../../../RESOURCES.md#ref-1cda7aeb) | MIT SDK code | **Conditional individual adapters only**, never shared core model. Processing services and provider-hosted scripts remain proprietary/fee-bearing; a permissive SDK is not a fully open-source payment-processing service |
+| [Temporal TypeScript SDK](../../../RESOURCES.md#ref-83603142), [pg-boss](../../../RESOURCES.md#ref-fc345c0f) | MIT | Reuse existing Temporal/Scheduler composition; pg-boss is only an alternative for a documented unmet need, not a second default queue |
+| [Pino](../../../RESOURCES.md#ref-5f05d959), [OpenTelemetry JS](../../../RESOURCES.md#ref-8e380f73) | MIT / Apache 2.0 | Use through Logging / Observability public contracts, without payment-sensitive attributes |
 
 Avoid Redis/BullMQ solely for scheduled payment reconciliation, custom card-data vaults, unproven one-stop payment frameworks, and proprietary or open-core server requirements. A hosted provider UI (including MIT wrapper/loader packages) does not meet a requirement for **all** downstream hosted runtime code to be open source; its use requires separate informed PCI/provider decisions. No client library or gateway SDK may make the core depend on a named commercial payment service.
 

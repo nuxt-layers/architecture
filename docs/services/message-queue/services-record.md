@@ -4,7 +4,6 @@
 
 **Catalogue name:** `message-queue` · **Directory:** `docs/services/message-queue/` · **Classification:** Platform  
 **Conceptual status:** **Complete and owner-approved** (MQ-01–MQ-10, standards, permissive-library evaluation policy, cross-capability interfaces and optional operator GUI, 22 November 2026). **Design review:** PR #94; completed with explicit owner approval. Merge and deployment states are tracked by GitHub, not inferred here.  
-**Implementation status:** Unverified. `nuxt-layers/message-queue` has only a minimal README; no root `CONTRACT.md` was retrievable on 22 November 2026. No implemented API, deployment, contract version, operational health, security compliance or test result is asserted.  
 **Authority:** Accepted `architecture-rules` ADRs and [Capability Standard](../../capability-standard.md) take precedence. This is a non-normative design specification, not the implementation's published contract. Reconcile the latest `master` before merge.
 
 ## Purpose, authority and scope
@@ -93,7 +92,7 @@ These are **directional public contract relationships**, not direct package impo
 
 ## Optional GUI and presentation
 
-**Decision: optional operator-only presentation, headless by default.** The [application-test-template](https://github.com/nuxt-layers-test/application-test-template) README describes `/admin`, a collapsible **Capabilities** sidebar, and Theme Manager at `/theme-manager`; the host has a top-bar Appearance selector and a **Not signed in** placeholder, **not actual security**. Theme Manager's root [`CONTRACT.md`](https://github.com/nuxt-layers/theme-manager/blob/master/CONTRACT.md) documents semantic styling and pages but also flags incomplete ADR-0012 composition. This is a **representative local-only test pattern**, not proof MQ pages exist. Host owns routing/navigation; MQ owns its own public optional views/actions.
+**Decision: optional operator-only presentation, headless by default.** The [application-test-template](../../../RESOURCES.md#ref-f1f7cc47) README describes `/admin`, a collapsible **Capabilities** sidebar, and Theme Manager at `/theme-manager`; the host has a top-bar Appearance selector and a **Not signed in** placeholder, **not actual security**. Theme Manager's root [`CONTRACT.md`](../../../RESOURCES.md#ref-484ee610) documents semantic styling and pages but also flags incomplete ADR-0012 composition. This is a **representative local-only test pattern**, not proof MQ pages exist. Host owns routing/navigation; MQ owns its own public optional views/actions.
 
 **Navigation:** host **Capabilities → Message Queue** → conceptual `/message-queue` dashboard (path is illustrative, not a published route), with links to:
 
@@ -116,15 +115,15 @@ Standards are **design guidance within their actual scope**, not claimed certifi
 
 | Issuer / reference | Purpose and applicability |
 |---|---|
-| [ISO/IEC 19464:2014 / OASIS AMQP 1.0](https://www.iso.org/standard/64955.html) | Optional interoperable wire protocol for an AMQP 1.0 adapter; **not required** and distinct from AMQP 0-9-1 |
-| [ISO/IEC 27001:2022](https://www.iso.org/standard/27001), [27002:2022](https://www.iso.org/standard/75652.html) | Security management and technical control guidance: access, crypto, supplier and operations |
-| [ISO/IEC 27701:2025](https://www.iso.org/standard/27701), [ISO 22301:2019](https://www.iso.org/standard/75106.html) | Privacy management and business continuity/restoration controls |
-| [CNCF CloudEvents 1.0.2](https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md) | **Preferred** portable metadata/envelope mapping; event ownership, authorisation and delivery are separate |
-| [AsyncAPI 3.x](https://www.asyncapi.com/docs/reference/specification/v3.0.0) | **Preferred** machine-readable message/operation/schema contract complementing human-readable `CONTRACT.md` |
-| [W3C Trace Context](https://www.w3.org/TR/trace-context/), [OpenTelemetry messaging conventions](https://opentelemetry.io/docs/specs/semconv/messaging/messaging-spans/) | Correlation, traces, metrics and redacted diagnostics; external trace context is **not** trusted IAM |
-| [W3C WCAG 2.2 AA](https://www.w3.org/TR/WCAG22/), [IETF RFC 9457](https://www.rfc-editor.org/rfc/rfc9457.html) | Accessible optional UI; conditional HTTP Problem Details representation, not mandatory HTTP transport |
-| [UK NCSC Cloud Security Principles](https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles), [ICO security guidance](https://ico.org.uk/for-organisations/uk-GDPR-guidance-and-resources/security/a-guide-to-data-security/) | UK security and privacy guidance; applicable UK GDPR is **law**, not a technical specification |
-| [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final), [OWASP ASVS 5.0](https://asvs.owasp.org/) | Risk-based US control catalogue and specialist application verification; apply platform ASVS L2/L3 baseline |
+| [ISO/IEC 19464:2014 / OASIS AMQP 1.0](../../../RESOURCES.md#ref-4c835871) | Optional interoperable wire protocol for an AMQP 1.0 adapter; **not required** and distinct from AMQP 0-9-1 |
+| [ISO/IEC 27001:2022](../../../RESOURCES.md#ref-42fa42bb), [27002:2022](../../../RESOURCES.md#ref-d1765e3f) | Security management and technical control guidance: access, crypto, supplier and operations |
+| [ISO/IEC 27701:2025](../../../RESOURCES.md#ref-b948c1e2), [ISO 22301:2019](../../../RESOURCES.md#ref-85e985cf) | Privacy management and business continuity/restoration controls |
+| [CNCF CloudEvents 1.0.2](../../../RESOURCES.md#ref-dc71931f) | **Preferred** portable metadata/envelope mapping; event ownership, authorisation and delivery are separate |
+| [AsyncAPI 3.x](../../../RESOURCES.md#ref-76d90ef6) | **Preferred** machine-readable message/operation/schema contract complementing human-readable `CONTRACT.md` |
+| [W3C Trace Context](../../../RESOURCES.md#ref-e45806bf), [OpenTelemetry messaging conventions](../../../RESOURCES.md#ref-78b1a8a5) | Correlation, traces, metrics and redacted diagnostics; external trace context is **not** trusted IAM |
+| [W3C WCAG 2.2 AA](../../../RESOURCES.md#ref-0d1f555e), [IETF RFC 9457](../../../RESOURCES.md#ref-f226fdcc) | Accessible optional UI; conditional HTTP Problem Details representation, not mandatory HTTP transport |
+| [UK NCSC Cloud Security Principles](../../../RESOURCES.md#ref-ca1f56e2), [ICO security guidance](../../../RESOURCES.md#ref-223a59b6) | UK security and privacy guidance; applicable UK GDPR is **law**, not a technical specification |
+| [NIST SP 800-53 Rev. 5](../../../RESOURCES.md#ref-5d98a8a6), [OWASP ASVS 5.0](../../../RESOURCES.md#ref-a1c367d2) | Risk-based US control catalogue and specialist application verification; apply platform ASVS L2/L3 baseline |
 
 **Traceability:** CloudEvents/AsyncAPI support MQ-01/02/04/10; ISO 22301 and NIST continuity inform MQ-03/08/09; ISO 2700x/27701, NCSC, ICO and ASVS inform MQ-05/07; W3C and OpenTelemetry inform MQ-06/10. Confirm editions during implementation. No AMQP or ISO certification requirement is introduced.
 
@@ -134,13 +133,13 @@ Standards are **design guidance within their actual scope**, not claimed certifi
 
 | Component / source | Licence | Approved disposition |
 |---|---|---|
-| [PGMQ](https://github.com/pgmq/pgmq) | PostgreSQL License | **Initial PostgreSQL queue candidate**: durable messages/visibility/acknowledgement/archive; MQ must still provide domain-neutral routing, fan-out, authorisation, checkpoint, dead-letter and operational semantics |
-| [pg-boss](https://github.com/timgit/pg-boss) | MIT | **Secondary PostgreSQL/Node comparison** for worker ergonomics; do not duplicate Scheduler or Workflow job authority |
-| [NATS JetStream](https://github.com/nats-io/nats-server) + [NATS.js](https://github.com/nats-io/nats.js) | Apache 2.0 | **Preferred independent dedicated-broker alternative** when real throughput/distribution needs justify it |
-| [Apache Kafka](https://github.com/apache/kafka), [Apache Pulsar](https://github.com/apache/pulsar) | Apache 2.0 | **Conditional large-scale alternatives**; defer unnecessary broker complexity |
-| [amqplib](https://github.com/amqp-node/amqplib) | MIT | Conditional Node client for **AMQP 0-9-1 only**, not AMQP 1.0, if that adapter is justified |
+| [PGMQ](../../../RESOURCES.md#ref-c40afaea) | PostgreSQL License | **Initial PostgreSQL queue candidate**: durable messages/visibility/acknowledgement/archive; MQ must still provide domain-neutral routing, fan-out, authorisation, checkpoint, dead-letter and operational semantics |
+| [pg-boss](../../../RESOURCES.md#ref-fc345c0f) | MIT | **Secondary PostgreSQL/Node comparison** for worker ergonomics; do not duplicate Scheduler or Workflow job authority |
+| [NATS JetStream](../../../RESOURCES.md#ref-e3dcd115) + [NATS.js](../../../RESOURCES.md#ref-b017e4a4) | Apache 2.0 | **Preferred independent dedicated-broker alternative** when real throughput/distribution needs justify it |
+| [Apache Kafka](../../../RESOURCES.md#ref-ba32d2a8), [Apache Pulsar](../../../RESOURCES.md#ref-fa776b67) | Apache 2.0 | **Conditional large-scale alternatives**; defer unnecessary broker complexity |
+| [amqplib](../../../RESOURCES.md#ref-51fa43fe) | MIT | Conditional Node client for **AMQP 0-9-1 only**, not AMQP 1.0, if that adapter is justified |
 
-**Excluded from the preferred strict shortlist:** RabbitMQ's community core is real MPL-2.0 open source but commercial editions have additional features and MPL is weak copyleft; Graphile Worker and BullMQ have MIT cores but optional paid Pro capabilities (BullMQ also ordinarily uses Redis-compatible storage). [Valkey](https://github.com/valkey-io/valkey) is genuinely BSD-3-Clause open source but adds an unnecessary stateful service for the PostgreSQL-first design. None is falsely labelled closed-source; the exclusion reflects the approved **complete required feature set, commercial permissiveness and operational simplicity** policy. Never depend on edition-exclusive HA/replay/security or closed control planes.
+**Excluded from the preferred strict shortlist:** RabbitMQ's community core is real MPL-2.0 open source but commercial editions have additional features and MPL is weak copyleft; Graphile Worker and BullMQ have MIT cores but optional paid Pro capabilities (BullMQ also ordinarily uses Redis-compatible storage). [Valkey](../../../RESOURCES.md#ref-b3ed39f7) is genuinely BSD-3-Clause open source but adds an unnecessary stateful service for the PostgreSQL-first design. None is falsely labelled closed-source; the exclusion reflects the approved **complete required feature set, commercial permissiveness and operational simplicity** policy. Never depend on edition-exclusive HA/replay/security or closed control planes.
 
 **Provider selection acceptance:** benchmark representative payload size, bursts, consumer fairness, lag, failure and recovery, PostgreSQL 18 compatibility, WAL/storage, cluster/worker operation, migration, backups and exact SDK/licence coverage. Do not assert performance or SLA from marketing/version claims. Hetzner VPS/Coolify and existing PostgreSQL are the deployment baseline; no new broker is required merely because it is available.
 

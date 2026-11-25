@@ -2404,3 +2404,491 @@ Imported design citations are retained here for provenance. External availabilit
 ### ref-54e6f5b0
 
 [APG](https://www.w3.org/WAI/ARIA/apg/about/introduction/) — imported reference; verification pending.
+
+### ref-08c52c06
+
+[CSA CCM 4.1](https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1) — imported reference; verification pending.
+
+### ref-e530b140
+
+[NIST SP 800-137](https://csrc.nist.gov/pubs/sp/800/137/final) — imported reference; verification pending.
+
+### ref-71d6aa98
+
+[NIST SP 800-209](https://csrc.nist.gov/pubs/sp/800/209/final) — imported reference; verification pending.
+
+### ref-ea606756
+
+[800-53](https://csrc.nist.gov/pubs/sp/800/53/rev-5/upd1/final) — imported reference; verification pending.
+
+### ref-e0cc09ca
+
+[800-92](https://csrc.nist.gov/pubs/sp/800/92/final) — imported reference; verification pending.
+
+### ref-269663c4
+
+[Google Search Central](https://developers.google.com/search/docs/essentials) — imported reference; verification pending.
+
+### ref-11522612
+
+[Adyen Node](https://github.com/Adyen/adyen-node-api-library) — imported reference; verification pending.
+
+### ref-51fa43fe
+
+[amqplib](https://github.com/amqp-node/amqplib) — imported reference; verification pending.
+
+### ref-ba32d2a8
+
+[Apache Kafka](https://github.com/apache/kafka) — imported reference; verification pending.
+
+### ref-c9b86bd5
+
+[Apache Ozone](https://github.com/apache/ozone) — imported reference; verification pending.
+
+### ref-fa776b67
+
+[Apache Pulsar](https://github.com/apache/pulsar) — imported reference; verification pending.
+
+### ref-d26c7ff2
+
+[Apache SkyWalking](https://github.com/apache/skywalking) — imported reference; verification pending.
+
+### ref-3a3c8cfe
+
+[Apache Solr](https://github.com/apache/solr) — imported reference; verification pending.
+
+### ref-4c3ccc5f
+
+[`@aws-sdk/client-s3` and `@aws-sdk/s3-request-presigner`](https://github.com/aws/aws-sdk-js-v3) — imported reference; verification pending.
+
+### ref-aff2a60c
+
+[`@aws-sdk/lib-storage`](https://github.com/aws/aws-sdk-js-v3/tree/main/lib/lib-storage) — imported reference; verification pending.
+
+### ref-1cda7aeb
+
+[Braintree Node](https://github.com/braintree/braintree_node) — imported reference; verification pending.
+
+### ref-f27c50a1
+
+[Caddy](https://github.com/caddyserver/caddy) — imported reference; verification pending.
+
+### ref-dc71931f
+
+[CNCF CloudEvents 1.0.2](https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md) — imported reference; verification pending.
+
+### ref-ab62c3cf
+
+[sitemap.js](https://github.com/ekalinin/sitemap.js) — imported reference; verification pending.
+
+### ref-35db7b08
+
+[FormatJS](https://github.com/formatjs/formatjs) — imported reference; verification pending.
+
+### ref-da16045e
+
+[schema-dts](https://github.com/google/schema-dts) — imported reference; verification pending.
+
+### ref-2b2ddfe6
+
+[Grafana](https://github.com/grafana/grafana) — imported reference; verification pending.
+
+### ref-d02585bd
+
+[Tempo](https://github.com/grafana/tempo) — imported reference; verification pending.
+
+### ref-1ce69cce
+
+[Graphile Worker](https://github.com/graphile/worker) — imported reference; verification pending.
+
+### ref-da234be8
+
+[nuxt-schema-org](https://github.com/harlan-zw/nuxt-schema-org) — imported reference; verification pending.
+
+### ref-a49dd971
+
+[`@nuxtjs/seo`](https://github.com/harlan-zw/nuxt-seo) — imported reference; verification pending.
+
+### ref-e8ea8aef
+
+[cron-parser](https://github.com/harrisiirak/cron-parser) — imported reference; verification pending.
+
+### ref-436c9335
+
+[Croner](https://github.com/Hexagon/croner) — imported reference; verification pending.
+
+### ref-7c78d301
+
+[parse5](https://github.com/inikulin/parse5) — imported reference; verification pending.
+
+### ref-217dc578
+
+[Jaeger](https://github.com/jaegertracing/jaeger) — imported reference; verification pending.
+
+### ref-5803e305
+
+[rrule](https://github.com/jkbrzt/rrule) — imported reference; verification pending.
+
+### ref-35d9d4b1
+
+[`tr46`](https://github.com/jsdom/tr46) — imported reference; verification pending.
+
+### ref-203214f1
+
+[MSW](https://github.com/mswjs/msw) — imported reference; verification pending.
+
+### ref-e3dcd115
+
+[NATS JetStream](https://github.com/nats-io/nats-server) — imported reference; verification pending.
+
+### ref-b017e4a4
+
+[NATS.js](https://github.com/nats-io/nats.js) — imported reference; verification pending.
+
+### ref-fa08cb9a
+
+[node-cron](https://github.com/node-cron/node-cron) — imported reference; verification pending.
+
+### ref-ba767e08
+
+[`nuxt-layers/site-hosting`](https://github.com/nuxt-layers/site-hosting) — imported reference; verification pending.
+
+### ref-a32b30e2
+
+[`nuxt-layers/storage/CONTRACT.md`](https://github.com/nuxt-layers/storage/blob/master/CONTRACT.md) — imported reference; verification pending.
+
+### ref-9c8f6e26
+
+[`@nuxtjs/robots`](https://github.com/nuxt-modules/robots) — imported reference; verification pending.
+
+### ref-8b56e466
+
+[`@nuxtjs/sitemap`](https://github.com/nuxt-modules/sitemap) — imported reference; verification pending.
+
+### ref-ea091f93
+
+[OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) — imported reference; verification pending.
+
+### ref-51c69737
+
+[Collector Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib) — imported reference; verification pending.
+
+### ref-edd7ef97
+
+[JS Contrib](https://github.com/open-telemetry/opentelemetry-js-contrib) — imported reference; verification pending.
+
+### ref-8d3327af
+
+[PayPal TypeScript](https://github.com/paypal/PayPal-TypeScript-Server-SDK) — imported reference; verification pending.
+
+### ref-b46ff366
+
+[PGroonga](https://github.com/pgroonga/pgroonga) — imported reference; verification pending.
+
+### ref-b4e20705
+
+[Prometheus Alertmanager](https://github.com/prometheus/alertmanager) — imported reference; verification pending.
+
+### ref-920c4404
+
+[Blackbox Exporter](https://github.com/prometheus/blackbox_exporter) — imported reference; verification pending.
+
+### ref-f8cc3d9c
+
+[Node Exporter](https://github.com/prometheus/node_exporter) — imported reference; verification pending.
+
+### ref-6b9758b0
+
+[Prometheus](https://github.com/prometheus/prometheus) — imported reference; verification pending.
+
+### ref-29ee9c92
+
+[Tantivy](https://github.com/quickwit-oss/tantivy) — imported reference; verification pending.
+
+### ref-879dab13
+
+[`tldts`](https://github.com/remusao/tldts) — imported reference; verification pending.
+
+### ref-1bd76faa
+
+[SeaweedFS](https://github.com/seaweedfs/seaweedfs) — imported reference; verification pending.
+
+### ref-69494d09
+
+[p-limit](https://github.com/sindresorhus/p-limit) — imported reference; verification pending.
+
+### ref-cfa45325
+
+[Stripe Node](https://github.com/stripe/stripe-node) — imported reference; verification pending.
+
+### ref-b407f18a
+
+[Traefik Proxy](https://github.com/traefik/traefik) — imported reference; verification pending.
+
+### ref-b3ed39f7
+
+[Valkey](https://github.com/valkey-io/valkey) — imported reference; verification pending.
+
+### ref-0040bd2f
+
+[web-push](https://github.com/web-push-libs/web-push) — imported reference; verification pending.
+
+### ref-1a833bc8
+
+[winkNLP](https://github.com/winkjs/wink-nlp) — imported reference; verification pending.
+
+### ref-82cafda8
+
+[WHATWG HTML](https://html.spec.whatwg.org/multipage/) — imported reference; verification pending.
+
+### ref-1ef72871
+
+[ICO UK GDPR principles](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/) — imported reference; verification pending.
+
+### ref-50823cb6
+
+[ICO data-security guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/a-guide-to-data-security/) — imported reference; verification pending.
+
+### ref-5dadc7d0
+
+[WHATWG Notifications](https://notifications.spec.whatwg.org/) — imported reference; verification pending.
+
+### ref-c969b641
+
+[Open Graph](https://ogp.me/) — imported reference; verification pending.
+
+### ref-9cedeefb
+
+[OpenID FAPI 2.0](https://openid.net/specs/fapi-security-profile-2_0-final.html) — imported reference; verification pending.
+
+### ref-8c05667e
+
+[OpenTelemetry](https://opentelemetry.io/docs/specs/otel/overview/) — imported reference; verification pending.
+
+### ref-d7676645
+
+[OpenTelemetry semantic conventions](https://opentelemetry.io/docs/specs/semconv/) — imported reference; verification pending.
+
+### ref-78b1a8a5
+
+[OpenTelemetry messaging conventions](https://opentelemetry.io/docs/specs/semconv/messaging/messaging-spans/) — imported reference; verification pending.
+
+### ref-5e93abcb
+
+[Google SRE monitoring guidance](https://sre.google/sre-book/monitoring-distributed-systems/) — imported reference; verification pending.
+
+### ref-7eef8d31
+
+[UK Open Banking Standard](https://standards.openbanking.org.uk/api-specifications/latest/) — imported reference; verification pending.
+
+### ref-021179e7
+
+[WHATWG URL](https://url.spec.whatwg.org/) — imported reference; verification pending.
+
+### ref-229d560d
+
+[Core Web Vitals](https://web.dev/articles/vitals) — imported reference; verification pending.
+
+### ref-76d90ef6
+
+[AsyncAPI 3.x](https://www.asyncapi.com/docs/reference/specification/v3.0.0) — imported reference; verification pending.
+
+### ref-37f342be
+
+[Bing](https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a) — imported reference; verification pending.
+
+### ref-cde18d45
+
+[Payment Tokenisation](https://www.emvco.com/emv-technologies/payment-tokenisation/) — imported reference; verification pending.
+
+### ref-caa40c51
+
+[ETSI EN 301 549](https://www.etsi.org/technologies/ict-accessibility) — imported reference; verification pending.
+
+### ref-5a0024a4
+
+[IANA time-zone database](https://www.iana.org/time-zones) — imported reference; verification pending.
+
+### ref-f4f8b700
+
+[IndexNow](https://www.indexnow.org/documentation) — imported reference; verification pending.
+
+### ref-6150761d
+
+[ISO 20022](https://www.iso.org/standard/20022-1) — imported reference; verification pending.
+
+### ref-3ffc7c99
+
+[27018:2025](https://www.iso.org/standard/27018) — imported reference; verification pending.
+
+### ref-4c835871
+
+[ISO/IEC 19464:2014 / OASIS AMQP 1.0](https://www.iso.org/standard/64955.html) — imported reference; verification pending.
+
+### ref-bf79b3b2
+
+[ISO 22313](https://www.iso.org/standard/75107.html) — imported reference; verification pending.
+
+### ref-eb08ffb2
+
+[ISO 8583:2023](https://www.iso.org/standard/79451.html) — imported reference; verification pending.
+
+### ref-e80bacde
+
+[ISO/IEC 27040:2024](https://www.iso.org/standard/80194.html) — imported reference; verification pending.
+
+### ref-23a0a60a
+
+[UK Payment Services Regulations 2017](https://www.legislation.gov.uk/uksi/2017/752/contents) — imported reference; verification pending.
+
+### ref-7ea0e60c
+
+[UK NCSC cloud audit/alert guidance](https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles/principle-13-audit-information-and-alerting-for-customers) — imported reference; verification pending.
+
+### ref-0eb55a83
+
+[UK NCSC](https://www.ncsc.gov.uk/guidance/introduction-logging-security-purposes) — imported reference; verification pending.
+
+### ref-375d555d
+
+[OASIS CAP 1.2](https://www.oasis-open.org/standard/cap/) — imported reference; verification pending.
+
+### ref-a1ea0e98
+
+[PCI DSS v4.0.1](https://www.pcisecuritystandards.org/document_library/?class=pcidss&doc=pci_dss) — imported reference; verification pending.
+
+### ref-fce3c8df
+
+[PCI Secure Software](https://www.pcisecuritystandards.org/standards/secure-software/) — imported reference; verification pending.
+
+### ref-9e6cf77c
+
+[PostgreSQL full-text search](https://www.postgresql.org/docs/current/textsearch.html) — imported reference; verification pending.
+
+### ref-1aaf2ddd
+
+[PSR / Pay.UK](https://www.psr.org.uk/) — imported reference; verification pending.
+
+### ref-9d75fa93
+
+[IETF BCP 47](https://www.rfc-editor.org/info/bcp47/) — imported reference; verification pending.
+
+### ref-f42f5514
+
+[RFC 5322](https://www.rfc-editor.org/info/rfc5322/) — imported reference; verification pending.
+
+### ref-f49deb57
+
+[RFC 5545](https://www.rfc-editor.org/info/rfc5545/) — imported reference; verification pending.
+
+### ref-6620842f
+
+[BCP 47](https://www.rfc-editor.org/info/rfc5646/) — imported reference; verification pending.
+
+### ref-b9a1b306
+
+[6376](https://www.rfc-editor.org/info/rfc6376/) — imported reference; verification pending.
+
+### ref-6cfd91a7
+
+[7208](https://www.rfc-editor.org/info/rfc7208/) — imported reference; verification pending.
+
+### ref-600abcac
+
+[7489](https://www.rfc-editor.org/info/rfc7489/) — imported reference; verification pending.
+
+### ref-a70c074d
+
+[RFC 8030](https://www.rfc-editor.org/info/rfc8030/) — imported reference; verification pending.
+
+### ref-34d79423
+
+[8058](https://www.rfc-editor.org/info/rfc8058/) — imported reference; verification pending.
+
+### ref-b4f08a24
+
+[8291](https://www.rfc-editor.org/info/rfc8291/) — imported reference; verification pending.
+
+### ref-d4f2fb1b
+
+[8292](https://www.rfc-editor.org/info/rfc8292/) — imported reference; verification pending.
+
+### ref-9347444a
+
+[RFC 9557](https://www.rfc-editor.org/info/rfc9557/) — imported reference; verification pending.
+
+### ref-fa03258e
+
+[RFC 9562](https://www.rfc-editor.org/info/rfc9562/) — imported reference; verification pending.
+
+### ref-1c93287e
+
+[RFC 1034](https://www.rfc-editor.org/rfc/rfc1034) — imported reference; verification pending.
+
+### ref-1d932a11
+
+[1035](https://www.rfc-editor.org/rfc/rfc1035) — imported reference; verification pending.
+
+### ref-0fd9b392
+
+[2181](https://www.rfc-editor.org/rfc/rfc2181) — imported reference; verification pending.
+
+### ref-b9ddc4d9
+
+[IETF RFC 3986](https://www.rfc-editor.org/rfc/rfc3986.html) — imported reference; verification pending.
+
+### ref-db921862
+
+[4033–4035](https://www.rfc-editor.org/rfc/rfc4033) — imported reference; verification pending.
+
+### ref-8f0b568c
+
+[5890–5892](https://www.rfc-editor.org/rfc/rfc5890) — imported reference; verification pending.
+
+### ref-65408751
+
+[7239](https://www.rfc-editor.org/rfc/rfc7239) — imported reference; verification pending.
+
+### ref-c53bb7e9
+
+[8555](https://www.rfc-editor.org/rfc/rfc8555) — imported reference; verification pending.
+
+### ref-bb29113c
+
+[8659](https://www.rfc-editor.org/rfc/rfc8659) — imported reference; verification pending.
+
+### ref-ba61cc61
+
+[RFC 8820](https://www.rfc-editor.org/rfc/rfc8820.html) — imported reference; verification pending.
+
+### ref-b67b8213
+
+[9111](https://www.rfc-editor.org/rfc/rfc9111.html) — imported reference; verification pending.
+
+### ref-959f05ca
+
+[IETF RFC 9309](https://www.rfc-editor.org/rfc/rfc9309.html) — imported reference; verification pending.
+
+### ref-08c3b037
+
+[9525](https://www.rfc-editor.org/rfc/rfc9525) — imported reference; verification pending.
+
+### ref-4e38ad63
+
+[RFC 9846](https://www.rfc-editor.org/rfc/rfc9846) — imported reference; verification pending.
+
+### ref-ce86e469
+
+[Sitemaps.org](https://www.sitemaps.org/protocol.html) — imported reference; verification pending.
+
+### ref-ea124a00
+
+[Payment Request](https://www.w3.org/TR/payment-request/) — imported reference; verification pending.
+
+### ref-9a875aab
+
+[W3C Push API](https://www.w3.org/TR/push-api/) — imported reference; verification pending.
+
+### ref-790384d0
+
+[Payment Handler](https://www.w3.org/TR/web-based-payment-handler/) — imported reference; verification pending.

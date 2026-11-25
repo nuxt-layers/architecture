@@ -104,7 +104,7 @@ Any optional GUI meets **WCAG 2.2 AA**, keyboard/focus and screen-reader status 
 
 **Approved principle (SCH-07):** headless core; separable optional administration screens. **Proposed implementation details**, not existing routes or SDK exports:
 
-The verified [`nuxt-layers-test/application-test-template` README](https://github.com/nuxt-layers-test/application-test-template/blob/master/README.md), [`app/app.vue`](https://github.com/nuxt-layers-test/application-test-template/blob/master/app/app.vue), [`app/pages/admin.vue`](https://github.com/nuxt-layers-test/application-test-template/blob/master/app/pages/admin.vue) and [`nuxt.config.ts`](https://github.com/nuxt-layers-test/application-test-template/blob/master/nuxt.config.ts) provide a shared responsive shell, collapsible **Capabilities** sidebar, Theme Manager link at `/theme-manager`, `/admin` dashboard and Appearance toolbar. A **derived Scheduler test app** adds the **Capabilities → Scheduler** link, optional dashboard card and pages. The suggested `/scheduler` route prefix is host-configurable and **not** a published registration API. No changes to the shared template, no extra navigation framework, and no headless dependence on Nuxt.
+The verified [`nuxt-layers-test/application-test-template` README](../../../RESOURCES.md#ref-8c941ad8), [`app/app.vue`](../../../RESOURCES.md#ref-a4ce9d0c), [`app/pages/admin.vue`](../../../RESOURCES.md#ref-96cb2d87) and [`nuxt.config.ts`](../../../RESOURCES.md#ref-68dbcd7d) provide a shared responsive shell, collapsible **Capabilities** sidebar, Theme Manager link at `/theme-manager`, `/admin` dashboard and Appearance toolbar. A **derived Scheduler test app** adds the **Capabilities → Scheduler** link, optional dashboard card and pages. The suggested `/scheduler` route prefix is host-configurable and **not** a published registration API. No changes to the shared template, no extra navigation framework, and no headless dependence on Nuxt.
 
 | Proposed screen | Public Scheduler read model | Protected action |
 |---|---|---|
@@ -122,14 +122,14 @@ Apply only the relevant parts of each standard. These are **owner-approved desig
 
 | Reference | Design impact / status |
 |---|---|
-| **[ISO 8601-1:2019](https://www.iso.org/standard/70907.html)**, [RFC 3339](https://www.rfc-editor.org/info/rfc3339/), [RFC 9557](https://www.rfc-editor.org/info/rfc9557/) | Unambiguous API instants and explicit time-zone information where needed |
-| **[IANA time-zone database](https://www.iana.org/time-zones)**, [RFC 5545](https://www.rfc-editor.org/info/rfc5545/) | Clock-owned zone/DST rules, recorded interpretation version, bounded optional recurrence grammar; **not** blanket iCalendar compatibility |
-| **[RFC 9562](https://www.rfc-editor.org/info/rfc9562/)** | Optional portable ID convention; occurrence/attempt distinction is mandatory regardless of UUID version |
-| **[OWASP ASVS 5](https://asvs.owasp.org/)**, [ISO/IEC 27001](https://www.iso.org/standard/27001), UK BS EN ISO/IEC 27001 adoption, [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) | Governing OWASP security baseline is mandatory; ISO/BS/NIST provide relevant access, audit, recovery and incident-control guidance, not automatic certification |
-| **[ISO 22301](https://www.iso.org/standard/75106.html)**, [ISO 22313](https://www.iso.org/standard/75107.html) | Business continuity, outage recovery, reconciling missed/uncertain work; no invented recovery SLA |
-| **[W3C WCAG 2.2](https://www.w3.org/TR/wcag/)**, [WAI-ARIA](https://www.w3.org/TR/wai-aria/), [W3C Trace Context](https://www.w3.org/TR/trace-context/) | WCAG 2.2 AA required for GUI; ARIA where useful; trace propagation as optional interoperable diagnostic convention |
-| **[OpenTelemetry semantic conventions](https://opentelemetry.io/docs/specs/semconv/)**, [CloudEvents](https://cloudevents.io/) | Optional portable telemetry/event envelope conventions, subject to Logging/MQ public contracts; no platform lock-in |
-| **UK GDPR and Data Protection Act 2018**, [UK NCSC cloud audit/alert guidance](https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles/principle-13-audit-information-and-alerting-for-customers) | Applicable privacy law constrains processing; NCSC guides customer-visible security logging, alerts and evidence. Privacy/Legal Compliance decide case-specific lawful basis and retention |
+| **[ISO 8601-1:2019](../../../RESOURCES.md#ref-bea40961)**, [RFC 3339](../../../RESOURCES.md#ref-9e9b8c6e), [RFC 9557](../../../RESOURCES.md#ref-9347444a) | Unambiguous API instants and explicit time-zone information where needed |
+| **[IANA time-zone database](../../../RESOURCES.md#ref-5a0024a4)**, [RFC 5545](../../../RESOURCES.md#ref-f49deb57) | Clock-owned zone/DST rules, recorded interpretation version, bounded optional recurrence grammar; **not** blanket iCalendar compatibility |
+| **[RFC 9562](../../../RESOURCES.md#ref-fa03258e)** | Optional portable ID convention; occurrence/attempt distinction is mandatory regardless of UUID version |
+| **[OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2)**, [ISO/IEC 27001](../../../RESOURCES.md#ref-42fa42bb), UK BS EN ISO/IEC 27001 adoption, [NIST SP 800-53 Rev. 5](../../../RESOURCES.md#ref-5d98a8a6) | Governing OWASP security baseline is mandatory; ISO/BS/NIST provide relevant access, audit, recovery and incident-control guidance, not automatic certification |
+| **[ISO 22301](../../../RESOURCES.md#ref-85e985cf)**, [ISO 22313](../../../RESOURCES.md#ref-bf79b3b2) | Business continuity, outage recovery, reconciling missed/uncertain work; no invented recovery SLA |
+| **[W3C WCAG 2.2](../../../RESOURCES.md#ref-eb11cf7e)**, [WAI-ARIA](../../../RESOURCES.md#ref-90f5e4b1), [W3C Trace Context](../../../RESOURCES.md#ref-e45806bf) | WCAG 2.2 AA required for GUI; ARIA where useful; trace propagation as optional interoperable diagnostic convention |
+| **[OpenTelemetry semantic conventions](../../../RESOURCES.md#ref-d7676645)**, [CloudEvents](../../../RESOURCES.md#ref-de31eb79) | Optional portable telemetry/event envelope conventions, subject to Logging/MQ public contracts; no platform lock-in |
+| **UK GDPR and Data Protection Act 2018**, [UK NCSC cloud audit/alert guidance](../../../RESOURCES.md#ref-7ea0e60c) | Applicable privacy law constrains processing; NCSC guides customer-visible security logging, alerts and evidence. Privacy/Legal Compliance decide case-specific lawful basis and retention |
 
 ## Fully open-source development libraries — LIB-SCH-01 approved
 
@@ -137,17 +137,17 @@ Apply only the relevant parts of each standard. These are **owner-approved desig
 
 | Candidate | Licence | Architectural use |
 |---|---|---|
-| **[pg-boss](https://github.com/timgit/pg-boss)** | MIT | **Preferred first evaluation** for durable PostgreSQL-backed execution, claims, retries and worker recovery; never expose its private schema in Scheduler's public contract |
-| **[node-postgres / pg](https://github.com/brianc/node-postgres)** | MIT | Reuse host PostgreSQL driver/pool for Scheduler-owned persistent records and outbox |
-| **[cron-parser](https://github.com/harrisiirak/cron-parser)** | MIT | Add **only if** pg-boss/approved Clock port cannot supply required separate cron rule grammar; one recurrence parser at most |
-| **[Croner](https://github.com/Hexagon/croner)** / [node-cron](https://github.com/node-cron/node-cron) | MIT / ISC | Alternative lightweight triggers/parsers, **not** durable multi-worker execution on their own |
-| **[rrule](https://github.com/jkbrzt/rrule)** | BSD-3-Clause | Optional RFC 5545 recurrence subset only when actually required |
-| **[pg_cron](https://github.com/citusdata/pg_cron)** | PostgreSQL Licence | Database maintenance tasks; do not create a competing Scheduler for capability handlers |
-| **[PGMQ](https://github.com/pgmq/pgmq)** | PostgreSQL Licence | Optional **Message Queue** transport implementation, not Scheduler's domain execution owner |
-| **[Temporal server](https://github.com/temporalio/temporal)** / [TypeScript SDK](https://github.com/temporalio/sdk-typescript) | MIT | Optional provider through Temporal Gateway, not compulsory to operate Scheduler |
-| **[Pino](https://github.com/pinojs/pino)** | MIT | Optional through Logging; do not create a second Scheduler logging subsystem |
+| **[pg-boss](../../../RESOURCES.md#ref-fc345c0f)** | MIT | **Preferred first evaluation** for durable PostgreSQL-backed execution, claims, retries and worker recovery; never expose its private schema in Scheduler's public contract |
+| **[node-postgres / pg](../../../RESOURCES.md#ref-be910869)** | MIT | Reuse host PostgreSQL driver/pool for Scheduler-owned persistent records and outbox |
+| **[cron-parser](../../../RESOURCES.md#ref-e8ea8aef)** | MIT | Add **only if** pg-boss/approved Clock port cannot supply required separate cron rule grammar; one recurrence parser at most |
+| **[Croner](../../../RESOURCES.md#ref-436c9335)** / [node-cron](../../../RESOURCES.md#ref-fa08cb9a) | MIT / ISC | Alternative lightweight triggers/parsers, **not** durable multi-worker execution on their own |
+| **[rrule](../../../RESOURCES.md#ref-5803e305)** | BSD-3-Clause | Optional RFC 5545 recurrence subset only when actually required |
+| **[pg_cron](../../../RESOURCES.md#ref-54c57554)** | PostgreSQL Licence | Database maintenance tasks; do not create a competing Scheduler for capability handlers |
+| **[PGMQ](../../../RESOURCES.md#ref-c40afaea)** | PostgreSQL Licence | Optional **Message Queue** transport implementation, not Scheduler's domain execution owner |
+| **[Temporal server](../../../RESOURCES.md#ref-77f2db20)** / [TypeScript SDK](../../../RESOURCES.md#ref-83603142) | MIT | Optional provider through Temporal Gateway, not compulsory to operate Scheduler |
+| **[Pino](../../../RESOURCES.md#ref-5f05d959)** | MIT | Optional through Logging; do not create a second Scheduler logging subsystem |
 
-Do **not** select [Graphile Worker](https://github.com/graphile/worker) under the owner's stricter preference because, although its community worker is genuinely MIT-licensed, separately sponsored Worker Pro code is not equally open. Do not add Redis/BullMQ solely for Scheduler or pick SSPL, source-restricted, mandatory cloud-only or commercially restricted products. This is an owner-specific selection rule, not an assertion that every excluded community core violates open-source definitions. Prefer the smallest set: **pg-boss + existing pg + Clock**, with one optional parser and optional Temporal Gateway.
+Do **not** select [Graphile Worker](../../../RESOURCES.md#ref-1ce69cce) under the owner's stricter preference because, although its community worker is genuinely MIT-licensed, separately sponsored Worker Pro code is not equally open. Do not add Redis/BullMQ solely for Scheduler or pick SSPL, source-restricted, mandatory cloud-only or commercially restricted products. This is an owner-specific selection rule, not an assertion that every excluded community core violates open-source definitions. Prefer the smallest set: **pg-boss + existing pg + Clock**, with one optional parser and optional Temporal Gateway.
 
 **Implementation acceptance:** verify exact release-tag source/licences and notices, maintenance/advisories, Node 26 and PostgreSQL 18 compatibility, claimed lease/fencing/crash/duplicate/unknown behaviour, DST via Clock, tenant separation, migrations, alert routing, resource consumption and the ADR-0012 minimal consumer. CI or the user performs builds/tests, not this conceptual review.
 

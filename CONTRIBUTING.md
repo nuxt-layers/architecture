@@ -67,6 +67,6 @@ If implementation exposes a genuine conceptual deficiency or incompatible govern
 
 Treat AI-generated code as untrusted until reviewed and verified. Do not claim audits, conformance, production readiness or independent review without evidence. Report limitations and known risks; never expose credentials or sensitive data to AI tools or commit them to source control. Follow [SECURITY.md](SECURITY.md).
 
-Participating repositories display a concise AI-driven development notice near the top of their README, linking to this [development protocol](https://github.com/nuxt-layers/architecture/blob/master/CONTRIBUTING.md). Identify independent test harnesses as consumer verification projects. This methodology does not change licence or contributor obligations.
+Participating repositories display a concise AI-driven development notice near the top of their README, linking to this development protocol (`nuxt-layers/architecture`, root `CONTRIBUTING.md`). Identify independent test harnesses as consumer verification projects. This methodology does not change licence or contributor obligations.
 
 The objective is secure, maintainable, standards-compliant software demonstrated through reproducible implementation and acceptance evidence, not through the development method alone.

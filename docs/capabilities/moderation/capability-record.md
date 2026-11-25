@@ -1,18 +1,13 @@
 # Moderation — canonical conceptual capability specification
 
 **Capability:** `moderation` · **Classification:** owner-approved Platform concept · **Conceptual status:** complete, including MOD-D1–MOD-D6, standards, library criteria, cross-cutting contracts and optional GUI. **Implementation:** not verified.  
-**Authority checked:** governing `architecture-rules/master@d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint `master@dc9c0763f4ea1e45b5bba90d48e12917d4907072` (22 November 2026). Reconciliation carries forward accepted changes on that baseline.  
-**Review:** [PR #96](https://github.com/nuxt-layers/architecture-blueprint-review/pull/96). **Conceptual evidence:** [moderation report](capability-report.md), online safety review (former review: online safety content governance), identity/age assurance review (former review: identity age eligibility assurance).
+**Authority:** Accepted governing ADRs and standards.
 
 ## Purpose and boundary
 
 Moderation provides the **independent cross-domain case, investigation, decision, appeal and enforcement-reconciliation lifecycle** for reported content or conduct. It owns cases, not the underlying comments, documents, images, listings, groups, scoreboards or remote Node data. Content Security owns detector verdicts; Legal Compliance owns legally qualified duties; Privacy owns processing constraints; Audit owns accepted evidence custody. Source capabilities own their resource state and actually enforce or reverse restrictions. A source-native emergency hold must never depend on Moderation being available.
 
 Safeguarding and identity/age/representation evidence are purpose-limited claims from their authoritative providers; Moderation may use them in a case but does not prove identity or age. Gaming is a catalogue/launch/accepted-score portal, **not a gameplay engine**; individual game layers retain gameplay and original results. Course owns learning content and withdrawal, not moderation findings or learner grades. Federation owns peer exchange; Search owns derived indexes; Hub is an application composition, not a universal content owner. Localisation supplies translation and language-quality signals but never lifts a safety restriction; translated case explanations remain privacy-scoped. Media's currently approved scope includes images, PDF and limited text/CSV/Markdown resources; each applicable source keeps type- and revision-specific content safeguards.
-
-## Evidence and implementation status
-
-No separate `nuxt-layers/moderation` implementation or published root `CONTRACT.md` was verified. These are **idealised business contracts**, not deployed APIs. Earlier conceptual review decisions remain represented in the authoritative boundaries and current sections below; overlapping historical notes remain available in Git and linked review records.
 
 ## Classification, authority and native operation
 
@@ -219,4 +214,9 @@ Under approved Publisher PUB-01/PUB-P02, Moderation owns cases, appeal conclusio
 
 ## Reciprocal conceptual interface — Reviews (23 November 2026)
 
-**Status: Reviews REV-D01–REV-D08 owner-approved conceptually on 23 November 2026 in [draft PR #130](https://github.com/nuxt-layers/architecture-blueprint-review/pull/130); not a published implementation contract or governing adoption.** [Reviews](../reviews/capability-record.md) owns review/rating, verification assessment, subject-reply, visibility and aggregate state. Moderation owns independent cross-domain report/case, investigation, finding, appeal and enforcement *request*; it may receive minimal review/reply reference, source revision, policy and restricted evidence pointers, and return qualified case decisions/action requests. Reviews must independently authorise and apply its own withholding/restoration action, reporting accepted/completed/refused/pending/unknown outcome and source revision; no case closure or request implies removal. Preserve private reporter/reviewer disclosures, emergency source holds, replay-safe receipts and host-composed acyclic public contracts.
+**Status: Reviews REV-D01–REV-D08 owner-approved conceptually on 23 November 2026 in draft PR #130 (historical review); not a published implementation contract or governing adoption.** [Reviews](../reviews/capability-record.md) owns review/rating, verification assessment, subject-reply, visibility and aggregate state. Moderation owns independent cross-domain report/case, investigation, finding, appeal and enforcement *request*; it may receive minimal review/reply reference, source revision, policy and restricted evidence pointers, and return qualified case decisions/action requests. Reviews must independently authorise and apply its own withholding/restoration action, reporting accepted/completed/refused/pending/unknown outcome and source revision; no case closure or request implies removal. Preserve private reporter/reviewer disclosures, emergency source holds, replay-safe receipts and host-composed acyclic public contracts.
+
+
+## Retained cross-domain safeguards
+
+Private communications require a distinct end-to-end encryption threat model; user-initiated reporting, blocking and optional local filters may be considered without mandatory universal plaintext scanning. Do not assume closed groups are legally exempt. Marketplace retains seller eligibility, listing suspension and participation; Payment Gateway retains payment evidence. Do not assume smart-contract escrow or universal KYC is a UK Online Safety Act mandate. Source-specific emergency holds must work without waiting for a Moderation case. Measure applicable coverage, exposure duration, triage/enforcement latency, appeals, reversals, backlog ageing, evidence gaps and cross-Hub withdrawal with qualified denominators and scope. Regulator-facing disclosure requires verified applicability and independent disclosure authorisation.

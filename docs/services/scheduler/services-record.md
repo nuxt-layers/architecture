@@ -2,8 +2,7 @@
 
 **Artefact classification:** Technical service (CLS-09, approved 24 November 2026). **Prior governing/review classification:** Platform capability (`scheduler`).  
 **Conceptual status:** Complete and owner-approved, 23 November 2026 (SCH-01–SCH-08, operating defaults, administrator alerts, external standards mapping, LIB-SCH-01 evaluation direction, four-way diagnostics/evidence/reporting cooperation and optional GUI).  
-**Implementation:** Not verified. The root `CONTRACT.md` of `nuxt-layers/scheduler` was not available during this review. No runtime interface, library installation or test result is asserted.  
-**Review PR:** [#131](https://github.com/nuxt-layers/architecture-blueprint-review/pull/131), documentation only; **draft, unmerged**. The governing `architecture-rules` and its accepted ADRs prevail over this conceptual record.
+**Authority:** Approved conceptual design; accepted governing ADRs and standards prevail.
 
 ## Purpose, ownership and exclusions
 
@@ -11,9 +10,9 @@ Scheduler reliably **plans and coordinates when capability-owned background work
 
 The **originating capability** owns its handler, business eligibility, current source revision, authorisation at execution, idempotency of side effects and final business outcome. A scheduled trigger or worker acknowledgement is **not** proof of a domain transaction, sent notification, successful charge or completed workflow. Scheduler is not human **Task** management, Calendar, Events, Workflow, Message Queue, Notifications, Audit, Reporting or a general-purpose business-rules engine. No arbitrary user-supplied scripts or private cross-capability table access.
 
-Scheduler is a framework-independent, provider-neutral, **headless** Platform capability with an optional Nuxt administrative presentation. Its own persistent state remains authoritative even if a worker or execution adapter changes. Use the modular-monolith default; the host provides infrastructure and composes public ports.
+Scheduler is a framework-independent, provider-neutral, **headless** technical service with an optional Nuxt administrative presentation. Its own persistent state remains authoritative even if a worker or execution adapter changes. Use the modular-monolith default; the host provides infrastructure and composes public ports.
 
-**Governing compatibility:** Accepted [ADR-0012](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/decisions/ADR-0012-trivial-composition.md) already defines `tasks: { name, every, run }[]` and the one-operation, 50-line Nuxt-host composition budget. This record **does not change** that shared shape. One-off and zoned calendar schedules, control commands and operational queries are separate versioned Scheduler public interfaces, to be aligned with future implementation contracts. Accepted [ADR-0015](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/decisions/ADR-0015-infrastructure-integration-libraries.md) treats Temporal Gateway as an infrastructure integration **library**, not Scheduler's policy owner.
+**Governing compatibility:** Accepted [ADR-0012](../../decisions/ADR-0012-trivial-composition.md) already defines `tasks: { name, every, run }[]` and the one-operation, 50-line Nuxt-host composition budget. This record **does not change** that shared shape. One-off and zoned calendar schedules, control commands and operational queries are separate versioned Scheduler public interfaces, to be aligned with future implementation contracts. Accepted [ADR-0015](../../decisions/ADR-0015-infrastructure-integration-libraries.md) treats Temporal Gateway as an infrastructure integration **library**, not Scheduler's policy owner.
 
 ## Native lifecycle and approved operating rules
 
@@ -72,7 +71,7 @@ The following are **approved conceptual inputs and outputs**, not verified names
 | **Infrastructure / Temporal Gateway** | Host-provisioned storage, worker claims and optional technical provider | Portable execution/recovery intentions; gateway is an adapter library, never source of schedule policy |
 | **Error Normalisation / Logging / Audit / Observability / Reporting** | Safe error projections, qualified diagnostic/evidence receipts, monitored/reporting consumption | Separate purpose-limited error, diagnostics, accountable evidence, metrics and reporting source models; detail below |
 
-For a deadline, Scheduler supplies an **attempt**, not a right to execute an expired operation. No private imports, cross-capability write authority or dependency cycles are implied. Reporting [PR #129](https://github.com/nuxt-layers/architecture-blueprint-review/pull/129) has merged into blueprint master, and its canonical public relationship is reconciled on this branch. [Task PR #138](https://github.com/nuxt-layers/architecture-blueprint-review/pull/138) and [Temporal Gateway PR #139](https://github.com/nuxt-layers/architecture-blueprint-review/pull/139) remain separate concurrent drafts requiring reconciliation before merge.
+For a deadline, Scheduler supplies an **attempt**, not a right to execute an expired operation. No private imports, cross-capability write authority or dependency cycles are implied.
 
 ### Error Normalisation, Logging, Audit and Reporting
 
@@ -170,15 +169,9 @@ Do **not** select [Graphile Worker](https://github.com/graphile/worker) under th
 | Scheduler presentation omitted | Supported headless execution continues; Nuxt host's 50-line composition and public exports remain the eventual acceptance constraints |
 | Scheduler optional GUI enabled in test host | Host-owned Capabilities → Scheduler sidebar/dashboard; permissions, incident actions, accessibility and as-of/unknown displays verified by user/CI, not presumed from test-mode sign-in |
 
-## Approval, remaining evidence and merge gate
+## Implementation acceptance requirements
 
-**Conceptually approved:** SCH-01–SCH-08; five default policies for retries, missed work, DST interpretation, uncertain recovery and purpose/hold-based retention; actionable notifications to administrators with **specific current remedial authority**; the four Error Normalisation/Logging/Audit/Reporting public relationships; external standards references; LIB-SCH-01 open-source evaluation approach; headless Scheduler plus optional host-sidebar administration pattern. Operational parameters such as concurrency, lease duration, retention floors and provider limits must be validated by future implementation; no contradictory fixed service-level claim is made.
-
-**Not verified:** exact exported `CONTRACT.md`, actual provider semantics and licence pins, storage register, Nuxt presentation route/exports, compatibility with workers/Clock and other consumer contracts, production IAM and notification delivery, CI, protected-branch checks and implementation acceptance. The implementation repository exists but its root contract was not retrievable during review. Future adoption must validate live versions and code without assuming this document is executable evidence.
-
-**Parallel/master reconciliation:** Check accepted governance at latest `architecture-rules/master`, current blueprint `master`, new merged/parallel work including Task #138 and Temporal Gateway #139, the newly merged Reporting #129, all reciprocal records, catalogue/register and missing cross-capability links. Resolve branch divergence/conflicts without overwriting independently approved neighbour designs. The working [PR #131](https://github.com/nuxt-layers/architecture-blueprint-review/pull/131) remains documentation-only and **must not merge without separate explicit permission**, fresh current-master technical/architectural and CI/branch-policy checks and protected squash workflow.
-
-**Completion judgement:** **Scheduler conceptual design complete and ready for owner final document acceptance**, subject to this PR's current-master reconciliation and confirmation that the documentation alone contains no unapproved implementation claims. **Not implementation-ready, CI-accepted or merge-authorised.**
+SCH-01–SCH-08 and the approved operating defaults, administrator alerts, cooperation boundaries and optional presentation apply. Validate concurrency, lease duration, retention floors and provider limits during implementation. Establish the actual public contract, provider semantics and licence compatibility, applicable storage register, presentation exports, worker/Clock and other consumer compatibility, production IAM, notification delivery and independent acceptance under the development protocol. Conceptual approval does not establish operational readiness.
 
 ## Storage reciprocal interface — 23 November 2026 (STO-01–07 owner-approved concept, PR #136)
 
@@ -186,11 +179,11 @@ Storage provides named backup and usage maintenance tasks via the published ADR-
 
 ## Task conceptual review — reciprocal public boundary (23 November 2026)
 
-**Status: Task TASK-01–08 and operating safeguards owner-approved conceptually 23 November 2026 in [draft PR #138](https://github.com/nuxt-layers/architecture-blueprint-review/pull/138); TASK-09–14 extensions are now owner-approved conceptually (23 November 2026), not implemented or a completed review of scheduler.** [Task canonical conceptual contract](../../capabilities/task/capability-record.md). Scheduler may run due reminder/escalation triggers for Task through an idempotent public handler with task ID/revision, due/actual time and correlation. Task alone owns human assignment, deadline context, overdue projection and work progress. Late/duplicate executions do not complete/reopen a task. ADR-0012 scheduled `tasks` port remains a distinct background handler concept. Task PR #138 now establishes conceptually approved self-reported versus verified work states and source-withdrawal history; Scheduler retries/reminders must never fabricate verification, change the accountable assignee or undo completed evidence. Preserve prior approvals and provisional neighbouring work; reconcile overlaps against latest master before merging.
+**Status: Task TASK-01–08 and operating safeguards owner-approved conceptually 23 November 2026 in draft PR #138 (historical review); TASK-09–14 extensions are now owner-approved conceptually (23 November 2026), not implemented or a completed review of scheduler.** [Task canonical conceptual contract](../../capabilities/task/capability-record.md). Scheduler may run due reminder/escalation triggers for Task through an idempotent public handler with task ID/revision, due/actual time and correlation. Task alone owns human assignment, deadline context, overdue projection and work progress. Late/duplicate executions do not complete/reopen a task. ADR-0012 scheduled `tasks` port remains a distinct background handler concept. Task PR #138 now establishes conceptually approved self-reported versus verified work states and source-withdrawal history; Scheduler retries/reminders must never fabricate verification, change the accountable assignee or undo completed evidence. Preserve prior approvals and provisional neighbouring work; reconcile overlaps against latest master before merging.
 
 ## Temporal Gateway infrastructure integration reciprocal note — 23 November 2026
 
-**Status: TG-01–TG-05 owner-approved conceptual technical boundary under accepted ADR-0015 (23 November 2026); not a completed review of this neighbouring capability or a verified implementation API.** [Temporal Gateway approved conceptual infrastructure library contract](../../adapters/temporal-gateway/adapters-record.md); [draft PR #139](https://github.com/nuxt-layers/architecture-blueprint-review/pull/139).
+**Status: TG-01–TG-05 owner-approved conceptual technical boundary under accepted ADR-0015 (23 November 2026); not a completed review of this neighbouring capability or a verified implementation API.** [Temporal Gateway approved conceptual infrastructure library contract](../../adapters/temporal-gateway/adapters-record.md); draft PR #139 (historical review).
 
 Scheduler owns authorised scheduled tasks, due/catch-up/retry policy and business status; Temporal Gateway is only an optional ADR-0015 technical SDK/worker/schedule adapter. Scheduler supplies validated schedule/handler references and revision/idempotency context; the adapter returns technical accepted/rejected/unknown receipts and observations, never a domain completion guarantee. Provider timeout requires owner-led reconciliation, and absence must not invent success. This is the owner-approved Temporal Gateway boundary; Scheduler's independently approved design and later master changes are preserved.
 
@@ -198,7 +191,7 @@ Scheduler owns authorised scheduled tasks, due/catch-up/retry policy and busines
 
 ## Time & Attendance reciprocal conceptual note — 23 November 2026
 
-**Status: Time & Attendance TA-01–TA-06 owner-approved conceptually on 23 November 2026; [draft PR #143](https://github.com/nuxt-layers/architecture-blueprint-review/pull/143). This does not approve a published scheduler interface or implementation.** Time & Attendance may register background reconciliation tasks for platform Scheduler. Platform Scheduler executes timed tasks, not employee shift rostering or evidence of actual attendance; prospective Workforce Scheduling owns planned shifts. [Proposed contract](../../capabilities/time-attendance/capability-record.md). Existing approved decisions remain authoritative.
+**Status: Time & Attendance TA-01–TA-06 owner-approved conceptually on 23 November 2026; draft PR #143 (historical review). This does not approve a published scheduler interface or implementation.** Time & Attendance may register background reconciliation tasks for platform Scheduler. Platform Scheduler executes timed tasks, not employee shift rostering or evidence of actual attendance; prospective Workforce Scheduling owns planned shifts. [Proposed contract](../../capabilities/time-attendance/capability-record.md). Existing approved decisions remain authoritative.
 
 ## Workflow conceptual review — reciprocal alignment (23 November 2026; draft PR #150)
 
@@ -208,4 +201,4 @@ Dependencies are host-composed public ports/events, not private storage or autom
 
 ## Checkout reciprocal conceptual interface — 24 November 2026
 
-**Checkout-side conceptual interface owner-approved (24 November 2026):** [Checkout PR #151](https://github.com/nuxt-layers/architecture-blueprint-review/pull/151), [conceptual contract](../../capabilities/checkout/capability-record.md). Checkout requests time-bound expiry/reconciliation triggers with attempt and operation identity; Scheduler owns technical execution and retries, Checkout checks current owner status before action. Existing approved decisions remain authoritative; host-bound public ports only.
+**Checkout-side conceptual interface owner-approved (24 November 2026):** Checkout PR #151 (historical review), [conceptual contract](../../capabilities/checkout/capability-record.md). Checkout requests time-bound expiry/reconciliation triggers with attempt and operation identity; Scheduler owns technical execution and retries, Checkout checks current owner status before action. Existing approved decisions remain authoritative; host-bound public ports only.

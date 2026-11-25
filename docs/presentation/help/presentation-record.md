@@ -4,7 +4,7 @@
 
 **Status:** HELP-01–HELP-04 **owner-approved conceptual direction** (18 November 2026); detailed contract and options remain blueprint proposals, not verified implementation. No dedicated implementation, runtime, root `CONTRACT.md` or acceptance test is verified. This record is **not** a Publisher contract amendment or accepted governing decision.
 
-**Exact directory:** `help`. **Review:** [draft PR #72](https://github.com/nuxt-layers/architecture-blueprint-review/pull/72). Governing `architecture-rules/master` opening SHA `0725f314abc9ad13f1a65247f54a7ff80772f0b2`; blueprint opening SHA `a4e40a5cd82a2f79e8edd872af55c22d472b61cb`.
+**Exact directory:** `help`. **Review:** draft PR #72. Governing `architecture-rules/master` opening SHA `0725f314abc9ad13f1a65247f54a7ff80772f0b2`; blueprint opening SHA `a4e40a5cd82a2f79e8edd872af55c22d472b61cb`.
 
 ## Purpose and classification
 

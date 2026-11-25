@@ -3,7 +3,7 @@
 **Name:** `template-engine`  
 **Classification:** **Stateless library candidate**; proposed design, not an established implemented capability.  
 **Status:** Conceptual classification and documentation relocation approved 21 November 2026; no implementation repository, published contract, release or tests verified.  
-**Authority:** [Governing catalogue](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/catalogue.md) and [Capability Standard](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/capability-standard.md).
+**Authority:** [Governing catalogue](../../catalogue.md) and [Capability Standard](../../capability-standard.md).
 
 ## Purpose and responsibilities
 

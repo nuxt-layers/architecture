@@ -13,7 +13,7 @@
 
 ## Dedicated conceptual review — Gallery (18 November 2026)
 
-**Status:** Proposed contract reconciliation for owner approval; presentation classification is **established** by governing catalogue. Existing Gallery design was recorded as agreed with the owner on 25 October 2026; that earlier agreement is not proof of an implemented API. This review is non-normative. [draft PR #70](https://github.com/nuxt-layers/architecture-blueprint-review/pull/70).
+**Status:** Proposed contract reconciliation for owner approval; presentation classification is **established** by governing catalogue. Existing Gallery design was recorded as agreed with the owner on 25 October 2026; that earlier agreement is not proof of an implemented API. This review is non-normative. draft PR #70.
 
 ### Evidence, identity and classification
 

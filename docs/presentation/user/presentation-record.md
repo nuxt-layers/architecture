@@ -92,7 +92,7 @@ Information flows are **not package dependencies by default**. Public ports and 
 
 An example flow: User submits a protected role-change request to Authorisation. Authorisation decides and commits or records pending/unknown, sends its own required evidence to Audit and relevant technical diagnostics to Logging. User displays the source result, optionally normalises a safe failure message, and offers independent authorised Audit/Reporting views. No four-stage logging/audit/reporting pipeline is created; lack of Reporting must not prevent an access change, and an Audit requirement is never fulfilled by a Logging receipt.
 
-The Error Normalisation [conceptual contract](../../libraries/error-normalisation/CONTRACT.md) is **not** a published package root `CONTRACT.md`. Logging, Audit and Reporting are conceptual neighbours; no runtime integration with User is claimed.
+The Error Normalisation [conceptual contract](../../libraries/error-normalisation/stateless-library-record.md#conceptual-public-contract-inputs-and-outputs) is **not** a published package root `CONTRACT.md`. Logging, Audit and Reporting are conceptual neighbours; no runtime integration with User is claimed.
 
 ## 6. GUI and host composition
 

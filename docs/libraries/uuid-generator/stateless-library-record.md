@@ -4,7 +4,7 @@
 **Canonical path:** `docs/libraries/uuid-generator/stateless-library-record.md` (CLS-13); catalogue identifier unchanged.
 **Classification:** **Stateless library candidate**; not a domain-state-owning capability or Nuxt Layer.  
 **Status:** Owner-approved documentation classification and relocation, 21 November 2026; implementation, root contract, tests, releases and operational status are unverified.  
-**Authority:** [Governing catalogue](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/catalogue.md), [Capability Standard](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/capability-standard.md).
+**Authority:** [Governing catalogue](../../catalogue.md), [Capability Standard](../../capability-standard.md).
 
 ## Purpose and boundaries
 

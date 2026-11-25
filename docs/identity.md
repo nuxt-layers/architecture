@@ -29,7 +29,7 @@ Each group has zero or one parent and any number of children, so the groups form
 
 ## 5. Memberships
 
-A person may belong directly to any number of groups, in any trees, besides their personal group. Each membership has explicit references and a lifecycle status (such as active, suspended or ended, with effective times where needed). Changes are authorised, attributable and audited, and ending one membership changes nothing else. Whether the hierarchy confers membership is an explicit, versioned policy, never inferred from parentage.
+A person may belong directly to any number of groups, in any trees, besides their personal group. Each membership has explicit references and a lifecycle status (active, paused, suspended or ended, with effective times where needed). Changes are authorised, attributable and audited, and ending one membership changes nothing else. Whether the hierarchy confers membership is an explicit, versioned policy, never inferred from parentage.
 
 ## 6. Ownership
 
@@ -43,7 +43,7 @@ Every protected operation is authorised on the server. Route middleware and hidd
 
 ## 8. Departure and revocation
 
-When a membership ends, every permission derived from it stops, including inherited or delegated grants that depend on it. Cached decisions, session claims, long-lived tokens and asynchronous projections are covered by a documented revocation consistency guarantee, failing closed for sensitive operations. A genuinely independent grant survives; data already exported cannot be retracted; retained records and audit provenance follow their owner's retention policy.
+When a membership is paused, suspended or ended, every permission derived from it stops, including inherited or delegated grants that depend on it. Paused and suspended memberships retain inactive roles; ended memberships confer no effective assignments (ADR-0005). Cached decisions, session claims, long-lived tokens and asynchronous projections are covered by a documented revocation consistency guarantee, failing closed for sensitive operations. A genuinely independent grant remains eligible for authorisation only if account standing, tenant isolation and other applicable restrictions permit it; data already exported cannot be retracted; retained records and audit provenance follow their owner's retention policy.
 
 ## 9. Sessions and administration
 
@@ -55,7 +55,7 @@ Domain capabilities associate their entities with groups by public identifier. T
 
 ## 11. Acceptance
 
-Tests cover: atomic personal-group provisioning and exactly one personal group; many direct memberships; zero or one parent and many children; rejecting cycles and second parents; no implicit inheritance; isolation between tenants and companies; a creator leaving without ownership moving; membership-derived revocation, including caches and sessions; independent grants surviving; and refusal of unauthorised membership and hierarchy changes. The baseline is the platform's security requirements ([Security](security.md)).
+Tests cover: atomic personal-group provisioning and exactly one personal group; many direct memberships; zero or one parent and many children; rejecting cycles and second parents; no implicit inheritance; isolation between tenants and companies; a creator leaving without ownership moving; membership-derived revocation on pause, suspension and departure, including caches and sessions; retained roles inactive during pause and suspension; no effective assignments after departure; independent grants evaluated separately without bypassing account or tenant restrictions; paused membership notifications and assignments suppressed; and refusal of unauthorised membership and hierarchy changes. The baseline is the platform's security requirements ([Security](security.md)).
 
 Changing an invariant here needs an accepted ADR, with its migration and compatibility assessed first.
 

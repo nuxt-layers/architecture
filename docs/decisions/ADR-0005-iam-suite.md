@@ -5,9 +5,10 @@
 **Amended:** 2026-10-23: suite documentation allocated to `iam-integration` (§3)  
 **Amended:** 2026-10-31: removed unavailable external document references  
 **Supplemented:** 2026-11-16: ADR-0017 adds distinct tenant governance, without altering group ownership or the IAM member boundaries  
-**Amended:** 2026-11-25: conceptual suite architecture placement follows ADR-0004; implementation ownership is unchanged.
+**Amended:** 2026-11-25: conceptual suite architecture placement follows ADR-0004; implementation ownership is unchanged.  
+**Amended:** IAM-R01: paused membership confers no access; independently authorised grants remain subject to applicable restrictions.
 
-> **In short:** five capabilities form the IAM suite, meeting only through contracts and ports: Authentication, Identity, Profile, Authorisation and `iam-integration`. Ten suite-wide invariants, from self-sovereignty to durable events, bind them all.
+> **In short:** five artefacts form the IAM suite, meeting only through contracts and ports: Authentication, Identity, Profile, Authorisation and `iam-integration`. Ten suite-wide invariants, from self-sovereignty to durable events, bind them all.
 
 ## Why
 
@@ -37,8 +38,8 @@ Members meet only through public contracts and host-supplied ports. `iam-integra
 2. **No "act as".** No member provides impersonation. Support access is a scoped, time-limited grant to the supporter's own identity, recorded as such.
 3. **Founding owner.** Creating a group makes the creator its first owner. A group always has at least one owner; removing the last owner is refused.
 4. **Two-person rule by risk.** A `high` or `critical` change to roles, ownership or governance requires approval by a principal other than the requester. A group may raise this requirement, never lower it. Where a group has one owner, approval comes from an owner of the parent group or tenant, or from a published time delay the owner cannot shorten.
-5. **Membership states.** `active`; `paused` (chosen by the member); `suspended` (imposed by others); `ended`. Only `active` memberships confer access. Roles held under a paused or suspended membership are kept but inactive.
-6. **Pausing.** A member may pause one membership or their whole account. A paused member can still view the group's information where their roles allow, but is hidden from other members and receives no notifications or assignments. A group may restrict pausing within the group; it cannot prevent a person pausing their whole account.
+5. **Membership states.** `active`; `paused` (chosen by the member); `suspended` (imposed by others); `ended`. Only `active` memberships confer membership-derived access. Roles held under a paused or suspended membership are kept but inactive; ended memberships confer no effective assignments. Suspension remains subject to applicable independent access restrictions.
+6. **Pausing.** A member may pause one membership or their whole account. A paused membership confers no access, including read access through its retained roles. A separately valid, independently authorised grant may still confer access, subject to account standing, tenant isolation and applicable restrictions; it must not depend on the paused membership. A paused member is hidden from other members and receives no group notifications or assignments through that membership. A group may restrict pausing within the group; it cannot prevent a person pausing their whole account.
 7. **Departure.** On leaving a group, all access derived from that membership ends ([Identity and Access](../identity.md)). Each group sets what happens to the leaver's attribution in its information: keep the name, pseudonymise or anonymise. The leaver may always require anonymisation, within the law.
 8. **Anonymisation by unlinking.** Members store opaque identifiers, never personal data. Anonymisation removes the link from an identifier to Profile's record; it does not rewrite other capabilities' data.
 9. **Revocation reaches sessions.** Suspending, pausing an account or closing an identity revokes its sessions in Authentication. Membership changes reach Authorisation within its directory consistency bound.
@@ -53,7 +54,7 @@ Following [ADR-0004](ADR-0004-documentation-placement.md), the approved conceptu
 | Gains | Costs |
 |---|---|
 | Identity stays small: it holds a graph of opaque identifiers, which most capabilities can read without handling personal data | One more capability (`profile`) and one more repository (`iam-integration`) |
-| Erasure and anonymisation have one owner (Profile) and one mechanism (unlinking) | Authorisation's contract must add the `paused` membership status (treated like `suspended` for decisions); this is a contract version change |
+| Erasure and anonymisation have one owner (Profile) and one mechanism (unlinking) | Identity and Authorisation must reconcile their public contracts and prove that paused and suspended memberships confer no membership-derived access |
 | Suite-wide rules are written once and enforced by each member against its own data | Approval flows need durable pending state, owned by Identity for governance changes and by Authorisation for role and grant changes |
 |  | Displaying a member's name requires a Profile lookup, subject to Profile's disclosure rules |
 

@@ -99,7 +99,7 @@ These are **design references**, not a claim of certification or universal legal
 | Privacy and electronic communications | UK GDPR, Data Protection Act 2018, PECR as amended, applicable EU GDPR/ePrivacy and ICO guidance; RFC 8058 only if separately authorised list/marketing uses need compliant unsubscribe |
 | Accessibility and locale | W3C WCAG 2.2 AA / ISO/IEC 40500:2025; BCP 47, Unicode/CLDR and ECMA-402 where used; accessible approved email templates and admin views |
 
-**Primary references:** [RFC Editor](https://www.rfc-editor.org/) · [NIST SP 800-177 Rev. 1](https://csrc.nist.gov/pubs/sp/800/177/r1/final) · [OWASP ASVS](https://asvs.owasp.org/) · [UK NCSC](https://www.ncsc.gov.uk/collection/email-security-and-anti-spoofing) · [ICO](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/) · [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/). Pin and check applicable editions during implementation; a provider's older RFC support is not automatically a Mailer breach if the contracted safeguards are met.
+**Primary references:** [RFC Editor](../../../RESOURCES.md#ref-f34bf5a1) · [NIST SP 800-177 Rev. 1](../../../RESOURCES.md#ref-5475a9f6) · [OWASP ASVS](../../../RESOURCES.md#ref-a1c367d2) · [UK NCSC](../../../RESOURCES.md#ref-6248375e) · [ICO](../../../RESOURCES.md#ref-9cfff74f) · [W3C WCAG 2.2](../../../RESOURCES.md#ref-0d1f555e). Pin and check applicable editions during implementation; a provider's older RFC support is not automatically a Mailer breach if the contracted safeguards are met.
 
 ## 7. Approved commercially permissive library options
 
@@ -107,22 +107,22 @@ Only independently maintained **full-codebase** open-source libraries with usabl
 
 | Candidate | Licence | Role and adoption |
 |---|---|---|
-| [Nodemailer](https://github.com/nodemailer/nodemailer) | MIT-0 | **Preferred** SMTP/MIME/DKIM submission behind replaceable provider port |
-| [Zod](https://github.com/colinhacks/zod) | MIT | **Preferred** TypeScript boundary validation where not host-provided |
-| [node-postgres / pg](https://github.com/brianc/node-postgres) | MIT | **Preferred** host-composed PostgreSQL adapter for dispatch/attempt/outbox |
-| [Pino](https://github.com/pinojs/pino) | MIT | Optional implementation under Logging's contract, not a second logging authority |
-| [OpenTelemetry JS](https://github.com/open-telemetry/opentelemetry-js) | Apache-2.0 | Optional instrumentation via Observability |
-| [MJML](https://github.com/mjmlio/mjml) / [html-to-text](https://github.com/html-to-text/node-html-to-text) | MIT | Optional template/plain-text work owned by content/template flow, not Mailer |
-| [mailauth](https://github.com/postalsys/mailauth) | MIT | Optional sender-authentication diagnostics as needed |
-| [Ajv](https://github.com/ajv-validator/ajv) | MIT | Optional JSON Schema validator, avoid competing contract schemas |
-| [pg-boss](https://github.com/timgit/pg-boss) / [pgmq](https://github.com/pgmq/pgmq) | MIT / PostgreSQL Licence | **Conditional**, only if existing Scheduler/MQ/host infrastructure does not satisfy needed execution/transport; neither owns Mailer's events |
-| [DOMPurify](https://github.com/cure53/DOMPurify) | Apache-2.0 OR MPL-2.0 | Optional HTML sanitisation in the trusted rendering boundary, not a replacement for attachment or transport validation |
+| [Nodemailer](../../../RESOURCES.md#ref-0c44f600) | MIT-0 | **Preferred** SMTP/MIME/DKIM submission behind replaceable provider port |
+| [Zod](../../../RESOURCES.md#ref-1e3efac4) | MIT | **Preferred** TypeScript boundary validation where not host-provided |
+| [node-postgres / pg](../../../RESOURCES.md#ref-be910869) | MIT | **Preferred** host-composed PostgreSQL adapter for dispatch/attempt/outbox |
+| [Pino](../../../RESOURCES.md#ref-5f05d959) | MIT | Optional implementation under Logging's contract, not a second logging authority |
+| [OpenTelemetry JS](../../../RESOURCES.md#ref-8e380f73) | Apache-2.0 | Optional instrumentation via Observability |
+| [MJML](../../../RESOURCES.md#ref-21d35814) / [html-to-text](../../../RESOURCES.md#ref-29efde1f) | MIT | Optional template/plain-text work owned by content/template flow, not Mailer |
+| [mailauth](../../../RESOURCES.md#ref-7a8524b7) | MIT | Optional sender-authentication diagnostics as needed |
+| [Ajv](../../../RESOURCES.md#ref-a164796d) | MIT | Optional JSON Schema validator, avoid competing contract schemas |
+| [pg-boss](../../../RESOURCES.md#ref-fc345c0f) / [pgmq](../../../RESOURCES.md#ref-c40afaea) | MIT / PostgreSQL Licence | **Conditional**, only if existing Scheduler/MQ/host infrastructure does not satisfy needed execution/transport; neither owns Mailer's events |
+| [DOMPurify](../../../RESOURCES.md#ref-975d5876) | Apache-2.0 OR MPL-2.0 | Optional HTML sanitisation in the trusted rendering boundary, not a replacement for attachment or transport validation |
 
 **Preferred minimal design:** Nodemailer + Zod + host-supplied PostgreSQL/`pg` plus existing IAM, Scheduler/MQ, Logging/Audit/Observability/Reporting public ports. No BullMQ/Redis dependency, separate mandatory job broker, proprietary provider SDK or full mail-hosting stack.
 
 ## 8. Optional presentation — advisory, not prescriptive
 
-Mailer works **without any UI**. If enabled, its operational screens follow the inspected [application-test-template](https://github.com/nuxt-layers-test/application-test-template): a host-owned responsive sidebar with **Capabilities → Mailer**, opening an optional dashboard (illustrative `/mailer` route) in the shared Nuxt content area, as Theme Manager does. The host owns navigation, feature enablement, test-mode composition and route placement; Mailer owns only its public-contract-backed views. The [Theme Manager](https://github.com/nuxt-layers/theme-manager) implementation is an illustrative pattern, not a private dependency or a Mailer implementation.
+Mailer works **without any UI**. If enabled, its operational screens follow the inspected [application-test-template](../../../RESOURCES.md#ref-f1f7cc47): a host-owned responsive sidebar with **Capabilities → Mailer**, opening an optional dashboard (illustrative `/mailer` route) in the shared Nuxt content area, as Theme Manager does. The host owns navigation, feature enablement, test-mode composition and route placement; Mailer owns only its public-contract-backed views. The [Theme Manager](../../../RESOURCES.md#ref-8ccd6b0b) implementation is an illustrative pattern, not a private dependency or a Mailer implementation.
 
 | Proposed view | Audience and content | Public surface |
 |---|---|---|

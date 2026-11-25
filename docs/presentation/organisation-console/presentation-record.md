@@ -97,7 +97,7 @@ A normalised error is a **safe description**; a log is a **technical diagnostic*
 
 ## GUI and verified test-host model
 
-**A GUI is the primary deliverable.** Read-only inspection of [`nuxt-layers-test/application-test-template`](https://github.com/nuxt-layers-test/application-test-template) `master` tree `8b7b142b84b5ec2379d4e2e727914fe344187d64`: `/` is the public-style homepage, `/admin` is a host-owned capability test dashboard, and the collapsible sidebar's **Capabilities → Theme Manager** link opens `/theme-manager` in the same shell. The host supplies branding, mobile overlay, Theme Manager-backed Appearance and an explicit **Not signed in** status.
+**A GUI is the primary deliverable.** Read-only inspection of [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#ref-f1f7cc47) `master` tree `8b7b142b84b5ec2379d4e2e727914fe344187d64`: `/` is the public-style homepage, `/admin` is a host-owned capability test dashboard, and the collapsible sidebar's **Capabilities → Theme Manager** link opens `/theme-manager` in the same shell. The host supplies branding, mobile overlay, Theme Manager-backed Appearance and an explicit **Not signed in** status.
 
 **Recommended composition:** a host-owned sibling **Capabilities → Organisation Console** entry and optional `/admin` card, opening a console dashboard in the shared shell. `/organisation-console` is an **illustrative host route**, not a contract endpoint. Host retains route placement, context integration and branding; optional management pages are source-owned. The reference test host runs **local, unauthenticated Theme Manager test mode** and is **not** evidence of safe production IAM. Protected console screens require separate authenticated fixtures and owner contracts.
 
@@ -116,7 +116,7 @@ A normalised error is a **safe description**; a log is a **technical diagnostic*
 
 ## Standards and complete-source open-source libraries
 
-**Mandatory governing floors:** [W3C WCAG 2.2 AA](https://www.w3.org/TR/WCAG22/) (also ISO/IEC 40500:2025); [OWASP ASVS 5 Level 2](https://asvs.owasp.org/) and relevant Level 3 requirements for sensitive administration; accepted ADRs, security/privacy and presentation rules. Follow WAI-ARIA 1.2 for appropriate custom widgets; [ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/) are guidance, not an additional mandatory certification.
+**Mandatory governing floors:** [W3C WCAG 2.2 AA](../../../RESOURCES.md#ref-0d1f555e) (also ISO/IEC 40500:2025); [OWASP ASVS 5 Level 2](../../../RESOURCES.md#ref-a1c367d2) and relevant Level 3 requirements for sensitive administration; accepted ADRs, security/privacy and presentation rules. Follow WAI-ARIA 1.2 for appropriate custom widgets; [ARIA Authoring Practices](../../../RESOURCES.md#ref-f076dce5) are guidance, not an additional mandatory certification.
 
 **Recommended design references:** ISO 9241-210:2019 (human-centred journeys); ISO/IEC 25010:2023 (quality); ISO/IEC 27001/27002:2022 and 27701:2025 (security/privacy management); NIST SP 800-63-4 and UK NCSC design guidance (assurance/recovery); IETF BCP 47, Unicode CLDR and ECMA-402 (locale, dates, numbers/currency). Existing Clock/Localisation owners retain time and translation rules.
 
@@ -126,13 +126,13 @@ A normalised error is a **safe description**; a log is a **technical diagnostic*
 
 | Candidate | Licence | When justified |
 |---|---|---|
-| [Nuxt UI v4](https://github.com/nuxt/ui) **or** [Reka UI](https://github.com/unovue/reka-ui) | MIT / MIT | Accessible styled components **or** unstyled primitives through the **existing** `ui`/Theme Manager contract, not two competing UI systems |
-| [TanStack Table](https://github.com/TanStack/table) | MIT | Complex, source-scoped member/invoice/approval tables |
-| [TanStack Query](https://github.com/TanStack/query) | MIT | Optional read coordination if existing Nuxt fetch/caching is insufficient; partition and clear sensitive caches |
-| [vee-validate](https://github.com/logaretm/vee-validate), [Zod](https://github.com/colinhacks/zod) | MIT / MIT | Complex forms and schema feedback; owner still validates server-side |
-| [VueUse](https://github.com/vueuse/vueuse), [Pinia](https://github.com/vuejs/pinia), [Vue I18n](https://github.com/intlify/vue-i18n) | MIT | Selective interaction, disposable UI state or localisation only when host contracts lack it |
-| [Chart.js](https://github.com/chartjs/Chart.js) **or** [Apache ECharts](https://github.com/apache/echarts) | MIT / Apache-2.0 | Optional accessible reporting/usage charts, preferably with tabular alternatives |
-| [Vitest](https://github.com/vitest-dev/vitest), [Playwright](https://github.com/microsoft/playwright) | MIT / Apache-2.0 | CI-based unit, integration and browser accessibility verification; not runtime dependencies |
+| [Nuxt UI v4](../../../RESOURCES.md#ref-b0f34541) **or** [Reka UI](../../../RESOURCES.md#ref-12355446) | MIT / MIT | Accessible styled components **or** unstyled primitives through the **existing** `ui`/Theme Manager contract, not two competing UI systems |
+| [TanStack Table](../../../RESOURCES.md#ref-af94a8b1) | MIT | Complex, source-scoped member/invoice/approval tables |
+| [TanStack Query](../../../RESOURCES.md#ref-51cb5e45) | MIT | Optional read coordination if existing Nuxt fetch/caching is insufficient; partition and clear sensitive caches |
+| [vee-validate](../../../RESOURCES.md#ref-bd5a7590), [Zod](../../../RESOURCES.md#ref-1e3efac4) | MIT / MIT | Complex forms and schema feedback; owner still validates server-side |
+| [VueUse](../../../RESOURCES.md#ref-9507482e), [Pinia](../../../RESOURCES.md#ref-e0010fdc), [Vue I18n](../../../RESOURCES.md#ref-4941c780) | MIT | Selective interaction, disposable UI state or localisation only when host contracts lack it |
+| [Chart.js](../../../RESOURCES.md#ref-54c6128e) **or** [Apache ECharts](../../../RESOURCES.md#ref-1aa1e4a8) | MIT / Apache-2.0 | Optional accessible reporting/usage charts, preferably with tabular alternatives |
+| [Vitest](../../../RESOURCES.md#ref-c28ef17c), [Playwright](../../../RESOURCES.md#ref-12180955) | MIT / Apache-2.0 | CI-based unit, integration and browser accessibility verification; not runtime dependencies |
 
 **Before adoption:** verify the particular release, current maintenance and security, complete public source and feature availability, transitive licences/notices/assets, Nuxt/Vue/Node/TypeScript and SSR compatibility, performance/bundle impact and replacement path. These are **candidate libraries**, not installed/approved package versions. Reuse what the platform already supplies; avoid an independent UI framework or storage service for this composition.
 

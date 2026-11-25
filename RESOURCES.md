@@ -2148,3 +2148,259 @@ Imported design citations are retained here for provenance. External availabilit
 ### ref-87ed8fd7
 
 [OASIS DITA 1.3](https://www.oasis-open.org/2016/02/01/members-approve-dita-1-3-as-oasis-standard-for-authoring-and-publishing/) — imported reference; verification pending.
+
+### ref-5475a9f6
+
+[NIST SP 800-177 Rev. 1](https://csrc.nist.gov/pubs/sp/800/177/r1/final) — imported reference; verification pending.
+
+### ref-006a3e23
+
+[GOV.UK Design System](https://design-system.service.gov.uk/components/) — imported reference; verification pending.
+
+### ref-920dfdb7
+
+[Cloudflare NTS](https://developers.cloudflare.com/time-services/nts/) — imported reference; verification pending.
+
+### ref-ef90706c
+
+[Core Web Vitals](https://developers.google.com/search/docs/appearance/core-web-vitals) — imported reference; verification pending.
+
+### ref-cd43de38
+
+[Google Public NTP](https://developers.google.com/time/) — imported reference; verification pending.
+
+### ref-77e72150
+
+[Google Public NTP FAQ](https://developers.google.com/time/faq) — imported reference; verification pending.
+
+### ref-435cfa63
+
+[Adobe Leonardo](https://github.com/adobe/leonardo) — imported reference; verification pending.
+
+### ref-7d9e57d5
+
+[Ark UI](https://github.com/chakra-ui/ark) — imported reference; verification pending.
+
+### ref-2994486b
+
+[Zag.js](https://github.com/chakra-ui/zag) — imported reference; verification pending.
+
+### ref-5cd843eb
+
+[Color.js](https://github.com/color-js/color.js) — imported reference; verification pending.
+
+### ref-2150b3bd
+
+[Culori](https://github.com/Evercoder/culori) — imported reference; verification pending.
+
+### ref-93b515aa
+
+[fastify/fastify](https://github.com/fastify/fastify) — imported reference; verification pending.
+
+### ref-29efde1f
+
+[html-to-text](https://github.com/html-to-text/node-html-to-text) — imported reference; verification pending.
+
+### ref-21d35814
+
+[MJML](https://github.com/mjmlio/mjml) — imported reference; verification pending.
+
+### ref-edd6cbb9
+
+[nodejs/undici](https://github.com/nodejs/undici) — imported reference; verification pending.
+
+### ref-0c44f600
+
+[Nodemailer](https://github.com/nodemailer/nodemailer) — imported reference; verification pending.
+
+### ref-d6e3a458
+
+[blueprint](https://github.com/nuxt-layers/architecture-blueprint-review) — imported reference; verification pending.
+
+### ref-55413c2e
+
+[catalogue](https://github.com/nuxt-layers/architecture-rules/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/catalogue.md) — imported reference; verification pending.
+
+### ref-d77f0ab1
+
+[ADR-0012](https://github.com/nuxt-layers/architecture-rules/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/decisions/ADR-0012-trivial-composition.md) — imported reference; verification pending.
+
+### ref-e16bba79
+
+[ADR-0016](https://github.com/nuxt-layers/architecture-rules/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/decisions/ADR-0016-controlled-layer-specialisation-and-composition.md) — imported reference; verification pending.
+
+### ref-6b21b67d
+
+[Privacy](https://github.com/nuxt-layers/architecture-rules/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/privacy.md) — imported reference; verification pending.
+
+### ref-04b4e257
+
+[Security §§16.5–16.6](https://github.com/nuxt-layers/architecture-rules/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/security.md) — imported reference; verification pending.
+
+### ref-738239a9
+
+[CONTRACT.md](https://github.com/nuxt-layers/clock/blob/master/CONTRACT.md) — imported reference; verification pending.
+
+### ref-4c7783cf
+
+[nuxt-layers/integrations](https://github.com/nuxt-layers/integrations) — imported reference; verification pending.
+
+### ref-8ccd6b0b
+
+[Theme Manager](https://github.com/nuxt-layers/theme-manager) — imported reference; verification pending.
+
+### ref-95e68ca1
+
+[`ThemeColourField.vue`](https://github.com/nuxt-layers/theme-manager/blob/master/app/components/theme-manager/ThemeColourField.vue) — imported reference; verification pending.
+
+### ref-c0267327
+
+[`ThemeEditorColours.vue`](https://github.com/nuxt-layers/theme-manager/blob/master/app/components/theme-manager/ThemeEditorColours.vue) — imported reference; verification pending.
+
+### ref-b5f7afa5
+
+[`ThemePreviewComponents.vue`](https://github.com/nuxt-layers/theme-manager/blob/master/app/components/theme-manager/ThemePreviewComponents.vue) — imported reference; verification pending.
+
+### ref-abb576ad
+
+[`STORAGE-REGISTER.md`](https://github.com/nuxt-layers/theme-manager/blob/master/STORAGE-REGISTER.md) — imported reference; verification pending.
+
+### ref-6f35dd9e
+
+[`nuxt-layers/ui`](https://github.com/nuxt-layers/ui) — imported reference; verification pending.
+
+### ref-5a839ea2
+
+[Nuxt Color Mode](https://github.com/nuxt-modules/color-mode) — imported reference; verification pending.
+
+### ref-af31f265
+
+[Colord](https://github.com/omgovich/colord) — imported reference; verification pending.
+
+### ref-7a8524b7
+
+[mailauth](https://github.com/postalsys/mailauth) — imported reference; verification pending.
+
+### ref-86ae7870
+
+[PrimeVue](https://github.com/primefaces/primevue) — imported reference; verification pending.
+
+### ref-5846c58c
+
+[Style Dictionary](https://github.com/style-dictionary/style-dictionary) — imported reference; verification pending.
+
+### ref-2c44f99e
+
+[shadcn-vue](https://github.com/unovue/shadcn-vue) — imported reference; verification pending.
+
+### ref-e0010fdc
+
+[Pinia](https://github.com/vuejs/pinia) — imported reference; verification pending.
+
+### ref-e467565a
+
+[ICO storage technologies](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/how-do-we-comply-with-the-pecr-rules) — imported reference; verification pending.
+
+### ref-34e655b0
+
+[OpenVue](https://openvue.dev/) — imported reference; verification pending.
+
+### ref-cb38cea0
+
+[OWASP ASVS 5](https://owasp.org/projects/asvs/) — imported reference; verification pending.
+
+### ref-e82a3d0b
+
+[Liquid](https://shopify.github.io/liquid/) — imported reference; verification pending.
+
+### ref-3b3e5ef9
+
+[ECMA-402](https://tc39.es/ecma402/) — imported reference; verification pending.
+
+### ref-97b55c12
+
+[AsyncAPI](https://www.asyncapi.com/docs/reference) — imported reference; verification pending.
+
+### ref-5b23dd33
+
+[ETSI EN 301 549](https://www.etsi.org/technical-groups/hf/) — imported reference; verification pending.
+
+### ref-23e1c516
+
+[ISO/IEC 30071-1:2019](https://www.iso.org/standard/70913.html) — imported reference; verification pending.
+
+### ref-059e6b51
+
+[ISO 9241-210:2019](https://www.iso.org/standard/77520.html) — imported reference; verification pending.
+
+### ref-7b6be755
+
+[ISO 9241-171:2025](https://www.iso.org/standard/86308.html) — imported reference; verification pending.
+
+### ref-4d3037c4
+
+[UK Public Sector Accessibility Regulations](https://www.legislation.gov.uk/uksi/2018/952) — imported reference; verification pending.
+
+### ref-6248375e
+
+[UK NCSC](https://www.ncsc.gov.uk/collection/email-security-and-anti-spoofing) — imported reference; verification pending.
+
+### ref-6c4b245c
+
+[NIST ITS](https://www.nist.gov/pml/time-and-frequency-division/time-distribution/internet-time-service-its) — imported reference; verification pending.
+
+### ref-84066cfe
+
+[NPL Internet Time Service user guide](https://www.npl.co.uk/getattachment/products-and-services/Timing-services/Internet-Time-from-NPL/its_user_guide.pdf?lang=en-GB) — imported reference; verification pending.
+
+### ref-342633dd
+
+[NTP Pool Europe](https://www.ntppool.org/en/zone/europe) — imported reference; verification pending.
+
+### ref-feb02964
+
+[NTP Pool UK](https://www.ntppool.org/uk/zone/uk) — imported reference; verification pending.
+
+### ref-f34bf5a1
+
+[RFC Editor](https://www.rfc-editor.org/) — imported reference; verification pending.
+
+### ref-bd1a09d8
+
+[IETF RFC 8633](https://www.rfc-editor.org/rfc/rfc8633) — imported reference; verification pending.
+
+### ref-96cfb1e6
+
+[RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — imported reference; verification pending.
+
+### ref-58aea18f
+
+[W3C Design Tokens Community Group 2025.10](https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/) — imported reference; verification pending.
+
+### ref-bd589cf9
+
+[W3C internationalisation](https://www.w3.org/International/) — imported reference; verification pending.
+
+### ref-a582bbf2
+
+[CSS Color 4](https://www.w3.org/TR/css-color-4/) — imported reference; verification pending.
+
+### ref-0faec43f
+
+[CSS Color Adjustment](https://www.w3.org/TR/css-color-adjust-1/) — imported reference; verification pending.
+
+### ref-63ef0de9
+
+[W3C CSS Custom Properties](https://www.w3.org/TR/css-variables-1/) — imported reference; verification pending.
+
+### ref-d71ad712
+
+[Media Queries 5](https://www.w3.org/TR/mediaqueries-5/) — imported reference; verification pending.
+
+### ref-90f5e4b1
+
+[WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria/) — imported reference; verification pending.
+
+### ref-54e6f5b0
+
+[APG](https://www.w3.org/WAI/ARIA/apg/about/introduction/) — imported reference; verification pending.

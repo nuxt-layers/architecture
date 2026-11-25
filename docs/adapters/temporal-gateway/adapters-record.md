@@ -1,8 +1,8 @@
 # Temporal Gateway — canonical conceptual integration-library record
 
-**Conceptual status:** Complete for owner review; **TG-01–TG-05 and the standards, open-source, reciprocal-contract and optional host GUI recommendations approved on 23 November 2026**. **Implementation status:** Not verified; the implementation's root `CONTRACT.md` was unavailable. **Merge status:** Draft PR [#139](https://github.com/nuxt-layers/architecture-blueprint-review/pull/139); no merge approval.
+**Conceptual status:** Complete for owner review; **TG-01–TG-05 and the standards, open-source, reciprocal-contract and optional host GUI recommendations approved on 23 November 2026**. **Implementation status:** Not verified; the implementation's root `CONTRACT.md` was unavailable. **Merge status:** Draft PR #139; no merge approval.
 
-**Identity:** `temporal-gateway`; independent server-side TypeScript **infrastructure integration library**, governed by [accepted ADR-0015](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/decisions/ADR-0015-infrastructure-integration-libraries.md). It is neither a Nuxt capability layer nor an ADR-0011 stateless library. Historical review location: `docs/capabilities/temporal_gateway` (former compatibility pointer) (pointer only). This record describes the *agreed ideal*, not proven exports of [the implementation repository](https://github.com/nuxt-layers/temporal-gateway).
+**Identity:** `temporal-gateway`; independent server-side TypeScript **infrastructure integration library**, governed by [accepted ADR-0015](../../decisions/ADR-0015-infrastructure-integration-libraries.md). It is neither a Nuxt capability layer nor an ADR-0011 stateless library. Historical review location: `docs/capabilities/temporal_gateway` (former compatibility pointer) (pointer only). This record describes the *agreed ideal*, not proven exports of [the implementation repository](https://github.com/nuxt-layers/temporal-gateway).
 
 ## 1. Purpose and ownership
 
@@ -86,7 +86,7 @@ Each connection is **through published host-composed contracts**, not an implici
 
 | Source | Application |
 |---|---|
-| [ADR-0015](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/decisions/ADR-0015-infrastructure-integration-libraries.md), [ADR-0012](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/decisions/ADR-0012-trivial-composition.md), Capability Standard | Independent compiled library/root consumer contract, ownership, provider-neutral host ports, security and acceptance |
+| [ADR-0015](../../decisions/ADR-0015-infrastructure-integration-libraries.md), [ADR-0012](../../decisions/ADR-0012-trivial-composition.md), Capability Standard | Independent compiled library/root consumer contract, ownership, provider-neutral host ports, security and acceptance |
 | [OWASP ASVS 5](https://asvs.owasp.org/), [NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/final), [NIST SSDF SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final) | Platform ASVS L2 baseline, relevant L3 security-sensitive operations, secure controls/development/supply chain |
 | ISO/IEC 27001:2022, 27002:2022, 27017:2026 (cloud), 27701:2025 (privacy), ISO 22301:2019, ISO/IEC 25010:2023 | Security, cloud shared responsibility, privacy where applicable, continuity and quality — not library certification |
 | [NCSC cloud principles](https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles), UK GDPR/[ICO guidance](https://ico.org.uk/for-organisations/) | UK cloud security guidance and applicable privacy obligations, qualified by host/domain/legal owner |

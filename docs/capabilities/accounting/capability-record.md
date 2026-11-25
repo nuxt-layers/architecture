@@ -533,12 +533,12 @@ References: tenancy (former proposal: organisational tenancy and governance), co
 
 ## Configuration reciprocal interface — 17 November 2026
 
-**Status: Proposed for [Configuration PR #53](https://github.com/nuxt-layers/architecture-blueprint-review/pull/53), not an implemented contract.** See [Configuration conceptual public inputs](../configuration/capability-record.md#idealised-public-inbound-interfaces). Configuration owns approved schema-registered selections and provenance; Accounting owns financial policy meaning, posting, reporting entity scope and migrations. An accounting entity is not automatically a Configuration scope. Use public host-composed ports/events only; preserve all prior decisions and dependency acyclicity.
+**Status: Proposed for Configuration PR #53, not an implemented contract.** See [Configuration conceptual public inputs](../configuration/capability-record.md#idealised-public-inbound-interfaces). Configuration owns approved schema-registered selections and provenance; Accounting owns financial policy meaning, posting, reporting entity scope and migrations. An accounting entity is not automatically a Configuration scope. Use public host-composed ports/events only; preserve all prior decisions and dependency acyclicity.
 
 
 ## Configuration decision reconciliation — CFG-05–08 (17 November 2026)
 
-**Status: Owner-approved conceptual decisions in [Configuration PR #53](https://github.com/nuxt-layers/architecture-blueprint-review/pull/53); not an implemented or newly accepted governing contract.** See [Configuration decision register](../configuration/capability-record.md#decision-register-evidence-and-sign-off).
+**Status: Owner-approved conceptual decisions in Configuration PR #53; not an implemented or newly accepted governing contract.** See [Configuration decision register](../configuration/capability-record.md#decision-register-evidence-and-sign-off).
 
 **Owner-approved CFG-06 (Option C):** resource/entity-specific setting contexts may be proposed through registered, domain-approved public contracts. Accounting owns accounting-entity identity, accounting policy meaning, applicability, historical transactions and migration behaviour; Configuration would own approved selection values/version/provenance only. No accounting entity silently becomes a tenant/group or gains inherited policy from tenant parentage.
 
@@ -546,7 +546,7 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 ## Employment reciprocal conceptual interface — 17 November 2026
 
-**Status: Proposed in [Employment PR #59](https://github.com/nuxt-layers/architecture-blueprint-review/pull/59), not a new accepted Accounting contract.** Employment owns effective employer/worker engagement and approved pay-basis facts, not payroll deductions, net pay or ledger entries. Payroll (subject to separate capability classification) should convert legally qualified pay inputs into scoped payroll results; Accounting accepts only permitted financial and labour-allocation facts with attributable source/period and never obtains unrestricted employee files. Contractor service obligations and supplier invoices may come from other domain owners, not automatically Employment. Unknown payroll or legal-entity authority holds posting rather than generating speculative salary amounts. See [Employment public contract](../employment/capability-record.md#idealised-public-outbound-contract).
+**Status: Proposed in Employment PR #59, not a new accepted Accounting contract.** Employment owns effective employer/worker engagement and approved pay-basis facts, not payroll deductions, net pay or ledger entries. Payroll (subject to separate capability classification) should convert legally qualified pay inputs into scoped payroll results; Accounting accepts only permitted financial and labour-allocation facts with attributable source/period and never obtains unrestricted employee files. Contractor service obligations and supplier invoices may come from other domain owners, not automatically Employment. Unknown payroll or legal-entity authority holds posting rather than generating speculative salary amounts. See [Employment public contract](../employment/capability-record.md#idealised-public-outbound-contract).
 
 
 ## Reciprocal interface — Inventory conceptual review (18 November 2026)
@@ -555,7 +555,7 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 ## Integrations reciprocal conceptual interface — 18 November 2026
 
-**Status: Proposed in [Integrations draft PR #76](https://github.com/nuxt-layers/architecture-blueprint-review/pull/76); not approved as a new decision or implemented.** Accounting owns ledger, financial posting interpretation, legal/tax return states and external-primary cutover approval. Integrations owns external provider connections, credential references, supported-operation discovery, versioned mapping, technical remote submission receipts, unknown outcomes and reconciliation checkpoints; neither transport 2xx nor a webhook is a posted journal or accepted tax filing. Do not switch authority on outage, duplicate postings or bypass period controls. See [Integrations proposed public contract](../../services/integrations/services-record.md#idealised-public-outbound-contract), PR #76; no implemented connector asserted.
+**Status: Proposed in Integrations draft PR #76; not approved as a new decision or implemented.** Accounting owns ledger, financial posting interpretation, legal/tax return states and external-primary cutover approval. Integrations owns external provider connections, credential references, supported-operation discovery, versioned mapping, technical remote submission receipts, unknown outcomes and reconciliation checkpoints; neither transport 2xx nor a webhook is a posted journal or accepted tax filing. Do not switch authority on outage, duplicate postings or bypass period controls. See [Integrations proposed public contract](../../services/integrations/services-record.md#idealised-public-outbound-contract), PR #76; no implemented connector asserted.
 
 
 ## Inventory reassessment reciprocal proposal — 18 November 2026 (PR #81)
@@ -574,7 +574,7 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 ## Recruitment reciprocal contract proposal — 20 November 2026
 
-**Status: Proposed in [Recruitment draft PR #99](https://github.com/nuxt-layers/architecture-blueprint-review/pull/99), not owner-approved or implemented.** Recruitment consumes authoritative funding/capacity approval references; Accounting retains budgets and ledger authority. Recruitment records approved requisitions only within independently verified permission. Cooperation uses published contracts/host ports, without private state or mandatory cyclic imports. [Recruitment record](../recruitment/capability-record.md).
+**Status: Proposed in Recruitment draft PR #99, not owner-approved or implemented.** Recruitment consumes authoritative funding/capacity approval references; Accounting retains budgets and ledger authority. Recruitment records approved requisitions only within independently verified permission. Cooperation uses published contracts/host ports, without private state or mandatory cyclic imports. [Recruitment record](../recruitment/capability-record.md).
 
 
 ## Legal Compliance reciprocal conceptual contract — 19 November 2026 (draft PR #85)
@@ -593,7 +593,7 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 ## Payment Gateway reciprocal boundary — approved conceptual integration (22 November 2026)
 
-**Status:** Payment Gateway boundary **owner-approved conceptually (PGW-01–PGW-12, 22 November 2026)** in [draft PR #116](https://github.com/nuxt-layers/architecture-blueprint-review/pull/116), not a verified implementation contract or an override of this capability's previously approved authority. [Payment Gateway](../../services/payment-gateway/services-record.md) accepts only a current, separately authorised and source-revision-bound payment/refund intent, with tenant, merchant/legal-payee, amount, currency and idempotency reference. It returns verified provider authorisation/capture/refund/reversal/dispute evidence, explicit pending/unknown outcomes and stable operation references; redirects and duplicate webhooks do not prove collection. **Accounting retains authoritative postings, bank/settlement reconciliation and financial allocations; provider capture/settlement evidence is a source fact, not a posted journal or bank receipt.** Consumers handle asynchronous, replayed and reversed provider events using the Gateway's current versioned public status, without package-private coupling. This boundary is approved on the Gateway side and does not supersede the neighbouring capability's own authoritative contract.
+**Status:** Payment Gateway boundary **owner-approved conceptually (PGW-01–PGW-12, 22 November 2026)** in draft PR #116, not a verified implementation contract or an override of this capability's previously approved authority. [Payment Gateway](../../services/payment-gateway/services-record.md) accepts only a current, separately authorised and source-revision-bound payment/refund intent, with tenant, merchant/legal-payee, amount, currency and idempotency reference. It returns verified provider authorisation/capture/refund/reversal/dispute evidence, explicit pending/unknown outcomes and stable operation references; redirects and duplicate webhooks do not prove collection. **Accounting retains authoritative postings, bank/settlement reconciliation and financial allocations; provider capture/settlement evidence is a source fact, not a posted journal or bank receipt.** Consumers handle asynchronous, replayed and reversed provider events using the Gateway's current versioned public status, without package-private coupling. This boundary is approved on the Gateway side and does not supersede the neighbouring capability's own authoritative contract.
 
 ## Product approved conceptual interface — 22 November 2026
 
@@ -610,7 +610,7 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 ## Time & Attendance reciprocal conceptual note — 23 November 2026
 
-**Status: Time & Attendance TA-01–TA-06 owner-approved conceptually on 23 November 2026; [draft PR #143](https://github.com/nuxt-layers/architecture-blueprint-review/pull/143). This does not approve a published accounting interface or implementation.** Time & Attendance provides scoped approved actual-time and qualified activity-effort references; Accounting alone owns cost valuation, recognition, entries and journals. Timesheet approval neither determines chargeability nor creates an accounting entry. See [the proposed source-of-truth and input/output contract](../time-attendance/capability-record.md). Existing approved decisions remain authoritative.
+**Status: Time & Attendance TA-01–TA-06 owner-approved conceptually on 23 November 2026; draft PR #143. This does not approve a published accounting interface or implementation.** Time & Attendance provides scoped approved actual-time and qualified activity-effort references; Accounting alone owns cost valuation, recognition, entries and journals. Timesheet approval neither determines chargeability nor creates an accounting entry. See [the proposed source-of-truth and input/output contract](../time-attendance/capability-record.md). Existing approved decisions remain authoritative.
 
 ## Warehouse reciprocal interface — 23 November 2026 (draft PR #149)
 
@@ -618,7 +618,7 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 ## Checkout reciprocal conceptual interface — 24 November 2026
 
-**Checkout-side CHK-01–09 owner-approved (24 November 2026):** [Checkout PR #151](https://github.com/nuxt-layers/architecture-blueprint-review/pull/151), [conceptual contract](../checkout/capability-record.md). Checkout supplies qualified source references only where authorised; Accounting owns ledger, recognition and bank reconciliation. Checkout completion cannot prove revenue or settlement. Existing approved decisions remain authoritative; host-bound public ports only.
+**Checkout-side CHK-01–09 owner-approved (24 November 2026):** Checkout PR #151, [conceptual contract](../checkout/capability-record.md). Checkout supplies qualified source references only where authorised; Accounting owns ledger, recognition and bank reconciliation. Checkout completion cannot prove revenue or settlement. Existing approved decisions remain authoritative; host-bound public ports only.
 
 ## FAC-D04 — Approved financial budget allocation and Payroll boundary
 

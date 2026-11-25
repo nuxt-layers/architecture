@@ -2,7 +2,7 @@
 
 **Status:** Conceptual design approved 22 November 2026 (PERS-01–03 and subsequent refinements). **Classification:** cross-capability architectural responsibility, **not** an independent capability, runtime service, library or GUI. **Implementation:** no independent Persistence `CONTRACT.md` or verified implementation; each data-owning capability must publish its own root contract. This record is the single current blueprint specification; Git history preserves review evidence.
 
-**Governing authority:** accepted [ADR-0002](https://github.com/nuxt-layers/architecture/blob/master/docs/decisions/ADR-0002-composition-supplied-persistence-and-capability-owned-schemas.md), [ADR-0006](https://github.com/nuxt-layers/architecture/blob/master/docs/decisions/ADR-0006-polyglot-persistence-and-data-store-security.md), ADR-0012, ADR-0015 and the Capability Standard, ahead of this non-normative blueprint. Baseline: governing `d7f7c2ee051244b8c81325f5ff1267568d99aab1`, blueprint `361566988ac53c55f6135e8acfa46cd5b013d7a0`.
+**Governing authority:** accepted [ADR-0002](../decisions/ADR-0002-composition-supplied-persistence-and-capability-owned-schemas.md), [ADR-0006](../decisions/ADR-0006-polyglot-persistence-and-data-store-security.md), ADR-0012, ADR-0015 and the Capability Standard, ahead of this non-normative blueprint. Baseline: governing `d7f7c2ee051244b8c81325f5ff1267568d99aab1`, blueprint `361566988ac53c55f6135e8acfa46cd5b013d7a0`.
 
 ## Purpose, decisions and authority
 

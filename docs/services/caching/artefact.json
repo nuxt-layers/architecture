@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "caching",
+  "name": "Caching",
+  "description": "Provides provider-neutral derived caching, expiry, invalidation and scope-safe recovery without becoming source authority.",
+  "kind": "service",
+  "subtype": "service",
+  "classification": "foundation",
+  "ownership": "technical",
+  "designRecord": "docs/services/caching/services-record.md",
+  "provides": [
+    {
+      "id": "cache-read",
+      "type": "service",
+      "description": "cache read within the stated ownership boundary."
+    },
+    {
+      "id": "cache-write",
+      "type": "service",
+      "description": "cache write within the stated ownership boundary."
+    },
+    {
+      "id": "cache-invalidation",
+      "type": "service",
+      "description": "cache invalidation within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "infrastructure",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

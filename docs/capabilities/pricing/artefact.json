@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "pricing",
+  "name": "Pricing",
+  "description": "Owns effective-dated price books, tariffs, adjustments, quotes, promotion budgets and price calculation evidence.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/pricing/capability-record.md",
+  "provides": [
+    {
+      "id": "price-book",
+      "type": "service",
+      "description": "price book within the stated ownership boundary."
+    },
+    {
+      "id": "price-decision",
+      "type": "service",
+      "description": "price decision within the stated ownership boundary."
+    },
+    {
+      "id": "quote",
+      "type": "service",
+      "description": "quote within the stated ownership boundary."
+    },
+    {
+      "id": "promotion-redemption",
+      "type": "service",
+      "description": "promotion redemption within the stated ownership boundary."
+    },
+    {
+      "id": "price-history",
+      "type": "service",
+      "description": "price history within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "membership",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "subscription",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "marketplace",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "order",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "checkout",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "billing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

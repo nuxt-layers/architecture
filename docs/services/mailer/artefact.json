@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "mailer",
+  "name": "Mailer",
+  "description": "Owns outbound email dispatch attempts, transport routing, suppression, retries and qualified provider receipts.",
+  "kind": "service",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "technical",
+  "designRecord": "docs/services/mailer/services-record.md",
+  "provides": [
+    {
+      "id": "mail-dispatch",
+      "type": "service",
+      "description": "mail dispatch within the stated ownership boundary."
+    },
+    {
+      "id": "mail-reconciliation",
+      "type": "service",
+      "description": "mail reconciliation within the stated ownership boundary."
+    },
+    {
+      "id": "transport-status",
+      "type": "service",
+      "description": "transport status within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "notifications",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "integrations",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

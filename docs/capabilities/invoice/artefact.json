@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "invoice",
+  "name": "Invoice",
+  "description": "Owns issued and received invoice documents, numbering, revisions, delivery, disputes and document-level settlement allocation.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/invoice/capability-record.md",
+  "provides": [
+    {
+      "id": "invoice-issue",
+      "type": "service",
+      "description": "invoice issue within the stated ownership boundary."
+    },
+    {
+      "id": "supplier-invoice-intake",
+      "type": "service",
+      "description": "supplier invoice intake within the stated ownership boundary."
+    },
+    {
+      "id": "credit-debit-document",
+      "type": "service",
+      "description": "credit debit document within the stated ownership boundary."
+    },
+    {
+      "id": "invoice-dispute",
+      "type": "service",
+      "description": "invoice dispute within the stated ownership boundary."
+    },
+    {
+      "id": "document-settlement-status",
+      "type": "service",
+      "description": "document settlement status within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "billing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "order",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "accounting",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "payment-gateway",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "party",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "export",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "comments-engine",
+  "name": "Comments Engine",
+  "description": "Owns comments, replies, thread structure, comment-specific visibility, enforcement and revision history attached to owner resources.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/comments-engine/capability-record.md",
+  "provides": [
+    {
+      "id": "comment-lifecycle",
+      "type": "service",
+      "description": "comment lifecycle within the stated ownership boundary."
+    },
+    {
+      "id": "thread-query",
+      "type": "service",
+      "description": "thread query within the stated ownership boundary."
+    },
+    {
+      "id": "comment-enforcement",
+      "type": "service",
+      "description": "comment enforcement within the stated ownership boundary."
+    },
+    {
+      "id": "discussion-policy",
+      "type": "service",
+      "description": "discussion policy within the stated ownership boundary."
+    },
+    {
+      "id": "comment-history",
+      "type": "service",
+      "description": "comment history within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "moderation",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "content-security",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "profile",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Detailed interface and dependency mapping",
+      "reason": "Conceptual discovery summary; exact selected-host bindings and reciprocal approval require reconciliation."
+    }
+  ]
+}

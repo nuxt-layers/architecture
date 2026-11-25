@@ -1,4 +1,4 @@
-# Nuxt Layers Architecture Rules
+# Nuxt Layers Architecture
 
 > **Summary:** the authoritative platform architecture, governing rules and approved conceptual artefact designs. Implemented contracts and technical detail remain with their owning repositories.
 
@@ -32,7 +32,7 @@ Reconcile conflicts between conceptual intent and implemented contracts; consume
 
 ## Where things live
 
-This repository holds governing architecture and approved conceptual designs following reconciliation and migration of the working blueprint. Each implementation repository owns its root `CONTRACT.md`, detailed technical specifications and implementation. Suite implementation processes stay with the integration owner. Conceptual descriptors and generated indexes support selective discovery ([ADR-0004](docs/decisions/ADR-0004-documentation-placement.md)). Reviewed external references are listed in [Resources](RESOURCES.md). Development plans, progress and implementation verification evidence remain outside this repository ([ADR-0010](docs/decisions/ADR-0010-documentation-style.md)).
+This repository holds governing architecture and approved conceptual designs. Each implementation repository owns its root `CONTRACT.md`, detailed technical specifications and implementation. Suite implementation processes stay with the integration owner. Conceptual descriptors and generated indexes support selective discovery ([ADR-0004](docs/decisions/ADR-0004-documentation-placement.md)). Reviewed external references are listed in [Resources](RESOURCES.md). Development plans, progress and implementation verification evidence remain outside this repository ([ADR-0010](docs/decisions/ADR-0010-documentation-style.md)).
 
 ## Documents
 
@@ -45,6 +45,12 @@ This repository holds governing architecture and approved conceptual designs fol
 | [Security](docs/security.md) | The security baseline and data-store controls |
 | [Privacy](docs/privacy.md) | Data protection by design |
 | [Presentation, Internationalisation and Accessibility](docs/presentation.md) | Design tokens, languages, WCAG and the screen checklist |
-| [Capability Catalogue](docs/catalogue.md) | The capabilities that exist, the candidates, and the rules for starting one |
+| [Artefact Catalogue](docs/catalogue.md) | All 99 conceptual artefacts and governing boundaries |
+| [Architecture index](docs/architecture-index.json) | Machine-readable discovery and relationships |
+| [Artefact definition](docs/artefact-definition.md) | Common schema and conceptual/implementation boundaries |
+| [Common Engineering Standard](docs/engineering-standard.md) | Cross-artefact engineering requirements |
+| [Nuxt Layer Standard](docs/nuxt-layer-standard.md) | Nuxt-specific requirements |
+| [Composition Standard](docs/composition-standard.md) | Host assembly requirements |
+| [TypeScript Package Standard](docs/typescript-package-standard.md) | Package-specific requirements |
 | [Decisions](docs/decisions/) | One file per Architecture Decision Record, in number order; ADR-0008 governs development integration, ADR-0013 the development toolchain baseline, ADR-0014 hosting and storage providers, ADR-0015 infrastructure integration libraries, and ADR-0016 controlled specialisation |
 | [Resources](RESOURCES.md) | Verified, accessible external documents relied on |

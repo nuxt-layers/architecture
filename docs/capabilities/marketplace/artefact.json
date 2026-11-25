@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "marketplace",
+  "name": "Marketplace",
+  "description": "Owns multi-seller venue participation, seller agreements, catalogue submissions, listing decisions, restrictions and marketplace disputes.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/marketplace/capability-record.md",
+  "provides": [
+    {
+      "id": "venue-policy",
+      "type": "service",
+      "description": "venue policy within the stated ownership boundary."
+    },
+    {
+      "id": "seller-participation",
+      "type": "service",
+      "description": "seller participation within the stated ownership boundary."
+    },
+    {
+      "id": "listing-submission",
+      "type": "service",
+      "description": "listing submission within the stated ownership boundary."
+    },
+    {
+      "id": "listing-decision",
+      "type": "service",
+      "description": "listing decision within the stated ownership boundary."
+    },
+    {
+      "id": "marketplace-dispute",
+      "type": "service",
+      "description": "marketplace dispute within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "party",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "pricing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "order",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "billing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "shop",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "moderation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

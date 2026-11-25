@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "theme-manager",
+  "name": "Theme Manager",
+  "description": "Owns theme definitions, semantic tokens, validation, selection, effective-theme resolution and fallback, separate from generic settings and host routes.",
+  "kind": "presentation",
+  "subtype": "presentation-kit",
+  "classification": "foundation",
+  "ownership": "configuration",
+  "designRecord": "docs/presentation/theme-manager/presentation-record.md",
+  "provides": [
+    {
+      "id": "theme-definition",
+      "type": "presentation",
+      "description": "theme definition within the stated ownership boundary."
+    },
+    {
+      "id": "theme-validation",
+      "type": "presentation",
+      "description": "theme validation within the stated ownership boundary."
+    },
+    {
+      "id": "effective-theme",
+      "type": "presentation",
+      "description": "effective theme within the stated ownership boundary."
+    },
+    {
+      "id": "theme-selection",
+      "type": "presentation",
+      "description": "theme selection within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "profile",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "ui",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "application-composition",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

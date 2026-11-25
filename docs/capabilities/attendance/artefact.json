@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "attendance",
+  "name": "Attendance",
+  "description": "Owns activity-scoped participation, invitations and responses, expected rosters, presence observations, verified findings, corrections and authorised disclosure; not reservations, enrolment or specialist outcomes.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/attendance/capability-record.md",
+  "provides": [
+    {
+      "id": "participant-registration",
+      "type": "service",
+      "description": "Register and resolve scoped participants and roster identities."
+    },
+    {
+      "id": "invitations-and-responses",
+      "type": "service",
+      "description": "Manage invitations, responses and non-binding participation intent."
+    },
+    {
+      "id": "participation-eligibility",
+      "type": "query",
+      "description": "Qualify source entitlement and effective eligibility without creating admission."
+    },
+    {
+      "id": "presence-observations",
+      "type": "command",
+      "description": "Record check-in, check-out and presence observations with provenance."
+    },
+    {
+      "id": "attendance-findings",
+      "type": "service",
+      "description": "Verify, correct and dispute versioned findings."
+    },
+    {
+      "id": "attendance-views",
+      "type": "query",
+      "description": "Supply authorised participant, observation and aggregate views with coverage."
+    },
+    {
+      "id": "provider-reconciliation",
+      "type": "service",
+      "description": "Accept qualified external observations and reconcile uncertain evidence."
+    },
+    {
+      "id": "participation-history",
+      "type": "query",
+      "description": "Supply scoped history and export."
+    },
+    {
+      "id": "attendance-change",
+      "type": "event",
+      "description": "Publish committed participant, response, observation, verification and correction changes."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "events",
+      "type": "information-exchange",
+      "rationale": "Optional event/occurrence context; generic participation does not require Events."
+    },
+    {
+      "target": "booking",
+      "type": "information-exchange",
+      "rationale": "Optional reservation evidence; attendance does not reserve capacity."
+    },
+    {
+      "target": "enrolment",
+      "type": "information-exchange",
+      "rationale": "Optional admission standing; Attendance does not admit learners."
+    },
+    {
+      "target": "training",
+      "type": "information-exchange",
+      "rationale": "Generic presence evidence may support independent specialist learning-participation decisions."
+    },
+    {
+      "target": "time-attendance",
+      "type": "information-exchange",
+      "rationale": "Actual work-time statements remain separately owned."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Trusted participant and caller context, including secure accountless access, does not create a duplicate person master."
+    },
+    {
+      "target": "profile",
+      "type": "information-exchange",
+      "rationale": "Trusted participant and caller context, including secure accountless access, does not create a duplicate person master."
+    },
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Trusted participant and caller context, including secure accountless access, does not create a duplicate person master."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Trusted participant and caller context, including secure accountless access, does not create a duplicate person master."
+    },
+    {
+      "target": "location",
+      "type": "information-exchange",
+      "rationale": "Qualified location/time, effective rules and lawful disclosure constrain observations."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Qualified location/time, effective rules and lawful disclosure constrain observations."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Qualified location/time, effective rules and lawful disclosure constrain observations."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Qualified location/time, effective rules and lawful disclosure constrain observations."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Qualified location/time, effective rules and lawful disclosure constrain observations."
+    },
+    {
+      "target": "integrations",
+      "type": "information-exchange",
+      "rationale": "Optional provider evidence, delivery and conditional event transport do not establish presence."
+    },
+    {
+      "target": "notifications",
+      "type": "information-exchange",
+      "rationale": "Optional provider evidence, delivery and conditional event transport do not establish presence."
+    },
+    {
+      "target": "message-queue",
+      "type": "information-exchange",
+      "rationale": "Optional provider evidence, delivery and conditional event transport do not establish presence."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Independent receipts, diagnostics and derived summaries do not mutate source findings."
+    },
+    {
+      "target": "logging",
+      "type": "information-exchange",
+      "rationale": "Independent receipts, diagnostics and derived summaries do not mutate source findings."
+    },
+    {
+      "target": "reporting",
+      "type": "information-exchange",
+      "rationale": "Independent receipts, diagnostics and derived summaries do not mutate source findings."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0002",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0017",
+    "ADR-0018",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "ATT-08 implementation acceptance",
+      "reason": "Verify selected contracts, guest assurance, correction lineage and absence modes in designated acceptance environments."
+    }
+  ]
+}

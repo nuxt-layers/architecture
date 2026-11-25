@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "warehouse",
+  "name": "Warehouse",
+  "description": "Owns physical receiving, put-away, picking, packing, staging, counting and handover work, observations and discrepancy evidence.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/warehouse/capability-record.md",
+  "provides": [
+    {
+      "id": "warehouse-work",
+      "type": "service",
+      "description": "warehouse work within the stated ownership boundary."
+    },
+    {
+      "id": "receiving",
+      "type": "service",
+      "description": "receiving within the stated ownership boundary."
+    },
+    {
+      "id": "picking-packing",
+      "type": "service",
+      "description": "picking packing within the stated ownership boundary."
+    },
+    {
+      "id": "physical-handover",
+      "type": "service",
+      "description": "physical handover within the stated ownership boundary."
+    },
+    {
+      "id": "count-and-discrepancy",
+      "type": "service",
+      "description": "count and discrepancy within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "inventory",
+      "optional": true,
+      "rationale": "Stock work needs authoritative positions and committed movement evidence.",
+      "scope": "Stock work",
+      "absenceMode": "Return pending/exception; no shadow stock write."
+    }
+  ],
+  "relationships": [
+    {
+      "target": "inventory",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "facility",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "logistics",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "manufacturing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "quality",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "accounting",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

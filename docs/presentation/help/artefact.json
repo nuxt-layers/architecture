@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "help",
+  "name": "Help",
+  "description": "Supplies accessible version-aware help and contextual assistance; Publisher owns content, independent mapping service remains conditional.",
+  "kind": "presentation",
+  "subtype": "presentation-kit",
+  "classification": "presentation",
+  "ownership": "none",
+  "designRecord": "docs/presentation/help/presentation-record.md",
+  "provides": [
+    {
+      "id": "help-centre",
+      "type": "presentation",
+      "description": "help centre within the stated ownership boundary."
+    },
+    {
+      "id": "contextual-help",
+      "type": "presentation",
+      "description": "contextual help within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "publisher",
+      "optional": false,
+      "rationale": "Source of authorised articles, revisions and withdrawal.",
+      "scope": "Help content"
+    },
+    {
+      "id": "search",
+      "optional": true,
+      "rationale": "Optional full-text discovery.",
+      "scope": "Full-text help search",
+      "absenceMode": "Direct topics remain available."
+    },
+    {
+      "id": "metadata",
+      "optional": true,
+      "rationale": "Optional metadata-assisted resolution.",
+      "scope": "Metadata-assisted help",
+      "absenceMode": "Use exact direct resolution."
+    },
+    {
+      "id": "localisation",
+      "optional": true,
+      "rationale": "Optional localisation support.",
+      "scope": "Localised help",
+      "absenceMode": "Use permitted available language content; label absence."
+    }
+  ],
+  "relationships": [
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "search",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "content-editor",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "ui",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "metadata",
+      "type": "interface-consumption",
+      "rationale": "Optional metadata-assisted resolution."
+    },
+    {
+      "target": "localisation",
+      "type": "interface-consumption",
+      "rationale": "Optional localisation support."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Independent help mapping service",
+      "reason": "Conditional on demonstrated cross-application need."
+    }
+  ]
+}

@@ -18,7 +18,7 @@ A document lives with whoever is responsible for keeping it true.
 
 | Location | Holds |
 |---|---|
-| `nuxt-layers/architecture-rules` | Platform principles, standards, ADRs, approved conceptual designs for all eight artefact kinds, intended public boundaries and relationships, conceptual descriptors and generated discovery indexes. Architectural requirements and acceptance criteria, not execution results |
+| `nuxt-layers/architecture` | Platform principles, standards, ADRs, approved conceptual designs for all eight artefact kinds, intended public boundaries and relationships, conceptual descriptors and generated discovery indexes. Architectural requirements and acceptance criteria, not execution results |
 | Owning implementation repository, `nuxt-layers/[ARTEFACT-NAME]` | Root `CONTRACT.md` for independently consumable artefacts, implemented descriptors subject to approved migration, implementation, detailed technical specifications, data models, threat models, storage registers and owner-specific processes |
 | Suite or application implementation repository | Implemented composition contracts, wiring, cross-capability implementation processes and deployment-specific specifications; conceptual suite and application architecture remains central |
 | Implementation and designated test repositories; CI and acceptance environments | Tests, execution results, implementation verification evidence and acceptance reports |
@@ -35,7 +35,7 @@ A document lives with whoever is responsible for keeping it true.
 
 ## Adopting it
 
-Reconcile and migrate the approved blueprint into the governing repository before retiring the working blueprint. Until migration and governing reconciliation are complete, existing governing decisions remain authoritative; unadopted blueprint records must not be treated as implemented contracts. Schema and implementation descriptor migration remain separately gated under ADR-0019.
+The approved conceptual blueprint and conceptual schema are consolidated here. Accepted governing decisions remain authoritative; conceptual records are not implemented contracts. Implementation descriptor migration remains separately gated under ADR-0019.
 
 ## What follows
 

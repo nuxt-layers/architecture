@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "booking",
+  "name": "Booking",
+  "description": "Owns time-specific reservation intent, holds, confirmation, allocation and release against offered capacity.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/booking/capability-record.md",
+  "provides": [
+    {
+      "id": "availability",
+      "type": "service",
+      "description": "availability within the stated ownership boundary."
+    },
+    {
+      "id": "reservation-hold",
+      "type": "service",
+      "description": "reservation hold within the stated ownership boundary."
+    },
+    {
+      "id": "reservation-confirmation",
+      "type": "service",
+      "description": "reservation confirmation within the stated ownership boundary."
+    },
+    {
+      "id": "reservation-change",
+      "type": "service",
+      "description": "reservation change within the stated ownership boundary."
+    },
+    {
+      "id": "reservation-history",
+      "type": "service",
+      "description": "reservation history within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "clock",
+      "optional": false,
+      "rationale": "Reliable time semantics for slots and ambiguity handling.",
+      "scope": "Reservation time semantics"
+    }
+  ],
+  "relationships": [
+    {
+      "target": "asset",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "facility",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "events",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "location",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "pricing",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "order",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "integrations",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "attendance",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Detailed interface and dependency mapping",
+      "reason": "Conceptual discovery summary; exact selected-host bindings and reciprocal approval require reconciliation."
+    }
+  ]
+}

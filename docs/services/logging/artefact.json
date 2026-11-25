@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "logging",
+  "name": "Logging",
+  "description": "Accepts sanitised structured technical diagnostics, routes to sinks, exposes scoped records and delivery health; not Audit custody.",
+  "kind": "service",
+  "subtype": "service",
+  "classification": "foundation",
+  "ownership": "technical",
+  "designRecord": "docs/services/logging/services-record.md",
+  "provides": [
+    {
+      "id": "diagnostic-intake",
+      "type": "service",
+      "description": "diagnostic intake within the stated ownership boundary."
+    },
+    {
+      "id": "diagnostic-query",
+      "type": "service",
+      "description": "diagnostic query within the stated ownership boundary."
+    },
+    {
+      "id": "sink-status",
+      "type": "service",
+      "description": "sink status within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "error-normalisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "observability",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

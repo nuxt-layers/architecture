@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "observability",
+  "name": "Observability",
+  "description": "Owns technical metrics, traces, monitoring coverage, SLI/SLO evaluation and alert lifecycle; not source business outcomes or incident remediation.",
+  "kind": "service",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "technical",
+  "designRecord": "docs/services/observability/services-record.md",
+  "provides": [
+    {
+      "id": "signal-intake",
+      "type": "service",
+      "description": "signal intake within the stated ownership boundary."
+    },
+    {
+      "id": "health-evaluation",
+      "type": "service",
+      "description": "health evaluation within the stated ownership boundary."
+    },
+    {
+      "id": "alert-management",
+      "type": "service",
+      "description": "alert management within the stated ownership boundary."
+    },
+    {
+      "id": "monitoring-query",
+      "type": "service",
+      "description": "monitoring query within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "logging",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "infrastructure",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "notifications",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "reporting",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

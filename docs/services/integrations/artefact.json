@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "integrations",
+  "name": "Integrations",
+  "description": "Coordinates provider-neutral external connections, scoped grants, adapter calls, callbacks, checkpoints and technical reconciliation.",
+  "kind": "service",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "technical",
+  "designRecord": "docs/services/integrations/services-record.md",
+  "provides": [
+    {
+      "id": "adapter-registration",
+      "type": "service",
+      "description": "adapter registration within the stated ownership boundary."
+    },
+    {
+      "id": "connection-management",
+      "type": "service",
+      "description": "connection management within the stated ownership boundary."
+    },
+    {
+      "id": "provider-operation",
+      "type": "service",
+      "description": "provider operation within the stated ownership boundary."
+    },
+    {
+      "id": "callback-intake",
+      "type": "service",
+      "description": "callback intake within the stated ownership boundary."
+    },
+    {
+      "id": "synchronisation",
+      "type": "service",
+      "description": "synchronisation within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "scheduler",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "message-queue",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

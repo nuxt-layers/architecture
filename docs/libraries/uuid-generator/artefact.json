@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "uuid-generator",
+  "name": "UUID Generator",
+  "description": "Generates and validates standards-compliant UUIDs including UUIDv7; callers own uniqueness and entity allocation.",
+  "kind": "library",
+  "subtype": "stateless",
+  "classification": "technical",
+  "ownership": "none",
+  "designRecord": "docs/libraries/uuid-generator/stateless-library-record.md",
+  "provides": [
+    {
+      "id": "generate-uuid",
+      "type": "service",
+      "description": "generate uuid within the stated ownership boundary."
+    },
+    {
+      "id": "validate-uuid",
+      "type": "service",
+      "description": "validate uuid within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [],
+  "aliases": [
+    "UUID-generator"
+  ]
+}

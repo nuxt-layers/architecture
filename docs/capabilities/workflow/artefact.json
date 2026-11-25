@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "workflow",
+  "name": "Workflow",
+  "description": "Owns human approval routes, cases, assignments, delegation, quorum, decisions and qualified approval outcomes; source owners retain final business decisions.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/workflow/capability-record.md",
+  "provides": [
+    {
+      "id": "approval-route",
+      "type": "service",
+      "description": "approval route within the stated ownership boundary."
+    },
+    {
+      "id": "approval-case",
+      "type": "service",
+      "description": "approval case within the stated ownership boundary."
+    },
+    {
+      "id": "approver-assignment",
+      "type": "service",
+      "description": "approver assignment within the stated ownership boundary."
+    },
+    {
+      "id": "approval-decision",
+      "type": "service",
+      "description": "approval decision within the stated ownership boundary."
+    },
+    {
+      "id": "approval-outcome",
+      "type": "service",
+      "description": "approval outcome within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "process",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "task",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "scheduler",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

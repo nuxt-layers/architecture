@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "payment-gateway",
+  "name": "Payment Gateway",
+  "description": "Owns provider-neutral external payment operations, attempts, capture/refund/reversal and qualified execution evidence, not financial recognition or general banking.",
+  "kind": "service",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "technical",
+  "designRecord": "docs/services/payment-gateway/services-record.md",
+  "provides": [
+    {
+      "id": "payment-initiation",
+      "type": "service",
+      "description": "payment initiation within the stated ownership boundary."
+    },
+    {
+      "id": "payment-capture",
+      "type": "service",
+      "description": "payment capture within the stated ownership boundary."
+    },
+    {
+      "id": "payment-refund",
+      "type": "service",
+      "description": "payment refund within the stated ownership boundary."
+    },
+    {
+      "id": "payment-reconciliation",
+      "type": "service",
+      "description": "payment reconciliation within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "party",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "checkout",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "order",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "billing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "accounting",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "integrations",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

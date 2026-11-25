@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "job",
+  "name": "Job",
+  "description": "Owns versioned position definitions, duties, grades, skills and qualification requirements, not vacancies or engagements.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/job/capability-record.md",
+  "provides": [
+    {
+      "id": "position-definition",
+      "type": "service",
+      "description": "position definition within the stated ownership boundary."
+    },
+    {
+      "id": "position-revision",
+      "type": "service",
+      "description": "position revision within the stated ownership boundary."
+    },
+    {
+      "id": "position-query",
+      "type": "service",
+      "description": "position query within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "employment",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "recruitment",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "qualification",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

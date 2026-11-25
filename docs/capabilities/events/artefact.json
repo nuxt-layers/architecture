@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "events",
+  "name": "Events",
+  "description": "Owns organised activity definitions and occurrences; generic attendance is independently owned.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/events/capability-record.md",
+  "provides": [
+    {
+      "id": "event-definition",
+      "type": "service",
+      "description": "event definition within the stated ownership boundary."
+    },
+    {
+      "id": "occurrence-lifecycle",
+      "type": "service",
+      "description": "occurrence lifecycle within the stated ownership boundary."
+    },
+    {
+      "id": "event-publication",
+      "type": "service",
+      "description": "event publication within the stated ownership boundary."
+    },
+    {
+      "id": "event-query",
+      "type": "service",
+      "description": "event query within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "attendance",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "booking",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "location",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "facility",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "scheduler",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "notifications",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Detailed interface and dependency mapping",
+      "reason": "Conceptual discovery summary; exact selected-host bindings and reciprocal approval require reconciliation."
+    }
+  ]
+}

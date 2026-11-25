@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "manufacturing",
+  "name": "Manufacturing",
+  "description": "Owns production planning, executable manufacturing BOMs and routings, work orders, operation progress, rework and production-specific cost evidence.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/manufacturing/capability-record.md",
+  "provides": [
+    {
+      "id": "production-plan",
+      "type": "service",
+      "description": "production plan within the stated ownership boundary."
+    },
+    {
+      "id": "manufacturing-bom",
+      "type": "service",
+      "description": "manufacturing bom within the stated ownership boundary."
+    },
+    {
+      "id": "work-order",
+      "type": "service",
+      "description": "work order within the stated ownership boundary."
+    },
+    {
+      "id": "operation-execution",
+      "type": "service",
+      "description": "operation execution within the stated ownership boundary."
+    },
+    {
+      "id": "production-history",
+      "type": "service",
+      "description": "production history within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "inventory",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "warehouse",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "facility",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "quality",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "accounting",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "workforce-scheduling",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "logistics",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

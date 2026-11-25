@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "logistics",
+  "name": "Logistics",
+  "description": "Owns shipment, despatch, transport legs, routing, carrier assignments, custody observations, delivery evidence and transport exceptions.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/logistics/capability-record.md",
+  "provides": [
+    {
+      "id": "shipment-planning",
+      "type": "service",
+      "description": "shipment planning within the stated ownership boundary."
+    },
+    {
+      "id": "despatch",
+      "type": "service",
+      "description": "despatch within the stated ownership boundary."
+    },
+    {
+      "id": "route-planning",
+      "type": "service",
+      "description": "route planning within the stated ownership boundary."
+    },
+    {
+      "id": "transport-tracking",
+      "type": "service",
+      "description": "transport tracking within the stated ownership boundary."
+    },
+    {
+      "id": "delivery-evidence",
+      "type": "service",
+      "description": "delivery evidence within the stated ownership boundary."
+    },
+    {
+      "id": "transport-reconciliation",
+      "type": "service",
+      "description": "transport reconciliation within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "order",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "inventory",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "warehouse",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "location",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "facility",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "asset",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "accounting",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "integrations",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "course",
+  "name": "Course",
+  "description": "Owns versioned learning offerings, curricula, intended outcomes, prerequisites and assessment requirements independently of learners.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/course/capability-record.md",
+  "provides": [
+    {
+      "id": "course-definition",
+      "type": "service",
+      "description": "course definition within the stated ownership boundary."
+    },
+    {
+      "id": "curriculum-revision",
+      "type": "service",
+      "description": "curriculum revision within the stated ownership boundary."
+    },
+    {
+      "id": "learning-outcomes",
+      "type": "service",
+      "description": "learning outcomes within the stated ownership boundary."
+    },
+    {
+      "id": "course-publication",
+      "type": "service",
+      "description": "course publication within the stated ownership boundary."
+    },
+    {
+      "id": "offering-query",
+      "type": "service",
+      "description": "offering query within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "assessment",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "enrolment",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "training",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "qualification",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "metadata",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Detailed interface and dependency mapping",
+      "reason": "Conceptual discovery summary; exact selected-host bindings and reciprocal approval require reconciliation."
+    }
+  ]
+}

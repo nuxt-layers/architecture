@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "localisation",
+  "name": "Localisation",
+  "description": "Owns translation jobs, terminology, contextual risk policy, translation review, provenance and controlled reuse, not routine i18n rendering or source publication.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/localisation/capability-record.md",
+  "provides": [
+    {
+      "id": "translation-request",
+      "type": "service",
+      "description": "translation request within the stated ownership boundary."
+    },
+    {
+      "id": "translation-review",
+      "type": "service",
+      "description": "translation review within the stated ownership boundary."
+    },
+    {
+      "id": "terminology",
+      "type": "service",
+      "description": "terminology within the stated ownership boundary."
+    },
+    {
+      "id": "translation-memory",
+      "type": "service",
+      "description": "translation memory within the stated ownership boundary."
+    },
+    {
+      "id": "translation-handoff",
+      "type": "service",
+      "description": "translation handoff within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "profile",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "integrations",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "workflow",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

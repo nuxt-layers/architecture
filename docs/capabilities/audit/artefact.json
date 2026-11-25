@@ -1,0 +1,486 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "audit",
+  "name": "Audit",
+  "description": "Owns governed evidence taxonomy, attributable evidence custody, integrity and completeness assessment, retention, scoped review and qualified attestations; not source business decisions, Logging or Observability.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/audit/capability-record.md",
+  "provides": [
+    {
+      "id": "evidence-definition",
+      "type": "service",
+      "description": "Govern versioned evidence definitions, capture policy and coverage eligibility."
+    },
+    {
+      "id": "evidence-intake",
+      "type": "command",
+      "description": "Accept or reject attributable assertions and issue independent custody receipts."
+    },
+    {
+      "id": "evidence-query",
+      "type": "query",
+      "description": "Supply authorised redacted evidence timelines and provenance."
+    },
+    {
+      "id": "integrity-and-completeness",
+      "type": "query",
+      "description": "Verify evidence integrity and qualify gaps against source expectations."
+    },
+    {
+      "id": "evidence-review",
+      "type": "service",
+      "description": "Maintain evidential annotations, disputes and review findings without owning investigations."
+    },
+    {
+      "id": "retention-and-preservation",
+      "type": "service",
+      "description": "Apply scoped retention, holds, redaction and disposal constraints."
+    },
+    {
+      "id": "evidence-portability",
+      "type": "service",
+      "description": "Govern authorised evidence export, import and qualified custody transfer."
+    },
+    {
+      "id": "coverage-and-reconciliation",
+      "type": "service",
+      "description": "Reconcile expected source evidence, gaps and replay status."
+    },
+    {
+      "id": "health-and-control-evidence",
+      "type": "query",
+      "description": "Supply qualified intake, verification and control health."
+    },
+    {
+      "id": "evidence-attestation",
+      "type": "query",
+      "description": "Supply scoped attestations, proof and declared assurance limits."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Trusted actor/scope and source outcomes support risk-selected evidence; no circular IAM dependency."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Trusted actor/scope and source outcomes support risk-selected evidence; no circular IAM dependency."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Trusted actor/scope and source outcomes support risk-selected evidence; no circular IAM dependency."
+    },
+    {
+      "target": "profile",
+      "type": "information-exchange",
+      "rationale": "Trusted actor/scope and source outcomes support risk-selected evidence; no circular IAM dependency."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Effective policy, qualified duties, trust and temporal provenance constrain capture and retention."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Effective policy, qualified duties, trust and temporal provenance constrain capture and retention."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Effective policy, qualified duties, trust and temporal provenance constrain capture and retention."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Effective policy, qualified duties, trust and temporal provenance constrain capture and retention."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Effective policy, qualified duties, trust and temporal provenance constrain capture and retention."
+    },
+    {
+      "target": "message-queue",
+      "type": "information-exchange",
+      "rationale": "Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate."
+    },
+    {
+      "target": "integrations",
+      "type": "information-exchange",
+      "rationale": "Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate."
+    },
+    {
+      "target": "storage",
+      "type": "information-exchange",
+      "rationale": "Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate."
+    },
+    {
+      "target": "infrastructure",
+      "type": "information-exchange",
+      "rationale": "Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate."
+    },
+    {
+      "target": "persistence",
+      "type": "information-exchange",
+      "rationale": "Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate."
+    },
+    {
+      "target": "logging",
+      "type": "information-exchange",
+      "rationale": "Diagnostics, safe error projection, derived reporting, search and rendering do not substitute for accountable custody."
+    },
+    {
+      "target": "observability",
+      "type": "information-exchange",
+      "rationale": "Diagnostics, safe error projection, derived reporting, search and rendering do not substitute for accountable custody."
+    },
+    {
+      "target": "error-normalisation",
+      "type": "information-exchange",
+      "rationale": "Diagnostics, safe error projection, derived reporting, search and rendering do not substitute for accountable custody."
+    },
+    {
+      "target": "reporting",
+      "type": "information-exchange",
+      "rationale": "Diagnostics, safe error projection, derived reporting, search and rendering do not substitute for accountable custody."
+    },
+    {
+      "target": "search",
+      "type": "information-exchange",
+      "rationale": "Diagnostics, safe error projection, derived reporting, search and rendering do not substitute for accountable custody."
+    },
+    {
+      "target": "export",
+      "type": "information-exchange",
+      "rationale": "Diagnostics, safe error projection, derived reporting, search and rendering do not substitute for accountable custody."
+    },
+    {
+      "target": "asset",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "accounting",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "billing",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "booking",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "caching",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "checkout",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "comments-engine",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "content-editor",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "content-security",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "course",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "assessment",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "credentials",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "training",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "qualification",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "events",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "attendance",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "federation",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "help",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "iam-integration",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "inventory",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "invoice",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "job",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "recruitment",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "localisation",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "location",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "logistics",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "quality",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "facility",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "mailer",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "marketplace",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "media",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "membership",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "metadata",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "notifications",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "moderation",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "office",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "organisation-console",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "order",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "organisation-model",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "process",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "pricing",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "project",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "task",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "reviews",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "scheduler",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "shop",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "site-hosting",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "subscription",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "time-attendance",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "ui",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "user",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "warehouse",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "workflow",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "todo",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "shopping-basket",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "manufacturing",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "seo",
+      "type": "information-exchange",
+      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
+    },
+    {
+      "target": "application-composition",
+      "type": "information-exchange",
+      "rationale": "Optional host-mounted Audit presentation remains separate from headless evidence custody."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0002",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0017",
+    "ADR-0018",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Capture guarantees and assurance profiles",
+      "reason": "AUD-01–11 directions approved; exact critical capture tiers, anchors and legal applicability remain deployment-specific."
+    },
+    {
+      "description": "Per-producer reciprocal approval and dependency classification",
+      "reason": "Extensive historical notes include proposals and independently approved counterpart designs; reconcile individual edges before final index adoption."
+    }
+  ]
+}

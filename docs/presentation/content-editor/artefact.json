@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "content-editor",
+  "name": "Content Editor",
+  "description": "Supplies reusable source-owner editing presentation using public contracts, validated rich text and schema-directed controls.",
+  "kind": "presentation",
+  "subtype": "presentation-kit",
+  "classification": "presentation",
+  "ownership": "none",
+  "designRecord": "docs/presentation/content-editor/presentation-record.md",
+  "provides": [
+    {
+      "id": "editor-presentation",
+      "type": "presentation",
+      "description": "editor presentation within the stated ownership boundary."
+    },
+    {
+      "id": "field-editing",
+      "type": "presentation",
+      "description": "field editing within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "publisher",
+      "optional": true,
+      "rationale": "Document workspace consumes Publisher; generic field editor is independent.",
+      "scope": "Document workspace",
+      "absenceMode": "Disable workspace; field mode may remain."
+    },
+    {
+      "id": "rich-text",
+      "optional": true,
+      "rationale": "Declared profiles and safe source format for formatted fields.",
+      "scope": "Formatted fields",
+      "absenceMode": "Disable unsupported editing rather than widen the format."
+    },
+    {
+      "id": "ui",
+      "optional": true,
+      "rationale": "Presentation components supplied or replaced through host composition.",
+      "scope": "Editing presentation",
+      "absenceMode": "Use compatible accessible replacement or disable affected controls."
+    },
+    {
+      "id": "theme-manager",
+      "optional": true,
+      "rationale": "Semantic tokens supplied or replaced by host.",
+      "scope": "Styled presentation",
+      "absenceMode": "Use documented compatible fallback or disable affected controls."
+    }
+  ],
+  "relationships": [
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "rich-text",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "ui",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "theme-manager",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

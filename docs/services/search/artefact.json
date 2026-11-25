@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "search",
+  "name": "Search",
+  "description": "Owns permission-safe derived indexing, source registration, reconciliation, relevance and bounded query services; source owners retain truth and access decisions.",
+  "kind": "service",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "technical",
+  "designRecord": "docs/services/search/services-record.md",
+  "provides": [
+    {
+      "id": "source-registration",
+      "type": "service",
+      "description": "source registration within the stated ownership boundary."
+    },
+    {
+      "id": "index-projection",
+      "type": "service",
+      "description": "index projection within the stated ownership boundary."
+    },
+    {
+      "id": "search-query",
+      "type": "service",
+      "description": "search query within the stated ownership boundary."
+    },
+    {
+      "id": "index-reconciliation",
+      "type": "service",
+      "description": "index reconciliation within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "metadata",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "media",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "federation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

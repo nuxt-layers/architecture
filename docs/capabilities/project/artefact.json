@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "project",
+  "name": "Project",
+  "description": "Owns project charters, plans, milestones, project acceptance, risk and issue records, forecasts and qualified closure.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/project/capability-record.md",
+  "provides": [
+    {
+      "id": "project-charter",
+      "type": "service",
+      "description": "project charter within the stated ownership boundary."
+    },
+    {
+      "id": "project-baseline",
+      "type": "service",
+      "description": "project baseline within the stated ownership boundary."
+    },
+    {
+      "id": "milestone-acceptance",
+      "type": "service",
+      "description": "milestone acceptance within the stated ownership boundary."
+    },
+    {
+      "id": "project-risk",
+      "type": "service",
+      "description": "project risk within the stated ownership boundary."
+    },
+    {
+      "id": "project-closure",
+      "type": "service",
+      "description": "project closure within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "task",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "process",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "workflow",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "accounting",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "reporting",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

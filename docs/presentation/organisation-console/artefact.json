@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "organisation-console",
+  "name": "Organisation Console",
+  "description": "Presents authorised organisational dashboards and source-directed actions, retaining only presentation descriptors and disposable screen state.",
+  "kind": "presentation",
+  "subtype": "presentation-kit",
+  "classification": "presentation",
+  "ownership": "none",
+  "designRecord": "docs/presentation/organisation-console/presentation-record.md",
+  "provides": [
+    {
+      "id": "organisation-dashboard",
+      "type": "presentation",
+      "description": "organisation dashboard within the stated ownership boundary."
+    },
+    {
+      "id": "section-descriptors",
+      "type": "presentation",
+      "description": "section descriptors within the stated ownership boundary."
+    },
+    {
+      "id": "navigation-intent",
+      "type": "presentation",
+      "description": "navigation intent within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "identity",
+      "optional": false,
+      "rationale": "Trusted group/tenant and governance context.",
+      "scope": "Protected organisational views"
+    },
+    {
+      "id": "authentication",
+      "optional": false,
+      "rationale": "Verified session and assurance.",
+      "scope": "Protected organisational views"
+    },
+    {
+      "id": "authorisation",
+      "optional": false,
+      "rationale": "Current independent resource decisions.",
+      "scope": "Protected organisational views"
+    }
+  ],
+  "relationships": [
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "organisation-model",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "subscription",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "billing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "reporting",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "application-composition",
+      "type": "composition",
+      "rationale": "Optional host-mounted organisational presentation."
+    },
+    {
+      "target": "authentication",
+      "type": "interface-consumption",
+      "rationale": "Verified session and assurance."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [],
+  "aliases": [
+    "company-console"
+  ]
+}

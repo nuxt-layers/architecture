@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "export",
+  "name": "Export",
+  "description": "Renders validated rich-text trees into supported formats without owning durable export jobs, artefacts or delivery.",
+  "kind": "library",
+  "subtype": "stateless",
+  "classification": "technical",
+  "ownership": "none",
+  "designRecord": "docs/libraries/export/stateless-library-record.md",
+  "provides": [
+    {
+      "id": "render-pdf",
+      "type": "service",
+      "description": "render pdf within the stated ownership boundary."
+    },
+    {
+      "id": "render-docx",
+      "type": "service",
+      "description": "render docx within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "rich-text",
+      "optional": false,
+      "rationale": "Requires the validated versioned safe-tree format; reject incompatible input.",
+      "scope": "Rendering",
+      "interface": "safe-content-tree"
+    },
+    {
+      "id": "localisation",
+      "optional": true,
+      "rationale": "Optional approved locale/format profiles.",
+      "scope": "Localised rendering",
+      "absenceMode": "Report unsupported locale or profile explicitly."
+    }
+  ],
+  "relationships": [
+    {
+      "target": "rich-text",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "localisation",
+      "type": "interface-consumption",
+      "rationale": "Optional approved locale/format profiles."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Durable export orchestration",
+      "reason": "Renderer owns no durable jobs or delivery."
+    }
+  ]
+}

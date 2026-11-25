@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "error-normalisation",
+  "name": "Error Normalisation",
+  "description": "Pure safe error classification, sanitisation and qualified retry advice; callers retain outcome, disclosure and retry decisions.",
+  "kind": "library",
+  "subtype": "stateless",
+  "classification": "technical",
+  "ownership": "none",
+  "designRecord": "docs/libraries/error-normalisation/stateless-library-record.md",
+  "provides": [
+    {
+      "id": "normalise-error",
+      "type": "service",
+      "description": "normalise error within the stated ownership boundary."
+    },
+    {
+      "id": "classify-error",
+      "type": "service",
+      "description": "classify error within the stated ownership boundary."
+    },
+    {
+      "id": "sanitise-error",
+      "type": "service",
+      "description": "sanitise error within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "logging",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

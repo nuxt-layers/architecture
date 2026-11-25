@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "process",
+  "name": "Process",
+  "description": "Owns versioned business process definitions, instances, stages, obligations, checkpoints, exceptions and process outcome evidence, not participating domain transactions.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/process/capability-record.md",
+  "provides": [
+    {
+      "id": "process-definition",
+      "type": "service",
+      "description": "process definition within the stated ownership boundary."
+    },
+    {
+      "id": "process-instance",
+      "type": "service",
+      "description": "process instance within the stated ownership boundary."
+    },
+    {
+      "id": "stage-transition",
+      "type": "service",
+      "description": "stage transition within the stated ownership boundary."
+    },
+    {
+      "id": "process-exception",
+      "type": "service",
+      "description": "process exception within the stated ownership boundary."
+    },
+    {
+      "id": "process-outcome",
+      "type": "service",
+      "description": "process outcome within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "workflow",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "task",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "project",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "scheduler",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "reporting",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

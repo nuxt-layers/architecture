@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "workforce-scheduling",
+  "name": "Workforce Scheduling",
+  "description": "Owns planned shifts, rosters, availability, assignment offers, coverage, conflicts and published revisions, not actual work or pay.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/workforce-scheduling/capability-record.md",
+  "provides": [
+    {
+      "id": "roster-definition",
+      "type": "service",
+      "description": "roster definition within the stated ownership boundary."
+    },
+    {
+      "id": "shift-assignment",
+      "type": "service",
+      "description": "shift assignment within the stated ownership boundary."
+    },
+    {
+      "id": "coverage-validation",
+      "type": "service",
+      "description": "coverage validation within the stated ownership boundary."
+    },
+    {
+      "id": "roster-publication",
+      "type": "service",
+      "description": "roster publication within the stated ownership boundary."
+    },
+    {
+      "id": "roster-revision",
+      "type": "service",
+      "description": "roster revision within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "employment",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "time-attendance",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "qualification",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "facility",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "booking",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "scheduler",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

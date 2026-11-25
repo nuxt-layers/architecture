@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "order",
+  "name": "Order",
+  "description": "Owns accepted buyer-seller commercial commitments, line snapshots, amendments, cancellation, commercial closure and purchase/sale framework terms.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/order/capability-record.md",
+  "provides": [
+    {
+      "id": "order-acceptance",
+      "type": "service",
+      "description": "order acceptance within the stated ownership boundary."
+    },
+    {
+      "id": "order-amendment",
+      "type": "service",
+      "description": "order amendment within the stated ownership boundary."
+    },
+    {
+      "id": "order-cancellation",
+      "type": "service",
+      "description": "order cancellation within the stated ownership boundary."
+    },
+    {
+      "id": "commercial-obligation",
+      "type": "service",
+      "description": "commercial obligation within the stated ownership boundary."
+    },
+    {
+      "id": "framework-agreement",
+      "type": "service",
+      "description": "framework agreement within the stated ownership boundary."
+    },
+    {
+      "id": "order-history",
+      "type": "service",
+      "description": "order history within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "party",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "pricing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "checkout",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "inventory",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "logistics",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "billing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "invoice",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "accounting",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "payment-gateway",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

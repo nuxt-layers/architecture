@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "shopping-basket",
+  "name": "Shopping Basket",
+  "description": "Owns persistent non-binding purchase intent, guest claim and merge, selected lines, revisions and checkout correlation.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/shopping-basket/capability-record.md",
+  "provides": [
+    {
+      "id": "basket-lifecycle",
+      "type": "service",
+      "description": "basket lifecycle within the stated ownership boundary."
+    },
+    {
+      "id": "basket-line",
+      "type": "service",
+      "description": "basket line within the stated ownership boundary."
+    },
+    {
+      "id": "guest-claim",
+      "type": "service",
+      "description": "guest claim within the stated ownership boundary."
+    },
+    {
+      "id": "basket-merge",
+      "type": "service",
+      "description": "basket merge within the stated ownership boundary."
+    },
+    {
+      "id": "checkout-preparation",
+      "type": "service",
+      "description": "checkout preparation within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "order",
+      "optional": true,
+      "rationale": "Accepted seller commitment status for conversion; intent is independently persistent.",
+      "scope": "Order conversion",
+      "absenceMode": "Keep non-binding intent; do not assert purchase."
+    },
+    {
+      "id": "marketplace",
+      "optional": true,
+      "rationale": "Seller/listing authority for marketplace mode.",
+      "scope": "Marketplace mode",
+      "absenceMode": "Single-seller basket remains usable."
+    }
+  ],
+  "relationships": [
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "marketplace",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "pricing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "inventory",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "booking",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "checkout",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "order",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "assessment",
+  "name": "Assessment",
+  "description": "Owns reusable assessment instruments, attempts, submissions, marking, moderation, appeals and authoritative assessment-result revisions; does not award qualifications or determine training completion.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/assessment/capability-record.md",
+  "provides": [
+    {
+      "id": "instrument-governance",
+      "type": "service",
+      "description": "Validate and govern instrument and rubric revisions."
+    },
+    {
+      "id": "attempt-eligibility",
+      "type": "command",
+      "description": "Evaluate applicable eligibility and control attempt lifecycle."
+    },
+    {
+      "id": "submission-evidence",
+      "type": "command",
+      "description": "Accept or quarantine assessment submissions and evidence references."
+    },
+    {
+      "id": "marking-and-finality",
+      "type": "service",
+      "description": "Record marking, moderation, release and finality decisions."
+    },
+    {
+      "id": "appeals-and-corrections",
+      "type": "service",
+      "description": "Maintain attributable appeal, reassessment and correction lineage."
+    },
+    {
+      "id": "external-evidence-acceptance",
+      "type": "service",
+      "description": "Independently accept or reject external assessment evidence using qualified trust inputs."
+    },
+    {
+      "id": "assessment-results",
+      "type": "query",
+      "description": "Supply authorised result snapshots, provenance and finality."
+    },
+    {
+      "id": "assessment-history",
+      "type": "query",
+      "description": "Supply scoped historical views and export evidence."
+    },
+    {
+      "id": "assessment-change",
+      "type": "event",
+      "description": "Publish committed instrument, attempt, result, appeal, correction and reliance changes."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "course",
+      "type": "information-exchange",
+      "rationale": "Conditional outcome/rubric alignment; independent examinations need no Course package."
+    },
+    {
+      "target": "enrolment",
+      "type": "information-exchange",
+      "rationale": "Conditional standing and attempt entitlement; stale required evidence blocks dependent starts."
+    },
+    {
+      "target": "training",
+      "type": "information-exchange",
+      "rationale": "Training independently determines competence and completion from admissible results."
+    },
+    {
+      "target": "qualification",
+      "type": "information-exchange",
+      "rationale": "Qualification independently recognises evidence and makes award decisions."
+    },
+    {
+      "target": "credentials",
+      "type": "information-exchange",
+      "rationale": "Credentials represents authorised source claims; a pass does not automatically authorise issuance."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Qualified issuer trust is input to Assessment's independent evidence acceptance."
+    },
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Protected content, evidence bytes and screening remain source-owned."
+    },
+    {
+      "target": "media",
+      "type": "information-exchange",
+      "rationale": "Protected content, evidence bytes and screening remain source-owned."
+    },
+    {
+      "target": "storage",
+      "type": "information-exchange",
+      "rationale": "Protected content, evidence bytes and screening remain source-owned."
+    },
+    {
+      "target": "content-security",
+      "type": "information-exchange",
+      "rationale": "Protected content, evidence bytes and screening remain source-owned."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Trusted identity, assurance, scope, accommodations and policy qualify operations."
+    },
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Trusted identity, assurance, scope, accommodations and policy qualify operations."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Trusted identity, assurance, scope, accommodations and policy qualify operations."
+    },
+    {
+      "target": "profile",
+      "type": "information-exchange",
+      "rationale": "Trusted identity, assurance, scope, accommodations and policy qualify operations."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Trusted identity, assurance, scope, accommodations and policy qualify operations."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Trusted identity, assurance, scope, accommodations and policy qualify operations."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Trusted identity, assurance, scope, accommodations and policy qualify operations."
+    },
+    {
+      "target": "workflow",
+      "type": "information-exchange",
+      "rationale": "Conditional orchestration, deadlines and delivery do not grade."
+    },
+    {
+      "target": "scheduler",
+      "type": "information-exchange",
+      "rationale": "Conditional orchestration, deadlines and delivery do not grade."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Conditional orchestration, deadlines and delivery do not grade."
+    },
+    {
+      "target": "notifications",
+      "type": "information-exchange",
+      "rationale": "Conditional orchestration, deadlines and delivery do not grade."
+    },
+    {
+      "target": "integrations",
+      "type": "information-exchange",
+      "rationale": "Optional external evidence transport does not confer trust."
+    },
+    {
+      "target": "federation",
+      "type": "information-exchange",
+      "rationale": "Optional external evidence transport does not confer trust."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Evidence, diagnostics and derived analytics remain independently owned."
+    },
+    {
+      "target": "logging",
+      "type": "information-exchange",
+      "rationale": "Evidence, diagnostics and derived analytics remain independently owned."
+    },
+    {
+      "target": "reporting",
+      "type": "information-exchange",
+      "rationale": "Evidence, diagnostics and derived analytics remain independently owned."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0002",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0017",
+    "ADR-0018",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Selected-host dependencies and precise published interfaces",
+      "reason": "Conceptual surfaces are approved; actual contract and provider bindings remain unverified."
+    }
+  ]
+}

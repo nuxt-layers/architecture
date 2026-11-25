@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "checkout",
+  "name": "Checkout",
+  "description": "Owns qualified purchase confirmation, submission attempts and recovery, separate from baskets, orders and generic process progression.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/checkout/capability-record.md",
+  "provides": [
+    {
+      "id": "purchase-proposal",
+      "type": "service",
+      "description": "purchase proposal within the stated ownership boundary."
+    },
+    {
+      "id": "purchase-confirmation",
+      "type": "service",
+      "description": "purchase confirmation within the stated ownership boundary."
+    },
+    {
+      "id": "purchase-submission",
+      "type": "service",
+      "description": "purchase submission within the stated ownership boundary."
+    },
+    {
+      "id": "attempt-reconciliation",
+      "type": "service",
+      "description": "attempt reconciliation within the stated ownership boundary."
+    },
+    {
+      "id": "checkout-result",
+      "type": "service",
+      "description": "checkout result within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "shopping-basket",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "order",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "pricing",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "payment-gateway",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "billing",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "party",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "booking",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "membership",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "shop",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "process",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Detailed interface and dependency mapping",
+      "reason": "Conceptual discovery summary; exact selected-host bindings and reciprocal approval require reconciliation."
+    }
+  ]
+}

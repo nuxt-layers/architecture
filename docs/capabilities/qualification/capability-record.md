@@ -3,7 +3,7 @@
 **Classification:** Independent Domain capability candidate (`qualification`). A separately deployed service or repository is **not** required by this conceptual decision.  
 **Approval:** COURSE-12, QUAL-01–17 and supplementary public-contract, standards, library, cross-cutting and optional GUI recommendations are owner-approved as conceptual design (22 November 2026). **QUAL-10** names required technical investigations; **QUAL-11** names future implementation/acceptance work. Approval of these obligations does **not** mean they are complete.  
 **Implementation status:** No verified `nuxt-layers/qualification` implementation repository or published root `CONTRACT.md`; interfaces below are idealised business contracts, **not shipped APIs**. No regulatory recognition, legal conformance, CI acceptance or release is claimed.  
-**Review:** [Draft PR #126](https://github.com/nuxt-layers/architecture-blueprint-review/pull/126) · review baseline (former review: qualification 20261122 review baseline). Governing `architecture-rules/master@d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint opening `master@361566988ac53c55f6135e8acfa46cd5b013d7a0`. Recheck before merge.
+**Review:** Draft PR #126 · review baseline (former review: qualification 20261122 review baseline). Governing `architecture-rules/master@d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint opening `master@361566988ac53c55f6135e8acfa46cd5b013d7a0`. Recheck before merge.
 
 ## Purpose and responsibility
 
@@ -212,7 +212,7 @@ Render case lists with accessible filters, pagination and clear textual statuses
 | **QUAL-16** | Qualification supplies recognition/award/comparability primitives; Job defines role requirements; Recruitment evaluates applicants and selects; Employment owns engagements |
 | **QUAL-17** | Minimal source references, tenant/purpose disclosure, lawful retention/holds and provider-neutral export/correction |
 
-**Status:** Approved conceptual specification, drafted in [PR #126](https://github.com/nuxt-layers/architecture-blueprint-review/pull/126); **draft/unmerged**, implementation and independent verification deferred.
+**Status:** Approved conceptual specification, drafted in PR #126; **draft/unmerged**, implementation and independent verification deferred.
 
 
 ### Training conceptual contract alignment — 23 November 2026 (PR #145)

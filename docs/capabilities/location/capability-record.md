@@ -105,7 +105,7 @@ The approved independent [`file-library` stateless library record](../../librari
 
 ## Optional GUI, navigation and mobile controls
 
-**Host integration:** The [test application template](https://github.com/nuxt-layers-test/application-test-template/blob/master/README.md) provides `/` homepage, `/admin` dashboard/sidebar and `/theme-manager` example. The **host** owns branding, top bar, menu, routes, responsive sidebar and trusted IAM/site composition. A sidebar **Locations** entry opens the capability dashboard (illustrative `/locations` route). Location owns its optional screens/components using Theme Manager's semantic tokens and shared UI controls. The shell never reimplements Location's authorisation or business endpoints. A headless host with `presentation: false` retains all core services and security; Nuxt composition targets ADR-0012's single-call/50-line host budget.
+**Host integration:** The [test application template](../../../RESOURCES.md#ref-8c941ad8) provides `/` homepage, `/admin` dashboard/sidebar and `/theme-manager` example. The **host** owns branding, top bar, menu, routes, responsive sidebar and trusted IAM/site composition. A sidebar **Locations** entry opens the capability dashboard (illustrative `/locations` route). Location owns its optional screens/components using Theme Manager's semantic tokens and shared UI controls. The shell never reimplements Location's authorisation or business endpoints. A headless host with `presentation: false` retains all core services and security; Nuxt composition targets ADR-0012's single-call/50-line host budget.
 
 | Screen / reusable component | Authorised purpose |
 |---|---|

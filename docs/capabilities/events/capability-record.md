@@ -3,7 +3,6 @@
 **Capability:** `events` — generic organised activities and their occurrences, not message transport or timed-job execution.
 **Classification:** independent **Domain responsibility**; no assumption of a new repository, service or framework dependency.
 **Review status (18 November 2026):** **EVT-01–10 and EVT-12–15 expressly owner-approved conceptually**; EVT-11 excluded/not approved. EVT-15 delegates attendee/attendance records to the separate Attendance candidate (draft PR #79), not required for standalone Events. Implementation root `CONTRACT.md`, independently verified runtime/CI and Attendance's independent final design are separate future matters.
-**Governing baseline:** `nuxt-layers/architecture-rules/master@0725f314abc9ad13f1a65247f54a7ff80772f0b2` (accepted Capability Standard/ADRs incl. 0012/0016/0017/0018). **Blueprint opening:** `a4e40a5cd82a2f79e8edd872af55c22d472b61cb`. Review protocol (former document: review protocol) · detailed contract and handovers (former review: events contract attendance and handover).
 
 ## Owner-approved definition
 

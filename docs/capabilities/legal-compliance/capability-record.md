@@ -4,7 +4,7 @@
 **Blueprint directory:** `docs/capabilities/legal-compliance/`  
 **Conceptual revision:** 21 November 2026 — LC-01–LC-13 and LEA-01/COV-01/REV-01/RULE-01 approved by capability owner; deployment-specific profiles remain to be qualified  
 **Review:** draft PR #85  
-**Authority:** Accepted ADRs and normative standards in [architecture-rules](https://github.com/nuxt-layers/architecture-rules); this blueprint is non-normative.  
+**Authority:** Accepted ADRs and normative standards in [architecture-rules](../../../RESOURCES.md#ref-6d4a7ae1); this blueprint is non-normative.  
 **Opening governing baseline:** `b920ce0d8b361de000a6739a16123dbdc56df7a7`; **opening blueprint baseline:** `6dac83a03da8704f7945ee1bc894f2248300445a`. Blueprint subsequently advanced to `d39df23e087cd0510c82ba2cea78996c7624850f`; final reconciliation remains required.  
 **Evidence classification:** Governing responsibility **established**; LC-01–LC-13 **owner-approved for the conceptual specification** (21 November 2026); LEA-01, COV-01, REV-01 and RULE-01 **owner-approved** on 21 November 2026; deployment profiles, verified coverage and implementation conformity remain outside conceptual sign-off. Previously approved neighbouring principles are reflected only where relevant to the current interaction contracts; their source records and Git history retain their original decision evidence.
 
@@ -60,7 +60,7 @@ The operating principle is: **a reviewed legal interpretation is reusable; its a
 
 **Direction and ports:** Host composition connects IAM Integration's published caller/decision façade to Legal Compliance. For IAM lifecycle operations, an IAM member consumes Legal Compliance's legal-hold/retention/qualification *public port* through the host/IAM suite composition. IAM Integration correlates member status and recovery; no Legal Compliance → IAM Integration → Legal Compliance import cycle, shared store or façade reownership of Authorisation decisions is permitted. Events may notify and trigger reassessment, but message delivery is not enforcement.
 
-**Implementation limitation:** The existing [IAM Integration root CONTRACT.md](https://github.com/nuxt-layers/iam-integration/blob/master/CONTRACT.md) states its intended single composition call returning `resolveCaller`, `decide` and `tasks` is **not yet built** and documents transitional member wiring. The conceptual interface is approved as the target, not verified deployed. Until implemented, the application host can provide contract-compatible, verified member adapters with the same authority and isolation guarantees; absence of required IAM assurances fails the protected act safely. This is not approval for new IAM direct dependency edges.
+**Implementation limitation:** The existing [IAM Integration root CONTRACT.md](../../../RESOURCES.md#ref-9921c1a9) states its intended single composition call returning `resolveCaller`, `decide` and `tasks` is **not yet built** and documents transitional member wiring. The conceptual interface is approved as the target, not verified deployed. Until implemented, the application host can provide contract-compatible, verified member adapters with the same authority and isolation guarantees; absence of required IAM assurances fails the protected act safely. This is not approval for new IAM direct dependency edges.
 
 **Operational examples:**
 1. **Privileged legal reviewer:** IAM Integration resolves the actor, permission, tenant and resource, with assurance and independent-approver checks; Legal Compliance then verifies qualification/competence and exact legal authority, rechecks current version and commits a case decision. Both checks are mandatory, even when Workflow shows a completed task.
@@ -259,23 +259,23 @@ Use **ISO 31000:2018** for risk-based worklist prioritisation, likelihood/conseq
 
 | Reference | Design use | Status/limitations |
 |---|---|---|
-| [ISO 37301:2021](https://www.iso.org/standard/75080.html) | Compliance system responsibilities, obligations, operational monitoring, improvement | Principal non-normative design reference; does not certify platform/tenant |
-| [ISO 37302:2025](https://www.iso.org/standard/37302) | Evaluate effectiveness using independent evidence and corrective feedback | Non-normative guidance, not a boolean conformity test |
-| [ISO 31000:2018](https://www.iso.org/iso-31000-risk-management.html) | Risk-driven prioritisation, escalation and review | Never reduces mandatory legal floor |
-| [OMG DMN 1.6](https://www.omg.org/spec/DMN/1.6/) | Decision-table/typed rule modelling and possible interoperability | Adopt restricted concepts; no full runtime compliance claimed |
-| [W3C PROV-O](https://www.w3.org/TR/prov-o/) | Source/reviewer/evaluation lineage and provenance references | No compulsory RDF store |
-| [ISO 15489-1:2016](https://www.iso.org/standard/62542.html) | Evidence/records lifecycle and accountability | Not identical to statutory records-retention schedule |
-| [ISO 19011:2026](https://www.iso.org/standard/19011) | Audit competence, review independence, programme design | Guidelines, not a product certification |
-| [ISO/IEC 27001:2022](https://www.iso.org/standard/27001) + 2024 amendment | Confidentiality, integrity, access, change and incident assurance | Management-system reference; no ISO certificate asserted |
-| [ISO/IEC 27701:2025](https://www.iso.org/standard/27701) | Privacy governance, rights/evidence coordination | Privacy capability retains specialist ownership |
-| [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) | Appropriate AC/AU/CM/RA/SI/CP control mappings | Reference catalogue; jurisdiction/project applicability assessed separately |
-| [NIST OSCAL](https://pages.nist.gov/OSCAL/) | Optional machine-readable control profiles, assessment mapping/export | No mandatory full OSCAL native data format |
-| [OWASP ASVS 5](https://asvs.owasp.org/) | Authentication, access control, validation, logging, secure APIs | **Existing governing ASVS Level 2 baseline**, Level 3 where critical |
-| [WCAG 2.2 AA](https://www.w3.org/TR/WCAG22/) | Review/editing dashboards, colour/keyboard/screen readers | **Existing governing accessibility baseline** |
-| [ISO/IEC 42001:2023](https://www.iso.org/standard/42001) | Optional AI governance for assisted legal-source extraction and review | AI remains an untrusted assistant to competent reviewer |
-| [ISO 22301:2019](https://www.iso.org/standard/75106.html) | Continuity/recovery for deadlines, holds and required controls | Host/infrastructure recovery remains independently owned |
+| [ISO 37301:2021](../../../RESOURCES.md#ref-3537977c) | Compliance system responsibilities, obligations, operational monitoring, improvement | Principal non-normative design reference; does not certify platform/tenant |
+| [ISO 37302:2025](../../../RESOURCES.md#ref-48476530) | Evaluate effectiveness using independent evidence and corrective feedback | Non-normative guidance, not a boolean conformity test |
+| [ISO 31000:2018](../../../RESOURCES.md#ref-731cfbd0) | Risk-driven prioritisation, escalation and review | Never reduces mandatory legal floor |
+| [OMG DMN 1.6](../../../RESOURCES.md#ref-e234bdf1) | Decision-table/typed rule modelling and possible interoperability | Adopt restricted concepts; no full runtime compliance claimed |
+| [W3C PROV-O](../../../RESOURCES.md#ref-20aa2e25) | Source/reviewer/evaluation lineage and provenance references | No compulsory RDF store |
+| [ISO 15489-1:2016](../../../RESOURCES.md#ref-10531447) | Evidence/records lifecycle and accountability | Not identical to statutory records-retention schedule |
+| [ISO 19011:2026](../../../RESOURCES.md#ref-d863f5c5) | Audit competence, review independence, programme design | Guidelines, not a product certification |
+| [ISO/IEC 27001:2022](../../../RESOURCES.md#ref-42fa42bb) + 2024 amendment | Confidentiality, integrity, access, change and incident assurance | Management-system reference; no ISO certificate asserted |
+| [ISO/IEC 27701:2025](../../../RESOURCES.md#ref-b948c1e2) | Privacy governance, rights/evidence coordination | Privacy capability retains specialist ownership |
+| [NIST SP 800-53 Rev. 5](../../../RESOURCES.md#ref-5d98a8a6) | Appropriate AC/AU/CM/RA/SI/CP control mappings | Reference catalogue; jurisdiction/project applicability assessed separately |
+| [NIST OSCAL](../../../RESOURCES.md#ref-350ad366) | Optional machine-readable control profiles, assessment mapping/export | No mandatory full OSCAL native data format |
+| [OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2) | Authentication, access control, validation, logging, secure APIs | **Existing governing ASVS Level 2 baseline**, Level 3 where critical |
+| [WCAG 2.2 AA](../../../RESOURCES.md#ref-0d1f555e) | Review/editing dashboards, colour/keyboard/screen readers | **Existing governing accessibility baseline** |
+| [ISO/IEC 42001:2023](../../../RESOURCES.md#ref-573b7368) | Optional AI governance for assisted legal-source extraction and review | AI remains an untrusted assistant to competent reviewer |
+| [ISO 22301:2019](../../../RESOURCES.md#ref-85e985cf) | Continuity/recovery for deadlines, holds and required controls | Host/infrastructure recovery remains independently owned |
 
-**Legal sources are not replaced by technical standards.** For actual statutory applicability inspect effective legislation and regulators for the legal entity, nexus, service, audience and relevant time: e.g. [UK legislation.gov.uk](https://www.legislation.gov.uk/), [ICO](https://ico.org.uk/), [Ofcom](https://www.ofcom.org.uk/). Existence of an Online Safety Act feature, UK GDPR process, file scan, ISO mapping, publication of a notice, or third-party provider licence is never a universal compliance claim.
+**Legal sources are not replaced by technical standards.** For actual statutory applicability inspect effective legislation and regulators for the legal entity, nexus, service, audience and relevant time: e.g. [UK legislation.gov.uk](../../../RESOURCES.md#ref-472de5bf), [ICO](../../../RESOURCES.md#ref-6086d074), [Ofcom](../../../RESOURCES.md#ref-9f221536). Existence of an Online Safety Act feature, UK GDPR process, file scan, ISO mapping, publication of a notice, or third-party provider licence is never a universal compliance claim.
 
 **Threats and controls:** spoofed legal sources and regulator demands, malicious legal-text prompt injection, rule poisoning, compromised reviewers, self-approval/policy capture, stale cached favourable decisions, cross-tenant legal-case disclosure, hold denial or indefinite preservation, evidence forgery, missed deadlines, provider uncertainty and cross-domain confused-deputy execution. Require strong scope/authorisation, minimum necessary disclosure, source attestation, reviewer independence, trusted time, least privilege, tamper-evident audit references, secure key/secrets boundary, backup/recovery and protected rule activation. Legal source documents are untrusted data; no arbitrary code or AI-authorised decisions.
 
@@ -500,7 +500,7 @@ Retain only source references needed for authorised purposes; source owners appl
 
 ### Policy Map: 6. GUI and host integration
 
-**One host sidebar entry: Compliance → Legal Compliance dashboard → Policy & Control Map tab.** No second Policy Map app, sidebar link or shell. The representative [application-test-template](https://github.com/nuxt-layers-test/application-test-template) README and `app/pages/admin.vue` were inspected during the original review. The template provides `/`, `/admin`, a collapsible desktop/mobile sidebar and a Theme Manager entry; derived test apps own new navigation. It supplies no Policy Map pages. `/legal-compliance` is a **suggested host route**, not a published API. The host owns routes/context, Legal Compliance optional screens and server-side reads; source owners retain all edit screens and approvals.
+**One host sidebar entry: Compliance → Legal Compliance dashboard → Policy & Control Map tab.** No second Policy Map app, sidebar link or shell. The representative [application-test-template](../../../RESOURCES.md#ref-f1f7cc47) README and `app/pages/admin.vue` were inspected during the original review. The template provides `/`, `/admin`, a collapsible desktop/mobile sidebar and a Theme Manager entry; derived test apps own new navigation. It supplies no Policy Map pages. `/legal-compliance` is a **suggested host route**, not a published API. The host owns routes/context, Legal Compliance optional screens and server-side reads; source owners retain all edit screens and approvals.
 
 | Screen | Minimum interaction |
 |---|---|
@@ -517,18 +517,18 @@ A derived test host should validate sidebar/dashboard navigation, explicit tenan
 
 ### Policy Map: 7. Standards and permissive implementation choices
 
-**Standards guidance** (design mapping; not claims of certification): [ISO 37301:2021](https://www.iso.org/standard/75080.html) including applicable amendment and British adoption for obligation/control accountability; [ISO 37302:2025](https://www.iso.org/) for control effectiveness assessment; [ISO 31000](https://www.iso.org/) for risk-based review; ISO/IEC **27001/27002** security, **27701** privacy, **15489** records/provenance; W3C [PROV](https://www.w3.org/TR/prov-o/) for source lineage and [WCAG 2.2](https://www.w3.org/TR/wcag/) AA / [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.2/) for presentation; applicable UK ICO accountability and NCSC secure-design guidance. Optional interchange: W3C [SKOS](https://www.w3.org/TR/skos-reference/), [SHACL](https://www.w3.org/TR/shacl/), [ODRL](https://www.w3.org/TR/odrl-model/), [NIST OSCAL](https://pages.nist.gov/OSCAL/) and OASIS [Akoma Ntoso](https://www.oasis-open.org/committees/legaldocml/) only where a real external consumer needs them. The UK government Technology Code of Practice applies where deployment scope warrants. Legal Compliance reviews source currency, UK GDPR and other jurisdiction-specific applicability/effective dates. **No mandatory RDF, ontology, graph database, external policy engine or certification.**
+**Standards guidance** (design mapping; not claims of certification): [ISO 37301:2021](../../../RESOURCES.md#ref-3537977c) including applicable amendment and British adoption for obligation/control accountability; [ISO 37302:2025](../../../RESOURCES.md#ref-262af923) for control effectiveness assessment; [ISO 31000](../../../RESOURCES.md#ref-262af923) for risk-based review; ISO/IEC **27001/27002** security, **27701** privacy, **15489** records/provenance; W3C [PROV](../../../RESOURCES.md#ref-20aa2e25) for source lineage and [WCAG 2.2](../../../RESOURCES.md#ref-eb11cf7e) AA / [WAI-ARIA](../../../RESOURCES.md#ref-67eee3fb) for presentation; applicable UK ICO accountability and NCSC secure-design guidance. Optional interchange: W3C [SKOS](../../../RESOURCES.md#ref-ceaf9e24), [SHACL](../../../RESOURCES.md#ref-6dc528a5), [ODRL](../../../RESOURCES.md#ref-4d3f2257), [NIST OSCAL](../../../RESOURCES.md#ref-350ad366) and OASIS [Akoma Ntoso](../../../RESOURCES.md#ref-330d3d9a) only where a real external consumer needs them. The UK government Technology Code of Practice applies where deployment scope warrants. Legal Compliance reviews source currency, UK GDPR and other jurisdiction-specific applicability/effective dates. **No mandatory RDF, ontology, graph database, external policy engine or certification.**
 
 **Eligible free, complete-source, commercially permissive candidates** (not installed or dependency approvals):
 
 | Need | Candidate and licence | Decision |
 |---|---|---|
-| TypeScript contract validation | [Zod](https://github.com/colinhacks/zod), MIT | Prefer if not already standardised by Legal Compliance |
-| External JSON Schema | [Ajv](https://github.com/ajv-validator/ajv), MIT | Conditional, avoid redundant validation |
-| Existing SQL/persistence | [PostgreSQL](https://www.postgresql.org/about/licence/) (permissive); [Kysely](https://github.com/kysely-org/kysely) or [node-postgres](https://github.com/brianc/node-postgres), MIT | Reuse owner's existing stack; **no map-owned store** |
-| Optional Vue table | [TanStack Table](https://github.com/TanStack/table), MIT | Preferred table-first UI, integrated with platform UI/theme |
-| Optional graph | [Cytoscape.js](https://github.com/cytoscape/cytoscape.js), MIT; alternatively [xyflow Vue](https://github.com/xyflow/xyflow), MIT | Choose one only if needed; preserve accessible table |
-| Optional complex graph queries | [Apache AGE](https://github.com/apache/age), Apache-2.0 | Defer until proved necessary within owner's existing PostgreSQL |
+| TypeScript contract validation | [Zod](../../../RESOURCES.md#ref-1e3efac4), MIT | Prefer if not already standardised by Legal Compliance |
+| External JSON Schema | [Ajv](../../../RESOURCES.md#ref-a164796d), MIT | Conditional, avoid redundant validation |
+| Existing SQL/persistence | [PostgreSQL](../../../RESOURCES.md#ref-fa79609e) (permissive); [Kysely](../../../RESOURCES.md#ref-af839a5b) or [node-postgres](../../../RESOURCES.md#ref-be910869), MIT | Reuse owner's existing stack; **no map-owned store** |
+| Optional Vue table | [TanStack Table](../../../RESOURCES.md#ref-af94a8b1), MIT | Preferred table-first UI, integrated with platform UI/theme |
+| Optional graph | [Cytoscape.js](../../../RESOURCES.md#ref-b58f56eb), MIT; alternatively [xyflow Vue](../../../RESOURCES.md#ref-f612adca), MIT | Choose one only if needed; preserve accessible table |
+| Optional complex graph queries | [Apache AGE](../../../RESOURCES.md#ref-0f60ec0d), Apache-2.0 | Defer until proved necessary within owner's existing PostgreSQL |
 
 Exclude archived original `bcakmakoglu/vue-flow` (use active xyflow successor if selected), open-core/source-restricted Neo4j/Redis/Elasticsearch variants, and unnecessary new queues, search engines, OPA/Casbin policy engines or SaaS. xyflow's upstream requests an attribution-removal support subscription but acknowledges MIT does not legally compel purchase. Verify exact release maintenance, source completeness, notices, transitive licences and supply-chain risk at implementation time. No dependencies were installed.
 

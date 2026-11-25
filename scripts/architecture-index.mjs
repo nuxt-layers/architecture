@@ -19,14 +19,14 @@ const records = walk(resolve(root, 'docs')).map(file => ({
 const ids = new Map(records.map(({ record }) => [record.id, record]));
 unique(records.map(({ record }) => record.id), 'artefact ID');
 const inventory = readFileSync(resolve(root, 'docs/catalogue.md'), 'utf8');
-const inventoryRows = [...inventory.matchAll(/^\| \x60([^\x60]+)\x60 \| ([^|]+) \| [^|]+ \| [^|]+ \| \[Design\]\(([^)]+)\)/gm)];
+const inventoryRows = [...inventory.matchAll(/^\| \x60([^\x60]+)\x60 \| ([^|]+) \| ([^|]+) \| \[Design\]\(([^)]+)\) \| \[Descriptor\]\(([^)]+)\) \|[ \t]*$/gm)];
 check(inventoryRows.length > 0, 'Canonical inventory not found');
 unique(inventoryRows.map(row => row[1]), 'inventory ID');
 check(inventoryRows.length === records.length, 'Inventory/descriptor count mismatch');
-for (const [, id, kind, path] of inventoryRows) {
+for (const [, id, kind, classification, designPath, descriptorPath] of inventoryRows) {
   check(ids.has(id), 'Missing descriptor: ' + id);
   const r = ids.get(id);
-  check(r.kind === kind.trim().toLowerCase() && r.designRecord === 'docs/' + path, 'Inventory mismatch: ' + id);
+  check(r.kind === kind.trim().toLowerCase() && r.classification === classification.trim() && r.designRecord === 'docs/' + designPath && records.find(({ record }) => record.id === id).path === 'docs/' + descriptorPath, 'Inventory mismatch: ' + id);
 }
 const allNames = records.flatMap(({ record: r }) => [r.id, ...(r.aliases ?? [])]);
 unique(allNames, 'canonical ID or alias');

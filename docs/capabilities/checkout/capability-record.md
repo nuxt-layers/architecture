@@ -2,7 +2,7 @@
 
 **Identity:** `checkout` · **Class:** independent Domain capability candidate. **Status:** conceptual design complete and owner-approved (24 November 2026), including CHK-01–09, scope, contracts, standards, library selection and presentation. No implementation repository or published root `CONTRACT.md` verified. Governing adoption, implementation, independent acceptance, legal compliance and merge remain separate.
 
-[Review PR #151](https://github.com/nuxt-layers/architecture-blueprint-review/pull/151). Governing master `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint master `39a9f2b5f795cc8cab2890baf658b07e3d71451b`. Accepted governing ADRs and Capability Standard prevail over this non-normative specification.
+Review PR #151. Governing master `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint master `39a9f2b5f795cc8cab2890baf658b07e3d71451b`. Accepted governing ADRs and Capability Standard prevail over this non-normative specification.
 
 ## Purpose and ownership
 

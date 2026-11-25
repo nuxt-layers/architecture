@@ -311,7 +311,7 @@ Verification candidate owns proofed attributes and trusted issuer attestation li
 
 ## Comments Engine — reciprocal conceptual proposal (17 November 2026)
 
-**Status:** Proposed for owner review in [Comments Engine PR #52](https://github.com/nuxt-layers/architecture-blueprint-review/pull/52); not an accepted public contract. See [conceptual record](../../capabilities/comments-engine/capability-record.md).
+**Status:** Proposed for owner review in Comments Engine PR #52; not an accepted public contract. See [conceptual record](../../capabilities/comments-engine/capability-record.md).
 
 Comments Engine must consume trusted session/subject assurance and recency where risk requires, never authenticate from client-supplied names or treat successful login as permission, age proof or safety clearance. Guests/pseudonyms require explicit policy and traceable, minimised provenance. Authentication owns credential/session state; Comments Engine owns authored attribution references and comment lifecycle.
 
@@ -335,12 +335,12 @@ Comments Engine must consume trusted session/subject assurance and recency where
 
 ## Reciprocal conceptual note — IAM Integration (18 November 2026)
 
-**Status: Proposed under [IAM Integration draft PR #73](https://github.com/nuxt-layers/architecture-blueprint-review/pull/73); not a new published implementation contract or owner approval.** Authentication remains authoritative for credentials, verified sessions/assurance, reauthentication and session revocation. IAM Integration consumes its trusted principal, recency, phishing resistance, recovery and revocation outcomes; it supplies Identity provisioning/service-governance/hold adapters through public contracts. The proposed common caller interface must preserve risk, assurance and session continuity; legacy best-effort delivery requires alignment with source-owned durable events. See [IAM Integration conceptual public contract](../../compositions/iam-integration/compositions-record.md).
+**Status: Proposed under IAM Integration draft PR #73; not a new published implementation contract or owner approval.** Authentication remains authoritative for credentials, verified sessions/assurance, reauthentication and session revocation. IAM Integration consumes its trusted principal, recency, phishing resistance, recovery and revocation outcomes; it supplies Identity provisioning/service-governance/hold adapters through public contracts. The proposed common caller interface must preserve risk, assurance and session continuity; legacy best-effort delivery requires alignment with source-owned durable events. See [IAM Integration conceptual public contract](../../compositions/iam-integration/compositions-record.md).
 
 
 ## Identity reciprocal conceptual interface — 18 November 2026
 
-**Status: proposed Identity alignment, [draft PR #74](https://github.com/nuxt-layers/architecture-blueprint-review/pull/74), 18 November 2026; not a published API.** Identity owns source-of-truth opaque principal standing, tenant/group/membership facts and state changes; Authentication owns session, sign-in eligibility, credential and assurance operations. Consume strong freshness-qualified Identity standing for sensitive access and versioned Identity outbox transitions for revocation with independently measured bound, safe retries/reconciliation and fail-closed unknown status. Authentication's credential-recovery event can put Identity governance changes on hold, not rewrite Identity owner facts. See [Identity conceptual contract](../identity/capability-record.md#idealised-public-inbound-interfaces).
+**Status: proposed Identity alignment, draft PR #74, 18 November 2026; not a published API.** Identity owns source-of-truth opaque principal standing, tenant/group/membership facts and state changes; Authentication owns session, sign-in eligibility, credential and assurance operations. Consume strong freshness-qualified Identity standing for sensitive access and versioned Identity outbox transitions for revocation with independently measured bound, safe retries/reconciliation and fail-closed unknown status. Authentication's credential-recovery event can put Identity governance changes on hold, not rewrite Identity owner facts. See [Identity conceptual contract](../identity/capability-record.md#idealised-public-inbound-interfaces).
 
 ## Logging — owner-approved reciprocal interface
 
@@ -351,7 +351,7 @@ Authentication may submit safe authentication failure categories, throttling and
 
 ## Reciprocal interface — Profile conceptual review (22 November 2026)
 
-**Status: proposed in [Profile draft PR #123](https://github.com/nuxt-layers/architecture-blueprint-review/pull/123); not independently approved or implemented.** Authentication owns sign-in identifiers, credentials, sessions, assurance and recent-proof evidence; Profile owns ordinary contact destinations, attributes and attribute-level verification. Profile relies on a trusted viewer/assurance port for sensitive edits and exports, but verification of a Profile email must not prove login ownership or expose credentials. Closure and subject rights require source-part coordination; never export authentication secrets. See [Profile's idealised public contract](../profile/capability-record.md#idealised-public-inbound-contracts). This bounded note does not supersede this capability's approved decisions; reconcile any concurrent unmerged work before integration.
+**Status: proposed in Profile draft PR #123; not independently approved or implemented.** Authentication owns sign-in identifiers, credentials, sessions, assurance and recent-proof evidence; Profile owns ordinary contact destinations, attributes and attribute-level verification. Profile relies on a trusted viewer/assurance port for sensitive edits and exports, but verification of a Profile email must not prove login ownership or expose credentials. Closure and subject rights require source-part coordination; never export authentication secrets. See [Profile's idealised public contract](../profile/capability-record.md#idealised-public-inbound-contracts). This bounded note does not supersede this capability's approved decisions; reconcile any concurrent unmerged work before integration.
 
 
 ## Profile approved decisions — bounded reciprocal alignment (22 November 2026)

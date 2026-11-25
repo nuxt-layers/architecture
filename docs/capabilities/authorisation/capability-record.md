@@ -389,13 +389,13 @@ Verification may provide bounded age, identity or representation claims but does
 
 ## Comments Engine — reciprocal conceptual proposal (17 November 2026)
 
-**Status:** Proposed for owner review in [Comments Engine PR #52](https://github.com/nuxt-layers/architecture-blueprint-review/pull/52), **not** an approved contract or implementation change. See [Comments Engine conceptual contract](../../capabilities/comments-engine/capability-record.md).
+**Status:** Proposed for owner review in Comments Engine PR #52, **not** an approved contract or implementation change. See [Comments Engine conceptual contract](../../capabilities/comments-engine/capability-record.md).
 
 Comments Engine requires resource-scoped server-side action/read decisions for create/reply/edit/delete, local moderation, visibility disclosure and audit/export operations, incorporating target owner, tenant, actor assurance and effective policy. Unknown/failed access checks deny protected operations; signed-in status and role labels do not confer automatic permission. Authorisation owns access decisions, Comments Engine owns command invariants and completed source outcomes.
 
 ### Comments Engine — approved CE-02/CE-05/CE-07 refinement (17 November 2026)
 
-**Status:** Owner-approved conceptual boundary for [PR #52](https://github.com/nuxt-layers/architecture-blueprint-review/pull/52); non-normative, not a published implementation contract.
+**Status:** Owner-approved conceptual boundary for PR #52; non-normative, not a published implementation contract.
 
 **17 November 2026 CE-02 approved refinement:** For private-resource comments, target-owner visibility bounds every comment audience; authorisation separately decides read, post, edit, delete and moderate permissions and must recheck revoked membership/resource access. A direct comment link is not authority. Verification supplies age-assurance evidence only when a qualified resource/audience/service risk policy requires it; successful authentication or verification does not itself grant permission. No public index/export/notification may bypass current audience rules.
 
@@ -406,13 +406,13 @@ Comments Engine requires resource-scoped server-side action/read decisions for c
 
 ## Reciprocal conceptual note — Content Editor review (17 November 2026)
 
-**Status:** Proposed contract alignment in [Content Editor draft PR #54](https://github.com/nuxt-layers/architecture-blueprint-review/pull/54); not a completed authorisation review, normative rule or implementation change. See [Content Editor conceptual boundary](../../presentation/content-editor/presentation-record.md#dedicated-conceptual-review--content-editor-17-november-2026).
+**Status:** Proposed contract alignment in Content Editor draft PR #54; not a completed authorisation review, normative rule or implementation change. See [Content Editor conceptual boundary](../../presentation/content-editor/presentation-record.md#dedicated-conceptual-review--content-editor-17-november-2026).
 
 Content Editor shows the source-owner-advertised permitted actions and step-up prompts only. Publisher and other data owners reauthorise every server command against trusted caller/site/resource context; browser state or visible controls never grant permission. Protected hidden resources do not disclose existence.
 
 ## Employment reciprocal conceptual interface — 17 November 2026
 
-**Status: Proposed in [Employment PR #59](https://github.com/nuxt-layers/architecture-blueprint-review/pull/59), not an implemented Authorisation interface.** Employment supplies a time-bounded, source-qualified standing signal for a specific worker engagement; Authorisation decides actions on individual personnel records, terms, rosters and management operations using actor/resource/employer/tenant context, revocation, assurance and field/purpose constraints. Employment status does not itself grant Identity membership, platform access or payroll visibility; stale or ambiguous standing cannot be used to permit sensitive actions. See [Employment conceptual record](../employment/capability-record.md).
+**Status: Proposed in Employment PR #59, not an implemented Authorisation interface.** Employment supplies a time-bounded, source-qualified standing signal for a specific worker engagement; Authorisation decides actions on individual personnel records, terms, rosters and management operations using actor/resource/employer/tenant context, revocation, assurance and field/purpose constraints. Employment status does not itself grant Identity membership, platform access or payroll visibility; stale or ambiguous standing cannot be used to permit sensitive actions. See [Employment conceptual record](../employment/capability-record.md).
 
 ## Reciprocal conceptual note — Course curriculum and learning outcomes (17 November 2026)
 
@@ -429,7 +429,7 @@ Content Editor shows the source-owner-advertised permitted actions and step-up p
 
 ## Reciprocal conceptual note — Credentials lifecycle and public contract (18 November 2026)
 
-**Status: proposed Credentials review alignment (18 November 2026; [PR #62](https://github.com/nuxt-layers/architecture-blueprint-review/pull/62)).** Authorisation supplies server-side tenant/issuer/subject/resource access decisions for issue/view/verify/revoke/replace and step-up where required. Credentials additionally enforces claim-source decision authority, issuer delegation, mandate status, profile and lawful disclosure. No IAM grant makes an award or confers external issuing rights. Denial/unknown fails closed.
+**Status: proposed Credentials review alignment (18 November 2026; PR #62).** Authorisation supplies server-side tenant/issuer/subject/resource access decisions for issue/view/verify/revoke/replace and step-up where required. Credentials additionally enforces claim-source decision authority, issuer delegation, mandate status, profile and lawful disclosure. No IAM grant makes an award or confers external issuing rights. Denial/unknown fails closed.
 
 
 ## Attendance ATT-09 — resource-scoped guest decisions (owner-approved Attendance requirement, 18 November 2026)
@@ -448,11 +448,11 @@ Content Editor shows the source-owner-advertised permitted actions and step-up p
 
 ## Approved Export boundary — reconciliation (18 November 2026)
 
-**Owner-approved conceptual direction in [Export PR #68](https://github.com/nuxt-layers/architecture-blueprint-review/pull/68):** Export is a headless, stateless `rich-text` rendering **Library** providing format discovery, conversion, output bytes/stream, metadata and typed technical outcomes. Any preceding proposed Export-owned durable jobs, data extraction, saved artefacts, recipients, delivery or revocation language in this record is **superseded as an Export ownership assignment**. The initiating source domain or Reporting owns its authorised export workflow and job/file reference; Authorisation supplies permission decisions, Storage stores bytes, Audit retains risk-based evidence and Logging receives scrubbed technical diagnostics according to their boundaries. CSV/XLSX are conditional on a separately approved validated tabular contract. This is not a claim of implemented interoperation, not an approval to change accepted governing rules, and not a merge authorisation.
+**Owner-approved conceptual direction in Export PR #68:** Export is a headless, stateless `rich-text` rendering **Library** providing format discovery, conversion, output bytes/stream, metadata and typed technical outcomes. Any preceding proposed Export-owned durable jobs, data extraction, saved artefacts, recipients, delivery or revocation language in this record is **superseded as an Export ownership assignment**. The initiating source domain or Reporting owns its authorised export workflow and job/file reference; Authorisation supplies permission decisions, Storage stores bytes, Audit retains risk-based evidence and Logging receives scrubbed technical diagnostics according to their boundaries. CSV/XLSX are conditional on a separately approved validated tabular contract. This is not a claim of implemented interoperation, not an approval to change accepted governing rules, and not a merge authorisation.
 
 ## Federation — reciprocal conceptual contract (18 November 2026)
 
-**Status: Proposed in [Federation draft PR #69](https://github.com/nuxt-layers/architecture-blueprint-review/pull/69); not an approved implementation API, and does not complete this capability's independent review.** [Federation public contract](../../services/federation/services-record.md#independent-review-contract-completeness-and-authority-18-november-2026).
+**Status: Proposed in Federation draft PR #69; not an approved implementation API, and does not complete this capability's independent review.** [Federation public contract](../../services/federation/services-record.md#independent-review-contract-completeness-and-authority-18-november-2026).
 
 Federation needs server-side resource- and tenant-scoped decisions for peer administration, publication, retrieval and subscription; it supplies operation, resource, audience, assurance and policy context through an explicit public port. A trusted peer, signature, Hub subscription or verified issuer is never an access grant. Missing/unknown mandatory decisions fail closed; repeated delivery cannot bypass decisions. All cooperation is via public, directional host-composed contracts with scoped failure/absence semantics; preserve existing approvals and avoid package dependency cycles.
 
@@ -468,12 +468,12 @@ Federation needs server-side resource- and tenant-scoped decisions for peer admi
 
 ## Reciprocal conceptual note — IAM Integration (18 November 2026)
 
-**Status: Proposed under [IAM Integration draft PR #73](https://github.com/nuxt-layers/architecture-blueprint-review/pull/73); not a new published implementation contract or owner approval.** Authorisation remains authoritative for permission definitions, roles/grants, approvals and resource-aware access decisions. IAM Integration supplies verified Authentication caller and Identity directory/governance ports, and consumes decisions, approval qualifications, role-change outcomes and revocation status; never equates membership with permission or silently relaxes assurance. Strong/bounded consistency and recovery from outbox lag need verified integration acceptance. See [IAM Integration conceptual public contract](../../compositions/iam-integration/compositions-record.md).
+**Status: Proposed under IAM Integration draft PR #73; not a new published implementation contract or owner approval.** Authorisation remains authoritative for permission definitions, roles/grants, approvals and resource-aware access decisions. IAM Integration supplies verified Authentication caller and Identity directory/governance ports, and consumes decisions, approval qualifications, role-change outcomes and revocation status; never equates membership with permission or silently relaxes assurance. Strong/bounded consistency and recovery from outbox lag need verified integration acceptance. See [IAM Integration conceptual public contract](../../compositions/iam-integration/compositions-record.md).
 
 
 ## Identity reciprocal conceptual interface — 18 November 2026
 
-**Status: proposed Identity alignment, [draft PR #74](https://github.com/nuxt-layers/architecture-blueprint-review/pull/74), 18 November 2026; not an implemented interface.** Identity owns tenant isolation boundary/tree, digital tenant owner state, groups and direct membership/standing; Authorisation owns resource-specific access decisions, roles/grants and independently scoped delegations. Consume strong revision/freshness-qualified Identity facts and invalidate derived grants on source revocation; tenant/group parenthood, digital owner, legal title and payer alone do not confer read or administrative rights. Unknown/stale standing fails closed on sensitive access; preserve independently authorised grants. See [Identity conceptual contract](../identity/capability-record.md#idealised-public-outbound-interfaces).
+**Status: proposed Identity alignment, draft PR #74, 18 November 2026; not an implemented interface.** Identity owns tenant isolation boundary/tree, digital tenant owner state, groups and direct membership/standing; Authorisation owns resource-specific access decisions, roles/grants and independently scoped delegations. Consume strong revision/freshness-qualified Identity facts and invalidate derived grants on source revocation; tenant/group parenthood, digital owner, legal title and payer alone do not confer read or administrative rights. Unknown/stale standing fails closed on sensitive access; preserve independently authorised grants. See [Identity conceptual contract](../identity/capability-record.md#idealised-public-outbound-interfaces).
 
 ## Integrations user-scoped discovery/use — 18 November 2026
 
@@ -482,7 +482,7 @@ Federation needs server-side resource- and tenant-scoped decisions for peer admi
 
 ## Recruitment reciprocal contract proposal — 20 November 2026
 
-**Status: Proposed in [Recruitment draft PR #99](https://github.com/nuxt-layers/architecture-blueprint-review/pull/99), not owner-approved or implemented.** Recruitment uses server-side delegated hiring access and evidence-level restrictions; Authorisation owns access decisions, Recruitment owns selection outcomes. Workflow signals and received events are not grants. Cooperation uses published contracts/host ports, without private state or mandatory cyclic imports. [Recruitment record](../recruitment/capability-record.md).
+**Status: Proposed in Recruitment draft PR #99, not owner-approved or implemented.** Recruitment uses server-side delegated hiring access and evidence-level restrictions; Authorisation owns access decisions, Recruitment owns selection outcomes. Workflow signals and received events are not grants. Cooperation uses published contracts/host ports, without private state or mandatory cyclic imports. [Recruitment record](../recruitment/capability-record.md).
 
 
 ### Current Legal Compliance access and legal qualification boundary
@@ -523,7 +523,7 @@ Authorisation may submit safe decision failure codes, dependency delays and tech
 
 **Status: Owner-approved conceptual boundary (PRIV-01–08 and eight refinements, 22 November 2026); not a verified implemented API.**
 
-**Privacy conceptual review — 22 November 2026 ([draft PR #120](https://github.com/nuxt-layers/architecture-blueprint-review/pull/120), owner-approved conceptual direction on 22 November 2026; no implemented contract).** [Privacy public decision model](../privacy/capability-record.md) constrains whether a purpose, collection, disclosure or retention is permissible; Authorisation alone decides who may perform a resource action. Both conditions must hold for protected processing, with unknown/denied access never treated as positive consent. Authorisation returns minimised source-owned access evidence and applies legally justified retention/redaction without unrestricted subject export. Host-composed public interfaces avoid cycles.
+**Privacy conceptual review — 22 November 2026 (draft PR #120, owner-approved conceptual direction on 22 November 2026; no implemented contract).** [Privacy public decision model](../privacy/capability-record.md) constrains whether a purpose, collection, disclosure or retention is permissible; Authorisation alone decides who may perform a resource action. Both conditions must hold for protected processing, with unknown/denied access never treated as positive consent. Authorisation returns minimised source-owned access evidence and applies legally justified retention/redaction without unrestricted subject export. Host-composed public interfaces avoid cycles.
 
 **Owner-approved Privacy refinement (22 November 2026; PR #120, conceptual only):** Access to privacy cases, subject evidence, disclosure/export and high-risk rule changes requires independently scoped Authorisation decisions and suitable assurance. Ordinary validated subject requests should remain low-friction; disputed representatives, high-risk exceptions or conflicts may need independent review or dual approval. Privacy decisions never grant access and access permissions never establish lawful purpose.
 
@@ -532,7 +532,7 @@ Authorisation may submit safe decision failure codes, dependency delays and tech
 
 ## Task conceptual review — reciprocal public boundary (23 November 2026)
 
-**Status: Task TASK-01–08 and operating safeguards owner-approved conceptually 23 November 2026 in [draft PR #138](https://github.com/nuxt-layers/architecture-blueprint-review/pull/138); TASK-09–14 extensions are now owner-approved conceptually (23 November 2026), not implemented or a completed review of authorisation.** [Task canonical conceptual contract](../task/capability-record.md). Authorisation decides Task read/write and assignment/delegation permissions against current caller, tenant, resource, assurance and policy. Task owns its work decisions but never confers membership, roles or access grants by assignment. Denial/unknown is fail-closed on the server. Preserve prior approvals and provisional neighbouring work; reconcile overlaps against latest master before merging.
+**Status: Task TASK-01–08 and operating safeguards owner-approved conceptually 23 November 2026 in draft PR #138; TASK-09–14 extensions are now owner-approved conceptually (23 November 2026), not implemented or a completed review of authorisation.** [Task canonical conceptual contract](../task/capability-record.md). Authorisation decides Task read/write and assignment/delegation permissions against current caller, tenant, resource, assurance and policy. Task owns its work decisions but never confers membership, roles or access grants by assignment. Denial/unknown is fail-closed on the server. Preserve prior approvals and provisional neighbouring work; reconcile overlaps against latest master before merging.
 
 
 ## Search review — reciprocal conceptual interface (23 November 2026; draft PR #132)

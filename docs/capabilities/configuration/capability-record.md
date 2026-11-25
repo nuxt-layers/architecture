@@ -1,6 +1,6 @@
 # Configuration — Capability Conceptual Record
 
-**Status:** Conceptual design owner-approved (CFG-01–08); non-normative. Existing reciprocal approvals are preserved below. **Class:** Foundation (governing catalogue). **Published implementation:** [nuxt-layers/configuration](https://github.com/nuxt-layers/configuration/blob/master/CONTRACT.md), contract version 1, implementation alignment incomplete. **Review:** [PR #53](https://github.com/nuxt-layers/architecture-blueprint-review/pull/53). **Baseline:** governing master `2b5c0628e88b9698c9ad6ad57cc5315c8f879953`; blueprint master `41ce9f3ffba9063407a6af0d0672dcbbd6a8b299`.
+**Status:** Conceptual design owner-approved (CFG-01–08); non-normative. Existing reciprocal approvals are preserved below. **Class:** Foundation (governing catalogue). **Published implementation:** [nuxt-layers/configuration](https://github.com/nuxt-layers/configuration/blob/master/CONTRACT.md), contract version 1, implementation alignment incomplete. **Review:** PR #53. **Baseline:** governing master `2b5c0628e88b9698c9ad6ad57cc5315c8f879953`; blueprint master `41ce9f3ffba9063407a6af0d0672dcbbd6a8b299`.
 
 ## Purpose, independent justification and classification
 
@@ -233,19 +233,19 @@ Store only registered, approved, scoped/versioned values and provenance for perm
 
 ## Comments Engine — reciprocal conceptual proposal (17 November 2026)
 
-**Status:** Proposed for owner review in [Comments Engine PR #52](https://github.com/nuxt-layers/architecture-blueprint-review/pull/52); not an accepted public contract. See [conceptual record](../../capabilities/comments-engine/capability-record.md).
+**Status:** Proposed for owner review in Comments Engine PR #52; not an accepted public contract. See [conceptual record](../../capabilities/comments-engine/capability-record.md).
 
 Configuration provides versioned scoped discussion settings such as target classes, comment/edit windows, guest policy, pre-moderation, rate limits, retention and federation choices. Comments Engine enforces its own domain constraints under effective policy and statutory/security floors; Configuration does not own comment status or override decisions of Legal Compliance/Authorisation. Unknown mandatory policy version must not silently enable posting.
 
 ## Reciprocal conceptual note — Content Editor review (17 November 2026)
 
-**Status:** Proposed in [Content Editor draft PR #54](https://github.com/nuxt-layers/architecture-blueprint-review/pull/54); not implemented or approved. [Conceptual interface](../../presentation/content-editor/presentation-record.md#dedicated-conceptual-review--content-editor-17-november-2026).
+**Status:** Proposed in Content Editor draft PR #54; not implemented or approved. [Conceptual interface](../../presentation/content-editor/presentation-record.md#dedicated-conceptual-review--content-editor-17-november-2026).
 
 Configuration owns setting scope, approval, persistence and policy semantics. Editor's generic formatted-field UI may be reused for authorised Configuration fields, without assuming domain state or grants.
 
 ## Content Security — reciprocal interface (17 November 2026)
 
-**Status:** Proposed in [Content Security PR #55](https://github.com/nuxt-layers/architecture-blueprint-review/pull/55); concurrent configuration draft review is provisional and must be reconciled before integration. See [Content Security record](../../services/content-security/services-record.md).
+**Status:** Proposed in Content Security PR #55; concurrent configuration draft review is provisional and must be reconciled before integration. See [Content Security record](../../services/content-security/services-record.md).
 
 Configuration owns approved, scoped versioned scanner-profile preferences and provider budget settings within non-overridable security/legal floors; Content Security validates supported checks and executes assessments, while source owners enforce publication holds. Effective values, version, expiry and unavailable/invalid handling must be surfaced; Configuration must not become an arbitrary scanning policy interpreter.
 
@@ -263,7 +263,7 @@ Configuration owns approved, scoped versioned scanner-profile preferences and pr
 
 ## Federation — reciprocal conceptual note (18 November 2026)
 
-**Status:** Proposed in [Federation draft PR #69](https://github.com/nuxt-layers/architecture-blueprint-review/pull/69), not a published implementation contract or completed independent review. See [Federation conceptual contract](../../services/federation/services-record.md).
+**Status:** Proposed in Federation draft PR #69, not a published implementation contract or completed independent review. See [Federation conceptual contract](../../services/federation/services-record.md).
 
 Configuration supplies scoped, versioned enabled-role and operator preference values; Federation owns active peer/subscription/acknowledgement state. Configuration selections never authorise publication or grant remote access; source-owner visibility, Authorisation and law govern effective disclosure. Public directional ports, explicit absence modes and acyclic package dependencies apply.
 
@@ -279,7 +279,7 @@ The Infrastructure owner-approved clarification (former review: infrastructure a
 
 ## Integrations reciprocal conceptual interface — 18 November 2026
 
-**Status: Proposed in [Integrations draft PR #76](https://github.com/nuxt-layers/architecture-blueprint-review/pull/76); not approved as a new decision or implemented.** Configuration retains authority for declared effective provider-selection references, scoped approvals, staged revisions and rollback (CFG-08); Integrations independently validates actual connection, provider scopes, readiness, mapping compatibility and reconciliation. A selected provider is not a verified active connection; provider cutover cannot be activated by settings alone. Read the [Integrations proposed conceptual public contract](../../services/integrations/services-record.md#idealised-public-inbound-contract); status INT-01–06 proposed in draft PR #76. Preserve existing Configuration approvals and use host-supplied public ports without mutual package imports.
+**Status: Proposed in Integrations draft PR #76; not approved as a new decision or implemented.** Configuration retains authority for declared effective provider-selection references, scoped approvals, staged revisions and rollback (CFG-08); Integrations independently validates actual connection, provider scopes, readiness, mapping compatibility and reconciliation. A selected provider is not a verified active connection; provider cutover cannot be activated by settings alone. Read the [Integrations proposed conceptual public contract](../../services/integrations/services-record.md#idealised-public-inbound-contract); status INT-01–06 proposed in draft PR #76. Preserve existing Configuration approvals and use host-supplied public ports without mutual package imports.
 
 
 ## Legal Compliance reciprocal conceptual contract — 19 November 2026 (draft PR #85)
@@ -288,11 +288,11 @@ The Infrastructure owner-approved clarification (former review: infrastructure a
 
 ## Localisation reciprocal conceptual interface — 19 November 2026
 
-**Status: Proposed in [Localisation draft PR #86](https://github.com/nuxt-layers/architecture-blueprint-review/pull/86); not independently approved or implemented.** Configuration retains approved tenant/site/organisation language settings, effective precedence, policy revisions and provider-selection governance; Localisation may consume effective settings, supported-locale declarations and allowed provider reference, and report availability/fallback and provider readiness *without writing preferences*. Configuration selection is not a verified Integrations connection. A personal preference remains Profile-owned. See [Localisation's proposed public contract](../localisation/capability-record.md). This note creates no private import or mutual package dependency and preserves this capability's prior decisions.
+**Status: Proposed in Localisation draft PR #86; not independently approved or implemented.** Configuration retains approved tenant/site/organisation language settings, effective precedence, policy revisions and provider-selection governance; Localisation may consume effective settings, supported-locale declarations and allowed provider reference, and report availability/fallback and provider readiness *without writing preferences*. Configuration selection is not a verified Integrations connection. A personal preference remains Profile-owned. See [Localisation's proposed public contract](../localisation/capability-record.md). This note creates no private import or mutual package dependency and preserves this capability's prior decisions.
 
 ## Cross-capability note — Mailer conceptual interface (19 November 2026)
 
-**Status: Mailer-side conceptual boundaries owner-approved (MLR-01–MLR-10, 21 November 2026); neighbouring capability approval/implementation not implied; [Mailer PR #90](https://github.com/nuxt-layers/architecture-blueprint-review/pull/90). No public runtime adapter verified.** [Mailer conceptual record](../../services/mailer/services-record.md): Mailer (approved conceptual design) consumes effective, versioned tenant sender/domain, provider route, retry/retention, quota and policy settings, with credentials only as protected host secret references; Configuration owns settings and precedence, Mailer owns transport validation, readiness and dispatch lifecycle. Missing mandatory verified route or sender approval prevents sending; no invented default relay or credentials.
+**Status: Mailer-side conceptual boundaries owner-approved (MLR-01–MLR-10, 21 November 2026); neighbouring capability approval/implementation not implied; Mailer PR #90. No public runtime adapter verified.** [Mailer conceptual record](../../services/mailer/services-record.md): Mailer (approved conceptual design) consumes effective, versioned tenant sender/domain, provider route, retry/retention, quota and policy settings, with credentials only as protected host secret references; Configuration owns settings and precedence, Mailer owns transport validation, readiness and dispatch lifecycle. Missing mandatory verified route or sender approval prevents sending; no invented default relay or credentials.
 
 
 ## Message Queue — approved reciprocal public contract (22 November 2026)
@@ -302,7 +302,7 @@ The Infrastructure owner-approved clarification (former review: infrastructure a
 
 ## Reciprocal interface — Profile conceptual review (22 November 2026)
 
-**Status: proposed in [Profile draft PR #123](https://github.com/nuxt-layers/architecture-blueprint-review/pull/123); not independently approved or implemented.** Profile is the personal locale/time-zone and personal-contact/preference source of truth; Configuration's CFG-05 approved account scope remains non-personal operational settings. Configuration may supply bounded platform/tenant/group defaults to the host; it cannot create a parallel account-based personal preference store. Clock validates zone and formats instants, Theme Manager resolves effective theme. Missing Profile choice invokes authorised defaults only; no mutual package import. See [Profile's idealised public contract](../profile/capability-record.md#idealised-public-inbound-contracts). This bounded note does not supersede this capability's approved decisions; reconcile any concurrent unmerged work before integration.
+**Status: proposed in Profile draft PR #123; not independently approved or implemented.** Profile is the personal locale/time-zone and personal-contact/preference source of truth; Configuration's CFG-05 approved account scope remains non-personal operational settings. Configuration may supply bounded platform/tenant/group defaults to the host; it cannot create a parallel account-based personal preference store. Clock validates zone and formats instants, Theme Manager resolves effective theme. Missing Profile choice invokes authorised defaults only; no mutual package import. See [Profile's idealised public contract](../profile/capability-record.md#idealised-public-inbound-contracts). This bounded note does not supersede this capability's approved decisions; reconcile any concurrent unmerged work before integration.
 
 
 ## Profile approved decisions — bounded reciprocal alignment (22 November 2026)
@@ -311,7 +311,7 @@ The Infrastructure owner-approved clarification (former review: infrastructure a
 
 ## Office composition reciprocal note — 22 November 2026
 
-**Status: Office conceptual direction OFF-01–05 and safeguards owner-approved 22 November 2026; integration remains non-normative and unimplemented ([PR #112](https://github.com/nuxt-layers/architecture-blueprint-review/pull/112)).** A host may register a validated `office` organisational archetype and its permitted labels, group/place references, selected dashboard modules and navigation settings. Configuration owns scoped approved values/revisions and precedence, while Identity owns groups, Location owns place descriptions and each operational domain owns its records. Office-type configuration cannot grant permission, transfer tenancy/property rights or delete downstream records; retirement affects the composition preset only. See the [Office conceptual composition contract](../../compositions/office/compositions-record.md). This note does not amend published interfaces or claim implementation evidence.
+**Status: Office conceptual direction OFF-01–05 and safeguards owner-approved 22 November 2026; integration remains non-normative and unimplemented (PR #112).** A host may register a validated `office` organisational archetype and its permitted labels, group/place references, selected dashboard modules and navigation settings. Configuration owns scoped approved values/revisions and precedence, while Identity owns groups, Location owns place descriptions and each operational domain owns its records. Office-type configuration cannot grant permission, transfer tenancy/property rights or delete downstream records; retirement affects the composition preset only. See the [Office conceptual composition contract](../../compositions/office/compositions-record.md). This note does not amend published interfaces or claim implementation evidence.
 
 ## Reciprocal conceptual note — Organisation Model (22 November 2026)
 
@@ -319,13 +319,13 @@ The Infrastructure owner-approved clarification (former review: infrastructure a
 
 ## Process conceptual review — reciprocal interface (22 November 2026)
 
-**Status: Process PROC-01–PROC-07 and supplementary safeguards owner-approved conceptually (22 November 2026) in [draft PR #121](https://github.com/nuxt-layers/architecture-blueprint-review/pull/121); this neighbouring capability's design and public runtime integration remain independently unapproved/unverified.** [Process canonical conceptual contract](../process/capability-record.md). Process consumes approved scoped configuration and source/version provenance for optional process definitions and policy parameterisation. Configuration owns values and precedence; Process owns interpretation of its stages/gates and may not permit tenant settings to weaken statutory or security requirements. Definition activation remains Process-owned, separately authorised and version-pinned. This additive note does not complete the configuration review or alter its approved authority.
+**Status: Process PROC-01–PROC-07 and supplementary safeguards owner-approved conceptually (22 November 2026) in draft PR #121; this neighbouring capability's design and public runtime integration remain independently unapproved/unverified.** [Process canonical conceptual contract](../process/capability-record.md). Process consumes approved scoped configuration and source/version provenance for optional process definitions and policy parameterisation. Configuration owns values and precedence; Process owns interpretation of its stages/gates and may not permit tenant settings to weaken statutory or security requirements. Definition activation remains Process-owned, separately authorised and version-pinned. This additive note does not complete the configuration review or alter its approved authority.
 
 ## Reciprocal boundary — Privacy conceptual review (22 November 2026)
 
 **Status: Owner-approved conceptual boundary (PRIV-01–08 and eight refinements, 22 November 2026); not a verified implemented API.**
 
-**Privacy conceptual review — 22 November 2026 ([draft PR #120](https://github.com/nuxt-layers/architecture-blueprint-review/pull/120), owner-approved conceptual direction on 22 November 2026; no implemented contract).** [Privacy's conceptual contract](../privacy/capability-record.md) consumes tenant/controller-declared processing settings and lawful retention proposals, then supplies qualified purpose, notice, consent and disclosure restrictions. Configuration remains the non-personal settings authority; Privacy holds specialist consent/rights decisions; Profile holds individual personal preferences. Configurable defaults must not waive statutory obligations or create a second consent register. Apply public host ports, not private imports.
+**Privacy conceptual review — 22 November 2026 (draft PR #120, owner-approved conceptual direction on 22 November 2026; no implemented contract).** [Privacy's conceptual contract](../privacy/capability-record.md) consumes tenant/controller-declared processing settings and lawful retention proposals, then supplies qualified purpose, notice, consent and disclosure restrictions. Configuration remains the non-personal settings authority; Privacy holds specialist consent/rights decisions; Profile holds individual personal preferences. Configurable defaults must not waive statutory obligations or create a second consent register. Apply public host ports, not private imports.
 
 **Owner-approved Privacy refinement (22 November 2026; PR #120, conceptual only):** Configuration holds non-personal operational declarations (jurisdiction routing, policy choices within mandatory bounds, authorised workflow settings). Privacy owns actual consent evidence, specialist rights cases and applied policy decisions; Profile retains personal preferences. Do not clone consent state into Configuration, allow tenant settings to waive statutory floors, or apply stale policy revisions.
 

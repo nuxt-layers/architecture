@@ -248,7 +248,7 @@ The owner explicitly requested creation of [`credentials`](../credentials/capabi
 
 ## Cross-capability review note — Enrolment (owner-accepted conceptual)
 
-**Enrolment reciprocal interface (owner-accepted; 18 November 2026; [Enrolment review PR #60](https://github.com/nuxt-layers/architecture-blueprint-review/pull/60)).** Course owns published offering/cohort identity, admission parameters, revisions, learning outcomes and any Course-owned seat supply. Enrolment consumes these as versioned facts and owns individual application/admission/withdrawal status, supplying authorised roster/participation evidence back. When Booking or Course owns seats, Enrolment must use its checked capacity contract and cannot create a competing pool. This note is not Course review approval or an implemented contract.
+**Enrolment reciprocal interface (owner-accepted; 18 November 2026; Enrolment review PR #60).** Course owns published offering/cohort identity, admission parameters, revisions, learning outcomes and any Course-owned seat supply. Enrolment consumes these as versioned facts and owns individual application/admission/withdrawal status, supplying authorised roster/participation evidence back. When Booking or Course owns seats, Enrolment must use its checked capacity contract and cannot create a competing pool. This note is not Course review approval or an implemented contract.
 
 ## Reciprocal note — Events conceptual review (18 November 2026)
 
@@ -272,7 +272,7 @@ Media's owner-approved conceptual scope now includes PDFs and TXT/CSV/MD alongsi
 
 ## Reciprocal conceptual note — Metadata review (19 November 2026)
 
-**Status: Owner-approved conceptual Metadata scope in [Metadata draft PR #95](https://github.com/nuxt-layers/architecture-blueprint-review/pull/95), not a published implementation contract or completed review of this adjacent capability.** [Metadata conceptual contract](../metadata/capability-record.md).
+**Status: Owner-approved conceptual Metadata scope in Metadata draft PR #95, not a published implementation contract or completed review of this adjacent capability.** [Metadata conceptual contract](../metadata/capability-record.md).
 
 Course owns curriculum, module/prerequisite and learning outcome meaning; Metadata can supply optional controlled taxonomy terms or cross-resource assignment links. A shared term never changes an approved Course revision, awards an outcome or determines eligibility. Term retirement and source Course withdrawal must preserve qualified historical references. Metadata's first-release native ontology reasoning may offer authorised semantic links and qualified inferences for curriculum discovery, but Course alone determines prerequisites, curriculum requirements and outcomes. Inferred similarity does not create an approved prerequisite or award. Conceptual cooperation is optional and host-wired through public contracts; avoid circular required package dependencies.
 
@@ -288,7 +288,7 @@ Course owns curriculum, module/prerequisite and learning outcome meaning; Metada
 
 ## Checkout reciprocal conceptual interface — 24 November 2026
 
-**Checkout-side CHK-01–09 owner-approved (24 November 2026):** [Checkout PR #151](https://github.com/nuxt-layers/architecture-blueprint-review/pull/151), [conceptual contract](../checkout/capability-record.md). Course may expose qualified offerings for direct Checkout without Shop or Basket; Course retains offering and curriculum, Enrolment participation and Billing/Payment Gateway financial authority. Existing approved decisions remain authoritative; host-bound public ports only.
+**Checkout-side CHK-01–09 owner-approved (24 November 2026):** Checkout PR #151, [conceptual contract](../checkout/capability-record.md). Course may expose qualified offerings for direct Checkout without Shop or Basket; Course retains offering and curriculum, Enrolment participation and Billing/Payment Gateway financial authority. Existing approved decisions remain authoritative; host-bound public ports only.
 
 ## Final completeness approval reconciliation
 

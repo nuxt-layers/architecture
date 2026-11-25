@@ -327,7 +327,7 @@ This is a **recommended default mapping** to Audit's risk-based catalogue, **not
 
 ## Cross-capability completeness review — further interfaces and relationships (15 November 2026)
 
-**Status:** Proposed specialist elaboration of the already approved BIL-01–BIL-06 and BIL-S01–BIL-S06 responsibilities. This is **not** approval of new domain owners, a seventh surface, implemented adapter, mandatory package dependency, revised ADR or new cross-capability workflow. Reporting's detailed bilateral review is separately proposed in [PR #33](https://github.com/nuxt-layers/architecture-blueprint-review/pull/33) and is intentionally **not duplicated** here. The earlier [Audit/Logging](#detailed-billingauditlogging-interface-review-15-november-2026) review remains applicable.
+**Status:** Proposed specialist elaboration of the already approved BIL-01–BIL-06 and BIL-S01–BIL-S06 responsibilities. This is **not** approval of new domain owners, a seventh surface, implemented adapter, mandatory package dependency, revised ADR or new cross-capability workflow. Reporting's detailed bilateral review is separately proposed in PR #33 and is intentionally **not duplicated** here. The earlier [Audit/Logging](#detailed-billingauditlogging-interface-review-15-november-2026) review remains applicable.
 
 ### Completeness matrix — information needed and supplied
 
@@ -591,7 +591,7 @@ See tenancy (former proposal: organisational tenancy and governance), commercial
 
 ## Approved Export boundary — reconciliation (18 November 2026)
 
-**Owner-approved conceptual direction in [Export PR #68](https://github.com/nuxt-layers/architecture-blueprint-review/pull/68):** Export is a headless, stateless `rich-text` rendering **Library** providing format discovery, conversion, output bytes/stream, metadata and typed technical outcomes. Any preceding proposed Export-owned durable jobs, data extraction, saved artefacts, recipients, delivery or revocation language in this record is **superseded as an Export ownership assignment**. The initiating source domain or Reporting owns its authorised export workflow and job/file reference; Authorisation supplies permission decisions, Storage stores bytes, Audit retains risk-based evidence and Logging receives scrubbed technical diagnostics according to their boundaries. CSV/XLSX are conditional on a separately approved validated tabular contract. This is not a claim of implemented interoperation, not an approval to change accepted governing rules, and not a merge authorisation.
+**Owner-approved conceptual direction in Export PR #68:** Export is a headless, stateless `rich-text` rendering **Library** providing format discovery, conversion, output bytes/stream, metadata and typed technical outcomes. Any preceding proposed Export-owned durable jobs, data extraction, saved artefacts, recipients, delivery or revocation language in this record is **superseded as an Export ownership assignment**. The initiating source domain or Reporting owns its authorised export workflow and job/file reference; Authorisation supplies permission decisions, Storage stores bytes, Audit retains risk-based evidence and Logging receives scrubbed technical diagnostics according to their boundaries. CSV/XLSX are conditional on a separately approved validated tabular contract. This is not a claim of implemented interoperation, not an approval to change accepted governing rules, and not a merge authorisation.
 
 ## Cross-capability note — Invoice conceptual public contract (18 November 2026)
 
@@ -621,7 +621,7 @@ See tenancy (former proposal: organisational tenancy and governance), commercial
 
 ## Payment Gateway reciprocal boundary — approved conceptual integration (22 November 2026)
 
-**Status:** Payment Gateway boundary **owner-approved conceptually (PGW-01–PGW-12, 22 November 2026)** in [draft PR #116](https://github.com/nuxt-layers/architecture-blueprint-review/pull/116), not a verified implementation contract or an override of this capability's previously approved authority. [Payment Gateway](../../services/payment-gateway/services-record.md) accepts only a current, separately authorised and source-revision-bound payment/refund intent, with tenant, merchant/legal-payee, amount, currency and idempotency reference. It returns verified provider authorisation/capture/refund/reversal/dispute evidence, explicit pending/unknown outcomes and stable operation references; redirects and duplicate webhooks do not prove collection. **Billing retains charge calculation, recurrence, collections and adjustments; finalised charge or credit alone never transfers funds.** Consumers handle asynchronous, replayed and reversed provider events using the Gateway's current versioned public status, without package-private coupling. This boundary is approved on the Gateway side and does not supersede the neighbouring capability's own authoritative contract.
+**Status:** Payment Gateway boundary **owner-approved conceptually (PGW-01–PGW-12, 22 November 2026)** in draft PR #116, not a verified implementation contract or an override of this capability's previously approved authority. [Payment Gateway](../../services/payment-gateway/services-record.md) accepts only a current, separately authorised and source-revision-bound payment/refund intent, with tenant, merchant/legal-payee, amount, currency and idempotency reference. It returns verified provider authorisation/capture/refund/reversal/dispute evidence, explicit pending/unknown outcomes and stable operation references; redirects and duplicate webhooks do not prove collection. **Billing retains charge calculation, recurrence, collections and adjustments; finalised charge or credit alone never transfers funds.** Consumers handle asynchronous, replayed and reversed provider events using the Gateway's current versioned public status, without package-private coupling. This boundary is approved on the Gateway side and does not supersede the neighbouring capability's own authoritative contract.
 
 ## Reciprocal conceptual interface — Pricing (22 November 2026, draft PR #119)
 
@@ -635,7 +635,7 @@ See tenancy (former proposal: organisational tenancy and governance), commercial
 
 ## Checkout reciprocal conceptual interface — 24 November 2026
 
-**Checkout-side CHK-01–09 owner-approved (24 November 2026):** [Checkout PR #151](https://github.com/nuxt-layers/architecture-blueprint-review/pull/151), [conceptual contract](../checkout/capability-record.md). Checkout consumes qualified charge and independent collection authority; Billing retains charge/collection policy. No automatic charge from confirmation. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.
+**Checkout-side CHK-01–09 owner-approved (24 November 2026):** Checkout PR #151, [conceptual contract](../checkout/capability-record.md). Checkout consumes qualified charge and independent collection authority; Billing retains charge/collection policy. No automatic charge from confirmation. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.
 
 ## FAC-D01–04 — Approved reciprocal responsibility alignment
 

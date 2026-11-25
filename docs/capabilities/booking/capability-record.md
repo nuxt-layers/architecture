@@ -328,12 +328,12 @@ Customer self-service and operator administration are separate permission/audien
 
 ## Configuration reciprocal interface — 17 November 2026
 
-**Status: Proposed for [Configuration PR #53](https://github.com/nuxt-layers/architecture-blueprint-review/pull/53), not an implemented contract.** See [Configuration conceptual public inputs](../configuration/capability-record.md#idealised-public-inbound-interfaces). Configuration supplies versioned approved settings; Booking enforces availability, limits, attendance, cancellations and agreed retroactivity. Unknown critical rules cannot allow overselling. Use public host-composed ports/events only; preserve all prior decisions and dependency acyclicity.
+**Status: Proposed for Configuration PR #53, not an implemented contract.** See [Configuration conceptual public inputs](../configuration/capability-record.md#idealised-public-inbound-interfaces). Configuration supplies versioned approved settings; Booking enforces availability, limits, attendance, cancellations and agreed retroactivity. Unknown critical rules cannot allow overselling. Use public host-composed ports/events only; preserve all prior decisions and dependency acyclicity.
 
 
 ## Configuration decision reconciliation — CFG-05–08 (17 November 2026)
 
-**Status: Owner-approved conceptual decisions in [Configuration PR #53](https://github.com/nuxt-layers/architecture-blueprint-review/pull/53); not an implemented or newly accepted governing contract.** See [Configuration decision register](../configuration/capability-record.md#decision-register-evidence-and-sign-off).
+**Status: Owner-approved conceptual decisions in Configuration PR #53; not an implemented or newly accepted governing contract.** See [Configuration decision register](../configuration/capability-record.md#decision-register-evidence-and-sign-off).
 
 **Owner-approved CFG-06/08 (Options C/B):** Booking owns stable resource identity, existence/retirement, availability and the domain meaning of its policy. Configuration may govern approved values only for explicitly registered resource contexts; versioned declarations and effective intervals preserve the rule under which existing bookings were accepted. A room rename/reuse or new cancellation schema never silently changes past commitments.
 
@@ -345,7 +345,7 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 ## Reciprocal interface — Enrolment (owner-accepted, 18 November 2026)
 
-**Status:** owner-accepted conceptual cross-capability note, [Enrolment conceptual review PR #60](https://github.com/nuxt-layers/architecture-blueprint-review/pull/60); does not amend already approved Booking decisions. Booking, **when expressly nominated sole authoritative seat/capacity owner for a Course offering**, supplies checked, versioned hold/commit/release status to Enrolment and receives scoped enrolment-linked reservation requests, cancellation/transfer requests and correlation keys. Enrolment owns learner application, admission and programme participation; Booking owns only its booking/capacity commitment and must not infer educational acceptance, competency or permission. No second seat counter, hidden coupling or bidirectional package dependency. In uncapped or Course/Enrolment-owned allocation modes Booking is not a mandatory dependency. Stale, failed, timed-out or contradictory results remain pending/uncertain for reconciliation rather than falsely confirmed. ENR-01 is owner-approved: one designated source per cohort, with a published provider-neutral interface to be implemented.
+**Status:** owner-accepted conceptual cross-capability note, Enrolment conceptual review PR #60; does not amend already approved Booking decisions. Booking, **when expressly nominated sole authoritative seat/capacity owner for a Course offering**, supplies checked, versioned hold/commit/release status to Enrolment and receives scoped enrolment-linked reservation requests, cancellation/transfer requests and correlation keys. Enrolment owns learner application, admission and programme participation; Booking owns only its booking/capacity commitment and must not infer educational acceptance, competency or permission. No second seat counter, hidden coupling or bidirectional package dependency. In uncapped or Course/Enrolment-owned allocation modes Booking is not a mandatory dependency. Stale, failed, timed-out or contradictory results remain pending/uncertain for reconciliation rather than falsely confirmed. ENR-01 is owner-approved: one designated source per cohort, with a published provider-neutral interface to be implemented.
 
 ## Reciprocal note — Events conceptual review (18 November 2026)
 
@@ -403,7 +403,7 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 ## Cross-capability note — Mailer conceptual interface (19 November 2026)
 
-**Status: Mailer-side conceptual boundaries owner-approved (MLR-01–MLR-10, 21 November 2026); neighbouring capability approval/implementation not implied; [Mailer PR #90](https://github.com/nuxt-layers/architecture-blueprint-review/pull/90). No public runtime adapter verified.** [Mailer conceptual record](../../services/mailer/services-record.md): Booking confirmation/amendment/cancellation remains Booking-owned irrespective of Mailer results. Booking supplies approved notice intent through Notifications where configured; Mailer only transports minimised mail content and returns provider evidence (accepted/unknown/rejected/bounced). Do not infer a guest has read or received correspondence from provider acceptance; preserve retry/escalation independently.
+**Status: Mailer-side conceptual boundaries owner-approved (MLR-01–MLR-10, 21 November 2026); neighbouring capability approval/implementation not implied; Mailer PR #90. No public runtime adapter verified.** [Mailer conceptual record](../../services/mailer/services-record.md): Booking confirmation/amendment/cancellation remains Booking-owned irrespective of Mailer results. Booking supplies approved notice intent through Notifications where configured; Mailer only transports minimised mail content and returns provider evidence (accepted/unknown/rejected/bounced). Do not infer a guest has read or received correspondence from provider acceptance; preserve retry/escalation independently.
 
 
 ## Reciprocal conceptual interface — Membership (19 November 2026; draft PR #93)
@@ -425,4 +425,4 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 ## Checkout reciprocal conceptual interface — 24 November 2026
 
-**Checkout-side CHK-01–09 owner-approved (24 November 2026):** [Checkout PR #151](https://github.com/nuxt-layers/architecture-blueprint-review/pull/151), [conceptual contract](../checkout/capability-record.md). Checkout can initiate directly without Shop/Basket; Booking supplies capacity hold/expiry and owns reservation confirmation. Payment does not prove booking. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.
+**Checkout-side CHK-01–09 owner-approved (24 November 2026):** Checkout PR #151, [conceptual contract](../checkout/capability-record.md). Checkout can initiate directly without Shop/Basket; Booking supplies capacity hold/expiry and owns reservation confirmation. Payment does not prove booking. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.

@@ -4,7 +4,7 @@
 **Conceptual review:** 17 November 2026; **status: owner-approved EMP-01–07 and FAC-D01–04**.
 **Opening governing master:** `nuxt-layers/architecture-rules@2b5c0628e88b9698c9ad6ad57cc5315c8f879953`.
 **Opening blueprint master:** `nuxt-layers/architecture-blueprint-review@b0b026931c4b66ec4bfc445489147045497db890`.
-**Review PR:** [#59](https://github.com/nuxt-layers/architecture-blueprint-review/pull/59). Baseline (former review: employment review baseline).
+**Review PR:** #59. Baseline (former review: employment review baseline).
 **Evidence:** Direct GitHub lookups of `nuxt-layers/employment` and `nuxt-layers/payroll` returned 404 to the connected account. Neither published root `CONTRACT.md` nor implementation was verified; absence from accessible repository listing is not proof that no functionality exists elsewhere. Do not claim operational readiness, provider compliance or an implemented API.
 
 ## Capability Name
@@ -194,12 +194,12 @@ Forms should use semantic native controls where appropriate, accessible validati
 
 ## Recruitment reciprocal contract proposal — 20 November 2026
 
-**Status: Proposed in [Recruitment draft PR #99](https://github.com/nuxt-layers/architecture-blueprint-review/pull/99), not owner-approved or implemented.** Recruitment offers purpose-limited accepted-offer and idempotent handover evidence; Employment independently owns contracts, engagements, assignments and actual occupancy. Unknown handover never becomes active engagement. Cooperation uses published contracts/host ports, without private state or mandatory cyclic imports. [Recruitment record](../recruitment/capability-record.md).
+**Status: Proposed in Recruitment draft PR #99, not owner-approved or implemented.** Recruitment offers purpose-limited accepted-offer and idempotent handover evidence; Employment independently owns contracts, engagements, assignments and actual occupancy. Unknown handover never becomes active engagement. Cooperation uses published contracts/host ports, without private state or mandatory cyclic imports. [Recruitment record](../recruitment/capability-record.md).
 
 
 ## Time & Attendance reciprocal conceptual note — 23 November 2026
 
-**Status: Time & Attendance TA-01–TA-06 owner-approved conceptually on 23 November 2026; [draft PR #143](https://github.com/nuxt-layers/architecture-blueprint-review/pull/143). This does not approve a published employment interface or implementation.** Employment remains authoritative for engagement, contractual/expected hours, leave and dated employer approval context. Time & Attendance independently owns actual clock and declared evidence, timesheet approval/correction and versioned actual-time statements, including eligible non-employed contexts. Employment must never infer actual work from contractual hours or rosters. This proposed contract does not amend approved EMP-03. See [the proposed source-of-truth and input/output contract](../time-attendance/capability-record.md). Existing approved decisions remain authoritative.
+**Status: Time & Attendance TA-01–TA-06 owner-approved conceptually on 23 November 2026; draft PR #143. This does not approve a published employment interface or implementation.** Employment remains authoritative for engagement, contractual/expected hours, leave and dated employer approval context. Time & Attendance independently owns actual clock and declared evidence, timesheet approval/correction and versioned actual-time statements, including eligible non-employed contexts. Employment must never infer actual work from contractual hours or rosters. This proposed contract does not amend approved EMP-03. See [the proposed source-of-truth and input/output contract](../time-attendance/capability-record.md). Existing approved decisions remain authoritative.
 
 ## FAC-D01–04 — Approved party, payroll, roster and establishment allocation
 

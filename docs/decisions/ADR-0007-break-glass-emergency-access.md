@@ -1,10 +1,11 @@
 # ADR-0007 — Break-Glass Emergency Access
 
 **Status:** Accepted  
+**Amended:** 2026-11-25: reconcile with ADR-0004, ADR-0010 and ADR-0019.  
 **Date:** 2026-10-09  
 **Amended:** 2026-10-26: brought in line with ADR-0010 and later decisions
 
-> **In short:** a single-operator platform may keep break-glass accounts: passkey-only, with no standing privileges, able only to suspend and to appoint an owner to an orphaned group, alerting everyone and reviewed by someone else after every use.
+> **Summary:** a single-operator platform may keep break-glass accounts: passkey-only, with no standing privileges, able only to suspend and to appoint an owner to an orphaned group, alerting everyone and reviewed by someone else after every use.
 
 ## Why
 
@@ -41,5 +42,5 @@ Relaxing a security control requires a documented risk treatment. This ADR is th
 ## Guardrails
 
 - Adding any capability to break-glass accounts beyond §4 requires a new ADR.
-- The emergency process is specified in `nuxt-layers/iam-integration` (approvals, pausing and suspension, recovery).
+- Conceptual emergency process requirements belong to the governing architecture; the implemented process is specified in `nuxt-layers/iam-integration` (approvals, pausing and suspension, recovery), following ADR-0004.
 - Break-glass use is a test case in each affected capability's security tests: allowed for the two actions, refused for everything else.

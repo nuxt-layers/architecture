@@ -1,11 +1,12 @@
 # ADR-0003 — Group Model Invariants
 
 **Status:** Accepted  
+**Amended:** 2026-11-25: reconcile with ADR-0004, ADR-0010 and ADR-0019.  
 **Date:** 2026-10-08  
 **Amended:** 2026-10-26: brought in line with ADR-0010 and later decisions  
 **Supplemented:** 2026-11-16: ADR-0017 separately establishes tenant parentage and digital tenant governance; group invariants remain unchanged
 
-> **In short:** the group model's invariants are normative across capabilities that use identities, groups and memberships.
+> **Summary:** the group model's invariants are normative across capabilities that use identities, groups and memberships.
 
 ## Why
 
@@ -17,7 +18,7 @@ The group model is a shared boundary; capability-specific implementation and dev
 
 1. The group model is **accepted as normative architecture**. Its invariants and acceptance criteria ([Identity and Access](../identity.md) §3 to §11) apply to Identity, Authorisation and any capability that associates domain entities with groups.
 2. Identity owns the group and membership model; other capabilities consume the public contract and must not duplicate Identity's authority.
-3. Individual capability plans, rather than this ADR, determine development sequence.
+3. Development sequencing belongs to the separate development register and owner-specific implementation plans, not this ADR (ADR-0004).
 
 ## What follows
 

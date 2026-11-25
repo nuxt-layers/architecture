@@ -1,9 +1,10 @@
 # ADR-0006 — Polyglot Persistence and Data-Store Security
 
 **Status:** Accepted  
+**Amended:** 2026-11-25: reconcile with ADR-0004, ADR-0010 and ADR-0019.  
 **Date:** 2026-10-09
 
-> **In short:** capabilities may use stores other than PostgreSQL behind ports, provided each piece of data has one owner and system of record, authorisation is decided before any store is queried, every store enforces tenant isolation, and personal data stays in Profile.
+> **Summary:** capabilities may use stores other than PostgreSQL behind ports, provided each piece of data has one owner and system of record, authorisation is decided before any store is queried, every store enforces tenant isolation, and personal data stays in Profile.
 
 ## Why
 
@@ -21,7 +22,7 @@ Two risks follow if this is left open. A capability may adopt a store whose own 
 6. **Personal data stays where Profile puts it.** Under [ADR-0005](ADR-0005-iam-suite.md), stores outside Profile hold opaque identifiers, never personal data, unless a capability's documented purpose requires it and its erasure procedure covers every store it uses. One such purpose is settled here, amending ADR-0005 §1:
    - **Sign-in identifiers stay in Authentication.** An email address or other identifier used to sign in is a credential identifier, owned and verified by Authentication, so that signing in never depends on Profile being available. Authentication uses it only for signing in, account recovery and security notices.
    - **Contact details stay in Profile.** Profile may hold the same address as a contact detail for a different purpose. The two copies are independent: changing one does not change the other unless the person asks for both to change.
-   - **Erasure covers both.** Account closure and erasure requests reach the sign-in identifier in Authentication as well as Profile's record; the process is specified in `iam-integration`.
+   - **Erasure covers both.** Account closure and erasure requests reach the sign-in identifier in Authentication as well as Profile's record; conceptual process requirements follow ADR-0004; the implemented process is specified in `iam-integration`.
 7. **Data region follows the tenant.** A tenant's data region, once set, applies to every store holding that tenant's data, including derived copies and backups.
 
 The concrete controls are in [Security](../security.md) §16.

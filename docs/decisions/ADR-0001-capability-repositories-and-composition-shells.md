@@ -1,12 +1,13 @@
 # ADR-0001 — Capability Repositories and Thin Composition Shells
 
 **Status:** Accepted  
+**Amended:** 2026-11-25: reconcile with ADR-0004, ADR-0010 and ADR-0019.  
 **Date:** 2026-09-26  
 **Amended:** 2026-10-26: brought in line with ADR-0010 and later decisions  
 **Amended:** 2026-11-12: ADR-0016 permits documented Nuxt extension without changing service composition  
 **Amended:** 2026-11-13: capability responsibility is separate from implementation and deployment
 
-> **In short:** capabilities live in their own repositories when independence earns it, and applications stay thin composition roots that select capabilities, pass infrastructure and own routes and branding. Layers meet only through public contracts; the default runtime is one modular monolith.
+> **Summary:** capabilities live in their own repositories when independence earns it, and applications stay thin composition roots that select capabilities, pass infrastructure and own routes and branding. Layers meet only through public contracts; the default runtime is one modular monolith.
 
 ## Why
 
@@ -22,7 +23,7 @@ A capability MAY use a Nuxt Layer, a framework-independent TypeScript implementa
 
 The `nuxt-layers` organisation will host separate repositories for cohesive bounded capabilities where independent development provides material value.
 
-Nuxt applications will remain lightweight composition roots. They integrate the latest accepted development revisions of capabilities, provide application and deployment configuration, connect infrastructure and own application-specific routing and branding.
+Applications will remain lightweight composition roots, whether Nuxt-based or framework-independent. They integrate the latest accepted development revisions of capabilities, provide application and deployment configuration, connect infrastructure and own application-specific routing and branding.
 
 Cross-capability interaction occurs through declared public contracts. Repository separation does not permit consumers to depend upon another capability's private implementation.
 
@@ -40,6 +41,6 @@ The default runtime remains a modular monolith. A separate repository does not m
 
 ## Guardrails
 
-A new repository requires a bounded-capability justification. Microscopic repositories are discouraged.
+A new repository requires a cohesive artefact responsibility and independent-development justification under ADR-0019. Microscopic repositories are discouraged.
 
 The combined dependency graph (including contract requirements and direct Nuxt extension edges) must remain acyclic. Capability services are connected through their public ports by the host's composition call ([ADR-0012](ADR-0012-trivial-composition.md)), never by mutual domain dependencies. Deliberate Nuxt `extends` for documented public framework contributions and schema-validated specialisation are permitted under [ADR-0016](ADR-0016-controlled-layer-specialisation-and-composition.md); this does not grant access to private implementation or alter domain ownership.

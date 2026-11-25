@@ -1,6 +1,7 @@
 # ADR-0012 — Trivial Composition
 
 **Status:** Accepted  
+**Amended:** 2026-11-25: reconcile with ADR-0004, ADR-0010 and ADR-0019.  
 **Amended:** 2026-11-25: ADR-0019 extends the 50-line integration ceiling to framework-independent capability consumers.  
 **Date:** 2026-10-24  
 **Revised:** 2026-10-25: screens follow the amended ADR-0009; every capability has a one-page host contract  
@@ -11,7 +12,7 @@
 **Amended:** 2026-11-12: ADR-0016-controlled extension remains subject to the composition budget  
 **Amended:** 2026-11-13: capability responsibility is separate from implementation and deployment
 
-> **In short:** composing a capability into an application must be trivial and measured. A host installs it, makes one call with what it already has (a database connection, the mail sender, the access decision) and writes no adapters of its own. Every capability fills its own ports by default, every capability asks for the same few things in the same shapes, and its tests prove a minimal host composes it within a fixed budget.
+> **Summary:** composing a capability into an application must be trivial and measured. A host installs it, makes one call with what it already has (a database connection, the mail sender, the access decision) and writes no adapters of its own. Every capability fills its own ports by default, every capability asks for the same few things in the same shapes, and its tests prove a minimal host composes it within a fixed budget.
 
 ## Why
 
@@ -29,7 +30,7 @@ Composing a **Nuxt capability layer** into a Nuxt host takes:
 - one call in one server plugin, passing only what the host already owns;
 - no more than **50 lines** of host code for that capability, counted as every line outside the host's own screens, content and data files that names the capability.
 
-A framework-independent capability MUST offer one documented composition entry point using declared inputs, with no consumer-written stores, relays or adapters for its own rules. Its independent consumer example MUST meet the same 50-line capability-specific integration ceiling, report integration code size and require no Nitro plugin. Where that capability is integrated through a Nuxt adapter, the **same 50-line budget** applies to the complete capability-specific host integration, including its adapter setup. A different numerical limit for non-Nuxt consumers requires a separate accepted decision; none is established here.
+A framework-independent capability MUST offer one documented composition entry point using declared inputs, with no consumer-written stores, relays or adapters for its own rules. Its independent consumer example MUST meet the same 50-line capability-specific integration ceiling, report integration code size and require no Nitro plugin. Where that capability is integrated through a Nuxt adapter, the **same 50-line budget** applies to the complete capability-specific host integration, including its adapter setup. Any exception to the common ceiling requires a separate accepted decision.
 
 What the host passes is limited to: services in the shared shapes of decision 2, connections and secrets ([ADR-0002](ADR-0002-composition-supplied-persistence-and-capability-owned-schemas.md)), configuration values, and decisions that belong to the application, such as which document types it registers. Everything else has a default.
 
@@ -70,7 +71,7 @@ Where capabilities belong together, one package wires them once and returns the 
 
 ### 4. Proven, not promised
 
-Every **Nuxt capability layer** carries `examples/minimal-host`: a Nuxt application that composes it, and nothing else, within the 50-line budget. CI builds it, runs a smoke test and fails when its composition code exceeds the budget. A framework-independent capability instead carries a minimal independent consumer that proves its documented entry point, required inputs, contract sufficiency and failure behaviour, without pulling in Nuxt. If a Nuxt adapter is published, it also proves Nuxt composition within the 50-line budget. The platform test harness proves composed applications against the latest accepted development revisions. Acceptance results report the measured integration cost.
+Every **Nuxt capability layer** carries `examples/minimal-host`: a Nuxt application that composes it, and nothing else, within the 50-line budget. CI builds it, runs a smoke test and fails when its composition code exceeds the budget. A framework-independent capability instead carries a minimal independent consumer that proves its documented entry point, required inputs, contract sufficiency and failure behaviour, without pulling in Nuxt. CI also enforces its 50-line integration ceiling. If a Nuxt adapter is published, it also proves Nuxt composition within the 50-line budget. The platform test harness proves composed applications against the latest accepted development revisions. Acceptance results report the measured integration cost.
 
 ### 5. Screens
 
@@ -91,7 +92,7 @@ Every capability, whether Nuxt-based or framework-independent, has a root `CONTR
 | Headless surface | What any screen must still do (ADR-0009) |
 | You will hit this | Rules a host would otherwise discover by failing: identifier formats, name patterns, what needs a second person or step-up |
 
-Detailed internal specifications stay under `docs/` for maintainers and do not define a competing consumer interface. The public contract contains precise available imports, required port shapes, callable signatures, inputs, outputs, failure codes and relevant operational requirements; examples must not conceal required configuration or undefined dependencies. If the public contract, internal specification or implementation disagree, reconcile them against the accepted ADRs and normative capability requirements before acceptance. Implementation is evidence, not architectural authority. A handover to compose a capability names its `CONTRACT.md` and nothing else of the capability's.
+Detailed internal specifications stay under `docs/` for maintainers and do not define a competing consumer interface. The public contract contains precise available imports, required port shapes, callable signatures, inputs, outputs, failure codes and relevant operational requirements; examples must not conceal required configuration or undefined dependencies. If the public contract, internal specification or implementation disagree, reconcile them against the accepted ADRs and approved conceptual artefact design before acceptance. Implementation is evidence, not architectural authority. A handover to compose a capability names its `CONTRACT.md` and nothing else of the capability's.
 
 ### 7. Controlled specialisation does not bypass composition
 
@@ -99,7 +100,7 @@ Detailed internal specifications stay under `docs/` for maintainers and do not d
 
 ## Adopting it
 
-Each capability implements the common contract and composition requirements in its own repository. Its own plan determines implementation order; consumers adopt the accepted public surface through protected pull requests and verify integration against current development dependencies (ADR-0008).
+Each capability implements the common contract and composition requirements in its own repository. The separate development register and owner-specific plans determine implementation order; consumers adopt the accepted public surface through protected pull requests and verify integration against current development dependencies (ADR-0008).
 
 A suite's integration repository composes its members only after their independent public contracts are established. Capability-specific migration plans, metrics and implementation decisions stay with their owners.
 
@@ -115,7 +116,7 @@ A suite's integration repository composes its members only after their independe
 ## Guardrails
 
 - A capability's contract lists what a host must pass, and nothing in that list has a default the capability could supply itself.
-- Every Nuxt capability layer's `examples/minimal-host` composes within the 50-line budget, or CI fails. A framework-independent capability must provide an independent consumer example; any Nuxt adapter must also meet that budget.
+- Every Nuxt capability layer's `examples/minimal-host` composes within the 50-line budget, or CI fails. A framework-independent capability must provide an independent consumer example within the same budget; CI fails if it exceeds that ceiling. Any Nuxt adapter must also meet that budget.
 - No host writes a store, fake or relay for a capability that complies with this ADR; a review that finds one raises it against the capability.
 - The shared shapes change only by amending this ADR.
 - `CONTRACT.md` exists and keeps its required sections. Documentation checks validate structure and reference integrity, not an arbitrary line count.

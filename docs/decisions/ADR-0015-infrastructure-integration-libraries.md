@@ -1,9 +1,10 @@
 # ADR-0015 — Infrastructure Integration Libraries
 
 **Status:** Accepted  
+**Amended:** 2026-11-25: reconcile with ADR-0004, ADR-0010 and ADR-0019.  
 **Date:** 2026-11-10
 
-> **In short:** a framework-independent infrastructure integration library may centralise a shared external system's client and worker integration without becoming a Nuxt Layer, a business capability or a network service. Its consumers retain their own rules, state and ports.
+> **Summary:** a framework-independent infrastructure integration library may centralise a shared external system's client and worker integration without becoming a Nuxt Layer, a business capability or a network service. Its consumers retain their own rules, state and ports.
 
 ## Why
 
@@ -13,7 +14,7 @@ The proposed `temporal-gateway` is such an integration. It is a reusable TypeScr
 
 ## The decision
 
-1. **Distinct package kind.** An **infrastructure integration library** is a framework-independent package that encapsulates technical integration with one external infrastructure system. It is neither a Nuxt Layer nor the stateless-format library defined by ADR-0011. It may manage client connections, SDK adaptation, operational diagnostics and worker lifecycle, but must not own business policies, domain state or business persistence.
+1. **Distinct integration responsibility.** An **infrastructure integration library** is a framework-independent package that encapsulates technical integration with one external infrastructure system. It is neither a Nuxt Layer nor the stateless-format library defined by ADR-0011. It may manage client connections, SDK adaptation, operational diagnostics and worker lifecycle, but must not own business policies, domain state or business persistence.
 2. **Explicit boundaries.** Capabilities retain their public contracts, business decisions, event outboxes, scheduled task handlers and any capability-owned persistence. A gateway does not create a cross-capability business registry, orchestrate business processes, provide generic service routes or become an application-level network gateway.
 3. **Composition and dependencies.** Hosts or trusted server-side composition code provide infrastructure configuration and credentials. Capabilities can use a shared integration library behind their published interfaces without requiring consumers to import the library. Dependency direction remains acyclic; an integration library never imports a consuming capability's implementation. Provider-neutral structural ports from ADR-0012 remain unchanged and do not become mandatory imports.
 4. **Package contract.** The library exposes deliberate compiled package exports and a standalone root `CONTRACT.md` sufficient for an independent Node.js consumer. It documents configuration, lifecycle and ownership, public functions and errors, compatibility, security and worker deployment where applicable. It must not require Nuxt, Nitro, Vue, a `nuxt.config.ts` or a `capability.json`. Its own package metadata and contract define its integration surface; it does not claim a Foundation, Platform or Domain capability classification.
@@ -22,7 +23,7 @@ The proposed `temporal-gateway` is such an integration. It is a reusable TypeScr
 
 ## Adopting it
 
-The Capability Standard and Architecture overview distinguish infrastructure integration libraries from Nuxt capability layers and ADR-0011 stateless libraries. The Capability Catalogue lists integration libraries separately from capabilities. The `temporal-gateway` repository implements the first instance of this kind; its own `CONTRACT.md` sets the detailed Temporal API, not this ADR.
+The Capability Standard and Architecture overview distinguish infrastructure integration libraries from Nuxt capability layers and ADR-0011 stateless libraries. The catalogue distinguishes infrastructure integration from domain capabilities. Under ADR-0019, an infrastructure integration package may be classified as an adapter or library according to its responsibility; its packaging and deployment remain independent. Temporal Gateway's approved conceptual adapter classification does not require repackaging. The `temporal-gateway` repository implements the first instance of this kind; its own `CONTRACT.md` sets the detailed Temporal API, not this ADR.
 
 ## What follows
 

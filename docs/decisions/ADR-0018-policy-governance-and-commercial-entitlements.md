@@ -1,14 +1,15 @@
 # ADR-0018 — Policy Authority, Governance and Commercial Entitlements
 
 **Status:** Accepted  
+**Amended:** 2026-11-25: reconcile documentation authority and distinguish requirements from implementation state.  
 **Date:** 2026-11-16  
-**Review evidence:** [Blueprint PR #39](https://github.com/nuxt-layers/architecture-blueprint-review/pull/39), especially `proposals/policy-and-governance-boundaries.md` and `proposals/commercial-onboarding-and-entitlements.md`. Complements ADR-0017; does not replace ADR-0012/0016.
+**Decision provenance:** Blueprint PR #39; see the reviewed historical revision in the [Resources](../../RESOURCES.md).
 
-## Context
+## Why
 
 'Policy' ambiguously refers to immutable security boundaries, configurable platform/organisation settings, specialist business rules, legal obligations, governing instruments and published policy documents. A notice is not an executable rule; a company administrator cannot weaken anti-takeover floors via Configuration. The host also sells tenant service entitlements, while tenants may sell their own products; those transaction domains must not duplicate or leak commercial authority.
 
-## Decision — policy categories and lifecycle
+## The decision — policy categories and lifecycle
 
 1. **Identify authority before configurability.** Every rule has an owning authority, declared scope (deployment/tenant/group/person/resource/activity), interpretation/enforcement owner, source/version, effective period, allowed override range, change approval, fail/unknown semantics, retention/audit and withdrawal/retirement path, proportionate to its risk.
 2. **Mandatory architectural/security invariants** derive from accepted ADRs and normative standards, are enforced by each affected owning capability and SHALL NOT be tenant-overridden. Configurable **platform operational/security** choices can only strengthen or remain within published, validated security floors.
@@ -29,7 +30,7 @@
 14. **Object storage.** Purchased tenant image/file capacity is an **enforced logical tenant entitlement**, not a requirement to create a new S3 bucket or preallocate provider space. Tenant/group keys and provider isolation remain authoritative under Storage; admission/usage-reservation and concurrent uploads require a defined enforcement boundary before advertising quotas. A usage report alone MUST NOT be represented as quota enforcement. Existing files, retention and legal holds cannot be arbitrarily destroyed on downgrade or payment failure. This does not apply to database, Temporal or infrastructure backups.
 15. **Promotions and notices.** Coupons have validated eligibility, version, use limits, expiry, redemption/rollback and commercial authority; an unsuccessful or duplicate payment cannot silently double-redeem. Applicable taxes and consumer/commercial contract requirements must be verified for jurisdiction and circumstance; published legal notices are not sufficient operational proof.
 
-## Required contract / acceptance evidence
+## Contract and acceptance requirements
 
 - Configured rule cannot undercut domain/platform hard floor; unrecognised, stale or missing critical rule fails safely.
 - High-risk actor cannot amend policy and exploit it to become sole tenant owner; evidenced appeal/recovery available.
@@ -43,6 +44,6 @@
 
 ## Compatibility and unresolved matters
 
-Existing Configuration's root contract supports scoped approved setting values, not an executable universal policy engine; existing Storage's root contract says `usage()` reports usage but is **not a limit**. This ADR sets target safeguards, NOT an assertion that implementation exists or an instruction to rewrite completed layers without separate reviewed work.
+Configuration's scoped approved settings must not become a universal policy engine. Storage usage observations alone do not constitute quota enforcement. Consult owning root contracts for actual support; this ADR sets architectural safeguards, not implementation claims or an instruction to rewrite completed artefacts without separate reviewed work.
 
 Open: the party/contract/legal-entity master; applicable statutory-policy adjudication; exact owner of structured governing-instrument lifecycle; user-visible coupon mechanics and promotional owner; seat-counting policy; S3 quota admission/concurrency enforcement owner; entitlement/operational compatibility and refund/grace procedures. Do not introduce duplicate `business`, `tenancy` or `policies` capability repositories solely to implement this ADR.

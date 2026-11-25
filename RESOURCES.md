@@ -308,3 +308,307 @@ Imported design citations are retained here for provenance. External availabilit
 ### ref-0d1f555e
 
 [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/) — imported reference; verification pending.
+
+### ref-4fbd01ef
+
+[payment-page security guidance](https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming) — imported reference; verification pending.
+
+### ref-5d98a8a6
+
+[NIST SP 800-53 Rev. 5 AU-2/AU-3/AU-6/AU-9/AU-11](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) — imported reference; verification pending.
+
+### ref-ec4142c5
+
+[NIST SP 800-63-4](https://csrc.nist.gov/pubs/sp/800/63/4/final) — imported reference; verification pending.
+
+### ref-a2396bfc
+
+[NIST SP 800-63B-4](https://csrc.nist.gov/pubs/sp/800/63/b/4/final) — imported reference; verification pending.
+
+### ref-49bba49c
+
+[NIST SP 800-63B-4](https://csrc.nist.gov/pubs/sp/800/63/B/4/final) — imported reference; verification pending.
+
+### ref-f546b9ec
+
+[RFC 9457](https://datatracker.ietf.org/doc/html/rfc9457) — imported reference; verification pending.
+
+### ref-ff7812f9
+
+[European Accessibility Act (Directive 2019/882)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) — imported reference; verification pending.
+
+### ref-233e5140
+
+[licence](https://github.com/ajv-validator/ajv/blob/master/LICENSE) — imported reference; verification pending.
+
+### ref-e85dd8b4
+
+[releases](https://github.com/ajv-validator/ajv/releases) — imported reference; verification pending.
+
+### ref-a4e3b77c
+
+[licence](https://github.com/brianc/node-postgres/blob/master/LICENSE) — imported reference; verification pending.
+
+### ref-82f19076
+
+[licence](https://github.com/colinhacks/zod/blob/main/LICENSE) — imported reference; verification pending.
+
+### ref-c2c04073
+
+[releases](https://github.com/colinhacks/zod/releases) — imported reference; verification pending.
+
+### ref-ca191d3a
+
+[fast-check](https://github.com/dubzzz/fast-check) — imported reference; verification pending.
+
+### ref-ee707759
+
+[licence](https://github.com/dubzzz/fast-check/blob/main/packages/packaged/LICENSE) — imported reference; verification pending.
+
+### ref-0d998955
+
+[releases](https://github.com/dubzzz/fast-check/releases) — imported reference; verification pending.
+
+### ref-07831dfa
+
+[licence](https://github.com/kysely-org/kysely/blob/master/LICENSE) — imported reference; verification pending.
+
+### ref-752685c6
+
+[releases](https://github.com/kysely-org/kysely/releases) — imported reference; verification pending.
+
+### ref-bd5a7590
+
+[VeeValidate](https://github.com/logaretm/vee-validate) — imported reference; verification pending.
+
+### ref-bab408af
+
+[releases](https://github.com/logaretm/vee-validate/releases) — imported reference; verification pending.
+
+### ref-12180955
+
+[Playwright](https://github.com/microsoft/playwright) — imported reference; verification pending.
+
+### ref-3a3d345b
+
+[licence](https://github.com/microsoft/playwright/blob/main/LICENSE) — imported reference; verification pending.
+
+### ref-cea8728c
+
+[releases](https://github.com/microsoft/playwright/releases) — imported reference; verification pending.
+
+### ref-992a7688
+
+[decimal.js](https://github.com/MikeMcl/decimal.js) — imported reference; verification pending.
+
+### ref-0e653797
+
+[releases](https://github.com/MikeMcl/decimal.js/releases) — imported reference; verification pending.
+
+### ref-422f5f81
+
+[application-test-template](https://github.com/nuxt-layers-test/application-test-template/tree/8b7b142b84b5ec2379d4e2e727914fe344187d64) — imported reference; verification pending.
+
+### ref-65ca7e1f
+
+[architecture-blueprint-review](https://github.com/nuxt-layers/architecture-blueprint-review/tree/81795d39f64842cc9cbe9a87c94920b065223a52) — imported reference; verification pending.
+
+### ref-fc464cfb
+
+[Architecture](https://github.com/nuxt-layers/architecture-rules/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/architecture.md) — imported reference; verification pending.
+
+### ref-34db2318
+
+[Capability Standard](https://github.com/nuxt-layers/architecture-rules/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/capability-standard.md) — imported reference; verification pending.
+
+### ref-01dc54d7
+
+[Catalogue](https://github.com/nuxt-layers/architecture-rules/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/catalogue.md) — imported reference; verification pending.
+
+### ref-2422d9a0
+
+[Identity and Access](https://github.com/nuxt-layers/architecture-rules/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/identity.md) — imported reference; verification pending.
+
+### ref-0b57a3a1
+
+[Platform Charter](https://github.com/nuxt-layers/architecture-rules/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/platform-charter.md) — imported reference; verification pending.
+
+### ref-aa4c8a40
+
+[Privacy](https://github.com/nuxt-layers/architecture-rules/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/privacy.md) — imported reference; verification pending.
+
+### ref-52073f28
+
+[Security](https://github.com/nuxt-layers/architecture-rules/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/security.md) — imported reference; verification pending.
+
+### ref-89262ce1
+
+[architecture-rules](https://github.com/nuxt-layers/architecture-rules/tree/2eea557fa3acbf9412fea065d2a3cdda42a764fc) — imported reference; verification pending.
+
+### ref-fdb04048
+
+[`nuxt-layers/authentication`](https://github.com/nuxt-layers/authentication) — imported reference; verification pending.
+
+### ref-d29a15b2
+
+[Authentication root `CONTRACT.md`](https://github.com/nuxt-layers/authentication/blob/ffb92d8c033ebb8bcb5043e3fa5acadac9e1d825/CONTRACT.md) — imported reference; verification pending.
+
+### ref-007802f8
+
+[`nuxt-layers/authorisation`](https://github.com/nuxt-layers/authorisation) — imported reference; verification pending.
+
+### ref-923ed968
+
+[Authorisation root development contract](https://github.com/nuxt-layers/authorisation/blob/eedfcc6c974f8f15df38b554c394b82164bec4bc/CONTRACT.md) — imported reference; verification pending.
+
+### ref-2a7cb25d
+
+[nuxt-layers/configuration](https://github.com/nuxt-layers/configuration/blob/master/CONTRACT.md) — imported reference; verification pending.
+
+### ref-2318841b
+
+[XState](https://github.com/statelyai/xstate) — imported reference; verification pending.
+
+### ref-b4555479
+
+[licence](https://github.com/statelyai/xstate/blob/main/LICENSE) — imported reference; verification pending.
+
+### ref-4a134806
+
+[releases](https://github.com/statelyai/xstate/releases) — imported reference; verification pending.
+
+### ref-4d04db1e
+
+[licence](https://github.com/vitest-dev/vitest/blob/main/LICENSE) — imported reference; verification pending.
+
+### ref-1a4e4c3b
+
+[releases](https://github.com/vitest-dev/vitest/releases) — imported reference; verification pending.
+
+### ref-c8eb2286
+
+[ICO UK GDPR storage-limitation guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/storage-limitation/) — imported reference; verification pending.
+
+### ref-c472f3ba
+
+[UK GDPR / ICO guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/storage-limitation/) — imported reference; verification pending.
+
+### ref-a39263d9
+
+[ICO right to erasure](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-erasure/) — imported reference; verification pending.
+
+### ref-49844874
+
+[OECD consumer protection in e-commerce (2016)](https://legalinstruments.oecd.org/en/instruments/336) — imported reference; verification pending.
+
+### ref-704de6a5
+
+[OpenID4VCI](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0-final.html) — imported reference; verification pending.
+
+### ref-305f6f43
+
+[OpenID4VP](https://openid.net/specs/openid-4-verifiable-presentations-1_0-final.html) — imported reference; verification pending.
+
+### ref-e11b90d4
+
+[OIDC Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html) — imported reference; verification pending.
+
+### ref-b9e2aae7
+
+[OWASP ASVS 5.0](https://owasp.org/www-project-application-security-verification-standard/) — imported reference; verification pending.
+
+### ref-cec2c001
+
+[SP 800-63-4](https://pages.nist.gov/800-63-4/sp800-63.html) — imported reference; verification pending.
+
+### ref-02f6e2d9
+
+[CLR](https://standards.1edtech.org/clr/) — imported reference; verification pending.
+
+### ref-08c4cd5b
+
+[UNCITRAL electronic commerce model texts](https://uncitral.un.org/en/texts/ecommerce) — imported reference; verification pending.
+
+### ref-66d66724
+
+[Open Badges](https://www.1edtech.org/standards/open-badges) — imported reference; verification pending.
+
+### ref-c2950d2a
+
+[EMVCo EMV 3-D Secure](https://www.emvco.com/emv-technologies/3-d-secure/) — imported reference; verification pending.
+
+### ref-26f2dc21
+
+[FCA SCA requirements](https://www.fca.org.uk/firms/strong-customer-authentication) — imported reference; verification pending.
+
+### ref-3c694c71
+
+[CMA mandatory delivery fee guidance](https://www.gov.uk/government/publications/online-retailers-including-mandatory-delivery-fees-in-the-total-price) — imported reference; verification pending.
+
+### ref-9af3c221
+
+[CMA209 price transparency guidance](https://www.gov.uk/government/publications/price-transparency-cma209) — imported reference; verification pending.
+
+### ref-2c14157c
+
+[ISO 10002:2018](https://www.iso.org/standard/10002) — imported reference; verification pending.
+
+### ref-10531447
+
+[ISO 15489-1:2016](https://www.iso.org/standard/62542.html) — imported reference; verification pending.
+
+### ref-0b5d630d
+
+[ISO/IEC 25010:2023](https://www.iso.org/standard/78176.html) — imported reference; verification pending.
+
+### ref-e69ef762
+
+[ISO 10008:2022](https://www.iso.org/standard/80594.html) — imported reference; verification pending.
+
+### ref-1795b9a8
+
+[Online Safety Act Schedule 1 paragraph 7](https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/paragraph/7) — imported reference; verification pending.
+
+### ref-99f389eb
+
+[Consumer Contracts Regulations 2013, regulation 14](https://www.legislation.gov.uk/uksi/2013/3134/regulation/14) — imported reference; verification pending.
+
+### ref-386f723d
+
+[package versions](https://www.npmjs.com/package/pg?activeTab=versions) — imported reference; verification pending.
+
+### ref-2c7500e0
+
+[Ofcom illegal-content duties](https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/illegal-content-duties-under-the-online-safety-act) — imported reference; verification pending.
+
+### ref-6a67f3f6
+
+[Ofcom age assurance](https://www.ofcom.org.uk/online-safety/protecting-children/age-assurance) — imported reference; verification pending.
+
+### ref-107edc57
+
+[SAQ A eligibility guidance](https://www.pcisecuritystandards.org/faqs/1588/) — imported reference; verification pending.
+
+### ref-5dce7cd2
+
+[RFC 10017](https://www.rfc-editor.org/rfc/rfc10017.html) — imported reference; verification pending.
+
+### ref-7f8e07b3
+
+[RFC 9700](https://www.rfc-editor.org/rfc/rfc9700.html) — imported reference; verification pending.
+
+### ref-f7183568
+
+[W3C Web Payments](https://www.w3.org/groups/wg/payments/publications/) — imported reference; verification pending.
+
+### ref-9e32bc04
+
+[Status List](https://www.w3.org/TR/vc-bitstring-status-list/) — imported reference; verification pending.
+
+### ref-5dd6d5dc
+
+[VC 2.0](https://www.w3.org/TR/vc-data-model/) — imported reference; verification pending.
+
+### ref-a1b9773e
+
+[JOSE/COSE](https://www.w3.org/TR/vc-jose-cose/) — imported reference; verification pending.

@@ -3,7 +3,6 @@
 **Capability:** `comments-engine` (canonical directory `comments-engine`).  
 **Status:** Established *Platform responsibility* in the accepted governing catalogue; conceptual model owner-approved, including CE-01–07; not an implemented runtime contract.  
 **Evidence date:** 17 November 2026. **Review PR:** #52.  
-**Governing baseline:** `architecture-rules/master@2b5c0628e88b9698c9ad6ad57cc5315c8f879953`. **Blueprint opening baseline:** `49a12948c18f35bfd58fec632f1cbd4fd67b9a25`.  
 **Implementation evidence:** `nuxt-layers/comments-engine` repository exists, default `master`; root `CONTRACT.md` was not found on inspection. **No implemented interface or operational behaviour is verified.**
 
 ## Purpose and classification
@@ -181,7 +180,7 @@ The **UK Online Safety Act applies by qualified service/feature and risk classif
 
 **Approved guiding constraint:** Comments Engine supports constructive discussion, knowledge sharing and collective understanding rather than treating attention, approval or engagement as measures of a person's worth or a contribution's value. Public likes/dislikes, reaction leaderboards, popularity counters and engagement-driven ranking create foreseeable pressure, brigading and manipulation risks; their possible value does not justify including them as an assumed generic platform primitive. **A narrowly defined, optional, private positive acknowledgement is permitted; generic social-reaction menus and social-scoring extensions do not belong in Comments Engine.** Meaningful acknowledgements, professional assessments, approvals, surveys and formal votes should be modelled through the relevant domain owner, with justified purpose, fair process, abuse controls and independent ethical review. Comment count denotes number of visible contributions, not social endorsement. This conceptual decision **was approved by the owner on 17 November 2026**; no governing ADR or implemented contract is implied.
 
-**External legal references reviewed 17 November 2026:** [Ofcom age assurance](https://www.ofcom.org.uk/online-safety/protecting-children/age-assurance); [Ofcom illegal-content duties](https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/illegal-content-duties-under-the-online-safety-act); [Online Safety Act Schedule 1 paragraph 7](https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/paragraph/7); [ICO right to erasure](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-erasure/). These do not establish deployment-specific legal clearance.
+**External legal references reviewed 17 November 2026:** [Ofcom age assurance](../../../RESOURCES.md#ref-6a67f3f6); [Ofcom illegal-content duties](../../../RESOURCES.md#ref-2c7500e0); [Online Safety Act Schedule 1 paragraph 7](../../../RESOURCES.md#ref-1795b9a8); [ICO right to erasure](../../../RESOURCES.md#ref-a39263d9). These do not establish deployment-specific legal clearance.
 
 ## CE-06 — Recipient-facing appreciation and its authoritative records (owner-approved; 17 November 2026)
 

@@ -2,7 +2,6 @@
 
 **Status:** Proposed Domain capability; conceptual review awaiting approval. No implemented package or public API is asserted.
 **Review date:** 14 November 2026.
-**Governing baseline:** `nuxt-layers/architecture-rules` `master` at `2eea557fa3acbf9412fea065d2a3cdda42a764fc`.
 **Blueprint baseline:** `nuxt-layers/architecture-blueprint-review` `master` at `e802386e256340c7cd7310398d02c30168535e17`.
 **Evidence:** The governing catalogue lists `asset` as owned/controlled asset lifecycle, assignments and valuation references, excluding generic sale stock. The working catalogue calls it a Domain candidate. A lookup and organisation repository search found no `nuxt-layers/asset` repository; hence there is no Asset root `CONTRACT.md` or verified implementation to evaluate. Existing Accounting, Inventory and Product notes are provisional blueprint evidence, not accepted interfaces. Proposed design below is not normative.
 

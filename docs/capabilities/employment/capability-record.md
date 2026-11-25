@@ -4,7 +4,6 @@
 **Conceptual review:** 17 November 2026; **status: owner-approved EMP-01–07 and FAC-D01–04**.
 **Opening governing master:** `nuxt-layers/architecture-rules@2b5c0628e88b9698c9ad6ad57cc5315c8f879953`.
 **Opening blueprint master:** `nuxt-layers/architecture-blueprint-review@b0b026931c4b66ec4bfc445489147045497db890`.
-**Review PR:** #59. Baseline (former review: employment review baseline).
 **Evidence:** Direct GitHub lookups of `nuxt-layers/employment` and `nuxt-layers/payroll` returned 404 to the connected account. Neither published root `CONTRACT.md` nor implementation was verified; absence from accessible repository listing is not proof that no functionality exists elsewhere. Do not claim operational readiness, provider compliance or an implemented API.
 
 ## Capability Name

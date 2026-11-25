@@ -1,6 +1,6 @@
 # Configuration — Capability Conceptual Record
 
-**Status:** Conceptual design owner-approved (CFG-01–08); non-normative. Existing reciprocal approvals are preserved below. **Class:** Foundation (governing catalogue). **Published implementation:** [nuxt-layers/configuration](https://github.com/nuxt-layers/configuration/blob/master/CONTRACT.md), contract version 1, implementation alignment incomplete. **Review:** PR #53. **Baseline:** governing master `2b5c0628e88b9698c9ad6ad57cc5315c8f879953`; blueprint master `41ce9f3ffba9063407a6af0d0672dcbbd6a8b299`.
+**Status:** Conceptual design owner-approved (CFG-01–08); non-normative. Existing reciprocal approvals are preserved below. **Class:** Foundation (governing catalogue). **Published implementation:** [nuxt-layers/configuration](../../../RESOURCES.md#ref-2a7cb25d), contract version 1, implementation alignment incomplete. **Review:** PR #53. **Baseline:** governing master `2b5c0628e88b9698c9ad6ad57cc5315c8f879953`; blueprint master `41ce9f3ffba9063407a6af0d0672dcbbd6a8b299`.
 
 ## Purpose, independent justification and classification
 

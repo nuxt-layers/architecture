@@ -1,10 +1,10 @@
 # Artefact discovery and register
 
-**Status:** Owner-approved conceptual direction (ARCH-01–24); non-normative. Governing schema and migration remain proposed; [Architecture Rules PR #43](https://github.com/nuxt-layers/architecture-rules/pull/43) prepares the FAC-13 reconciliation. Accepted Capability Standard and ADRs prevail.
+**Status:** Approved conceptual direction (ARCH-01–24), subject to accepted governing ADRs and standards. Conceptual schema adoption does not establish implemented interfaces.
 
 ## Authority and inventory
 
-The [catalogue](../capability-catalogue.md) defines responsibilities and reusable artefacts. The [register](../capability-register.md) indexes their design and delivery evidence. Neither is a runtime authority. Keep stable identifiers, purpose, ownership/exclusions, responsibility class, artefact kind, implementation, deployment, governance/design status, public contracts, required/optional relationships, evidence revision/date and unresolved decisions distinct. Unknown evidence is not proof of absence. Compare changes against current governing rules; catalogue additions, retirement or reclassification require bounded rationale, compatibility, security and consumer impact, and separate governing adoption where applicable.
+The [catalogue](../catalogue.md) and [architecture index](../architecture-index.json) provide conceptual discovery, not runtime authority. Keep stable identifiers, purpose, ownership, classification, intended interfaces and relationships distinct from actual implementation, deployment, operational status and verification evidence. Actual evidence remains with its owner. Unknown evidence is not proof of absence. Changes require bounded rationale, compatibility, security and consumer impact under accepted governing rules.
 
 ## Machine-readable definition
 

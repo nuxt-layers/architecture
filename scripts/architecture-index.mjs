@@ -18,8 +18,8 @@ const records = walk(resolve(root, 'docs')).map(file => ({
 })).sort((a, b) => cmp(a.record.id, b.record.id));
 const ids = new Map(records.map(({ record }) => [record.id, record]));
 unique(records.map(({ record }) => record.id), 'artefact ID');
-const inventory = readFileSync(resolve(root, 'docs/capability-register.md'), 'utf8');
-const inventoryRows = [...inventory.matchAll(/^\| \x60([^\x60]+)\x60 \| ([^|]+) \| [^|]+ \| [^|]+ \| \[Record\]\(([^)]+)\)/gm)];
+const inventory = readFileSync(resolve(root, 'docs/catalogue.md'), 'utf8');
+const inventoryRows = [...inventory.matchAll(/^\| \x60([^\x60]+)\x60 \| ([^|]+) \| [^|]+ \| [^|]+ \| \[Design\]\(([^)]+)\)/gm)];
 check(inventoryRows.length > 0, 'Canonical inventory not found');
 unique(inventoryRows.map(row => row[1]), 'inventory ID');
 check(inventoryRows.length === records.length, 'Inventory/descriptor count mismatch');

@@ -3,8 +3,8 @@
 **Name:** `error-normalisation`  
 **Classification:** Framework-independent **stateless library candidate**, not a stateful capability, Nuxt Layer or service.  
 **Conceptual status:** Owner-approved ERR-01–ERR-08 and subsequent contract, standards, reciprocal-boundary and GUI recommendations (22 November 2026); this specification is conceptually complete, subject to pre-merge reconciliation.  
-**Implementation status:** No implementation repository, root published `CONTRACT.md`, executable API, CI or operational evidence verified. [Proposed conceptual contract](CONTRACT.md).  
-**Authority:** Accepted ADRs and the [governing Capability Standard](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/capability-standard.md) take priority over this non-normative blueprint.
+**Implementation status:** No implementation repository, root published `CONTRACT.md`, executable API, CI or operational evidence verified. [Conceptual public contract](#conceptual-public-contract-inputs-and-outputs).  
+**Authority:** Accepted ADRs and the [governing Capability Standard](../../capability-standard.md) take priority over this conceptual specification.
 
 
 **Todo consumer (23 November 2026; conceptual reciprocity):** [Todo](../../compositions/todo/compositions-record.md#error-normalisation-logging-audit-and-reporting--conceptual-public-interfaces-23-november-2026) supplies owner-defined versioned item/collection validation, conflict, permission, persistence or optional Task-link errors, known/unknown commit outcome, safe mapping/disclosure and opaque correlation to the library's pure normalise/classify/sanitise functions. It receives safe category/code/message key, public/diagnostic projections and advisory retry guidance. Todo alone owns commit/reconciliation and any separate Logging, Audit or Reporting submissions; the library never stores, emits or calls a service. No runtime contract asserted.
@@ -219,3 +219,40 @@ Storage may supply its published source-owned `StorageError` code and `messageKe
 ## Warehouse reciprocal interface — 23 November 2026 (PR #149)
 
 **Warehouse (owner-approved Warehouse-side conceptual design, 23 November 2026; draft PR #149):** Warehouse supplies source-owned stable work/scan/provider error meanings, explicitly known or uncertain operation outcome, a versioned mapping and approved disclosure/correlation context to pure normalisation. The library returns safe codes, message references, distinct public/technical projections and advisory retry classification. Warehouse alone determines committed work, reconciliation, logging/audit submissions and retry; no library state or shipped integration is asserted.
+
+
+## Consolidated conceptual contract qualifications
+
+### Additional consumer relationships and absence
+
+**Shopping Basket reciprocal (SB-01–SB-08 approved concept, 23 November 2026):** [Shopping Basket](../../capabilities/shopping-basket/capability-record.md#5-error-normalisation-logging-audit-and-reporting) supplies its own stable versioned invalid-line, revision-conflict, denied, expired, merge-conflict, source-unavailable and checkout-unknown codes with the **actual source-known or uncertain outcome**, allowlisted mapping, audience policy and trusted opaque correlation. Error Normalisation returns safe public versus technical projections, category, `messageKey` and **qualified** retry guidance. An unknown Order result must never be converted into a blanket retry instruction. This stateless library has no basket authority, stores, transport or Audit intake. This conceptual interface is not a verified runtime export.
+
+**SEO consumer (SEO draft PR #133, conceptual; 23 November 2026):** SEO supplies its own versioned validation, sitemap-generation, provider-submission and policy-denial codes, source-confirmed or uncertain operation outcome, trusted safe correlation, approved mapping and audience-specific disclosure profile to the library's existing pure normalise/classify/sanitise/message functions. The library returns stable safe codes, categorisation, message keys, separate public/technical projections and *advisory* retry classification. SEO alone controls original business state, durable SEO outbox, authorised retry/reconciliation and independent submissions to Logging, Audit and Reporting. The library generates no log, evidence receipt, report, transport action or proof of indexing. See [SEO canonical conceptual contract](../../services/seo/services-record.md#seo-error-diagnostics-accountable-evidence-and-analytical-reporting--public-contract). No implementation API is asserted.
+
+
+**Office host composition:** its host supplies source-owned error codes, approved versioned mappings, disclosure intent and trusted correlation for Office panel/configuration-adapter failures. The library returns only sanitised, qualified error/message references; Office remains a non-data-owning composition, while each source retains business outcomes and recovery. No direct Office integration package or event is implied. See [Office conceptual contract](../../compositions/office/compositions-record.md).
+
+**Time & Attendance conceptual consumer (TA-01–TA-06 owner-approved; PR #143):** Time & Attendance passes its source-owned versioned codes for invalid time, stale revision, forbidden approval, provider uncertainty, incomplete periods and disputed corrections, plus approved mappings, trusted opaque correlation, disclosure profile and the authoritative known/unknown operation outcome. The pure library returns safe user/API and technical projections, stable message keys and advisory retry guidance. It performs no time command, retry, Logging submission, Audit delivery or Reporting aggregation; Time & Attendance retains those responsibilities.
+
+The library **requires no other capability**. For Privacy consumers, inputs comprise source-owned consent/rights/retention error definitions, approved mapping, observed (or uncertain) operation outcome and disclosure context; outputs are bounded safe API/user and separate technical error projections, stable codes and optional advisory retry characteristics. Privacy controls actual rights/consent state and may separately send the minimised technical projection to Logging, a distinct accountable source event to Audit, and authorised case facts to Reporting. The normaliser never delivers to those capabilities itself. Domain services and external adapters supply recognised errors, source-owned code definitions, operation truth, safe context, mappings and disclosure policy. It returns normalised error results to those callers. Callers may then pass minimised projections through **Logging** (diagnostics), **Observability** (metrics/traces), **Audit** (selected accountable source facts), **UI/Localisation** (accessible wording), **Notifications** (delivery), **Reporting** (analysis) or **Workflow/Scheduler** (source-authorised recovery). Each retains its own published contract and authority. None is a hard dependency.
+
+### Semantic constraints
+
+- Distinguish `rejected`, `failed`, `cancelled`, `timed_out`, `uncertain` and `unknown`; only the authoritative caller can assert committed/not-committed business state.
+- Do not assume an HTTP status, provider timeout or thrown exception proves whether a remote transaction committed. Retry hints require idempotency and source policy.
+- Input is untrusted; bounded validation, redaction, depth/size limits and no unexpected getter execution are required. Never expose exception messages/stacks or protected source existence by default.
+- Codes and message keys are stable and versioned; safe representation may be adapted to RFC 9457 for HTTP, without exposing internal error implementation types.
+- Pure, synchronous and deterministic for the same explicit inputs; no network access, file access, persistence, background side effects or ambient configuration.
+
+
+### Order consumer example — approved conceptual direction
+
+Order may supply its source-owned error code/version, qualified acceptance/rejection/unknown outcome, safe context, allowlisted mapping and disclosure purpose to **normalise/classify/sanitise** and receive safe API/diagnostic projections and qualified retry hints. Order retains outcome truth and retry/idempotency policy. The library does not emit a log, Audit record or Reporting event, does not interpret a provider timeout as non-commit and has no network/store dependency. [Order's reciprocal contract](../../capabilities/order/capability-record.md#error-diagnostics-accountability-and-analytics--approved-reciprocal-contract) is owner-approved conceptually, not a verified exported interface.
+
+### Organisation Model consumer example (conceptual; 22 November 2026)
+
+[Organisation Model](../../architecture/organisation-model.md) may supply its own versioned validation/publication codes and approved mapping, trusted correlation, source-confirmed outcome and disclosure profile. This library returns safe public and technical normalised projections with qualified retry/unknown status. Model alone owns schema decisions, publication/revision truth, recovery, and which minimised outputs it sends independently to Logging, Audit or Reporting. An error timeout is **not** proof of commit or rollback. This is an illustration of the proposed pure function contract, not an implemented integration.
+
+### `site-hosting` consumer illustration — 23 November 2026 (owner-approved conceptual consumer; implementation unverified)
+
+`site-hosting` supplies source-owned, versioned hostname-claim/verification/routing error codes and definitions, actual/uncertain outcome, bounded disclosure-specific metadata and opaque correlation to the pure normalise/classify/sanitise operations. It receives versioned safe code/category/message key, public/diagnostic projections and advisory retry classification; it alone determines commitment, replay safety, access and provider reconciliation. The library does not send Logging, Audit or Reporting messages or turn DNS/proxy timeouts into confirmed domain-state changes. This is an approved Site Hosting-side conceptual use, not a shipped integration. [Source record](../../services/site-hosting/services-record.md#error-normalisation-logging-audit-and-reporting).

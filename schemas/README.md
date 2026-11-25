@@ -1,6 +1,6 @@
-# Proposed common artefact schema
+# Common artefact schema
 
-Staged for governing adoption under ADR-0019. Legacy and explicit implementation profiles retain their previous structure; existing capability.json remains unchanged.
+Conceptual profile adopted under ADR-0019; implementation compatibility migration remains separately gated. Legacy and explicit implementation profiles retain their previous structure; existing capability.json remains unchanged.
 
 Conceptual descriptors declare intended responsibilities, interface identifiers and public-contract requirements, not implemented package dependencies. A required contract may be supplied through a host port rather than a direct import. Optional requirements specify an absence mode and may be essential for a selected feature. Information exchange, composition and specialisation are distinct from actual implementation dependencies. Missing declared edges do not prove independence. Actual package, runtime/build, Nuxt extension and version compatibility validation belongs to implementation and host acceptance.
 
@@ -12,6 +12,6 @@ From the repository root, use Node.js 26:
 
 `node scripts/architecture-index.mjs --check`
 
-Supply `--governing-root <path>` to verify referenced accepted ADRs from a checkout of the governing repository (automatic after consolidation if docs/decisions exists). The existing [legacy example](artefact.example.json) and actual [conceptual descriptor](../docs/libraries/rich-text/artefact.json) illustrate the two boundaries. Formal schema conformance and implementation migration checks belong to governing schema adoption. No separate fixture directory or package toolchain is needed for conceptual discovery.
+Supply `--governing-root <path>` to verify referenced accepted ADRs from a checkout of the governing repository (automatic after consolidation if docs/decisions exists). The existing [legacy example](artefact.example.json) and actual [conceptual descriptor](../docs/libraries/rich-text/artefact.json) illustrate the two boundaries. Formal JSON Schema conformance is required; implementation migration checks remain separate. No separate fixture directory or package toolchain is needed for conceptual discovery.
 
-Schema adoption and implementation descriptor compatibility migration remain separately gated.
+Implementation descriptor compatibility migration remains separately gated.

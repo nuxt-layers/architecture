@@ -1,6 +1,110 @@
-# Capability Catalogue
+# Artefact catalogue
 
-> **In short:** authoritative ownership boundaries for established capabilities and provisional boundaries for candidate capabilities. The catalogue defines vocabulary and intended relationships, not delivery status or implementation plans. Approved conceptual designs belong in the governing architecture repository after reconciliation and migration; implemented contracts and technical detail remain with their owners ([ADR-0004](decisions/ADR-0004-documentation-placement.md)).
+The approved conceptual inventory covers all eight artefact kinds. The [architecture index](architecture-index.json) is the machine-readable discovery view; the linked canonical records define intended boundaries. Neither catalogue nor index asserts implementation readiness. Accepted ADRs and standards take precedence.
+
+## Canonical inventory
+
+| Artefact | Kind | Classification | Design | Descriptor |
+|---|---|---|---|---|
+| `accounting` | capability | domain | [Design](capabilities/accounting/capability-record.md) | [Descriptor](capabilities/accounting/artefact.json) |
+| `api-gateway` | composition | technical | [Design](compositions/api-gateway/compositions-record.md) | [Descriptor](compositions/api-gateway/artefact.json) |
+| `application-composition` | architecture | governance | [Design](architecture/application-composition.md) | [Descriptor](architecture/application-composition/artefact.json) |
+| `assessment` | capability | domain | [Design](capabilities/assessment/capability-record.md) | [Descriptor](capabilities/assessment/artefact.json) |
+| `asset` | capability | domain | [Design](capabilities/asset/capability-record.md) | [Descriptor](capabilities/asset/artefact.json) |
+| `attendance` | capability | domain | [Design](capabilities/attendance/capability-record.md) | [Descriptor](capabilities/attendance/artefact.json) |
+| `audit` | capability | platform | [Design](capabilities/audit/capability-record.md) | [Descriptor](capabilities/audit/artefact.json) |
+| `authentication` | capability | foundation | [Design](capabilities/authentication/capability-record.md) | [Descriptor](capabilities/authentication/artefact.json) |
+| `authorisation` | capability | foundation | [Design](capabilities/authorisation/capability-record.md) | [Descriptor](capabilities/authorisation/artefact.json) |
+| `billing` | capability | domain | [Design](capabilities/billing/capability-record.md) | [Descriptor](capabilities/billing/artefact.json) |
+| `booking` | capability | domain | [Design](capabilities/booking/capability-record.md) | [Descriptor](capabilities/booking/artefact.json) |
+| `caching` | service | foundation | [Design](services/caching/services-record.md) | [Descriptor](services/caching/artefact.json) |
+| `checkout` | capability | domain | [Design](capabilities/checkout/capability-record.md) | [Descriptor](capabilities/checkout/artefact.json) |
+| `clock` | service | foundation | [Design](services/clock/services-record.md) | [Descriptor](services/clock/artefact.json) |
+| `comments-engine` | capability | platform | [Design](capabilities/comments-engine/capability-record.md) | [Descriptor](capabilities/comments-engine/artefact.json) |
+| `configuration` | capability | foundation | [Design](capabilities/configuration/capability-record.md) | [Descriptor](capabilities/configuration/artefact.json) |
+| `content-editor` | presentation | presentation | [Design](presentation/content-editor/presentation-record.md) | [Descriptor](presentation/content-editor/artefact.json) |
+| `content-security` | service | platform | [Design](services/content-security/services-record.md) | [Descriptor](services/content-security/artefact.json) |
+| `course` | capability | domain | [Design](capabilities/course/capability-record.md) | [Descriptor](capabilities/course/artefact.json) |
+| `credentials` | capability | domain | [Design](capabilities/credentials/capability-record.md) | [Descriptor](capabilities/credentials/artefact.json) |
+| `discovery` | architecture | governance | [Design](architecture/discovery.md) | [Descriptor](architecture/discovery/artefact.json) |
+| `employment` | capability | domain | [Design](capabilities/employment/capability-record.md) | [Descriptor](capabilities/employment/artefact.json) |
+| `enrolment` | capability | domain | [Design](capabilities/enrolment/capability-record.md) | [Descriptor](capabilities/enrolment/artefact.json) |
+| `error-normalisation` | library | technical | [Design](libraries/error-normalisation/stateless-library-record.md) | [Descriptor](libraries/error-normalisation/artefact.json) |
+| `events` | capability | domain | [Design](capabilities/events/capability-record.md) | [Descriptor](capabilities/events/artefact.json) |
+| `export` | library | technical | [Design](libraries/export/stateless-library-record.md) | [Descriptor](libraries/export/artefact.json) |
+| `facility` | capability | domain | [Design](capabilities/facility/capability-record.md) | [Descriptor](capabilities/facility/artefact.json) |
+| `federation` | service | technical | [Design](services/federation/services-record.md) | [Descriptor](services/federation/artefact.json) |
+| `file-library` | library | technical | [Design](libraries/file-library/stateless-library-record.md) | [Descriptor](libraries/file-library/artefact.json) |
+| `gallery` | presentation | presentation | [Design](presentation/gallery/presentation-record.md) | [Descriptor](presentation/gallery/artefact.json) |
+| `gaming` | composition | presentation | [Design](compositions/gaming/compositions-record.md) | [Descriptor](compositions/gaming/artefact.json) |
+| `help` | presentation | presentation | [Design](presentation/help/presentation-record.md) | [Descriptor](presentation/help/artefact.json) |
+| `iam-integration` | composition | foundation | [Design](compositions/iam-integration/compositions-record.md) | [Descriptor](compositions/iam-integration/artefact.json) |
+| `identity` | capability | foundation | [Design](capabilities/identity/capability-record.md) | [Descriptor](capabilities/identity/artefact.json) |
+| `infrastructure` | infrastructure | foundation | [Design](infrastructure/infrastructure/infrastructure-record.md) | [Descriptor](infrastructure/infrastructure/artefact.json) |
+| `integrations` | service | platform | [Design](services/integrations/services-record.md) | [Descriptor](services/integrations/artefact.json) |
+| `inventory` | capability | domain | [Design](capabilities/inventory/capability-record.md) | [Descriptor](capabilities/inventory/artefact.json) |
+| `invoice` | capability | domain | [Design](capabilities/invoice/capability-record.md) | [Descriptor](capabilities/invoice/artefact.json) |
+| `job` | capability | domain | [Design](capabilities/job/capability-record.md) | [Descriptor](capabilities/job/artefact.json) |
+| `legal-compliance` | capability | foundation | [Design](capabilities/legal-compliance/capability-record.md) | [Descriptor](capabilities/legal-compliance/artefact.json) |
+| `localisation` | capability | platform | [Design](capabilities/localisation/capability-record.md) | [Descriptor](capabilities/localisation/artefact.json) |
+| `location` | capability | platform | [Design](capabilities/location/capability-record.md) | [Descriptor](capabilities/location/artefact.json) |
+| `logging` | service | foundation | [Design](services/logging/services-record.md) | [Descriptor](services/logging/artefact.json) |
+| `logistics` | capability | domain | [Design](capabilities/logistics/capability-record.md) | [Descriptor](capabilities/logistics/artefact.json) |
+| `mailer` | service | platform | [Design](services/mailer/services-record.md) | [Descriptor](services/mailer/artefact.json) |
+| `manufacturing` | capability | domain | [Design](capabilities/manufacturing/capability-record.md) | [Descriptor](capabilities/manufacturing/artefact.json) |
+| `marketplace` | capability | domain | [Design](capabilities/marketplace/capability-record.md) | [Descriptor](capabilities/marketplace/artefact.json) |
+| `media` | capability | platform | [Design](capabilities/media/capability-record.md) | [Descriptor](capabilities/media/artefact.json) |
+| `membership` | capability | domain | [Design](capabilities/membership/capability-record.md) | [Descriptor](capabilities/membership/artefact.json) |
+| `message-queue` | service | platform | [Design](services/message-queue/services-record.md) | [Descriptor](services/message-queue/artefact.json) |
+| `metadata` | capability | platform | [Design](capabilities/metadata/capability-record.md) | [Descriptor](capabilities/metadata/artefact.json) |
+| `moderation` | capability | platform | [Design](capabilities/moderation/capability-record.md) | [Descriptor](capabilities/moderation/artefact.json) |
+| `notifications` | service | platform | [Design](services/notifications/services-record.md) | [Descriptor](services/notifications/artefact.json) |
+| `observability` | service | platform | [Design](services/observability/services-record.md) | [Descriptor](services/observability/artefact.json) |
+| `office` | composition | presentation | [Design](compositions/office/compositions-record.md) | [Descriptor](compositions/office/artefact.json) |
+| `order` | capability | domain | [Design](capabilities/order/capability-record.md) | [Descriptor](capabilities/order/artefact.json) |
+| `organisation-console` | presentation | presentation | [Design](presentation/organisation-console/presentation-record.md) | [Descriptor](presentation/organisation-console/artefact.json) |
+| `organisation-model` | architecture | governance | [Design](architecture/organisation-model.md) | [Descriptor](architecture/organisation-model/artefact.json) |
+| `page-builder` | presentation | presentation | [Design](presentation/page-builder/presentation-record.md) | [Descriptor](presentation/page-builder/artefact.json) |
+| `party` | capability | domain | [Design](capabilities/party/capability-record.md) | [Descriptor](capabilities/party/artefact.json) |
+| `payment-gateway` | service | domain | [Design](services/payment-gateway/services-record.md) | [Descriptor](services/payment-gateway/artefact.json) |
+| `payroll` | capability | domain | [Design](capabilities/payroll/capability-record.md) | [Descriptor](capabilities/payroll/artefact.json) |
+| `persistence` | architecture | governance | [Design](architecture/persistence.md) | [Descriptor](architecture/persistence/artefact.json) |
+| `pricing` | capability | domain | [Design](capabilities/pricing/capability-record.md) | [Descriptor](capabilities/pricing/artefact.json) |
+| `privacy` | capability | foundation | [Design](capabilities/privacy/capability-record.md) | [Descriptor](capabilities/privacy/artefact.json) |
+| `process` | capability | platform | [Design](capabilities/process/capability-record.md) | [Descriptor](capabilities/process/artefact.json) |
+| `product` | capability | domain | [Design](capabilities/product/capability-record.md) | [Descriptor](capabilities/product/artefact.json) |
+| `profile` | capability | foundation | [Design](capabilities/profile/capability-record.md) | [Descriptor](capabilities/profile/artefact.json) |
+| `project` | capability | platform | [Design](capabilities/project/capability-record.md) | [Descriptor](capabilities/project/artefact.json) |
+| `publisher` | capability | platform | [Design](capabilities/publisher/capability-record.md) | [Descriptor](capabilities/publisher/artefact.json) |
+| `qualification` | capability | domain | [Design](capabilities/qualification/capability-record.md) | [Descriptor](capabilities/qualification/artefact.json) |
+| `quality` | capability | domain | [Design](capabilities/quality/capability-record.md) | [Descriptor](capabilities/quality/artefact.json) |
+| `recruitment` | capability | domain | [Design](capabilities/recruitment/capability-record.md) | [Descriptor](capabilities/recruitment/artefact.json) |
+| `reporting` | capability | platform | [Design](capabilities/reporting/capability-record.md) | [Descriptor](capabilities/reporting/artefact.json) |
+| `responsibility-boundaries` | architecture | governance | [Design](architecture/responsibility-boundaries.md) | [Descriptor](architecture/responsibility-boundaries/artefact.json) |
+| `reviews` | capability | platform | [Design](capabilities/reviews/capability-record.md) | [Descriptor](capabilities/reviews/artefact.json) |
+| `rich-text` | library | technical | [Design](libraries/rich-text/stateless-library-record.md) | [Descriptor](libraries/rich-text/artefact.json) |
+| `scheduler` | service | platform | [Design](services/scheduler/services-record.md) | [Descriptor](services/scheduler/artefact.json) |
+| `search` | service | platform | [Design](services/search/services-record.md) | [Descriptor](services/search/artefact.json) |
+| `seo` | service | platform | [Design](services/seo/services-record.md) | [Descriptor](services/seo/artefact.json) |
+| `shop` | composition | presentation | [Design](compositions/shop/compositions-record.md) | [Descriptor](compositions/shop/artefact.json) |
+| `shopping-basket` | capability | domain | [Design](capabilities/shopping-basket/capability-record.md) | [Descriptor](capabilities/shopping-basket/artefact.json) |
+| `site-hosting` | service | platform | [Design](services/site-hosting/services-record.md) | [Descriptor](services/site-hosting/artefact.json) |
+| `storage` | service | platform | [Design](services/storage/services-record.md) | [Descriptor](services/storage/artefact.json) |
+| `subscription` | capability | domain | [Design](capabilities/subscription/capability-record.md) | [Descriptor](capabilities/subscription/artefact.json) |
+| `task` | capability | platform | [Design](capabilities/task/capability-record.md) | [Descriptor](capabilities/task/artefact.json) |
+| `template-engine` | library | technical | [Design](libraries/template-engine/stateless-library-record.md) | [Descriptor](libraries/template-engine/artefact.json) |
+| `temporal-gateway` | adapter | technical | [Design](adapters/temporal-gateway/adapters-record.md) | [Descriptor](adapters/temporal-gateway/artefact.json) |
+| `theme-manager` | presentation | foundation | [Design](presentation/theme-manager/presentation-record.md) | [Descriptor](presentation/theme-manager/artefact.json) |
+| `time-attendance` | capability | domain | [Design](capabilities/time-attendance/capability-record.md) | [Descriptor](capabilities/time-attendance/artefact.json) |
+| `todo` | composition | presentation | [Design](compositions/todo/compositions-record.md) | [Descriptor](compositions/todo/artefact.json) |
+| `training` | capability | domain | [Design](capabilities/training/capability-record.md) | [Descriptor](capabilities/training/artefact.json) |
+| `ui` | presentation | presentation | [Design](presentation/ui/presentation-record.md) | [Descriptor](presentation/ui/artefact.json) |
+| `user` | presentation | presentation | [Design](presentation/user/presentation-record.md) | [Descriptor](presentation/user/artefact.json) |
+| `uuid-generator` | library | technical | [Design](libraries/uuid-generator/stateless-library-record.md) | [Descriptor](libraries/uuid-generator/artefact.json) |
+| `verification` | capability | platform | [Design](capabilities/verification/capability-record.md) | [Descriptor](capabilities/verification/artefact.json) |
+| `warehouse` | capability | domain | [Design](capabilities/warehouse/capability-record.md) | [Descriptor](capabilities/warehouse/artefact.json) |
+| `workflow` | capability | platform | [Design](capabilities/workflow/capability-record.md) | [Descriptor](capabilities/workflow/artefact.json) |
+| `workforce-scheduling` | capability | domain | [Design](capabilities/workforce-scheduling/capability-record.md) | [Descriptor](capabilities/workforce-scheduling/artefact.json) |
 
 ## Governing rules
 
@@ -12,60 +116,6 @@
 6. Every protected operation is authorised on the server. Security follows OWASP ASVS 5.0 Level 2, with applicable Level 3 controls for security-sensitive operations.
 7. Presentation meets WCAG 2.2 AA, supports internationalisation and uses Theme Manager's semantic vocabulary. Privacy, data minimisation, retention and consent apply across capabilities.
 8. Separate deployment is optional; the default architecture is a modular monolith. Capability ownership, implementation and deployment are distinct; refer to the [Capability Standard](capability-standard.md).
-
-## Capabilities
-
-| Capability | Class | Owns |
-|---|---|---|
-| `theme-manager` | Foundation | Theme definitions, the semantic token vocabulary, contrast checks, selection and preferences; the only authority for the effective theme |
-| `clock` | Foundation | Canonical date/time values, parsing, formatting, temporal arithmetic, time zones and clock services |
-| `configuration` | Foundation | The facts a site, tenant or group states about itself, changed through approvals |
-| `identity` | Foundation (IAM) | Identities, each person's personal group, groups, the single-parent hierarchy, tenants and memberships with their lifecycle; no personal data beyond opaque identifiers |
-| `authentication` | Foundation (IAM) | Credential verification, sign-in identifiers, sessions, rotation, revocation and reauthentication |
-| `authorisation` | Foundation (IAM) | Server-side, resource-aware access decisions, with no implicit inheritance through the group hierarchy |
-| `profile` | Foundation (IAM) | The personal data describing a person, keyed by an Identity identifier: what each context may see, under the person's control, and their access, correction, export and erasure requests |
-| `iam-integration` | Foundation (IAM) | The IAM suite's architecture, cross-capability processes and the adapters connecting its members ([ADR-0005](decisions/ADR-0005-iam-suite.md)); no data of its own |
-| `rich-text` | Library | The one safe formatted-text format, its profiles, checks and safe tree; never renders ([ADR-0011](decisions/ADR-0011-shared-rich-text-and-configurable-copy.md)) |
-| `publisher` | Platform | Documents of host-registered types: drafts, versions, approval, scheduling, addresses, listings and feeds |
-| `media` | Platform | Images: web-ready variants, metadata removal, alt text, group ownership and allowances; the files themselves through the Files shape ([ADR-0012](decisions/ADR-0012-trivial-composition.md)), which the host fills with `storage` |
-| `storage` | Platform | Files' bytes in an object store behind one provider-agnostic port: keys under tenant and group, signed addresses, lifecycle, backups and usage figures; no records of its own |
-| `ui` | Presentation | Generic, fully styled components on Theme Manager's vocabulary; knows no capability |
-| `content-editor` | Presentation | Editing screens for Publisher's documents, saving through Publisher's functions; no data of its own |
-| `gallery` | Presentation | Albums and photo of the week as Publisher types over media's images; no data of its own |
-| `privacy` | Foundation | Consent and retention policy, which capabilities receive and apply |
-| `legal-compliance` | Foundation | The legal duties that apply to each site by jurisdiction, such as UK GDPR and the Online Safety Act, and the constraints they impose beside Authorisation's decisions, such as legal holds that block deletion |
-| `export` | Library | Turning a `rich-text` safe tree into files such as PDF and .docx, extensible by format |
-| `scheduler` | Platform | Running every capability's `tasks` on time, like cron, for the host |
-| `message-queue` | Platform | Carrying messages that something happened, such as "password changed", from capabilities' outboxes to the capabilities that listen; not calendar events, which are the `event-service` candidate |
-| `workflow` | Platform | User-defined routes for review, sign-off and approval, per type and site; fills capabilities' approval ports |
-| `content-security` | Platform | Scanning what people submit for dangerous content, links and abuse, on top of each layer's own input checks |
-| `notifications` | Platform | Telling people something needs them, through their chosen channels; providers' keys come from the host's secret management |
-| `comments-engine` | Platform | Comments on content and their moderation |
-| `metadata` | Platform | Tags, categories, taxonomies and ontologies attached to content |
-| `localisation` | Platform | Language and locale adaptation of content and application text, including translation workflow, terminology, quality assurance and provider-neutral translation services; authoritative source content and domain-specific formatting remain with their respective owners |
-| `seo` | Platform | Redirects, sitemaps and search-engine metadata, driven by Publisher's address events |
-| `site-hosting` | Platform | Where each site is served: custom domains, proving their ownership, and finding the site for a request's address; certificates and deployment stay with the host's proxy and provider (ADR-0014) |
-| `integrations` | Platform | Adapters to outside services such as Google Docs, Microsoft 365 and social feeds |
-
-## Infrastructure integration libraries
-
-These are framework-independent packages, not independently composable Nuxt capabilities; their ownership and requirements follow [ADR-0015](decisions/ADR-0015-infrastructure-integration-libraries.md).
-
-| Library | Owns |
-|---|---|
-| `temporal-gateway` | Shared Temporal connection, schedule, execution and worker SDK integration; no business scheduling, workflows, message transport or capability-owned persistence |
-
-## Additional platform and architectural entries under consideration
-
-The entries below describe additional bounded responsibilities without implying that an independent repository, a direct dependency, or a change to an established contract has been approved.
-
-| Entry | Intended class | Scope and boundary |
-|---|---|---|
-| `architecture-rules` | Architecture governance (not a runtime layer) | Governs ADRs, normative standards and this catalogue; owns no application runtime data |
-| `infrastructure` | Foundation candidate | Host/backend/deployment setup and operational configuration; infrastructure resources and domain data remain with the appropriate hosts/providers |
-| `reviews` | Platform candidate | Customer ratings, testimonials, verified purchase/service evidence, moderation, merchant replies and trustworthy reputation aggregates; transaction and identity facts remain owned by source capabilities |
-| `template-engine` | Library candidate | Secure deterministic template parsing, data binding and content rendering; no template persistence, document lifecycle, arbitrary code execution or business-data lookups |
-| `organisation-model` | Domain / platform boundary to be decided | Versioned, schema-validated organisational archetypes, positions, non-authoritative reporting relationships and capability selection; cannot reown Identity groups/memberships or Authorisation decisions |
 
 ### Reviews and external reputation providers
 
@@ -89,100 +139,11 @@ An organisational archetype MAY describe metadata schemas, positions, requested 
 | Extends (Nuxt) | Direct, documented Nuxt framework inheritance with merge/override rules | A retail app extends a presentation/composition shell |
 | Composes | Application/integration assembly of independent capability contracts | Shop application combines Product, Pricing and Order |
 
-These are distinct edges: `requires` is not synonymous with Nuxt `extends`, and a business event is not an inheritance mechanism. Dependency cycles are prohibited over their combined graph where edges denote runtime/build dependencies (ADR-0001 and proposed ADR-0016).
+These are distinct edges: `requires` is not synonymous with Nuxt `extends`, and a business event is not an inheritance mechanism. Dependency cycles are prohibited over their combined graph where edges denote runtime/build dependencies (ADR-0001 and ADR-0016).
 
-## Candidates
+## Consolidations and aliases
 
-These names and descriptions are **design options**, not approved independent repositories, mandatory dependencies or delivery commitments. Established capabilities are listed once in the authoritative table above; their existing responsibilities are neither reclassified nor extended by these candidate definitions. Candidate names follow the supplied CSV where meaningful; existing contracts and accepted ADRs take precedence.
-
-### Foundation, platform and library candidates
-
-| Candidate | Intended class | Potential bounded responsibility / exclusion |
-|---|---|---|
-| `audit` | Platform | Tamper-evident accountable business/security audit evidence and review; distinct from operational Logging and Observability |
-| `caching` | Foundation | Cache provider ports, expiration and invalidation; source capabilities remain authoritative |
-| `logging` | Foundation | Structured technical logs, correlation and sinks; not the authoritative business audit trail |
-| `observability` | Platform | Metrics, traces, system health and diagnostics; not logging or business auditing |
-| `UUID-generator` | Library candidate | Shared UUID generation, including UUIDv7; replaces retired `uuidv7_generator` / `uuidv7-generator` concept without owning entities or credentials, and does not automatically require a Nuxt Layer |
-| `api-gateway` | Composition / platform to decide | External API routing and exposure; not a replacement for capability APIs or server authorisation |
-| `application-compositions` | Composition artefacts | Reusable application templates and selected capability wiring; generally not independent stateful services |
-| `organisation-console` | Presentation / application composition (independent packaging under review) | Organisation-neutral, role-aware context selection, management dashboards and navigation over owning capabilities' public contracts; no independent business records, tenant authority or access grants; distinct from platform-operator administration |
-| `user` | Presentation | Group-scoped user administration screens via Identity/Profile/Authorisation; no user records |
-| `document` | Platform candidate, unresolved | Distinct document-management requirement only if Publisher's document lifecycle is insufficient |
-| `search` | Platform | Indexing, query and relevance over authorised source records; no source-of-truth storage |
-| `location` | Platform | Coordinates, geospatial and place references; not all postal addresses or site tenancy |
-| `reporting` | Platform | Authorised report definitions, aggregation and output; no source transaction records |
-| `process` | Platform candidate | Business process definitions and outcomes; execution uses Workflow/Scheduler without duplicating their responsibilities |
-| `project` | Platform candidate | Coordinated bodies of work, milestones, responsibilities and budgets; uses Task/Process contracts where applicable |
-| `task` | Platform candidate | Individual assigned work, goals, progress and due dates; not Temporal jobs or scheduler triggers |
-| `booking` | Domain candidate | Reservation lifecycle, availability and capacity for resources; neither a clock nor execution scheduler |
-
-### Organisational archetype and composition examples
-
-The following are **types and compositions**, not independent capability candidates merely by their names. They use existing Identity-owned group IDs and membership relationships. Validated metadata, presentation, configuration and optional domain services may specialise each type through published contracts (ADR-0016). No type grants permissions or introduces an alternative group hierarchy.
-
-| Archetype or composition | Intended use and independent-domain exclusion |
-|---|---|
-| `organisation` | General organisational context and type; separate legal/governance records require a justified domain owner |
-| `business` | Organisation-oriented business application composition; commerce, accounting and other operations retain their own domain owners |
-| `company` | Organisation type with legal-entity references; statutory registration, officers or filings may warrant a separately reviewed domain |
-| `club` | Group type for a club with selected activity capabilities; paid scheme rights and subscriptions are not Identity membership |
-| `committee` | Group type and meeting composition; formal votes, resolutions and minutes may warrant their own independently governed lifecycle |
-| `department` | Organisational unit type, potentially expressed through Identity's existing single-parent group hierarchy; reporting does not grant access |
-| `office` | Organisational location/unit type; physical facilities, leases and managed assets belong to independently justified domain owners |
-
-### Activity domain candidates
-
-| Candidate | Potential bounded responsibility / disposition |
-|---|---|
-| `membership` | Paid/scheme membership rights, terms, renewals and benefits; NOT Identity's existing group membership |
-| `events` | Planned participant activities and event lifecycle; not background scheduled tasks |
-| `course` | Structured learning offering and outcomes |
-| `enrolment` | Course/learner participation and allocation |
-| `training` | Verified training participation, competencies and completion records |
-| `gaming` | Game-specific state, rankings and participation; separate from generic Identity accounts |
-| `workshop` | Event/Course specialisation unless distinct rules justify a separate domain |
-| `blog` | Publisher document type and presentation unless separate domain state demonstrably exists |
-| `job` | Ambiguous: employment role/post is possible domain; background execution job belongs to Scheduler |
-
-### Commerce and operations domain candidates
-
-| Candidate | Potential bounded responsibility / exclusion |
-|---|---|
-| `product` | Saleable products, families, bundles and variants; not stock quantities |
-| `pricing` | Price rules, lists, promotions and calculations; not order records |
-| `inventory` | Stock quantities, movements, reservations and stock ownership; not product definition or warehouse workflows |
-| `asset` | Owned controlled assets, lifecycle, assignments and valuation references; not generic sale stock |
-| `order` | Commercial orders, lines, states and fulfilment obligations; not payment settlement |
-| `billing` | Billable charges and periods; not the owner of the entire ordering lifecycle |
-| `invoice` | Invoice issuance, numbers, adjustments and settlement state; not payment provider execution |
-| `payment-gateway` | Payment-provider initiation, status, capture and refund coordination; no accounting ledger |
-| `accounting` | Ledger, journal, periods and reconciliations; not the originating sales or warehouse transactions |
-| `subscription` | Recurring commercial agreements, plans, renewals and entitlements; not payment provider |
-| `shop` | Retail/ecommerce composition and shop-specific operations; not replacement of Product/Order/Inventory |
-| `marketplace` | Multi-seller participation, listings and marketplace-specific commercial operations |
-| `warehouse` | Receiving, put-away, picking, packing and physical warehouse operations; Inventory owns stock facts |
-| `logistics` | Shipment and delivery operations, dispatch, carrier coordination and tracking |
-
-### Names held for consolidation or clarification
-
-- `image`: covered by `media` unless a separately justified boundary emerges.
-- `integration-adapters`: the general `integrations` responsibility; provider adapters such as `integrations/trustpilot` are optional integrations, not necessarily separate layers.
-- `tenancy`: tenant and group ownership already belongs to Identity; tenant administration UI may be presentation.
-- `document`: no generic document service should duplicate completed Publisher.
-- `blog` and `workshop`: favour Publisher/Event/Course composition unless independent domain ownership is established.
-- `job`: distinguish employment positions from infrastructure background jobs.
-- `accounting`, `billing`, `inventory`, `invoice`, `booking` and `membership` are candidates for classification review, not new Foundation obligations on completed layers.
-- `organisation-model` is a proposed archetype-owning boundary; it does not change the published Identity, Configuration or Authorisation contracts.
-
-## Consolidations
-
-- No shared `persistence-service` (ADR-0002). Generic `user-service` and `group-service` are Identity; sessions stay in Authentication.
-- `blog-service` remains a Publisher document-type/presentation candidate; `image-service` and `media-library-ui` belong with `media`; `storage-service` is `storage`; `todo-manager` is a potential Task use case.
-- `iam-integration` is unrelated to the general-purpose `integrations` capability.
-- `integration-adapters` is `integrations`; `policy-map` is `legal-compliance`; `doc-search` is the `search-service` candidate.
-- Infrastructure `scheduling-service` and background `job-service` are Scheduler concerns; an employment `job` would be a different domain. `workflow-service` is `workflow`; `notification-service` is `notifications`; `event-bus-service` and the former `events-queue` are `message-queue`.
-- Existing repository names and contracts are kept unless an independently reviewed change justifies a migration.
+No shared persistence service (ADR-0002); user/group services belong to Identity and sessions to Authentication. Image/media-library concepts belong to Media; storage-service to Storage; policy-map to Legal Compliance; integration-adapters to Integrations; doc-search to Search; background job/scheduling services to Scheduler; workflow-service to Workflow; notification-service to Notifications; event-bus-service/events-queue to Message Queue. Blog and workshop are Publisher/Event/Course specialisations unless a separate domain is justified. Document must not duplicate Publisher. Tenancy belongs to Identity; tenant administration may be presentation. The former todo-manager concept is superseded by Todo; application-compositions is historical vocabulary. Retain UUID-generator as a legacy published identifier for uuid-generator. Existing published repository names and contracts require independently approved migrations.
 
 ## Starting a capability
 
@@ -199,7 +160,6 @@ A repository is created only once these are established:
 
 The group model is defined in [Identity and Access](identity.md) ([ADR-0003](decisions/ADR-0003-group-model-and-identity-first.md)).
 
-
 ## Tenant governance, policy authority and commercial onboarding (ADR-0017/ADR-0018)
 
 The Identity-owned **tenant hierarchy** is distinct from its accepted single-parent **group hierarchy**. Tenant parentage allows only specifically authorised, scoped administration and never transfers access to child private data, Identity membership, commercial billing responsibility, group ownership or domain source authority. Active tenants require verified accountable human digital governance; creator provenance, real-world controlling legal entity, director/shareholder, delegated administrator and payer remain distinct. Protected transfer, recovery and portability follow [ADR-0017](decisions/ADR-0017-tenant-hierarchy-and-accountable-digital-control.md). These are **new target contract obligations**, not claims about current Identity APIs.
@@ -208,12 +168,8 @@ Policy categories remain separate: immutable architectural/security constraints 
 
 The host's operating company is an ordinary scoped commercial tenant/business party; the installation is not itself a tenant. Modular paid tenant onboarding composes Product/Pricing, Order, Payment Gateway, Subscription, Billing, Invoice, Accounting, Identity, Configuration, Authorisation, Workflow and relevant resource owners via public boundaries. **Entitlement, provisioning, enablement and individual permission are independent.** Logical purchased tenant image/file storage quota must be demonstrably enforced before advertised; Storage's existing usage report alone does not enforce a quota. Bill-to party and consuming tenant may differ with proper authority. `business`, `organisation`, `club`, `company` and `committee` remain archetypes/compositions absent independent domain authority; no new `tenancy` capability is inferred by tenant-tree requirements.
 
-### Localisation catalogue naming (17 November 2026)
+## Adopted conceptual allocations
 
-**Canonical entry:** `localisation`. The previous `translate` candidate described only translation and had an empty working blueprint record; this catalogue replacement does not retain an alias or imply an implemented package. Translation is a function within Localisation; internationalisation remains a cross-cutting architectural obligation. Publisher and other source-owning capabilities retain authoritative content, revision, approval and publication; Configuration/Profile retain preference responsibilities and Clock retains date/time semantics. External translation providers must be replaceable and any legal/safety-critical translation needs suitable source-owner review. The working blueprint's [Localisation capability record](https://github.com/nuxt-layers/architecture-blueprint-review/blob/master/docs/capabilities/localisation/capability-record.md) is conceptual rather than governing.
+The owner-approved conceptual allocations are adopted with this consolidation, subject to accepted ADRs and without implying implementation acceptance. New Domain responsibilities: party (scoped legal/commercial references, not Identity/Profile/Verification); payroll (pay calculations and qualified filing/disbursement evidence, not Accounting settlement or Employment terms); workforce-scheduling (planned shifts/rosters, not actual time or technical Scheduler). Accounting owns approved financial budgets and allocations; Employment owns establishment capacity and actual occupancy; Order owns purchase/sale framework terms; other general agreements retain qualified external authority. Attendance owns generic participation/presence; Training educational determination. Workflow cannot bypass mandatory approvals. No general Contracts, Finance, Procurement or Usage capability.
 
-## Proposed blueprint adoption supplement (FAC-13)
-
-The owner-approved conceptual allocations in [blueprint PR #161](https://github.com/nuxt-layers/architecture-blueprint-review/pull/161) are proposed for governing adoption. New Domain responsibilities: party (scoped legal/commercial references, not Identity/Profile/Verification); payroll (pay calculations and qualified filing/disbursement evidence, not Accounting settlement or Employment terms); workforce-scheduling (planned shifts/rosters, not actual time or technical Scheduler). Accounting owns approved financial budgets and allocations; Employment owns establishment capacity and actual occupancy; Order owns purchase/sale framework terms; other general agreements retain qualified external authority. Attendance owns generic participation/presence; Training educational determination. Workflow cannot bypass mandatory approvals. No general Contracts, Finance, Procurement or Usage capability.
-
-Proposed blueprint kinds: services caching, clock, content-security, federation, integrations, logging, mailer, message-queue, notifications, observability, payment-gateway, scheduler, search, seo, site-hosting, storage; presentation content-editor, gallery, help, organisation-console, page-builder, theme-manager, ui, user; compositions api-gateway, gaming, iam-integration, office, shop, todo; libraries error-normalisation, export, file-library, rich-text, template-engine, uuid-generator; adapter temporal-gateway; infrastructure infrastructure; architecture application-composition, discovery, organisation-model, persistence, responsibility-boundaries. Policy Map is consolidated into Legal Compliance. Other canonical capabilities remain responsibility-owning capabilities. Preserve established responsibility classes until explicitly changed. Reconcile the historical rows on acceptance; this supplement is not yet normative.
+Localisation replaces the empty translate candidate without a published alias. Translation is one function; internationalisation remains cross-cutting. Source owners retain content and approval; Configuration/Profile retain preferences and Clock retains temporal semantics. External providers are replaceable; legal and safety-critical translation requires suitable source-owner review.

@@ -1,65 +1,72 @@
 # Contributing
 
-> **In short:** focused pull requests, checked and accepted by the project owner; AI does the engineering under human direction, to the same standards as any contribution.
+Nuxt Layers is an experimental, AI-driven, specification-led open-source engineering initiative. AI performs engineering under human direction; the project owner retains authority for scope, architectural decisions, risk acceptance, merges and releases. Human and AI contributions meet the same standards. Multiple assistants do not, by themselves, constitute independent verification.
 
-Changes come as focused branches and pull requests, each passing `python3 scripts/check_markdown.py`, and are accepted by the project owner. This repository's documents follow [ADR-0010](docs/decisions/ADR-0010-documentation-style.md). How the work is done is described below.
+This protocol applies to maintained artefacts and independent consumer and integration repositories adopting the architecture. It describes development process, not a new source of architectural authority. Follow the document hierarchy in [README.md](README.md), accepted ADRs and applicable standards.
 
-## AI-driven development
+## Development request
 
-### Purpose and scope
+A task may be initiated with:
 
-Nuxt Layers is an experimental, AI-driven, specification-led open-source software engineering initiative. This document explains its development methodology, accountability model and quality expectations.
+> Working architecture repository: `nuxt-layers/architecture`
+>
+> Target artefact: `scheduler`
+>
+> Task: Implement the approved conceptual design.
+>
+> Apply the governing development protocol, retrieve the applicable architectural context and public contracts, establish the current implementation baseline and proceed within the approved architectural boundaries.
 
-It applies to repositories in the `nuxt-layers` organisation and to the independent consumer and integration repositories that adopt it.
+The artefact ID selects the approved design, not a package, deployment or permission. The task determines the authorised change scope.
 
-This document describes **development process**, not new architectural authority. The established documentation hierarchy, accepted ADRs, repository standards and security policies remain authoritative.
+## Development protocol
 
-### Operating model
+### 1. Establish current baselines
 
-AI assistants perform the principal engineering activities under human direction and governance. Work may include requirements analysis, architectural proposals, implementation, refactoring, tests, security assessment, documentation, integration verification and maintenance.
+- Retrieve and record the current accepted architecture `master` commit. Resolve the target in [the architecture index](docs/architecture-index.json); check its canonical ID, kind, classification, descriptor and design record. Resolve ambiguity before making ownership or implementation assumptions.
+- Identify the owning implementation repository, if one exists; verify its current accepted `master`, relevant open work, branch policies, existing public contract, implementation metadata, technical specifications, tests and CI configuration. If no implementation exists, record that fact and follow the applicable repository provisioning and owner acceptance process.
+- Establish the actual implementation and dependency baseline from repository evidence. Do not infer available packages, exports, configuration, dependencies or operational readiness from conceptual descriptors. Preserve unrelated work. Record exact revisions and material assumptions in the implementation PR or owner-specific plan, not the architecture repository.
 
-The human project owner retains final authority for requirements, scope, architectural acceptance, risk decisions, repository governance, merges and releases. AI output is a proposal or engineering contribution, not an autonomous approval.
+### 2. Retrieve relevant architectural context
 
-The workflow is AI-driven, **not human-free**. The use of multiple assistants does not itself constitute independent verification.
+- Read the target `artefact.json` and canonical design record. Use the index's required contracts and outgoing/incoming relationships to identify relevant neighbouring owners and affected consumers. Follow referenced accepted ADRs and applicable standards; retrieve additional records only where needed to resolve an actual boundary or integration question.
+- Treat conceptual interface identifiers as discovery labels, not shipped APIs. Information exchange, composition and specialisation do not imply direct imports; distinguish required contracts, optional absence behaviour and actual runtime/build/extension dependencies. Missing graph edges do not prove independence. Check unresolved relationships relevant to the task.
+- Retrieve current published root `CONTRACT.md` files from relevant implementation owners at their accepted revisions. Use those contracts for consumption; do not ingest their private source or entire repositories unless wider inspection is expressly authorised. Inspect the target repository's own relevant files, symbols and tests selectively.
+- If a required contract is missing, insufficient or inconsistent, identify the gap and affected work. Do not invent exports, bypass ownership, fabricate providers or claim integration. Implement independent portions or use documented host ports and test-only fakes where valid; escalate a genuinely blocking gap.
 
-### Engineering principles
+### 3. Define the implementation specification
 
-1. **Specification-led:** consult current authoritative documentation and accepted decisions before making changes. Do not infer normative architecture solely from implementation.
-2. **Bounded and replaceable:** preserve capability boundaries, explicit contracts, separation of concerns and one-way dependencies.
-3. **Evidence-based:** substantiate claims using repository state, test results, review findings and reproducible evidence. Distinguish verified facts from assumptions.
-4. **Secure by design:** apply the project's current security and privacy standards; treat AI-generated code as untrusted until reviewed and verified.
-5. **Accessible and maintainable:** follow the platform's accessibility, internationalisation, documentation and maintainability requirements.
-6. **Traceable change:** use focused branches and pull requests, explain rationale, preserve history and respect protected branches and the current development integration policy.
-7. **Equal standards:** apply the same review, tests, policies and acceptance criteria to human-authored and AI-generated contributions.
+Derive a bounded implementation specification and acceptance criteria from the approved design, applicable ADRs, actual public contracts and baseline. Cover responsibility, exclusions, public inputs/outputs and failure semantics, owned state and lifecycle where applicable, required and optional ports, configuration, security/privacy risks, presentation where relevant, performance and affected consumers. Trace requirements to their governing source. Reuse existing specifications when sufficient; do not create duplicate plans or documents.
 
-### Typical development lifecycle
+Keep actual technical specifications, root consumer contract, storage register where applicable, implementation progress and execution evidence in their designated owning repositories or development register under [ADR-0004](docs/decisions/ADR-0004-documentation-placement.md) and [ADR-0010](docs/decisions/ADR-0010-documentation-style.md).
 
-1. **Establish context:** verify the live repository baseline, relevant specifications, existing tests and dependencies.
-2. **Define the change:** identify the problem, boundaries, acceptance criteria, risks and affected consumers.
-3. **Design:** propose the smallest coherent change consistent with the governing architecture; record material architectural decisions through the established ADR process.
-4. **Implement:** make focused, reviewable changes without unrelated modifications.
-5. **Verify:** run applicable linting, type checking, unit, integration, end-to-end, security and accessibility checks; report gaps and failures explicitly.
-6. **Review and accept:** inspect the diff and evidence, resolve failures, and obtain the project owner's acceptance through the repository's protected-branch workflow.
-7. **Integrate and maintain:** propagate accepted provider changes to affected consumers, resolve compatibility failures forward, and follow ADR-0008. Formal releases resume only after a separately accepted decision.
+### 4. Implement within approved boundaries
 
-The exact checks and release process depend on the repository's existing policies. A green CI run is necessary where required, but does not by itself prove correctness or security.
+Apply the [Common Engineering Standard](docs/engineering-standard.md) and the applicable [Capability](docs/capability-standard.md), [Nuxt Layer](docs/nuxt-layer-standard.md), [Composition](docs/composition-standard.md) and [TypeScript Package](docs/typescript-package-standard.md) standards cumulatively. Follow the [Security](docs/security.md), [Privacy](docs/privacy.md), [Identity and Access](docs/identity.md) and [Presentation, Internationalisation and Accessibility](docs/presentation.md) baselines as applicable. Use the accepted toolchain in [ADR-0013](docs/decisions/ADR-0013-development-toolchain-baseline.md).
 
-### Responsibility and limitations
+Implement the smallest coherent solution that meets the specification. Preserve explicit ownership, public boundaries, provider neutrality, fail-closed security and acyclic dependencies. Do not introduce unnecessary frameworks, packages, repositories or infrastructure. Retain existing descriptor compatibility until migration is approved. Keep changes on a focused branch; update actual public contracts and affected technical documentation in the same change.
 
-AI assistance can accelerate engineering and identify defects, but may introduce errors, hallucinate dependencies, misunderstand requirements or overlook security risks. Human acceptance and automated quality controls mitigate these risks without eliminating them.
+### 5. Prepare independent verification
 
-Do not claim a security audit, conformance assessment, successful test, independent review or production readiness unless supporting evidence exists. Document unresolved limitations and known risks.
+Define and maintain reproducible checks proportionate to risk: static analysis, type checking, unit and contract tests, integration and end-to-end tests, security, privacy, accessibility, internationalisation and performance checks where applicable. Include negative paths, absent or failing providers, and relevant recovery and isolation cases.
 
-Never disclose credentials or sensitive information to AI tools or commit them to source control. Follow the repository's security reporting and secret-management procedures.
+Prove independent consumption from the root `CONTRACT.md` alone, without private source or undocumented setup. Apply [ADR-0012](docs/decisions/ADR-0012-trivial-composition.md): one documented composition operation and the applicable 50-line capability-specific integration ceiling, including relevant adapters; use the required minimal consumer or host and report measured integration cost. Do not impose artificial initialisation on libraries or a universal application-wide ceiling on complete compositions. Verify affected public interfaces and integrated consumer behaviour against current accepted dependency revisions.
 
-### Transparency and repository notices
+CI or the project owner's local environment executes tests and builds. AI prepares checks, reviews available results and identifies failures; it does not claim to have executed them. For architecture changes, arrange the applicable Markdown, schema and generated index checks described in [schema guidance](schemas/README.md). Do not claim a check passed without evidence.
 
-Participating repositories should display a concise **AI-Driven Development** notice near the top of their root `README.md` and link to this repository's `CONTRIBUTING.md`. The notice should accurately describe AI's engineering role, human decision authority and equal quality standards.
+### 6. Review and accept
 
-The independent platform test harness may use the same notice while identifying itself as a consumer verification project rather than an organisation-owned capability.
+Open a focused PR against the protected default branch. Record the target and governing/implementation revisions, scope, relevant requirements and contracts, decisions, affected consumers, acceptance criteria, available verification evidence and unresolved risks. Inspect the actual diff, confirm the branch baseline and applicable CI status, and resolve defects before requesting acceptance. Distinguish passed, failed, pending, not run and not applicable checks; a green provider CI alone does not prove independent consumption, security or integrated readiness.
 
-This methodology does not change the licence, contributor obligations, intellectual-property requirements, security policy or normative architectural hierarchy of any repository.
+The project owner accepts changes through the protected-branch workflow. Use squash merges under repository policy; never bypass protection, force-push accepted history or treat AI output as approval. Do not continuously poll PRs by default. Follow [ADR-0008](docs/decisions/ADR-0008-independent-layer-delivery.md) for immediate affected-consumer propagation, acceptance testing and fixing forward. Formal releases require a separately accepted lifecycle.
 
-### Objective
+### 7. Correct architecture only on evidence
 
-The initiative explores whether disciplined, specification-led AI development can deliver secure, maintainable, standards-compliant, production-quality open-source software. Those qualities are objectives to be demonstrated through evidence, not guarantees conferred by the development method.
+If implementation exposes a genuine conceptual deficiency or incompatible governing requirement, document the concrete conflict, evidence, affected owners/consumers, consequences and smallest proposed correction. Do not silently alter ownership, security requirements, accepted ADRs or approved designs to fit code. Continue unaffected work where possible; obtain owner acceptance of the architectural correction through an architecture PR before relying on it. Update canonical records, descriptors, applicable ADRs and derived index together; then resume implementation against the accepted revision. Routine implementation choices within approved boundaries do not require new architectural decisions.
+
+## Accountability and notices
+
+Treat AI-generated code as untrusted until reviewed and verified. Do not claim audits, conformance, production readiness or independent review without evidence. Report limitations and known risks; never expose credentials or sensitive data to AI tools or commit them to source control. Follow [SECURITY.md](SECURITY.md).
+
+Participating repositories display a concise AI-driven development notice near the top of their README, linking to this [development protocol](https://github.com/nuxt-layers/architecture/blob/master/CONTRIBUTING.md). Identify independent test harnesses as consumer verification projects. This methodology does not change licence or contributor obligations.
+
+The objective is secure, maintainable, standards-compliant software demonstrated through reproducible implementation and acceptance evidence, not through the development method alone.

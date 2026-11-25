@@ -2096,3 +2096,55 @@ Imported design citations are retained here for provenance. External availabilit
 ### ref-7ea69d75
 
 [W3C i18n](https://www.w3.org/TR/international-specs/) — imported reference; verification pending.
+
+### ref-a2caee72
+
+[ECMA-262](https://ecma-international.org/publications-and-standards/standards/ecma-262/) — imported reference; verification pending.
+
+### ref-d781d400
+
+[Embla Carousel](https://github.com/davidjerleke/embla-carousel) — imported reference; verification pending.
+
+### ref-a7210fa7
+
+[PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe) — imported reference; verification pending.
+
+### ref-58227ec0
+
+[MiniSearch](https://github.com/lucaong/minisearch) — imported reference; verification pending.
+
+### ref-788e2bc4
+
+[FlexSearch](https://github.com/nextapps-de/flexsearch) — imported reference; verification pending.
+
+### ref-19783b8e
+
+[`nuxt-layers/rich-text`](https://github.com/nuxt-layers/rich-text) — imported reference; verification pending.
+
+### ref-81a9491d
+
+[root implementation `CONTRACT.md`](https://github.com/nuxt-layers/rich-text/blob/master/CONTRACT.md) — imported reference; verification pending.
+
+### ref-f0c6e4e1
+
+[OWASP ASVS 5.0, ch. 16](https://github.com/OWASP/ASVS/blob/master/5.0/en/0x25-V16-Security-Logging-and-Error-Handling.md) — imported reference; verification pending.
+
+### ref-33185db5
+
+[vue.draggable.next](https://github.com/SortableJS/vue.draggable.next) — imported reference; verification pending.
+
+### ref-a60f637a
+
+[OpenTelemetry error conventions](https://opentelemetry.io/docs/specs/semconv/general/recording-errors/) — imported reference; verification pending.
+
+### ref-9679b8dc
+
+[Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) — imported reference; verification pending.
+
+### ref-6d9f6678
+
+[UK Software Security Code of Practice](https://www.gov.uk/government/publications/software-security-code-of-practice) — imported reference; verification pending.
+
+### ref-87ed8fd7
+
+[OASIS DITA 1.3](https://www.oasis-open.org/2016/02/01/members-approve-dita-1-3-as-oasis-standard-for-authoring-and-publishing/) — imported reference; verification pending.

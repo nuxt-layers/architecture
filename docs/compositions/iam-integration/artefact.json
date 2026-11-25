@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "iam-integration",
+  "name": "Iam Integration",
+  "description": "Composes Identity, Authentication, Authorisation and Profile through one secure host entry point without becoming a fifth data owner.",
+  "kind": "composition",
+  "subtype": "suite",
+  "classification": "foundation",
+  "ownership": "none",
+  "designRecord": "docs/compositions/iam-integration/compositions-record.md",
+  "provides": [
+    {
+      "id": "iam-composition",
+      "type": "service",
+      "description": "iam composition within the stated ownership boundary."
+    },
+    {
+      "id": "caller-resolution",
+      "type": "service",
+      "description": "caller resolution within the stated ownership boundary."
+    },
+    {
+      "id": "access-decision-port",
+      "type": "service",
+      "description": "access decision port within the stated ownership boundary."
+    },
+    {
+      "id": "background-task-registration",
+      "type": "service",
+      "description": "background task registration within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "identity",
+      "optional": false,
+      "rationale": "Essential public member contract; no shared private implementation.",
+      "scope": "IAM suite composition"
+    },
+    {
+      "id": "authentication",
+      "optional": false,
+      "rationale": "Essential public member contract; no shared private implementation.",
+      "scope": "IAM suite composition"
+    },
+    {
+      "id": "authorisation",
+      "optional": false,
+      "rationale": "Essential public member contract; no shared private implementation.",
+      "scope": "IAM suite composition"
+    },
+    {
+      "id": "profile",
+      "optional": false,
+      "rationale": "Essential public member contract; no shared private implementation.",
+      "scope": "IAM suite composition"
+    }
+  ],
+  "relationships": [
+    {
+      "target": "identity",
+      "type": "composition",
+      "rationale": "Essential IAM member."
+    },
+    {
+      "target": "authentication",
+      "type": "composition",
+      "rationale": "Essential IAM member."
+    },
+    {
+      "target": "authorisation",
+      "type": "composition",
+      "rationale": "Essential IAM member."
+    },
+    {
+      "target": "profile",
+      "type": "composition",
+      "rationale": "Essential IAM member."
+    },
+    {
+      "target": "application-composition",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

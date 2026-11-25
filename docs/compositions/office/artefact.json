@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "office",
+  "name": "Office",
+  "description": "Composes organisational work and optional physical-space views for an office archetype; source owners retain all authoritative facts.",
+  "kind": "composition",
+  "subtype": "archetype",
+  "classification": "presentation",
+  "ownership": "none",
+  "designRecord": "docs/compositions/office/compositions-record.md",
+  "provides": [
+    {
+      "id": "office-composition",
+      "type": "service",
+      "description": "office composition within the stated ownership boundary."
+    },
+    {
+      "id": "office-dashboard",
+      "type": "service",
+      "description": "office dashboard within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "configuration",
+      "optional": false,
+      "rationale": "Approved archetype and effective preset.",
+      "scope": "Active Office preset"
+    },
+    {
+      "id": "identity",
+      "optional": false,
+      "rationale": "Authoritative group standing.",
+      "scope": "Group-backed Office"
+    },
+    {
+      "id": "authentication",
+      "optional": true,
+      "rationale": "Trusted caller and assurance.",
+      "scope": "Protected functions",
+      "absenceMode": "Deny protected actions."
+    },
+    {
+      "id": "authorisation",
+      "optional": true,
+      "rationale": "Fresh source-specific access decisions.",
+      "scope": "Protected functions",
+      "absenceMode": "Deny protected actions."
+    }
+  ],
+  "relationships": [
+    {
+      "target": "organisation-model",
+      "type": "specialisation",
+      "rationale": "Office is a selected organisational archetype."
+    },
+    {
+      "target": "organisation-console",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "location",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "facility",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "asset",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "task",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "project",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "booking",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "interface-consumption",
+      "rationale": "Approved archetype and effective preset."
+    },
+    {
+      "target": "authentication",
+      "type": "interface-consumption",
+      "rationale": "Trusted caller and assurance."
+    },
+    {
+      "target": "authorisation",
+      "type": "interface-consumption",
+      "rationale": "Fresh source-specific access decisions."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

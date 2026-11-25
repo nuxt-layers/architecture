@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "template-engine",
+  "name": "Template Engine",
+  "description": "Deterministically parses, validates and expands templates against explicit caller-supplied data and schemas; no template records or live data lookup.",
+  "kind": "library",
+  "subtype": "stateless",
+  "classification": "technical",
+  "ownership": "none",
+  "designRecord": "docs/libraries/template-engine/stateless-library-record.md",
+  "provides": [
+    {
+      "id": "parse-template",
+      "type": "service",
+      "description": "parse template within the stated ownership boundary."
+    },
+    {
+      "id": "validate-template",
+      "type": "service",
+      "description": "validate template within the stated ownership boundary."
+    },
+    {
+      "id": "expand-template",
+      "type": "service",
+      "description": "expand template within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "training",
+  "name": "Training",
+  "description": "Owns educational participation, learning evidence, competency findings and programme completion decisions and corrections.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/training/capability-record.md",
+  "provides": [
+    {
+      "id": "learning-evidence",
+      "type": "service",
+      "description": "learning evidence within the stated ownership boundary."
+    },
+    {
+      "id": "participation-verification",
+      "type": "service",
+      "description": "participation verification within the stated ownership boundary."
+    },
+    {
+      "id": "competency-finding",
+      "type": "service",
+      "description": "competency finding within the stated ownership boundary."
+    },
+    {
+      "id": "completion-decision",
+      "type": "service",
+      "description": "completion decision within the stated ownership boundary."
+    },
+    {
+      "id": "training-correction",
+      "type": "service",
+      "description": "training correction within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "course",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "assessment",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "enrolment",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "attendance",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "qualification",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "credentials",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

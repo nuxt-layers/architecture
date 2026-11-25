@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "facility",
+  "name": "Facility",
+  "description": "Owns operational premises, effective layouts, usable zones, circulation networks and qualified physical passage eligibility.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/facility/capability-record.md",
+  "provides": [
+    {
+      "id": "facility-layout",
+      "type": "service",
+      "description": "facility layout within the stated ownership boundary."
+    },
+    {
+      "id": "zone-governance",
+      "type": "service",
+      "description": "zone governance within the stated ownership boundary."
+    },
+    {
+      "id": "circulation-network",
+      "type": "service",
+      "description": "circulation network within the stated ownership boundary."
+    },
+    {
+      "id": "passage-eligibility",
+      "type": "service",
+      "description": "passage eligibility within the stated ownership boundary."
+    },
+    {
+      "id": "layout-publication",
+      "type": "service",
+      "description": "layout publication within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "asset",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "location",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "manufacturing",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "warehouse",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "logistics",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "booking",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Detailed interface and dependency mapping",
+      "reason": "Conceptual discovery summary; exact selected-host bindings and reciprocal approval require reconciliation."
+    }
+  ]
+}

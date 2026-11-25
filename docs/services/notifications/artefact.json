@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "notifications",
+  "name": "Notifications",
+  "description": "Owns human-attention orchestration, notice intents, policy-qualified audience/channel selection, attempts and optional inbox lifecycle.",
+  "kind": "service",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "technical",
+  "designRecord": "docs/services/notifications/services-record.md",
+  "provides": [
+    {
+      "id": "notice-intake",
+      "type": "service",
+      "description": "notice intake within the stated ownership boundary."
+    },
+    {
+      "id": "notification-routing",
+      "type": "service",
+      "description": "notification routing within the stated ownership boundary."
+    },
+    {
+      "id": "delivery-status",
+      "type": "service",
+      "description": "delivery status within the stated ownership boundary."
+    },
+    {
+      "id": "inbox",
+      "type": "service",
+      "description": "inbox within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "mailer",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "profile",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "scheduler",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "message-queue",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "todo",
+  "name": "Todo",
+  "description": "Composes lightweight personal/shared work-intention collections with minimal native state; linked Task records remain Task-owned.",
+  "kind": "composition",
+  "subtype": "application",
+  "classification": "presentation",
+  "ownership": "technical",
+  "designRecord": "docs/compositions/todo/compositions-record.md",
+  "provides": [
+    {
+      "id": "collection-management",
+      "type": "service",
+      "description": "collection management within the stated ownership boundary."
+    },
+    {
+      "id": "work-intention",
+      "type": "service",
+      "description": "work intention within the stated ownership boundary."
+    },
+    {
+      "id": "source-link",
+      "type": "service",
+      "description": "source link within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "task",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Native collection state versus composition ownership vocabulary",
+      "reason": "Approved minimal native state is narrower than domain ownership; technical classification is provisional."
+    }
+  ],
+  "aliases": [
+    "todo-manager"
+  ]
+}

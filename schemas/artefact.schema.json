@@ -1,446 +1,1481 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Artefact definition",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "schemaVersion": {
-      "const": 1
-    },
-    "id": {
-      "type": "string",
-      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-    },
-    "name": {
-      "type": "string",
-      "minLength": 1
-    },
-    "description": {
-      "type": "string",
-      "minLength": 1
-    },
-    "kind": {
-      "enum": [
-        "capability",
-        "composition",
-        "library",
-        "adapter",
-        "presentation",
-        "architecture",
-        "service",
-        "infrastructure"
-      ]
-    },
-    "subtype": {
-      "enum": [
-        "service",
-        "suite",
-        "application",
+  "$defs": {
+    "legacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "capability",
+            "composition",
+            "library",
+            "adapter",
+            "presentation",
+            "architecture",
+            "service",
+            "infrastructure"
+          ]
+        },
+        "subtype": {
+          "enum": [
+            "service",
+            "suite",
+            "application",
+            "deployment",
+            "stateless",
+            "infrastructure-integration",
+            "framework-adapter",
+            "presentation-kit",
+            "governance",
+            "operational-role",
+            "archetype"
+          ]
+        },
+        "classification": {
+          "enum": [
+            "foundation",
+            "platform",
+            "domain",
+            "presentation",
+            "technical",
+            "governance"
+          ]
+        },
+        "implementation": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "nuxt-layer",
+              "typescript",
+              "declarative"
+            ]
+          },
+          "minItems": 1
+        },
+        "deployment": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "in-process",
+              "worker",
+              "standalone",
+              "build-time"
+            ]
+          },
+          "minItems": 1
+        },
+        "ownership": {
+          "enum": [
+            "domain",
+            "configuration",
+            "technical",
+            "none"
+          ]
+        },
+        "repository": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "contract": {
+          "const": "CONTRACT.md"
+        },
+        "provides": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "contractVersion": {
+                "type": "string",
+                "pattern": "^[0-9]+(?:\\.[0-9]+){0,2}$"
+              }
+            },
+            "required": [
+              "id",
+              "contractVersion"
+            ]
+          }
+        },
+        "requires": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "contract": {
+                "type": "string",
+                "minLength": 1
+              },
+              "contractVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "optional": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "id",
+              "contract",
+              "contractVersion",
+              "optional"
+            ]
+          }
+        },
+        "extends": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          }
+        },
+        "presentation": {
+          "enum": [
+            "none",
+            "optional",
+            "primary"
+          ]
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "name",
+        "description",
+        "kind",
+        "subtype",
+        "classification",
+        "implementation",
         "deployment",
-        "stateless",
-        "infrastructure-integration",
-        "framework-adapter",
-        "presentation-kit",
-        "governance",
-        "operational-role",
-        "archetype"
+        "ownership",
+        "provides",
+        "requires",
+        "presentation"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "capability"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "service"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "composition"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "suite",
+                  "application",
+                  "deployment",
+                  "archetype"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "library"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "stateless",
+                  "infrastructure-integration"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "adapter"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "infrastructure-integration",
+                  "framework-adapter"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "presentation"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "presentation-kit"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "architecture"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "governance",
+                  "operational-role",
+                  "archetype"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "subtype": {
+                "const": "stateless"
+              }
+            },
+            "required": [
+              "subtype"
+            ]
+          },
+          "then": {
+            "properties": {
+              "ownership": {
+                "const": "none"
+              },
+              "presentation": {
+                "const": "none"
+              },
+              "implementation": {
+                "items": {
+                  "const": "typescript"
+                }
+              },
+              "deployment": {
+                "items": {
+                  "enum": [
+                    "in-process",
+                    "build-time"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "composition",
+                  "adapter",
+                  "presentation"
+                ]
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "ownership": {
+                "enum": [
+                  "none",
+                  "configuration",
+                  "technical"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "extends": {
+                "minItems": 1
+              }
+            },
+            "required": [
+              "extends"
+            ]
+          },
+          "then": {
+            "properties": {
+              "implementation": {
+                "contains": {
+                  "const": "nuxt-layer"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "service"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "const": "service"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "infrastructure"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "const": "deployment"
+              },
+              "ownership": {
+                "enum": [
+                  "none",
+                  "configuration",
+                  "technical"
+                ]
+              }
+            }
+          }
+        }
       ]
     },
-    "classification": {
-      "enum": [
-        "foundation",
-        "platform",
-        "domain",
-        "presentation",
-        "technical",
-        "governance"
+    "conceptual": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "capability",
+            "composition",
+            "library",
+            "adapter",
+            "presentation",
+            "architecture",
+            "service",
+            "infrastructure"
+          ]
+        },
+        "subtype": {
+          "enum": [
+            "service",
+            "suite",
+            "application",
+            "deployment",
+            "stateless",
+            "infrastructure-integration",
+            "framework-adapter",
+            "presentation-kit",
+            "governance",
+            "operational-role",
+            "archetype"
+          ]
+        },
+        "classification": {
+          "enum": [
+            "foundation",
+            "platform",
+            "domain",
+            "presentation",
+            "technical",
+            "governance"
+          ]
+        },
+        "implementation": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "nuxt-layer",
+              "typescript",
+              "declarative"
+            ]
+          },
+          "minItems": 1
+        },
+        "deployment": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "in-process",
+              "worker",
+              "standalone",
+              "build-time"
+            ]
+          },
+          "minItems": 1
+        },
+        "ownership": {
+          "enum": [
+            "domain",
+            "configuration",
+            "technical",
+            "none"
+          ]
+        },
+        "provides": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "type": {
+                "enum": [
+                  "service",
+                  "command",
+                  "query",
+                  "data",
+                  "event",
+                  "port",
+                  "configuration",
+                  "http-api",
+                  "presentation",
+                  "errors"
+                ]
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "description"
+            ]
+          }
+        },
+        "requires": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "interface": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+                "description": "Conceptual provider interface identifier; omit when the requirement covers the broader public boundary."
+              },
+              "optional": {
+                "type": "boolean",
+                "description": "True when the artefact can operate without this provider; an affected feature may be unavailable."
+              },
+              "absenceMode": {
+                "type": "string",
+                "minLength": 1
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "optional",
+              "rationale"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "optional": {
+                      "const": true
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "absenceMode"
+                  ]
+                }
+              }
+            ]
+          },
+          "description": "Intended public-contract requirements for the artefact or a stated feature, not package imports or actual runtime/build dependencies."
+        },
+        "presentation": {
+          "enum": [
+            "none",
+            "optional",
+            "primary"
+          ]
+        },
+        "profile": {
+          "const": "conceptual"
+        },
+        "designRecord": {
+          "type": "string",
+          "pattern": "^docs/(?:architecture/[a-z0-9-]+\\.md|(?:architecture|capabilities|compositions|infrastructure|libraries|presentation|services|adapters)/[a-z0-9-]+/[a-z0-9-]+\\.md)$"
+        },
+        "aliases": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "relationships": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "target": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "type": {
+                "enum": [
+                  "composition",
+                  "specialisation",
+                  "framework-extension",
+                  "event-publication",
+                  "event-subscription",
+                  "information-exchange",
+                  "ownership",
+                  "interface-consumption"
+                ]
+              },
+              "interface": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "target",
+              "type",
+              "rationale"
+            ]
+          }
+        },
+        "governingDecisions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^ADR-[0-9]{4}$"
+          }
+        },
+        "unresolvedRelationships": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "target": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              }
+            },
+            "required": [
+              "description",
+              "reason"
+            ]
+          }
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "profile",
+        "id",
+        "name",
+        "description",
+        "kind",
+        "classification",
+        "designRecord",
+        "provides",
+        "requires",
+        "relationships",
+        "governingDecisions",
+        "unresolvedRelationships"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "capability"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "service"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "composition"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "suite",
+                  "application",
+                  "deployment",
+                  "archetype"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "library"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "stateless",
+                  "infrastructure-integration"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "adapter"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "infrastructure-integration",
+                  "framework-adapter"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "presentation"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "presentation-kit"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "architecture"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "governance",
+                  "operational-role",
+                  "archetype"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "subtype": {
+                "const": "stateless"
+              }
+            },
+            "required": [
+              "subtype"
+            ]
+          },
+          "then": {
+            "properties": {
+              "ownership": {
+                "const": "none"
+              },
+              "presentation": {
+                "const": "none"
+              },
+              "implementation": {
+                "items": {
+                  "const": "typescript"
+                }
+              },
+              "deployment": {
+                "items": {
+                  "enum": [
+                    "in-process",
+                    "build-time"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "composition",
+                  "adapter",
+                  "presentation"
+                ]
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "ownership": {
+                "enum": [
+                  "none",
+                  "configuration",
+                  "technical"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "service"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "const": "service"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "infrastructure"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "const": "deployment"
+              },
+              "ownership": {
+                "enum": [
+                  "none",
+                  "configuration",
+                  "technical"
+                ]
+              }
+            }
+          }
+        }
       ]
     },
     "implementation": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "enum": [
-          "nuxt-layer",
-          "typescript",
-          "declarative"
-        ]
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "capability",
+            "composition",
+            "library",
+            "adapter",
+            "presentation",
+            "architecture",
+            "service",
+            "infrastructure"
+          ]
+        },
+        "subtype": {
+          "enum": [
+            "service",
+            "suite",
+            "application",
+            "deployment",
+            "stateless",
+            "infrastructure-integration",
+            "framework-adapter",
+            "presentation-kit",
+            "governance",
+            "operational-role",
+            "archetype"
+          ]
+        },
+        "classification": {
+          "enum": [
+            "foundation",
+            "platform",
+            "domain",
+            "presentation",
+            "technical",
+            "governance"
+          ]
+        },
+        "implementation": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "nuxt-layer",
+              "typescript",
+              "declarative"
+            ]
+          },
+          "minItems": 1
+        },
+        "deployment": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "in-process",
+              "worker",
+              "standalone",
+              "build-time"
+            ]
+          },
+          "minItems": 1
+        },
+        "ownership": {
+          "enum": [
+            "domain",
+            "configuration",
+            "technical",
+            "none"
+          ]
+        },
+        "repository": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "contract": {
+          "const": "CONTRACT.md"
+        },
+        "provides": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "contractVersion": {
+                "type": "string",
+                "pattern": "^[0-9]+(?:\\.[0-9]+){0,2}$"
+              }
+            },
+            "required": [
+              "id",
+              "contractVersion"
+            ]
+          }
+        },
+        "requires": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "contract": {
+                "type": "string",
+                "minLength": 1
+              },
+              "contractVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "optional": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "id",
+              "contract",
+              "contractVersion",
+              "optional"
+            ]
+          }
+        },
+        "extends": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          }
+        },
+        "presentation": {
+          "enum": [
+            "none",
+            "optional",
+            "primary"
+          ]
+        },
+        "profile": {
+          "const": "implementation"
+        }
       },
-      "minItems": 1
-    },
-    "deployment": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "enum": [
-          "in-process",
-          "worker",
-          "standalone",
-          "build-time"
-        ]
-      },
-      "minItems": 1
-    },
-    "ownership": {
-      "enum": [
-        "domain",
-        "configuration",
-        "technical",
-        "none"
+      "required": [
+        "schemaVersion",
+        "id",
+        "name",
+        "description",
+        "kind",
+        "subtype",
+        "classification",
+        "implementation",
+        "deployment",
+        "ownership",
+        "provides",
+        "requires",
+        "presentation",
+        "profile",
+        "repository",
+        "contract"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "capability"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "service"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "composition"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "suite",
+                  "application",
+                  "deployment",
+                  "archetype"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "library"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "stateless",
+                  "infrastructure-integration"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "adapter"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "infrastructure-integration",
+                  "framework-adapter"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "presentation"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "presentation-kit"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "architecture"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "governance",
+                  "operational-role",
+                  "archetype"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "subtype": {
+                "const": "stateless"
+              }
+            },
+            "required": [
+              "subtype"
+            ]
+          },
+          "then": {
+            "properties": {
+              "ownership": {
+                "const": "none"
+              },
+              "presentation": {
+                "const": "none"
+              },
+              "implementation": {
+                "items": {
+                  "const": "typescript"
+                }
+              },
+              "deployment": {
+                "items": {
+                  "enum": [
+                    "in-process",
+                    "build-time"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "composition",
+                  "adapter",
+                  "presentation"
+                ]
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "ownership": {
+                "enum": [
+                  "none",
+                  "configuration",
+                  "technical"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "extends": {
+                "minItems": 1
+              }
+            },
+            "required": [
+              "extends"
+            ]
+          },
+          "then": {
+            "properties": {
+              "implementation": {
+                "contains": {
+                  "const": "nuxt-layer"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "service"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "const": "service"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "infrastructure"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "const": "deployment"
+              },
+              "ownership": {
+                "enum": [
+                  "none",
+                  "configuration",
+                  "technical"
+                ]
+              }
+            }
+          }
+        }
       ]
     },
-    "repository": {
-      "type": "string",
-      "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
-    },
-    "contract": {
-      "const": "CONTRACT.md"
-    },
-    "provides": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "string",
-            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-          },
-          "contractVersion": {
-            "type": "string",
-            "pattern": "^[0-9]+(?:\\.[0-9]+){0,2}$"
-          }
-        },
-        "required": [
-          "id",
-          "contractVersion"
-        ]
-      }
-    },
-    "requires": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "string",
-            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-          },
-          "contract": {
-            "type": "string",
-            "minLength": 1
-          },
-          "contractVersion": {
-            "type": "string",
-            "minLength": 1
-          },
-          "optional": {
-            "type": "boolean"
-          }
-        },
-        "required": [
-          "id",
-          "contract",
-          "contractVersion",
-          "optional"
-        ]
-      }
-    },
-    "extends": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-      }
-    },
-    "presentation": {
+    "developmentProgress": {
       "enum": [
-        "none",
-        "optional",
-        "primary"
+        "not-started",
+        "in-development",
+        "in-review",
+        "complete",
+        "suspended",
+        "cancelled"
+      ]
+    },
+    "releaseStatus": {
+      "enum": [
+        "unreleased",
+        "pre-release",
+        "released",
+        "withdrawn"
+      ]
+    },
+    "operationalAvailability": {
+      "enum": [
+        "unavailable",
+        "available",
+        "degraded",
+        "unknown"
+      ]
+    },
+    "deprecationStatus": {
+      "enum": [
+        "not-deprecated",
+        "deprecated",
+        "retired"
       ]
     }
   },
-  "required": [
-    "schemaVersion",
-    "id",
-    "name",
-    "description",
-    "kind",
-    "subtype",
-    "classification",
-    "implementation",
-    "deployment",
-    "ownership",
-    "provides",
-    "requires",
-    "presentation"
-  ],
-  "allOf": [
+  "oneOf": [
     {
-      "if": {
-        "properties": {
-          "kind": {
-            "const": "capability"
-          }
-        },
-        "required": [
-          "kind"
-        ]
-      },
-      "then": {
-        "properties": {
-          "subtype": {
-            "enum": [
-              "service"
-            ]
-          }
-        }
-      }
+      "$ref": "#/$defs/legacy"
     },
     {
-      "if": {
-        "properties": {
-          "kind": {
-            "const": "composition"
-          }
-        },
-        "required": [
-          "kind"
-        ]
-      },
-      "then": {
-        "properties": {
-          "subtype": {
-            "enum": [
-              "suite",
-              "application",
-              "deployment",
-              "archetype"
-            ]
-          }
-        }
-      }
+      "$ref": "#/$defs/conceptual"
     },
     {
-      "if": {
-        "properties": {
-          "kind": {
-            "const": "library"
-          }
-        },
-        "required": [
-          "kind"
-        ]
-      },
-      "then": {
-        "properties": {
-          "subtype": {
-            "enum": [
-              "stateless",
-              "infrastructure-integration"
-            ]
-          }
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "kind": {
-            "const": "adapter"
-          }
-        },
-        "required": [
-          "kind"
-        ]
-      },
-      "then": {
-        "properties": {
-          "subtype": {
-            "enum": [
-              "infrastructure-integration",
-              "framework-adapter"
-            ]
-          }
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "kind": {
-            "const": "presentation"
-          }
-        },
-        "required": [
-          "kind"
-        ]
-      },
-      "then": {
-        "properties": {
-          "subtype": {
-            "enum": [
-              "presentation-kit"
-            ]
-          }
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "kind": {
-            "const": "architecture"
-          }
-        },
-        "required": [
-          "kind"
-        ]
-      },
-      "then": {
-        "properties": {
-          "subtype": {
-            "enum": [
-              "governance",
-              "operational-role",
-              "archetype"
-            ]
-          }
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "subtype": {
-            "const": "stateless"
-          }
-        },
-        "required": [
-          "subtype"
-        ]
-      },
-      "then": {
-        "properties": {
-          "ownership": {
-            "const": "none"
-          },
-          "presentation": {
-            "const": "none"
-          },
-          "implementation": {
-            "items": {
-              "const": "typescript"
-            }
-          },
-          "deployment": {
-            "items": {
-              "enum": [
-                "in-process",
-                "build-time"
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "kind": {
-            "enum": [
-              "composition",
-              "adapter",
-              "presentation"
-            ]
-          }
-        },
-        "required": [
-          "kind"
-        ]
-      },
-      "then": {
-        "properties": {
-          "ownership": {
-            "enum": [
-              "none",
-              "configuration",
-              "technical"
-            ]
-          }
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "extends": {
-            "minItems": 1
-          }
-        },
-        "required": [
-          "extends"
-        ]
-      },
-      "then": {
-        "properties": {
-          "implementation": {
-            "contains": {
-              "const": "nuxt-layer"
-            }
-          }
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "kind": {
-            "const": "service"
-          }
-        },
-        "required": [
-          "kind"
-        ]
-      },
-      "then": {
-        "properties": {
-          "subtype": {
-            "const": "service"
-          }
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "kind": {
-            "const": "infrastructure"
-          }
-        },
-        "required": [
-          "kind"
-        ]
-      },
-      "then": {
-        "properties": {
-          "subtype": {
-            "const": "deployment"
-          },
-          "ownership": {
-            "enum": [
-              "none",
-              "configuration",
-              "technical"
-            ]
-          }
-        }
-      }
+      "$ref": "#/$defs/implementation"
     }
   ]
 }

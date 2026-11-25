@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "publisher",
+  "name": "Publisher",
+  "description": "Owns registered document publication lifecycle, validated content, immutable versions, revision-bound approval, addresses and safe discovery.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/publisher/capability-record.md",
+  "provides": [
+    {
+      "id": "document-definition",
+      "type": "service",
+      "description": "document definition within the stated ownership boundary."
+    },
+    {
+      "id": "document-revision",
+      "type": "service",
+      "description": "document revision within the stated ownership boundary."
+    },
+    {
+      "id": "publication-approval",
+      "type": "service",
+      "description": "publication approval within the stated ownership boundary."
+    },
+    {
+      "id": "publication-lifecycle",
+      "type": "service",
+      "description": "publication lifecycle within the stated ownership boundary."
+    },
+    {
+      "id": "publication-query",
+      "type": "service",
+      "description": "publication query within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "page-builder",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "content-editor",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "media",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "metadata",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "localisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "moderation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "seo",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "search",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "organisation-model",
+  "name": "Organisation Model",
+  "description": "Defines reusable organisational archetypes, position and relationship types, validation and proposed defaults without owning actual appointments or group hierarchy.",
+  "kind": "architecture",
+  "subtype": "archetype",
+  "classification": "governance",
+  "ownership": "none",
+  "designRecord": "docs/architecture/organisation-model.md",
+  "provides": [],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Configuration owns applied archetype selections and overrides."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Identity owns actual tenant/group references and membership."
+    },
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Protected operations use trusted assurance where applicable."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Suggested role profiles never grant access."
+    },
+    {
+      "target": "subscription",
+      "type": "information-exchange",
+      "rationale": "Commercial entitlement is independently determined."
+    },
+    {
+      "target": "application-composition",
+      "type": "information-exchange",
+      "rationale": "Host assembles selected features and navigation."
+    },
+    {
+      "target": "organisation-console",
+      "type": "information-exchange",
+      "rationale": "Console presents actual organisation information and optional definition previews."
+    },
+    {
+      "target": "workflow",
+      "type": "information-exchange",
+      "rationale": "Operation-specific approval, temporal, disclosure and qualified evidence boundaries."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Operation-specific approval, temporal, disclosure and qualified evidence boundaries."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Operation-specific approval, temporal, disclosure and qualified evidence boundaries."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Operation-specific approval, temporal, disclosure and qualified evidence boundaries."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Operation-specific approval, temporal, disclosure and qualified evidence boundaries."
+    },
+    {
+      "target": "metadata",
+      "type": "information-exchange",
+      "rationale": "Optional vocabulary, translation and derived indexing of definitions."
+    },
+    {
+      "target": "localisation",
+      "type": "information-exchange",
+      "rationale": "Optional vocabulary, translation and derived indexing of definitions."
+    },
+    {
+      "target": "search",
+      "type": "information-exchange",
+      "rationale": "Optional vocabulary, translation and derived indexing of definitions."
+    },
+    {
+      "target": "error-normalisation",
+      "type": "information-exchange",
+      "rationale": "Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority."
+    },
+    {
+      "target": "logging",
+      "type": "information-exchange",
+      "rationale": "Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority."
+    },
+    {
+      "target": "reporting",
+      "type": "information-exchange",
+      "rationale": "Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority."
+    },
+    {
+      "target": "observability",
+      "type": "information-exchange",
+      "rationale": "Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority."
+    },
+    {
+      "target": "message-queue",
+      "type": "information-exchange",
+      "rationale": "Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0017",
+    "ADR-0018",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Independent definition catalogue and durable publication interfaces",
+      "reason": "Requires separate evidence-based classification; no independent service or package approved."
+    },
+    {
+      "description": "Owner of actual appointments and reporting chains",
+      "reason": "Must identify an existing governance or domain owner before expanding the records."
+    }
+  ]
+}

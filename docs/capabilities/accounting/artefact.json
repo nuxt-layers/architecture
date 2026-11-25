@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "accounting",
+  "name": "Accounting",
+  "description": "Owns financial recognition, books, journals, receivables and payables, reconciliation, period close, approved budgets, allocations and qualified valuation under native or explicitly selected external authority.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/accounting/capability-record.md",
+  "provides": [
+    {
+      "id": "books-and-periods",
+      "type": "service",
+      "description": "Administer entity-scoped books, accounts and controlled accounting periods."
+    },
+    {
+      "id": "journal-posting",
+      "type": "command",
+      "description": "Validate and recognise financial facts through balanced journals and attributable corrections."
+    },
+    {
+      "id": "receivables-payables",
+      "type": "query",
+      "description": "Supply authorised outstanding balances, ageing and settlement status."
+    },
+    {
+      "id": "bank-reconciliation",
+      "type": "service",
+      "description": "Match qualified statement evidence and resolve exceptions."
+    },
+    {
+      "id": "budgets-and-allocations",
+      "type": "service",
+      "description": "Maintain approved financial budgets, allocations and reporting-basis provenance."
+    },
+    {
+      "id": "financial-valuation",
+      "type": "query",
+      "description": "Supply carrying values, depreciation, impairment and recognised cost."
+    },
+    {
+      "id": "financial-reporting",
+      "type": "query",
+      "description": "Supply qualified financial statements, tax-control figures and scoped exports."
+    },
+    {
+      "id": "authority-reconciliation",
+      "type": "service",
+      "description": "Govern native/external authority selection, cutover and uncertain outcomes."
+    },
+    {
+      "id": "financial-operation-result",
+      "type": "data",
+      "description": "Distinguish requested, confirmed and uncertain accounting outcomes."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "order",
+      "type": "information-exchange",
+      "rationale": "Commercial commitments and fulfilment evidence do not automatically establish financial recognition."
+    },
+    {
+      "target": "invoice",
+      "type": "information-exchange",
+      "rationale": "Issued documents and charge evidence inform financial recognition; Accounting owns AR/AP and settlement views."
+    },
+    {
+      "target": "billing",
+      "type": "information-exchange",
+      "rationale": "Issued documents and charge evidence inform financial recognition; Accounting owns AR/AP and settlement views."
+    },
+    {
+      "target": "inventory",
+      "type": "information-exchange",
+      "rationale": "Operational quantities, production and handling cost evidence inform qualified valuation and allocation without transferring stock authority."
+    },
+    {
+      "target": "manufacturing",
+      "type": "information-exchange",
+      "rationale": "Operational quantities, production and handling cost evidence inform qualified valuation and allocation without transferring stock authority."
+    },
+    {
+      "target": "warehouse",
+      "type": "information-exchange",
+      "rationale": "Operational quantities, production and handling cost evidence inform qualified valuation and allocation without transferring stock authority."
+    },
+    {
+      "target": "logistics",
+      "type": "information-exchange",
+      "rationale": "Operational quantities, production and handling cost evidence inform qualified valuation and allocation without transferring stock authority."
+    },
+    {
+      "target": "asset",
+      "type": "information-exchange",
+      "rationale": "Asset stewardship evidence informs capitalisation, depreciation and carrying value."
+    },
+    {
+      "target": "employment",
+      "type": "information-exchange",
+      "rationale": "Approved employment, time and payroll liability facts inform recognition; Accounting does not calculate pay."
+    },
+    {
+      "target": "payroll",
+      "type": "information-exchange",
+      "rationale": "Approved employment, time and payroll liability facts inform recognition; Accounting does not calculate pay."
+    },
+    {
+      "target": "time-attendance",
+      "type": "information-exchange",
+      "rationale": "Approved employment, time and payroll liability facts inform recognition; Accounting does not calculate pay."
+    },
+    {
+      "target": "party",
+      "type": "information-exchange",
+      "rationale": "Qualified counterparty references identify debtor and creditor contexts."
+    },
+    {
+      "target": "payment-gateway",
+      "type": "information-exchange",
+      "rationale": "Confirmed settlement, fee and refund evidence supports reconciliation."
+    },
+    {
+      "target": "integrations",
+      "type": "information-exchange",
+      "rationale": "Optional external accounting or banking authority uses provider-neutral connection and transport; native operation remains available."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Trusted scope, assurance, permitted settings, time and legal constraints qualify protected financial operations."
+    },
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Trusted scope, assurance, permitted settings, time and legal constraints qualify protected financial operations."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Trusted scope, assurance, permitted settings, time and legal constraints qualify protected financial operations."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Trusted scope, assurance, permitted settings, time and legal constraints qualify protected financial operations."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Trusted scope, assurance, permitted settings, time and legal constraints qualify protected financial operations."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Trusted scope, assurance, permitted settings, time and legal constraints qualify protected financial operations."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Trusted scope, assurance, permitted settings, time and legal constraints qualify protected financial operations."
+    },
+    {
+      "target": "reporting",
+      "type": "information-exchange",
+      "rationale": "Authorised financial statements and derived views preserve source authority."
+    },
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Authorised financial statements and derived views preserve source authority."
+    },
+    {
+      "target": "export",
+      "type": "information-exchange",
+      "rationale": "Authorised financial statements and derived views preserve source authority."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Independent evidence custody and diagnostics do not establish financial posting."
+    },
+    {
+      "target": "logging",
+      "type": "information-exchange",
+      "rationale": "Independent evidence custody and diagnostics do not establish financial posting."
+    },
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Source-owned commercial or project evidence may inform recognition, never automatic posting."
+    },
+    {
+      "target": "pricing",
+      "type": "information-exchange",
+      "rationale": "Source-owned commercial or project evidence may inform recognition, never automatic posting."
+    },
+    {
+      "target": "project",
+      "type": "information-exchange",
+      "rationale": "Source-owned commercial or project evidence may inform recognition, never automatic posting."
+    },
+    {
+      "target": "checkout",
+      "type": "information-exchange",
+      "rationale": "Source-owned commercial or project evidence may inform recognition, never automatic posting."
+    },
+    {
+      "target": "persistence",
+      "type": "information-exchange",
+      "rationale": "Accounting owns its schema, transactions and outbox; host supplies resources."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0002",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0017",
+    "ADR-0018",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact mandatory and optional port bindings",
+      "reason": "No package-level requires approved; qualify selected host contracts and absence modes."
+    },
+    {
+      "description": "Applicable reporting and statutory regimes",
+      "reason": "Exact jurisdiction, rule coverage and external provider capabilities remain deployment gates."
+    }
+  ]
+}

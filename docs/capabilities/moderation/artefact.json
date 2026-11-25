@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "moderation",
+  "name": "Moderation",
+  "description": "Owns moderation cases, investigation, decisions, appeals and enforcement reconciliation, not detector verdicts or source resource mutations.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/moderation/capability-record.md",
+  "provides": [
+    {
+      "id": "case-intake",
+      "type": "service",
+      "description": "case intake within the stated ownership boundary."
+    },
+    {
+      "id": "case-investigation",
+      "type": "service",
+      "description": "case investigation within the stated ownership boundary."
+    },
+    {
+      "id": "moderation-decision",
+      "type": "service",
+      "description": "moderation decision within the stated ownership boundary."
+    },
+    {
+      "id": "appeal",
+      "type": "service",
+      "description": "appeal within the stated ownership boundary."
+    },
+    {
+      "id": "enforcement-reconciliation",
+      "type": "service",
+      "description": "enforcement reconciliation within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "content-security",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "comments-engine",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "media",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "marketplace",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

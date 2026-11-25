@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "enrolment",
+  "name": "Enrolment",
+  "description": "Owns learner applications, admission decisions, placement, continuing enrolment, deferrals and withdrawals.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/enrolment/capability-record.md",
+  "provides": [
+    {
+      "id": "enrolment-application",
+      "type": "service",
+      "description": "enrolment application within the stated ownership boundary."
+    },
+    {
+      "id": "admission-decision",
+      "type": "service",
+      "description": "admission decision within the stated ownership boundary."
+    },
+    {
+      "id": "placement",
+      "type": "service",
+      "description": "placement within the stated ownership boundary."
+    },
+    {
+      "id": "enrolment-lifecycle",
+      "type": "service",
+      "description": "enrolment lifecycle within the stated ownership boundary."
+    },
+    {
+      "id": "enrolment-status",
+      "type": "service",
+      "description": "enrolment status within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "course",
+      "optional": false,
+      "rationale": "Authoritative offering, admission rules and revision; equivalent offering authority may be supplied by host.",
+      "scope": "Course enrolment"
+    }
+  ],
+  "relationships": [
+    {
+      "target": "course",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "booking",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "training",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Detailed interface and dependency mapping",
+      "reason": "Conceptual discovery summary; exact selected-host bindings and reciprocal approval require reconciliation."
+    }
+  ]
+}

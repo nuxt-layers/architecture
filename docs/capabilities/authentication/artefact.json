@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "authentication",
+  "name": "Authentication",
+  "description": "Proves principal control of authenticators and owns credential, sign-in, session, assurance and revocation lifecycles.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "foundation",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/authentication/capability-record.md",
+  "provides": [
+    {
+      "id": "credential-management",
+      "type": "service",
+      "description": "credential management within the stated ownership boundary."
+    },
+    {
+      "id": "session-management",
+      "type": "service",
+      "description": "session management within the stated ownership boundary."
+    },
+    {
+      "id": "authentication-assertion",
+      "type": "service",
+      "description": "authentication assertion within the stated ownership boundary."
+    },
+    {
+      "id": "reauthentication",
+      "type": "service",
+      "description": "reauthentication within the stated ownership boundary."
+    },
+    {
+      "id": "credential-recovery",
+      "type": "service",
+      "description": "credential recovery within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "identity",
+      "optional": false,
+      "rationale": "Principal identity, standing and lifecycle remain Identity-owned.",
+      "scope": "Principal authentication"
+    },
+    {
+      "id": "authorisation",
+      "optional": true,
+      "rationale": "Independent decisions protect credential-management actions.",
+      "scope": "Protected management",
+      "absenceMode": "Refuse the protected action."
+    }
+  ],
+  "relationships": [
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "profile",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "federation",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "logging",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Detailed interface and dependency mapping",
+      "reason": "Conceptual discovery summary; exact selected-host bindings and reciprocal approval require reconciliation."
+    }
+  ]
+}

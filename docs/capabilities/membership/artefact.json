@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "membership",
+  "name": "Membership",
+  "description": "Owns scheme participation, eligibility, membership agreements and lifecycle independently of Identity group membership.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/membership/capability-record.md",
+  "provides": [
+    {
+      "id": "scheme-definition",
+      "type": "service",
+      "description": "scheme definition within the stated ownership boundary."
+    },
+    {
+      "id": "membership-enrolment",
+      "type": "service",
+      "description": "membership enrolment within the stated ownership boundary."
+    },
+    {
+      "id": "membership-lifecycle",
+      "type": "service",
+      "description": "membership lifecycle within the stated ownership boundary."
+    },
+    {
+      "id": "membership-standing",
+      "type": "service",
+      "description": "membership standing within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "party",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "pricing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "billing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "subscription",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "order",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

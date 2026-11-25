@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "asset",
+  "name": "Asset",
+  "description": "Owns managed tangible and intangible asset identity, stewardship, rights and obligation references, custody, assignments, condition and lifecycle; not stock quantities or financial recognition.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/asset/capability-record.md",
+  "provides": [
+    {
+      "id": "asset-registry",
+      "type": "service",
+      "description": "Register, classify, identify and query managed assets."
+    },
+    {
+      "id": "asset-relationships",
+      "type": "service",
+      "description": "Manage time-bounded title claims, custody, management, rights and assignments."
+    },
+    {
+      "id": "asset-operations",
+      "type": "service",
+      "description": "Record condition, inspections, servicing and applicable entitlement observations."
+    },
+    {
+      "id": "asset-lifecycle",
+      "type": "service",
+      "description": "Control commissioning, suspension, transfer, renewal, disposal and corrections."
+    },
+    {
+      "id": "asset-evidence",
+      "type": "service",
+      "description": "Maintain scoped evidence associations, provenance and valuation references."
+    },
+    {
+      "id": "asset-integration",
+      "type": "service",
+      "description": "Govern scoped external authority, synchronisation and reconciliation."
+    },
+    {
+      "id": "asset-change",
+      "type": "event",
+      "description": "Publish confirmed source-owned lifecycle and stewardship changes."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "accounting",
+      "type": "information-exchange",
+      "rationale": "Accounting owns carrying amounts, depreciation and financial treatment; Asset supplies operational evidence."
+    },
+    {
+      "target": "inventory",
+      "type": "information-exchange",
+      "rationale": "Stock and individually managed asset authority remain separate; conversion requires controlled handover."
+    },
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Product owns item/model specifications; individual asset identity remains Asset-owned."
+    },
+    {
+      "target": "party",
+      "type": "information-exchange",
+      "rationale": "Qualified party references are distinct from claims of asset title."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Trusted context, effective time, policy and qualified evidence constrain stewardship."
+    },
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Trusted context, effective time, policy and qualified evidence constrain stewardship."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Trusted context, effective time, policy and qualified evidence constrain stewardship."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Trusted context, effective time, policy and qualified evidence constrain stewardship."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Trusted context, effective time, policy and qualified evidence constrain stewardship."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Trusted context, effective time, policy and qualified evidence constrain stewardship."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Trusted context, effective time, policy and qualified evidence constrain stewardship."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Trusted context, effective time, policy and qualified evidence constrain stewardship."
+    },
+    {
+      "target": "booking",
+      "type": "information-exchange",
+      "rationale": "Reservation eligibility, place, operational site and transport evidence do not transfer custody or title."
+    },
+    {
+      "target": "location",
+      "type": "information-exchange",
+      "rationale": "Reservation eligibility, place, operational site and transport evidence do not transfer custody or title."
+    },
+    {
+      "target": "facility",
+      "type": "information-exchange",
+      "rationale": "Reservation eligibility, place, operational site and transport evidence do not transfer custody or title."
+    },
+    {
+      "target": "logistics",
+      "type": "information-exchange",
+      "rationale": "Reservation eligibility, place, operational site and transport evidence do not transfer custody or title."
+    },
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Source-owned documents and bytes are referenced rather than duplicated."
+    },
+    {
+      "target": "media",
+      "type": "information-exchange",
+      "rationale": "Source-owned documents and bytes are referenced rather than duplicated."
+    },
+    {
+      "target": "storage",
+      "type": "information-exchange",
+      "rationale": "Source-owned documents and bytes are referenced rather than duplicated."
+    },
+    {
+      "target": "integrations",
+      "type": "information-exchange",
+      "rationale": "Optional external asset authority requires controlled scope and reconciliation."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Evidence custody, diagnostics and derived reports remain independent."
+    },
+    {
+      "target": "logging",
+      "type": "information-exchange",
+      "rationale": "Evidence custody, diagnostics and derived reports remain independent."
+    },
+    {
+      "target": "observability",
+      "type": "information-exchange",
+      "rationale": "Evidence custody, diagnostics and derived reports remain independent."
+    },
+    {
+      "target": "reporting",
+      "type": "information-exchange",
+      "rationale": "Evidence custody, diagnostics and derived reports remain independent."
+    },
+    {
+      "target": "office",
+      "type": "information-exchange",
+      "rationale": "Optional host composition presents authorised asset information in group/place context."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0002",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0017",
+    "ADR-0018",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Specialist asset and stock-conversion protocols",
+      "reason": "Approved responsibility boundaries require precise type-specific handover and external authority contracts before implementation."
+    }
+  ]
+}

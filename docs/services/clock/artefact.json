@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "clock",
+  "name": "Clock",
+  "description": "Provides deterministic instant, calendar, zone, DST, arithmetic, comparison and formatting semantics plus trusted time-provider interface.",
+  "kind": "service",
+  "subtype": "service",
+  "classification": "foundation",
+  "ownership": "technical",
+  "designRecord": "docs/services/clock/services-record.md",
+  "provides": [
+    {
+      "id": "current-time",
+      "type": "service",
+      "description": "current time within the stated ownership boundary."
+    },
+    {
+      "id": "temporal-validation",
+      "type": "service",
+      "description": "temporal validation within the stated ownership boundary."
+    },
+    {
+      "id": "temporal-arithmetic",
+      "type": "service",
+      "description": "temporal arithmetic within the stated ownership boundary."
+    },
+    {
+      "id": "temporal-formatting",
+      "type": "service",
+      "description": "temporal formatting within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "infrastructure",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

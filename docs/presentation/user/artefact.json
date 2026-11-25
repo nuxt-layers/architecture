@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "user",
+  "name": "User",
+  "description": "Presents group-scoped people, memberships, invitations and access summaries through IAM contracts; owns transient UI state only.",
+  "kind": "presentation",
+  "subtype": "presentation-kit",
+  "classification": "presentation",
+  "ownership": "none",
+  "designRecord": "docs/presentation/user/presentation-record.md",
+  "provides": [
+    {
+      "id": "user-administration",
+      "type": "presentation",
+      "description": "user administration within the stated ownership boundary."
+    },
+    {
+      "id": "membership-presentation",
+      "type": "presentation",
+      "description": "membership presentation within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "identity",
+      "optional": false,
+      "rationale": "Authoritative group and membership records.",
+      "scope": "Group administration"
+    },
+    {
+      "id": "authentication",
+      "optional": false,
+      "rationale": "Trusted caller and assurance.",
+      "scope": "Protected group management"
+    },
+    {
+      "id": "authorisation",
+      "optional": false,
+      "rationale": "Resource-specific access decisions.",
+      "scope": "Protected group management"
+    },
+    {
+      "id": "profile",
+      "optional": true,
+      "rationale": "Permitted profile labels and personal detail.",
+      "scope": "Person detail",
+      "absenceMode": "Show only authorised available information."
+    }
+  ],
+  "relationships": [
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "profile",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "iam-integration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "ui",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

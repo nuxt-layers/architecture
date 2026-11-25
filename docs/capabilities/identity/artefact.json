@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "identity",
+  "name": "Identity",
+  "description": "Owns opaque principals, standing, tenants, groups, memberships and digital governance lifecycle.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "foundation",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/identity/capability-record.md",
+  "provides": [
+    {
+      "id": "principal-lifecycle",
+      "type": "service",
+      "description": "principal lifecycle within the stated ownership boundary."
+    },
+    {
+      "id": "tenant-governance",
+      "type": "service",
+      "description": "tenant governance within the stated ownership boundary."
+    },
+    {
+      "id": "group-lifecycle",
+      "type": "service",
+      "description": "group lifecycle within the stated ownership boundary."
+    },
+    {
+      "id": "membership-management",
+      "type": "service",
+      "description": "membership management within the stated ownership boundary."
+    },
+    {
+      "id": "standing-query",
+      "type": "service",
+      "description": "standing query within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "authentication",
+      "optional": true,
+      "rationale": "Verified caller and session assurance; bootstrap is separately governed.",
+      "scope": "Protected interactive changes",
+      "absenceMode": "Refuse or require step-up."
+    },
+    {
+      "id": "authorisation",
+      "optional": true,
+      "rationale": "Independent resource-specific decisions protect access and mutation.",
+      "scope": "Protected access and mutation",
+      "absenceMode": "Deny or report unavailable."
+    },
+    {
+      "id": "configuration",
+      "optional": true,
+      "rationale": "Effective bounded settings where applicable.",
+      "scope": "Configurable policies",
+      "absenceMode": "Use approved secure defaults; refuse if policy is mandatory."
+    }
+  ],
+  "relationships": [
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "profile",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "party",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Detailed interface and dependency mapping",
+      "reason": "Conceptual discovery summary; exact selected-host bindings and reciprocal approval require reconciliation."
+    }
+  ]
+}

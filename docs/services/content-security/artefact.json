@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "content-security",
+  "name": "Content Security",
+  "description": "Owns technical content threat assessment requests, qualified scanner findings, limitations and rescanning; source owners retain enforcement.",
+  "kind": "service",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "technical",
+  "designRecord": "docs/services/content-security/services-record.md",
+  "provides": [
+    {
+      "id": "assessment-request",
+      "type": "service",
+      "description": "assessment request within the stated ownership boundary."
+    },
+    {
+      "id": "scanner-finding",
+      "type": "service",
+      "description": "scanner finding within the stated ownership boundary."
+    },
+    {
+      "id": "rescan",
+      "type": "service",
+      "description": "rescan within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "comments-engine",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "media",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "storage",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "moderation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "integrations",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

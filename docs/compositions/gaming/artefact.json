@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "gaming",
+  "name": "Gaming",
+  "description": "Composes independent games into a themed portal with catalogue, launch and qualified leaderboard presentation; gameplay remains game-owned.",
+  "kind": "composition",
+  "subtype": "application",
+  "classification": "presentation",
+  "ownership": "technical",
+  "designRecord": "docs/compositions/gaming/compositions-record.md",
+  "provides": [
+    {
+      "id": "game-registration",
+      "type": "service",
+      "description": "game registration within the stated ownership boundary."
+    },
+    {
+      "id": "game-launch",
+      "type": "service",
+      "description": "game launch within the stated ownership boundary."
+    },
+    {
+      "id": "leaderboard",
+      "type": "service",
+      "description": "leaderboard within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "application-composition",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "ui",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "theme-manager",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "moderation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Qualified leaderboard state boundary",
+      "reason": "Composition classification retained; game source authority remains separate."
+    }
+  ]
+}

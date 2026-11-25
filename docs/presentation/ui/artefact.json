@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "ui",
+  "name": "UI",
+  "description": "Supplies generic accessible localisable presentation components and safe rich-text rendering without business state.",
+  "kind": "presentation",
+  "subtype": "presentation-kit",
+  "classification": "presentation",
+  "ownership": "none",
+  "designRecord": "docs/presentation/ui/presentation-record.md",
+  "provides": [
+    {
+      "id": "component-library",
+      "type": "presentation",
+      "description": "component library within the stated ownership boundary."
+    },
+    {
+      "id": "interaction-primitives",
+      "type": "presentation",
+      "description": "interaction primitives within the stated ownership boundary."
+    },
+    {
+      "id": "rich-text-rendering",
+      "type": "presentation",
+      "description": "rich text rendering within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "theme-manager",
+      "optional": true,
+      "rationale": "Effective semantic tokens through host.",
+      "scope": "Styled components",
+      "absenceMode": "Safe usable unstyled display."
+    }
+  ],
+  "relationships": [
+    {
+      "target": "theme-manager",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "rich-text",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "localisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

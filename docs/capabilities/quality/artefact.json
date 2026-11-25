@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "quality",
+  "name": "Quality",
+  "description": "Owns inspection plans, tests, findings, non-conformances, technical quality disposition and corrective action evidence.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/quality/capability-record.md",
+  "provides": [
+    {
+      "id": "quality-plan",
+      "type": "service",
+      "description": "quality plan within the stated ownership boundary."
+    },
+    {
+      "id": "inspection",
+      "type": "service",
+      "description": "inspection within the stated ownership boundary."
+    },
+    {
+      "id": "non-conformance",
+      "type": "service",
+      "description": "non conformance within the stated ownership boundary."
+    },
+    {
+      "id": "quality-disposition",
+      "type": "service",
+      "description": "quality disposition within the stated ownership boundary."
+    },
+    {
+      "id": "corrective-action",
+      "type": "service",
+      "description": "corrective action within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "manufacturing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "inventory",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "warehouse",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "asset",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "party",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

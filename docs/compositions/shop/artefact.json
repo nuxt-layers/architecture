@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "shop",
+  "name": "Shop",
+  "description": "Composes product discovery, basket, checkout and customer or seller journeys without owning commerce records.",
+  "kind": "composition",
+  "subtype": "application",
+  "classification": "presentation",
+  "ownership": "none",
+  "designRecord": "docs/compositions/shop/compositions-record.md",
+  "provides": [
+    {
+      "id": "storefront",
+      "type": "service",
+      "description": "storefront within the stated ownership boundary."
+    },
+    {
+      "id": "checkout-presentation",
+      "type": "service",
+      "description": "checkout presentation within the stated ownership boundary."
+    },
+    {
+      "id": "seller-views",
+      "type": "service",
+      "description": "seller views within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "pricing",
+      "optional": true,
+      "rationale": "Authoritative price needed to present a valid price.",
+      "scope": "Priced offers",
+      "absenceMode": "Do not display fabricated current prices."
+    },
+    {
+      "id": "order",
+      "optional": true,
+      "rationale": "Ordinary sale acceptance requires Order; alternate commitment source separately governed.",
+      "scope": "Ordinary sales",
+      "absenceMode": "Catalogue/enquiry-only or explicit hold."
+    },
+    {
+      "id": "marketplace",
+      "optional": true,
+      "rationale": "Multi-seller venue/listing authority.",
+      "scope": "Multi-seller mode",
+      "absenceMode": "Single-seller mode remains independent."
+    }
+  ],
+  "relationships": [
+    {
+      "target": "product",
+      "type": "composition",
+      "rationale": "Selected catalogue owner."
+    },
+    {
+      "target": "publisher",
+      "type": "composition",
+      "rationale": "Selected published-content owner."
+    },
+    {
+      "target": "pricing",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "shopping-basket",
+      "type": "composition",
+      "rationale": "Selected persistent intent owner."
+    },
+    {
+      "target": "checkout",
+      "type": "composition",
+      "rationale": "Selected purchase confirmation and recovery owner."
+    },
+    {
+      "target": "order",
+      "type": "composition",
+      "rationale": "Selected commercial commitment owner."
+    },
+    {
+      "target": "marketplace",
+      "type": "composition",
+      "rationale": "Optional multi-seller composition."
+    },
+    {
+      "target": "ui",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "theme-manager",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

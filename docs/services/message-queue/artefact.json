@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "message-queue",
+  "name": "Message Queue",
+  "description": "Owns durable transport custody, subscriptions, attempts, acknowledgements and replay of committed source outbox messages; source events remain owner-controlled.",
+  "kind": "service",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "technical",
+  "designRecord": "docs/services/message-queue/services-record.md",
+  "provides": [
+    {
+      "id": "message-handoff",
+      "type": "service",
+      "description": "message handoff within the stated ownership boundary."
+    },
+    {
+      "id": "subscription-routing",
+      "type": "service",
+      "description": "subscription routing within the stated ownership boundary."
+    },
+    {
+      "id": "consumer-acknowledgement",
+      "type": "service",
+      "description": "consumer acknowledgement within the stated ownership boundary."
+    },
+    {
+      "id": "message-replay",
+      "type": "service",
+      "description": "message replay within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "scheduler",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "temporal-gateway",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "infrastructure",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "observability",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

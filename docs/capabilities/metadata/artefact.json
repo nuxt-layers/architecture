@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "metadata",
+  "name": "Metadata",
+  "description": "Owns governed terms, taxonomies, ontologies, semantic relationships and opted-in assignments without owning classified source resources.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "platform",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/metadata/capability-record.md",
+  "provides": [
+    {
+      "id": "vocabulary-governance",
+      "type": "service",
+      "description": "vocabulary governance within the stated ownership boundary."
+    },
+    {
+      "id": "semantic-relationship",
+      "type": "service",
+      "description": "semantic relationship within the stated ownership boundary."
+    },
+    {
+      "id": "classification-assignment",
+      "type": "service",
+      "description": "classification assignment within the stated ownership boundary."
+    },
+    {
+      "id": "semantic-query",
+      "type": "service",
+      "description": "semantic query within the stated ownership boundary."
+    },
+    {
+      "id": "reasoning-result",
+      "type": "service",
+      "description": "reasoning result within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "product",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "course",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "media",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "search",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "localisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

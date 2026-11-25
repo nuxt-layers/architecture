@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "authorisation",
+  "name": "Authorisation",
+  "description": "Owns resource-aware access decisions, permission policies, roles, grants and access review; does not authenticate or own protected resources.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "foundation",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/authorisation/capability-record.md",
+  "provides": [
+    {
+      "id": "access-decision",
+      "type": "service",
+      "description": "access decision within the stated ownership boundary."
+    },
+    {
+      "id": "permission-policy",
+      "type": "service",
+      "description": "permission policy within the stated ownership boundary."
+    },
+    {
+      "id": "role-management",
+      "type": "service",
+      "description": "role management within the stated ownership boundary."
+    },
+    {
+      "id": "grant-management",
+      "type": "service",
+      "description": "grant management within the stated ownership boundary."
+    },
+    {
+      "id": "access-review",
+      "type": "service",
+      "description": "access review within the stated ownership boundary."
+    }
+  ],
+  "requires": [
+    {
+      "id": "clock",
+      "optional": false,
+      "rationale": "Trusted time semantics are essential; a structurally equivalent host port is permitted.",
+      "scope": "Expiry, freshness and assurance",
+      "interface": "current-time"
+    }
+  ],
+  "relationships": [
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "authentication",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "privacy",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    },
+    {
+      "target": "clock",
+      "type": "information-exchange",
+      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Detailed interface and dependency mapping",
+      "reason": "Conceptual discovery summary; exact selected-host bindings and reciprocal approval require reconciliation."
+    }
+  ]
+}

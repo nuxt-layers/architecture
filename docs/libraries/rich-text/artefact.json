@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "rich-text",
+  "name": "Rich Text",
+  "description": "Defines restricted Markdown profiles, deterministic validation and safe structured content trees; owns no content records.",
+  "kind": "library",
+  "subtype": "stateless",
+  "classification": "technical",
+  "ownership": "none",
+  "designRecord": "docs/libraries/rich-text/stateless-library-record.md",
+  "provides": [
+    {
+      "id": "validate-rich-text",
+      "type": "service",
+      "description": "validate rich text within the stated ownership boundary."
+    },
+    {
+      "id": "normalise-rich-text",
+      "type": "service",
+      "description": "normalise rich text within the stated ownership boundary."
+    },
+    {
+      "id": "safe-content-tree",
+      "type": "service",
+      "description": "safe content tree within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "content-editor",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "ui",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "export",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": []
+}

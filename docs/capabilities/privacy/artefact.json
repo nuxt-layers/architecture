@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "privacy",
+  "name": "Privacy",
+  "description": "Owns specialist privacy policies, choices, consent where required, disclosure constraints and rights coordination without absorbing source records.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "foundation",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/privacy/capability-record.md",
+  "provides": [
+    {
+      "id": "privacy-policy",
+      "type": "service",
+      "description": "privacy policy within the stated ownership boundary."
+    },
+    {
+      "id": "consent-choice",
+      "type": "service",
+      "description": "consent choice within the stated ownership boundary."
+    },
+    {
+      "id": "disclosure-constraint",
+      "type": "service",
+      "description": "disclosure constraint within the stated ownership boundary."
+    },
+    {
+      "id": "rights-request",
+      "type": "service",
+      "description": "rights request within the stated ownership boundary."
+    },
+    {
+      "id": "retention-coordination",
+      "type": "service",
+      "description": "retention coordination within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "profile",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "audit",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

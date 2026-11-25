@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "qualification",
+  "name": "Qualification",
+  "description": "Owns qualification schemes, evidence admissibility, authorised local formal award decisions, appeals, corrections and withdrawal.",
+  "kind": "capability",
+  "subtype": "service",
+  "classification": "domain",
+  "ownership": "domain",
+  "designRecord": "docs/capabilities/qualification/capability-record.md",
+  "provides": [
+    {
+      "id": "scheme-definition",
+      "type": "service",
+      "description": "scheme definition within the stated ownership boundary."
+    },
+    {
+      "id": "award-eligibility",
+      "type": "service",
+      "description": "award eligibility within the stated ownership boundary."
+    },
+    {
+      "id": "award-decision",
+      "type": "service",
+      "description": "award decision within the stated ownership boundary."
+    },
+    {
+      "id": "award-appeal",
+      "type": "service",
+      "description": "award appeal within the stated ownership boundary."
+    },
+    {
+      "id": "award-history",
+      "type": "service",
+      "description": "award history within the stated ownership boundary."
+    }
+  ],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "assessment",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "training",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "course",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "enrolment",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "verification",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "credentials",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    },
+    {
+      "target": "legal-compliance",
+      "type": "information-exchange",
+      "rationale": "Source-owned public cooperation; see canonical record."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Exact interface and dependency bindings",
+      "reason": "Selected-host contract and reciprocal relationship reconciliation required; no package dependency inferred."
+    }
+  ]
+}

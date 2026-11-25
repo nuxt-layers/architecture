@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "profile": "conceptual",
+  "id": "discovery",
+  "name": "Discovery",
+  "description": "Defines declared artefact inventory, compatibility and relationship validation, separate from installation, readiness and authorisation.",
+  "kind": "architecture",
+  "subtype": "governance",
+  "classification": "governance",
+  "ownership": "none",
+  "designRecord": "docs/architecture/discovery.md",
+  "provides": [],
+  "requires": [],
+  "relationships": [
+    {
+      "target": "application-composition",
+      "type": "information-exchange",
+      "rationale": "Host generates inventory from explicitly selected trusted artefacts."
+    },
+    {
+      "target": "identity",
+      "type": "information-exchange",
+      "rationale": "Discovery must distinguish refusal-only operation and trusted identity context."
+    },
+    {
+      "target": "authorisation",
+      "type": "information-exchange",
+      "rationale": "Per-operation permission remains independently evaluated."
+    },
+    {
+      "target": "publisher",
+      "type": "information-exchange",
+      "rationale": "Document-type registration remains source-owned."
+    },
+    {
+      "target": "configuration",
+      "type": "information-exchange",
+      "rationale": "Declarations and effective values remain source-owned."
+    }
+  ],
+  "governingDecisions": [
+    "ADR-0001",
+    "ADR-0004",
+    "ADR-0010",
+    "ADR-0012",
+    "ADR-0016",
+    "ADR-0019"
+  ],
+  "unresolvedRelationships": [
+    {
+      "description": "Selected-host contract, package and extension graphs",
+      "reason": "Actual dependencies and compatibility require implemented contract and host evidence; conceptual information exchanges do not prove them."
+    }
+  ]
+}

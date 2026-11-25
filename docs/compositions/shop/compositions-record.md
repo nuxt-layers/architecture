@@ -84,7 +84,7 @@ No raw baskets, credentials, session tokens, provider exceptions, payment instru
 
 ## 5. GUI and representative application test host
 
-Shop **needs storefront screens** and normally a **protected shop administration entry point**; neither requires a standalone Shop service. The verified [application test template](https://github.com/nuxt-layers-test/application-test-template) provides homepage `/` (no admin sidebar), `/admin` dashboard, responsive/collapsible **Capabilities → Theme Manager** sidebar and top-bar Appearance/theme controls. Its `Not signed in` placeholder and Theme Manager's unauthenticated local `test` mode are **not suitable for public Shop management**. The [Theme Manager host contract](https://github.com/nuxt-layers/theme-manager/blob/master/CONTRACT.md) has an existing ADR-0012 integration gap; do not infer Shop runtime readiness from the local template.
+Shop **needs storefront screens** and normally a **protected shop administration entry point**; neither requires a standalone Shop service. The verified [application test template](../../../RESOURCES.md#ref-f1f7cc47) provides homepage `/` (no admin sidebar), `/admin` dashboard, responsive/collapsible **Capabilities → Theme Manager** sidebar and top-bar Appearance/theme controls. Its `Not signed in` placeholder and Theme Manager's unauthenticated local `test` mode are **not suitable for public Shop management**. The [Theme Manager host contract](../../../RESOURCES.md#ref-484ee610) has an existing ADR-0012 integration gap; do not infer Shop runtime readiness from the local template.
 
 **Recommended host-owned navigation:** sibling **Capabilities → Shop** sidebar item and optional `/admin` capability card, opening a protected, illustrative `/admin/shop` dashboard; separately `/shop` for the customer-facing storefront. These are **example routes, not published API paths**. The host controls identity/branding, theme and route mounting; server-side owners enforce access on every protected action. Avoid using `/shop` for both public and administration.
 
@@ -109,14 +109,14 @@ Shop **needs storefront screens** and normally a **protected shop administration
 
 | Standard / law | Conceptual design use and ownership |
 |---|---|
-| **W3C WCAG 2.2 AA, semantic HTML, WAI-ARIA 1.2** ([W3C](https://www.w3.org/TR/WCAG22/)) | Accessible browsing, filtering, checkout, recovery and management; native HTML first, ARIA where needed |
-| **OWASP ASVS 5, ISO/IEC 27001:2022** ([OWASP](https://asvs.owasp.org/)) | Adopt platform security governance and source-owner controls; no Shop-owned parallel policy engine |
-| **ISO/IEC 27701:2025, UK GDPR/GDPR, UK PECR** ([ICO](https://ico.org.uk/)) | Privacy by design, lawful data use, basket/cookie separation, purpose, sharing, erasure and retention through Privacy/Legal |
-| **PCI DSS v4.x, PCI SSC ecommerce payment-page guidance** ([PCI SSC](https://www.pcisecuritystandards.org/)) | Payment-provider/Gateway controls and host-page scripts; actual card-data scope must be assessed |
-| **UK Consumer Rights Act 2015; Consumer Contracts Regulations 2013; UK DMCC Act 2024/CMA guidance** ([UK legislation](https://www.legislation.gov.uk/)) | Qualified seller, total price/fees, delivery, confirmation, cancellation/returns, honest reviews/discounts and non-deceptive checkout |
-| **ETSI EN 301 549, EU European Accessibility Act and Digital Services Act** ([ETSI](https://www.etsi.org/), [EUR-Lex](https://eur-lex.europa.eu/)) | Conditional accessibility/trader disclosures when the deployment and marketplace role fall within scope; standard publication and legally harmonised edition are not interchangeable |
-| **Schema.org Product/Offer/OfferShippingDetails/MerchantReturnPolicy, relevant search guidelines** ([Schema.org](https://schema.org/)) | SEO/Publisher present only public, current and visually consistent authoritative product, seller, price, shipping and return facts |
-| **IETF RFC 9110 and 9457; OpenAPI/JSON Schema for actual HTTP interfaces** ([RFC 9457](https://www.rfc-editor.org/rfc/rfc9457)) | Typed public errors, correct HTTP/caching/idempotency and versioned contracts; no new API required solely for documentation |
+| **W3C WCAG 2.2 AA, semantic HTML, WAI-ARIA 1.2** ([W3C](../../../RESOURCES.md#ref-0d1f555e)) | Accessible browsing, filtering, checkout, recovery and management; native HTML first, ARIA where needed |
+| **OWASP ASVS 5, ISO/IEC 27001:2022** ([OWASP](../../../RESOURCES.md#ref-a1c367d2)) | Adopt platform security governance and source-owner controls; no Shop-owned parallel policy engine |
+| **ISO/IEC 27701:2025, UK GDPR/GDPR, UK PECR** ([ICO](../../../RESOURCES.md#ref-6086d074)) | Privacy by design, lawful data use, basket/cookie separation, purpose, sharing, erasure and retention through Privacy/Legal |
+| **PCI DSS v4.x, PCI SSC ecommerce payment-page guidance** ([PCI SSC](../../../RESOURCES.md#ref-eb8cbb26)) | Payment-provider/Gateway controls and host-page scripts; actual card-data scope must be assessed |
+| **UK Consumer Rights Act 2015; Consumer Contracts Regulations 2013; UK DMCC Act 2024/CMA guidance** ([UK legislation](../../../RESOURCES.md#ref-472de5bf)) | Qualified seller, total price/fees, delivery, confirmation, cancellation/returns, honest reviews/discounts and non-deceptive checkout |
+| **ETSI EN 301 549, EU European Accessibility Act and Digital Services Act** ([ETSI](../../../RESOURCES.md#ref-19a33201), [EUR-Lex](../../../RESOURCES.md#ref-c887e4a3)) | Conditional accessibility/trader disclosures when the deployment and marketplace role fall within scope; standard publication and legally harmonised edition are not interchangeable |
+| **Schema.org Product/Offer/OfferShippingDetails/MerchantReturnPolicy, relevant search guidelines** ([Schema.org](../../../RESOURCES.md#ref-30a88a32)) | SEO/Publisher present only public, current and visually consistent authoritative product, seller, price, shipping and return facts |
+| **IETF RFC 9110 and 9457; OpenAPI/JSON Schema for actual HTTP interfaces** ([RFC 9457](../../../RESOURCES.md#ref-7754416d)) | Typed public errors, correct HTTP/caching/idempotency and versioned contracts; no new API required solely for documentation |
 | **ISO 4217; ISO 8601/Clock; BCP 47/Unicode** | Qualified currency/time/language semantics; Pricing, Clock and Localisation retain their authority |
 
 Legal Compliance determines applicability by seller, channel, jurisdiction, buyer and product; regulations for marketplaces, subscriptions or regulated products are **conditional**, not universally mandatory. Preserve visible evidence and qualified uncertainty. No standard transfers authoritative business ownership into Shop.
@@ -127,15 +127,15 @@ Legal Compliance determines applicability by seller, channel, jurisdiction, buye
 
 | Candidate | Licence | Decision |
 |---|---|---|
-| [Nuxt 4](https://github.com/nuxt/nuxt), [Vue 3](https://github.com/vuejs/core), [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | MIT | **Existing foundation**; reuse rather than add Shop infrastructure |
-| [Nuxt UI v4](https://github.com/nuxt/ui) | MIT | Prefer shared UI/Theme Manager; add only if not already supplied. Check actual package, accessibility and CSS integration |
-| [Zod](https://github.com/colinhacks/zod) | MIT | Prefer a common contract-validation layer; never use shape validation in place of domain rules or authorisation |
-| [VeeValidate](https://github.com/logaretm/vee-validate) | MIT | Optional complex checkout/management form state and errors |
-| [TanStack Vue Query](https://github.com/TanStack/query) | MIT | Optional server-state cache only where Nuxt data utilities are insufficient; never cache stale commitments as promises |
-| [ofetch](https://github.com/unjs/ofetch), [Unhead](https://github.com/unjs/unhead) | MIT | Prefer Nuxt built-ins for HTTP/SSR head/metadata |
-| [Vue I18n](https://github.com/intlify/vue-i18n) | MIT | Via shared Localisation rather than a second language store |
-| [Reka UI](https://github.com/unovue/reka-ui), [VueUse](https://github.com/vueuse/vueuse), [Floating UI](https://github.com/floating-ui/floating-ui) | MIT | Optional accessibility/composition helpers only if existing UI does not already include them |
-| [Lucide](https://github.com/lucide-icons/lucide) | ISC | Optional icons through existing UI abstraction |
+| [Nuxt 4](../../../RESOURCES.md#ref-b554353a), [Vue 3](../../../RESOURCES.md#ref-cf2779ac), [Tailwind CSS](../../../RESOURCES.md#ref-d67bae77) | MIT | **Existing foundation**; reuse rather than add Shop infrastructure |
+| [Nuxt UI v4](../../../RESOURCES.md#ref-b0f34541) | MIT | Prefer shared UI/Theme Manager; add only if not already supplied. Check actual package, accessibility and CSS integration |
+| [Zod](../../../RESOURCES.md#ref-1e3efac4) | MIT | Prefer a common contract-validation layer; never use shape validation in place of domain rules or authorisation |
+| [VeeValidate](../../../RESOURCES.md#ref-bd5a7590) | MIT | Optional complex checkout/management form state and errors |
+| [TanStack Vue Query](../../../RESOURCES.md#ref-51cb5e45) | MIT | Optional server-state cache only where Nuxt data utilities are insufficient; never cache stale commitments as promises |
+| [ofetch](../../../RESOURCES.md#ref-e2925973), [Unhead](../../../RESOURCES.md#ref-1a0ac221) | MIT | Prefer Nuxt built-ins for HTTP/SSR head/metadata |
+| [Vue I18n](../../../RESOURCES.md#ref-4941c780) | MIT | Via shared Localisation rather than a second language store |
+| [Reka UI](../../../RESOURCES.md#ref-12355446), [VueUse](../../../RESOURCES.md#ref-9507482e), [Floating UI](../../../RESOURCES.md#ref-07622d6a) | MIT | Optional accessibility/composition helpers only if existing UI does not already include them |
+| [Lucide](../../../RESOURCES.md#ref-c5624441) | ISC | Optional icons through existing UI abstraction |
 
 Do **not** add a complete external ecommerce engine, competing design system, Shop database or extra graph/cache/search server solely for the composition. Avoid Neo4j, Redis and Elasticsearch under the owner's specified complete-source/no-open-core restrictions. Keep provider integrations in Integrations or their owning capabilities. Evaluate SSR performance, WCAG, tree-shaking, dependency advisories, maintenance and commercial attribution; no global installs or implementation changes follow from this shortlist.
 

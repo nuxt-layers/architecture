@@ -1960,3 +1960,139 @@ Imported design citations are retained here for provenance. External availabilit
 ### ref-f076dce5
 
 [ARIA APG](https://www.w3.org/WAI/ARIA/apg/) — imported reference; verification pending.
+
+### ref-a097180d
+
+[OWASP Micro Frontend Security](https://cheatsheetseries.owasp.org/cheatsheets/Micro_Frontend_Security_Cheat_Sheet.html) — imported reference; verification pending.
+
+### ref-05da9414
+
+[MDN postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) — imported reference; verification pending.
+
+### ref-c887e4a3
+
+[EUR-Lex](https://eur-lex.europa.eu/) — imported reference; verification pending.
+
+### ref-8cbc6f4a
+
+[Colyseus](https://github.com/colyseus/colyseus) — imported reference; verification pending.
+
+### ref-07622d6a
+
+[Floating UI](https://github.com/floating-ui/floating-ui) — imported reference; verification pending.
+
+### ref-2c4519a8
+
+[howler.js](https://github.com/goldfire/howler.js) — imported reference; verification pending.
+
+### ref-4941c780
+
+[Vue I18n](https://github.com/intlify/vue-i18n) — imported reference; verification pending.
+
+### ref-ff99b3e5
+
+[KAPLAY](https://github.com/kaplayjs/kaplay) — imported reference; verification pending.
+
+### ref-c5624441
+
+[Lucide](https://github.com/lucide-icons/lucide) — imported reference; verification pending.
+
+### ref-8b79b6db
+
+[Matter.js](https://github.com/matter-js/matter.js) — imported reference; verification pending.
+
+### ref-d271ccbf
+
+[Authentication](https://github.com/nuxt-layers/authentication/blob/master/CONTRACT.md) — imported reference; verification pending.
+
+### ref-4753322f
+
+[Authorisation](https://github.com/nuxt-layers/authorisation/blob/master/CONTRACT.md) — imported reference; verification pending.
+
+### ref-59d75cad
+
+[Identity](https://github.com/nuxt-layers/identity/blob/master/CONTRACT.md) — imported reference; verification pending.
+
+### ref-b554353a
+
+[Nuxt 4](https://github.com/nuxt/nuxt) — imported reference; verification pending.
+
+### ref-b0f34541
+
+[Nuxt UI v4](https://github.com/nuxt/ui) — imported reference; verification pending.
+
+### ref-f6bc94d9
+
+[OWASP ASVS 5.0](https://github.com/OWASP/ASVS/tree/master/5.0) — imported reference; verification pending.
+
+### ref-224449af
+
+[Phaser](https://github.com/phaserjs/phaser) — imported reference; verification pending.
+
+### ref-28692586
+
+[PixiJS](https://github.com/pixijs/pixijs) — imported reference; verification pending.
+
+### ref-0286fae8
+
+[p-retry](https://github.com/sindresorhus/p-retry) — imported reference; verification pending.
+
+### ref-d67bae77
+
+[Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) — imported reference; verification pending.
+
+### ref-e2925973
+
+[ofetch](https://github.com/unjs/ofetch) — imported reference; verification pending.
+
+### ref-1a0ac221
+
+[Unhead](https://github.com/unjs/unhead) — imported reference; verification pending.
+
+### ref-cf2779ac
+
+[Vue 3](https://github.com/vuejs/core) — imported reference; verification pending.
+
+### ref-c1b4f35f
+
+[UK NCSC secure design](https://www.ncsc.gov.uk/collection/software-security-code-of-practice-implementation-guidance/theme-1-secure-design-development) — imported reference; verification pending.
+
+### ref-eb8cbb26
+
+[PCI SSC](https://www.pcisecuritystandards.org/) — imported reference; verification pending.
+
+### ref-30c13a68
+
+[RFC 10051](https://www.rfc-editor.org/rfc/rfc10051.html) — imported reference; verification pending.
+
+### ref-3379bb69
+
+[RFC 3339](https://www.rfc-editor.org/rfc/rfc3339.html) — imported reference; verification pending.
+
+### ref-7d20fd52
+
+[RFC 4791 CalDAV](https://www.rfc-editor.org/rfc/rfc4791.html) — imported reference; verification pending.
+
+### ref-bb0f57a8
+
+[RFC 5545 `VTODO`](https://www.rfc-editor.org/rfc/rfc5545.html) — imported reference; verification pending.
+
+### ref-affc95fc
+
+[SCIM RFC 7643](https://www.rfc-editor.org/rfc/rfc7643) — imported reference; verification pending.
+
+### ref-aefc9469
+
+[RFC 7644](https://www.rfc-editor.org/rfc/rfc7644) — imported reference; verification pending.
+
+### ref-0b86704e
+
+[RFC 8984 JSCalendar](https://www.rfc-editor.org/rfc/rfc8984.html) — imported reference; verification pending.
+
+### ref-a17e8f95
+
+[RFC 9557](https://www.rfc-editor.org/rfc/rfc9557.html) — imported reference; verification pending.
+
+### ref-7ea69d75
+
+[W3C i18n](https://www.w3.org/TR/international-specs/) — imported reference; verification pending.

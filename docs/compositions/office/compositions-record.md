@@ -81,7 +81,7 @@ The host calls source owners through **public interfaces**. Sources do **not** i
 
 ## Optional GUI, host integration and headless mode
 
-**Verified reference (22 November 2026):** [`nuxt-layers-test/application-test-template`](https://github.com/nuxt-layers-test/application-test-template) `master` provides a home page `/` without a sidebar, an administrative `/admin` test dashboard, a collapsible **Capabilities** sidebar, responsive mobile navigation, header Appearance menu and a deliberate `Not signed in` placeholder. `app/app.vue` contains **hard-coded navigation**, not a public capability-menu registry. The template composes Theme Manager only in **local, unauthenticated test mode**, never suitable for public deployment. [Theme Manager](https://github.com/nuxt-layers/theme-manager/blob/master/CONTRACT.md) currently provides `/theme-manager` library and edit pages, public semantic theme tokens and a logo; its root contract also documents unresolved ADR-0012 production host-integration gaps. Do not import private Theme Manager utilities or infer production IAM from its test fixture.
+**Verified reference (22 November 2026):** [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#ref-f1f7cc47) `master` provides a home page `/` without a sidebar, an administrative `/admin` test dashboard, a collapsible **Capabilities** sidebar, responsive mobile navigation, header Appearance menu and a deliberate `Not signed in` placeholder. `app/app.vue` contains **hard-coded navigation**, not a public capability-menu registry. The template composes Theme Manager only in **local, unauthenticated test mode**, never suitable for public deployment. [Theme Manager](../../../RESOURCES.md#ref-484ee610) currently provides `/theme-manager` library and edit pages, public semantic theme tokens and a logo; its root contract also documents unresolved ADR-0012 production host-integration gaps. Do not import private Theme Manager utilities or infer production IAM from its test fixture.
 
 **Approved UI approach:** the **host**, not a new Office layer, adds a conditional, accessible **Capabilities → Office** sidebar item leading to an illustrative `/office` dashboard. The route is *proposed*, not published. The host checks enabled configuration/group context; **every route, panel and action also checks source permissions**, even if the sidebar link is hidden.
 
@@ -106,11 +106,11 @@ Normative platform rules govern first. External standards guide the **host or ow
 
 | Standard / body | Application |
 |---|---|
-| **[W3C WCAG 2.2 AA](https://www.w3.org/TR/WCAG22/)**, [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/), [W3C i18n](https://www.w3.org/TR/international-specs/)/BCP 47 | Accessible navigation, forms, dynamic dashboard states, language and direction; use semantic HTML first |
-| **[OWASP ASVS 5](https://asvs.owasp.org/)** L2 baseline (L3 for critical), **[ISO/IEC 27001:2022](https://www.iso.org/standard/27001)** | Validate tenant isolation, source authorisation, secure defaults and diagnostic disclosure; IAM and source owners enforce |
-| **[ISO/IEC 27701:2025](https://www.iso.org/standard/27701)**; **UK GDPR**, Data Protection Act 2018 and [ICO privacy by design](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default/) | Purpose limitation, minimisation, staff information controls, rights and retention through Privacy/Legal Compliance and source owners |
+| **[W3C WCAG 2.2 AA](../../../RESOURCES.md#ref-0d1f555e)**, [WAI-ARIA 1.2](../../../RESOURCES.md#ref-67eee3fb), [W3C i18n](../../../RESOURCES.md#ref-7ea69d75)/BCP 47 | Accessible navigation, forms, dynamic dashboard states, language and direction; use semantic HTML first |
+| **[OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2)** L2 baseline (L3 for critical), **[ISO/IEC 27001:2022](../../../RESOURCES.md#ref-42fa42bb)** | Validate tenant isolation, source authorisation, secure defaults and diagnostic disclosure; IAM and source owners enforce |
+| **[ISO/IEC 27701:2025](../../../RESOURCES.md#ref-b948c1e2)**; **UK GDPR**, Data Protection Act 2018 and [ICO privacy by design](../../../RESOURCES.md#ref-4ec87ed3) | Purpose limitation, minimisation, staff information controls, rights and retention through Privacy/Legal Compliance and source owners |
 | **ISO 9241-210:2019, ISO/IEC 25010:2023, ISO/IEC/IEEE 42010:2022** | Human-centred navigation, reliability/performance/quality and explicit architecture/ownership interfaces |
-| **Equality Act 2010; EN 301 549** where applicable; [UK NCSC secure design](https://www.ncsc.gov.uk/collection/software-security-code-of-practice-implementation-guidance/theme-1-secure-design-development) | Accessible ICT and secure operation; check current legal applicability and applicable standard edition rather than assuming harmonisation |
+| **Equality Act 2010; EN 301 549** where applicable; [UK NCSC secure design](../../../RESOURCES.md#ref-c1b4f35f) | Accessible ICT and secure operation; check current legal applicability and applicable standard edition rather than assuming harmonisation |
 | **ISO 41001:2018 (2024 amendment), ISO 41011:2024, ISO 45001:2018** | Facility management and occupational-safety context **for Facility/qualified safety owners**, not Office safety certification |
 
 ## Fully open-source library strategy
@@ -119,15 +119,15 @@ Normative platform rules govern first. External standards guide the **host or ow
 
 | Repository | Licence | Scope and decision |
 |---|---|---|
-| [Vue](https://github.com/vuejs/core), [Nuxt](https://github.com/nuxt/nuxt) | MIT | **Retain** existing frontend/host baseline |
-| [Reka UI](https://github.com/unovue/reka-ui) | MIT | Use only for missing accessible UI primitives beyond shared `ui` |
-| [TanStack Query](https://github.com/TanStack/query) | MIT | Consider only if Nuxt/native fetching cannot handle complex independent panels/caching |
-| [TanStack Table](https://github.com/TanStack/table) | MIT | Optional authorised complex tables |
-| [Zod](https://github.com/colinhacks/zod) | MIT | Conditional runtime schema validation; no duplicate Configuration authority |
-| [VueUse](https://github.com/vueuse/vueuse), [vee-validate](https://github.com/logaretm/vee-validate) | MIT | Optional reusable composition/form utilities |
-| [Apache ECharts](https://github.com/apache/echarts) | Apache-2.0 | Optional Reporting-owned charts with equivalent text/tabular information |
-| [Lucide](https://github.com/lucide-icons/lucide) | ISC | Reuse existing icon set, always with accessible names |
-| [Vue I18n](https://github.com/intlify/vue-i18n) | MIT | Consume through Localisation, not a parallel translation authority |
+| [Vue](../../../RESOURCES.md#ref-cf2779ac), [Nuxt](../../../RESOURCES.md#ref-b554353a) | MIT | **Retain** existing frontend/host baseline |
+| [Reka UI](../../../RESOURCES.md#ref-12355446) | MIT | Use only for missing accessible UI primitives beyond shared `ui` |
+| [TanStack Query](../../../RESOURCES.md#ref-51cb5e45) | MIT | Consider only if Nuxt/native fetching cannot handle complex independent panels/caching |
+| [TanStack Table](../../../RESOURCES.md#ref-af94a8b1) | MIT | Optional authorised complex tables |
+| [Zod](../../../RESOURCES.md#ref-1e3efac4) | MIT | Conditional runtime schema validation; no duplicate Configuration authority |
+| [VueUse](../../../RESOURCES.md#ref-9507482e), [vee-validate](../../../RESOURCES.md#ref-bd5a7590) | MIT | Optional reusable composition/form utilities |
+| [Apache ECharts](../../../RESOURCES.md#ref-1aa1e4a8) | Apache-2.0 | Optional Reporting-owned charts with equivalent text/tabular information |
+| [Lucide](../../../RESOURCES.md#ref-c5624441) | ISC | Reuse existing icon set, always with accessible names |
+| [Vue I18n](../../../RESOURCES.md#ref-4941c780) | MIT | Consume through Localisation, not a parallel translation authority |
 
 Keep relevant licence/NOTICE obligations (including Apache-2.0 patent and notice provisions), use reviewed stable pinned releases and CI dependency review. Do not introduce Redis, Neo4j, Elasticsearch or any new Office database, broker, index or cache service: existing host/domain infrastructure provides those functions where appropriate. Public source and licence were reviewed as conceptual candidates on 22 November 2026; no package integration or entire dependency tree is certified.
 

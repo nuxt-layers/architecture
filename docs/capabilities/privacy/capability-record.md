@@ -2,7 +2,7 @@
 
 **Identity:** `privacy` · **Classification:** Foundation · **Directory:** `docs/capabilities/privacy/` · **Conceptual status:** PRIV-01–08 and eight supplementary refinements owner-approved on 22 November 2026; not implemented · **Review:** draft PR #120 · **22 November 2026**.
 
-**Opening evidence:** [governing architecture-rules `d7f7c2ee0512`](https://github.com/nuxt-layers/architecture-rules/commit/d7f7c2ee051244b8c81325f5ff1267568d99aab1), [blueprint `361566988ac5`](https://github.com/nuxt-layers/architecture-blueprint-review/commit/361566988ac53c55f6135e8acfa46cd5b013d7a0), normative [privacy baseline](../../privacy.md), [capability standard](../../capability-standard.md) and accepted ADRs, notably ADR-0012, ADR-0017 and ADR-0018. The implementation repository `nuxt-layers/privacy` exists at `master` `e72e335f222e3c56229f6cafd78100fd1b3bdc4c`, but has only a minimal README and no root `CONTRACT.md` verified. **All interfaces below are idealised, not published runtime APIs.** Existing neighbouring conceptual decisions retain their individual approval statuses.
+**Opening evidence:** [governing architecture-rules `d7f7c2ee0512`](../../../RESOURCES.md#ref-29a27a7a), [blueprint `361566988ac5`](../../../RESOURCES.md#ref-ba586c9b), normative [privacy baseline](../../privacy.md), [capability standard](../../capability-standard.md) and accepted ADRs, notably ADR-0012, ADR-0017 and ADR-0018. The implementation repository `nuxt-layers/privacy` exists at `master` `e72e335f222e3c56229f6cafd78100fd1b3bdc4c`, but has only a minimal README and no root `CONTRACT.md` verified. **All interfaces below are idealised, not published runtime APIs.** Existing neighbouring conceptual decisions retain their individual approval statuses.
 
 ## Purpose and independent responsibility
 
@@ -122,19 +122,19 @@ These guide the **conceptual** design; they do not demonstrate legal compliance 
 
 | Source | Use in the Privacy contract |
 |---|---|
-| [UK GDPR and ICO guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/) and **Data Protection Act 2018** | Lawful basis, transparency, minimisation, accountability, rights, controller responsibility and processing records |
-| [Data (Use and Access) Act 2025](https://ico.org.uk/about-the-ico/what-we-do/legislation-we-cover/data-use-and-access-act-2025/) | UK amendments, effective-date policy revision and rights/electronic-communications qualification |
-| [PECR and ICO storage/access guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/) | Cookie/storage classification and qualified consent/exemptions before optional tracking |
-| [EU GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/) and EDPB guidance | EU controller/processor roles, rights, DPIA, processors and transfers, **when applicable** |
-| [ISO/IEC 27701:2025](https://www.iso.org/standard/27701) | Primary privacy-management/accountability reference |
-| [ISO/IEC 29100:2024](https://www.iso.org/standard/85938.html) | Common privacy terminology and principles |
-| [ISO/IEC TS 27560:2023](https://www.iso.org/standard/80392.html) | Consent scope, proof, provenance, version and withdrawal record |
-| [ISO/IEC 29134:2023](https://www.iso.org/standard/86012.html) | PIA/DPIA triggers, scope, review and risk evidence |
-| [ISO/IEC 27001:2022](https://www.iso.org/standard/27001), [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/final) | Security, privacy controls, evidence and review |
-| [ISO 31700-1:2023](https://www.iso.org/standard/84977.html), [NIST Privacy Framework](https://www.nist.gov/privacy-framework) | Privacy by design, risk governance and controls |
-| [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/) | Mandatory project accessibility baseline, AA |
-| [W3C DPV Community Group](https://www.w3.org/community/dpvcg/) | Optional shared vocabulary for processing/purposes; **not a W3C Recommendation** |
-| [W3C ODRL 2.2](https://www.w3.org/TR/odrl-model/), [IETF RFC 6265](https://www.rfc-editor.org/info/rfc6265/) | Optional machine-readable obligations and browser-cookie semantics; neither replaces privacy law |
+| [UK GDPR and ICO guidance](../../../RESOURCES.md#ref-f4808d92) and **Data Protection Act 2018** | Lawful basis, transparency, minimisation, accountability, rights, controller responsibility and processing records |
+| [Data (Use and Access) Act 2025](../../../RESOURCES.md#ref-490b08ec) | UK amendments, effective-date policy revision and rights/electronic-communications qualification |
+| [PECR and ICO storage/access guidance](../../../RESOURCES.md#ref-9cfff74f) | Cookie/storage classification and qualified consent/exemptions before optional tracking |
+| [EU GDPR](../../../RESOURCES.md#ref-240df94d) and EDPB guidance | EU controller/processor roles, rights, DPIA, processors and transfers, **when applicable** |
+| [ISO/IEC 27701:2025](../../../RESOURCES.md#ref-b948c1e2) | Primary privacy-management/accountability reference |
+| [ISO/IEC 29100:2024](../../../RESOURCES.md#ref-f7fc907f) | Common privacy terminology and principles |
+| [ISO/IEC TS 27560:2023](../../../RESOURCES.md#ref-7e7ff696) | Consent scope, proof, provenance, version and withdrawal record |
+| [ISO/IEC 29134:2023](../../../RESOURCES.md#ref-2e509cbb) | PIA/DPIA triggers, scope, review and risk evidence |
+| [ISO/IEC 27001:2022](../../../RESOURCES.md#ref-42fa42bb), [NIST SP 800-53 Rev. 5](../../../RESOURCES.md#ref-3fd80945) | Security, privacy controls, evidence and review |
+| [ISO 31700-1:2023](../../../RESOURCES.md#ref-d1c9e7cb), [NIST Privacy Framework](../../../RESOURCES.md#ref-5af1de6f) | Privacy by design, risk governance and controls |
+| [W3C WCAG 2.2](../../../RESOURCES.md#ref-0d1f555e) | Mandatory project accessibility baseline, AA |
+| [W3C DPV Community Group](../../../RESOURCES.md#ref-38ce7b0b) | Optional shared vocabulary for processing/purposes; **not a W3C Recommendation** |
+| [W3C ODRL 2.2](../../../RESOURCES.md#ref-4d3f2257), [IETF RFC 6265](../../../RESOURCES.md#ref-56be08c7) | Optional machine-readable obligations and browser-cookie semantics; neither replaces privacy law |
 
 ### Commercially permissive, complete-source development candidates
 
@@ -142,16 +142,16 @@ These guide the **conceptual** design; they do not demonstrate legal compliance 
 
 | Candidate (source) | Licence | Recommended place |
 |---|---|---|
-| [orestbida/cookieconsent](https://github.com/orestbida/cookieconsent) | MIT | Preferred optional **browser consent UI**, never authoritative consent storage |
-| [tarteaucitron.js](https://github.com/AmauriC/tarteaucitron.js) | MIT | Alternative consent UI with more service integrations |
-| [Klaro](https://github.com/kiprotect/klaro) | BSD-3-Clause | Reserve UI candidate; recheck maintenance/security before use |
-| [Zod](https://github.com/colinhacks/zod) / [Ajv](https://github.com/ajv-validator/ajv) | MIT / MIT | Choose **one** runtime public-input validator; Ajv where JSON Schema is authoritative |
-| [Kysely](https://github.com/kysely-org/kysely) / [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) | MIT / Apache-2.0 | Choose existing approved PostgreSQL persistence convention; no database types in public contract |
-| [Temporal TypeScript SDK](https://github.com/temporalio/sdk-typescript) and [server](https://github.com/temporalio/temporal) | MIT | Reuse existing Workflow/Temporal gateway for durable coordination; no second privacy engine |
-| [OpenTelemetry JS](https://github.com/open-telemetry/opentelemetry-js) | Apache-2.0 | Reuse Observability with personal-data-safe trace/metric attributes |
-| [jose](https://github.com/panva/jose) | MIT | Optional verification of imported signed evidence; do not replace Authentication |
-| [json-rules-engine](https://github.com/CacheControl/json-rules-engine) | ISC | Only if approved privacy-specific rule evaluation requires it; not a universal legal/authorisation engine |
-| [pg-boss](https://github.com/timgit/pg-boss) | MIT | Reserve job runner if platform scheduler/workflow unavailable; **not needed with current Temporal direction** |
+| [orestbida/cookieconsent](../../../RESOURCES.md#ref-008bcb87) | MIT | Preferred optional **browser consent UI**, never authoritative consent storage |
+| [tarteaucitron.js](../../../RESOURCES.md#ref-1dca5d3a) | MIT | Alternative consent UI with more service integrations |
+| [Klaro](../../../RESOURCES.md#ref-69ebde60) | BSD-3-Clause | Reserve UI candidate; recheck maintenance/security before use |
+| [Zod](../../../RESOURCES.md#ref-1e3efac4) / [Ajv](../../../RESOURCES.md#ref-a164796d) | MIT / MIT | Choose **one** runtime public-input validator; Ajv where JSON Schema is authoritative |
+| [Kysely](../../../RESOURCES.md#ref-af839a5b) / [Drizzle ORM](../../../RESOURCES.md#ref-03cb5387) | MIT / Apache-2.0 | Choose existing approved PostgreSQL persistence convention; no database types in public contract |
+| [Temporal TypeScript SDK](../../../RESOURCES.md#ref-83603142) and [server](../../../RESOURCES.md#ref-77f2db20) | MIT | Reuse existing Workflow/Temporal gateway for durable coordination; no second privacy engine |
+| [OpenTelemetry JS](../../../RESOURCES.md#ref-8e380f73) | Apache-2.0 | Reuse Observability with personal-data-safe trace/metric attributes |
+| [jose](../../../RESOURCES.md#ref-1841a1db) | MIT | Optional verification of imported signed evidence; do not replace Authentication |
+| [json-rules-engine](../../../RESOURCES.md#ref-801e24d6) | ISC | Only if approved privacy-specific rule evaluation requires it; not a universal legal/authorisation engine |
+| [pg-boss](../../../RESOURCES.md#ref-fc345c0f) | MIT | Reserve job runner if platform scheduler/workflow unavailable; **not needed with current Temporal direction** |
 
 Prefer CookieConsent, a single validator and the platform's established persistence, Temporal, IAM, Audit, Logging and Observability contracts. No all-in-one complete-source privacy framework is established here as meeting every required specialist public interface. No mandatory Redis, Elasticsearch, Neo4j, commercial SaaS, new generic policy engine or parallel orchestrator.
 
@@ -159,7 +159,7 @@ Prefer CookieConsent, a single validator and the platform's established persiste
 
 **Approved conceptual UI; not implemented.** The Privacy service works headlessly. An optional, accessible presentation consumes its published public ports, never private tables. The host owns navigation, authentication composition and route registration; Theme Manager owns visual tokens.
 
-**Verified reference:** [`nuxt-layers-test/application-test-template`](https://github.com/nuxt-layers-test/application-test-template) `master` exposes a separate home `/`, test dashboard `/admin`, responsive collapsible **Capabilities** sidebar in `app/app.vue`, and Theme Manager link `/theme-manager`. Its `/admin` page displays a Theme Manager card; derived test applications supply their own pages, menus and fixtures. **The template's `Not signed in` placeholder and Theme Manager test-mode APIs provide no production user security.**
+**Verified reference:** [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#ref-f1f7cc47) `master` exposes a separate home `/`, test dashboard `/admin`, responsive collapsible **Capabilities** sidebar in `app/app.vue`, and Theme Manager link `/theme-manager`. Its `/admin` page displays a Theme Manager card; derived test applications supply their own pages, menus and fixtures. **The template's `Not signed in` placeholder and Theme Manager test-mode APIs provide no production user security.**
 
 | Proposed derived-host route | Screen and relevant public contract | Audience and safety |
 |---|---|---|

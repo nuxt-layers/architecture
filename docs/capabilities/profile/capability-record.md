@@ -2,7 +2,7 @@
 
 **Capability:** `profile` · **Class:** Foundation · **Conceptual status:** owner-approved design principles and review specification; implementation alignment and review acceptance outstanding · **Review:** draft PR #123, 22 November 2026. This file is the **single current statement** of the Profile design. Earlier discussion and superseded proposals remain in Git history, not appended as competing requirements.
 
-**Authority and evidence:** [architecture-rules](https://github.com/nuxt-layers/architecture-rules) master `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint master `361566988ac53c55f6135e8acfa46cd5b013d7a0`, both rechecked 22 November 2026. Accepted governance and the [Capability Standard](../../capability-standard.md) take precedence. Published implementation evidence: [`nuxt-layers/profile/CONTRACT.md`](https://github.com/nuxt-layers/profile/blob/master/CONTRACT.md), repository master `dcb758c477f46f16d3934a00f98101aff1e9412d`, **contract v2, in active development**. Published behaviour is documented, **not independently runtime-verified**.
+**Authority and evidence:** [architecture-rules](../../../RESOURCES.md#ref-6d4a7ae1) master `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint master `361566988ac53c55f6135e8acfa46cd5b013d7a0`, both rechecked 22 November 2026. Accepted governance and the [Capability Standard](../../capability-standard.md) take precedence. Published implementation evidence: [`nuxt-layers/profile/CONTRACT.md`](../../../RESOURCES.md#ref-d369f0ce), repository master `dcb758c477f46f16d3934a00f98101aff1e9412d`, **contract v2, in active development**. Published behaviour is documented, **not independently runtime-verified**.
 
 ## Purpose and authoritative boundary
 
@@ -101,13 +101,13 @@ These have **four different public responsibilities**. Profile retains the meani
 
 | Reference | Required design consequence | Applicability |
 |---|---|---|
-| [UK GDPR and ICO guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/), [Data Protection Act 2018](https://www.legislation.gov.uk/ukpga/2018/12/contents) as amended by the Data (Use and Access) Act 2025 | Lawful purpose, minimisation, transparency, rights, restriction/erasure, retention, privacy-by-default, accountability | **Binding when applicable**; qualified by Privacy and Legal Compliance |
+| [UK GDPR and ICO guidance](../../../RESOURCES.md#ref-f4808d92), [Data Protection Act 2018](../../../RESOURCES.md#ref-de03a85c) as amended by the Data (Use and Access) Act 2025 | Lawful purpose, minimisation, transparency, rights, restriction/erasure, retention, privacy-by-default, accountability | **Binding when applicable**; qualified by Privacy and Legal Compliance |
 | ISO/IEC **27701:2025**, **29100:2024**, **29134:2023**, ISO **31700-1:2023** | Privacy management, vocabulary, impact assessment of claims/linking and privacy by design | Selected design guidance |
-| [OWASP ASVS 5](https://asvs.owasp.org/), ISO/IEC **27001:2022 / 27002:2022** | Server enforcement, secure validation, secret/key protection, tenant isolation, incident/evidence security | Governing **ASVS L2 minimum**, risk-based L3 for critical controls; ISO supporting controls |
-| NIST SP **800-63A-4/B-4/C-4** and [UK NCSC IAM guidance](https://www.ncsc.gov.uk/guidance/introduction-identity-and-access-management) | Proofing, account claiming/recovery, authentication assurance, phishing resistance, federation | Selected identity security guidance; IAM owns decisions |
-| [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/), ISO/IEC **40500:2025**, WAI-ARIA 1.2; ETSI EN **301 549 V4.1.1** | Keyboard/focus/assistive-technology support, accessible recovery, errors and consent, responsive views | Governing **WCAG 2.2 AA**; additional ICT requirements where legally/contractually applicable |
-| [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html) claims, IETF **RFC 9562**, **RFC 3339**, **BCP 47**, ECMA-402 / Unicode CLDR | OIDC-compatible personal field meaning, opaque UUIDv7 IDs, valid timestamps and localised language/zone formatting | Interoperability; Clock/Localisation own time/language mechanics |
-| IETF **RFC 9457**, W3C [Verifiable Credentials 2.0](https://www.w3.org/TR/vc-data-model-2.0/), W3C Community Group Data Privacy Vocabulary | Possible future standard HTTP errors, independently attested claims and data-purpose vocabulary | **Optional**, subject to compatibility, threat and governance review; Community Group outputs are not W3C Recommendations |
+| [OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2), ISO/IEC **27001:2022 / 27002:2022** | Server enforcement, secure validation, secret/key protection, tenant isolation, incident/evidence security | Governing **ASVS L2 minimum**, risk-based L3 for critical controls; ISO supporting controls |
+| NIST SP **800-63A-4/B-4/C-4** and [UK NCSC IAM guidance](../../../RESOURCES.md#ref-e3eec99e) | Proofing, account claiming/recovery, authentication assurance, phishing resistance, federation | Selected identity security guidance; IAM owns decisions |
+| [W3C WCAG 2.2](../../../RESOURCES.md#ref-0d1f555e), ISO/IEC **40500:2025**, WAI-ARIA 1.2; ETSI EN **301 549 V4.1.1** | Keyboard/focus/assistive-technology support, accessible recovery, errors and consent, responsive views | Governing **WCAG 2.2 AA**; additional ICT requirements where legally/contractually applicable |
+| [OpenID Connect Core 1.0](../../../RESOURCES.md#ref-e11b90d4) claims, IETF **RFC 9562**, **RFC 3339**, **BCP 47**, ECMA-402 / Unicode CLDR | OIDC-compatible personal field meaning, opaque UUIDv7 IDs, valid timestamps and localised language/zone formatting | Interoperability; Clock/Localisation own time/language mechanics |
+| IETF **RFC 9457**, W3C [Verifiable Credentials 2.0](../../../RESOURCES.md#ref-51933823), W3C Community Group Data Privacy Vocabulary | Possible future standard HTTP errors, independently attested claims and data-purpose vocabulary | **Optional**, subject to compatibility, threat and governance review; Community Group outputs are not W3C Recommendations |
 
 **Required controls:** per-attribute purpose, origin, revision, visibility and retention; privacy assessment for federation and sensitive claims; server-only permission/assurance checks; current tenant/group context; safe error non-enumeration and rate limits; origin/CSRF checks; protected operator functions; bounded lookup and verification attempts; minimised Audit and separate Logging; accessible forms and localisation; versioned events. Accepted ADR-0017/0018 forbid automatic authority through tenant hierarchy and relaxation of mandatory controls through settings. Do not infer a legal erasure decision from a button or equate contact possession with identity proof.
 
@@ -119,17 +119,17 @@ These have **four different public responsibilities**. Profile retains the meani
 
 | Library and source | Licence | Decision and owner |
 |---|---|---|
-| [Zod](https://github.com/colinhacks/zod) | MIT | **Retain** Profile's established contract/validation tool |
-| [node-postgres / pg](https://github.com/brianc/node-postgres) | MIT | **Retain** established PostgreSQL driver/transaction port |
-| [libsodium.js](https://github.com/jedisct1/libsodium.js) | ISC | **Conditional** vetted cryptographic primitives only if Node crypto/host key wrapper are inadequate |
-| [DOMPurify](https://github.com/cure53/DOMPurify) | Apache-2.0 **or** MPL-2.0 | **Conditional** untrusted rich HTML only; select permissive Apache terms, otherwise plain text and framework escaping |
-| [i18next](https://github.com/i18next/i18next) | MIT | **Optional** shared Localisation/host, not a second Profile translation engine |
-| [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) | Apache-2.0 | **Optional** typed SQL if justified; do not add parallel persistence authority/migration stack |
-| [Pino](https://github.com/pinojs/pino) | MIT | Logging-owned, not an additional Profile logging stack |
-| [openid-client](https://github.com/panva/openid-client) / [SimpleWebAuthn](https://github.com/MasterKale/SimpleWebAuthn) | MIT | Authentication/IAM-owned OAuth/OIDC and passkey functions, **not** direct Profile dependencies |
-| [@js-temporal/polyfill](https://github.com/js-temporal/temporal-polyfill) | ISC | Clock-owned time semantics; reuse Clock port |
+| [Zod](../../../RESOURCES.md#ref-1e3efac4) | MIT | **Retain** Profile's established contract/validation tool |
+| [node-postgres / pg](../../../RESOURCES.md#ref-be910869) | MIT | **Retain** established PostgreSQL driver/transaction port |
+| [libsodium.js](../../../RESOURCES.md#ref-704cdd6c) | ISC | **Conditional** vetted cryptographic primitives only if Node crypto/host key wrapper are inadequate |
+| [DOMPurify](../../../RESOURCES.md#ref-975d5876) | Apache-2.0 **or** MPL-2.0 | **Conditional** untrusted rich HTML only; select permissive Apache terms, otherwise plain text and framework escaping |
+| [i18next](../../../RESOURCES.md#ref-b4adce2a) | MIT | **Optional** shared Localisation/host, not a second Profile translation engine |
+| [Drizzle ORM](../../../RESOURCES.md#ref-03cb5387) | Apache-2.0 | **Optional** typed SQL if justified; do not add parallel persistence authority/migration stack |
+| [Pino](../../../RESOURCES.md#ref-5f05d959) | MIT | Logging-owned, not an additional Profile logging stack |
+| [openid-client](../../../RESOURCES.md#ref-67858133) / [SimpleWebAuthn](../../../RESOURCES.md#ref-b7bc28fb) | MIT | Authentication/IAM-owned OAuth/OIDC and passkey functions, **not** direct Profile dependencies |
+| [@js-temporal/polyfill](../../../RESOURCES.md#ref-6bd89188) | ISC | Clock-owned time semantics; reuse Clock port |
 
-[axe-core](https://github.com/dequelabs/axe-core) is an open-source accessibility testing tool under **MPL-2.0 (weak copyleft)**, **excluded** from the *strict permissive-only* shortlist unless separately approved. Avoid source-available, delayed/community-limited, non-commercial, BSL/SSPL/AGPL and proprietary/open-core flagship dependencies. No extra infrastructure service is justified by Profile's current scope.
+[axe-core](../../../RESOURCES.md#ref-802ea31e) is an open-source accessibility testing tool under **MPL-2.0 (weak copyleft)**, **excluded** from the *strict permissive-only* shortlist unless separately approved. Avoid source-available, delayed/community-limited, non-commercial, BSL/SSPL/AGPL and proprietary/open-core flagship dependencies. No extra infrastructure service is justified by Profile's current scope.
 
 **Pre-adoption checks:** exact upstream source/licence and security advisories, transitive terms, Node 26/TypeScript 6/Nuxt 4 compatibility, import footprint, operational failure, and ADR-0012 single composition/50-line host budget. No packages installed during conceptual review.
 
@@ -137,7 +137,7 @@ These have **four different public responsibilities**. Profile retains the meani
 
 **Approved:** Profile offers optional UI components/pages; the server contract works without presentation. Profile owns its forms and self-service workflows, while the **host** owns navigation/sidebar, route exposure, branding, authentication wiring and shell. Theme Manager provides semantic design tokens. Server-side authorisation is independent of link visibility.
 
-**Inspected reference:** [`nuxt-layers-test/application-test-template`](https://github.com/nuxt-layers-test/application-test-template) master (tree `8b7b142b84b5ec2379d4e2e727914fe344187d64`). Its [app shell](https://github.com/nuxt-layers-test/application-test-template/blob/master/app/app.vue) has a home route outside the test shell, responsive collapsible **Capabilities** sidebar with **Theme Manager → `/theme-manager`**, top Appearance menu and `/admin` dashboard. The current template does **not** include Profile; its **Not signed in** indicator is only a placeholder and Theme Manager's unauthenticated test mode is **local-only**, not a production security pattern.
+**Inspected reference:** [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#ref-f1f7cc47) master (tree `8b7b142b84b5ec2379d4e2e727914fe344187d64`). Its [app shell](../../../RESOURCES.md#ref-a4ce9d0c) has a home route outside the test shell, responsive collapsible **Capabilities** sidebar with **Theme Manager → `/theme-manager`**, top Appearance menu and `/admin` dashboard. The current template does **not** include Profile; its **Not signed in** indicator is only a placeholder and Theme Manager's unauthenticated test mode is **local-only**, not a production security pattern.
 
 **Privacy Centre boundary:** The host may direct a verified person or guest from Profile/account settings to Privacy's subject-facing Centre. Privacy owns consent, specialist rights decisions and policy; Profile retains its personal-data forms and source-owned data-rights actions. Neither user-facing link grants access to another person's case, and IAM Integration's global case routing does not duplicate Privacy's legal case authority.
 

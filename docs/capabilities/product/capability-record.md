@@ -1,6 +1,6 @@
 # Product — canonical conceptual capability record
 
-**Classification:** Domain capability candidate. **Owner approval:** PRO-01–PRO-13 and supplementary design recommendations approved, 22 November 2026. **Status:** conceptually complete, subject to cross-review reconciliation and pre-merge checks; **not** implemented, merged or an independently published root `CONTRACT.md`. Direct lookup of `nuxt-layers/product` returned 404; this does not prove no implementation exists elsewhere. **Authority:** [architecture-rules](https://github.com/nuxt-layers/architecture-rules) accepted baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint review opening `master` `361566988ac53c55f6135e8acfa46cd5b013d7a0`. draft PR #122. Governing accepted ADRs and Capability Standard override this conceptual record.
+**Classification:** Domain capability candidate. **Owner approval:** PRO-01–PRO-13 and supplementary design recommendations approved, 22 November 2026. **Status:** conceptually complete, subject to cross-review reconciliation and pre-merge checks; **not** implemented, merged or an independently published root `CONTRACT.md`. Direct lookup of `nuxt-layers/product` returned 404; this does not prove no implementation exists elsewhere. **Authority:** [architecture-rules](../../../RESOURCES.md#ref-6d4a7ae1) accepted baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint review opening `master` `361566988ac53c55f6135e8acfa46cd5b013d7a0`. draft PR #122. Governing accepted ADRs and Capability Standard override this conceptual record.
 
 ## Purpose and authoritative ownership
 
@@ -100,17 +100,17 @@ Adopt a **small common core**, with standards and statutory requirements activat
 
 | Source / standards | Design use |
 |---|---|
-| [GS1](https://ref.gs1.org/standards/): GTIN, General Specifications, Global Data Model, GDSN, Digital Link | Scheme-qualified trade identifiers and catalogue exchange when applicable; not required for handmade, service or digital items |
-| ISO 80000; [UN/CEFACT Recommendation 20](https://unece.org/code-list-recommendations) | Dimensionally correct units and portable trade codes |
+| [GS1](../../../RESOURCES.md#ref-1bbbdbc6): GTIN, General Specifications, Global Data Model, GDSN, Digital Link | Scheme-qualified trade identifiers and catalogue exchange when applicable; not required for handmade, service or digital items |
+| ISO 80000; [UN/CEFACT Recommendation 20](../../../RESOURCES.md#ref-6322e766) | Dimensionally correct units and portable trade codes |
 | ISO/IEC 11179; ISO 8000 series | Attribute definitions, metadata quality, source and completeness |
 | ISO 10007 configuration management; ISO 10303 STEP | Approved engineering changes and optional CAD/product exchange; STEP is **not** the universal Product model |
 | IEC 61360 Common Data Dictionary; IEC 82474 material declarations | Conditional industrial/electrical attributes and materials evidence |
-| [Schema.org Product/ProductGroup](https://schema.org/ProductGroup); [W3C JSON-LD 1.1](https://www.w3.org/TR/json-ld/); [W3C PROV-O](https://www.w3.org/TR/prov-o/) | Approved structured-data exports, product grouping and evidence provenance |
-| [W3C SHACL](https://www.w3.org/TR/shacl/); [JSON Schema](https://json-schema.org/); [OpenAPI](https://spec.openapis.org/) | Conditional semantic validation, exchange schemas and optional HTTP adapters; transport-neutral business contract |
-| [W3C WCAG 2.2 AA](https://www.w3.org/TR/WCAG22/); BCP 47, Unicode CLDR and ECMA-402 | Accessible, language-aware optional screens |
+| [Schema.org Product/ProductGroup](../../../RESOURCES.md#ref-80058408); [W3C JSON-LD 1.1](../../../RESOURCES.md#ref-6d20146d); [W3C PROV-O](../../../RESOURCES.md#ref-20aa2e25) | Approved structured-data exports, product grouping and evidence provenance |
+| [W3C SHACL](../../../RESOURCES.md#ref-6dc528a5); [JSON Schema](../../../RESOURCES.md#ref-d64cb24d); [OpenAPI](../../../RESOURCES.md#ref-e4aeda6d) | Conditional semantic validation, exchange schemas and optional HTTP adapters; transport-neutral business contract |
+| [W3C WCAG 2.2 AA](../../../RESOURCES.md#ref-0d1f555e); BCP 47, Unicode CLDR and ECMA-402 | Accessible, language-aware optional screens |
 | OWASP ASVS 5 Level 2 baseline (Level 3 where critical); ISO/IEC 27001 guidance | Threat modelling, least privilege, protected import and security controls; no certification claim |
-| [BSI](https://www.bsigroup.com/) BS/BS EN/BS ISO adoption; [UK OPSS](https://www.gov.uk/government/organisations/office-for-product-safety-and-standards) | Applicable UK standards and product marking/safety by sector and market; GB and NI may differ |
-| EU General Product Safety Regulation 2023/988 and [Ecodesign for Sustainable Products Regulation (EU) 2024/1781](https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng) | Conditional product-safety/traceability and Digital Product Passport readiness according to product-specific effective requirements |
+| [BSI](../../../RESOURCES.md#ref-0ecd8c5c) BS/BS EN/BS ISO adoption; [UK OPSS](../../../RESOURCES.md#ref-05827b16) | Applicable UK standards and product marking/safety by sector and market; GB and NI may differ |
+| EU General Product Safety Regulation 2023/988 and [Ecodesign for Sustainable Products Regulation (EU) 2024/1781](../../../RESOURCES.md#ref-0bdb0938) | Conditional product-safety/traceability and Digital Product Passport readiness according to product-specific effective requirements |
 
 Additional automotive, food, construction, chemicals, batteries, medical device and other sector profiles are **conditional**, not assumed universal. A claimed certificate, GS1 match or external specification is not itself a compliance decision.
 
@@ -120,15 +120,15 @@ Additional automotive, food, construction, chemicals, batteries, medical device 
 
 | Need | Candidate and licence | Selection rule |
 |---|---|---|
-| Authoritative persistence, version and transactional outbox | [PostgreSQL](https://www.postgresql.org/about/licence/) (PostgreSQL Licence) | Reuse platform Persistence/Infrastructure; no second catalogue/search/graph server |
-| Type-safe database access | [Kysely](https://github.com/kysely-org/kysely) (MIT) or [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) (Apache-2.0) | Choose **one only if** common Persistence does not already provide it |
-| Runtime schemas | [Zod](https://github.com/colinhacks/zod) (MIT); [Ajv](https://github.com/ajv-validator/ajv) (MIT) | Prefer one; add Ajv when published JSON Schema supplier interchange justifies it |
-| Exact quantities | [decimal.js](https://github.com/MikeMcl/decimal.js) (MIT) | Explicit unit/rounding policy, string/decimal serialisation; no financial valuation |
-| BOM/kit graph checks | [@dagrejs/graphlib](https://github.com/dagrejs/graphlib) (MIT) | In-process bounded cycle checking; database remains source |
-| Units and item IDs | [convert-units](https://github.com/convert-units/convert-units) (MIT); [uuid](https://github.com/uuidjs/uuid) (MIT) | Optional; verify compound/offset units, precision, approved vocabulary and reuse shared IDs |
-| Optional Vue tables/fetching | [TanStack Table](https://github.com/TanStack/table) and [TanStack Query](https://github.com/TanStack/query) (MIT) | Only if host UI does not already provide comparable features |
-| Optional accessible BOM diagram | [Vue Flow](https://github.com/bcakmakoglu/vue-flow) (MIT core); [Dagre](https://github.com/dagrejs/dagre) (MIT) | Accessible hierarchical table is baseline; no paid Pro examples/features |
-| Optional structured/supplier mapping | [jsonld.js](https://github.com/digitalbazaar/jsonld.js) (BSD-3-Clause), [N3.js](https://github.com/rdfjs/N3.js) (MIT), [JSONata](https://github.com/jsonata-js/jsonata) (MIT) | Only for real JSON-LD/RDF/supplier exchange; bound complexity and validate all mapped output |
+| Authoritative persistence, version and transactional outbox | [PostgreSQL](../../../RESOURCES.md#ref-fa79609e) (PostgreSQL Licence) | Reuse platform Persistence/Infrastructure; no second catalogue/search/graph server |
+| Type-safe database access | [Kysely](../../../RESOURCES.md#ref-af839a5b) (MIT) or [Drizzle ORM](../../../RESOURCES.md#ref-03cb5387) (Apache-2.0) | Choose **one only if** common Persistence does not already provide it |
+| Runtime schemas | [Zod](../../../RESOURCES.md#ref-1e3efac4) (MIT); [Ajv](../../../RESOURCES.md#ref-a164796d) (MIT) | Prefer one; add Ajv when published JSON Schema supplier interchange justifies it |
+| Exact quantities | [decimal.js](../../../RESOURCES.md#ref-992a7688) (MIT) | Explicit unit/rounding policy, string/decimal serialisation; no financial valuation |
+| BOM/kit graph checks | [@dagrejs/graphlib](../../../RESOURCES.md#ref-6629c3fb) (MIT) | In-process bounded cycle checking; database remains source |
+| Units and item IDs | [convert-units](../../../RESOURCES.md#ref-443004fe) (MIT); [uuid](../../../RESOURCES.md#ref-346e6d77) (MIT) | Optional; verify compound/offset units, precision, approved vocabulary and reuse shared IDs |
+| Optional Vue tables/fetching | [TanStack Table](../../../RESOURCES.md#ref-af94a8b1) and [TanStack Query](../../../RESOURCES.md#ref-51cb5e45) (MIT) | Only if host UI does not already provide comparable features |
+| Optional accessible BOM diagram | [Vue Flow](../../../RESOURCES.md#ref-1c63f8c8) (MIT core); [Dagre](../../../RESOURCES.md#ref-41707161) (MIT) | Accessible hierarchical table is baseline; no paid Pro examples/features |
+| Optional structured/supplier mapping | [jsonld.js](../../../RESOURCES.md#ref-81b207aa) (BSD-3-Clause), [N3.js](../../../RESOURCES.md#ref-8c4508c1) (MIT), [JSONata](../../../RESOURCES.md#ref-50222d38) (MIT) | Only for real JSON-LD/RDF/supplier exchange; bound complexity and validate all mapped output |
 
 **Minimum suggested stack:** existing Persistence/PostgreSQL, one validator, decimal.js and Graphlib; reuse platform Clock, IAM, Message Queue, Integrations and Theme Manager. **Do not introduce** Neo4j, Redis, Elasticsearch, an independent PIM, a workflow engine, vector search or a second Product store simply to implement this capability. Confirm latest licence/source tree, package tags, SBOM, security and Node/TypeScript compatibility before pinning.
 
@@ -142,7 +142,7 @@ Additional automotive, food, construction, chemicals, batteries, medical device 
 
 ## Optional GUI and host presentation (PRO-08)
 
-**Headless is mandatory; UI is optional and independently disabled.** Verified `nuxt-layers-test/application-test-template` `master` supplies a shared shell, homepage `/`, test dashboard `/admin`, responsive collapsible **Capabilities** sidebar, a Theme Manager link `/theme-manager`, a top-bar Appearance menu and `Not signed in` placeholder. Its Theme Manager `test` mode is **local-only and unauthenticated**, not safe for production. Product is not installed there. Theme Manager's published [root contract](https://github.com/nuxt-layers/theme-manager/blob/master/CONTRACT.md) also flags its own outstanding host-composition gaps; do not copy private providers.
+**Headless is mandatory; UI is optional and independently disabled.** Verified `nuxt-layers-test/application-test-template` `master` supplies a shared shell, homepage `/`, test dashboard `/admin`, responsive collapsible **Capabilities** sidebar, a Theme Manager link `/theme-manager`, a top-bar Appearance menu and `Not signed in` placeholder. Its Theme Manager `test` mode is **local-only and unauthenticated**, not safe for production. Product is not installed there. Theme Manager's published [root contract](../../../RESOURCES.md#ref-484ee610) also flags its own outstanding host-composition gaps; do not copy private providers.
 
 **Target presentation:** host adds **Capabilities → Products → Product dashboard**, suggested configurable base `/products`. Host owns navigation, routing and enablement; Product supplies optional separable views through public Product ports. The sidebar is not an authorisation grant.
 

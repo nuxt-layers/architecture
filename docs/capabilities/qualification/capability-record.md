@@ -127,16 +127,16 @@ Qualification normalises errors locally; it **separately** submits diagnostic/ev
 
 | Component and public source | Licence | Decision / boundary |
 |---|---|---|
-| [Zod](https://github.com/colinhacks/zod) | MIT | Preferred TypeScript command/result validation; maintain one source schema |
-| [Ajv](https://github.com/ajv-validator/ajv) | MIT | External JSON Schema validation and compatibility where needed, not a competing duplicate business rule engine |
-| [json-rules-engine](https://github.com/CacheControl/json-rules-engine) | ISC | Conditional deterministic credit/eligibility evaluation; first prefer simple owned predicates, assess maintenance/explainability and historical replay |
-| [XState](https://github.com/statelyai/xstate) | MIT | Optional complex case state machine, **stable v5** rather than v6 beta; persistent domain decisions remain Qualification-owned |
-| [Kysely](https://github.com/kysely-org/kysely) / [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) | MIT / Apache-2.0 | Choose **one**, if an approved shared PostgreSQL approach does not already meet the need |
-| [jsonld.js](https://github.com/digitalbazaar/jsonld.js) / [N3.js](https://github.com/rdfjs/N3.js) | BSD-3-Clause / MIT | Optional JSON-LD/RDF metadata adapters; do not require graph storage |
-| [1EdTech OpenCASE](https://github.com/1EdTech/OpenCASE) | Apache-2.0 | Optional CASE reference/adapter; **not established as a mature core library** and must not duplicate Course/Assessment/Qualification tenancy and state |
-| [Credo](https://github.com/openwallet-foundation/credo-ts) / [Digital Bazaar vc-js](https://github.com/digitalbazaar/vc) | Apache-2.0 / BSD-3-Clause | **Credentials/Verification** only: interoperable credential issuance/proofs, never Qualification award powers |
-| [Temporal TypeScript SDK](https://github.com/temporalio/sdk-typescript) | MIT | Existing Workflow/Scheduler/Temporal Gateway's durable execution adapter, not a second orchestrator inside Qualification |
-| [Casbin](https://github.com/apache/casbin-node-casbin) / [CASL](https://github.com/stalniy/casl) | Apache-2.0 / MIT | Existing **Authorisation** policy engine candidates; separate from external issuer/centre mandate |
+| [Zod](../../../RESOURCES.md#ref-1e3efac4) | MIT | Preferred TypeScript command/result validation; maintain one source schema |
+| [Ajv](../../../RESOURCES.md#ref-a164796d) | MIT | External JSON Schema validation and compatibility where needed, not a competing duplicate business rule engine |
+| [json-rules-engine](../../../RESOURCES.md#ref-801e24d6) | ISC | Conditional deterministic credit/eligibility evaluation; first prefer simple owned predicates, assess maintenance/explainability and historical replay |
+| [XState](../../../RESOURCES.md#ref-2318841b) | MIT | Optional complex case state machine, **stable v5** rather than v6 beta; persistent domain decisions remain Qualification-owned |
+| [Kysely](../../../RESOURCES.md#ref-af839a5b) / [Drizzle ORM](../../../RESOURCES.md#ref-03cb5387) | MIT / Apache-2.0 | Choose **one**, if an approved shared PostgreSQL approach does not already meet the need |
+| [jsonld.js](../../../RESOURCES.md#ref-81b207aa) / [N3.js](../../../RESOURCES.md#ref-8c4508c1) | BSD-3-Clause / MIT | Optional JSON-LD/RDF metadata adapters; do not require graph storage |
+| [1EdTech OpenCASE](../../../RESOURCES.md#ref-9c4e92f0) | Apache-2.0 | Optional CASE reference/adapter; **not established as a mature core library** and must not duplicate Course/Assessment/Qualification tenancy and state |
+| [Credo](../../../RESOURCES.md#ref-7ce15ee8) / [Digital Bazaar vc-js](../../../RESOURCES.md#ref-31b4fab4) | Apache-2.0 / BSD-3-Clause | **Credentials/Verification** only: interoperable credential issuance/proofs, never Qualification award powers |
+| [Temporal TypeScript SDK](../../../RESOURCES.md#ref-83603142) | MIT | Existing Workflow/Scheduler/Temporal Gateway's durable execution adapter, not a second orchestrator inside Qualification |
+| [Casbin](../../../RESOURCES.md#ref-0bce4034) / [CASL](../../../RESOURCES.md#ref-6c39db3b) | Apache-2.0 / MIT | Existing **Authorisation** policy engine candidates; separate from external issuer/centre mandate |
 
 No comprehensively mature permissive open-source engine is established that can safely own all jurisdiction-specific recognition, award, appeals and teach-out rules. Build those domain decisions in Qualification. Do not introduce Neo4j/Redis/Elasticsearch style restricted core/community editions, new unneeded search/queue/cache/graph infrastructure, legacy SSI-SDK or vendor-only credentials tooling.
 

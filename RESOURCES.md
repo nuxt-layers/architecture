@@ -1000,3 +1000,655 @@ Imported design citations are retained here for provenance. External availabilit
 ### ref-eb11cf7e
 
 [WCAG 2.2](https://www.w3.org/TR/wcag/) — imported reference; verification pending.
+
+### ref-2632494a
+
+[ECMA-402](https://402.ecma-international.org/) — imported reference; verification pending.
+
+### ref-ba99ff23
+
+[Unicode CLDR](https://cldr.unicode.org/) — imported reference; verification pending.
+
+### ref-e64171fe
+
+[ProseMirror](https://code.haverbeke.berlin/prosemirror/prosemirror) — imported reference; verification pending.
+
+### ref-36977534
+
+[ISO 23081](https://committee.iso.org/sites/tc46sc11/home/projects/published/iso-23081-metadata-for-records.html) — imported reference; verification pending.
+
+### ref-699eef87
+
+[BCP 47](https://datatracker.ietf.org/doc/rfc5646/) — imported reference; verification pending.
+
+### ref-4462b3df
+
+[OASIS UBL 2.4](https://docs.oasis-open.org/ubl/UBL-2.4.html) — imported reference; verification pending.
+
+### ref-ad195287
+
+[OpenPeppol BIS Ordering](https://docs.peppol.eu/poacc/upgrade-3/profiles/28-ordering/) — imported reference; verification pending.
+
+### ref-240df94d
+
+[EU GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/) — imported reference; verification pending.
+
+### ref-cdee1332
+
+[EU Digital Services Act](https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng) — imported reference; verification pending.
+
+### ref-0bdb0938
+
+[Ecodesign for Sustainable Products Regulation (EU) 2024/1781](https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng) — imported reference; verification pending.
+
+### ref-56467f9a
+
+[EU Price Indication Directive 98/6/EC Article 6a](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A31998L0006) — imported reference; verification pending.
+
+### ref-9c4e92f0
+
+[1EdTech OpenCASE](https://github.com/1EdTech/OpenCASE) — imported reference; verification pending.
+
+### ref-1dca5d3a
+
+[tarteaucitron.js](https://github.com/AmauriC/tarteaucitron.js) — imported reference; verification pending.
+
+### ref-0bce4034
+
+[Casbin](https://github.com/apache/casbin-node-casbin) — imported reference; verification pending.
+
+### ref-7ab49d9e
+
+[Apache Jena](https://github.com/apache/jena) — imported reference; verification pending.
+
+### ref-6f0b2c64
+
+[Apache Lucene](https://github.com/apache/lucene) — imported reference; verification pending.
+
+### ref-1c63f8c8
+
+[Vue Flow](https://github.com/bcakmakoglu/vue-flow) — imported reference; verification pending.
+
+### ref-a01cd8e1
+
+[bpmn-js](https://github.com/bpmn-io/bpmn-js) — imported reference; verification pending.
+
+### ref-9e223261
+
+[bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) — imported reference; verification pending.
+
+### ref-8ca9c849
+
+[diagram-js](https://github.com/bpmn-io/diagram-js) — imported reference; verification pending.
+
+### ref-0652c71f
+
+[dmn-moddle](https://github.com/bpmn-io/dmn-moddle) — imported reference; verification pending.
+
+### ref-0e4b8fa5
+
+[moddle-xml](https://github.com/bpmn-io/moddle-xml) — imported reference; verification pending.
+
+### ref-801e24d6
+
+[json-rules-engine](https://github.com/CacheControl/json-rules-engine) — imported reference; verification pending.
+
+### ref-4a330c79
+
+[CloudEvents](https://github.com/cloudevents/spec) — imported reference; verification pending.
+
+### ref-6c3e4b82
+
+[Comunica](https://github.com/comunica/comunica) — imported reference; verification pending.
+
+### ref-443004fe
+
+[convert-units](https://github.com/convert-units/convert-units) — imported reference; verification pending.
+
+### ref-41707161
+
+[Dagre](https://github.com/dagrejs/dagre) — imported reference; verification pending.
+
+### ref-6629c3fb
+
+[@dagrejs/graphlib](https://github.com/dagrejs/graphlib) — imported reference; verification pending.
+
+### ref-802ea31e
+
+[axe-core](https://github.com/dequelabs/axe-core) — imported reference; verification pending.
+
+### ref-81b207aa
+
+[jsonld.js](https://github.com/digitalbazaar/jsonld.js) — imported reference; verification pending.
+
+### ref-31b4fab4
+
+[Digital Bazaar vc-js](https://github.com/digitalbazaar/vc) — imported reference; verification pending.
+
+### ref-2390acb0
+
+[Dinero.js v2](https://github.com/dinerojs/dinero.js) — imported reference; verification pending.
+
+### ref-da697d6a
+
+[Eclipse RDF4J](https://github.com/eclipse-rdf4j/rdf4j) — imported reference; verification pending.
+
+### ref-9d228cd0
+
+[Lexical](https://github.com/facebook/lexical) — imported reference; verification pending.
+
+### ref-cdb01dc1
+
+[Flowable community engine](https://github.com/flowable/flowable-engine) — imported reference; verification pending.
+
+### ref-35a3dd1c
+
+[Frappe Gantt](https://github.com/frappe/gantt) — imported reference; verification pending.
+
+### ref-b4adce2a
+
+[i18next](https://github.com/i18next/i18next) — imported reference; verification pending.
+
+### ref-a943427f
+
+[Whelk](https://github.com/INCATools/whelk) — imported reference; verification pending.
+
+### ref-704cdd6c
+
+[libsodium.js](https://github.com/jedisct1/libsodium.js) — imported reference; verification pending.
+
+### ref-d69fea58
+
+[feed](https://github.com/jpmonette/feed) — imported reference; verification pending.
+
+### ref-6bd89188
+
+[@js-temporal/polyfill](https://github.com/js-temporal/temporal-polyfill) — imported reference; verification pending.
+
+### ref-50222d38
+
+[JSONata](https://github.com/jsonata-js/jsonata) — imported reference; verification pending.
+
+### ref-03dffb0e
+
+[json-logic-js](https://github.com/jwadhams/json-logic-js) — imported reference; verification pending.
+
+### ref-69ebde60
+
+[Klaro](https://github.com/kiprotect/klaro) — imported reference; verification pending.
+
+### ref-0a6b05e3
+
+[ELK](https://github.com/liveontologies/elk-reasoner) — imported reference; verification pending.
+
+### ref-b7bc28fb
+
+[SimpleWebAuthn](https://github.com/MasterKale/SimpleWebAuthn) — imported reference; verification pending.
+
+### ref-42e5762a
+
+[Mermaid](https://github.com/mermaid-js/mermaid) — imported reference; verification pending.
+
+### ref-fcbb731f
+
+[big.js](https://github.com/MikeMcl/big.js) — imported reference; verification pending.
+
+### ref-a4ce9d0c
+
+[`app/app.vue`](https://github.com/nuxt-layers-test/application-test-template/blob/master/app/app.vue) — imported reference; verification pending.
+
+### ref-96cb2d87
+
+[`app/pages/admin.vue`](https://github.com/nuxt-layers-test/application-test-template/blob/master/app/pages/admin.vue) — imported reference; verification pending.
+
+### ref-ba586c9b
+
+[blueprint `361566988ac5`](https://github.com/nuxt-layers/architecture-blueprint-review/commit/361566988ac53c55f6135e8acfa46cd5b013d7a0) — imported reference; verification pending.
+
+### ref-29a27a7a
+
+[governing architecture-rules `d7f7c2ee0512`](https://github.com/nuxt-layers/architecture-rules/commit/d7f7c2ee051244b8c81325f5ff1267568d99aab1) — imported reference; verification pending.
+
+### ref-d369f0ce
+
+[`nuxt-layers/profile/CONTRACT.md`](https://github.com/nuxt-layers/profile/blob/master/CONTRACT.md) — imported reference; verification pending.
+
+### ref-332e0d6b
+
+[Publisher published root `CONTRACT.md`](https://github.com/nuxt-layers/publisher/blob/master/CONTRACT.md) — imported reference; verification pending.
+
+### ref-90073eba
+
+[Theme Manager](https://github.com/nuxt-layers/theme-manager/blob/master/CONTRACT.md#screens) — imported reference; verification pending.
+
+### ref-a91eaa59
+
+[ROBOT](https://github.com/ontodev/robot) — imported reference; verification pending.
+
+### ref-65876386
+
+[xmlbuilder2](https://github.com/oozcitak/xmlbuilder2) — imported reference; verification pending.
+
+### ref-7ce15ee8
+
+[Credo](https://github.com/openwallet-foundation/credo-ts) — imported reference; verification pending.
+
+### ref-008bcb87
+
+[orestbida/cookieconsent](https://github.com/orestbida/cookieconsent) — imported reference; verification pending.
+
+### ref-9bb6c5a8
+
+[ONT-API](https://github.com/owlcs/ont-api) — imported reference; verification pending.
+
+### ref-5eeb6944
+
+[OWLAPI](https://github.com/owlcs/owlapi) — imported reference; verification pending.
+
+### ref-6a0f1548
+
+[Oxigraph](https://github.com/oxigraph/oxigraph) — imported reference; verification pending.
+
+### ref-1841a1db
+
+[jose](https://github.com/panva/jose) — imported reference; verification pending.
+
+### ref-67858133
+
+[openid-client](https://github.com/panva/openid-client) — imported reference; verification pending.
+
+### ref-2649f4d9
+
+[Protégé](https://github.com/protegeproject/protege) — imported reference; verification pending.
+
+### ref-7316cf52
+
+[shacl-engine](https://github.com/rdf-ext/shacl-engine) — imported reference; verification pending.
+
+### ref-8c4508c1
+
+[N3.js](https://github.com/rdfjs/N3.js) — imported reference; verification pending.
+
+### ref-4293e39b
+
+[pySHACL](https://github.com/RDFLib/pySHACL) — imported reference; verification pending.
+
+### ref-94601d7a
+
+[RDFLib](https://github.com/RDFLib/rdflib) — imported reference; verification pending.
+
+### ref-b4b1b93d
+
+[rehype-sanitize](https://github.com/rehypejs/rehype-sanitize) — imported reference; verification pending.
+
+### ref-19502e95
+
+[remark](https://github.com/remarkjs/remark) — imported reference; verification pending.
+
+### ref-945fde25
+
+[Rete.js](https://github.com/retejs/rete) — imported reference; verification pending.
+
+### ref-3d468f2d
+
+[p-queue](https://github.com/sindresorhus/p-queue) — imported reference; verification pending.
+
+### ref-6c39db3b
+
+[CASL](https://github.com/stalniy/casl) — imported reference; verification pending.
+
+### ref-51cb5e45
+
+[TanStack Query](https://github.com/TanStack/query) — imported reference; verification pending.
+
+### ref-fc345c0f
+
+[pg-boss](https://github.com/timgit/pg-boss) — imported reference; verification pending.
+
+### ref-72271435
+
+[unified](https://github.com/unifiedjs/unified) — imported reference; verification pending.
+
+### ref-9507482e
+
+[VueUse](https://github.com/vueuse/vueuse) — imported reference; verification pending.
+
+### ref-36db7adb
+
+[WHATWG HTML](https://html.spec.whatwg.org/) — imported reference; verification pending.
+
+### ref-490b08ec
+
+[Data (Use and Access) Act 2025](https://ico.org.uk/about-the-ico/what-we-do/legislation-we-cover/data-use-and-access-act-2025/) — imported reference; verification pending.
+
+### ref-9cfff74f
+
+[PECR and ICO storage/access guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/) — imported reference; verification pending.
+
+### ref-f4808d92
+
+[UK GDPR and ICO guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/) — imported reference; verification pending.
+
+### ref-84e500ba
+
+[ICO Children's Code](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/) — imported reference; verification pending.
+
+### ref-200f0715
+
+[UK ICO UK GDPR guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/) — imported reference; verification pending.
+
+### ref-d64cb24d
+
+[JSON Schema](https://json-schema.org/) — imported reference; verification pending.
+
+### ref-fd0ea290
+
+[Santa Clara Principles](https://santaclaraprinciples.org/) — imported reference; verification pending.
+
+### ref-30a88a32
+
+[schema.org](https://schema.org/) — imported reference; verification pending.
+
+### ref-4faf18ac
+
+[Schema.org Offer/PriceSpecification](https://schema.org/PriceSpecification) — imported reference; verification pending.
+
+### ref-80058408
+
+[Schema.org Product/ProductGroup](https://schema.org/ProductGroup) — imported reference; verification pending.
+
+### ref-58965163
+
+[CEN EN 16931](https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/einvoicing_en) — imported reference; verification pending.
+
+### ref-e4aeda6d
+
+[OpenAPI](https://spec.openapis.org/) — imported reference; verification pending.
+
+### ref-496ea603
+
+[OpenAPI](https://spec.openapis.org/oas/latest.html) — imported reference; verification pending.
+
+### ref-6322e766
+
+[UN/CEFACT Recommendation 20](https://unece.org/code-list-recommendations) — imported reference; verification pending.
+
+### ref-66b68de6
+
+[UN/CEFACT Recommendation 20](https://unece.org/trade/uncefact/cl-recommendations) — imported reference; verification pending.
+
+### ref-0ea5a429
+
+[Unicode CLDR](https://unicode.org/reports/tr35/) — imported reference; verification pending.
+
+### ref-f8fda418
+
+[ISO/IEC 19510:2013](https://webstore.iec.ch/en/publication/10695) — imported reference; verification pending.
+
+### ref-de28455b
+
+[APM Body of Knowledge 8](https://www.apm.org.uk/apm-body-of-knowledge/) — imported reference; verification pending.
+
+### ref-0ecd8c5c
+
+[BSI](https://www.bsigroup.com/) — imported reference; verification pending.
+
+### ref-9657f4eb
+
+[Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) — imported reference; verification pending.
+
+### ref-0a6f3ef2
+
+[Equality Act 2010 / EHRC associations code (2026)](https://www.equalityhumanrights.com/guidance/codes-practice/code-practice-services-public-functions-and-associations/chapter-twelve) — imported reference; verification pending.
+
+### ref-44ad251a
+
+[Data Standards Authority](https://www.gov.uk/government/collections/metadata-standards-for-sharing-and-publishing-data) — imported reference; verification pending.
+
+### ref-05827b16
+
+[UK OPSS](https://www.gov.uk/government/organisations/office-for-product-safety-and-standards) — imported reference; verification pending.
+
+### ref-fde4cde0
+
+[GovS 002](https://www.gov.uk/government/publications/project-delivery-functional-standard) — imported reference; verification pending.
+
+### ref-386eb998
+
+[Data Quality Framework](https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance) — imported reference; verification pending.
+
+### ref-92c03402
+
+[ISO 3166](https://www.iso.org/iso-3166-country-codes.html) — imported reference; verification pending.
+
+### ref-e1f7a7d3
+
+[ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) — imported reference; verification pending.
+
+### ref-8bda6c42
+
+[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) — imported reference; verification pending.
+
+### ref-8462151b
+
+[ISO/IEC 17024:2026](https://www.iso.org/standard/17024) — imported reference; verification pending.
+
+### ref-a5666aad
+
+[ISO 31000:2018](https://www.iso.org/standard/31000) — imported reference; verification pending.
+
+### ref-d3820482
+
+[1087](https://www.iso.org/standard/62330.html) — imported reference; verification pending.
+
+### ref-f48d39fc
+
+[ISO 10003:2018](https://www.iso.org/standard/71581.html) — imported reference; verification pending.
+
+### ref-3ab1f251
+
+[ISO 21502:2020](https://www.iso.org/standard/74947.html) — imported reference; verification pending.
+
+### ref-e23b09be
+
+[704](https://www.iso.org/standard/79077.html) — imported reference; verification pending.
+
+### ref-7e7ff696
+
+[ISO/IEC TS 27560:2023](https://www.iso.org/standard/80392.html) — imported reference; verification pending.
+
+### ref-b6981e72
+
+[ISO/IEC/IEEE 15288:2023](https://www.iso.org/standard/81702.html) — imported reference; verification pending.
+
+### ref-d1c9e7cb
+
+[ISO 31700-1:2023](https://www.iso.org/standard/84977.html) — imported reference; verification pending.
+
+### ref-f7fc907f
+
+[ISO/IEC 29100:2024](https://www.iso.org/standard/85938.html) — imported reference; verification pending.
+
+### ref-2e509cbb
+
+[ISO/IEC 29134:2023](https://www.iso.org/standard/86012.html) — imported reference; verification pending.
+
+### ref-2e48fac8
+
+[Consumer Rights Act 2015](https://www.legislation.gov.uk/ukpga/2015/15/contents) — imported reference; verification pending.
+
+### ref-de03a85c
+
+[UK GDPR / Data Protection Act 2018](https://www.legislation.gov.uk/ukpga/2018/12/contents) — imported reference; verification pending.
+
+### ref-3c5edd48
+
+[Online Safety Act 2023](https://www.legislation.gov.uk/ukpga/2023/50/contents) — imported reference; verification pending.
+
+### ref-49097836
+
+[UK Digital Markets, Competition and Consumers Act 2024](https://www.legislation.gov.uk/ukpga/2024/13/contents) — imported reference; verification pending.
+
+### ref-9160e94a
+
+[Digital Markets, Competition and Consumers Act 2024](https://www.legislation.gov.uk/ukpga/2024/13/part/4) — imported reference; verification pending.
+
+### ref-9bd32f02
+
+[Data (Use and Access) Act 2025](https://www.legislation.gov.uk/ukpga/2025/18/contents) — imported reference; verification pending.
+
+### ref-2e09325b
+
+[Price Marking Order 2004](https://www.legislation.gov.uk/uksi/2004/102/contents) — imported reference; verification pending.
+
+### ref-20c7b15f
+
+[public-sector accessibility regulations](https://www.legislation.gov.uk/uksi/2018/952/contents) — imported reference; verification pending.
+
+### ref-28c93158
+
+[UK NCSC guidance](https://www.ncsc.gov.uk/collection/software-security-code-of-practice-implementation-guidance) — imported reference; verification pending.
+
+### ref-e3eec99e
+
+[UK NCSC IAM guidance](https://www.ncsc.gov.uk/guidance/introduction-identity-and-access-management) — imported reference; verification pending.
+
+### ref-0ab87b96
+
+[Z39.19](https://www.niso.org/publications/ansiniso-z3919-2005-r2010) — imported reference; verification pending.
+
+### ref-926d8bf3
+
+[25964](https://www.niso.org/schemas/iso25964) — imported reference; verification pending.
+
+### ref-14aaf1d9
+
+[NIST AI RMF 1.0](https://www.nist.gov/itl/ai-risk-management-framework) — imported reference; verification pending.
+
+### ref-5af1de6f
+
+[NIST Privacy Framework](https://www.nist.gov/privacy-framework) — imported reference; verification pending.
+
+### ref-5c4b49fe
+
+[Ofcom](https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/online-safety-regulatory-documents) — imported reference; verification pending.
+
+### ref-a6c83f6b
+
+[GeoSPARQL](https://www.ogc.org/standards/geosparql/) — imported reference; verification pending.
+
+### ref-c5383867
+
+[OMG BPMN 2.0.2](https://www.omg.org/spec/BPMN/2.0.2) — imported reference; verification pending.
+
+### ref-ec91d39f
+
+[CMMN 1.1](https://www.omg.org/spec/CMMN/1.1) — imported reference; verification pending.
+
+### ref-023bac16
+
+[OMG DMN 1.5](https://www.omg.org/spec/DMN/1.5/) — imported reference; verification pending.
+
+### ref-3cb45b85
+
+[PCI DSS](https://www.pcisecuritystandards.org/standards/pci-dss/) — imported reference; verification pending.
+
+### ref-1336ea6a
+
+[PMI PMBOK 8](https://www.pmi.org/standards/pmbok) — imported reference; verification pending.
+
+### ref-cd91c32e
+
+[BCP 47](https://www.rfc-editor.org/info/bcp47) — imported reference; verification pending.
+
+### ref-56be08c7
+
+[IETF RFC 6265](https://www.rfc-editor.org/info/rfc6265/) — imported reference; verification pending.
+
+### ref-74dd789a
+
+[RFC 3986](https://www.rfc-editor.org/rfc/rfc3986) — imported reference; verification pending.
+
+### ref-30a598c3
+
+[RFC 4287 Atom](https://www.rfc-editor.org/rfc/rfc4287) — imported reference; verification pending.
+
+### ref-783347a1
+
+[BCP 47](https://www.rfc-editor.org/rfc/rfc5646) — imported reference; verification pending.
+
+### ref-5a7fc9e7
+
+[RFC 9110](https://www.rfc-editor.org/rfc/rfc9110) — imported reference; verification pending.
+
+### ref-6f11a863
+
+[RFC 9309 robots](https://www.rfc-editor.org/rfc/rfc9309) — imported reference; verification pending.
+
+### ref-fdce2c42
+
+[RFC 9562](https://www.rfc-editor.org/rfc/rfc9562) — imported reference; verification pending.
+
+### ref-b15d3374
+
+[IETF RFC 9700](https://www.rfc-editor.org/rfc/rfc9700) — imported reference; verification pending.
+
+### ref-8ed599f6
+
+[RSS 2.0](https://www.rssboard.org/rss-specification) — imported reference; verification pending.
+
+### ref-38ce7b0b
+
+[W3C DPV Community Group](https://www.w3.org/community/dpvcg/) — imported reference; verification pending.
+
+### ref-b5b42c56
+
+[ActivityPub](https://www.w3.org/TR/activitypub/) — imported reference; verification pending.
+
+### ref-c75695ba
+
+[ActivityStreams 2.0](https://www.w3.org/TR/activitystreams-core/) — imported reference; verification pending.
+
+### ref-9dbe26fd
+
+[ATAG 2.0](https://www.w3.org/TR/ATAG20/) — imported reference; verification pending.
+
+### ref-b37ccf4d
+
+[Data on the Web Best Practices](https://www.w3.org/TR/dwbp/) — imported reference; verification pending.
+
+### ref-6d20146d
+
+[W3C JSON-LD 1.1](https://www.w3.org/TR/json-ld/) — imported reference; verification pending.
+
+### ref-a03bb42b
+
+[W3C JSON-LD 1.1](https://www.w3.org/TR/json-ld11/) — imported reference; verification pending.
+
+### ref-7854321a
+
+[OWL 2](https://www.w3.org/TR/owl-overview/) — imported reference; verification pending.
+
+### ref-c8ffae91
+
+[OWL 2 Profiles](https://www.w3.org/TR/owl2-profiles/) — imported reference; verification pending.
+
+### ref-1d5b21c8
+
+[RDF/RDFS](https://www.w3.org/TR/rdf11-concepts/) — imported reference; verification pending.
+
+### ref-5f7e8b5e
+
+[SPARQL 1.1](https://www.w3.org/TR/sparql11-query/) — imported reference; verification pending.
+
+### ref-51933823
+
+[Verifiable Credentials 2.0](https://www.w3.org/TR/vc-data-model-2.0/) — imported reference; verification pending.
+
+### ref-00ce33b2
+
+[DCAT 3](https://www.w3.org/TR/vocab-dcat-3/) — imported reference; verification pending.
+
+### ref-bc717cde
+
+[W3C WCAG 2.2 AA](https://www.w3.org/TR/wcag22/) — imported reference; verification pending.

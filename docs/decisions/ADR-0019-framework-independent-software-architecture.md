@@ -19,8 +19,8 @@ Responsibility, packaging, composition and deployment are independent. Nuxt-spec
 
 ## Adopting it
 
-The architecture and applicable engineering requirements are accepted. The [Common Engineering Standard](../engineering-standard.md), [Nuxt Layer Standard](../nuxt-layer-standard.md), [Composition Standard](../composition-standard.md) and [TypeScript Package Standard](../typescript-package-standard.md) apply cumulatively. The [Artefact Definition](../artefact-definition.md), descriptor schema and compatibility migration remain separately gated. Conceptual blueprint adoption and documentation placement follow their own governing reconciliation.
+The architecture and applicable engineering requirements are accepted. The [Common Engineering Standard](../engineering-standard.md), [Nuxt Layer Standard](../nuxt-layer-standard.md), [Composition Standard](../composition-standard.md) and [TypeScript Package Standard](../typescript-package-standard.md) apply cumulatively. The [Artefact Definition](../artefact-definition.md), descriptor schema and compatibility migration remain separately gated. Conceptual blueprint adoption follows ADR-0004 and ADR-0010; migration and individual design reconciliation remain separate.
 
 ## Guardrails
 
-Discovery never grants access, proves readiness or installs a component. No change transfers domain ownership or weakens security. Preserve existing accepted ADRs except the explicit extension of ADR-0012's composition budget. Do not remove live requirements, unresolved decisions, required compliance records or another active branch's work.
+Discovery never grants access, proves readiness or installs a component. No change transfers domain ownership or weakens security. Preserve existing accepted ADRs except where explicitly amended by an accepted decision. Do not remove live requirements, unresolved decisions, required compliance records or another active branch's work.

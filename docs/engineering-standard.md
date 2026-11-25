@@ -6,9 +6,9 @@ All maintained artefacts declare their purpose, public boundary, dependencies, c
 
 ## Documentation
 
-Keep one current canonical specification per responsibility. Integrate approved changes into that specification; remove obsolete wording, repeated review notes, superseded proposals and duplicate status narratives. Preserve current constraints, unresolved decisions and required evidence. Use Git commits and pull requests for history, not archive directories or pointer files. Keep active plans only while needed. Do not confuse conceptual approval with implemented or verified behaviour. Retain applicable legal, security, operational and audit records; this is a source documentation rule, not a retention override.
+Keep one current canonical specification per responsibility. Integrate approved changes into that specification; remove obsolete wording, repeated review notes, superseded proposals and duplicate status narratives. Preserve current constraints, unresolved decisions and required evidence. Use Git commits and pull requests for history, not archive directories or pointer files. Keep active implementation plans only while needed, outside the architecture repository. Documentation ownership and evidence placement follow ADR-0004 and ADR-0010. Do not confuse conceptual approval with implemented or verified behaviour. Retain applicable legal, security, operational and audit records; this is a source documentation rule, not a retention override.
 
-Use plain British English, short sections and concise contracts. Independently consumable artefacts publish a root CONTRACT.md and a validated artefact.json after the migration is approved. A contract is sufficient for consumption without private source. Package metadata is authoritative for installation dependencies; the artefact descriptor declares architectural relationships.
+Use plain British English, short sections and concise contracts. Independently consumable artefacts publish a root CONTRACT.md in their owning implementation repository and a validated artefact.json after descriptor migration is approved. A contract is sufficient for consumption without private source. Package metadata is authoritative for installation dependencies; the artefact descriptor declares architectural relationships.
 
 ## Engineering
 

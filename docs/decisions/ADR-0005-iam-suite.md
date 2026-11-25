@@ -4,7 +4,8 @@
 **Date:** 2026-10-09  
 **Amended:** 2026-10-23: suite documentation allocated to `iam-integration` (§3)  
 **Amended:** 2026-10-31: removed unavailable external document references  
-**Supplemented:** 2026-11-16: ADR-0017 adds distinct tenant governance, without altering group ownership or the IAM member boundaries
+**Supplemented:** 2026-11-16: ADR-0017 adds distinct tenant governance, without altering group ownership or the IAM member boundaries  
+**Amended:** 2026-11-25: conceptual suite architecture placement follows ADR-0004; implementation ownership is unchanged.
 
 > **In short:** five capabilities form the IAM suite, meeting only through contracts and ports: Authentication, Identity, Profile, Authorisation and `iam-integration`. Ten suite-wide invariants, from self-sovereignty to durable events, bind them all.
 
@@ -26,7 +27,7 @@ The Identity and Access Management (IAM) suite has five members. The four founda
 | `identity` | Opaque identity identifiers and their lifecycle; personal groups; groups, the single-parent hierarchy and tenants; memberships and their states; group governance settings | Names, contact details or any other personal data; credentials; access decisions |
 | `profile` | The personal data that describes a person, keyed by an opaque Identity identifier; what each context may see; the person's access, correction, export and erasure requests; anonymisation by unlinking | Credentials, sign-in identifiers, memberships, access decisions |
 | `authorisation` | Roles, assignments, grants and server-side access decisions | Groups, memberships, personal data |
-| `iam-integration` | The suite's architecture, its cross-capability processes, and the adapters and single composition call that wire the members ([ADR-0012](ADR-0012-trivial-composition.md) §3) | Any of the above data |
+| `iam-integration` | The suite's implemented composition, its cross-capability implementation processes, and the adapters and single composition call that wire the members ([ADR-0012](ADR-0012-trivial-composition.md) §3) | Any of the above data |
 
 Members meet only through public contracts and host-supplied ports. `iam-integration` is distinct from the general-purpose `integrations` hub.
 
@@ -45,7 +46,7 @@ Members meet only through public contracts and host-supplied ports. `iam-integra
 
 ### 3. Where the detail lives
 
-Following [ADR-0004](ADR-0004-documentation-placement.md), the suite architecture, the state models and the cross-capability processes (provisioning, joining and leaving, pausing, suspension, approval, account closure with a grace period, data-subject requests, recovery) belong in `nuxt-layers/iam-integration`. Each member's own contract documents its part. Suite-level processes must be established from those independently owned public contracts; foundational members do not depend on the integration repository's internal documentation.
+Following [ADR-0004](ADR-0004-documentation-placement.md), the approved conceptual suite architecture belongs in the governing architecture repository after migration. Implemented state models and cross-capability processes (provisioning, joining and leaving, pausing, suspension, approval, account closure with a grace period, data-subject requests, recovery) belong in `nuxt-layers/iam-integration`. Each member's own contract documents its part. Suite-level processes must be established from those independently owned public contracts; foundational members do not depend on the integration repository's internal documentation.
 
 ## What follows
 

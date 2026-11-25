@@ -1,6 +1,6 @@
 # Capability Catalogue
 
-> **In short:** authoritative ownership boundaries for established capabilities and provisional boundaries for candidate capabilities. The catalogue defines vocabulary and intended relationships, not delivery status or implementation plans. Capability detail belongs in its own repository ([ADR-0004](decisions/ADR-0004-documentation-placement.md)).
+> **In short:** authoritative ownership boundaries for established capabilities and provisional boundaries for candidate capabilities. The catalogue defines vocabulary and intended relationships, not delivery status or implementation plans. Approved conceptual designs belong in the governing architecture repository after reconciliation and migration; implemented contracts and technical detail remain with their owners ([ADR-0004](decisions/ADR-0004-documentation-placement.md)).
 
 ## Governing rules
 

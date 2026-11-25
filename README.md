@@ -1,6 +1,6 @@
 # Nuxt Layers Architecture Rules
 
-> **In short:** the rules every `nuxt-layers` capability and application follows: principles, cross-cutting standards and Architecture Decision Records. A capability's own detail lives in its own repository.
+> **Summary:** the authoritative platform architecture, governing rules and approved conceptual artefact designs. Implemented contracts and technical detail remain with their owning repositories.
 
 > **AI-driven development.** Nuxt Layers is an experimental initiative in which AI does the principal architecture, development, testing, security assessment and documentation, under human direction. The project owner decides requirements, governance, acceptance and releases. Every contribution meets the same standards, whatever its origin. See [Contributing](CONTRIBUTING.md).
 
@@ -24,13 +24,15 @@ Where documents conflict, authority descends in this order:
 2. the [Architecture](docs/architecture.md) overview;
 3. the [Capability Standard](docs/capability-standard.md);
 4. the cross-cutting baselines: identity, security, privacy, presentation;
-5. a capability's own normative documents;
-6. an application's documents;
-7. the implementation, which is evidence of behaviour, not authority.
+5. approved conceptual artefact designs, for intended responsibilities and boundaries;
+6. owner-maintained implemented contracts and technical specifications, for supported integration and implementation detail;
+7. implementation and verification evidence, for actual behaviour, not architectural authority.
+
+Reconcile conflicts between conceptual intent and implemented contracts; consumers use the actual public contract rather than assuming intended interfaces already exist.
 
 ## Where things live
 
-This repository holds only what applies to the whole ecosystem. A capability's contracts, data model, threat model, plan and processes live in its own repository; a suite's architecture and cross-capability processes live in its integration repository, such as `nuxt-layers/iam-integration` ([ADR-0004](docs/decisions/ADR-0004-documentation-placement.md)). Accessible external documents relied on are listed in [Resources](RESOURCES.md). This repository holds no plans or status ([ADR-0010](docs/decisions/ADR-0010-documentation-style.md)).
+This repository holds governing architecture and approved conceptual designs following reconciliation and migration of the working blueprint. Each implementation repository owns its root `CONTRACT.md`, detailed technical specifications and implementation. Suite implementation processes stay with the integration owner. Conceptual descriptors and generated indexes support selective discovery ([ADR-0004](docs/decisions/ADR-0004-documentation-placement.md)). Reviewed external references are listed in [Resources](RESOURCES.md). Development plans, progress and implementation verification evidence remain outside this repository ([ADR-0010](docs/decisions/ADR-0010-documentation-style.md)).
 
 ## Documents
 

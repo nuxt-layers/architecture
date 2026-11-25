@@ -97,13 +97,13 @@ Independently developed packages retain applicable root documents:
 | `PLAN.md` | Planned work while needed |
 | `STORAGE-REGISTER.md` | Storage created or caused, when applicable |
 
-Longer specifications and threat models belong under `docs/`. Security-critical packages maintain the required threat model and control evidence. Documentation follows ADR-0004 and ADR-0010.
+Detailed implementation specifications and threat models belong under the owning implementation repository's `docs/`. Approved conceptual designs belong in the architecture repository after blueprint reconciliation and migration. Security-critical packages maintain the required threat model and control evidence. Documentation follows ADR-0004 and ADR-0010.
 
 ### Canonical capability documentation
 
 **Each capability record must present one coherent, current specification.** Relevant approved decisions, cross-capability interactions and use cases must be integrated into their appropriate sections. Superseded, contradictory, redundant and irrelevant material must be removed. Historical evolution is preserved through version control and decision records, not accumulated within the canonical capability specification.
 
-Preserve the **substance and status** of accepted decisions; resolve contradictions against governing architecture instead of deleting valid authoritative requirements. Existing templates or pro-forma headings may be reorganised or removed when they no longer serve the current specification. The document must still cover the capability's required identity, ownership, inputs, outputs, dependencies, security, operational behaviour, GUI/headless needs and unresolved decisions. This applies to blueprint capability records as well as maintained capability specifications; it does not authorise rewriting previously accepted ADRs or deleting another active review's unmerged work.
+Preserve the **substance and status** of accepted decisions; resolve contradictions against governing architecture instead of deleting valid authoritative requirements. Existing templates or pro-forma headings may be reorganised or removed when they no longer serve the current specification. The document must still cover the capability's required identity, ownership, inputs, outputs, dependencies, security, operational behaviour, GUI/headless needs and unresolved decisions. Conceptual records govern intended design, while implementation specifications govern technical detail and must be reconciled with the approved design. This applies to blueprint capability records as well as maintained capability specifications; it does not authorise rewriting previously accepted ADRs or deleting another active review's unmerged work.
 
 ### Canonical stateless library records in the working blueprint
 
@@ -111,7 +111,7 @@ The working architecture blueprint records a genuine stateless library at `docs/
 
 Classify by **responsibility**, not by whether code uses a database or Nuxt. A service owning business rules, authoritative decisions or an independent lifecycle remains a capability even without durable storage. A stateless library instead supplies reusable transformations, validation or generation without its own business-state authority, durable stores, owned infrastructure/provider ports or screens. Inputs such as authorised data, resource bytes or optional adapters may be supplied by callers without transferring ownership to the library. Infrastructure integration libraries and connectors retain their distinct classifications.
 
-The blueprint record is a **non-normative conceptual specification**, not a package's public integration contract. Independently developed packages continue to maintain applicable root documentation under this standard, including a usable `CONTRACT.md` where required. Implemented behaviour and acceptance evidence are verified separately. This path convention applies to the blueprint, **not** to implementation repositories.
+The working blueprint record remains conceptual pending governing reconciliation and migration. Once adopted, the canonical conceptual record governs intended boundaries, not a package's implemented public integration contract. Independently developed packages continue to maintain applicable root documentation under this standard, including a usable `CONTRACT.md` where required. Implemented behaviour and acceptance evidence are verified separately. This path convention applies to the blueprint, **not** to implementation repositories.
 
 Packages use the `@nuxt-layers/` scope where applicable and declare every imported dependency. Public entry points and compatibility requirements must be explicit. The repository's default branch is protected; material changes use pull requests.
 

@@ -2,7 +2,7 @@
 
 **Capability:** `subscription` · **Classification:** Domain candidate · **Status:** Owner-approved conceptual specification (SUB-01–SUB-16 and reviewed recommendations, 23 November 2026); implementation contract and acceptance unverified.  
 **Directory:** `docs/capabilities/subscription` (preserved).  
-**Governing baseline:** `nuxt-layers/architecture-rules/master@d7f7c2ee051244b8c81325f5ff1267568d99aab1`; **opening blueprint:** `master@85c67c33e3e93d12bed5ffc14f78fb7d7bff8995`. [Review PR #137](https://github.com/nuxt-layers/architecture-blueprint-review/pull/137).
+**Governing baseline:** `nuxt-layers/architecture-rules/master@d7f7c2ee051244b8c81325f5ff1267568d99aab1`; **opening blueprint:** `master@85c67c33e3e93d12bed5ffc14f78fb7d7bff8995`. Review PR #137.
 
 **Maintenance rule:** Keep this file as the single coherent working conceptual specification during review. Integrate later decisions into the relevant ownership, lifecycle, contract, security, GUI and acceptance sections; update affected reciprocal records on the same PR, preserve approval statuses, and remove superseded wording rather than accumulating detached notes. Recheck current governing and blueprint `master` before integration.
 
@@ -187,7 +187,7 @@ The [application-test-template](https://github.com/nuxt-layers-test/application-
 
 ## Checkout reciprocal conceptual interface — 24 November 2026
 
-**Checkout-side conceptual interface owner-approved (24 November 2026):** [Checkout PR #151](https://github.com/nuxt-layers/architecture-blueprint-review/pull/151), [conceptual contract](../checkout/capability-record.md). Subscription can initiate direct Checkout for plan/terms/eligibility and receives qualified commercial/payment evidence. Subscription owns agreement/entitlement and recurring mandate is separately authorised. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.
+**Checkout-side conceptual interface owner-approved (24 November 2026):** Checkout PR #151, [conceptual contract](../checkout/capability-record.md). Subscription can initiate direct Checkout for plan/terms/eligibility and receives qualified commercial/payment evidence. Subscription owns agreement/entitlement and recurring mandate is separately authorised. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.
 
 ## FAC-D01–04 — Approved reciprocal responsibility alignment
 

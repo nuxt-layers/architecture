@@ -2,7 +2,7 @@
 
 **Capability:** `reviews` · **Classification:** Platform capability (owner-approved concept) · **Review date:** 23 November 2026 · **Status:** **conceptual design approved**, not implemented or adopted as a governing standard.  
 **Decisions approved:** REV-D01–REV-D08, REV-R01, REV-S01, REV-L01–REV-L02, REV-X01 and **REV-G01** (optional GUI and host composition), all approved by the owner on 23 November 2026.  
-**Implementation evidence:** no published `nuxt-layers/reviews/CONTRACT.md` or executable API verified. This document describes **idealised public contracts**, not released exports or working screens. [Draft review PR #130](https://github.com/nuxt-layers/architecture-blueprint-review/pull/130).  
+**Implementation evidence:** no published `nuxt-layers/reviews/CONTRACT.md` or executable API verified. This document describes **idealised public contracts**, not released exports or working screens. Draft review PR #130.  
 **Authority:** accepted `nuxt-layers/architecture-rules` ADRs and normative standards precede this blueprint. Initial governing baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`. Follow review protocol (former document: review protocol).
 
 ## Purpose and ownership

@@ -1,6 +1,6 @@
 # Workflow — conceptual capability specification
 
-**Capability:** `workflow` · **Class:** Platform · **Status:** owner-approved conceptual direction (WF-01–08, 23 November 2026); no verified implementation contract or acceptance evidence. **Review:** [draft PR #150](https://github.com/nuxt-layers/architecture-blueprint-review/pull/150). Accepted [architecture-rules](https://github.com/nuxt-layers/architecture-rules) ADRs and the normative Capability Standard take precedence over this non-normative blueprint.
+**Capability:** `workflow` · **Class:** Platform · **Status:** owner-approved conceptual direction (WF-01–08, 23 November 2026); no verified implementation contract or acceptance evidence. **Review:** draft PR #150. Accepted [architecture-rules](https://github.com/nuxt-layers/architecture-rules) ADRs and the normative Capability Standard take precedence over this non-normative blueprint.
 
 ## 1. Purpose and authoritative boundary
 
@@ -180,4 +180,4 @@ Avoid mandatory bpmn-js/dmn-js editor watermark terms, commercial/open-core addi
 
 ## Checkout reciprocal conceptual interface — 24 November 2026
 
-**Checkout-side conceptual interface owner-approved (24 November 2026):** [Checkout PR #151](https://github.com/nuxt-layers/architecture-blueprint-review/pull/151), [conceptual contract](../checkout/capability-record.md). Checkout requests scoped approval and consumes verified approval evidence; Workflow owns routing/checkpoints, not acceptance or payment authority. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.
+**Checkout-side conceptual interface owner-approved (24 November 2026):** Checkout PR #151, [conceptual contract](../checkout/capability-record.md). Checkout requests scoped approval and consumes verified approval evidence; Workflow owns routing/checkpoints, not acceptance or payment authority. Existing approved decisions remain authoritative; host-bound public ports only, no circular imports.

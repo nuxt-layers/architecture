@@ -2,7 +2,7 @@
 
 **Capability:** `training` · **Classification:** Domain capability candidate (distinct authoritative learning records and decisions).  
 **Status:** **Conceptual review documented and owner-approved in principle; draft PR #145 remains unmerged.** TRAIN-01–08 and COURSE-08–12 retain their owner-approved status; subsequent public-contract, standards, Error Normalisation/Logging/Audit/Reporting and GUI recommendations have also been approved in this review conversation. Attendance coordination resolved by FAC-D07; exact implementation interface shapes and operating evidence remain pending. No available, installed, configured, operational, enabled or authorised implementation is evidenced.  
-**Authority:** [governing catalogue](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/catalogue.md), [Capability Standard](https://github.com/nuxt-layers/architecture-rules/blob/master/docs/capability-standard.md), accepted ADR-0001/0002/0008/0009/0012/0016/0017/0018, review protocol (former document: review protocol). Governing `master` at review opening: `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint `master`: `8874cccf2f4faaa23b765a9a0a377a77951bc3da`.
+**Authority:** [governing catalogue](../../catalogue.md), [Capability Standard](../../capability-standard.md), accepted ADR-0001/0002/0008/0009/0012/0016/0017/0018, review protocol (former document: review protocol). Governing `master` at review opening: `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint `master`: `8874cccf2f4faaa23b765a9a0a377a77951bc3da`.
 
 ## Purpose, independence and source of truth
 

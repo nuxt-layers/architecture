@@ -2,7 +2,7 @@
 
 **Artefact classification:** technical service (CLS-08, owner-approved 24 November 2026), not hosting infrastructure; optional administration screens. Established Platform responsibility in the governing catalogue, pending governing reconciliation.  
 **Conceptual status:** **Complete and owner-approved** (SH-01–SH-06, standards, open-source direction, diagnostic/evidence/reporting boundaries and presentation, 23 November 2026).  
-**Review:** draft PR #135 in [`architecture-blueprint-review`](../../../RESOURCES.md#ref-d6e3a458). This blueprint is non-normative; accepted governing ADRs and the Capability Standard take precedence.  
+**Review:** draft PR #135 in [`architecture-blueprint-review`](../../../RESOURCES.md#blueprint). This blueprint is non-normative; accepted governing ADRs and the Capability Standard take precedence.  
 **Canonical path:** `docs/services/site-hosting/services-record.md`. The public identifier remains `site-hosting`.
 
 ## Purpose and ownership
@@ -106,9 +106,9 @@ Adopted as **conceptual design guidance**, not certification:
 
 | Standards body / reference | Design use and owner |
 |---|---|
-| **IETF DNS:** [RFC 1034](../../../RESOURCES.md#ref-1c93287e), [1035](../../../RESOURCES.md#ref-1d932a11), [2181](../../../RESOURCES.md#ref-0fd9b392); **IDNA2008** [5890–5892](../../../RESOURCES.md#ref-8f0b568c); **DNSSEC** [4033–4035](../../../RESOURCES.md#ref-db921862) | Site Hosting: DNS naming/verification and safe IDNs; DNSSEC evidence when supported, not mandatory for all domains |
-| **IETF HTTP:** [RFC 9110](../../../RESOURCES.md#ref-5a7fc9e7), [7239](../../../RESOURCES.md#ref-65408751) | Site Hosting and host: trusted authority and proxy forwarding boundaries |
-| **IETF TLS 1.3:** [RFC 9846](../../../RESOURCES.md#ref-4e38ad63) (supersedes 8446), [9525](../../../RESOURCES.md#ref-08c3b037) (service identity), [8555](../../../RESOURCES.md#ref-c53bb7e9) (ACME), [8659](../../../RESOURCES.md#ref-bb29113c) (CAA) | **Infrastructure:** certificate/TLS operations; Site Hosting: consume qualified readiness |
+| **IETF DNS:** [RFC 1034](../../../RESOURCES.md#rfc-1034), [1035](../../../RESOURCES.md#1035--wwwrfc-editororgrfcrfc1035), [2181](../../../RESOURCES.md#2181--wwwrfc-editororgrfcrfc2181); **IDNA2008** [5890–5892](../../../RESOURCES.md#58905892); **DNSSEC** [4033–4035](../../../RESOURCES.md#40334035) | Site Hosting: DNS naming/verification and safe IDNs; DNSSEC evidence when supported, not mandatory for all domains |
+| **IETF HTTP:** [RFC 9110](../../../RESOURCES.md#rfc-9110), [7239](../../../RESOURCES.md#7239--wwwrfc-editororgrfcrfc7239) | Site Hosting and host: trusted authority and proxy forwarding boundaries |
+| **IETF TLS 1.3:** [RFC 9846](../../../RESOURCES.md#rfc-9846) (supersedes 8446), [9525](../../../RESOURCES.md#9525--wwwrfc-editororgrfcrfc9525) (service identity), [8555](../../../RESOURCES.md#8555--wwwrfc-editororgrfcrfc8555) (ACME), [8659](../../../RESOURCES.md#8659--wwwrfc-editororgrfcrfc8659) (CAA) | **Infrastructure:** certificate/TLS operations; Site Hosting: consume qualified readiness |
 | **CA/Browser Forum TLS Baseline Requirements; ICANN transfer policy** | Certificate provider/Infrastructure: public trust; registrars: external ownership transfer. Neither constitutes Site Hosting site-binding authority |
 | **OWASP ASVS 5; ISO/IEC 27001/27002/27017; UK NCSC Cloud Security Principles** | Secure access, domain takeover defence, records, supplier controls, resilience and cloud management; do not imply ISO certification |
 | **UK GDPR and ICO privacy-by-design; applicable UK legislation** | Privacy and Legal Compliance qualify applicable obligations, retention and disclosure |
@@ -123,18 +123,18 @@ Implement against the **effective maintained editions**, relevant errata and dep
 | Candidate | Licence / purpose | Decision |
 |---|---|---|
 | Node.js built-ins: `node:dns/promises`, WHATWG `URL`, `node:crypto`, `fetch` | Existing Node open-source runtime; DNS TXT observation, URL/host parsing, scoped challenges and optional safe HTTP proof | **Prefer built-in** |
-| [`tldts`](../../../RESOURCES.md#ref-879dab13) | MIT; registrable-domain/public-suffix checking | **Preferred**; not proof of domain control |
-| [Zod](../../../RESOURCES.md#ref-1e3efac4) | MIT; request/schema validation | Use existing platform validator; **Zod only if needed** |
-| [`pg`](../../../RESOURCES.md#ref-be910869) / [Kysely](../../../RESOURCES.md#ref-af839a5b) | MIT; PostgreSQL access / optional typed SQL | Reuse existing owner-scoped persistence port; Kysely is optional |
-| [`tr46`](../../../RESOURCES.md#ref-35d9d4b1) / [Undici](../../../RESOURCES.md#ref-edd6cbb9) | MIT; optional Unicode conversion / bounded HTTP client | Only when justified by verified security requirements |
-| [Pino](../../../RESOURCES.md#ref-5f05d959) / [jose](../../../RESOURCES.md#ref-1841a1db) | MIT; diagnostic logging / optional signed-token interoperability | Prefer Logging's public interface and built-in crypto; no mandatory new dependency |
-| [Caddy](../../../RESOURCES.md#ref-f27c50a1) / [Traefik Proxy](../../../RESOURCES.md#ref-b407f18a) | Apache-2.0 / MIT open-source proxy products | **Infrastructure only**, behind existing Coolify/provider-neutral handover; no proxy migration or proprietary feature requirement |
+| [`tldts`](../../../RESOURCES.md#tldts) | MIT; registrable-domain/public-suffix checking | **Preferred**; not proof of domain control |
+| [Zod](../../../RESOURCES.md#zod) | MIT; request/schema validation | Use existing platform validator; **Zod only if needed** |
+| [`pg`](../../../RESOURCES.md#node-postgres--pg) / [Kysely](../../../RESOURCES.md#kysely) | MIT; PostgreSQL access / optional typed SQL | Reuse existing owner-scoped persistence port; Kysely is optional |
+| [`tr46`](../../../RESOURCES.md#tr46) / [Undici](../../../RESOURCES.md#nodejsundici) | MIT; optional Unicode conversion / bounded HTTP client | Only when justified by verified security requirements |
+| [Pino](../../../RESOURCES.md#pino) / [jose](../../../RESOURCES.md#jose) | MIT; diagnostic logging / optional signed-token interoperability | Prefer Logging's public interface and built-in crypto; no mandatory new dependency |
+| [Caddy](../../../RESOURCES.md#caddy) / [Traefik Proxy](../../../RESOURCES.md#traefik-proxy) | Apache-2.0 / MIT open-source proxy products | **Infrastructure only**, behind existing Coolify/provider-neutral handover; no proxy migration or proprietary feature requirement |
 
 Do not add a separate DNS daemon, Redis, Elasticsearch, Neo4j or certificate provider dependency for ordinary domain proof and routing. This shortlist is **not** an assertion that every future transitive package/version has already passed a licence audit.
 
 ## Optional GUI and application integration
 
-**Decision:** Optional **Site Hosting** dashboard, headless operation always available. The [`application-test-template`](../../../RESOURCES.md#ref-f1f7cc47) on `master` has a shared shell, homepage `/`, test dashboard `/admin`, responsive **Capabilities** sidebar linking to **Theme Manager** (`/theme-manager`), top bar and Appearance controls. A derived test host should add **Site Hosting** alongside Theme Manager. The link opens the capability dashboard **inside the same shell**, not a new application. The reference template's unauthenticated Theme Manager `test` mode is local-only, not a production IAM example.
+**Decision:** Optional **Site Hosting** dashboard, headless operation always available. The [`application-test-template`](../../../RESOURCES.md#application-test-template) on `master` has a shared shell, homepage `/`, test dashboard `/admin`, responsive **Capabilities** sidebar linking to **Theme Manager** (`/theme-manager`), top bar and Appearance controls. A derived test host should add **Site Hosting** alongside Theme Manager. The link opens the capability dashboard **inside the same shell**, not a new application. The reference template's unauthenticated Theme Manager `test` mode is local-only, not a production IAM example.
 
 | Logical screen / illustrative route | Function via public interfaces |
 |---|---|

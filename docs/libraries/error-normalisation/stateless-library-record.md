@@ -3,7 +3,7 @@
 **Name:** `error-normalisation`  
 **Classification:** Framework-independent **stateless library candidate**, not a stateful capability, Nuxt Layer or service.  
 **Conceptual status:** Owner-approved ERR-01–ERR-08 and subsequent contract, standards, reciprocal-boundary and GUI recommendations (22 November 2026); this specification is conceptually complete, subject to pre-merge reconciliation.  
-**Authority:** Accepted ADRs and the [governing Capability Standard](../../capability-standard.md) take priority over this conceptual specification.
+**Authority:** Accepted ADRs and the [governing Capability Standard](../../standards/capability-standard.md) take priority over this conceptual specification.
 
 
 **Todo consumer (23 November 2026; conceptual reciprocity):** [Todo](../../compositions/todo/compositions-record.md#error-normalisation-logging-audit-and-reporting--conceptual-public-interfaces-23-november-2026) supplies owner-defined versioned item/collection validation, conflict, permission, persistence or optional Task-link errors, known/unknown commit outcome, safe mapping/disclosure and opaque correlation to the library's pure normalise/classify/sanitise functions. It receives safe category/code/message key, public/diagnostic projections and advisory retry guidance. Todo alone owns commit/reconciliation and any separate Logging, Audit or Reporting submissions; the library never stores, emits or calls a service. No runtime contract asserted.

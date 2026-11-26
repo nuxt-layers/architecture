@@ -5,7 +5,7 @@
 **Implementation classification:** Stateless, framework-independent library; **not** an independently stateful capability or Nuxt Layer.  
 **Status:** Owner-approved conceptual requirement and naming, 21 November 2026. No repository, published code, `CONTRACT.md`, acceptance tests or releases are asserted.  
 **Review:** Location draft PR #98.  
-**Authority:** [Capability Standard](../../capability-standard.md), [ADR-0011](../../decisions/ADR-0011-shared-rich-text-and-configurable-copy.md), [ADR-0012](../../decisions/ADR-0012-trivial-composition.md), [ADR-0016](../../decisions/ADR-0016-controlled-layer-specialisation-and-composition.md), and retired Document decision (former review: document directory removal 2026 11 17). This blueprint record is non-normative until the required governing adoption.
+**Authority:** [Capability Standard](../../standards/capability-standard.md), [ADR-0011](../../decisions/ADR-0011-shared-rich-text-and-configurable-copy.md), [ADR-0012](../../decisions/ADR-0012-trivial-composition.md), [ADR-0016](../../decisions/ADR-0016-controlled-layer-specialisation-and-composition.md), and retired Document decision (former review: document directory removal 2026 11 17). This blueprint record is non-normative until the required governing adoption.
 
 ## Purpose
 

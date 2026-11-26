@@ -4,7 +4,7 @@
 **Classification:** Framework-independent **stateless library**, not a responsibility-owning capability, Nuxt layer or service.  
 **Status:** Agreed architecture under accepted ADR-0011 and the normative Capability Standard. This record is a conceptual reconciliation of a **documented, not independently tested** implementation contract; it is not a claim of runtime acceptance.  
 **Canonical implementation repository:** [`nuxt-layers/rich-text`](../../../RESOURCES.md#ref-19783b8e).  
-**Authority:** [Accepted ADR-0011](../../decisions/ADR-0011-shared-rich-text-and-configurable-copy.md) and [Capability Standard](../../capability-standard.md).  
+**Authority:** [Accepted ADR-0011](../../decisions/ADR-0011-shared-rich-text-and-configurable-copy.md) and [Capability Standard](../../standards/capability-standard.md).  
 **Review:** Draft conceptual PR #104; previous library relocation #102 and standardisation #103.
 
 ## Purpose, authority and exclusions

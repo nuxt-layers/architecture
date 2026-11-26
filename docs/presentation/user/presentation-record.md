@@ -4,7 +4,7 @@
 
 **Capability:** `user` · **Class:** Presentation · **Conceptual status:** complete, with USER-01–USER-06 and subsequent interface, standards, library, diagnostic and GUI recommendations owner-approved on 23 November 2026. **Implementation and acceptance:** unverified. **Repository decision:** a separate User package is conditional, not assumed.
 
-**Authority and evidence:** [Architecture Rules](../../../RESOURCES.md#ref-6d4a7ae1) `master` `d7f7c2ee051244b8c81325f5ff1267568d99aab1` and [blueprint](../../../RESOURCES.md#ref-d6e3a458) opening `master` `8874cccf2f4faaa23b765a9a0a377a77951bc3da`, reconciled with newer `master` `4c4fc52af5fc8ba19e20cf5360e8f416ef28c4e6` (23 November 2026). Accepted ADRs and normative Capability Standard supersede this non-normative blueprint; especially ADR-0005/0006/0009/0012/0016/0017/0018. Actual development evidence: root [Identity](../../../RESOURCES.md#ref-59d75cad), [Profile](../../../RESOURCES.md#ref-d369f0ce), [Authorisation](../../../RESOURCES.md#ref-4753322f) contracts; no independent `nuxt-layers/user/CONTRACT.md` verified. The [reference application template](../../../RESOURCES.md#ref-8c941ad8) and [Theme Manager contract](../../../RESOURCES.md#ref-484ee610) are presentation evidence, not an integrated User runtime.
+**Authority and evidence:** [Architecture Rules](../../../RESOURCES.md#architecture-rules-2) `master` `d7f7c2ee051244b8c81325f5ff1267568d99aab1` and [blueprint](../../../RESOURCES.md#blueprint) opening `master` `8874cccf2f4faaa23b765a9a0a377a77951bc3da`, reconciled with newer `master` `4c4fc52af5fc8ba19e20cf5360e8f416ef28c4e6` (23 November 2026). Accepted ADRs and normative Capability Standard supersede this non-normative blueprint; especially ADR-0005/0006/0009/0012/0016/0017/0018. Actual development evidence: root [Identity](../../../RESOURCES.md#identity--contractmd), [Profile](../../../RESOURCES.md#profile--contractmd), [Authorisation](../../../RESOURCES.md#authorisation--contractmd) contracts; no independent `nuxt-layers/user/CONTRACT.md` verified. The [reference application template](../../../RESOURCES.md#application-test-template-2) and [Theme Manager contract](../../../RESOURCES.md#theme-manager--contractmd) are presentation evidence, not an integrated User runtime.
 
 ## 1. Purpose and boundary
 
@@ -96,7 +96,7 @@ The Error Normalisation [conceptual contract](../../libraries/error-normalisatio
 
 ## 6. GUI and host composition
 
-**Presentation requirement:** Yes, an optional user-facing **administration GUI**, with an administrator/operator dashboard and a headless absence mode. The [test-application template](../../../RESOURCES.md#ref-8c941ad8) provides the reference: homepage `/` without admin sidebar, host dashboard `/admin` with collapsible desktop/mobile navigation, a Theme Manager sidebar link to `/theme-manager`, shared top bar and Theme Manager-backed appearance. A derived host adds a labelled **Users** item, illustrative path **`/admin/users`**; this is a proposed route, not a verified User endpoint.
+**Presentation requirement:** Yes, an optional user-facing **administration GUI**, with an administrator/operator dashboard and a headless absence mode. The [test-application template](../../../RESOURCES.md#application-test-template-2) provides the reference: homepage `/` without admin sidebar, host dashboard `/admin` with collapsible desktop/mobile navigation, a Theme Manager sidebar link to `/theme-manager`, shared top bar and Theme Manager-backed appearance. A derived host adds a labelled **Users** item, illustrative path **`/admin/users`**; this is a proposed route, not a verified User endpoint.
 
 **Screen inventory** (route names are illustrative and host-configurable):
 
@@ -129,22 +129,22 @@ The Error Normalisation [conceptual contract](../../libraries/error-normalisatio
 
 ## 8. Standards and open-source dependencies
 
-**Required project baseline:** [W3C WCAG 2.2 AA](../../../RESOURCES.md#ref-eb11cf7e), [OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2), BCP 47, Unicode CLDR and ECMA-402; [WAI-ARIA 1.2](../../../RESOURCES.md#ref-90f5e4b1) with informative [APG](../../../RESOURCES.md#ref-54e6f5b0) for custom controls. **Design references:** ISO 9241-210/11 (human-centred usability), [NIST SP 800-63-4](../../../RESOURCES.md#ref-ec4142c5) and UK NCSC secure administration (owner IAM assurance/privilege), ISO/IEC 27001/27002 and 29100/27701 (security/privacy governance). **Conditional duties:** UK GDPR, Data Protection Act 2018 and applicable public-sector accessibility/EN 301 549 requirements, with qualified legal interpretation. **Optional protocols:** OpenID Connect, SCIM RFC 7643/7644 and RFC 9457 only through compatible, versioned owner contracts. Standards alignment does not certify a runtime or assert legal compliance.
+**Required project baseline:** [W3C WCAG 2.2 AA](../../../RESOURCES.md#wcag-22), [OWASP ASVS 5](../../../RESOURCES.md#owasp-asvs-500), BCP 47, Unicode CLDR and ECMA-402; [WAI-ARIA 1.2](../../../RESOURCES.md#wai-aria-12) with informative [APG](../../../RESOURCES.md#apg) for custom controls. **Design references:** ISO 9241-210/11 (human-centred usability), [NIST SP 800-63-4](../../../RESOURCES.md#nist-sp-800-63-4) and UK NCSC secure administration (owner IAM assurance/privilege), ISO/IEC 27001/27002 and 29100/27701 (security/privacy governance). **Conditional duties:** UK GDPR, Data Protection Act 2018 and applicable public-sector accessibility/EN 301 549 requirements, with qualified legal interpretation. **Optional protocols:** OpenID Connect, SCIM RFC 7643/7644 and RFC 9457 only through compatible, versioned owner contracts. Standards alignment does not certify a runtime or assert legal compliance.
 
 **Fully open-source, commercially permissive implementation candidates (not adopted dependencies):**
 
 | Candidate (upstream) | Licence | Decision and use |
 |---|---|---|
-| [Reka UI](../../../RESOURCES.md#ref-12355446) | MIT | Preferred accessible **unstyled** primitives if the platform `ui` capability has gaps |
-| [Nuxt UI v4](../../../RESOURCES.md#ref-b0f34541) | MIT | Alternative **complete** UI toolkit, only if adopted by shared `ui`/Theme Manager architecture; avoid competing stacks |
-| [TanStack Table](../../../RESOURCES.md#ref-af94a8b1) | MIT | Conditional advanced directory table, with owner-authorised server pagination |
-| [VeeValidate](../../../RESOURCES.md#ref-bd5a7590) | MIT | Conditional complex administration forms |
-| [Zod](../../../RESOURCES.md#ref-1e3efac4) | MIT | Reuse existing published owner schemas where available |
-| [VueUse](../../../RESOURCES.md#ref-9507482e) | MIT | Optional Vue utilities; never persist sensitive state casually |
-| [Vue I18n](../../../RESOURCES.md#ref-4941c780) | MIT | Only if host has no suitable localisation mechanism |
-| [Lucide](../../../RESOURCES.md#ref-c5624441) | ISC | Optional icons where shared `ui` has none |
-| [TanStack Query](../../../RESOURCES.md#ref-51cb5e45) | MIT | Only if Nuxt data fetching is inadequate; isolate/invalidate tenant-scoped caches |
-| [Playwright](../../../RESOURCES.md#ref-12180955) | Apache-2.0 | CI/browser acceptance only, not a runtime dependency |
+| [Reka UI](../../../RESOURCES.md#reka-ui) | MIT | Preferred accessible **unstyled** primitives if the platform `ui` capability has gaps |
+| [Nuxt UI v4](../../../RESOURCES.md#nuxt-ui-v4) | MIT | Alternative **complete** UI toolkit, only if adopted by shared `ui`/Theme Manager architecture; avoid competing stacks |
+| [TanStack Table](../../../RESOURCES.md#tanstack-table) | MIT | Conditional advanced directory table, with owner-authorised server pagination |
+| [VeeValidate](../../../RESOURCES.md#veevalidate) | MIT | Conditional complex administration forms |
+| [Zod](../../../RESOURCES.md#zod) | MIT | Reuse existing published owner schemas where available |
+| [VueUse](../../../RESOURCES.md#vueuse) | MIT | Optional Vue utilities; never persist sensitive state casually |
+| [Vue I18n](../../../RESOURCES.md#vue-i18n) | MIT | Only if host has no suitable localisation mechanism |
+| [Lucide](../../../RESOURCES.md#lucide) | ISC | Optional icons where shared `ui` has none |
+| [TanStack Query](../../../RESOURCES.md#tanstack-query) | MIT | Only if Nuxt data fetching is inadequate; isolate/invalidate tenant-scoped caches |
+| [Playwright](../../../RESOURCES.md#playwright) | Apache-2.0 | CI/browser acceptance only, not a runtime dependency |
 
 **Licensing gate:** require current complete upstream source and commercially permissive licences, including transitive dependencies. Do not adopt open-core/delayed-source paid-feature packages. Newer PrimeVue/PrimeUI commercial development does not qualify; old MIT versions are not a current flagship. OpenVue needs maturity evidence. axe-core is fully open source but **MPL-2.0**, not strictly permissive, so not on this shortlist. Recheck specific release licence, dependency/security status, maintenance and Nuxt 4 compatibility before implementation. No Neo4j, Redis, Elasticsearch, external IAM engine or new data store is justified.
 

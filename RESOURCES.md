@@ -35,10 +35,15 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="iso-223012019"></a><a id="ref-85e985cf"></a>ISO 22301:2019 | [https://www.iso.org/standard/75106.html](https://www.iso.org/standard/75106.html) | Requirements for business continuity management systems, including preparation for disruption and recovery. |
 | <a id="iso-223132020"></a><a id="iso-22313"></a><a id="ref-bf79b3b2"></a>ISO 22313:2020 | [https://www.iso.org/standard/75107.html](https://www.iso.org/standard/75107.html) | Guidance on applying ISO 22301 business continuity management system requirements. |
 | <a id="iso-22400-12014"></a><a id="iso-22400"></a><a id="ref-a2579280"></a>ISO 22400-1:2014 | [https://www.iso.org/standard/56847.html](https://www.iso.org/standard/56847.html) | Manufacturing operations performance indicator concepts, terminology and construction criteria. |
+| <a id="iso-23081-1-2017"></a><a id="iso-23081"></a><a id="ref-36977534"></a>ISO 23081-1:2017 | [https://www.iso.org/standard/73172.html](https://www.iso.org/standard/73172.html) | Principles for records management metadata supporting authenticity, integrity, reliability and usability. |
+| <a id="iso-23081-2-2021"></a>ISO 23081-2:2021 | [https://www.iso.org/standard/81600.html](https://www.iso.org/standard/81600.html) | Conceptual model and implementation guidance for defining and managing records metadata. |
 | <a id="iso-23247-12021"></a><a id="iso-23247"></a><a id="ref-9ad284d4"></a>ISO 23247-1:2021 | [https://www.iso.org/standard/75066.html](https://www.iso.org/standard/75066.html) | Foundational concepts and requirements for manufacturing digital twin frameworks. |
 | <a id="iso-280002022"></a><a id="iso-28000"></a><a id="ref-c7f3ad87"></a>ISO 28000:2022 | [https://www.iso.org/standard/79612.html](https://www.iso.org/standard/79612.html) | Security management system requirements, including supply chain security. |
 | <a id="iso-304142025"></a><a id="iso-30414"></a><a id="ref-c0c6fe85"></a>ISO 30414:2025 | [https://www.iso.org/standard/30414](https://www.iso.org/standard/30414) | Requirements and recommendations for human capital reporting and disclosure. |
 | <a id="iso-310002018"></a><a id="iso-31000"></a><a id="iso-310002018-2"></a><a id="ref-262af923"></a><a id="ref-731cfbd0"></a><a id="ref-a5666aad"></a>ISO 31000:2018 | [https://www.iso.org/standard/31000](https://www.iso.org/standard/31000) | Risk management principles, framework and processes for identifying, assessing, treating and monitoring organisational risks. |
+| <a id="iso-3166-1-2020"></a><a id="iso-3166"></a><a id="ref-92c03402"></a>ISO 3166-1:2020 | [https://www.iso.org/standard/72482.html](https://www.iso.org/standard/72482.html) | Alphabetic and numeric country identifiers for interoperable geographic data. |
+| <a id="iso-3166-2-2020"></a>ISO 3166-2:2020 | [https://www.iso.org/standard/72483.html](https://www.iso.org/standard/72483.html) | Identifiers for principal country subdivisions. |
+| <a id="iso-3166-3-2020"></a>ISO 3166-3:2020 | [https://www.iso.org/standard/72484.html](https://www.iso.org/standard/72484.html) | Identifiers for formerly used country names to support interpretation of historical data. |
 | <a id="iso-31700-12023"></a><a id="ref-d1c9e7cb"></a>ISO 31700-1:2023 | [https://www.iso.org/standard/84977.html](https://www.iso.org/standard/84977.html) | High-level privacy-by-design requirements for consumer goods and services. |
 | <a id="iso-373012021"></a><a id="ref-3537977c"></a>ISO 37301:2021 | [https://www.iso.org/standard/75080.html](https://www.iso.org/standard/75080.html) | Requirements and guidance for establishing and improving organisational compliance management systems. |
 | <a id="iso-373022025"></a><a id="ref-48476530"></a>ISO 37302:2025 | [https://www.iso.org/standard/37302](https://www.iso.org/standard/37302) | Framework and indicators for evaluating and improving compliance management system effectiveness. |
@@ -47,6 +52,9 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="iso-7042022"></a><a id="704--wwwisoorgstandard79077html"></a><a id="ref-e23b09be"></a>ISO 704:2022 | [https://www.iso.org/standard/79077.html](https://www.iso.org/standard/79077.html) | Principles for constructing terminology, relating concepts and designations, and writing definitions. |
 | <a id="iso-85832023"></a><a id="ref-eb08ffb2"></a>ISO 8583:2023 | [https://www.iso.org/standard/79451.html](https://www.iso.org/standard/79451.html) | Interchange message specifications for financial transactions originating from payment cards. |
 | <a id="iso-8601-12019"></a><a id="8601--wwwisoorgstandard70907html"></a><a id="ref-bea40961"></a>ISO 8601-1:2019 | [https://www.iso.org/standard/70907.html](https://www.iso.org/standard/70907.html) | Basic representations of Gregorian calendar dates, times and UTC offsets for information interchange. |
+| <a id="iso-8601-1-2019-amd-1-2022"></a>ISO 8601-1:2019/Amd 1:2022 | [https://www.iso.org/standard/81801.html](https://www.iso.org/standard/81801.html) | Technical corrections to the basic date and time representation rules. |
+| <a id="iso-8601-2-2019"></a><a id="iso-8601"></a><a id="ref-8bda6c42"></a>ISO 8601-2:2019 | [https://www.iso.org/standard/70908.html](https://www.iso.org/standard/70908.html) | Extended date and time representations for information interchange. |
+| <a id="iso-8601-2-2019-amd-1-2025"></a>ISO 8601-2:2019/Amd 1:2025 | [https://www.iso.org/standard/86124.html](https://www.iso.org/standard/86124.html) | Canonical expressions, extended time scale components and date-time arithmetic. |
 | <a id="iso-90012026"></a><a id="iso-9001"></a><a id="ref-0f984f81"></a>ISO 9001:2026 | [https://www.iso.org/standard/9001](https://www.iso.org/standard/9001) | Quality management system requirements for consistent products and services, customer satisfaction and improvement. |
 | <a id="iso-9241-1712025"></a><a id="ref-7b6be755"></a>ISO 9241-171:2025 | [https://www.iso.org/standard/86308.html](https://www.iso.org/standard/86308.html) | Ergonomic guidance for accessible software and user interaction. |
 | <a id="iso-9241-2102019"></a><a id="ref-059e6b51"></a>ISO 9241-210:2019 | [https://www.iso.org/standard/77520.html](https://www.iso.org/standard/77520.html) | Human-centred design principles and activities for interactive systems. |
@@ -75,6 +83,7 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="isoiec-ts-290032018"></a><a id="ref-58f59639"></a>ISO/IEC TS 29003:2018 | [https://www.iso.org/standard/62290.html](https://www.iso.org/standard/62290.html) | Identity proofing levels and requirements for establishing a person's identity. |
 | <a id="isoiecieee-152882023"></a><a id="ref-b6981e72"></a>ISO/IEC/IEEE 15288:2023 | [https://www.iso.org/standard/81702.html](https://www.iso.org/standard/81702.html) | Common engineering processes and terminology for system lifecycles. |
 | <a id="isoiecieee-420102022"></a><a id="420102022"></a><a id="ref-e85f94dc"></a>ISO/IEC/IEEE 42010:2022 | [https://www.iso.org/standard/74393.html](https://www.iso.org/standard/74393.html) | Requirements for architecture descriptions, viewpoints, model kinds and architecture description frameworks. |
+| <a id="isotr-23081-3-2011"></a>ISO/TR 23081-3:2011 | [https://www.iso.org/standard/57121.html](https://www.iso.org/standard/57121.html) | Self-assessment method for evaluating records metadata capture, management and implementation readiness. |
 | <a id="nist-sp-800-137"></a><a id="ref-e530b140"></a>NIST SP 800-137 | [https://csrc.nist.gov/pubs/sp/800/137/final](https://csrc.nist.gov/pubs/sp/800/137/final) | Guidance for continuous monitoring of security controls, threats, vulnerabilities and organisational risk. |
 | <a id="nist-sp-800-177-rev-1"></a><a id="ref-5475a9f6"></a>NIST SP 800-177 Rev. 1 | [https://csrc.nist.gov/pubs/sp/800/177/r1/final](https://csrc.nist.gov/pubs/sp/800/177/r1/final) | Guidance for trustworthy email, including domain authentication, transport security and message protection. |
 | <a id="nist-sp-800-209"></a><a id="ref-71d6aa98"></a>NIST SP 800-209 | [https://csrc.nist.gov/pubs/sp/800/209/final](https://csrc.nist.gov/pubs/sp/800/209/final) | Security guidance for storage infrastructure, including access control, isolation, data protection and recovery. |
@@ -133,6 +142,9 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="rfc-9562"></a><a id="rfc-9562-2"></a><a id="ref-fdce2c42"></a><a id="ref-fa03258e"></a>RFC 9562 | [https://www.rfc-editor.org/info/rfc9562/](https://www.rfc-editor.org/info/rfc9562/) | Defines UUID formats and generation methods, including time-ordered UUID version 7. |
 | <a id="rfc-9700"></a><a id="ietf-rfc-9700"></a><a id="ref-7f8e07b3"></a><a id="ref-b15d3374"></a>RFC 9700 | [https://www.rfc-editor.org/info/rfc9700/](https://www.rfc-editor.org/info/rfc9700/) | OAuth 2.0 security best practices, including protections against token theft, redirect abuse and authorisation flow attacks. |
 | <a id="rfc-9846"></a><a id="rfc-8446"></a><a id="ref-0296369e"></a><a id="ref-4e38ad63"></a>RFC 9846 | [https://www.rfc-editor.org/info/rfc9846/](https://www.rfc-editor.org/info/rfc9846/) | Defines TLS 1.3 for authenticated, confidential and integrity-protected communications; supersedes RFC 8446. |
+| <a id="rfc-9989"></a><a id="7489--wwwrfc-editororginforfc7489"></a><a id="ref-600abcac"></a>RFC 9989 | [https://www.rfc-editor.org/rfc/rfc9989.html](https://www.rfc-editor.org/rfc/rfc9989.html) | DMARC domain-level email authentication alignment, policy and message disposition. |
+| <a id="rfc-9990"></a>RFC 9990 | [https://www.rfc-editor.org/rfc/rfc9990.html](https://www.rfc-editor.org/rfc/rfc9990.html) | DMARC aggregate reporting format and delivery requirements. |
+| <a id="rfc-9991"></a>RFC 9991 | [https://www.rfc-editor.org/rfc/rfc9991.html](https://www.rfc-editor.org/rfc/rfc9991.html) | DMARC message-specific failure reporting mechanisms and safeguards. |
 
 ## Consolidated reference inventory
 
@@ -1338,12 +1350,6 @@ IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-i
 
 [ProseMirror](https://code.haverbeke.berlin/prosemirror/prosemirror) — imported reference; verification pending.
 
-### ISO 23081
-
-<a id="ref-36977534"></a>
-
-[ISO 23081](https://committee.iso.org/sites/tc46sc11/home/projects/published/iso-23081-metadata-for-records.html) — imported reference; verification pending.
-
 ### BCP 47
 
 <a id="ref-699eef87"></a>
@@ -1943,18 +1949,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-386eb998"></a>
 
 [Data Quality Framework](https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance) — imported reference; verification pending.
-
-### ISO 3166
-
-<a id="ref-92c03402"></a>
-
-[ISO 3166](https://www.iso.org/iso-3166-country-codes.html) — imported reference; verification pending.
-
-### ISO 8601
-
-<a id="ref-8bda6c42"></a>
-
-[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) — imported reference; verification pending.
 
 ### Consumer Rights Act 2015
 
@@ -3611,12 +3605,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 <a id="ref-1aaf2ddd"></a>
 
 [PSR / Pay.UK](https://www.psr.org.uk/) — imported reference; verification pending.
-
-### 7489 — www.rfc-editor.org/info/rfc7489
-
-<a id="ref-600abcac"></a>
-
-[7489](https://www.rfc-editor.org/info/rfc7489/) — imported reference; verification pending.
 
 ### Sitemaps.org
 

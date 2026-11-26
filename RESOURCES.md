@@ -4,7 +4,7 @@
 
 ## Relied on
 
-- Historical decision provenance: Blueprint PR #39, merged revision `a5a61330722a72792a20a1976f3a305d29f1bb93` (superseded historical tree reference). Current governing requirements are in [ADR-0017](docs/decisions/ADR-0017-tenant-hierarchy-and-accountable-digital-control.md) and [ADR-0018](docs/decisions/ADR-0018-policy-governance-and-commercial-entitlements.md).
+- Current governing requirements for tenant governance and commercial entitlements are defined in [ADR-0017](docs/decisions/ADR-0017-tenant-hierarchy-and-accountable-digital-control.md) and [ADR-0018](docs/decisions/ADR-0018-policy-governance-and-commercial-entitlements.md).
 
 Add further references only after confirming that the target repository, revision and file are accessible.
 

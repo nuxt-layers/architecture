@@ -79,19 +79,19 @@ The following references guide **data-owning capabilities and host Infrastructur
 
 | Authority / reference | Use within this architecture | Owner / applicability |
 |---|---|---|
-| [ISO/IEC 27001:2022](../../RESOURCES.md#ref-42fa42bb) and [ISO/IEC 27002:2022](../../RESOURCES.md#ref-d1765e3f) | Risk-based management and security controls: privileged access, encryption, change control, supplier assurance, incident response | Host/security governance; each source owner implements relevant controls; certification is a **separate** undertaking |
-| [ISO/IEC 27040:2024](../../RESOURCES.md#ref-fbbdfd70) | Specialist storage-security design: media, encryption/key protection, access isolation and lifecycle | Source-owner storage ports and Infrastructure/provider environment |
-| [ISO/IEC 27701:2025](../../RESOURCES.md#ref-b948c1e2) | Privacy information management, controller/processor responsibilities, information lifecycle | Privacy and Legal Compliance coordinate applicable policy; each source owner implements scoped processing |
-| [ISO 22301:2019](../../RESOURCES.md#ref-85e985cf) | Continuity planning, service recovery objectives, exercises and evidence | Host/Infrastructure operates resilient services; data owners establish acceptable loss/restore and reconciliation objectives |
-| [ISO/IEC 27017:2026](../../RESOURCES.md#ref-48fc8ac4) | Cloud security control guidance for hosted databases and providers | Host/operator and infrastructure supplier; avoid treating certification as an automatic requirement |
-| [ISO/IEC 9075:2023](../../RESOURCES.md#ref-b335bb8b) (SQL family) | Relational database semantics/portability reference; assess actual PostgreSQL features and documented deviations | Each relational source owner; not a ban on PostgreSQL-specific capabilities or non-SQL stores |
-| [UK NCSC Cloud Security Principles](../../RESOURCES.md#ref-ca1f56e2) | Provider assessment, protected data at rest, separation, service resilience and secure disposal | Infrastructure/host and supplier assurance |
-| [ICO Guide to Data Security](../../RESOURCES.md#ref-223a59b6) / UK GDPR Articles 5(1)(f), 25 and 32 | Integrity/confidentiality, protection by design, appropriate security and recoverability; complementary retention, lawful erasure and residency obligations apply according to assessed circumstances | Privacy/Legal Compliance establish applicable duties; owning capabilities and host fulfil their assigned measures. Guidance notes pending legal updates, so recheck current law before use |
-| [NIST SP 800-53 Rev. 5](../../RESOURCES.md#ref-3fd80945) | Supplementary control catalogue: AC, AU, CP, SC, SI and privacy controls | Security and audit risk-assessment crosswalk, not universally mandatory US federal certification |
-| [NIST SP 800-88 Rev. 2](../../RESOURCES.md#ref-ee67b17c) | Sanitisation/disposal of physical, virtual and cloud storage media; establish provider-supported verification and backup lifecycle | Infrastructure/provider disposal with source-owner deletion/hold decisions |
-| [OWASP ASVS 5.0.0](../../RESOURCES.md#ref-a1c367d2) | Application/server-side access, data protection, input validation and defensible verification criteria | Each source-owner implementation and host-facing service; mandatory project baseline L2 and relevant L3 |
-| [W3C WCAG 2.2](../../RESOURCES.md#ref-0d1f555e) Level AA | Accessibility of optional Infrastructure operator screens, not a storage-engine protocol | Infrastructure presentation; preserve existing WAI accessibility, i18n and Theme Manager requirements |
-| [PCI DSS 4.0.1](../../RESOURCES.md#ref-b32c0c68) | Specific controls for stored cardholder data and any system in the payment-card data environment | **Conditional** on actual cardholder-data scope and contractual applicability, with Payment Gateway/owning domain and Legal Compliance determining boundaries |
+| [ISO/IEC 27001:2022](../../RESOURCES.md#isoiec-270012022) and [ISO/IEC 27002:2022](../../RESOURCES.md#isoiec-270022022) | Risk-based management and security controls: privileged access, encryption, change control, supplier assurance, incident response | Host/security governance; each source owner implements relevant controls; certification is a **separate** undertaking |
+| [ISO/IEC 27040:2024](../../RESOURCES.md#isoiec-270402024) | Specialist storage-security design: media, encryption/key protection, access isolation and lifecycle | Source-owner storage ports and Infrastructure/provider environment |
+| [ISO/IEC 27701:2025](../../RESOURCES.md#isoiec-277012025) | Privacy information management, controller/processor responsibilities, information lifecycle | Privacy and Legal Compliance coordinate applicable policy; each source owner implements scoped processing |
+| [ISO 22301:2019](../../RESOURCES.md#iso-223012019) | Continuity planning, service recovery objectives, exercises and evidence | Host/Infrastructure operates resilient services; data owners establish acceptable loss/restore and reconciliation objectives |
+| [ISO/IEC 27017:2026](../../RESOURCES.md#isoiec-270172026) | Cloud security control guidance for hosted databases and providers | Host/operator and infrastructure supplier; avoid treating certification as an automatic requirement |
+| [ISO/IEC 9075:2023](../../RESOURCES.md#isoiec-90752023) (SQL family) | Relational database semantics/portability reference; assess actual PostgreSQL features and documented deviations | Each relational source owner; not a ban on PostgreSQL-specific capabilities or non-SQL stores |
+| [UK NCSC Cloud Security Principles](../../RESOURCES.md#uk-ncsc-cloud-security-principles) | Provider assessment, protected data at rest, separation, service resilience and secure disposal | Infrastructure/host and supplier assurance |
+| [ICO Guide to Data Security](../../RESOURCES.md#ico-guide-to-data-security) / UK GDPR Articles 5(1)(f), 25 and 32 | Integrity/confidentiality, protection by design, appropriate security and recoverability; complementary retention, lawful erasure and residency obligations apply according to assessed circumstances | Privacy/Legal Compliance establish applicable duties; owning capabilities and host fulfil their assigned measures. Guidance notes pending legal updates, so recheck current law before use |
+| [NIST SP 800-53 Rev. 5](../../RESOURCES.md#nist-sp-800-53-rev-5) | Supplementary control catalogue: AC, AU, CP, SC, SI and privacy controls | Security and audit risk-assessment crosswalk, not universally mandatory US federal certification |
+| [NIST SP 800-88 Rev. 2](../../RESOURCES.md#nist-sp-800-88-rev-2) | Sanitisation/disposal of physical, virtual and cloud storage media; establish provider-supported verification and backup lifecycle | Infrastructure/provider disposal with source-owner deletion/hold decisions |
+| [OWASP ASVS 5.0.0](../../RESOURCES.md#owasp-asvs-500) | Application/server-side access, data protection, input validation and defensible verification criteria | Each source-owner implementation and host-facing service; mandatory project baseline L2 and relevant L3 |
+| [W3C WCAG 2.2](../../RESOURCES.md#w3c-wcag-22) Level AA | Accessibility of optional Infrastructure operator screens, not a storage-engine protocol | Infrastructure presentation; preserve existing WAI accessibility, i18n and Theme Manager requirements |
+| [PCI DSS 4.0.1](../../RESOURCES.md#pci-dss-401) | Specific controls for stored cardholder data and any system in the payment-card data environment | **Conditional** on actual cardholder-data scope and contractual applicability, with Payment Gateway/owning domain and Legal Compliance determining boundaries |
 
 ### Design and acceptance implications
 
@@ -109,24 +109,24 @@ The following references guide **data-owning capabilities and host Infrastructur
 
 | Project / upstream source | Licence | Intended role and choice | Boundary / evidence |
 |---|---|---|---|
-| [PostgreSQL](../../RESOURCES.md#ref-fa79609e) | PostgreSQL License (permissive) | **Default open-source relational engine** operated by host Infrastructure; keep the existing PostgreSQL 18 environment baseline while assessing newly released major versions separately | Complete community source; owner-specific schemas, policies, transactions, RLS and migrations remain with their respective capability |
-| [node-postgres / pg](../../RESOURCES.md#ref-be910869) | MIT | **Default Node/TypeScript driver** and ADR-0012 `pg`-compatible host pool | Host provides connection; each data-owning capability implements its own published store port |
-| [Kysely](../../RESOURCES.md#ref-af839a5b) | MIT | Preferred **optional** type-safe SQL query builder when a source owner needs one | Internal tool, not a platform-mandated runtime API, business policy engine or schema owner |
-| [node-pg-migrate](../../RESOURCES.md#ref-5221a10b) | MIT | Preferred **optional** migration authoring/execution tool per source-owner schema | Capability ships and versions its own migrations; approved host/operator rollout executes them |
-| [PgBouncer](../../RESOURCES.md#ref-dd9ecc22) | ISC | Optional Infrastructure connection pooler when load/capacity warrants | Host lifecycle; check session/transaction pooling, prepared statements, `SET LOCAL` and transaction assumptions |
-| [pgBackRest](../../RESOURCES.md#ref-82a8bc20) | MIT | Preferred Infrastructure backup, PITR and restore candidate | Backups require real restore exercises and source-owner verification; do not assume object-store features replace DB recovery |
+| [PostgreSQL](../../RESOURCES.md#postgresql) | PostgreSQL License (permissive) | **Default open-source relational engine** operated by host Infrastructure; keep the existing PostgreSQL 18 environment baseline while assessing newly released major versions separately | Complete community source; owner-specific schemas, policies, transactions, RLS and migrations remain with their respective capability |
+| [node-postgres / pg](../../RESOURCES.md#node-postgres--pg) | MIT | **Default Node/TypeScript driver** and ADR-0012 `pg`-compatible host pool | Host provides connection; each data-owning capability implements its own published store port |
+| [Kysely](../../RESOURCES.md#kysely) | MIT | Preferred **optional** type-safe SQL query builder when a source owner needs one | Internal tool, not a platform-mandated runtime API, business policy engine or schema owner |
+| [node-pg-migrate](../../RESOURCES.md#node-pg-migrate) | MIT | Preferred **optional** migration authoring/execution tool per source-owner schema | Capability ships and versions its own migrations; approved host/operator rollout executes them |
+| [PgBouncer](../../RESOURCES.md#pgbouncer) | ISC | Optional Infrastructure connection pooler when load/capacity warrants | Host lifecycle; check session/transaction pooling, prepared statements, `SET LOCAL` and transaction assumptions |
+| [pgBackRest](../../RESOURCES.md#pgbackrest) | MIT | Preferred Infrastructure backup, PITR and restore candidate | Backups require real restore exercises and source-owner verification; do not assume object-store features replace DB recovery |
 
 ### Approved alternatives and narrowly scoped optional extensions
 
 | Project / source | Licence | Use only if justified |
 |---|---|---|
-| [Postgres.js](../../RESOURCES.md#ref-624c1eac) | Unlicense | Alternative driver; not the ADR-0012 default `pg`-compatible pool, so avoid imposing it on consumers |
-| [Drizzle ORM](../../RESOURCES.md#ref-03cb5387) | Apache-2.0 | Alternative owner-local SQL/ORM tooling; choose it **instead of**, not automatically alongside, Kysely; assess tooling/dependency licences separately |
-| [pgvector](../../RESOURCES.md#ref-863156a4) | PostgreSQL License | Owner-authorised vector indexing; Search or the owning source defines permissions, lifecycle and invalidation |
-| [Apache AGE](../../RESOURCES.md#ref-0f60ec0d) | Apache-2.0 | Optional graph extension for genuine graph workloads; verify exact PostgreSQL-major-version support and source/packaging compatibility |
-| [pg_cron](../../RESOURCES.md#ref-54c57554) | PostgreSQL License | Database-local housekeeping or TTL under Infrastructure/owner policy; not platform Scheduler's business workflow |
-| [PGMQ](../../RESOURCES.md#ref-c40afaea) | PostgreSQL License | Message Queue's provider choice for PostgreSQL-backed transport; originating capability still owns outbox/events |
-| [libpg_query](../../RESOURCES.md#ref-7d7aa078) | BSD-3-Clause / PostgreSQL | Optional internal SQL parsing/analysis tools; not a normal query runtime requirement |
+| [Postgres.js](../../RESOURCES.md#postgresjs) | Unlicense | Alternative driver; not the ADR-0012 default `pg`-compatible pool, so avoid imposing it on consumers |
+| [Drizzle ORM](../../RESOURCES.md#drizzle-orm) | Apache-2.0 | Alternative owner-local SQL/ORM tooling; choose it **instead of**, not automatically alongside, Kysely; assess tooling/dependency licences separately |
+| [pgvector](../../RESOURCES.md#pgvector) | PostgreSQL License | Owner-authorised vector indexing; Search or the owning source defines permissions, lifecycle and invalidation |
+| [Apache AGE](../../RESOURCES.md#apache-age) | Apache-2.0 | Optional graph extension for genuine graph workloads; verify exact PostgreSQL-major-version support and source/packaging compatibility |
+| [pg_cron](../../RESOURCES.md#pg_cron) | PostgreSQL License | Database-local housekeeping or TTL under Infrastructure/owner policy; not platform Scheduler's business workflow |
+| [PGMQ](../../RESOURCES.md#pgmq) | PostgreSQL License | Message Queue's provider choice for PostgreSQL-backed transport; originating capability still owns outbox/events |
+| [libpg_query](../../RESOURCES.md#libpg_query) | BSD-3-Clause / PostgreSQL | Optional internal SQL parsing/analysis tools; not a normal query runtime requirement |
 
 ### Exclusions and selection safeguards
 
@@ -142,7 +142,7 @@ The following references guide **data-owning capabilities and host Infrastructur
 
 **No Persistence menu, routes, dashboard or screens.** Ordinary business data is managed through its owning capability. Operational presentation, if needed, belongs to Infrastructure under approved INF-02; even its status pages and deep links are visible only to **explicitly authorised host-application super-administrators**, never ordinary users, tenant/group administrators or lesser host administrators. The role does not bypass tenant business-data protection.
 
-The actual [application-test-template](../../RESOURCES.md#ref-8c941ad8) supplies homepage `/`, an admin/test area `/admin`, responsive sidebar and Theme Manager `/theme-manager`. Its [Nuxt config](../../RESOURCES.md#ref-68dbcd7d) enables **local-only** unauthenticated Theme Manager test mode, which must never serve production operations.
+The actual [application-test-template](../../RESOURCES.md#application-test-template-2) supplies homepage `/`, an admin/test area `/admin`, responsive sidebar and Theme Manager `/theme-manager`. Its [Nuxt config](../../RESOURCES.md#nuxt-config) enables **local-only** unauthenticated Theme Manager test mode, which must never serve production operations.
 
 | Infrastructure page (proposed, not shipped) | Input via authorised public contracts | Presentation / permitted output |
 |---|---|---|

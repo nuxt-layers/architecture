@@ -100,7 +100,7 @@ Failed or timed-out persistence, Task promotion and source queries must preserve
 
 ## Optional GUI and host integration
 
-A separable GUI uses the representative [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#ref-8c941ad8) shell: host-owned, responsive **Capabilities → To-dos** sidebar entry opens the Todo dashboard (illustrative `/todos`). When Task is enabled, the host may show **Tasks → My To-dos** instead. An optional card on host `/admin` opens the capability; this is a derived test-host convention, not a universal registration API. The template's Theme Manager uses **local-only unauthenticated test mode**; never treat that as production access control.
+A separable GUI uses the representative [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#application-test-template-2) shell: host-owned, responsive **Capabilities → To-dos** sidebar entry opens the Todo dashboard (illustrative `/todos`). When Task is enabled, the host may show **Tasks → My To-dos** instead. An optional card on host `/admin` opens the capability; this is a derived test-host convention, not a universal registration API. The template's Theme Manager uses **local-only unauthenticated test mode**; never treat that as production access control.
 
 | Screen | Essential? | Main purpose |
 |---|---|---|
@@ -118,17 +118,17 @@ Meet **WCAG 2.2 AA** using semantic lists/checkboxes, visible focus, screen-read
 
 | Source | Status | Use |
 |---|---|---|
-| [W3C WCAG 2.2 AA](../../../RESOURCES.md#ref-0d1f555e) and [WAI-ARIA/APG](../../../RESOURCES.md#ref-f076dce5) | WCAG required; ARIA guidance | Accessible optional GUI and native controls |
-| [OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2) | Governing L2 floor; L3 where applicable | Authentication, authorisation, validation and secure processing |
-| UK GDPR, Data Protection Act 2018 and [ICO guidance](../../../RESOURCES.md#ref-f4808d92) | Applicable according to context | Privacy by design, minimisation, retention, individual rights |
-| [RFC 5545 `VTODO`](../../../RESOURCES.md#ref-bb0f57a8) | Preferred **optional** interchange | Sparse title/status/due-date import/export with documented loss/mapping |
-| [RFC 8984 JSCalendar](../../../RESOURCES.md#ref-0b86704e), [RFC 10051](../../../RESOURCES.md#ref-30c13a68), [RFC 4791 CalDAV](../../../RESOURCES.md#ref-7d20fd52) | Optional/deferred | Rich Task exchange and external connector design, not a mandatory Todo service |
-| ISO 8601-1; [RFC 3339](../../../RESOURCES.md#ref-3379bb69), [RFC 9557](../../../RESOURCES.md#ref-a17e8f95) | Recommended via Clock | Date-only versus instant, offset, zone and DST |
+| [W3C WCAG 2.2 AA](../../../RESOURCES.md#w3c-wcag-22) and [WAI-ARIA/APG](../../../RESOURCES.md#aria-apg) | WCAG required; ARIA guidance | Accessible optional GUI and native controls |
+| [OWASP ASVS 5](../../../RESOURCES.md#owasp-asvs-500) | Governing L2 floor; L3 where applicable | Authentication, authorisation, validation and secure processing |
+| UK GDPR, Data Protection Act 2018 and [ICO guidance](../../../RESOURCES.md#uk-gdpr-and-ico-guidance) | Applicable according to context | Privacy by design, minimisation, retention, individual rights |
+| [RFC 5545 `VTODO`](../../../RESOURCES.md#rfc-5545-vtodo) | Preferred **optional** interchange | Sparse title/status/due-date import/export with documented loss/mapping |
+| [RFC 8984 JSCalendar](../../../RESOURCES.md#rfc-8984-jscalendar), [RFC 10051](../../../RESOURCES.md#rfc-10051-2), [RFC 4791 CalDAV](../../../RESOURCES.md#rfc-4791-caldav) | Optional/deferred | Rich Task exchange and external connector design, not a mandatory Todo service |
+| ISO 8601-1; [RFC 3339](../../../RESOURCES.md#rfc-3339-3), [RFC 9557](../../../RESOURCES.md#rfc-9557-2) | Recommended via Clock | Date-only versus instant, offset, zone and DST |
 | ISO 15489-1:2016 | Proportionate guidance | Attributable revisions, retention and records integrity |
 | ISO/IEC 27001:2022, 27002:2022, 27701:2025 | Optional management guidance | Security/privacy controls; no claimed certification |
 | EN 301 549 | Conditional jurisdiction/procurement | Assess legally applicable edition alongside WCAG rather than assuming the latest edition is binding |
 
-**Owner-approved shortlist** (complete public community source, commercially permissive): [Zod](../../../RESOURCES.md#ref-1e3efac4) (MIT) for runtime validation; reuse [PostgreSQL](../../../RESOURCES.md#ref-fa79609e) (PostgreSQL Licence) and [`pg`](../../../RESOURCES.md#ref-be910869) (MIT) behind the host's persistence ports. [Kysely](../../../RESOURCES.md#ref-af839a5b) (MIT) is optional instead of handwritten SQL, **not in addition to another ORM**. [VueUse](../../../RESOURCES.md#ref-9507482e) and [TanStack Query](../../../RESOURCES.md#ref-51cb5e45) (MIT) are optional if host `ui`/Nuxt primitives prove insufficient; [TanStack Table](../../../RESOURCES.md#ref-af94a8b1), [SortableJS](../../../RESOURCES.md#ref-e7023281) and [uuid](../../../RESOURCES.md#ref-346e6d77) (MIT) are deferred unless a demonstrated need exists. Reuse Clock and existing UUID generation. No unnecessary Neo4j/Redis/Elasticsearch/OpenSearch deployment, graph engine or new search store; no open-core flagship, gated source or paid-essential enterprise feature. Recheck exact version, active maintenance, complete/transitive licences, advisories, release provenance and Node/Nuxt compatibility before selection. **No packages were installed or version-pinned during this review.**
+**Owner-approved shortlist** (complete public community source, commercially permissive): [Zod](../../../RESOURCES.md#zod) (MIT) for runtime validation; reuse [PostgreSQL](../../../RESOURCES.md#postgresql) (PostgreSQL Licence) and [`pg`](../../../RESOURCES.md#node-postgres--pg) (MIT) behind the host's persistence ports. [Kysely](../../../RESOURCES.md#kysely) (MIT) is optional instead of handwritten SQL, **not in addition to another ORM**. [VueUse](../../../RESOURCES.md#vueuse) and [TanStack Query](../../../RESOURCES.md#tanstack-query) (MIT) are optional if host `ui`/Nuxt primitives prove insufficient; [TanStack Table](../../../RESOURCES.md#tanstack-table), [SortableJS](../../../RESOURCES.md#sortablejs) and [uuid](../../../RESOURCES.md#uuid) (MIT) are deferred unless a demonstrated need exists. Reuse Clock and existing UUID generation. No unnecessary Neo4j/Redis/Elasticsearch/OpenSearch deployment, graph engine or new search store; no open-core flagship, gated source or paid-essential enterprise feature. Recheck exact version, active maintenance, complete/transitive licences, advisories, release provenance and Node/Nuxt compatibility before selection. **No packages were installed or version-pinned during this review.**
 
 ## Conceptual acceptance cases
 

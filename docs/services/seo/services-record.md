@@ -2,7 +2,7 @@
 
 **Artefact classification:** technical service (CLS-07, owner-approved 24 November 2026); provider-neutral, headless core with optional administration UI. Established Platform responsibility in the governing catalogue, pending governing reconciliation.  
 **Status:** Conceptual design complete and owner-approved (23 November 2026); implementation, package exports, runtime conformance and acceptance are unverified. This is **not** a published SEO `CONTRACT.md`.  
-**Authority:** [Nuxt Layers governing rules](../../../RESOURCES.md#ref-6d4a7ae1) (accepted ADRs and Capability Standard) prevail. [Publisher's published root contract](../../../RESOURCES.md#ref-332e0d6b) is implementation evidence; [Site Hosting](../site-hosting/services-record.md), [Metadata](../../capabilities/metadata/capability-record.md) and other unmerged conceptual records are proposed interfaces until independently approved/published. Review maintained in draft PR #133. Governing baseline checked: `d7f7c2ee051244b8c81325f5ff1267568d99aab1`.
+**Authority:** [Nuxt Layers governing rules](../../../RESOURCES.md#architecture-rules-2) (accepted ADRs and Capability Standard) prevail. [Publisher's published root contract](../../../RESOURCES.md#publisher--contractmd) is implementation evidence; [Site Hosting](../site-hosting/services-record.md), [Metadata](../../capabilities/metadata/capability-record.md) and other unmerged conceptual records are proposed interfaces until independently approved/published. Review maintained in draft PR #133. Governing baseline checked: `d7f7c2ee051244b8c81325f5ff1267568d99aab1`.
 
 ## 1. Purpose and unique ownership
 
@@ -83,16 +83,16 @@ These calls are **independent public integrations**; the error helper does not d
 
 | Authority | SEO requirement |
 |---|---|
-| [WHATWG HTML](../../../RESOURCES.md#ref-82cafda8) | Semantic, safely escaped server-rendered head, `title`, `meta`, canonical and alternate link elements. |
-| [IETF RFC 9309](../../../RESOURCES.md#ref-959f05ca) | Correct robots exclusion syntax/groups; **robots cannot enforce access control or deindexing**. |
-| [Sitemaps.org](../../../RESOURCES.md#ref-ce86e469) | Valid absolute eligible URLs, XML escaping, evidence-based `lastmod`, 50,000 URLs / 50 MB uncompressed per file, partition/index as needed. It is an industry protocol. |
-| [IETF RFC 3986](../../../RESOURCES.md#ref-b9ddc4d9), [RFC 9110](../../../RESOURCES.md#ref-96cfb1e6), [RFC 8820](../../../RESOURCES.md#ref-ba61cc61), [WHATWG URL](../../../RESOURCES.md#ref-021179e7) | Safe URL/IDNA handling, canonical origin from Site Hosting, preservation of Publisher's HTTP response and redirects; no competing URI owner. |
-| [W3C JSON-LD 1.1](../../../RESOURCES.md#ref-a03bb42b), [Schema.org](../../../RESOURCES.md#ref-30a88a32) | Valid public structured data from source-confirmed facts; Schema.org is a collaborative vocabulary, not proof of a Google rich result. |
-| [IETF BCP 47](../../../RESOURCES.md#ref-9d75fa93), Unicode CLDR | Locale tags and reciprocal source-confirmed `hreflang` links; no draft or unconfirmed translation discovery. |
-| [WCAG 2.2 AA](../../../RESOURCES.md#ref-0d1f555e), ISO/IEC 40500:2025 | Accessible keyboard/screen-reader/responsive administrative presentation, light/dark contrast and semantic markup. |
-| [OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2) | Governing security L2 baseline and applicable L3 controls for sensitive operations. |
-| UK GDPR / Data Protection Act 2018, [ICO privacy by design](../../../RESOURCES.md#ref-4ec87ed3), Equality Act and public-sector accessibility regulations | Apply qualified jurisdiction/processing obligations through Privacy/Legal Compliance. Standards adoption is not certification or automatic legal compliance. |
-| [Google Search Central](../../../RESOURCES.md#ref-269663c4), [Bing](../../../RESOURCES.md#ref-37f342be), [IndexNow](../../../RESOURCES.md#ref-f4f8b700), [Open Graph](../../../RESOURCES.md#ref-c969b641), [Core Web Vitals](../../../RESOURCES.md#ref-229d560d) | Treat provider guidance, optional discovery notification, social preview and UX metrics as **distinct** from formal specifications. No guaranteed crawl, indexing, ranking or traffic. |
+| [WHATWG HTML](../../../RESOURCES.md#whatwg-html-2) | Semantic, safely escaped server-rendered head, `title`, `meta`, canonical and alternate link elements. |
+| [IETF RFC 9309](../../../RESOURCES.md#ietf-rfc-9309) | Correct robots exclusion syntax/groups; **robots cannot enforce access control or deindexing**. |
+| [Sitemaps.org](../../../RESOURCES.md#sitemapsorg) | Valid absolute eligible URLs, XML escaping, evidence-based `lastmod`, 50,000 URLs / 50 MB uncompressed per file, partition/index as needed. It is an industry protocol. |
+| [IETF RFC 3986](../../../RESOURCES.md#ietf-rfc-3986), [RFC 9110](../../../RESOURCES.md#rfc-9110-2), [RFC 8820](../../../RESOURCES.md#rfc-8820), [WHATWG URL](../../../RESOURCES.md#whatwg-url) | Safe URL/IDNA handling, canonical origin from Site Hosting, preservation of Publisher's HTTP response and redirects; no competing URI owner. |
+| [W3C JSON-LD 1.1](../../../RESOURCES.md#w3c-json-ld-11-2), [Schema.org](../../../RESOURCES.md#schemaorg-2) | Valid public structured data from source-confirmed facts; Schema.org is a collaborative vocabulary, not proof of a Google rich result. |
+| [IETF BCP 47](../../../RESOURCES.md#ietf-bcp-47), Unicode CLDR | Locale tags and reciprocal source-confirmed `hreflang` links; no draft or unconfirmed translation discovery. |
+| [WCAG 2.2 AA](../../../RESOURCES.md#w3c-wcag-22), ISO/IEC 40500:2025 | Accessible keyboard/screen-reader/responsive administrative presentation, light/dark contrast and semantic markup. |
+| [OWASP ASVS 5](../../../RESOURCES.md#owasp-asvs-500) | Governing security L2 baseline and applicable L3 controls for sensitive operations. |
+| UK GDPR / Data Protection Act 2018, [ICO privacy by design](../../../RESOURCES.md#ico), Equality Act and public-sector accessibility regulations | Apply qualified jurisdiction/processing obligations through Privacy/Legal Compliance. Standards adoption is not certification or automatic legal compliance. |
+| [Google Search Central](../../../RESOURCES.md#google-search-central), [Bing](../../../RESOURCES.md#bing), [IndexNow](../../../RESOURCES.md#indexnow), [Open Graph](../../../RESOURCES.md#open-graph), [Core Web Vitals](../../../RESOURCES.md#core-web-vitals-2) | Treat provider guidance, optional discovery notification, social preview and UX metrics as **distinct** from formal specifications. No guaranteed crawl, indexing, ranking or traffic. |
 
 ## 7. Fully open-source library strategy
 
@@ -100,15 +100,15 @@ These calls are **independent public integrations**; the error helper does not d
 
 | Candidate (source / licence) | Preferred role and restriction |
 |---|---|
-| [Unhead](../../../RESOURCES.md#ref-1a0ac221) — MIT | **Preferred:** reuse the host's existing head management, not a second renderer; SEO supplies validated descriptors. |
-| [sitemap.js](../../../RESOURCES.md#ref-ab62c3cf) — MIT | **Preferred:** framework-neutral XML generation behind SEO-authorised URL and policy checks. |
-| [schema-dts](../../../RESOURCES.md#ref-da16045e) — Apache-2.0 | **Preferred:** Schema.org types; cannot establish factual truth or runtime safety. |
-| [Ajv](../../../RESOURCES.md#ref-a164796d) — MIT | Conditional JSON Schema validation **only** if existing host validation is insufficient. |
-| [parse5](../../../RESOURCES.md#ref-7c78d301) — MIT | Optional HTML conformance inspection, preferably in development/CI, not runtime scraping. |
-| [`@nuxtjs/robots`](../../../RESOURCES.md#ref-9c8f6e26), [`@nuxtjs/sitemap`](../../../RESOURCES.md#ref-8b56e466), [nuxt-schema-org](../../../RESOURCES.md#ref-da234be8) — MIT | **Optional alternative** Nuxt presentation adapters; must not register conflicting routes, independently discover hidden URLs or own policy; use either sitemap.js **or** an equivalent sitemap module as primary generator. |
+| [Unhead](../../../RESOURCES.md#unhead) — MIT | **Preferred:** reuse the host's existing head management, not a second renderer; SEO supplies validated descriptors. |
+| [sitemap.js](../../../RESOURCES.md#sitemapjs) — MIT | **Preferred:** framework-neutral XML generation behind SEO-authorised URL and policy checks. |
+| [schema-dts](../../../RESOURCES.md#schema-dts) — Apache-2.0 | **Preferred:** Schema.org types; cannot establish factual truth or runtime safety. |
+| [Ajv](../../../RESOURCES.md#ajv) — MIT | Conditional JSON Schema validation **only** if existing host validation is insufficient. |
+| [parse5](../../../RESOURCES.md#parse5) — MIT | Optional HTML conformance inspection, preferably in development/CI, not runtime scraping. |
+| [`@nuxtjs/robots`](../../../RESOURCES.md#nuxtjsrobots), [`@nuxtjs/sitemap`](../../../RESOURCES.md#nuxtjssitemap), [nuxt-schema-org](../../../RESOURCES.md#nuxt-schema-org) — MIT | **Optional alternative** Nuxt presentation adapters; must not register conflicting routes, independently discover hidden URLs or own policy; use either sitemap.js **or** an equivalent sitemap module as primary generator. |
 | Native WHATWG URL and small tested robots formatter | **Preferred over extra dependencies** for basic parsing and `robots.txt` generation. |
 
-[`@nuxtjs/seo`](../../../RESOURCES.md#ref-a49dd971) itself has a publicly available MIT module and is a useful reference; its separately commercial Pro offering is not a required part of this design. **Do not install the umbrella** as native SEO authority because its bundled sitemap, robots, site settings and other modules can duplicate Publisher, Configuration, Site Hosting and SEO. Do not adopt the archived Nuxt 2 sitemap module or add an old standalone robots parser / C++ runtime parser without demonstrated need. No Redis, Neo4j, Elasticsearch, commercial crawler service or new mandatory database is required.
+[`@nuxtjs/seo`](../../../RESOURCES.md#nuxtjsseo) itself has a publicly available MIT module and is a useful reference; its separately commercial Pro offering is not a required part of this design. **Do not install the umbrella** as native SEO authority because its bundled sitemap, robots, site settings and other modules can duplicate Publisher, Configuration, Site Hosting and SEO. Do not adopt the archived Nuxt 2 sitemap module or add an old standalone robots parser / C++ runtime parser without demonstrated need. No Redis, Neo4j, Elasticsearch, commercial crawler service or new mandatory database is required.
 
 ## 8. Security, privacy, performance and failure handling
 
@@ -118,7 +118,7 @@ Use cached **revision-qualified** public artefacts where disclosure remains safe
 
 ## 9. Optional GUI and host composition
 
-**Headless core mandatory; administration optional.** [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#ref-8c941ad8) demonstrates a public `/` home, `/admin` test workspace, shared top bar, collapsible/mobile sidebar and Theme Manager's Appearance menu and `/theme-manager` route. A host sidebar **SEO** item opens a scoped dashboard (illustrative production `/seo`, derived-test `/admin/seo`); actual mounting and menu belong to the host and must be configurable. Theme Manager supplies semantic tokens, not a second theme system. **Its local unauthenticated test mode is not suitable for production** and its current published contract flags a composition gap; the SEO proposal does not imply that gap is resolved.
+**Headless core mandatory; administration optional.** [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#application-test-template-2) demonstrates a public `/` home, `/admin` test workspace, shared top bar, collapsible/mobile sidebar and Theme Manager's Appearance menu and `/theme-manager` route. A host sidebar **SEO** item opens a scoped dashboard (illustrative production `/seo`, derived-test `/admin/seo`); actual mounting and menu belong to the host and must be configurable. Theme Manager supplies semantic tokens, not a second theme system. **Its local unauthenticated test mode is not suitable for production** and its current published contract flags a composition gap; the SEO proposal does not imply that gap is resolved.
 
 | Screen | Function and source contract |
 |---|---|

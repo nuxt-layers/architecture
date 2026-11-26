@@ -22,7 +22,7 @@ Source registration checks owner, root-contract reference/version, canonical res
 
 | Example | Eligible public information and owner | Verified state |
 |---|---|---|
-| **Publisher** articles, pages and news | Published site/type/locale/path, current revision, permitted summary, feeds and withdrawal events | [Publisher root `CONTRACT.md`](../../../RESOURCES.md#ref-332e0d6b) offers published document/list/feed/sitemap/address reads and committed outbox; a dedicated Search adapter is **not** verified |
+| **Publisher** articles, pages and news | Published site/type/locale/path, current revision, permitted summary, feeds and withdrawal events | [Publisher root `CONTRACT.md`](../../../RESOURCES.md#publisher--contractmd) offers published document/list/feed/sitemap/address reads and committed outbox; a dedicated Search adapter is **not** verified |
 | **Shop, Product, Marketplace** | Shop storefront context; Product owns canonical definitions; Marketplace approved public seller/venue listings and withdrawal; Pricing and Inventory/Booking own price/availability | Shop/Marketplace conceptual records reviewed; root runtime contracts not verified. Shop is composition, not a second product/listing master |
 | **Forums, comments, public news feeds** | Owner-approved, moderated public posts/comments or permitted RSS/Atom, canonical attribution, revisions and removals | Owning forum/comment root contract unverified. External feeds require authorised Integrations/Federation/host adapter, terms and reuse rights; public visibility alone grants none |
 | **Help, Booking, Recruitment, Billing and others** | Only source-owned, authorised, minimised discovery projections, with current owner detail/action rechecks | Each source's actual public contract and policy control admission |
@@ -93,7 +93,7 @@ A timeout may mean the index outcome is **unknown**. Error Normalisation makes t
 
 ## Optional GUI and test-host presentation
 
-**Headless is the default**. The host may expose a Search dashboard, embedded search bar or restricted operator screens. The representative [application test template](../../../RESOURCES.md#ref-f1f7cc47) documents homepage `/`, test/admin entry `/admin`, collapsible sidebar/mobile overlay and Theme Manager at `/theme-manager`. A **derived** test app can add sidebar **Search** → illustrative `/search`; route, menu and security remain host-owned. The template's unauthenticated Theme Manager **test mode cannot be used as production authorisation**.
+**Headless is the default**. The host may expose a Search dashboard, embedded search bar or restricted operator screens. The representative [application test template](../../../RESOURCES.md#application-test-template) documents homepage `/`, test/admin entry `/admin`, collapsible sidebar/mobile overlay and Theme Manager at `/theme-manager`. A **derived** test app can add sidebar **Search** → illustrative `/search`; route, menu and security remain host-owned. The template's unauthenticated Theme Manager **test mode cannot be used as production authorisation**.
 
 | Optional screen | Purpose and consuming public interfaces |
 |---|---|
@@ -116,11 +116,11 @@ Menus never confer authority: production management requires server-side IAM, te
 
 | Role | Recommended technology | Boundary |
 |---|---|---|
-| **First choice** | [PostgreSQL full-text search](../../../RESOURCES.md#ref-9e6cf77c) + upstream `pg_trgm`, PostgreSQL licence | Already hosted, SQL security scopes; benchmark relevance/scale before introducing anything else |
-| **Conditional specialist engine** | [Apache OpenSearch](../../../RESOURCES.md#ref-133dccf8) or [Apache Solr](../../../RESOURCES.md#ref-3a3c8cfe), Apache-2.0 | Only when measured scale, language or retrieval needs warrant an extra service; verify plugins and in-query filters |
-| **Optional custom-library engine** | [Apache Lucene](../../../RESOURCES.md#ref-6f0b2c64), Apache-2.0; [Tantivy](../../../RESOURCES.md#ref-29ee9c92), MIT | Dedicated Java/Rust integration only with proven need |
-| **Optional language/semantic extension** | [pgvector](../../../RESOURCES.md#ref-863156a4) and [PGroonga](../../../RESOURCES.md#ref-b46ff366), PostgreSQL licence | Vectors/multilingual processing with equivalent security and data-transfer controls |
-| **Local public subset / NLP only** | [MiniSearch](../../../RESOURCES.md#ref-58227ec0), MIT; [FlexSearch](../../../RESOURCES.md#ref-788e2bc4), Apache-2.0; [winkNLP](../../../RESOURCES.md#ref-1a833bc8), MIT | Browser search cannot enforce protected server permissions |
+| **First choice** | [PostgreSQL full-text search](../../../RESOURCES.md#postgresql-full-text-search) + upstream `pg_trgm`, PostgreSQL licence | Already hosted, SQL security scopes; benchmark relevance/scale before introducing anything else |
+| **Conditional specialist engine** | [Apache OpenSearch](../../../RESOURCES.md#opensearch) or [Apache Solr](../../../RESOURCES.md#apache-solr), Apache-2.0 | Only when measured scale, language or retrieval needs warrant an extra service; verify plugins and in-query filters |
+| **Optional custom-library engine** | [Apache Lucene](../../../RESOURCES.md#apache-lucene), Apache-2.0; [Tantivy](../../../RESOURCES.md#tantivy), MIT | Dedicated Java/Rust integration only with proven need |
+| **Optional language/semantic extension** | [pgvector](../../../RESOURCES.md#pgvector) and [PGroonga](../../../RESOURCES.md#pgroonga), PostgreSQL licence | Vectors/multilingual processing with equivalent security and data-transfer controls |
+| **Local public subset / NLP only** | [MiniSearch](../../../RESOURCES.md#minisearch), MIT; [FlexSearch](../../../RESOURCES.md#flexsearch), Apache-2.0; [winkNLP](../../../RESOURCES.md#winknlp), MIT | Browser search cannot enforce protected server permissions |
 
 **Defer:** newer `pg_textsearch` until sufficient maturity/benchmark evidence. **Exclude for the requested licence model:** Elasticsearch non-permissive distribution; Meilisearch open-core mixed MIT/Business Source Licence; AGPL ParadeDB `pg_search`; GPL Typesense, Manticore and Xapian. GPL software can be genuinely open source yet not permissively licensed. Version, dependency/plugin licence, security upkeep, source completeness, PostgreSQL compatibility and deployment cost are verified before provider adoption; the shortlist is not installed or benchmarked.
 

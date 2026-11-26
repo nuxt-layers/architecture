@@ -31,7 +31,7 @@ Its authoritative records include shipment and despatch plans; parcel/handling-u
 
 Re-planning proposes a new revision after delays, cancellations or breakdowns; it preserves completed visits and custody, and does not silently change active driver instructions. Distinguish solver timeout, impossible constraints, stale matrix and provider outage. Manual sequencing remains available without fabricating road travel figures. Bound optimisation computation and tenant quotas.
 
-**Libraries are candidates, not mandated:** [VROOM](../../../RESOURCES.md#ref-3f30cade) (BSD-2-Clause) for constrained VRP, [OR-Tools](../../../RESOURCES.md#ref-7011995a) (Apache-2.0) as an alternative; [Valhalla](../../../RESOURCES.md#ref-1d240d0a) (MIT) as an optional routing-provider adapter composed for Logistics (not Location's owned place register). Verify releases, dependency licences and source completeness before selection.
+**Libraries are candidates, not mandated:** [VROOM](../../../RESOURCES.md#vroom) (BSD-2-Clause) for constrained VRP, [OR-Tools](../../../RESOURCES.md#or-tools) (Apache-2.0) as an alternative; [Valhalla](../../../RESOURCES.md#valhalla) (MIT) as an optional routing-provider adapter composed for Logistics (not Location's owned place register). Verify releases, dependency licences and source completeness before selection.
 
 ## Idealised public input contract
 
@@ -103,7 +103,7 @@ All interactions are logical public contracts composed by the host or messaging 
 
 ## Optional GUI — advisory presentation guidance
 
-The shared [application-test-template](../../../RESOURCES.md#ref-f1f7cc47) is a **reference**, not a production requirement. Its host shell has a collapsible **Capabilities** sidebar linking to Theme Manager, shared header/Appearance control, an `/admin` test dashboard and a separate `/` homepage. A consuming host **could** add **Capabilities → Logistics** to open a Logistics dashboard (illustrative path `/logistics`) using the same shell; host owns navigation, branding and route placement. Theme Manager test mode must not be deployed publicly.
+The shared [application-test-template](../../../RESOURCES.md#application-test-template) is a **reference**, not a production requirement. Its host shell has a collapsible **Capabilities** sidebar linking to Theme Manager, shared header/Appearance control, an `/admin` test dashboard and a separate `/` homepage. A consuming host **could** add **Capabilities → Logistics** to open a Logistics dashboard (illustrative path `/logistics`) using the same shell; host owns navigation, branding and route placement. Theme Manager test mode must not be deployed publicly.
 
 These **recommended**, non-prescriptive screens can be combined, renamed, omitted or rearranged by the host according to audience:
 
@@ -125,7 +125,7 @@ Logistics may publish optional screen components, navigation metadata, message k
 
 ## Standards and open-source implementation references
 
-**Approved direction, not a compliance or library-adoption claim.** Use [GS1 EPCIS/CBV](../../../RESOURCES.md#ref-1bbbdbc6) for interoperable traceability event mapping; GS1 SSCC/GLN/GTIN for externally identified handling units, locations and goods; [UN/CEFACT transport models](../../../RESOURCES.md#ref-4b03c321) for multimodal information and document mappings; [ISO 28000](../../../RESOURCES.md#ref-c7f3ad87) for supply-chain security risk; [W3C PROV-O](../../../RESOURCES.md#ref-20aa2e25) for provenance, with verifiable credentials optional. Preserve internal native identifiers and events; identify external key namespaces, source, format version and validity instead of forcing every delivery through EPCIS.
+**Approved direction, not a compliance or library-adoption claim.** Use [GS1 EPCIS/CBV](../../../RESOURCES.md#gs1-epciscbv) for interoperable traceability event mapping; GS1 SSCC/GLN/GTIN for externally identified handling units, locations and goods; [UN/CEFACT transport models](../../../RESOURCES.md#uncefact-transport-models) for multimodal information and document mappings; [ISO 28000](../../../RESOURCES.md#iso-28000) for supply-chain security risk; [W3C PROV-O](../../../RESOURCES.md#prov-o) for provenance, with verifiable credentials optional. Preserve internal native identifiers and events; identify external key namespaces, source, format version and validity instead of forcing every delivery through EPCIS.
 
 Apply **only where applicable**: CMR/eCMR international road documents; WCO Data Model for customs; IATA ONE Record/Cargo-XML for air cargo; IMO FAL for maritime reporting; ISO 6346 container IDs and ISO 17363 container RFID; ADR dangerous goods, UK Electronic Trade Documents Act 2023, relevant UK operator licensing and carriage restrictions, UK GDPR/Data Protection Act, and applicable overseas law. Qualified Legal Compliance/regulatory owners determine requirements by effective date, mode, jurisdiction and cargo. W3C WCAG 2.2 AA, BCP 47/CLDR, RFC 3339 time interchange and RFC 9457 HTTP problems apply in relevant presentation/API designs.
 

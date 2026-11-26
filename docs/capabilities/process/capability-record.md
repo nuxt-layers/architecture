@@ -88,18 +88,18 @@ Use host-supplied ports and contract-level directional interfaces; business even
 
 | Candidate | Licence and source | Intended use and decision |
 |---|---|---|
-| [XState](../../../RESOURCES.md#ref-2318841b) | MIT | **Preferred stable v5** state/transition evaluation. Process still owns definitions, persistence, policies and outcomes; avoid v6 beta and proprietary visual tooling. |
-| [Ajv](../../../RESOURCES.md#ref-a164796d) | MIT | **Preferred JSON Schema validator** for versioned process definitions and imported data. Schema acceptance is not authorisation. |
-| [Zod](../../../RESOURCES.md#ref-1e3efac4) | MIT | Optional TypeScript boundary validation only if it does not duplicate the Ajv-owned canonical definition schema. |
-| [bpmn-moddle](../../../RESOURCES.md#ref-9e223261) / [moddle-xml](../../../RESOURCES.md#ref-0e4b8fa5) | MIT | Optional, validated BPMN XML interchange for a documented subset; no execution-engine or full-conformance claim. |
-| [dmn-moddle](../../../RESOURCES.md#ref-0652c71f) | MIT | Optional DMN interchange, not autonomous business decision authority. |
-| [diagram-js](../../../RESOURCES.md#ref-8ca9c849) | MIT | Preferred optional visual editor toolkit with a keyboard-operable structured form/table equivalent. |
-| [Rete.js](../../../RESOURCES.md#ref-945fde25) / [Mermaid](../../../RESOURCES.md#ref-42e5762a) | MIT | Alternative rich editor / optional read-only diagrams respectively; avoid installing competing editors without need. |
-| [Temporal](../../../RESOURCES.md#ref-77f2db20) and [TypeScript SDK](../../../RESOURCES.md#ref-83603142) | MIT | Already planned through temporal-gateway/Workflow/Scheduler; optional durable execution, **never** Process's business authority. |
-| [Flowable community engine](../../../RESOURCES.md#ref-cdb01dc1) | Apache-2.0 | Fully open community engine, but **not recommended**: separate Java orchestration overlaps the chosen gateway/Workflow. Proprietary Flowable modules are out of scope. |
-| [OpenTelemetry JS](../../../RESOURCES.md#ref-8e380f73) | Apache-2.0 | Optional Observability instrumentation, not process history or Audit custody. |
+| [XState](../../../RESOURCES.md#xstate) | MIT | **Preferred stable v5** state/transition evaluation. Process still owns definitions, persistence, policies and outcomes; avoid v6 beta and proprietary visual tooling. |
+| [Ajv](../../../RESOURCES.md#ajv) | MIT | **Preferred JSON Schema validator** for versioned process definitions and imported data. Schema acceptance is not authorisation. |
+| [Zod](../../../RESOURCES.md#zod) | MIT | Optional TypeScript boundary validation only if it does not duplicate the Ajv-owned canonical definition schema. |
+| [bpmn-moddle](../../../RESOURCES.md#bpmn-moddle) / [moddle-xml](../../../RESOURCES.md#moddle-xml) | MIT | Optional, validated BPMN XML interchange for a documented subset; no execution-engine or full-conformance claim. |
+| [dmn-moddle](../../../RESOURCES.md#dmn-moddle) | MIT | Optional DMN interchange, not autonomous business decision authority. |
+| [diagram-js](../../../RESOURCES.md#diagram-js) | MIT | Preferred optional visual editor toolkit with a keyboard-operable structured form/table equivalent. |
+| [Rete.js](../../../RESOURCES.md#retejs) / [Mermaid](../../../RESOURCES.md#mermaid) | MIT | Alternative rich editor / optional read-only diagrams respectively; avoid installing competing editors without need. |
+| [Temporal](../../../RESOURCES.md#temporal-server) and [TypeScript SDK](../../../RESOURCES.md#temporal-typescript-sdk) | MIT | Already planned through temporal-gateway/Workflow/Scheduler; optional durable execution, **never** Process's business authority. |
+| [Flowable community engine](../../../RESOURCES.md#flowable-community-engine) | Apache-2.0 | Fully open community engine, but **not recommended**: separate Java orchestration overlaps the chosen gateway/Workflow. Proprietary Flowable modules are out of scope. |
+| [OpenTelemetry JS](../../../RESOURCES.md#opentelemetry-js) | Apache-2.0 | Optional Observability instrumentation, not process history or Audit custody. |
 
-**Excluded:** [Vue Flow](../../../RESOURCES.md#ref-1c63f8c8) was archived at verification, failing active-maintenance requirements. [bpmn-js](../../../RESOURCES.md#ref-a01cd8e1) has a custom watermark licence rather than simple MIT/Apache-2.0 terms. Do not depend on proprietary Stately/Flowable/Camunda features, hosted-only services or open-core substitutes. MIT [JSONata](../../../RESOURCES.md#ref-50222d38) is not the default user-authored rules engine because untrusted expression evaluation needs additional threat modelling and confinement. Scheduler, Message Queue, storage, search and caching already have assigned owners; do not add cron, Redis, Elasticsearch or Neo4j to Process.
+**Excluded:** [Vue Flow](../../../RESOURCES.md#vue-flow) was archived at verification, failing active-maintenance requirements. [bpmn-js](../../../RESOURCES.md#bpmn-js) has a custom watermark licence rather than simple MIT/Apache-2.0 terms. Do not depend on proprietary Stately/Flowable/Camunda features, hosted-only services or open-core substitutes. MIT [JSONata](../../../RESOURCES.md#jsonata) is not the default user-authored rules engine because untrusted expression evaluation needs additional threat modelling and confinement. Scheduler, Message Queue, storage, search and caching already have assigned owners; do not add cron, Redis, Elasticsearch or Neo4j to Process.
 
 **Smallest justified starting stack:** XState v5 + Ajv. Add BPMN interchange, editing, diagrams and external execution adapters **only for demonstrated consumers**. Restrict hostile XML, expressions, labels and graph complexity; enforce import limits and explicit supported subsets.
 
@@ -122,15 +122,15 @@ Use host-supplied ports and contract-level directional interfaces; business even
 
 | Source | How Process uses it |
 |---|---|
-| [OMG BPMN 2.0.2](../../../RESOURCES.md#ref-c5383867), [ISO/IEC 19510:2013](../../../RESOURCES.md#ref-f8fda418) | Recognised process stages, activities and gateways; **ISO/IEC 19510 standardises BPMN 2.0.1**, not 2.0.2. Keep native model simpler and BPMN interchange optional. |
-| [OMG DMN 1.5](../../../RESOURCES.md#ref-023bac16), [CMMN 1.1](../../../RESOURCES.md#ref-ec91d39f) | Optional decision tables and flexible evidence-led cases, without a second decision or case execution engine. |
-| [ISO 9001:2026](../../../RESOURCES.md#ref-0f984f81), [ISO/IEC/IEEE 15288:2023](../../../RESOURCES.md#ref-b6981e72), [ISO/IEC 25010:2023](../../../RESOURCES.md#ref-0b5d630d) | Accountable inputs/outputs, controlled revisions, quality, lifecycle and testable reliability. No organisational ISO certification inferred. |
-| [W3C PROV-DM/PROV-O](../../../RESOURCES.md#ref-20aa2e25), [JSON-LD 1.1](../../../RESOURCES.md#ref-6d20146d) | Preserve provenance; optional linked-data export. No mandated RDF database. |
-| [W3C WCAG 2.2](../../../RESOURCES.md#ref-0d1f555e), [WAI-ARIA 1.2](../../../RESOURCES.md#ref-67eee3fb) | **Mandatory WCAG 2.2 AA** for optional screens; semantic controls first and ARIA when necessary. |
-| [OWASP ASVS 5.0](../../../RESOURCES.md#ref-a1c367d2), [ISO/IEC 27001:2022](../../../RESOURCES.md#ref-42fa42bb), [NIST SP 800-53 Rev. 5](../../../RESOURCES.md#ref-5d98a8a6) | Existing ASVS L2 floor (applicable L3 for critical actions); IAM, safe error handling, least privilege, integrity and evidence. ISO/NIST are supplementary control mappings. |
-| [ISO/IEC 27701:2025](../../../RESOURCES.md#ref-b948c1e2), [UK ICO privacy by design](../../../RESOURCES.md#ref-4ec87ed3) | Conditional lawful purpose, minimisation, disclosure, erasure and retention requirements under relevant jurisdictions. |
-| [ISO 22301:2019](../../../RESOURCES.md#ref-85e985cf), [ISO 31000:2018](../../../RESOURCES.md#ref-a5666aad), [UK NCSC guidance](../../../RESOURCES.md#ref-28c93158) | Business continuity, risk-based exception handling, recovery and secure delivery. |
-| [OpenAPI](../../../RESOURCES.md#ref-496ea603), [CloudEvents](../../../RESOURCES.md#ref-4a330c79) | Optional interoperability descriptions for HTTP and event adapters, not required host-level formats. |
+| [OMG BPMN 2.0.2](../../../RESOURCES.md#omg-bpmn-202), [ISO/IEC 19510:2013](../../../RESOURCES.md#isoiec-195102013) | Recognised process stages, activities and gateways; **ISO/IEC 19510 standardises BPMN 2.0.1**, not 2.0.2. Keep native model simpler and BPMN interchange optional. |
+| [OMG DMN 1.5](../../../RESOURCES.md#omg-dmn-15), [CMMN 1.1](../../../RESOURCES.md#cmmn-11) | Optional decision tables and flexible evidence-led cases, without a second decision or case execution engine. |
+| [ISO 9001:2026](../../../RESOURCES.md#iso-9001), [ISO/IEC/IEEE 15288:2023](../../../RESOURCES.md#isoiecieee-152882023), [ISO/IEC 25010:2023](../../../RESOURCES.md#isoiec-250102023) | Accountable inputs/outputs, controlled revisions, quality, lifecycle and testable reliability. No organisational ISO certification inferred. |
+| [W3C PROV-DM/PROV-O](../../../RESOURCES.md#prov-o), [JSON-LD 1.1](../../../RESOURCES.md#w3c-json-ld-11) | Preserve provenance; optional linked-data export. No mandated RDF database. |
+| [W3C WCAG 2.2](../../../RESOURCES.md#w3c-wcag-22), [WAI-ARIA 1.2](../../../RESOURCES.md#wai-aria) | **Mandatory WCAG 2.2 AA** for optional screens; semantic controls first and ARIA when necessary. |
+| [OWASP ASVS 5.0](../../../RESOURCES.md#owasp-asvs-500), [ISO/IEC 27001:2022](../../../RESOURCES.md#isoiec-270012022), [NIST SP 800-53 Rev. 5](../../../RESOURCES.md#nist-sp-800-53-rev-5-au-2au-3au-6au-9au-11) | Existing ASVS L2 floor (applicable L3 for critical actions); IAM, safe error handling, least privilege, integrity and evidence. ISO/NIST are supplementary control mappings. |
+| [ISO/IEC 27701:2025](../../../RESOURCES.md#isoiec-277012025), [UK ICO privacy by design](../../../RESOURCES.md#ico) | Conditional lawful purpose, minimisation, disclosure, erasure and retention requirements under relevant jurisdictions. |
+| [ISO 22301:2019](../../../RESOURCES.md#iso-223012019), [ISO 31000:2018](../../../RESOURCES.md#iso-310002018-2), [UK NCSC guidance](../../../RESOURCES.md#uk-ncsc-guidance) | Business continuity, risk-based exception handling, recovery and secure delivery. |
+| [OpenAPI](../../../RESOURCES.md#openapi-3), [CloudEvents](../../../RESOURCES.md#cloudevents-2) | Optional interoperability descriptions for HTTP and event adapters, not required host-level formats. |
 
 ## Policy, trust, security and operational controls
 
@@ -144,7 +144,7 @@ Use host-supplied ports and contract-level directional interfaces; business even
 
 ## Optional GUI and headless presentation
 
-**Verified example:** [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#ref-f1f7cc47) on `master` contains `/` (homepage), `/admin` (test dashboard), an app-owned responsive sidebar in `app/app.vue` with **Capabilities → Theme Manager**, and a Theme Manager entry/card linking to `/theme-manager`. The top bar contains Appearance controls, branding and a **Not signed in** placeholder; Theme Manager runs in **local-only test mode**. A derived test host may add **Capabilities → Process** and a dashboard card, mounting an illustrative `/process` route **inside the same shell**. These Process routes and screens do **not yet exist** and are **not published API paths**.
+**Verified example:** [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#application-test-template) on `master` contains `/` (homepage), `/admin` (test dashboard), an app-owned responsive sidebar in `app/app.vue` with **Capabilities → Theme Manager**, and a Theme Manager entry/card linking to `/theme-manager`. The top bar contains Appearance controls, branding and a **Not signed in** placeholder; Theme Manager runs in **local-only test mode**. A derived test host may add **Capabilities → Process** and a dashboard card, mounting an illustrative `/process` route **inside the same shell**. These Process routes and screens do **not yet exist** and are **not published API paths**.
 
 **Decision:** Process is headless-first. The host owns sidebar, routes, branding, authenticated context and optional screen selection; Process owns its business-aware presentation through **public commands and queries**, `ui` owns generic accessible controls, and Theme Manager supplies semantic tokens. A host may disable all Process presentation without losing business operations. Only **Process** needs a top-level capability link; subsidiary pages live within its workspace.
 

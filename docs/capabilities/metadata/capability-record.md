@@ -93,19 +93,19 @@ Use published standards as **design references**, not as unproven certification 
 
 | Source / standard | Mandatory design contribution or conditional use |
 |---|---|
-| W3C [SKOS](../../../RESOURCES.md#ref-ceaf9e24), ISO [25964](../../../RESOURCES.md#ref-926d8bf3) | Core controlled vocabularies, concepts, preferred/alternate labels, hierarchy and cross-vocabulary mappings |
-| W3C [OWL 2](../../../RESOURCES.md#ref-7854321a) and [OWL 2 Profiles](../../../RESOURCES.md#ref-c8ffae91) | **Core first-release logical reasoning**. **OWL 2 RL is a recommended profile candidate**, not yet selected or claimed conformant; assess EL/QL for specialist needs. Full profile conformance requires actual normative semantics and evidence |
-| W3C [RDF/RDFS](../../../RESOURCES.md#ref-1d5b21c8) and [JSON-LD 1.1](../../../RESOURCES.md#ref-a03bb42b) | Core semantic representation and interoperable import/export; no prescribed storage engine |
-| W3C [SPARQL 1.1](../../../RESOURCES.md#ref-5f7e8b5e) | Core semantic query design; expose only controlled, authorised supported operations |
-| W3C [SHACL](../../../RESOURCES.md#ref-6dc528a5) | Core structural validation; distinguish closed-world shape validation from OWL open-world logic |
-| W3C [PROV-O](../../../RESOURCES.md#ref-20aa2e25) | Core source, revision, agent, transformation and inferred-proof provenance |
-| ISO [704](../../../RESOURCES.md#ref-e23b09be), ISO [1087](../../../RESOURCES.md#ref-d3820482) | Core terminology quality, concept identity and definitions |
-| ISO/IEC [11179](../../../RESOURCES.md#ref-a1ff3730) | Core registry, stewardship, identity, version and approval reference |
-| IETF [BCP 47](../../../RESOURCES.md#ref-699eef87), WCAG 2.2 AA, OWASP ASVS 5 | Language-labelled terms, accessible interfaces and secure capability boundary |
-| W3C [DCAT 3](../../../RESOURCES.md#ref-00ce33b2), [Data on the Web Best Practices](../../../RESOURCES.md#ref-b37ccf4d), [Dublin Core](../../../RESOURCES.md#ref-9657f4eb) | Conditional dataset/metadata catalogue exchange and description |
+| W3C [SKOS](../../../RESOURCES.md#skos), ISO [25964](../../../RESOURCES.md#25964--wwwnisoorgschemasiso25964) | Core controlled vocabularies, concepts, preferred/alternate labels, hierarchy and cross-vocabulary mappings |
+| W3C [OWL 2](../../../RESOURCES.md#owl-2) and [OWL 2 Profiles](../../../RESOURCES.md#owl-2-profiles) | **Core first-release logical reasoning**. **OWL 2 RL is a recommended profile candidate**, not yet selected or claimed conformant; assess EL/QL for specialist needs. Full profile conformance requires actual normative semantics and evidence |
+| W3C [RDF/RDFS](../../../RESOURCES.md#rdfrdfs) and [JSON-LD 1.1](../../../RESOURCES.md#w3c-json-ld-11-2) | Core semantic representation and interoperable import/export; no prescribed storage engine |
+| W3C [SPARQL 1.1](../../../RESOURCES.md#sparql-11) | Core semantic query design; expose only controlled, authorised supported operations |
+| W3C [SHACL](../../../RESOURCES.md#shacl) | Core structural validation; distinguish closed-world shape validation from OWL open-world logic |
+| W3C [PROV-O](../../../RESOURCES.md#prov-o) | Core source, revision, agent, transformation and inferred-proof provenance |
+| ISO [704](../../../RESOURCES.md#704--wwwisoorgstandard79077html), ISO [1087](../../../RESOURCES.md#1087--wwwisoorgstandard62330html) | Core terminology quality, concept identity and definitions |
+| ISO/IEC [11179](../../../RESOURCES.md#11179--wwwisoorgstandard78915html) | Core registry, stewardship, identity, version and approval reference |
+| IETF [BCP 47](../../../RESOURCES.md#bcp-47), WCAG 2.2 AA, OWASP ASVS 5 | Language-labelled terms, accessible interfaces and secure capability boundary |
+| W3C [DCAT 3](../../../RESOURCES.md#dcat-3), [Data on the Web Best Practices](../../../RESOURCES.md#data-on-the-web-best-practices), [Dublin Core](../../../RESOURCES.md#dublin-core) | Conditional dataset/metadata catalogue exchange and description |
 | ISO/IEC 21838, ISO/IEC 19763 | Conditional top-level ontology/metamodel alignment and registration |
-| UK [Data Standards Authority](../../../RESOURCES.md#ref-44ad251a), [Data Quality Framework](../../../RESOURCES.md#ref-386eb998) and government DCAT/Dublin Core profiles | UK interoperability, quality, publication and stewardship guidance; apply sector mandates only when relevant |
-| ANSI/NISO [Z39.19](../../../RESOURCES.md#ref-0ab87b96), OGC [GeoSPARQL](../../../RESOURCES.md#ref-a6c83f6b) | Conditional controlled vocabulary and geospatial semantics; Location remains owner of geometry |
+| UK [Data Standards Authority](../../../RESOURCES.md#data-standards-authority), [Data Quality Framework](../../../RESOURCES.md#data-quality-framework) and government DCAT/Dublin Core profiles | UK interoperability, quality, publication and stewardship guidance; apply sector mandates only when relevant |
+| ANSI/NISO [Z39.19](../../../RESOURCES.md#z3919), OGC [GeoSPARQL](../../../RESOURCES.md#geosparql) | Conditional controlled vocabulary and geospatial semantics; Location remains owner of geometry |
 
 **Maturity watch:** emerging RDF 1.2 / SHACL 1.2 draft material should be monitored, **not** declared already adopted normative Recommendations. In all profiles, tests must distinguish asserted versus inferred facts, entailment/consistency, constraint validation, provenance, multilingual data, cancellation/timeout and access isolation.
 
@@ -115,24 +115,24 @@ Only adopt **fully public, actively maintained, commercially permissive open-sou
 
 | Candidate (official source) | Role and disposition |
 |---|---|
-| [Apache AGE](../../../RESOURCES.md#ref-0f60ec0d) — Apache 2.0 | **Approved preferred** PostgreSQL graph extension; property graph only, subject to PostgreSQL 18 validation |
-| [Apache Jena](../../../RESOURCES.md#ref-7ab49d9e) — Apache 2.0 | **First reasoning/validation candidate**; mature RDF/SPARQL/SHACL/rules; generic OWL reasoner **does not automatically prove full OWL 2 RL compliance** |
-| [Eclipse RDF4J](../../../RESOURCES.md#ref-da697d6a) — EDL 1.0 | Mature alternative semantic framework; verify actual OWL coverage and runtime |
-| [N3.js](../../../RESOURCES.md#ref-8c4508c1) — MIT | Preferred Node RDF parsing, writing and streaming; **not** reasoner |
-| [Comunica](../../../RESOURCES.md#ref-6c3e4b82) — MIT | Optional SPARQL/query adapter; neither owner store nor reasoner |
-| [Oxigraph](../../../RESOURCES.md#ref-6a0f1548) — MIT/Apache 2.0 | Permissive RDF engine, **lower-priority benchmark**, not mandatory second graph store; check production maturity |
-| [ELK](../../../RESOURCES.md#ref-0a6b05e3) — Apache 2.0; [Whelk](../../../RESOURCES.md#ref-a943427f) — BSD 3-Clause | Specialist reasoner candidates; validate exact EL/RL/other coverage, do not assume general OWL |
-| [pySHACL](../../../RESOURCES.md#ref-4293e39b) — Apache 2.0; [RDFLib](../../../RESOURCES.md#ref-94601d7a) — BSD 3-Clause | Independent SHACL and RDF validation/reference tools |
-| [shacl-engine](../../../RESOURCES.md#ref-7316cf52) — MIT | Optional Node-local SHACL validator, subject to independent conformance fixtures |
-| [OWLAPI](../../../RESOURCES.md#ref-5eeb6944), [ONT-API](../../../RESOURCES.md#ref-9bb6c5a8) | Optional OWL ontology interfaces; choose commercially permissive licence option for exact modules and check dependencies |
-| [ROBOT](../../../RESOURCES.md#ref-a91eaa59), [Protégé](../../../RESOURCES.md#ref-2649f4d9) — BSD family | Optional open-source ontology engineering, review and reference tools; do not replace host GUI |
-| [Apache Lucene](../../../RESOURCES.md#ref-6f0b2c64) — Apache 2.0 | Optional **via Search capability**, never a duplicate Metadata indexing service |
+| [Apache AGE](../../../RESOURCES.md#apache-age) — Apache 2.0 | **Approved preferred** PostgreSQL graph extension; property graph only, subject to PostgreSQL 18 validation |
+| [Apache Jena](../../../RESOURCES.md#apache-jena) — Apache 2.0 | **First reasoning/validation candidate**; mature RDF/SPARQL/SHACL/rules; generic OWL reasoner **does not automatically prove full OWL 2 RL compliance** |
+| [Eclipse RDF4J](../../../RESOURCES.md#eclipse-rdf4j) — EDL 1.0 | Mature alternative semantic framework; verify actual OWL coverage and runtime |
+| [N3.js](../../../RESOURCES.md#n3js) — MIT | Preferred Node RDF parsing, writing and streaming; **not** reasoner |
+| [Comunica](../../../RESOURCES.md#comunica) — MIT | Optional SPARQL/query adapter; neither owner store nor reasoner |
+| [Oxigraph](../../../RESOURCES.md#oxigraph) — MIT/Apache 2.0 | Permissive RDF engine, **lower-priority benchmark**, not mandatory second graph store; check production maturity |
+| [ELK](../../../RESOURCES.md#elk) — Apache 2.0; [Whelk](../../../RESOURCES.md#whelk) — BSD 3-Clause | Specialist reasoner candidates; validate exact EL/RL/other coverage, do not assume general OWL |
+| [pySHACL](../../../RESOURCES.md#pyshacl) — Apache 2.0; [RDFLib](../../../RESOURCES.md#rdflib) — BSD 3-Clause | Independent SHACL and RDF validation/reference tools |
+| [shacl-engine](../../../RESOURCES.md#shacl-engine) — MIT | Optional Node-local SHACL validator, subject to independent conformance fixtures |
+| [OWLAPI](../../../RESOURCES.md#owlapi), [ONT-API](../../../RESOURCES.md#ont-api) | Optional OWL ontology interfaces; choose commercially permissive licence option for exact modules and check dependencies |
+| [ROBOT](../../../RESOURCES.md#robot), [Protégé](../../../RESOURCES.md#protégé) — BSD family | Optional open-source ontology engineering, review and reference tools; do not replace host GUI |
+| [Apache Lucene](../../../RESOURCES.md#apache-lucene) — Apache 2.0 | Optional **via Search capability**, never a duplicate Metadata indexing service |
 
 **Library acceptance:** independently demonstrate exact first-release OWL reasoning and explanation behaviour, safe SHACL/query execution, RDF/SKOS interchange, provenance, rule resource limits, tenant scoping, durability, license notices and recoverability; do not infer conformance merely because an RDF store or OWL parser is present.
 
 ## Optional GUI and headless operation — approved presentation direction
 
-**Reference inspected:** `nuxt-layers-test/application-test-template/master`: [README](../../../RESOURCES.md#ref-8c941ad8), [host shell](../../../RESOURCES.md#ref-a4ce9d0c) and [dashboard](../../../RESOURCES.md#ref-96cb2d87). The reference has a separate homepage `/`, capability test dashboard `/admin`, collapsible **Capabilities** sidebar, Theme Manager at `/theme-manager`, responsive navigation and host-owned branding/appearance. It is **local test-only**, with no production IAM; a universal automatic menu registration API was **not verified**.
+**Reference inspected:** `nuxt-layers-test/application-test-template/master`: [README](../../../RESOURCES.md#application-test-template-2), [host shell](../../../RESOURCES.md#appappvue) and [dashboard](../../../RESOURCES.md#apppagesadminvue). The reference has a separate homepage `/`, capability test dashboard `/admin`, collapsible **Capabilities** sidebar, Theme Manager at `/theme-manager`, responsive navigation and host-owned branding/appearance. It is **local test-only**, with no production IAM; a universal automatic menu registration API was **not verified**.
 
 **Approved pattern:** when installed and authorised, the host adds **Capabilities → Metadata** to its existing sidebar and an optional Metadata card to `/admin`, leading to a host-chosen dashboard (illustratively `/metadata`; **not a mandated route**). The host owns navigation, branding, authentication context and routing; Theme Manager owns appearance tokens; UI provides accessible controls; Metadata owns screens' domain actions; Authorisation owns permissions. No second app shell, login system or theme service. The GUI is separable; all core operations, including first-release reasoning, remain headless.
 

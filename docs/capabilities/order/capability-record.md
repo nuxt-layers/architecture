@@ -108,12 +108,12 @@ Shared context is **minimal and purpose-specific**: trusted tenant/seller scope,
 
 | Body / standard | Agreed Order use and authority limit |
 |---|---|
-| [OASIS UBL 2.4](../../../RESOURCES.md#ref-4462b3df) | Preferred *semantic reference* for external Order, response, change and cancellation messages, without forcing UBL XML into the native contract |
-| [OpenPeppol BIS Ordering](../../../RESOURCES.md#ref-ad195287) and [GS1 EANCOM/XML](../../../RESOURCES.md#ref-1bbbdbc6) / UN/EDIFACT | **Conditional** partner-specific procurement/EDI profiles handled by documented Integrations adapters; validate actual published and stable profile, codes and signatures |
-| [CEN EN 16931](../../../RESOURCES.md#ref-58965163) | Adjacent structured invoice semantics: **Invoice** owns compliant issued documents; Order supplies order references and historic terms |
+| [OASIS UBL 2.4](../../../RESOURCES.md#oasis-ubl-24) | Preferred *semantic reference* for external Order, response, change and cancellation messages, without forcing UBL XML into the native contract |
+| [OpenPeppol BIS Ordering](../../../RESOURCES.md#openpeppol-bis-ordering) and [GS1 EANCOM/XML](../../../RESOURCES.md#gs1-epciscbv) / UN/EDIFACT | **Conditional** partner-specific procurement/EDI profiles handled by documented Integrations adapters; validate actual published and stable profile, codes and signatures |
+| [CEN EN 16931](../../../RESOURCES.md#cen-en-16931) | Adjacent structured invoice semantics: **Invoice** owns compliant issued documents; Order supplies order references and historic terms |
 | ISO 4217; UN/CEFACT Recommendation 20; ISO 3166-1; ISO 8601 / IETF RFC 3339 and RFC 9557; IETF BCP 47 | Interoperable currency, units, country, temporal and language representations; qualified Product/Pricing/Clock/Parties definitions remain authoritative |
-| [ISO 15489-1](../../../RESOURCES.md#ref-10531447) | Evidential records, traceability, retrieval, version history, retention and controlled disposal; no universal retention duration implied |
-| [W3C WCAG 2.2 AA](../../../RESOURCES.md#ref-0d1f555e); [OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2); ISO/IEC 27001/27002 | Accessible optional GUI, security verification and organisational security controls; no claim of ISO certification |
+| [ISO 15489-1](../../../RESOURCES.md#iso-15489-12016) | Evidential records, traceability, retrieval, version history, retention and controlled disposal; no universal retention duration implied |
+| [W3C WCAG 2.2 AA](../../../RESOURCES.md#w3c-wcag-22); [OWASP ASVS 5](../../../RESOURCES.md#owasp-asvs-500); ISO/IEC 27001/27002 | Accessible optional GUI, security verification and organisational security controls; no claim of ISO certification |
 | UK Consumer Rights Act 2015; Consumer Contracts Regulations 2013; applicable Electronic Commerce Regulations 2002; UK GDPR/Data Protection Act 2018 and ICO guidance | **Jurisdiction- and transaction-dependent laws, not technical standards**. Qualified pre-contract information, payment acknowledgement, correction/confirmation, cancellation remedies, retention/privacy constraints. The legal distinction between *order receipt* and *seller acceptance* must be clear |
 
 For other countries, consumer, procurement, invoicing, tax, data and signature requirements require independent Legal Compliance evaluation. Order never interprets all jurisdictions itself.
@@ -124,14 +124,14 @@ For other countries, consumer, procurement, invoicing, tax, data and signature r
 
 | Need | Option / public source | Disposition |
 |---|---|---|
-| PostgreSQL SQL and transactions | [Kysely](../../../RESOURCES.md#ref-af839a5b) (MIT); [Drizzle ORM](../../../RESOURCES.md#ref-03cb5387) (Apache-2.0) | **Prefer Kysely**, evaluate Drizzle as an **alternative**; not both. Only Order's private persistence adapter uses them |
-| PostgreSQL driver | [node-postgres (`pg`)](../../../RESOURCES.md#ref-be910869) (MIT) | Only if the host's persistence port does not already provide it |
-| Domain validation | [Zod](../../../RESOURCES.md#ref-1e3efac4) (MIT); [Ajv](../../../RESOURCES.md#ref-a164796d) (MIT) | Prefer Zod; add Ajv only for externally published JSON Schema interoperability |
-| Decimal precision | [decimal.js](../../../RESOURCES.md#ref-992a7688) (MIT), alternative [big.js](../../../RESOURCES.md#ref-fcbb731f) (MIT) | Prefer decimal.js, not both; actual legal/tax rounding policy remains Pricing-owned |
-| Complex lifecycle modelling | [XState](../../../RESOURCES.md#ref-2318841b) (MIT) | Optional stable release, only if hand-written guarded transitions become unwieldy; no hosted editor or second workflow authority |
-| External XML exchange | [fast-xml-parser](../../../RESOURCES.md#ref-20fa1cfe) (MIT); optional [xmlbuilder2](../../../RESOURCES.md#ref-65876386) (MIT) | Adapter-only; parser/generator is **not** a UBL/Peppol validator. Check update/security posture and protect against hostile/oversized input |
-| Testing | [Vitest](../../../RESOURCES.md#ref-c28ef17c), [fast-check](../../../RESOURCES.md#ref-ca191d3a) (both MIT) | CI/user-run contract, model, property-based and security tests; none executed here |
-| Durable cross-owner orchestration | [Temporal TypeScript SDK](../../../RESOURCES.md#ref-83603142) (MIT) | Only through existing Temporal gateway/Workflow/Scheduler when needed; no separate Order-owned engine |
+| PostgreSQL SQL and transactions | [Kysely](../../../RESOURCES.md#kysely) (MIT); [Drizzle ORM](../../../RESOURCES.md#drizzle-orm) (Apache-2.0) | **Prefer Kysely**, evaluate Drizzle as an **alternative**; not both. Only Order's private persistence adapter uses them |
+| PostgreSQL driver | [node-postgres (`pg`)](../../../RESOURCES.md#node-postgres--pg) (MIT) | Only if the host's persistence port does not already provide it |
+| Domain validation | [Zod](../../../RESOURCES.md#zod) (MIT); [Ajv](../../../RESOURCES.md#ajv) (MIT) | Prefer Zod; add Ajv only for externally published JSON Schema interoperability |
+| Decimal precision | [decimal.js](../../../RESOURCES.md#decimaljs) (MIT), alternative [big.js](../../../RESOURCES.md#bigjs) (MIT) | Prefer decimal.js, not both; actual legal/tax rounding policy remains Pricing-owned |
+| Complex lifecycle modelling | [XState](../../../RESOURCES.md#xstate) (MIT) | Optional stable release, only if hand-written guarded transitions become unwieldy; no hosted editor or second workflow authority |
+| External XML exchange | [fast-xml-parser](../../../RESOURCES.md#fast-xml-parser) (MIT); optional [xmlbuilder2](../../../RESOURCES.md#xmlbuilder2) (MIT) | Adapter-only; parser/generator is **not** a UBL/Peppol validator. Check update/security posture and protect against hostile/oversized input |
+| Testing | [Vitest](../../../RESOURCES.md#vitest), [fast-check](../../../RESOURCES.md#fast-check) (both MIT) | CI/user-run contract, model, property-based and security tests; none executed here |
+| Durable cross-owner orchestration | [Temporal TypeScript SDK](../../../RESOURCES.md#temporal-typescript-sdk) (MIT) | Only through existing Temporal gateway/Workflow/Scheduler when needed; no separate Order-owned engine |
 
 Do **not** add Redis, Elasticsearch, Neo4j, paid commerce engines or restricted community editions as essential Order infrastructure. Existing PostgreSQL and source-owned outbox are sufficient at conceptual level; any search, queue or scheduling integration retains its own capability boundary.
 

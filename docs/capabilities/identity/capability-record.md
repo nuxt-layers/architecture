@@ -79,7 +79,7 @@ Existing independently approved decisions are preserved; this note resolves Conf
 
 **Status:** Standards applicability note proposed in Attendance PR #79 (18 November 2026); ATT-09/ATT-10 are owner-approved, but ATT-11 standards mapping is not separately approved. References are design guidance unless an accepted governing rule or applicable law already makes a control mandatory. No implementation, certification or new dependency implied.
 
-**Apply:** [NIST SP 800-63A-4](../../../RESOURCES.md#ref-06a5f395) when real-world identity proofing is justified; [NIST SP 800-63C-4](../../../RESOURCES.md#ref-98d5a047) when federated identity is used. No-account attendance does not automatically require proofing, Identity membership or a personal group. Later linking must use qualified, purpose-limited evidence of both claims, not an email match; Identity owns principal association history, Attendance retains immutable source participation history under ATT-10. Protect cross-tenant privacy and revocation; no universal guest identity master is created.
+**Apply:** [NIST SP 800-63A-4](../../../RESOURCES.md#nist-sp-800-63a-4) when real-world identity proofing is justified; [NIST SP 800-63C-4](../../../RESOURCES.md#nist-sp-800-63c-4) when federated identity is used. No-account attendance does not automatically require proofing, Identity membership or a personal group. Later linking must use qualified, purpose-limited evidence of both claims, not an email match; Identity owns principal association history, Attendance retains immutable source participation history under ATT-10. Protect cross-tenant privacy and revocation; no universal guest identity master is created.
 
 ## Federation — reciprocal conceptual contract (18 November 2026)
 

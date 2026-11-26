@@ -2,7 +2,7 @@
 
 **Classification:** Platform capability. **Conceptual status:** Complete; owner-approved Publisher decisions (22 November 2026). **Implementation and merge:** Separate verification and explicit merge approval required. **Authority:** Accepted ADRs (particularly 0009, 0012, 0017 and 0018) and the [Capability Standard](../../standards/capability-standard.md) prevail over this blueprint.
 
-**Evidence:** [Publisher published root `CONTRACT.md`](../../../RESOURCES.md#ref-332e0d6b), implementation `master` `3f4c60a256a6bea9ba9836e58138efbbc69097af` (contract blob `6d51c98cf2fcd40e0de4f476540a63b260f76b42`); documented, **not runtime-verified**. Governing opening baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint opening baseline `361566988ac53c55f6135e8acfa46cd5b013d7a0`. Review protocol (former document: review protocol).
+**Evidence:** [Publisher published root `CONTRACT.md`](../../../RESOURCES.md#publisher--contractmd), implementation `master` `3f4c60a256a6bea9ba9836e58138efbbc69097af` (contract blob `6d51c98cf2fcd40e0de4f476540a63b260f76b42`); documented, **not runtime-verified**. Governing opening baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint opening baseline `361566988ac53c55f6135e8acfa46cd5b013d7a0`. Review protocol (former document: review protocol).
 
 ## Purpose, boundaries and native operation
 
@@ -106,17 +106,17 @@ Apply GDPR/UK GDPR, Online Safety and related duties **only where qualified Lega
 
 | Reference | Use and actual owner |
 |---|---|
-| [W3C WCAG 2.2](../../../RESOURCES.md#ref-0d1f555e) AA; [ATAG 2.0](../../../RESOURCES.md#ref-9dbe26fd) | Accessible published views and editing controls; Content Editor/host implement presentation, Publisher checks relevant content constraints |
-| [WHATWG HTML](../../../RESOURCES.md#ref-36db7adb), [W3C JSON-LD 1.1](../../../RESOURCES.md#ref-a03bb42b), [schema.org](../../../RESOURCES.md#ref-30a88a32) | Semantic host rendering and optional SEO/Metadata projections; never arbitrary unsafe source HTML |
-| [BCP 47](../../../RESOURCES.md#ref-cd91c32e), [Unicode CLDR](../../../RESOURCES.md#ref-0ea5a429) | Locale identifiers, translated variant metadata, dates/language presentation via Localisation/Clock |
-| [RFC 9110](../../../RESOURCES.md#ref-5a7fc9e7), [RFC 3986](../../../RESOURCES.md#ref-74dd789a), [RFC 9457](../../../RESOURCES.md#ref-7754416d), [RFC 9562](../../../RESOURCES.md#ref-fdce2c42) | HTTP semantics, canonical URLs, optional compatible Problem Details and UUIDv7 |
-| [RFC 4287 Atom](../../../RESOURCES.md#ref-30a598c3), [RSS 2.0](../../../RESOURCES.md#ref-8ed599f6), [RFC 9309 robots](../../../RESOURCES.md#ref-6f11a863) | Feed correctness and SEO-controlled crawler directives; **robots is not access control** |
-| [ActivityStreams 2.0](../../../RESOURCES.md#ref-c75695ba), [ActivityPub](../../../RESOURCES.md#ref-b5b42c56) | Optional Federation protocol, **not** mandatory Publisher service |
-| [ISO 15489-1](../../../RESOURCES.md#ref-10531447), [ISO 23081](../../../RESOURCES.md#ref-36977534) | Records lifecycle, provenance and retention metadata; Publisher remains document authority, Audit independently owns evidence |
-| [OWASP ASVS 5.0](../../../RESOURCES.md#ref-a1c367d2), [ISO/IEC 27001](../../../RESOURCES.md#ref-42fa42bb), [NIST SSDF](../../../RESOURCES.md#ref-10dcdd0a) | Security acceptance and assurance guidance, without asserting certification |
-| [ISO/IEC 27701](../../../RESOURCES.md#ref-b948c1e2), [ICO privacy-by-design guidance](../../../RESOURCES.md#ref-4ec87ed3) | Privacy management aligned with Privacy/Legal Compliance |
-| [ISO/IEC 25010](../../../RESOURCES.md#ref-0b5d630d) | Reliability, security, performance and maintainability acceptance |
-| [UK GDPR / Data Protection Act 2018](../../../RESOURCES.md#ref-de03a85c), [Data (Use and Access) Act 2025](../../../RESOURCES.md#ref-9bd32f02), [Online Safety Act 2023](../../../RESOURCES.md#ref-3c5edd48), [Ofcom](../../../RESOURCES.md#ref-5c4b49fe), [public-sector accessibility regulations](../../../RESOURCES.md#ref-20c7b15f) | Conditional, jurisdiction/service-specific qualified obligations; not universal Publisher settings |
+| [W3C WCAG 2.2](../../../RESOURCES.md#w3c-wcag-22) AA; [ATAG 2.0](../../../RESOURCES.md#atag-20) | Accessible published views and editing controls; Content Editor/host implement presentation, Publisher checks relevant content constraints |
+| [WHATWG HTML](../../../RESOURCES.md#whatwg-html), [W3C JSON-LD 1.1](../../../RESOURCES.md#w3c-json-ld-11-2), [schema.org](../../../RESOURCES.md#schemaorg-2) | Semantic host rendering and optional SEO/Metadata projections; never arbitrary unsafe source HTML |
+| [BCP 47](../../../RESOURCES.md#bcp-47-2), [Unicode CLDR](../../../RESOURCES.md#unicode-cldr-2) | Locale identifiers, translated variant metadata, dates/language presentation via Localisation/Clock |
+| [RFC 9110](../../../RESOURCES.md#rfc-9110), [RFC 3986](../../../RESOURCES.md#rfc-3986), [RFC 9457](../../../RESOURCES.md#rfc-9457-3), [RFC 9562](../../../RESOURCES.md#rfc-9562) | HTTP semantics, canonical URLs, optional compatible Problem Details and UUIDv7 |
+| [RFC 4287 Atom](../../../RESOURCES.md#rfc-4287-atom), [RSS 2.0](../../../RESOURCES.md#rss-20), [RFC 9309 robots](../../../RESOURCES.md#rfc-9309-robots) | Feed correctness and SEO-controlled crawler directives; **robots is not access control** |
+| [ActivityStreams 2.0](../../../RESOURCES.md#activitystreams-20), [ActivityPub](../../../RESOURCES.md#activitypub) | Optional Federation protocol, **not** mandatory Publisher service |
+| [ISO 15489-1](../../../RESOURCES.md#iso-15489-12016), [ISO 23081](../../../RESOURCES.md#iso-23081) | Records lifecycle, provenance and retention metadata; Publisher remains document authority, Audit independently owns evidence |
+| [OWASP ASVS 5.0](../../../RESOURCES.md#owasp-asvs-500), [ISO/IEC 27001](../../../RESOURCES.md#isoiec-270012022), [NIST SSDF](../../../RESOURCES.md#nist-ssdf-sp-800-218) | Security acceptance and assurance guidance, without asserting certification |
+| [ISO/IEC 27701](../../../RESOURCES.md#isoiec-277012025), [ICO privacy-by-design guidance](../../../RESOURCES.md#ico) | Privacy management aligned with Privacy/Legal Compliance |
+| [ISO/IEC 25010](../../../RESOURCES.md#isoiec-250102023) | Reliability, security, performance and maintainability acceptance |
+| [UK GDPR / Data Protection Act 2018](../../../RESOURCES.md#uk-gdpr--data-protection-act-2018), [Data (Use and Access) Act 2025](../../../RESOURCES.md#data-use-and-access-act-2025-2), [Online Safety Act 2023](../../../RESOURCES.md#online-safety-act-2023), [Ofcom](../../../RESOURCES.md#ofcom-2), [public-sector accessibility regulations](../../../RESOURCES.md#public-sector-accessibility-regulations) | Conditional, jurisdiction/service-specific qualified obligations; not universal Publisher settings |
 
 **Applicability:** accepted platform standards first; technical specifications when corresponding outputs are offered; optional federation/structured data only when used; statutes only when legally applicable. None of these references alone proves implementation compliance or certification.
 
@@ -126,22 +126,22 @@ Apply GDPR/UK GDPR, Online Safety and related duties **only where qualified Lega
 
 | Candidate (licence) | Recommendation and scope |
 |---|---|
-| [Zod](../../../RESOURCES.md#ref-1e3efac4) (MIT) | **Keep** documented schema validation; no parallel source of document type authority |
-| [PostgreSQL](../../../RESOURCES.md#ref-fa79609e) (PostgreSQL) + [node-postgres](../../../RESOURCES.md#ref-be910869) (MIT) | **Keep** owned storage, version checks and transactional outbox; no second database |
-| [Ajv](../../../RESOURCES.md#ref-a164796d) (MIT), [Kysely](../../../RESOURCES.md#ref-af839a5b) (MIT) | Optional only for real JSON Schema interoperability or demonstrated SQL maintainability benefit |
-| [unified](../../../RESOURCES.md#ref-72271435), [remark](../../../RESOURCES.md#ref-19502e95) (MIT) | Conditional Markdown intake, converting to canonical [Rich Text](../../libraries/rich-text/stateless-library-record.md) safe tree |
-| [rehype-sanitize](../../../RESOURCES.md#ref-b4b1b93d) (MIT); [DOMPurify](../../../RESOURCES.md#ref-975d5876) (Apache-2.0 OR MPL-2.0) | Alternative restricted HTML-import sanitisation only, not permission to store unsafe HTML; check exact dependency licence |
-| [feed](../../../RESOURCES.md#ref-d69fea58) (MIT), [uuid](../../../RESOURCES.md#ref-346e6d77) (MIT) | Optional RSS/Atom and UUIDv7 helpers if platform functions do not suffice |
-| [Temporal](../../../RESOURCES.md#ref-77f2db20) and [TypeScript SDK](../../../RESOURCES.md#ref-83603142) (MIT); [pg-boss](../../../RESOURCES.md#ref-fc345c0f) (MIT) | **Shared Scheduler/Workflow/Message Queue choices only**, no second Publisher job engine |
-| [ProseMirror](../../../RESOURCES.md#ref-e64171fe) (MIT), [Lexical](../../../RESOURCES.md#ref-9d228cd0) (MIT) | Optional **Content Editor** evaluation, not Publisher runtime dependencies |
+| [Zod](../../../RESOURCES.md#zod) (MIT) | **Keep** documented schema validation; no parallel source of document type authority |
+| [PostgreSQL](../../../RESOURCES.md#postgresql) (PostgreSQL) + [node-postgres](../../../RESOURCES.md#node-postgres--pg) (MIT) | **Keep** owned storage, version checks and transactional outbox; no second database |
+| [Ajv](../../../RESOURCES.md#ajv) (MIT), [Kysely](../../../RESOURCES.md#kysely) (MIT) | Optional only for real JSON Schema interoperability or demonstrated SQL maintainability benefit |
+| [unified](../../../RESOURCES.md#unified), [remark](../../../RESOURCES.md#remark) (MIT) | Conditional Markdown intake, converting to canonical [Rich Text](../../libraries/rich-text/stateless-library-record.md) safe tree |
+| [rehype-sanitize](../../../RESOURCES.md#rehype-sanitize) (MIT); [DOMPurify](../../../RESOURCES.md#cure53dompurify) (Apache-2.0 OR MPL-2.0) | Alternative restricted HTML-import sanitisation only, not permission to store unsafe HTML; check exact dependency licence |
+| [feed](../../../RESOURCES.md#feed) (MIT), [uuid](../../../RESOURCES.md#uuid) (MIT) | Optional RSS/Atom and UUIDv7 helpers if platform functions do not suffice |
+| [Temporal](../../../RESOURCES.md#temporal-server) and [TypeScript SDK](../../../RESOURCES.md#temporal-typescript-sdk) (MIT); [pg-boss](../../../RESOURCES.md#pg-boss) (MIT) | **Shared Scheduler/Workflow/Message Queue choices only**, no second Publisher job engine |
+| [ProseMirror](../../../RESOURCES.md#prosemirror) (MIT), [Lexical](../../../RESOURCES.md#lexical) (MIT) | Optional **Content Editor** evaluation, not Publisher runtime dependencies |
 
 Do **not** adopt Neo4j, Redis, Elasticsearch or another CMS/document store for Publisher; the owner excludes restricted core-vs-paid offerings. BullMQ Pro and Tiptap paid-only functionality are unnecessary, and CKEditor 5's GPL/commercial arrangement is not the requested permissive model. Validate licence and full-source posture for the *exact version* and all required functionality; conceptual selection is not package adoption or proof of current maintenance.
 
 ## GUI and representative host integration
 
-**Publisher is fully headless** under ADR-0009 and its root `CONTRACT.md`: **no Publisher-owned GUI pages, components, styles or message catalogue**. This does **not** mean it lacks the documented optional HTTP API. A host owns the **Publisher** navigation item, page routes and public article rendering; generic [Content Editor](../../presentation/content-editor/presentation-record.md) owns reusable editorial views. [Theme Manager](../../../RESOURCES.md#ref-90073eba) and `ui` supply semantic presentation, not publication authority.
+**Publisher is fully headless** under ADR-0009 and its root `CONTRACT.md`: **no Publisher-owned GUI pages, components, styles or message catalogue**. This does **not** mean it lacks the documented optional HTTP API. A host owns the **Publisher** navigation item, page routes and public article rendering; generic [Content Editor](../../presentation/content-editor/presentation-record.md) owns reusable editorial views. [Theme Manager](../../../RESOURCES.md#theme-manager--contractmd-screens) and `ui` supply semantic presentation, not publication authority.
 
-**Verified example:** [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#ref-f1f7cc47), `master` tree `8b7b142b84b5ec2379d4e2e727914fe344187d64`: [README](../../../RESOURCES.md#ref-8c941ad8), [`app/app.vue`](../../../RESOURCES.md#ref-a4ce9d0c) and [`app/pages/admin.vue`](../../../RESOURCES.md#ref-96cb2d87). It has a separate `/` homepage, `/admin` dashboard, collapsible **Capabilities** sidebar, `/theme-manager` item and Theme Manager styling. A **derived** Publisher test application (suggested `nuxt-layers-test/publisher-test`) would add a **Publisher** item → host-owned `/publisher` and optional `/admin` card; do not modify the generic template merely for this review.
+**Verified example:** [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#application-test-template), `master` tree `8b7b142b84b5ec2379d4e2e727914fe344187d64`: [README](../../../RESOURCES.md#application-test-template-2), [`app/app.vue`](../../../RESOURCES.md#appappvue) and [`app/pages/admin.vue`](../../../RESOURCES.md#apppagesadminvue). It has a separate `/` homepage, `/admin` dashboard, collapsible **Capabilities** sidebar, `/theme-manager` item and Theme Manager styling. A **derived** Publisher test application (suggested `nuxt-layers-test/publisher-test`) would add a **Publisher** item → host-owned `/publisher` and optional `/admin` card; do not modify the generic template merely for this review.
 
 | Logical GUI | Host route / suitable presentation |
 |---|---|

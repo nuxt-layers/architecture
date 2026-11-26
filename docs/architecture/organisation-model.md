@@ -99,24 +99,24 @@ Use source revisions and effective dates for reproducibility, bounded retries, i
 
 | Reference / official source | Application |
 |---|---|
-| W3C [Organization Ontology](../../RESOURCES.md#ref-3a7e011a) | **Primary semantic reference** for organisational units, posts and types; never reassign actual membership to Model |
-| ISO [19440:2020](../../RESOURCES.md#ref-5a452a1d); ISO/IEC/IEEE [42010:2022](../../RESOURCES.md#ref-e85f94dc) | Enterprise structural constructs and clear architectural viewpoints |
-| ISO/IEC [11179](../../RESOURCES.md#ref-a1ff3730) | Registry naming, metadata meaning, field versions and provenance where warranted |
-| [JSON Schema Draft 2020-12](../../RESOURCES.md#ref-91353e48) | Preferred JSON-based structural validation profile |
-| W3C [SKOS](../../RESOURCES.md#ref-ceaf9e24), [SHACL](../../RESOURCES.md#ref-6dc528a5), [PROV-O](../../RESOURCES.md#ref-20aa2e25) | Optional vocabulary, graph validation and provenance interoperability; use stable SHACL Recommendation, not an experimental draft as mandatory |
-| ISO [8601](../../RESOURCES.md#ref-bea40961), IETF [RFC 8785](../../RESOURCES.md#ref-5035f615) and [RFC 9457](../../RESOURCES.md#ref-f226fdcc) | Time, optional canonical JSON digests and HTTP-safe error representation when those transports are selected |
-| ISO/IEC [27001/27002](../../RESOURCES.md#ref-d1765e3f), [27701](../../RESOURCES.md#ref-b948c1e2); UK [NCSC](../../RESOURCES.md#ref-a05159fd), [ICO](../../RESOURCES.md#ref-4ec87ed3) | Security and privacy-by-design guidance alongside applicable law |
-| W3C [WCAG 2.2](../../RESOURCES.md#ref-0d1f555e), European [EN 301 549](../../RESOURCES.md#ref-8d4e272c) | Accessible optional administration; WCAG 2.2 AA is the platform baseline |
+| W3C [Organization Ontology](../../RESOURCES.md#organization-ontology) | **Primary semantic reference** for organisational units, posts and types; never reassign actual membership to Model |
+| ISO [19440:2020](../../RESOURCES.md#194402020); ISO/IEC/IEEE [42010:2022](../../RESOURCES.md#420102022) | Enterprise structural constructs and clear architectural viewpoints |
+| ISO/IEC [11179](../../RESOURCES.md#11179--wwwisoorgstandard78915html) | Registry naming, metadata meaning, field versions and provenance where warranted |
+| [JSON Schema Draft 2020-12](../../RESOURCES.md#json-schema-draft-2020-12) | Preferred JSON-based structural validation profile |
+| W3C [SKOS](../../RESOURCES.md#skos), [SHACL](../../RESOURCES.md#shacl), [PROV-O](../../RESOURCES.md#prov-o) | Optional vocabulary, graph validation and provenance interoperability; use stable SHACL Recommendation, not an experimental draft as mandatory |
+| ISO [8601](../../RESOURCES.md#8601--wwwisoorgstandard70907html), IETF [RFC 8785](../../RESOURCES.md#rfc-8785) and [RFC 9457](../../RESOURCES.md#rfc-9457) | Time, optional canonical JSON digests and HTTP-safe error representation when those transports are selected |
+| ISO/IEC [27001/27002](../../RESOURCES.md#isoiec-270022022), [27701](../../RESOURCES.md#isoiec-277012025); UK [NCSC](../../RESOURCES.md#ncsc), [ICO](../../RESOURCES.md#ico) | Security and privacy-by-design guidance alongside applicable law |
+| W3C [WCAG 2.2](../../RESOURCES.md#w3c-wcag-22), European [EN 301 549](../../RESOURCES.md#en-301-549) | Accessible optional administration; WCAG 2.2 AA is the platform baseline |
 
 **Commercially permissive, fully public upstream source candidates; no dependency approved for installation:**
 
 | Project and upstream source | Licence | Adopt only if needed for |
 |---|---|---|
-| [Ajv](../../RESOURCES.md#ref-a164796d) | MIT | **Preferred JSON Schema validator**, including supported 2020-12 dialect |
-| [TypeBox](../../RESOURCES.md#ref-5dcbcc2b), [ajv-formats](../../RESOURCES.md#ref-f211b530) | MIT | Optional TypeScript-authored schemas and format checks; avoid maintaining duplicate schema languages |
-| [jsondiffpatch](../../RESOURCES.md#ref-c9b7030c), [JSON Schema $Ref Parser](../../RESOURCES.md#ref-0de61a46) | MIT | Conditional version preview and bounded/locally allowlisted reference resolution; diff alone does not prove compatibility |
-| [uuid](../../RESOURCES.md#ref-346e6d77), [Graphology](../../RESOURCES.md#ref-9126475c) | MIT | Optional IDs (reuse platform UUID service first) and **in-memory** structural/graph checks; no shadow group graph |
-| [PostgreSQL](../../RESOURCES.md#ref-fa79609e) + [node-postgres](../../RESOURCES.md#ref-be910869), optionally [Drizzle ORM](../../RESOURCES.md#ref-03cb5387) | PostgreSQL licence + MIT; Drizzle Apache-2.0 | **Only** after a justified durable definition lifecycle; use existing Persistence/Infrastructure boundaries |
+| [Ajv](../../RESOURCES.md#ajv) | MIT | **Preferred JSON Schema validator**, including supported 2020-12 dialect |
+| [TypeBox](../../RESOURCES.md#typebox), [ajv-formats](../../RESOURCES.md#ajv-formats) | MIT | Optional TypeScript-authored schemas and format checks; avoid maintaining duplicate schema languages |
+| [jsondiffpatch](../../RESOURCES.md#jsondiffpatch), [JSON Schema $Ref Parser](../../RESOURCES.md#json-schema-ref-parser) | MIT | Conditional version preview and bounded/locally allowlisted reference resolution; diff alone does not prove compatibility |
+| [uuid](../../RESOURCES.md#uuid), [Graphology](../../RESOURCES.md#graphology) | MIT | Optional IDs (reuse platform UUID service first) and **in-memory** structural/graph checks; no shadow group graph |
+| [PostgreSQL](../../RESOURCES.md#postgresql) + [node-postgres](../../RESOURCES.md#node-postgres--pg), optionally [Drizzle ORM](../../RESOURCES.md#drizzle-orm) | PostgreSQL licence + MIT; Drizzle Apache-2.0 | **Only** after a justified durable definition lifecycle; use existing Persistence/Infrastructure boundaries |
 
 **Minimal approach:** Ajv for JSON schemas; optionally TypeBox and format validation. Use existing platform Clock, UUID, Persistence, IAM and Audit functions. Do not introduce Neo4j, Redis, Elasticsearch, another search/graph/cache server, an unrelated policy engine, or a dedicated workflow engine. Open-source availability, upstream activity, exact version, all transitive licences, notices, SBOM, security advisories and Node/TypeScript compatibility require verification **at adoption**; this shortlist is not a completed dependency audit. No untrusted remote schema fetch or arbitrary executable extension.
 
@@ -124,7 +124,7 @@ Use source revisions and effective dates for reproducibility, bounded retries, i
 
 **Approved OM-D05: headless by default; only an optional authorised definition-administration interface.** Organisation Console remains the presentation for **actual** organisations, memberships, settings, services and governance. Do not create a second organisation-management dashboard.
 
-**Verified reference pattern:** `nuxt-layers-test/application-test-template` on `master` provides `/`, `/admin`, responsive/collapsible/mobile **Capabilities** sidebar, Theme Manager at `/theme-manager`, branded top bar, Theme Manager Appearance controls and a **Not signed in** placeholder. Its `nuxt.config.ts` uses `extends: ['@nuxt-layers/theme-manager']` and `themeManager.mode: 'test'`. This is a **local-only, unauthenticated test mode**, never a production authorisation pattern. Derived hosts configure their own navigation and acceptance; Theme Manager's [root contract](../../RESOURCES.md#ref-484ee610) describes semantic styling and known ADR-0012 gaps.
+**Verified reference pattern:** `nuxt-layers-test/application-test-template` on `master` provides `/`, `/admin`, responsive/collapsible/mobile **Capabilities** sidebar, Theme Manager at `/theme-manager`, branded top bar, Theme Manager Appearance controls and a **Not signed in** placeholder. Its `nuxt.config.ts` uses `extends: ['@nuxt-layers/theme-manager']` and `themeManager.mode: 'test'`. This is a **local-only, unauthenticated test mode**, never a production authorisation pattern. Derived hosts configure their own navigation and acceptance; Theme Manager's [root contract](../../RESOURCES.md#theme-manager--contractmd) describes semantic styling and known ADR-0012 gaps.
 
 | Optional screen / illustrative host route | Purpose and conceptual interface |
 |---|---|

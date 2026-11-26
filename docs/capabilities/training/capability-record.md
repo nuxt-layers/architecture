@@ -133,7 +133,7 @@ Use recognised standards to guide the **conceptual design**, not as claims of co
 
 **Headless Training is complete without a GUI.** When presentation is enabled, the host provides a **Training** entry under its **Capabilities** sidebar, alongside Theme Manager, opening an authorised `/training` dashboard. A derived test host may also link from `/admin`. These are proposed host routes, **not shipped interfaces**.
 
-**Verified reference:** [application-test-template README](../../../RESOURCES.md#ref-8c941ad8), [app shell](../../../RESOURCES.md#ref-a4ce9d0c) and [test dashboard](../../../RESOURCES.md#ref-96cb2d87) (inspected 23 November 2026). Its homepage has no sidebar; the internal area has a responsive collapsible sidebar, Theme Manager link, appearance selector and reserved sign-in status. Derived applications provide their own routes and fixtures. Its unauthenticated Theme Manager **test mode is local-only**, not evidence of secure production operation.
+**Verified reference:** [application-test-template README](../../../RESOURCES.md#application-test-template-2), [app shell](../../../RESOURCES.md#appappvue) and [test dashboard](../../../RESOURCES.md#apppagesadminvue) (inspected 23 November 2026). Its homepage has no sidebar; the internal area has a responsive collapsible sidebar, Theme Manager link, appearance selector and reserved sign-in status. Derived applications provide their own routes and fixtures. Its unauthenticated Theme Manager **test mode is local-only**, not evidence of secure production operation.
 
 | Screen / suggested host route | Audience | Public Training contract consumed |
 |---|---|---|

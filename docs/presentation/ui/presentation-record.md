@@ -100,12 +100,12 @@ The server-side owner independently verifies every protected read and command, i
 
 | References | Role in conceptual design |
 |---|---|
-| [W3C WCAG 2.2](../../../RESOURCES.md#ref-eb11cf7e) and ISO/IEC 40500:2025; [WAI-ARIA](../../../RESOURCES.md#ref-90f5e4b1), [APG](../../../RESOURCES.md#ref-f076dce5); [WHATWG HTML](../../../RESOURCES.md#ref-36db7adb), W3C CSS | Mandatory accessibility/web engineering baseline where normative; APG informs widget patterns, not an additional binding standard |
-| [BCP 47](../../../RESOURCES.md#ref-cd91c32e), [Unicode CLDR](../../../RESOURCES.md#ref-ba99ff23), [ECMA-402](../../../RESOURCES.md#ref-3b3e5ef9), [W3C internationalisation](../../../RESOURCES.md#ref-bd589cf9) | Governing language, direction and locale formatting |
-| [OWASP ASVS 5.0](../../../RESOURCES.md#ref-b9e2aae7), frontend and XSS guidance | Mandatory governing security floor plus practical defensive guidance |
-| ISO 9241-210:2019, 9241-110:2020, 9241-115:2024; ISO/IEC 30071-1:2019; [GOV.UK Design System](../../../RESOURCES.md#ref-006a3e23) | Recommended human-centred interaction, navigation, accessibility-process and tested UI-pattern guidance |
-| [Design Tokens Community Group format 2025.10](../../../RESOURCES.md#ref-58aea18f) | Optional token interchange guidance for Theme Manager; **not** a W3C Recommendation |
-| [UK Public Sector Accessibility Regulations](../../../RESOURCES.md#ref-4d3037c4), Equality Act 2010, UK GDPR/Data Protection Act 2018, EN 301 549 | Jurisdiction- and service-specific legal duties determined by Legal Compliance; not blanket UI certification. EN 301 549 v4.1.1 published Sep 2026; legal harmonisation/citation must be rechecked before reliance |
+| [W3C WCAG 2.2](../../../RESOURCES.md#wcag-22) and ISO/IEC 40500:2025; [WAI-ARIA](../../../RESOURCES.md#wai-aria-12), [APG](../../../RESOURCES.md#aria-apg); [WHATWG HTML](../../../RESOURCES.md#whatwg-html), W3C CSS | Mandatory accessibility/web engineering baseline where normative; APG informs widget patterns, not an additional binding standard |
+| [BCP 47](../../../RESOURCES.md#bcp-47-2), [Unicode CLDR](../../../RESOURCES.md#unicode-cldr), [ECMA-402](../../../RESOURCES.md#ecma-402-2), [W3C internationalisation](../../../RESOURCES.md#w3c-internationalisation) | Governing language, direction and locale formatting |
+| [OWASP ASVS 5.0](../../../RESOURCES.md#owasp-asvs-50), frontend and XSS guidance | Mandatory governing security floor plus practical defensive guidance |
+| ISO 9241-210:2019, 9241-110:2020, 9241-115:2024; ISO/IEC 30071-1:2019; [GOV.UK Design System](../../../RESOURCES.md#govuk-design-system) | Recommended human-centred interaction, navigation, accessibility-process and tested UI-pattern guidance |
+| [Design Tokens Community Group format 2025.10](../../../RESOURCES.md#w3c-design-tokens-community-group-202510) | Optional token interchange guidance for Theme Manager; **not** a W3C Recommendation |
+| [UK Public Sector Accessibility Regulations](../../../RESOURCES.md#uk-public-sector-accessibility-regulations), Equality Act 2010, UK GDPR/Data Protection Act 2018, EN 301 549 | Jurisdiction- and service-specific legal duties determined by Legal Compliance; not blanket UI certification. EN 301 549 v4.1.1 published Sep 2026; legal harmonisation/citation must be rechecked before reliance |
 
 Passing individual component checks does **not** establish a compliant composed page. Test automated and manual assistive-technology behaviour in both light and dark modes, and relevant high-contrast, mobile and locale combinations.
 
@@ -115,14 +115,14 @@ Passing individual component checks does **not** establish a compliant composed 
 
 | Preferred role | Candidate (upstream licence) |
 |---|---|
-| Accessible headless interaction foundation | [Reka UI](../../../RESOURCES.md#ref-12355446) (MIT), **preferred** |
-| Semantic-token-compatible styling | [Tailwind CSS](../../../RESOURCES.md#ref-d67bae77) (MIT) |
-| Optional browser utilities | [VueUse](../../../RESOURCES.md#ref-9507482e) (MIT) |
-| Optional popover positioning | [Floating UI](../../../RESOURCES.md#ref-07622d6a) (MIT); avoid duplication with Reka |
-| Optional advanced tables | [TanStack Table](../../../RESOURCES.md#ref-af94a8b1) (MIT) |
-| Optional icons and schema validation | [Lucide](../../../RESOURCES.md#ref-c5624441) (ISC); [Zod](../../../RESOURCES.md#ref-1e3efac4) (MIT) |
+| Accessible headless interaction foundation | [Reka UI](../../../RESOURCES.md#reka-ui) (MIT), **preferred** |
+| Semantic-token-compatible styling | [Tailwind CSS](../../../RESOURCES.md#tailwind-css) (MIT) |
+| Optional browser utilities | [VueUse](../../../RESOURCES.md#vueuse) (MIT) |
+| Optional popover positioning | [Floating UI](../../../RESOURCES.md#floating-ui) (MIT); avoid duplication with Reka |
+| Optional advanced tables | [TanStack Table](../../../RESOURCES.md#tanstack-table) (MIT) |
+| Optional icons and schema validation | [Lucide](../../../RESOURCES.md#lucide) (ISC); [Zod](../../../RESOURCES.md#zod) (MIT) |
 
-**Alternatives, not cumulative stacks:** [Ark UI](../../../RESOURCES.md#ref-7d9e57d5)/[Zag.js](../../../RESOURCES.md#ref-2994486b) (MIT), [Nuxt UI](../../../RESOURCES.md#ref-b0f34541) (MIT) or [shadcn-vue](../../../RESOURCES.md#ref-2c44f99e) (MIT). Select one primary primitives foundation. [PrimeVue](../../../RESOURCES.md#ref-86ae7870) is excluded as the preferred long-term base owing to its commercial-licensing direction; [OpenVue](../../../RESOURCES.md#ref-34e655b0) is currently too new for the stated maturity criterion. [axe-core](../../../RESOURCES.md#ref-802ea31e) (MPL-2.0) is free open source but **not MIT/ISC-style permissive**; separate licence approval is required if the strict rule applies.
+**Alternatives, not cumulative stacks:** [Ark UI](../../../RESOURCES.md#ark-ui)/[Zag.js](../../../RESOURCES.md#zagjs) (MIT), [Nuxt UI](../../../RESOURCES.md#nuxt-ui-v4) (MIT) or [shadcn-vue](../../../RESOURCES.md#shadcn-vue) (MIT). Select one primary primitives foundation. [PrimeVue](../../../RESOURCES.md#primevue) is excluded as the preferred long-term base owing to its commercial-licensing direction; [OpenVue](../../../RESOURCES.md#openvue) is currently too new for the stated maturity criterion. [axe-core](../../../RESOURCES.md#axe-core) (MPL-2.0) is free open source but **not MIT/ISC-style permissive**; separate licence approval is required if the strict rule applies.
 
 Before implementation, verify exact release and **all transitive/asset licences**, full current source/release parity, Nuxt/Vue/TypeScript/Tailwind compatibility, SSR/hydration, keyboard/assistive behaviour, RTL, contrast, bundle/performance cost, upstream security history and substitutability. Keep external APIs behind UI-owned public wrappers; pin reproducible releases. No proprietary runtime or online-licensing service is required by design. The user/CI, not this review, runs tests.
 
@@ -130,7 +130,7 @@ Before implementation, verify exact release and **all transitive/asset licences*
 
 **Owner-approved:** UI needs **no production user or administrator dashboard**; it has no records or operational controls. A **derived local-only test application** may expose a **component showcase at host-owned `/ui`**, reached via the existing **Capabilities** sidebar and a card on `/admin`. This is a demonstration/acceptance route, not a UI package route, mandatory screen or second Theme Manager.
 
-**Verified representative:** [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#ref-f1f7cc47) `master` has a standalone homepage `/`, dashboard `/admin`, collapsible responsive Capabilities sidebar, Theme Manager at `/theme-manager`, top-bar Appearance control, branding and a **Not signed in** placeholder. The derived test host adds its own navigation and route without modifying the shared template. The template uses unauthenticated local Theme Manager test mode and is **not** a production IAM example.
+**Verified representative:** [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#application-test-template) `master` has a standalone homepage `/`, dashboard `/admin`, collapsible responsive Capabilities sidebar, Theme Manager at `/theme-manager`, top-bar Appearance control, branding and a **Not signed in** placeholder. The derived test host adds its own navigation and route without modifying the shared template. The template uses unauthenticated local Theme Manager test mode and is **not** a production IAM example.
 
 Prefer a single `/ui` route with six sections:
 
@@ -179,7 +179,7 @@ Also owner-approved in this conversation: standards/assurance guidance, **Reka U
 
 **Established authority:** governing ADRs and presentation requirements; the blueprint catalogue/register both name `ui` as a presentation artefact with fully styled generic components consuming Theme Manager's vocabulary.
 
-**Documented implementation, not independently accepted:** [`nuxt-layers/ui`](../../../RESOURCES.md#ref-6f35dd9e) `master` previously checked at `00953556de5335b0df85ef9e84518dfac8886dac`; README describes legacy `@nuxt4-layers/ui`, `@nuxt4-layers/ui/theme` and `UiSurface`, while `docs/contracts.md` claims UI-owned token/theme validation/application. **No root `CONTRACT.md` was found.** This conflicts with Theme Manager's accepted exclusive authority; actual component exports, safe renderer and host acceptance are **not established**. Do not present proposed interfaces as shipped.
+**Documented implementation, not independently accepted:** [`nuxt-layers/ui`](../../../RESOURCES.md#nuxt-layersui) `master` previously checked at `00953556de5335b0df85ef9e84518dfac8886dac`; README describes legacy `@nuxt4-layers/ui`, `@nuxt4-layers/ui/theme` and `UiSurface`, while `docs/contracts.md` claims UI-owned token/theme validation/application. **No root `CONTRACT.md` was found.** This conflicts with Theme Manager's accepted exclusive authority; actual component exports, safe renderer and host acceptance are **not established**. Do not present proposed interfaces as shipped.
 
 **Implementation alignment / technical investigation (deferred):** correct theme ownership, package scope and published root consumer contract; specify actual component exports, safe-tree renderer, version migration, style/unstyled mode and token compatibility; select and audit dependency versions; demonstrate ADR-0012 self-contained consumer/minimal host and 50-line budget where applicable; validate SSR, performance, security and accessibility in CI/manual review. Theme Manager PR #142 has merged and its approved reciprocal design is reconciled above. No independent unresolved **conceptual ownership** choice is identified; technical implementation evidence is outstanding.
 

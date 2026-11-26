@@ -13,4320 +13,627 @@ Add further references only after confirming that the target repository, revisio
 The [catalogue](docs/catalogue.md) names the capabilities; repositories are held under the [`nuxt-layers` organisation](https://github.com/nuxt-layers), where available.
 
 
-## Consolidated reference inventory
-
-Imported design citations are retained here for provenance. External availability and version pins have not been independently reverified; do not treat unverified entries as accepted dependencies.
-
-### OWASP ASVS 5.0.0
-
-<a id="ref-a1c367d2"></a>
-
-[OWASP ASVS 5.0.0](https://asvs.owasp.org/) — imported reference; verification pending.
-
-### ISO/IEC 27040:2024
-
-<a id="ref-fbbdfd70"></a>
-
-[ISO/IEC 27040:2024](https://committee.iso.org/standard/80194.html) — imported reference; verification pending.
-
-### NIST SSDF SP 800-218
-
-<a id="ref-10dcdd0a"></a>
-
-[NIST SSDF SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final) — imported reference; verification pending.
-
-### NIST SP 800-53 Rev. 5
-
-<a id="ref-3fd80945"></a>
-
-[NIST SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/final) — imported reference; verification pending.
-
-### NIST SP 800-88 Rev. 2
-
-<a id="ref-ee67b17c"></a>
-
-[NIST SP 800-88 Rev. 2](https://csrc.nist.gov/pubs/sp/800/88/r2/final) — imported reference; verification pending.
-
-### Temporal TypeScript SDK docs
-
-<a id="ref-5ba4ac29"></a>
-
-[Temporal TypeScript SDK docs](https://docs.temporal.io/develop/typescript) — imported reference; verification pending.
-
-### Ajv
-
-<a id="ref-a164796d"></a>
-
-[Ajv](https://github.com/ajv-validator/ajv) — imported reference; verification pending.
-
-### ajv-formats
-
-<a id="ref-f211b530"></a>
-
-[ajv-formats](https://github.com/ajv-validator/ajv-formats) — imported reference; verification pending.
-
-### Apache AGE
-
-<a id="ref-0f60ec0d"></a>
-
-[Apache AGE](https://github.com/apache/age) — imported reference; verification pending.
-
-### JSON Schema $Ref Parser
-
-<a id="ref-0de61a46"></a>
-
-[JSON Schema $Ref Parser](https://github.com/APIDevTools/json-schema-ref-parser) — imported reference; verification pending.
-
-### jsondiffpatch
-
-<a id="ref-c9b7030c"></a>
-
-[jsondiffpatch](https://github.com/benjamine/jsondiffpatch) — imported reference; verification pending.
-
-### node-postgres / pg
-
-<a id="ref-be910869"></a>
-
-[node-postgres / pg](https://github.com/brianc/node-postgres) — imported reference; verification pending.
-
-### pg_cron
-
-<a id="ref-54c57554"></a>
-
-[pg_cron](https://github.com/citusdata/pg_cron) — imported reference; verification pending.
-
-### Zod
-
-<a id="ref-1e3efac4"></a>
-
-[Zod](https://github.com/colinhacks/zod) — imported reference; verification pending.
-
-### Drizzle ORM
-
-<a id="ref-03cb5387"></a>
-
-[Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) — imported reference; verification pending.
-
-### Graphology
-
-<a id="ref-9126475c"></a>
-
-[Graphology](https://github.com/graphology/graphology) — imported reference; verification pending.
-
-### Kysely
-
-<a id="ref-af839a5b"></a>
-
-[Kysely](https://github.com/kysely-org/kysely) — imported reference; verification pending.
-
-### application-test-template
-
-<a id="ref-f1f7cc47"></a>
-
-[application-test-template](https://github.com/nuxt-layers-test/application-test-template) — imported reference; verification pending.
-
-### Nuxt config
-
-<a id="ref-68dbcd7d"></a>
-
-[Nuxt config](https://github.com/nuxt-layers-test/application-test-template/blob/master/nuxt.config.ts) — imported reference; verification pending.
-
-### application-test-template (2)
-
-<a id="ref-8c941ad8"></a>
-
-[application-test-template](https://github.com/nuxt-layers-test/application-test-template/blob/master/README.md) — imported reference; verification pending.
-
-### Host / infrastructure
-
-<a id="ref-d90cb4c3"></a>
-
-[Host / infrastructure](https://github.com/nuxt-layers/infrastructure) — imported reference; verification pending.
-
-### the implementation repository — github.com/nuxt-layers/temporal-gateway
-
-<a id="ref-b86d6231"></a>
-
-[the implementation repository](https://github.com/nuxt-layers/temporal-gateway) — imported reference; verification pending.
-
-### theme-manager — CONTRACT.md
-
-<a id="ref-484ee610"></a>
-
-root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### OpenTelemetry JS
-
-<a id="ref-8e380f73"></a>
-
-[OpenTelemetry JS](https://github.com/open-telemetry/opentelemetry-js) — imported reference; verification pending.
-
-### libpg_query
-
-<a id="ref-7d7aa078"></a>
-
-[libpg_query](https://github.com/pganalyze/libpg_query) — imported reference; verification pending.
-
-### pgBackRest
-
-<a id="ref-82a8bc20"></a>
-
-[pgBackRest](https://github.com/pgbackrest/pgbackrest) — imported reference; verification pending.
-
-### PgBouncer
-
-<a id="ref-dd9ecc22"></a>
-
-[PgBouncer](https://github.com/pgbouncer/pgbouncer) — imported reference; verification pending.
-
-### PGMQ
-
-<a id="ref-c40afaea"></a>
-
-[PGMQ](https://github.com/pgmq/pgmq) — imported reference; verification pending.
-
-### pgvector
-
-<a id="ref-863156a4"></a>
-
-[pgvector](https://github.com/pgvector/pgvector) — imported reference; verification pending.
-
-### Pino
-
-<a id="ref-5f05d959"></a>
-
-[Pino](https://github.com/pinojs/pino) — imported reference; verification pending.
-
-### Postgres.js
-
-<a id="ref-624c1eac"></a>
-
-[Postgres.js](https://github.com/porsager/postgres) — imported reference; verification pending.
-
-### node-pg-migrate
-
-<a id="ref-5221a10b"></a>
-
-[node-pg-migrate](https://github.com/salsita/node-pg-migrate) — imported reference; verification pending.
-
-### prom-client
-
-<a id="ref-e1a3131d"></a>
-
-[prom-client](https://github.com/siimon/prom-client) — imported reference; verification pending.
-
-### TypeBox
-
-<a id="ref-5dcbcc2b"></a>
-
-[TypeBox](https://github.com/sinclairzx81/typebox) — imported reference; verification pending.
-
-### Temporal TypeScript SDK
-
-<a id="ref-83603142"></a>
-
-[Temporal TypeScript SDK](https://github.com/temporalio/sdk-typescript) — imported reference; verification pending.
-
-### Temporal Server
-
-<a id="ref-77f2db20"></a>
-
-[Temporal Server](https://github.com/temporalio/temporal) — imported reference; verification pending.
-
-### Temporal UI
-
-<a id="ref-5d38eb94"></a>
-
-[Temporal UI](https://github.com/temporalio/ui) — imported reference; verification pending.
-
-### Testcontainers Node
-
-<a id="ref-68d019ff"></a>
-
-[Testcontainers Node](https://github.com/testcontainers/testcontainers-node) — imported reference; verification pending.
-
-### uuid
-
-<a id="ref-346e6d77"></a>
-
-[uuid](https://github.com/uuidjs/uuid) — imported reference; verification pending.
-
-### Vitest
-
-<a id="ref-c28ef17c"></a>
-
-[Vitest](https://github.com/vitest-dev/vitest) — imported reference; verification pending.
-
-### ICO guidance
-
-<a id="ref-ec0bfbca"></a>
-
-[ICO guidance](https://ico.org.uk/for-organisations/) — imported reference; verification pending.
-
-### ICO
-
-<a id="ref-4ec87ed3"></a>
-
-[ICO](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default/) — imported reference; verification pending.
-
-### ICO Guide to Data Security
-
-<a id="ref-223a59b6"></a>
-
-[ICO Guide to Data Security](https://ico.org.uk/for-organisations/uk-GDPR-guidance-and-resources/security/a-guide-to-data-security/) — imported reference; verification pending.
-
-### JSON Schema Draft 2020-12
-
-<a id="ref-91353e48"></a>
-
-[JSON Schema Draft 2020-12](https://json-schema.org/draft/2020-12/) — imported reference; verification pending.
-
-### OpenTelemetry
-
-<a id="ref-de6a7a46"></a>
-
-[OpenTelemetry](https://opentelemetry.io/docs/specs/otel/) — imported reference; verification pending.
-
-### EN 301 549
-
-<a id="ref-8d4e272c"></a>
-
-[EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf) — imported reference; verification pending.
-
-### IFRS IAS 16 Property, Plant and Equipment
-
-<a id="ref-c58a72c6"></a>
-
-[IFRS IAS 16 Property, Plant and Equipment](https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/) — imported reference; verification pending.
-
-### IFRS IAS 19 Employee Benefits
-
-<a id="ref-1cff7d12"></a>
-
-[IFRS IAS 19 Employee Benefits](https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/) — imported reference; verification pending.
-
-### IFRS IAS 2 Inventories
-
-<a id="ref-6460bcc1"></a>
-
-[IFRS IAS 2 Inventories](https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/) — imported reference; verification pending.
-
-### ISO/IEC 27001:2022
-
-<a id="ref-42fa42bb"></a>
-
-[ISO/IEC 27001:2022](https://www.iso.org/standard/27001) — imported reference; verification pending.
-
-### ISO/IEC 27017:2026
-
-<a id="ref-48fc8ac4"></a>
-
-[ISO/IEC 27017:2026](https://www.iso.org/standard/27017) — imported reference; verification pending.
-
-### ISO/IEC 27701:2025
-
-<a id="ref-b948c1e2"></a>
-
-[ISO/IEC 27701:2025](https://www.iso.org/standard/27701) — imported reference; verification pending.
-
-### 8601 — www.iso.org/standard/70907.html
-
-<a id="ref-bea40961"></a>
-
-[8601](https://www.iso.org/standard/70907.html) — imported reference; verification pending.
-
-### 42010:2022
-
-<a id="ref-e85f94dc"></a>
-
-[42010:2022](https://www.iso.org/standard/74393.html) — imported reference; verification pending.
-
-### 19440:2020
-
-<a id="ref-5a452a1d"></a>
-
-[19440:2020](https://www.iso.org/standard/74491.html) — imported reference; verification pending.
-
-### ISO 22301:2019
-
-<a id="ref-85e985cf"></a>
-
-[ISO 22301:2019](https://www.iso.org/standard/75106.html) — imported reference; verification pending.
-
-### ISO/IEC 27002:2022
-
-<a id="ref-d1765e3f"></a>
-
-[ISO/IEC 27002:2022](https://www.iso.org/standard/75652.html) — imported reference; verification pending.
-
-### ISO/IEC 9075:2023
-
-<a id="ref-b335bb8b"></a>
-
-[ISO/IEC 9075:2023](https://www.iso.org/standard/76583.html) — imported reference; verification pending.
-
-### 11179 — www.iso.org/standard/78915.html
-
-<a id="ref-a1ff3730"></a>
-
-[11179](https://www.iso.org/standard/78915.html) — imported reference; verification pending.
-
-### UK NCSC Cloud Security Principles
-
-<a id="ref-ca1f56e2"></a>
-
-[UK NCSC Cloud Security Principles](https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles) — imported reference; verification pending.
-
-### NCSC
-
-<a id="ref-a05159fd"></a>
-
-[NCSC](https://www.ncsc.gov.uk/collection/cyber-security-design-principles/cyber-security-design-principles) — imported reference; verification pending.
-
-### PCI DSS 4.0.1
-
-<a id="ref-b32c0c68"></a>
-
-[PCI DSS 4.0.1](https://www.pcisecuritystandards.org/document_library/) — imported reference; verification pending.
-
-### PostgreSQL
-
-<a id="ref-fa79609e"></a>
-
-[PostgreSQL](https://www.postgresql.org/about/licence/) — imported reference; verification pending.
-
-### RFC 3339
-
-<a id="ref-9e9b8c6e"></a>
-
-[RFC 3339](https://www.rfc-editor.org/info/rfc3339/) — imported reference; verification pending.
-
-### RFC 8446
-
-<a id="ref-0296369e"></a>
-
-[RFC 8446](https://www.rfc-editor.org/info/rfc8446/) — imported reference; verification pending.
-
-### RFC 8785
-
-<a id="ref-5035f615"></a>
-
-[RFC 8785](https://www.rfc-editor.org/rfc/rfc8785.html) — imported reference; verification pending.
-
-### RFC 9457
-
-<a id="ref-f226fdcc"></a>
-
-[RFC 9457](https://www.rfc-editor.org/rfc/rfc9457.html) — imported reference; verification pending.
-
-### PROV-O
-
-<a id="ref-20aa2e25"></a>
-
-[PROV-O](https://www.w3.org/TR/prov-o/) — imported reference; verification pending.
-
-### SHACL
-
-<a id="ref-6dc528a5"></a>
-
-[SHACL](https://www.w3.org/TR/shacl/) — imported reference; verification pending.
-
-### SKOS
-
-<a id="ref-ceaf9e24"></a>
-
-[SKOS](https://www.w3.org/TR/skos-reference/) — imported reference; verification pending.
-
-### W3C Trace Context
-
-<a id="ref-e45806bf"></a>
-
-[W3C Trace Context](https://www.w3.org/TR/trace-context/) — imported reference; verification pending.
-
-### Organization Ontology
-
-<a id="ref-3a7e011a"></a>
-
-[Organization Ontology](https://www.w3.org/TR/vocab-org/) — imported reference; verification pending.
-
-### W3C WCAG 2.2
-
-<a id="ref-0d1f555e"></a>
-
-[W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/) — imported reference; verification pending.
-
-### payment-page security guidance
-
-<a id="ref-4fbd01ef"></a>
-
-[payment-page security guidance](https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming) — imported reference; verification pending.
-
-### NIST SP 800-53 Rev. 5 AU-2/AU-3/AU-6/AU-9/AU-11
-
-<a id="ref-5d98a8a6"></a>
-
-[NIST SP 800-53 Rev. 5 AU-2/AU-3/AU-6/AU-9/AU-11](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) — imported reference; verification pending.
-
-### NIST SP 800-63-4
-
-<a id="ref-ec4142c5"></a>
-
-[NIST SP 800-63-4](https://csrc.nist.gov/pubs/sp/800/63/4/final) — imported reference; verification pending.
-
-### NIST SP 800-63B-4
-
-<a id="ref-a2396bfc"></a>
-
-[NIST SP 800-63B-4](https://csrc.nist.gov/pubs/sp/800/63/b/4/final) — imported reference; verification pending.
-
-### NIST SP 800-63B-4 (2)
-
-<a id="ref-49bba49c"></a>
-
-[NIST SP 800-63B-4](https://csrc.nist.gov/pubs/sp/800/63/B/4/final) — imported reference; verification pending.
-
-### RFC 9457 (2)
-
-<a id="ref-f546b9ec"></a>
-
-[RFC 9457](https://datatracker.ietf.org/doc/html/rfc9457) — imported reference; verification pending.
-
-### European Accessibility Act (Directive 2019/882)
-
-<a id="ref-ff7812f9"></a>
-
-[European Accessibility Act (Directive 2019/882)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) — imported reference; verification pending.
-
-### licence
-
-<a id="ref-233e5140"></a>
-
-[licence](https://github.com/ajv-validator/ajv/blob/master/LICENSE) — imported reference; verification pending.
-
-### releases
-
-<a id="ref-e85dd8b4"></a>
-
-[releases](https://github.com/ajv-validator/ajv/releases) — imported reference; verification pending.
-
-### licence (2)
-
-<a id="ref-a4e3b77c"></a>
-
-[licence](https://github.com/brianc/node-postgres/blob/master/LICENSE) — imported reference; verification pending.
-
-### licence (3)
-
-<a id="ref-82f19076"></a>
-
-[licence](https://github.com/colinhacks/zod/blob/main/LICENSE) — imported reference; verification pending.
-
-### releases (2)
-
-<a id="ref-c2c04073"></a>
-
-[releases](https://github.com/colinhacks/zod/releases) — imported reference; verification pending.
-
-### fast-check
-
-<a id="ref-ca191d3a"></a>
-
-[fast-check](https://github.com/dubzzz/fast-check) — imported reference; verification pending.
-
-### licence (4)
-
-<a id="ref-ee707759"></a>
-
-[licence](https://github.com/dubzzz/fast-check/blob/main/packages/packaged/LICENSE) — imported reference; verification pending.
-
-### releases (3)
-
-<a id="ref-0d998955"></a>
-
-[releases](https://github.com/dubzzz/fast-check/releases) — imported reference; verification pending.
-
-### licence (5)
-
-<a id="ref-07831dfa"></a>
-
-[licence](https://github.com/kysely-org/kysely/blob/master/LICENSE) — imported reference; verification pending.
-
-### releases (4)
-
-<a id="ref-752685c6"></a>
-
-[releases](https://github.com/kysely-org/kysely/releases) — imported reference; verification pending.
-
-### VeeValidate
-
-<a id="ref-bd5a7590"></a>
-
-[VeeValidate](https://github.com/logaretm/vee-validate) — imported reference; verification pending.
-
-### releases (5)
-
-<a id="ref-bab408af"></a>
-
-[releases](https://github.com/logaretm/vee-validate/releases) — imported reference; verification pending.
-
-### Playwright
-
-<a id="ref-12180955"></a>
-
-[Playwright](https://github.com/microsoft/playwright) — imported reference; verification pending.
-
-### licence (6)
-
-<a id="ref-3a3d345b"></a>
-
-[licence](https://github.com/microsoft/playwright/blob/main/LICENSE) — imported reference; verification pending.
-
-### releases (6)
-
-<a id="ref-cea8728c"></a>
-
-[releases](https://github.com/microsoft/playwright/releases) — imported reference; verification pending.
-
-### decimal.js
-
-<a id="ref-992a7688"></a>
-
-[decimal.js](https://github.com/MikeMcl/decimal.js) — imported reference; verification pending.
-
-### releases (7)
-
-<a id="ref-0e653797"></a>
-
-[releases](https://github.com/MikeMcl/decimal.js/releases) — imported reference; verification pending.
-
-### application-test-template (3)
-
-<a id="ref-422f5f81"></a>
-
-[application-test-template](https://github.com/nuxt-layers-test/application-test-template/tree/8b7b142b84b5ec2379d4e2e727914fe344187d64) — imported reference; verification pending.
-
-### architecture-blueprint-review
-
-<a id="ref-65ca7e1f"></a>
-
-[architecture-blueprint-review](https://github.com/nuxt-layers/architecture/tree/81795d39f64842cc9cbe9a87c94920b065223a52) — imported reference; verification pending.
-
-### Architecture
-
-<a id="ref-fc464cfb"></a>
-
-[Architecture](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/architecture.md) — imported reference; verification pending.
-
-### Capability Standard
-
-<a id="ref-34db2318"></a>
-
-[Capability Standard](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/capability-standard.md) — imported reference; verification pending.
-
-### Catalogue
-
-<a id="ref-01dc54d7"></a>
-
-[Catalogue](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/catalogue.md) — imported reference; verification pending.
-
-### Identity and Access
-
-<a id="ref-2422d9a0"></a>
-
-[Identity and Access](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/identity.md) — imported reference; verification pending.
-
-### Platform Charter
-
-<a id="ref-0b57a3a1"></a>
-
-[Platform Charter](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/platform-charter.md) — imported reference; verification pending.
-
-### Privacy
-
-<a id="ref-aa4c8a40"></a>
-
-[Privacy](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/privacy.md) — imported reference; verification pending.
-
-### Security
-
-<a id="ref-52073f28"></a>
-
-[Security](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/security.md) — imported reference; verification pending.
-
-### architecture-rules
-
-<a id="ref-89262ce1"></a>
-
-[architecture-rules](https://github.com/nuxt-layers/architecture/tree/2eea557fa3acbf9412fea065d2a3cdda42a764fc) — imported reference; verification pending.
-
-### nuxt-layers/authentication
-
-<a id="ref-fdb04048"></a>
-
-[`nuxt-layers/authentication`](https://github.com/nuxt-layers/authentication) — imported reference; verification pending.
-
-### Authentication root CONTRACT.md
-
-<a id="ref-d29a15b2"></a>
-
-[Authentication root `CONTRACT.md`](https://github.com/nuxt-layers/authentication/blob/ffb92d8c033ebb8bcb5043e3fa5acadac9e1d825/CONTRACT.md) — imported reference; verification pending.
-
-### nuxt-layers/authorisation
-
-<a id="ref-007802f8"></a>
-
-[`nuxt-layers/authorisation`](https://github.com/nuxt-layers/authorisation) — imported reference; verification pending.
-
-### Authorisation root development contract
-
-<a id="ref-923ed968"></a>
-
-[Authorisation root development contract](https://github.com/nuxt-layers/authorisation/blob/eedfcc6c974f8f15df38b554c394b82164bec4bc/CONTRACT.md) — imported reference; verification pending.
-
-### configuration — CONTRACT.md
-
-<a id="ref-2a7cb25d"></a>
-
-nuxt-layers/configuration — live development lookup: `nuxt-layers/configuration`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### XState
-
-<a id="ref-2318841b"></a>
-
-[XState](https://github.com/statelyai/xstate) — imported reference; verification pending.
-
-### licence (7)
-
-<a id="ref-b4555479"></a>
-
-[licence](https://github.com/statelyai/xstate/blob/main/LICENSE) — imported reference; verification pending.
-
-### releases (8)
-
-<a id="ref-4a134806"></a>
-
-[releases](https://github.com/statelyai/xstate/releases) — imported reference; verification pending.
-
-### licence (8)
-
-<a id="ref-4d04db1e"></a>
-
-[licence](https://github.com/vitest-dev/vitest/blob/main/LICENSE) — imported reference; verification pending.
-
-### releases (9)
-
-<a id="ref-1a4e4c3b"></a>
-
-[releases](https://github.com/vitest-dev/vitest/releases) — imported reference; verification pending.
-
-### ICO UK GDPR storage-limitation guidance
-
-<a id="ref-c8eb2286"></a>
-
-[ICO UK GDPR storage-limitation guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/storage-limitation/) — imported reference; verification pending.
-
-### UK GDPR / ICO guidance
-
-<a id="ref-c472f3ba"></a>
-
-[UK GDPR / ICO guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/storage-limitation/) — imported reference; verification pending.
-
-### ICO right to erasure
-
-<a id="ref-a39263d9"></a>
-
-[ICO right to erasure](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-erasure/) — imported reference; verification pending.
-
-### OECD consumer protection in e-commerce (2016)
-
-<a id="ref-49844874"></a>
-
-[OECD consumer protection in e-commerce (2016)](https://legalinstruments.oecd.org/en/instruments/336) — imported reference; verification pending.
-
-### OpenID4VCI
-
-<a id="ref-704de6a5"></a>
-
-[OpenID4VCI](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0-final.html) — imported reference; verification pending.
-
-### OpenID4VP
-
-<a id="ref-305f6f43"></a>
-
-[OpenID4VP](https://openid.net/specs/openid-4-verifiable-presentations-1_0-final.html) — imported reference; verification pending.
-
-### OIDC Core 1.0
-
-<a id="ref-e11b90d4"></a>
-
-[OIDC Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html) — imported reference; verification pending.
-
-### OWASP ASVS 5.0
-
-<a id="ref-b9e2aae7"></a>
-
-[OWASP ASVS 5.0](https://owasp.org/www-project-application-security-verification-standard/) — imported reference; verification pending.
-
-### SP 800-63-4
-
-<a id="ref-cec2c001"></a>
-
-[SP 800-63-4](https://pages.nist.gov/800-63-4/sp800-63.html) — imported reference; verification pending.
-
-### CLR
-
-<a id="ref-02f6e2d9"></a>
-
-[CLR](https://standards.1edtech.org/clr/) — imported reference; verification pending.
-
-### UNCITRAL electronic commerce model texts
-
-<a id="ref-08c4cd5b"></a>
-
-[UNCITRAL electronic commerce model texts](https://uncitral.un.org/en/texts/ecommerce) — imported reference; verification pending.
-
-### Open Badges
-
-<a id="ref-66d66724"></a>
-
-[Open Badges](https://www.1edtech.org/standards/open-badges) — imported reference; verification pending.
-
-### EMVCo EMV 3-D Secure
-
-<a id="ref-c2950d2a"></a>
-
-[EMVCo EMV 3-D Secure](https://www.emvco.com/emv-technologies/3-d-secure/) — imported reference; verification pending.
-
-### FCA SCA requirements
-
-<a id="ref-26f2dc21"></a>
-
-[FCA SCA requirements](https://www.fca.org.uk/firms/strong-customer-authentication) — imported reference; verification pending.
-
-### CMA mandatory delivery fee guidance
-
-<a id="ref-3c694c71"></a>
-
-[CMA mandatory delivery fee guidance](https://www.gov.uk/government/publications/online-retailers-including-mandatory-delivery-fees-in-the-total-price) — imported reference; verification pending.
-
-### CMA209 price transparency guidance
-
-<a id="ref-9af3c221"></a>
-
-[CMA209 price transparency guidance](https://www.gov.uk/government/publications/price-transparency-cma209) — imported reference; verification pending.
-
-### ISO 10002:2018
-
-<a id="ref-2c14157c"></a>
-
-[ISO 10002:2018](https://www.iso.org/standard/10002) — imported reference; verification pending.
-
-### ISO 15489-1:2016
-
-<a id="ref-10531447"></a>
-
-[ISO 15489-1:2016](https://www.iso.org/standard/62542.html) — imported reference; verification pending.
-
-### ISO/IEC 25010:2023
-
-<a id="ref-0b5d630d"></a>
-
-[ISO/IEC 25010:2023](https://www.iso.org/standard/78176.html) — imported reference; verification pending.
-
-### ISO 10008:2022
-
-<a id="ref-e69ef762"></a>
-
-[ISO 10008:2022](https://www.iso.org/standard/80594.html) — imported reference; verification pending.
-
-### Online Safety Act Schedule 1 paragraph 7
-
-<a id="ref-1795b9a8"></a>
-
-[Online Safety Act Schedule 1 paragraph 7](https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/paragraph/7) — imported reference; verification pending.
-
-### Consumer Contracts Regulations 2013, regulation 14
-
-<a id="ref-99f389eb"></a>
-
-[Consumer Contracts Regulations 2013, regulation 14](https://www.legislation.gov.uk/uksi/2013/3134/regulation/14) — imported reference; verification pending.
-
-### package versions
-
-<a id="ref-386f723d"></a>
-
-[package versions](https://www.npmjs.com/package/pg?activeTab=versions) — imported reference; verification pending.
-
-### Ofcom illegal-content duties
-
-<a id="ref-2c7500e0"></a>
-
-[Ofcom illegal-content duties](https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/illegal-content-duties-under-the-online-safety-act) — imported reference; verification pending.
-
-### Ofcom age assurance
-
-<a id="ref-6a67f3f6"></a>
-
-[Ofcom age assurance](https://www.ofcom.org.uk/online-safety/protecting-children/age-assurance) — imported reference; verification pending.
-
-### SAQ A eligibility guidance
-
-<a id="ref-107edc57"></a>
-
-[SAQ A eligibility guidance](https://www.pcisecuritystandards.org/faqs/1588/) — imported reference; verification pending.
-
-### RFC 10017
-
-<a id="ref-5dce7cd2"></a>
-
-[RFC 10017](https://www.rfc-editor.org/rfc/rfc10017.html) — imported reference; verification pending.
-
-### RFC 9700
-
-<a id="ref-7f8e07b3"></a>
-
-[RFC 9700](https://www.rfc-editor.org/rfc/rfc9700.html) — imported reference; verification pending.
-
-### W3C Web Payments
-
-<a id="ref-f7183568"></a>
-
-[W3C Web Payments](https://www.w3.org/groups/wg/payments/publications/) — imported reference; verification pending.
-
-### Status List
-
-<a id="ref-9e32bc04"></a>
-
-[Status List](https://www.w3.org/TR/vc-bitstring-status-list/) — imported reference; verification pending.
-
-### VC 2.0
-
-<a id="ref-5dd6d5dc"></a>
-
-[VC 2.0](https://www.w3.org/TR/vc-data-model/) — imported reference; verification pending.
-
-### JOSE/COSE
-
-<a id="ref-a1b9773e"></a>
-
-[JOSE/COSE](https://www.w3.org/TR/vc-jose-cose/) — imported reference; verification pending.
-
-### libwebp
-
-<a id="ref-93a0df01"></a>
-
-[libwebp](https://chromium.googlesource.com/webm/libwebp) — imported reference; verification pending.
-
-### CloudEvents
-
-<a id="ref-de31eb79"></a>
-
-[CloudEvents](https://cloudevents.io/) — imported reference; verification pending.
-
-### NIST SP 800-63A-4
-
-<a id="ref-06a5f395"></a>
-
-[NIST SP 800-63A-4](https://csrc.nist.gov/pubs/sp/800/63/A/4/final) — imported reference; verification pending.
-
-### NIST SP 800-63C-4
-
-<a id="ref-98d5a047"></a>
-
-[NIST SP 800-63C-4](https://csrc.nist.gov/pubs/sp/800/63/C/4/final) — imported reference; verification pending.
-
-### NIST SP 800-82
-
-<a id="ref-f29f0b65"></a>
-
-[NIST SP 800-82](https://csrc.nist.gov/pubs/sp/800/82/r3/final) — imported reference; verification pending.
-
-### OGC IMDF
-
-<a id="ref-a915c4e3"></a>
-
-[OGC IMDF](https://docs.ogc.org/cs/20-094/) — imported reference; verification pending.
-
-### OGC IndoorGML 2.0
-
-<a id="ref-a08315c4"></a>
-
-[OGC IndoorGML 2.0](https://docs.ogc.org/is/22-045r5/22-045r5.html) — imported reference; verification pending.
-
-### Peppol BIS Billing
-
-<a id="ref-363ab64c"></a>
-
-[Peppol BIS Billing](https://docs.peppol.eu/poacc/billing/3.0/bis/) — imported reference; verification pending.
-
-### EU DSA
-
-<a id="ref-744b86ab"></a>
-
-[EU DSA](https://eur-lex.europa.eu/eli/reg/2022/2065) — imported reference; verification pending.
-
-### EU GPSR
-
-<a id="ref-7dded1f0"></a>
-
-[EU GPSR](https://eur-lex.europa.eu/eli/reg/2023/988) — imported reference; verification pending.
-
-### adaltas/node-csv
-
-<a id="ref-a7d6e5ab"></a>
-
-[adaltas/node-csv](https://github.com/adaltas/node-csv) — imported reference; verification pending.
-
-### libavif
-
-<a id="ref-7c93a53d"></a>
-
-[libavif](https://github.com/AOMediaCodec/libavif) — imported reference; verification pending.
-
-### Apache ECharts
-
-<a id="ref-1aa1e4a8"></a>
-
-[Apache ECharts](https://github.com/apache/echarts) — imported reference; verification pending.
-
-### contentauth/c2pa-rs
-
-<a id="ref-b0c3f033"></a>
-
-[contentauth/c2pa-rs](https://github.com/contentauth/c2pa-rs) — imported reference; verification pending.
-
-### cure53/DOMPurify
-
-<a id="ref-975d5876"></a>
-
-[cure53/DOMPurify](https://github.com/cure53/DOMPurify) — imported reference; verification pending.
-
-### Cytoscape.js
-
-<a id="ref-b58f56eb"></a>
-
-[Cytoscape.js](https://github.com/cytoscape/cytoscape.js) — imported reference; verification pending.
-
-### dxf-parser
-
-<a id="ref-77137ff7"></a>
-
-[dxf-parser](https://github.com/gdsestimating/dxf-parser) — imported reference; verification pending.
-
-### OR-Tools
-
-<a id="ref-7011995a"></a>
-
-[OR-Tools](https://github.com/google/or-tools) — imported reference; verification pending.
-
-### pdf-lib
-
-<a id="ref-87054181"></a>
-
-[pdf-lib](https://github.com/Hopding/pdf-lib) — imported reference; verification pending.
-
-### ImageMagick/ImageMagick
-
-<a id="ref-d82a64c2"></a>
-
-[ImageMagick/ImageMagick](https://github.com/ImageMagick/ImageMagick) — imported reference; verification pending.
-
-### KoSIT XML Validator
-
-<a id="ref-59f88986"></a>
-
-[KoSIT XML Validator](https://github.com/itplr-kosit/validator) — imported reference; verification pending.
-
-### Konva.js
-
-<a id="ref-cd3db9fd"></a>
-
-[Konva.js](https://github.com/konvajs/konva) — imported reference; verification pending.
-
-### libjpeg-turbo
-
-<a id="ref-bdc85c2a"></a>
-
-[libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo) — imported reference; verification pending.
-
-### lovell/sharp
-
-<a id="ref-d872f398"></a>
-
-[lovell/sharp](https://github.com/lovell/sharp) — imported reference; verification pending.
-
-### MapLibre GL JS
-
-<a id="ref-e72b5ce4"></a>
-
-[MapLibre GL JS](https://github.com/maplibre/maplibre-gl-js) — imported reference; verification pending.
-
-### markdown-it/markdown-it
-
-<a id="ref-13106d1e"></a>
-
-[markdown-it/markdown-it](https://github.com/markdown-it/markdown-it) — imported reference; verification pending.
-
-### bwip-js
-
-<a id="ref-873f55c9"></a>
-
-[bwip-js](https://github.com/metafloor/bwip-js) — imported reference; verification pending.
-
-### polygon-clipping
-
-<a id="ref-2a683b8b"></a>
-
-[polygon-clipping](https://github.com/mfogel/polygon-clipping) — imported reference; verification pending.
-
-### MikeKovarik/exifr
-
-<a id="ref-949f5fcb"></a>
-
-[MikeKovarik/exifr](https://github.com/MikeKovarik/exifr) — imported reference; verification pending.
-
-### RBush
-
-<a id="ref-d7bd767e"></a>
-
-[RBush](https://github.com/mourner/rbush) — imported reference; verification pending.
-
-### mozilla/pdf.js
-
-<a id="ref-48219085"></a>
-
-[mozilla/pdf.js](https://github.com/mozilla/pdf.js) — imported reference; verification pending.
-
-### Three.js
-
-<a id="ref-343bd568"></a>
-
-[Three.js](https://github.com/mrdoob/three.js) — imported reference; verification pending.
-
-### fast-xml-parser
-
-<a id="ref-20fa1cfe"></a>
-
-[fast-xml-parser](https://github.com/NaturalIntelligence/fast-xml-parser) — imported reference; verification pending.
-
-### architecture-rules (2)
-
-<a id="ref-6d4a7ae1"></a>
-
-[architecture-rules](https://github.com/nuxt-layers/architecture) — imported reference; verification pending.
-
-### iam-integration — CONTRACT.md
-
-<a id="ref-9921c1a9"></a>
-
-IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-integration`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### OpenLayers
-
-<a id="ref-a2227ac8"></a>
-
-[OpenLayers](https://github.com/openlayers/openlayers) — imported reference; verification pending.
-
-### OpenSearch
-
-<a id="ref-133dccf8"></a>
-
-[OpenSearch](https://github.com/opensearch-project/OpenSearch) — imported reference; verification pending.
-
-### OWASP ASVS
-
-<a id="ref-5303bf5b"></a>
-
-[OWASP ASVS](https://github.com/OWASP/ASVS) — imported reference; verification pending.
-
-### pdfcpu/pdfcpu
-
-<a id="ref-3f43e44c"></a>
-
-[pdfcpu/pdfcpu](https://github.com/pdfcpu/pdfcpu) — imported reference; verification pending.
-
-### qpdf/qpdf
-
-<a id="ref-097546f2"></a>
-
-[qpdf/qpdf](https://github.com/qpdf/qpdf) — imported reference; verification pending.
-
-### sindresorhus/file-type
-
-<a id="ref-e88cf18e"></a>
-
-[sindresorhus/file-type](https://github.com/sindresorhus/file-type) — imported reference; verification pending.
-
-### libheif
-
-<a id="ref-1c228439"></a>
-
-[libheif](https://github.com/strukturag/libheif) — imported reference; verification pending.
-
-### SVG.js
-
-<a id="ref-0b3f539d"></a>
-
-[SVG.js](https://github.com/svgdotjs/svg.js) — imported reference; verification pending.
-
-### TanStack Table
-
-<a id="ref-af94a8b1"></a>
-
-[TanStack Table](https://github.com/TanStack/table) — imported reference; verification pending.
-
-### Turf.js
-
-<a id="ref-825259cb"></a>
-
-[Turf.js](https://github.com/Turfjs/turf) — imported reference; verification pending.
-
-### Valhalla
-
-<a id="ref-1d240d0a"></a>
-
-[Valhalla](https://github.com/valhalla/valhalla) — imported reference; verification pending.
-
-### VirusTotal/yara-x
-
-<a id="ref-2243e7b5"></a>
-
-[VirusTotal/yara-x](https://github.com/VirusTotal/yara-x) — imported reference; verification pending.
-
-### VROOM
-
-<a id="ref-3f30cade"></a>
-
-[VROOM](https://github.com/VROOM-Project/vroom) — imported reference; verification pending.
-
-### xyflow Vue
-
-<a id="ref-f612adca"></a>
-
-[xyflow Vue](https://github.com/xyflow/xyflow) — imported reference; verification pending.
-
-### Yjs
-
-<a id="ref-22280e1e"></a>
-
-[Yjs](https://github.com/yjs/yjs) — imported reference; verification pending.
-
-### IAQG 9100 family
-
-<a id="ref-65f665ce"></a>
-
-[IAQG 9100 family](https://iaqg.org/certification/) — imported reference; verification pending.
-
-### ICO (2)
-
-<a id="ref-6086d074"></a>
-
-[ICO](https://ico.org.uk/) — imported reference; verification pending.
-
-### MTConnect
-
-<a id="ref-43c83bef"></a>
-
-[MTConnect](https://model.mtconnect.org/Version2.8/Fundamentals/) — imported reference; verification pending.
-
-### OPC UA / IEC 62541
-
-<a id="ref-ec7aad39"></a>
-
-[OPC UA / IEC 62541](https://opcfoundation.org/faq/) — imported reference; verification pending.
-
-### NIST OSCAL
-
-<a id="ref-350ad366"></a>
-
-[NIST OSCAL](https://pages.nist.gov/OSCAL/) — imported reference; verification pending.
-
-### GS1 EPCIS/CBV
-
-<a id="ref-1bbbdbc6"></a>
-
-[GS1 EPCIS/CBV](https://ref.gs1.org/standards/) — imported reference; verification pending.
-
-### Schema.org
-
-<a id="ref-eeffaa51"></a>
-
-[Schema.org](https://schema.org/Product) — imported reference; verification pending.
-
-### OpenAPI
-
-<a id="ref-da6a3c81"></a>
-
-[OpenAPI](https://spec.openapis.org/oas/v3.1) — imported reference; verification pending.
-
-### buildingSMART IFC
-
-<a id="ref-8e0ec5a1"></a>
-
-[buildingSMART IFC](https://technical.buildingsmart.org/standards/ifc/) — imported reference; verification pending.
-
-### UN/CEFACT transport models
-
-<a id="ref-4b03c321"></a>
-
-[UN/CEFACT transport models](https://unece.org/trade/uncefact/mainstandards) — imported reference; verification pending.
-
-### IEC 61508
-
-<a id="ref-d3eacdcd"></a>
-
-[IEC 61508](https://webstore.iec.ch/en/publication/5515) — imported reference; verification pending.
-
-### ISO 16739 / buildingSMART IFC
-
-<a id="ref-61020f1c"></a>
-
-[ISO 16739 / buildingSMART IFC](https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/) — imported reference; verification pending.
-
-### UK e-invoicing roadmap
-
-<a id="ref-ae63f45d"></a>
-
-[UK e-invoicing roadmap](https://www.gov.uk/government/publications/e-invoicing-implementation-roadmap/roadmap-for-e-invoicing-implementation) — imported reference; verification pending.
-
-### VAT Notice 700/63
-
-<a id="ref-4ffba2c0"></a>
-
-[VAT Notice 700/63](https://www.gov.uk/guidance/electronic-invoicing-notice-70063) — imported reference; verification pending.
-
-### UK VAT Notice 700
-
-<a id="ref-04660002"></a>
-
-[UK VAT Notice 700](https://www.gov.uk/guidance/vat-guide-notice-700) — imported reference; verification pending.
-
-### GS1
-
-<a id="ref-cfd8716d"></a>
-
-[GS1](https://www.gs1.org/standards/id-keys/gtin) — imported reference; verification pending.
-
-### UK HSE HSG136
-
-<a id="ref-48fbb6c5"></a>
-
-[UK HSE HSG136](https://www.hse.gov.uk/PuBns/books/hsg136.htm) — imported reference; verification pending.
-
-### PUWER
-
-<a id="ref-b9135934"></a>
-
-[PUWER](https://www.hse.gov.uk/work-equipment-machinery/puwer-overview.htm) — imported reference; verification pending.
-
-### ISA-88 / IEC 61512
-
-<a id="ref-9df5576d"></a>
-
-[ISA-88 / IEC 61512](https://www.isa.org/standards-and-publications/isa-standards/find-isa-standards-by-topic) — imported reference; verification pending.
-
-### ISA-95 / IEC 62264
-
-<a id="ref-0adde009"></a>
-
-[ISA-95 / IEC 62264](https://www.isa.org/standards-and-publications/isa-standards/isa-95-standard) — imported reference; verification pending.
-
-### ISA/IEC 62443
-
-<a id="ref-27e1aba9"></a>
-
-[ISA/IEC 62443](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards) — imported reference; verification pending.
-
-### ISO 31000
-
-<a id="ref-262af923"></a>
-
-[ISO 31000](https://www.iso.org/) — imported reference; verification pending.
-
-### ISO 31000:2018
-
-<a id="ref-731cfbd0"></a>
-
-[ISO 31000:2018](https://www.iso.org/iso-31000-risk-management.html) — imported reference; verification pending.
-
-### ISO 19011:2026
-
-<a id="ref-d863f5c5"></a>
-
-[ISO 19011:2026](https://www.iso.org/standard/19011) — imported reference; verification pending.
-
-### ISO 37302:2025
-
-<a id="ref-48476530"></a>
-
-[ISO 37302:2025](https://www.iso.org/standard/37302) — imported reference; verification pending.
-
-### ISO/IEC 42001:2023
-
-<a id="ref-573b7368"></a>
-
-[ISO/IEC 42001:2023](https://www.iso.org/standard/42001) — imported reference; verification pending.
-
-### ISO 12100
-
-<a id="ref-80776f19"></a>
-
-[ISO 12100](https://www.iso.org/standard/51528.html) — imported reference; verification pending.
-
-### ISO 22400
-
-<a id="ref-a2579280"></a>
-
-[ISO 22400](https://www.iso.org/standard/56847.html) — imported reference; verification pending.
-
-### ISO/IEC 17025
-
-<a id="ref-02cfc7b8"></a>
-
-[ISO/IEC 17025](https://www.iso.org/standard/66912.html) — imported reference; verification pending.
-
-### ISO 10007
-
-<a id="ref-cb28cb4b"></a>
-
-[ISO 10007](https://www.iso.org/standard/70400.html) — imported reference; verification pending.
-
-### ISO 13849
-
-<a id="ref-5d4a77a3"></a>
-
-[ISO 13849](https://www.iso.org/standard/73481.html) — imported reference; verification pending.
-
-### ISO 23247
-
-<a id="ref-9ad284d4"></a>
-
-[ISO 23247](https://www.iso.org/standard/75066.html) — imported reference; verification pending.
-
-### ISO 37301:2021
-
-<a id="ref-3537977c"></a>
-
-[ISO 37301:2021](https://www.iso.org/standard/75080.html) — imported reference; verification pending.
-
-### ISO 28000
-
-<a id="ref-c7f3ad87"></a>
-
-[ISO 28000](https://www.iso.org/standard/79612.html) — imported reference; verification pending.
-
-### ISO 10303 STEP
-
-<a id="ref-56e608e1"></a>
-
-[ISO 10303 STEP](https://www.iso.org/standard/83105.html) — imported reference; verification pending.
-
-### GS1 EPCIS 2.0 / ISO/IEC 19987
-
-<a id="ref-f0921dba"></a>
-
-[GS1 EPCIS 2.0 / ISO/IEC 19987](https://www.iso.org/standard/85557.html) — imported reference; verification pending.
-
-### ISO 9001
-
-<a id="ref-0f984f81"></a>
-
-[ISO 9001](https://www.iso.org/standard/9001) — imported reference; verification pending.
-
-### UK legislation.gov.uk
-
-<a id="ref-472de5bf"></a>
-
-[UK legislation.gov.uk](https://www.legislation.gov.uk/) — imported reference; verification pending.
-
-### Akoma Ntoso
-
-<a id="ref-330d3d9a"></a>
-
-[Akoma Ntoso](https://www.oasis-open.org/committees/legaldocml/) — imported reference; verification pending.
-
-### Ofcom
-
-<a id="ref-9f221536"></a>
-
-[Ofcom](https://www.ofcom.org.uk/) — imported reference; verification pending.
-
-### OMG DMN 1.6
-
-<a id="ref-e234bdf1"></a>
-
-[OMG DMN 1.6](https://www.omg.org/spec/DMN/1.6/) — imported reference; verification pending.
-
-### PRI Nadcap
-
-<a id="ref-cdf75efb"></a>
-
-[PRI Nadcap](https://www.p-r-i.org/nadcap/accreditation) — imported reference; verification pending.
-
-### RFC 9457 (3)
-
-<a id="ref-7754416d"></a>
-
-[RFC 9457](https://www.rfc-editor.org/rfc/rfc9457) — imported reference; verification pending.
-
-### ODRL
-
-<a id="ref-4d3f2257"></a>
-
-[ODRL](https://www.w3.org/TR/odrl-model/) — imported reference; verification pending.
-
-### SVG 2
-
-<a id="ref-2d692224"></a>
-
-[SVG 2](https://www.w3.org/TR/SVG2/) — imported reference; verification pending.
-
-### WAI-ARIA
-
-<a id="ref-67eee3fb"></a>
-
-[WAI-ARIA](https://www.w3.org/TR/wai-aria-1.2/) — imported reference; verification pending.
-
-### WCAG 2.2
-
-<a id="ref-eb11cf7e"></a>
-
-[WCAG 2.2](https://www.w3.org/TR/wcag/) — imported reference; verification pending.
-
-### ECMA-402
-
-<a id="ref-2632494a"></a>
-
-[ECMA-402](https://402.ecma-international.org/) — imported reference; verification pending.
-
-### Unicode CLDR
-
-<a id="ref-ba99ff23"></a>
-
-[Unicode CLDR](https://cldr.unicode.org/) — imported reference; verification pending.
-
-### ProseMirror
-
-<a id="ref-e64171fe"></a>
-
-[ProseMirror](https://code.haverbeke.berlin/prosemirror/prosemirror) — imported reference; verification pending.
-
-### ISO 23081
-
-<a id="ref-36977534"></a>
-
-[ISO 23081](https://committee.iso.org/sites/tc46sc11/home/projects/published/iso-23081-metadata-for-records.html) — imported reference; verification pending.
-
-### BCP 47
-
-<a id="ref-699eef87"></a>
-
-[BCP 47](https://datatracker.ietf.org/doc/rfc5646/) — imported reference; verification pending.
-
-### OASIS UBL 2.4
-
-<a id="ref-4462b3df"></a>
-
-[OASIS UBL 2.4](https://docs.oasis-open.org/ubl/UBL-2.4.html) — imported reference; verification pending.
-
-### OpenPeppol BIS Ordering
-
-<a id="ref-ad195287"></a>
-
-[OpenPeppol BIS Ordering](https://docs.peppol.eu/poacc/upgrade-3/profiles/28-ordering/) — imported reference; verification pending.
-
-### EU GDPR
-
-<a id="ref-240df94d"></a>
-
-[EU GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/) — imported reference; verification pending.
-
-### EU Digital Services Act
-
-<a id="ref-cdee1332"></a>
-
-[EU Digital Services Act](https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng) — imported reference; verification pending.
-
-### Ecodesign for Sustainable Products Regulation (EU) 2024/1781
-
-<a id="ref-0bdb0938"></a>
-
-[Ecodesign for Sustainable Products Regulation (EU) 2024/1781](https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng) — imported reference; verification pending.
-
-### EU Price Indication Directive 98/6/EC Article 6a
-
-<a id="ref-56467f9a"></a>
-
-[EU Price Indication Directive 98/6/EC Article 6a](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A31998L0006) — imported reference; verification pending.
-
-### 1EdTech OpenCASE
-
-<a id="ref-9c4e92f0"></a>
-
-[1EdTech OpenCASE](https://github.com/1EdTech/OpenCASE) — imported reference; verification pending.
-
-### tarteaucitron.js
-
-<a id="ref-1dca5d3a"></a>
-
-[tarteaucitron.js](https://github.com/AmauriC/tarteaucitron.js) — imported reference; verification pending.
-
-### Casbin
-
-<a id="ref-0bce4034"></a>
-
-[Casbin](https://github.com/apache/casbin-node-casbin) — imported reference; verification pending.
-
-### Apache Jena
-
-<a id="ref-7ab49d9e"></a>
-
-[Apache Jena](https://github.com/apache/jena) — imported reference; verification pending.
-
-### Apache Lucene
-
-<a id="ref-6f0b2c64"></a>
-
-[Apache Lucene](https://github.com/apache/lucene) — imported reference; verification pending.
-
-### Vue Flow
-
-<a id="ref-1c63f8c8"></a>
-
-[Vue Flow](https://github.com/bcakmakoglu/vue-flow) — imported reference; verification pending.
-
-### bpmn-js
-
-<a id="ref-a01cd8e1"></a>
-
-[bpmn-js](https://github.com/bpmn-io/bpmn-js) — imported reference; verification pending.
-
-### bpmn-moddle
-
-<a id="ref-9e223261"></a>
-
-[bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) — imported reference; verification pending.
-
-### diagram-js
-
-<a id="ref-8ca9c849"></a>
-
-[diagram-js](https://github.com/bpmn-io/diagram-js) — imported reference; verification pending.
-
-### dmn-moddle
-
-<a id="ref-0652c71f"></a>
-
-[dmn-moddle](https://github.com/bpmn-io/dmn-moddle) — imported reference; verification pending.
-
-### moddle-xml
-
-<a id="ref-0e4b8fa5"></a>
-
-[moddle-xml](https://github.com/bpmn-io/moddle-xml) — imported reference; verification pending.
-
-### json-rules-engine
-
-<a id="ref-801e24d6"></a>
-
-[json-rules-engine](https://github.com/CacheControl/json-rules-engine) — imported reference; verification pending.
-
-### CloudEvents (2)
-
-<a id="ref-4a330c79"></a>
-
-[CloudEvents](https://github.com/cloudevents/spec) — imported reference; verification pending.
-
-### Comunica
-
-<a id="ref-6c3e4b82"></a>
-
-[Comunica](https://github.com/comunica/comunica) — imported reference; verification pending.
-
-### convert-units
-
-<a id="ref-443004fe"></a>
-
-[convert-units](https://github.com/convert-units/convert-units) — imported reference; verification pending.
-
-### Dagre
-
-<a id="ref-41707161"></a>
-
-[Dagre](https://github.com/dagrejs/dagre) — imported reference; verification pending.
-
-### @dagrejs/graphlib
-
-<a id="ref-6629c3fb"></a>
-
-[@dagrejs/graphlib](https://github.com/dagrejs/graphlib) — imported reference; verification pending.
-
-### axe-core
-
-<a id="ref-802ea31e"></a>
-
-[axe-core](https://github.com/dequelabs/axe-core) — imported reference; verification pending.
-
-### jsonld.js
-
-<a id="ref-81b207aa"></a>
-
-[jsonld.js](https://github.com/digitalbazaar/jsonld.js) — imported reference; verification pending.
-
-### Digital Bazaar vc-js
-
-<a id="ref-31b4fab4"></a>
-
-[Digital Bazaar vc-js](https://github.com/digitalbazaar/vc) — imported reference; verification pending.
-
-### Dinero.js v2
-
-<a id="ref-2390acb0"></a>
-
-[Dinero.js v2](https://github.com/dinerojs/dinero.js) — imported reference; verification pending.
-
-### Eclipse RDF4J
-
-<a id="ref-da697d6a"></a>
-
-[Eclipse RDF4J](https://github.com/eclipse-rdf4j/rdf4j) — imported reference; verification pending.
-
-### Lexical
-
-<a id="ref-9d228cd0"></a>
-
-[Lexical](https://github.com/facebook/lexical) — imported reference; verification pending.
-
-### Flowable community engine
-
-<a id="ref-cdb01dc1"></a>
-
-[Flowable community engine](https://github.com/flowable/flowable-engine) — imported reference; verification pending.
-
-### Frappe Gantt
-
-<a id="ref-35a3dd1c"></a>
-
-[Frappe Gantt](https://github.com/frappe/gantt) — imported reference; verification pending.
-
-### i18next
-
-<a id="ref-b4adce2a"></a>
-
-[i18next](https://github.com/i18next/i18next) — imported reference; verification pending.
-
-### Whelk
-
-<a id="ref-a943427f"></a>
-
-[Whelk](https://github.com/INCATools/whelk) — imported reference; verification pending.
-
-### libsodium.js
-
-<a id="ref-704cdd6c"></a>
-
-[libsodium.js](https://github.com/jedisct1/libsodium.js) — imported reference; verification pending.
-
-### feed
-
-<a id="ref-d69fea58"></a>
-
-[feed](https://github.com/jpmonette/feed) — imported reference; verification pending.
-
-### @js-temporal/polyfill
-
-<a id="ref-6bd89188"></a>
-
-[@js-temporal/polyfill](https://github.com/js-temporal/temporal-polyfill) — imported reference; verification pending.
-
-### JSONata
-
-<a id="ref-50222d38"></a>
-
-[JSONata](https://github.com/jsonata-js/jsonata) — imported reference; verification pending.
-
-### json-logic-js
-
-<a id="ref-03dffb0e"></a>
-
-[json-logic-js](https://github.com/jwadhams/json-logic-js) — imported reference; verification pending.
-
-### Klaro
-
-<a id="ref-69ebde60"></a>
-
-[Klaro](https://github.com/kiprotect/klaro) — imported reference; verification pending.
-
-### ELK
-
-<a id="ref-0a6b05e3"></a>
-
-[ELK](https://github.com/liveontologies/elk-reasoner) — imported reference; verification pending.
-
-### SimpleWebAuthn
-
-<a id="ref-b7bc28fb"></a>
-
-[SimpleWebAuthn](https://github.com/MasterKale/SimpleWebAuthn) — imported reference; verification pending.
-
-### Mermaid
-
-<a id="ref-42e5762a"></a>
-
-[Mermaid](https://github.com/mermaid-js/mermaid) — imported reference; verification pending.
-
-### big.js
-
-<a id="ref-fcbb731f"></a>
-
-[big.js](https://github.com/MikeMcl/big.js) — imported reference; verification pending.
-
-### app/app.vue
-
-<a id="ref-a4ce9d0c"></a>
-
-[`app/app.vue`](https://github.com/nuxt-layers-test/application-test-template/blob/master/app/app.vue) — imported reference; verification pending.
-
-### app/pages/admin.vue
-
-<a id="ref-96cb2d87"></a>
-
-[`app/pages/admin.vue`](https://github.com/nuxt-layers-test/application-test-template/blob/master/app/pages/admin.vue) — imported reference; verification pending.
-
-### blueprint 361566988ac5
-
-<a id="ref-ba586c9b"></a>
-
-[blueprint `361566988ac5`](https://github.com/nuxt-layers/architecture/commit/361566988ac53c55f6135e8acfa46cd5b013d7a0) — imported reference; verification pending.
-
-### governing architecture-rules d7f7c2ee0512
-
-<a id="ref-29a27a7a"></a>
-
-[governing architecture-rules `d7f7c2ee0512`](https://github.com/nuxt-layers/architecture/commit/d7f7c2ee051244b8c81325f5ff1267568d99aab1) — imported reference; verification pending.
-
-### profile — CONTRACT.md
-
-<a id="ref-d369f0ce"></a>
-
-`nuxt-layers/profile/CONTRACT.md` — live development lookup: `nuxt-layers/profile`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### publisher — CONTRACT.md
-
-<a id="ref-332e0d6b"></a>
-
-Publisher published root `CONTRACT.md` — live development lookup: `nuxt-layers/publisher`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### theme-manager — CONTRACT.md #screens
-
-<a id="ref-90073eba"></a>
-
-Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRACT.md` (#screens). Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### ROBOT
-
-<a id="ref-a91eaa59"></a>
-
-[ROBOT](https://github.com/ontodev/robot) — imported reference; verification pending.
-
-### xmlbuilder2
-
-<a id="ref-65876386"></a>
-
-[xmlbuilder2](https://github.com/oozcitak/xmlbuilder2) — imported reference; verification pending.
-
-### Credo
-
-<a id="ref-7ce15ee8"></a>
-
-[Credo](https://github.com/openwallet-foundation/credo-ts) — imported reference; verification pending.
-
-### orestbida/cookieconsent
-
-<a id="ref-008bcb87"></a>
-
-[orestbida/cookieconsent](https://github.com/orestbida/cookieconsent) — imported reference; verification pending.
-
-### ONT-API
-
-<a id="ref-9bb6c5a8"></a>
-
-[ONT-API](https://github.com/owlcs/ont-api) — imported reference; verification pending.
-
-### OWLAPI
-
-<a id="ref-5eeb6944"></a>
-
-[OWLAPI](https://github.com/owlcs/owlapi) — imported reference; verification pending.
-
-### Oxigraph
-
-<a id="ref-6a0f1548"></a>
-
-[Oxigraph](https://github.com/oxigraph/oxigraph) — imported reference; verification pending.
-
-### jose
-
-<a id="ref-1841a1db"></a>
-
-[jose](https://github.com/panva/jose) — imported reference; verification pending.
-
-### openid-client
-
-<a id="ref-67858133"></a>
-
-[openid-client](https://github.com/panva/openid-client) — imported reference; verification pending.
-
-### Protégé
-
-<a id="ref-2649f4d9"></a>
-
-[Protégé](https://github.com/protegeproject/protege) — imported reference; verification pending.
-
-### shacl-engine
-
-<a id="ref-7316cf52"></a>
-
-[shacl-engine](https://github.com/rdf-ext/shacl-engine) — imported reference; verification pending.
-
-### N3.js
-
-<a id="ref-8c4508c1"></a>
-
-[N3.js](https://github.com/rdfjs/N3.js) — imported reference; verification pending.
-
-### pySHACL
-
-<a id="ref-4293e39b"></a>
-
-[pySHACL](https://github.com/RDFLib/pySHACL) — imported reference; verification pending.
-
-### RDFLib
-
-<a id="ref-94601d7a"></a>
-
-[RDFLib](https://github.com/RDFLib/rdflib) — imported reference; verification pending.
-
-### rehype-sanitize
-
-<a id="ref-b4b1b93d"></a>
-
-[rehype-sanitize](https://github.com/rehypejs/rehype-sanitize) — imported reference; verification pending.
-
-### remark
-
-<a id="ref-19502e95"></a>
-
-[remark](https://github.com/remarkjs/remark) — imported reference; verification pending.
-
-### Rete.js
-
-<a id="ref-945fde25"></a>
-
-[Rete.js](https://github.com/retejs/rete) — imported reference; verification pending.
-
-### p-queue
-
-<a id="ref-3d468f2d"></a>
-
-[p-queue](https://github.com/sindresorhus/p-queue) — imported reference; verification pending.
-
-### CASL
-
-<a id="ref-6c39db3b"></a>
-
-[CASL](https://github.com/stalniy/casl) — imported reference; verification pending.
-
-### TanStack Query
-
-<a id="ref-51cb5e45"></a>
-
-[TanStack Query](https://github.com/TanStack/query) — imported reference; verification pending.
-
-### pg-boss
-
-<a id="ref-fc345c0f"></a>
-
-[pg-boss](https://github.com/timgit/pg-boss) — imported reference; verification pending.
-
-### unified
-
-<a id="ref-72271435"></a>
-
-[unified](https://github.com/unifiedjs/unified) — imported reference; verification pending.
-
-### VueUse
-
-<a id="ref-9507482e"></a>
-
-[VueUse](https://github.com/vueuse/vueuse) — imported reference; verification pending.
-
-### WHATWG HTML
-
-<a id="ref-36db7adb"></a>
-
-[WHATWG HTML](https://html.spec.whatwg.org/) — imported reference; verification pending.
-
-### Data (Use and Access) Act 2025
-
-<a id="ref-490b08ec"></a>
-
-[Data (Use and Access) Act 2025](https://ico.org.uk/about-the-ico/what-we-do/legislation-we-cover/data-use-and-access-act-2025/) — imported reference; verification pending.
-
-### PECR and ICO storage/access guidance
-
-<a id="ref-9cfff74f"></a>
-
-[PECR and ICO storage/access guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/) — imported reference; verification pending.
-
-### UK GDPR and ICO guidance
-
-<a id="ref-f4808d92"></a>
-
-[UK GDPR and ICO guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/) — imported reference; verification pending.
-
-### ICO Children's Code
-
-<a id="ref-84e500ba"></a>
-
-[ICO Children's Code](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/) — imported reference; verification pending.
-
-### UK ICO UK GDPR guidance
-
-<a id="ref-200f0715"></a>
-
-[UK ICO UK GDPR guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/) — imported reference; verification pending.
-
-### JSON Schema
-
-<a id="ref-d64cb24d"></a>
-
-[JSON Schema](https://json-schema.org/) — imported reference; verification pending.
-
-### Santa Clara Principles
-
-<a id="ref-fd0ea290"></a>
-
-[Santa Clara Principles](https://santaclaraprinciples.org/) — imported reference; verification pending.
-
-### schema.org (2)
-
-<a id="ref-30a88a32"></a>
-
-[schema.org](https://schema.org/) — imported reference; verification pending.
-
-### Schema.org Offer/PriceSpecification
-
-<a id="ref-4faf18ac"></a>
-
-[Schema.org Offer/PriceSpecification](https://schema.org/PriceSpecification) — imported reference; verification pending.
-
-### Schema.org Product/ProductGroup
-
-<a id="ref-80058408"></a>
-
-[Schema.org Product/ProductGroup](https://schema.org/ProductGroup) — imported reference; verification pending.
-
-### CEN EN 16931
-
-<a id="ref-58965163"></a>
-
-[CEN EN 16931](https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/einvoicing_en) — imported reference; verification pending.
-
-### OpenAPI (2)
-
-<a id="ref-e4aeda6d"></a>
-
-[OpenAPI](https://spec.openapis.org/) — imported reference; verification pending.
-
-### OpenAPI (3)
-
-<a id="ref-496ea603"></a>
-
-[OpenAPI](https://spec.openapis.org/oas/latest.html) — imported reference; verification pending.
-
-### UN/CEFACT Recommendation 20
-
-<a id="ref-6322e766"></a>
-
-[UN/CEFACT Recommendation 20](https://unece.org/code-list-recommendations) — imported reference; verification pending.
-
-### UN/CEFACT Recommendation 20 (2)
-
-<a id="ref-66b68de6"></a>
-
-[UN/CEFACT Recommendation 20](https://unece.org/trade/uncefact/cl-recommendations) — imported reference; verification pending.
-
-### Unicode CLDR (2)
-
-<a id="ref-0ea5a429"></a>
-
-[Unicode CLDR](https://unicode.org/reports/tr35/) — imported reference; verification pending.
-
-### ISO/IEC 19510:2013
-
-<a id="ref-f8fda418"></a>
-
-[ISO/IEC 19510:2013](https://webstore.iec.ch/en/publication/10695) — imported reference; verification pending.
-
-### APM Body of Knowledge 8
-
-<a id="ref-de28455b"></a>
-
-[APM Body of Knowledge 8](https://www.apm.org.uk/apm-body-of-knowledge/) — imported reference; verification pending.
-
-### BSI
-
-<a id="ref-0ecd8c5c"></a>
-
-[BSI](https://www.bsigroup.com/) — imported reference; verification pending.
-
-### Dublin Core
-
-<a id="ref-9657f4eb"></a>
-
-[Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) — imported reference; verification pending.
-
-### Equality Act 2010 / EHRC associations code (2026)
-
-<a id="ref-0a6f3ef2"></a>
-
-[Equality Act 2010 / EHRC associations code (2026)](https://www.equalityhumanrights.com/guidance/codes-practice/code-practice-services-public-functions-and-associations/chapter-twelve) — imported reference; verification pending.
-
-### Data Standards Authority
-
-<a id="ref-44ad251a"></a>
-
-[Data Standards Authority](https://www.gov.uk/government/collections/metadata-standards-for-sharing-and-publishing-data) — imported reference; verification pending.
-
-### UK OPSS
-
-<a id="ref-05827b16"></a>
-
-[UK OPSS](https://www.gov.uk/government/organisations/office-for-product-safety-and-standards) — imported reference; verification pending.
-
-### GovS 002
-
-<a id="ref-fde4cde0"></a>
-
-[GovS 002](https://www.gov.uk/government/publications/project-delivery-functional-standard) — imported reference; verification pending.
-
-### Data Quality Framework
-
-<a id="ref-386eb998"></a>
-
-[Data Quality Framework](https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance) — imported reference; verification pending.
-
-### ISO 3166
-
-<a id="ref-92c03402"></a>
-
-[ISO 3166](https://www.iso.org/iso-3166-country-codes.html) — imported reference; verification pending.
-
-### ISO 4217
-
-<a id="ref-e1f7a7d3"></a>
-
-[ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) — imported reference; verification pending.
-
-### ISO 8601
-
-<a id="ref-8bda6c42"></a>
-
-[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) — imported reference; verification pending.
-
-### ISO/IEC 17024:2026
-
-<a id="ref-8462151b"></a>
-
-[ISO/IEC 17024:2026](https://www.iso.org/standard/17024) — imported reference; verification pending.
-
-### ISO 31000:2018 (2)
-
-<a id="ref-a5666aad"></a>
-
-[ISO 31000:2018](https://www.iso.org/standard/31000) — imported reference; verification pending.
-
-### 1087 — www.iso.org/standard/62330.html
-
-<a id="ref-d3820482"></a>
-
-[1087](https://www.iso.org/standard/62330.html) — imported reference; verification pending.
-
-### ISO 10003:2018
-
-<a id="ref-f48d39fc"></a>
-
-[ISO 10003:2018](https://www.iso.org/standard/71581.html) — imported reference; verification pending.
-
-### ISO 21502:2020
-
-<a id="ref-3ab1f251"></a>
-
-[ISO 21502:2020](https://www.iso.org/standard/74947.html) — imported reference; verification pending.
-
-### 704 — www.iso.org/standard/79077.html
-
-<a id="ref-e23b09be"></a>
-
-[704](https://www.iso.org/standard/79077.html) — imported reference; verification pending.
-
-### ISO/IEC TS 27560:2023
-
-<a id="ref-7e7ff696"></a>
-
-[ISO/IEC TS 27560:2023](https://www.iso.org/standard/80392.html) — imported reference; verification pending.
-
-### ISO/IEC/IEEE 15288:2023
-
-<a id="ref-b6981e72"></a>
-
-[ISO/IEC/IEEE 15288:2023](https://www.iso.org/standard/81702.html) — imported reference; verification pending.
-
-### ISO 31700-1:2023
-
-<a id="ref-d1c9e7cb"></a>
-
-[ISO 31700-1:2023](https://www.iso.org/standard/84977.html) — imported reference; verification pending.
-
-### ISO/IEC 29100:2024
-
-<a id="ref-f7fc907f"></a>
-
-[ISO/IEC 29100:2024](https://www.iso.org/standard/85938.html) — imported reference; verification pending.
-
-### ISO/IEC 29134:2023
-
-<a id="ref-2e509cbb"></a>
-
-[ISO/IEC 29134:2023](https://www.iso.org/standard/86012.html) — imported reference; verification pending.
-
-### Consumer Rights Act 2015
-
-<a id="ref-2e48fac8"></a>
-
-[Consumer Rights Act 2015](https://www.legislation.gov.uk/ukpga/2015/15/contents) — imported reference; verification pending.
-
-### UK GDPR / Data Protection Act 2018
-
-<a id="ref-de03a85c"></a>
-
-[UK GDPR / Data Protection Act 2018](https://www.legislation.gov.uk/ukpga/2018/12/contents) — imported reference; verification pending.
-
-### Online Safety Act 2023
-
-<a id="ref-3c5edd48"></a>
-
-[Online Safety Act 2023](https://www.legislation.gov.uk/ukpga/2023/50/contents) — imported reference; verification pending.
-
-### UK Digital Markets, Competition and Consumers Act 2024
-
-<a id="ref-49097836"></a>
-
-[UK Digital Markets, Competition and Consumers Act 2024](https://www.legislation.gov.uk/ukpga/2024/13/contents) — imported reference; verification pending.
-
-### Digital Markets, Competition and Consumers Act 2024
-
-<a id="ref-9160e94a"></a>
-
-[Digital Markets, Competition and Consumers Act 2024](https://www.legislation.gov.uk/ukpga/2024/13/part/4) — imported reference; verification pending.
-
-### Data (Use and Access) Act 2025 (2)
-
-<a id="ref-9bd32f02"></a>
-
-[Data (Use and Access) Act 2025](https://www.legislation.gov.uk/ukpga/2025/18/contents) — imported reference; verification pending.
-
-### Price Marking Order 2004
-
-<a id="ref-2e09325b"></a>
-
-[Price Marking Order 2004](https://www.legislation.gov.uk/uksi/2004/102/contents) — imported reference; verification pending.
-
-### public-sector accessibility regulations
-
-<a id="ref-20c7b15f"></a>
-
-[public-sector accessibility regulations](https://www.legislation.gov.uk/uksi/2018/952/contents) — imported reference; verification pending.
-
-### UK NCSC guidance
-
-<a id="ref-28c93158"></a>
-
-[UK NCSC guidance](https://www.ncsc.gov.uk/collection/software-security-code-of-practice-implementation-guidance) — imported reference; verification pending.
-
-### UK NCSC IAM guidance
-
-<a id="ref-e3eec99e"></a>
-
-[UK NCSC IAM guidance](https://www.ncsc.gov.uk/guidance/introduction-identity-and-access-management) — imported reference; verification pending.
-
-### Z39.19
-
-<a id="ref-0ab87b96"></a>
-
-[Z39.19](https://www.niso.org/publications/ansiniso-z3919-2005-r2010) — imported reference; verification pending.
-
-### 25964 — www.niso.org/schemas/iso25964
-
-<a id="ref-926d8bf3"></a>
-
-[25964](https://www.niso.org/schemas/iso25964) — imported reference; verification pending.
-
-### NIST AI RMF 1.0
-
-<a id="ref-14aaf1d9"></a>
-
-[NIST AI RMF 1.0](https://www.nist.gov/itl/ai-risk-management-framework) — imported reference; verification pending.
-
-### NIST Privacy Framework
-
-<a id="ref-5af1de6f"></a>
-
-[NIST Privacy Framework](https://www.nist.gov/privacy-framework) — imported reference; verification pending.
-
-### Ofcom (2)
-
-<a id="ref-5c4b49fe"></a>
-
-[Ofcom](https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/online-safety-regulatory-documents) — imported reference; verification pending.
-
-### GeoSPARQL
-
-<a id="ref-a6c83f6b"></a>
-
-[GeoSPARQL](https://www.ogc.org/standards/geosparql/) — imported reference; verification pending.
-
-### OMG BPMN 2.0.2
-
-<a id="ref-c5383867"></a>
-
-[OMG BPMN 2.0.2](https://www.omg.org/spec/BPMN/2.0.2) — imported reference; verification pending.
-
-### CMMN 1.1
-
-<a id="ref-ec91d39f"></a>
-
-[CMMN 1.1](https://www.omg.org/spec/CMMN/1.1) — imported reference; verification pending.
-
-### OMG DMN 1.5
-
-<a id="ref-023bac16"></a>
-
-[OMG DMN 1.5](https://www.omg.org/spec/DMN/1.5/) — imported reference; verification pending.
-
-### PCI DSS
-
-<a id="ref-3cb45b85"></a>
-
-[PCI DSS](https://www.pcisecuritystandards.org/standards/pci-dss/) — imported reference; verification pending.
-
-### PMI PMBOK 8
-
-<a id="ref-1336ea6a"></a>
-
-[PMI PMBOK 8](https://www.pmi.org/standards/pmbok) — imported reference; verification pending.
-
-### BCP 47 (2)
-
-<a id="ref-cd91c32e"></a>
-
-[BCP 47](https://www.rfc-editor.org/info/bcp47) — imported reference; verification pending.
-
-### IETF RFC 6265
-
-<a id="ref-56be08c7"></a>
-
-[IETF RFC 6265](https://www.rfc-editor.org/info/rfc6265/) — imported reference; verification pending.
-
-### RFC 3986
-
-<a id="ref-74dd789a"></a>
-
-[RFC 3986](https://www.rfc-editor.org/rfc/rfc3986) — imported reference; verification pending.
-
-### RFC 4287 Atom
-
-<a id="ref-30a598c3"></a>
-
-[RFC 4287 Atom](https://www.rfc-editor.org/rfc/rfc4287) — imported reference; verification pending.
-
-### BCP 47 (3)
-
-<a id="ref-783347a1"></a>
-
-[BCP 47](https://www.rfc-editor.org/rfc/rfc5646) — imported reference; verification pending.
-
-### RFC 9110
-
-<a id="ref-5a7fc9e7"></a>
-
-[RFC 9110](https://www.rfc-editor.org/rfc/rfc9110) — imported reference; verification pending.
-
-### RFC 9309 robots
-
-<a id="ref-6f11a863"></a>
-
-[RFC 9309 robots](https://www.rfc-editor.org/rfc/rfc9309) — imported reference; verification pending.
-
-### RFC 9562
-
-<a id="ref-fdce2c42"></a>
-
-[RFC 9562](https://www.rfc-editor.org/rfc/rfc9562) — imported reference; verification pending.
-
-### IETF RFC 9700
-
-<a id="ref-b15d3374"></a>
-
-[IETF RFC 9700](https://www.rfc-editor.org/rfc/rfc9700) — imported reference; verification pending.
-
-### RSS 2.0
-
-<a id="ref-8ed599f6"></a>
-
-[RSS 2.0](https://www.rssboard.org/rss-specification) — imported reference; verification pending.
-
-### W3C DPV Community Group
-
-<a id="ref-38ce7b0b"></a>
-
-[W3C DPV Community Group](https://www.w3.org/community/dpvcg/) — imported reference; verification pending.
-
-### ActivityPub
-
-<a id="ref-b5b42c56"></a>
-
-[ActivityPub](https://www.w3.org/TR/activitypub/) — imported reference; verification pending.
-
-### ActivityStreams 2.0
-
-<a id="ref-c75695ba"></a>
-
-[ActivityStreams 2.0](https://www.w3.org/TR/activitystreams-core/) — imported reference; verification pending.
-
-### ATAG 2.0
-
-<a id="ref-9dbe26fd"></a>
-
-[ATAG 2.0](https://www.w3.org/TR/ATAG20/) — imported reference; verification pending.
-
-### Data on the Web Best Practices
-
-<a id="ref-b37ccf4d"></a>
-
-[Data on the Web Best Practices](https://www.w3.org/TR/dwbp/) — imported reference; verification pending.
-
-### W3C JSON-LD 1.1
-
-<a id="ref-6d20146d"></a>
-
-[W3C JSON-LD 1.1](https://www.w3.org/TR/json-ld/) — imported reference; verification pending.
-
-### W3C JSON-LD 1.1 (2)
-
-<a id="ref-a03bb42b"></a>
-
-[W3C JSON-LD 1.1](https://www.w3.org/TR/json-ld11/) — imported reference; verification pending.
-
-### OWL 2
-
-<a id="ref-7854321a"></a>
-
-[OWL 2](https://www.w3.org/TR/owl-overview/) — imported reference; verification pending.
-
-### OWL 2 Profiles
-
-<a id="ref-c8ffae91"></a>
-
-[OWL 2 Profiles](https://www.w3.org/TR/owl2-profiles/) — imported reference; verification pending.
-
-### RDF/RDFS
-
-<a id="ref-1d5b21c8"></a>
-
-[RDF/RDFS](https://www.w3.org/TR/rdf11-concepts/) — imported reference; verification pending.
-
-### SPARQL 1.1
-
-<a id="ref-5f7e8b5e"></a>
-
-[SPARQL 1.1](https://www.w3.org/TR/sparql11-query/) — imported reference; verification pending.
-
-### Verifiable Credentials 2.0
-
-<a id="ref-51933823"></a>
-
-[Verifiable Credentials 2.0](https://www.w3.org/TR/vc-data-model-2.0/) — imported reference; verification pending.
-
-### DCAT 3
-
-<a id="ref-00ce33b2"></a>
-
-[DCAT 3](https://www.w3.org/TR/vocab-dcat-3/) — imported reference; verification pending.
-
-### W3C WCAG 2.2 AA
-
-<a id="ref-bc717cde"></a>
-
-[W3C WCAG 2.2 AA](https://www.w3.org/TR/wcag22/) — imported reference; verification pending.
-
-### ISO 15489-1:2016 (2)
-
-<a id="ref-cbe31bfd"></a>
-
-[ISO 15489-1:2016](https://committee.iso.org/sites/tc46sc11/home/projects/published/iso-15489-records-management.html) — imported reference; verification pending.
-
-### ISO 16175-1:2020
-
-<a id="ref-0260c838"></a>
-
-[ISO 16175-1:2020](https://committee.iso.org/sites/tc46sc11/home/projects/published/records-systems-design-and-requi.html) — imported reference; verification pending.
-
-### IETF RFC 9901
-
-<a id="ref-54a09287"></a>
-
-[IETF RFC 9901](https://datatracker.ietf.org/doc/rfc9901/) — imported reference; verification pending.
-
-### Google review snippet guidance
-
-<a id="ref-e70dbec3"></a>
-
-[Google review snippet guidance](https://developers.google.com/search/docs/appearance/structured-data/review-snippet) — imported reference; verification pending.
-
-### EU eIDAS as amended by Regulation (EU) 2024/1183
-
-<a id="ref-b214f716"></a>
-
-[EU eIDAS as amended by Regulation (EU) 2024/1183](https://ec.europa.eu/digital-building-blocks/sites/pages/viewpage.action?pageId=915932148) — imported reference; verification pending.
-
-### EU age-verification blueprint
-
-<a id="ref-4e03dcef"></a>
-
-[EU age-verification blueprint](https://ec.europa.eu/digital-building-blocks/sites/pages/viewpage.action?pageId=930451135) — imported reference; verification pending.
-
-### EU Directive 2003/88/EC
-
-<a id="ref-d5b5ce71"></a>
-
-[EU Directive 2003/88/EC](https://eur-lex.europa.eu/eli/dir/2003/88/oj/eng) — imported reference; verification pending.
-
-### Digital Content Directive 2019/770
-
-<a id="ref-204c0f81"></a>
-
-[Digital Content Directive 2019/770](https://eur-lex.europa.eu/eli/dir/2019/770/oj) — imported reference; verification pending.
-
-### Consumer Rights Directive 2011/83/EU
-
-<a id="ref-64a0157c"></a>
-
-[Consumer Rights Directive 2011/83/EU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083) — imported reference; verification pending.
-
-### FullCalendar
-
-<a id="ref-bbe12301"></a>
-
-[FullCalendar](https://fullcalendar.io/license) — imported reference; verification pending.
-
-### Nano ID
-
-<a id="ref-affc7039"></a>
-
-[Nano ID](https://github.com/ai/nanoid) — imported reference; verification pending.
-
-### rate-limiter-flexible
-
-<a id="ref-99f82842"></a>
-
-[rate-limiter-flexible](https://github.com/animir/node-rate-limiter-flexible) — imported reference; verification pending.
-
-### Apache Arrow JS Apache-2.0
-
-<a id="ref-50a9f435"></a>
-
-[Apache Arrow JS Apache-2.0](https://github.com/apache/arrow-js) — imported reference; verification pending.
-
-### Apache-2.0
-
-<a id="ref-995938e7"></a>
-
-[Apache-2.0](https://github.com/apache/superset) — imported reference; verification pending.
-
-### Chart.js
-
-<a id="ref-54c6128e"></a>
-
-[Chart.js](https://github.com/chartjs/Chart.js) — imported reference; verification pending.
-
-### decentralized-identity/veramo
-
-<a id="ref-869a7671"></a>
-
-[decentralized-identity/veramo](https://github.com/decentralized-identity/veramo) — imported reference; verification pending.
-
-### MIT
-
-<a id="ref-5a2f744a"></a>
-
-[MIT](https://github.com/duckdb/duckdb) — imported reference; verification pending.
-
-### JSON Forms
-
-<a id="ref-e4419c3b"></a>
-
-[JSON Forms](https://github.com/eclipsesource/jsonforms) — imported reference; verification pending.
-
-### PDFKit
-
-<a id="ref-6a49fbae"></a>
-
-[PDFKit](https://github.com/foliojs/pdfkit) — imported reference; verification pending.
-
-### jStat
-
-<a id="ref-5404073e"></a>
-
-[jStat](https://github.com/jstat/jstat) — imported reference; verification pending.
-
-### Valibot
-
-<a id="ref-5f5b30fe"></a>
-
-[Valibot](https://github.com/open-circle/valibot) — imported reference; verification pending.
-
-### openwallet-foundation-labs/identity-common-ts
-
-<a id="ref-40727472"></a>
-
-[openwallet-foundation-labs/identity-common-ts](https://github.com/openwallet-foundation-labs/identity-common-ts) — imported reference; verification pending.
-
-### openwallet-foundation-labs/mdoc-ts
-
-<a id="ref-d11f656b"></a>
-
-[openwallet-foundation-labs/mdoc-ts](https://github.com/openwallet-foundation-labs/mdoc-ts) — imported reference; verification pending.
-
-### oauth4webapi
-
-<a id="ref-419a0c6b"></a>
-
-[oauth4webapi](https://github.com/panva/oauth4webapi) — imported reference; verification pending.
-
-### simple-statistics
-
-<a id="ref-7d8342de"></a>
-
-[simple-statistics](https://github.com/simple-statistics/simple-statistics) — imported reference; verification pending.
-
-### SortableJS
-
-<a id="ref-e7023281"></a>
-
-[SortableJS](https://github.com/SortableJS/Sortable) — imported reference; verification pending.
-
-### Sphereon OID4VC
-
-<a id="ref-04362b5f"></a>
-
-[Sphereon OID4VC](https://github.com/Sphereon-Opensource/OID4VC) — imported reference; verification pending.
-
-### H3
-
-<a id="ref-21adf099"></a>
-
-[H3](https://github.com/unjs/h3) — imported reference; verification pending.
-
-### Reka UI
-
-<a id="ref-12355446"></a>
-
-[Reka UI](https://github.com/unovue/reka-ui) — imported reference; verification pending.
-
-### Arquero BSD-3
-
-<a id="ref-f1b942ab"></a>
-
-[Arquero BSD-3](https://github.com/uwdata/arquero) — imported reference; verification pending.
-
-### Vega-Lite BSD-3
-
-<a id="ref-89e960d9"></a>
-
-[Vega-Lite BSD-3](https://github.com/vega/vega-lite) — imported reference; verification pending.
-
-### Vue Datepicker
-
-<a id="ref-4266aecd"></a>
-
-[Vue Datepicker](https://github.com/Vuepic/vue-datepicker) — imported reference; verification pending.
-
-### @zxing/browser
-
-<a id="ref-14347dfe"></a>
-
-[`@zxing/browser`](https://github.com/zxing-js/browser) — imported reference; verification pending.
-
-### @zxing/library
-
-<a id="ref-fd11603d"></a>
-
-[`@zxing/library`](https://github.com/zxing-js/library) — imported reference; verification pending.
-
-### UK GDPR / ICO privacy by design
-
-<a id="ref-eca8d5ee"></a>
-
-[UK GDPR / ICO privacy by design](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default) — imported reference; verification pending.
-
-### ICO workplace monitoring
-
-<a id="ref-3056c706"></a>
-
-[ICO workplace monitoring](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/monitoring-workers/) — imported reference; verification pending.
-
-### ICO transparency
-
-<a id="ref-bf472f50"></a>
-
-[ICO transparency](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-be-informed/) — imported reference; verification pending.
-
-### JSON Schema 2020-12
-
-<a id="ref-eba7d5b7"></a>
-
-[JSON Schema 2020-12](https://json-schema.org/draft/2020-12) — imported reference; verification pending.
-
-### ILO NORMLEX
-
-<a id="ref-8665fc5e"></a>
-
-[ILO NORMLEX](https://normlex.ilo.org/) — imported reference; verification pending.
-
-### OpenID4VC HAIP 1.0
-
-<a id="ref-83f0e8eb"></a>
-
-[OpenID4VC HAIP 1.0](https://openid.net/specs/openid4vc-high-assurance-interoperability-profile-1_0-final.html) — imported reference; verification pending.
-
-### PDF/UA
-
-<a id="ref-85fea736"></a>
-
-[PDF/UA](https://pdfa.org/pdf-standards/) — imported reference; verification pending.
-
-### Schema.org Review
-
-<a id="ref-573c4eea"></a>
-
-[Schema.org Review](https://schema.org/Review) — imported reference; verification pending.
-
-### OpenAPI (4)
-
-<a id="ref-5c332c57"></a>
-
-[OpenAPI](https://spec.openapis.org/oas/) — imported reference; verification pending.
-
-### OpenAPI 3.1.1
-
-<a id="ref-e6b991a3"></a>
-
-[OpenAPI 3.1.1](https://spec.openapis.org/oas/v3.1.1.html) — imported reference; verification pending.
-
-### Acas
-
-<a id="ref-4e72a703"></a>
-
-[Acas](https://www.acas.org.uk/working-time-rules) — imported reference; verification pending.
-
-### official CAC measures
-
-<a id="ref-0b3f1644"></a>
-
-[official CAC measures](https://www.cac.gov.cn/2025-05/23/c_1749711107835487.htm) — imported reference; verification pending.
-
-### US FLSA/29 CFR Part 516
-
-<a id="ref-992b2fc2"></a>
-
-[US FLSA/29 CFR Part 516](https://www.dol.gov/general/topic/workhours/hoursrecordkeeping) — imported reference; verification pending.
-
-### EN 301 549 (2)
-
-<a id="ref-19a33201"></a>
-
-[EN 301 549](https://www.etsi.org/) — imported reference; verification pending.
-
-### ETSI TS 119 461
-
-<a id="ref-aa9c2495"></a>
-
-[ETSI TS 119 461](https://www.etsi.org/standards) — imported reference; verification pending.
-
-### CMA fake reviews guidance
-
-<a id="ref-ad11aaa1"></a>
-
-[CMA fake reviews guidance](https://www.gov.uk/government/publications/fake-reviews) — imported reference; verification pending.
-
-### GPG 45 v1.0
-
-<a id="ref-076cb1fd"></a>
-
-[GPG 45 v1.0](https://www.gov.uk/government/publications/how-to-check-someones-identity-1-0) — imported reference; verification pending.
-
-### government subscription guidance
-
-<a id="ref-5391a4ef"></a>
-
-[government subscription guidance](https://www.gov.uk/government/publications/subscription-contracts) — imported reference; verification pending.
-
-### UK Digital Verification Services Trust Framework 1.0
-
-<a id="ref-4e7751af"></a>
-
-[UK Digital Verification Services Trust Framework 1.0](https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0) — imported reference; verification pending.
-
-### DMCC Act 2024/CMA
-
-<a id="ref-f4839874"></a>
-
-[DMCC Act 2024/CMA](https://www.gov.uk/government/publications/unfair-commercial-practices-cma207/unfair-commercial-practices) — imported reference; verification pending.
-
-### 16 CFR Part 465
-
-<a id="ref-614b3b8a"></a>
-
-[16 CFR Part 465](https://www.govinfo.gov/content/pkg/CFR-2025-title16-vol1/xhtml/CFR-2025-title16-vol1-part465.html) — imported reference; verification pending.
-
-### ISO 30414
-
-<a id="ref-c0c6fe85"></a>
-
-[ISO 30414](https://www.iso.org/standard/30414) — imported reference; verification pending.
-
-### ISO/IEC 25012
-
-<a id="ref-35a58970"></a>
-
-[ISO/IEC 25012](https://www.iso.org/standard/35736.html) — imported reference; verification pending.
-
-### 25024 — www.iso.org/standard/35749.html
-
-<a id="ref-273d2272"></a>
-
-[25024](https://www.iso.org/standard/35749.html) — imported reference; verification pending.
-
-### ISO 45001
-
-<a id="ref-6c90b51f"></a>
-
-[ISO 45001](https://www.iso.org/standard/45001) — imported reference; verification pending.
-
-### ISO/IEC TS 29003:2018
-
-<a id="ref-58f59639"></a>
-
-[ISO/IEC TS 29003:2018](https://www.iso.org/standard/62290.html) — imported reference; verification pending.
-
-### ISO 20488:2018
-
-<a id="ref-69c33b8f"></a>
-
-[ISO 20488:2018](https://www.iso.org/standard/68193.html) — imported reference; verification pending.
-
-### ISO/IEC 18013-5:2021
-
-<a id="ref-99ba669d"></a>
-
-[ISO/IEC 18013-5:2021](https://www.iso.org/standard/69084.html) — imported reference; verification pending.
-
-### ISO/IEC 30107-3:2023
-
-<a id="ref-453a05ff"></a>
-
-[ISO/IEC 30107-3:2023](https://www.iso.org/standard/79520.html) — imported reference; verification pending.
-
-### draft 2026 implementing regulations
-
-<a id="ref-5974714b"></a>
-
-[draft 2026 implementing regulations](https://www.legislation.gov.uk/ukdsi/2026/9780348287912/data.html) — imported reference; verification pending.
-
-### Equality Act 2010
-
-<a id="ref-517049ab"></a>
-
-[Equality Act 2010](https://www.legislation.gov.uk/ukpga/2010/15/contents) — imported reference; verification pending.
-
-### Digital Markets, Competition and Consumers Act 2024, Part 4 Chapter 2
-
-<a id="ref-de55a252"></a>
-
-[Digital Markets, Competition and Consumers Act 2024, Part 4 Chapter 2](https://www.legislation.gov.uk/ukpga/2024/13/part/4/chapter/2/enacted) — imported reference; verification pending.
-
-### UK Working Time Regulations
-
-<a id="ref-38005802"></a>
-
-[UK Working Time Regulations](https://www.legislation.gov.uk/uksi/1998/1833/contents) — imported reference; verification pending.
-
-### Consumer Contracts Regulations 2013
-
-<a id="ref-5ffaf50f"></a>
-
-[Consumer Contracts Regulations 2013](https://www.legislation.gov.uk/uksi/2013/3134/contents) — imported reference; verification pending.
-
-### OMG DMN 1.6 (2)
-
-<a id="ref-9c3f04c4"></a>
-
-[OMG DMN 1.6](https://www.omg.org/spec/DMN/1.6) — imported reference; verification pending.
-
-### RFC 10051
-
-<a id="ref-d6226711"></a>
-
-[RFC 10051](https://www.rfc-editor.org/rfc/rfc10051) — imported reference; verification pending.
-
-### RFC 3339 (2)
-
-<a id="ref-3519482a"></a>
-
-[RFC 3339](https://www.rfc-editor.org/rfc/rfc3339) — imported reference; verification pending.
-
-### IETF RFC 5545
-
-<a id="ref-65b641d1"></a>
-
-[IETF RFC 5545](https://www.rfc-editor.org/rfc/rfc5545) — imported reference; verification pending.
-
-### RFC 9253
-
-<a id="ref-65b0873b"></a>
-
-[RFC 9253](https://www.rfc-editor.org/rfc/rfc9253) — imported reference; verification pending.
-
-### RFC 9557
-
-<a id="ref-0ad4fc7e"></a>
-
-[RFC 9557](https://www.rfc-editor.org/rfc/rfc9557) — imported reference; verification pending.
-
-### CSVW
-
-<a id="ref-f6e15c97"></a>
-
-[CSVW](https://www.w3.org/TR/tabular-metadata/) — imported reference; verification pending.
-
-### W3C WebAuthn
-
-<a id="ref-389dc62a"></a>
-
-[W3C WebAuthn](https://www.w3.org/TR/webauthn-3/) — imported reference; verification pending.
-
-### ARIA APG
-
-<a id="ref-f076dce5"></a>
-
-[ARIA APG](https://www.w3.org/WAI/ARIA/apg/) — imported reference; verification pending.
-
-### OWASP Micro Frontend Security
-
-<a id="ref-a097180d"></a>
-
-[OWASP Micro Frontend Security](https://cheatsheetseries.owasp.org/cheatsheets/Micro_Frontend_Security_Cheat_Sheet.html) — imported reference; verification pending.
-
-### MDN postMessage
-
-<a id="ref-05da9414"></a>
-
-[MDN postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) — imported reference; verification pending.
-
-### EUR-Lex
-
-<a id="ref-c887e4a3"></a>
-
-[EUR-Lex](https://eur-lex.europa.eu/) — imported reference; verification pending.
-
-### Colyseus
-
-<a id="ref-8cbc6f4a"></a>
-
-[Colyseus](https://github.com/colyseus/colyseus) — imported reference; verification pending.
-
-### Floating UI
-
-<a id="ref-07622d6a"></a>
-
-[Floating UI](https://github.com/floating-ui/floating-ui) — imported reference; verification pending.
-
-### howler.js
-
-<a id="ref-2c4519a8"></a>
-
-[howler.js](https://github.com/goldfire/howler.js) — imported reference; verification pending.
-
-### Vue I18n
-
-<a id="ref-4941c780"></a>
-
-[Vue I18n](https://github.com/intlify/vue-i18n) — imported reference; verification pending.
-
-### KAPLAY
-
-<a id="ref-ff99b3e5"></a>
-
-[KAPLAY](https://github.com/kaplayjs/kaplay) — imported reference; verification pending.
-
-### Lucide
-
-<a id="ref-c5624441"></a>
-
-[Lucide](https://github.com/lucide-icons/lucide) — imported reference; verification pending.
-
-### Matter.js
-
-<a id="ref-8b79b6db"></a>
-
-[Matter.js](https://github.com/matter-js/matter.js) — imported reference; verification pending.
-
-### authentication — CONTRACT.md
-
-<a id="ref-d271ccbf"></a>
-
-Authentication — live development lookup: `nuxt-layers/authentication`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### authorisation — CONTRACT.md
-
-<a id="ref-4753322f"></a>
-
-Authorisation — live development lookup: `nuxt-layers/authorisation`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### identity — CONTRACT.md
-
-<a id="ref-59d75cad"></a>
-
-Identity — live development lookup: `nuxt-layers/identity`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### Nuxt 4
-
-<a id="ref-b554353a"></a>
-
-[Nuxt 4](https://github.com/nuxt/nuxt) — imported reference; verification pending.
-
-### Nuxt UI v4
-
-<a id="ref-b0f34541"></a>
-
-[Nuxt UI v4](https://github.com/nuxt/ui) — imported reference; verification pending.
-
-### OWASP ASVS 5.0 (2)
-
-<a id="ref-f6bc94d9"></a>
-
-[OWASP ASVS 5.0](https://github.com/OWASP/ASVS/tree/master/5.0) — imported reference; verification pending.
-
-### Phaser
-
-<a id="ref-224449af"></a>
-
-[Phaser](https://github.com/phaserjs/phaser) — imported reference; verification pending.
-
-### PixiJS
-
-<a id="ref-28692586"></a>
-
-[PixiJS](https://github.com/pixijs/pixijs) — imported reference; verification pending.
-
-### p-retry
-
-<a id="ref-0286fae8"></a>
-
-[p-retry](https://github.com/sindresorhus/p-retry) — imported reference; verification pending.
-
-### Tailwind CSS
-
-<a id="ref-d67bae77"></a>
-
-[Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) — imported reference; verification pending.
-
-### ofetch
-
-<a id="ref-e2925973"></a>
-
-[ofetch](https://github.com/unjs/ofetch) — imported reference; verification pending.
-
-### Unhead
-
-<a id="ref-1a0ac221"></a>
-
-[Unhead](https://github.com/unjs/unhead) — imported reference; verification pending.
-
-### Vue 3
-
-<a id="ref-cf2779ac"></a>
-
-[Vue 3](https://github.com/vuejs/core) — imported reference; verification pending.
-
-### UK NCSC secure design
-
-<a id="ref-c1b4f35f"></a>
-
-[UK NCSC secure design](https://www.ncsc.gov.uk/collection/software-security-code-of-practice-implementation-guidance/theme-1-secure-design-development) — imported reference; verification pending.
-
-### PCI SSC
-
-<a id="ref-eb8cbb26"></a>
-
-[PCI SSC](https://www.pcisecuritystandards.org/) — imported reference; verification pending.
-
-### RFC 10051 (2)
-
-<a id="ref-30c13a68"></a>
-
-[RFC 10051](https://www.rfc-editor.org/rfc/rfc10051.html) — imported reference; verification pending.
-
-### RFC 3339 (3)
-
-<a id="ref-3379bb69"></a>
-
-[RFC 3339](https://www.rfc-editor.org/rfc/rfc3339.html) — imported reference; verification pending.
-
-### RFC 4791 CalDAV
-
-<a id="ref-7d20fd52"></a>
-
-[RFC 4791 CalDAV](https://www.rfc-editor.org/rfc/rfc4791.html) — imported reference; verification pending.
-
-### RFC 5545 VTODO
-
-<a id="ref-bb0f57a8"></a>
-
-[RFC 5545 `VTODO`](https://www.rfc-editor.org/rfc/rfc5545.html) — imported reference; verification pending.
-
-### SCIM RFC 7643
-
-<a id="ref-affc95fc"></a>
-
-[SCIM RFC 7643](https://www.rfc-editor.org/rfc/rfc7643) — imported reference; verification pending.
-
-### RFC 7644
-
-<a id="ref-aefc9469"></a>
-
-[RFC 7644](https://www.rfc-editor.org/rfc/rfc7644) — imported reference; verification pending.
-
-### RFC 8984 JSCalendar
-
-<a id="ref-0b86704e"></a>
-
-[RFC 8984 JSCalendar](https://www.rfc-editor.org/rfc/rfc8984.html) — imported reference; verification pending.
-
-### RFC 9557 (2)
-
-<a id="ref-a17e8f95"></a>
-
-[RFC 9557](https://www.rfc-editor.org/rfc/rfc9557.html) — imported reference; verification pending.
-
-### W3C i18n
-
-<a id="ref-7ea69d75"></a>
-
-[W3C i18n](https://www.w3.org/TR/international-specs/) — imported reference; verification pending.
-
-### ECMA-262
-
-<a id="ref-a2caee72"></a>
-
-[ECMA-262](https://ecma-international.org/publications-and-standards/standards/ecma-262/) — imported reference; verification pending.
-
-### Embla Carousel
-
-<a id="ref-d781d400"></a>
-
-[Embla Carousel](https://github.com/davidjerleke/embla-carousel) — imported reference; verification pending.
-
-### PhotoSwipe
-
-<a id="ref-a7210fa7"></a>
-
-[PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe) — imported reference; verification pending.
-
-### MiniSearch
-
-<a id="ref-58227ec0"></a>
-
-[MiniSearch](https://github.com/lucaong/minisearch) — imported reference; verification pending.
-
-### FlexSearch
-
-<a id="ref-788e2bc4"></a>
-
-[FlexSearch](https://github.com/nextapps-de/flexsearch) — imported reference; verification pending.
-
-### nuxt-layers/rich-text
-
-<a id="ref-19783b8e"></a>
-
-[`nuxt-layers/rich-text`](https://github.com/nuxt-layers/rich-text) — imported reference; verification pending.
-
-### rich-text — CONTRACT.md
-
-<a id="ref-81a9491d"></a>
-
-root implementation `CONTRACT.md` — live development lookup: `nuxt-layers/rich-text`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### OWASP ASVS 5.0, ch. 16
-
-<a id="ref-f0c6e4e1"></a>
-
-[OWASP ASVS 5.0, ch. 16](https://github.com/OWASP/ASVS/blob/master/5.0/en/0x25-V16-Security-Logging-and-Error-Handling.md) — imported reference; verification pending.
-
-### vue.draggable.next
-
-<a id="ref-33185db5"></a>
-
-[vue.draggable.next](https://github.com/SortableJS/vue.draggable.next) — imported reference; verification pending.
-
-### OpenTelemetry error conventions
-
-<a id="ref-a60f637a"></a>
-
-[OpenTelemetry error conventions](https://opentelemetry.io/docs/specs/semconv/general/recording-errors/) — imported reference; verification pending.
-
-### Semantic Versioning 2.0.0
-
-<a id="ref-9679b8dc"></a>
-
-[Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) — imported reference; verification pending.
-
-### UK Software Security Code of Practice
-
-<a id="ref-6d9f6678"></a>
-
-[UK Software Security Code of Practice](https://www.gov.uk/government/publications/software-security-code-of-practice) — imported reference; verification pending.
-
-### OASIS DITA 1.3
-
-<a id="ref-87ed8fd7"></a>
-
-[OASIS DITA 1.3](https://www.oasis-open.org/2016/02/01/members-approve-dita-1-3-as-oasis-standard-for-authoring-and-publishing/) — imported reference; verification pending.
-
-### NIST SP 800-177 Rev. 1
-
-<a id="ref-5475a9f6"></a>
-
-[NIST SP 800-177 Rev. 1](https://csrc.nist.gov/pubs/sp/800/177/r1/final) — imported reference; verification pending.
-
-### GOV.UK Design System
-
-<a id="ref-006a3e23"></a>
-
-[GOV.UK Design System](https://design-system.service.gov.uk/components/) — imported reference; verification pending.
-
-### Cloudflare NTS
-
-<a id="ref-920dfdb7"></a>
-
-[Cloudflare NTS](https://developers.cloudflare.com/time-services/nts/) — imported reference; verification pending.
-
-### Core Web Vitals
-
-<a id="ref-ef90706c"></a>
-
-[Core Web Vitals](https://developers.google.com/search/docs/appearance/core-web-vitals) — imported reference; verification pending.
-
-### Google Public NTP
-
-<a id="ref-cd43de38"></a>
-
-[Google Public NTP](https://developers.google.com/time/) — imported reference; verification pending.
-
-### Google Public NTP FAQ
-
-<a id="ref-77e72150"></a>
-
-[Google Public NTP FAQ](https://developers.google.com/time/faq) — imported reference; verification pending.
-
-### Adobe Leonardo
-
-<a id="ref-435cfa63"></a>
-
-[Adobe Leonardo](https://github.com/adobe/leonardo) — imported reference; verification pending.
-
-### Ark UI
-
-<a id="ref-7d9e57d5"></a>
-
-[Ark UI](https://github.com/chakra-ui/ark) — imported reference; verification pending.
-
-### Zag.js
-
-<a id="ref-2994486b"></a>
-
-[Zag.js](https://github.com/chakra-ui/zag) — imported reference; verification pending.
-
-### Color.js
-
-<a id="ref-5cd843eb"></a>
-
-[Color.js](https://github.com/color-js/color.js) — imported reference; verification pending.
-
-### Culori
-
-<a id="ref-2150b3bd"></a>
-
-[Culori](https://github.com/Evercoder/culori) — imported reference; verification pending.
-
-### fastify/fastify
-
-<a id="ref-93b515aa"></a>
-
-[fastify/fastify](https://github.com/fastify/fastify) — imported reference; verification pending.
-
-### html-to-text
-
-<a id="ref-29efde1f"></a>
-
-[html-to-text](https://github.com/html-to-text/node-html-to-text) — imported reference; verification pending.
-
-### MJML
-
-<a id="ref-21d35814"></a>
-
-[MJML](https://github.com/mjmlio/mjml) — imported reference; verification pending.
-
-### nodejs/undici
-
-<a id="ref-edd6cbb9"></a>
-
-[nodejs/undici](https://github.com/nodejs/undici) — imported reference; verification pending.
-
-### Nodemailer
-
-<a id="ref-0c44f600"></a>
-
-[Nodemailer](https://github.com/nodemailer/nodemailer) — imported reference; verification pending.
-
-### blueprint
-
-<a id="ref-d6e3a458"></a>
-
-[blueprint](https://github.com/nuxt-layers/architecture) — imported reference; verification pending.
-
-### catalogue (2)
-
-<a id="ref-55413c2e"></a>
-
-[catalogue](https://github.com/nuxt-layers/architecture/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/catalogue.md) — imported reference; verification pending.
-
-### ADR-0012
-
-<a id="ref-d77f0ab1"></a>
-
-[ADR-0012](https://github.com/nuxt-layers/architecture/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/decisions/ADR-0012-trivial-composition.md) — imported reference; verification pending.
-
-### ADR-0016
-
-<a id="ref-e16bba79"></a>
-
-[ADR-0016](https://github.com/nuxt-layers/architecture/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/decisions/ADR-0016-controlled-layer-specialisation-and-composition.md) — imported reference; verification pending.
-
-### Privacy (2)
-
-<a id="ref-6b21b67d"></a>
-
-[Privacy](https://github.com/nuxt-layers/architecture/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/privacy.md) — imported reference; verification pending.
-
-### Security §§16.5–16.6
-
-<a id="ref-04b4e257"></a>
-
-[Security §§16.5–16.6](https://github.com/nuxt-layers/architecture/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/security.md) — imported reference; verification pending.
-
-### clock — CONTRACT.md
-
-<a id="ref-738239a9"></a>
-
-CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### nuxt-layers/integrations
-
-<a id="ref-4c7783cf"></a>
-
-[nuxt-layers/integrations](https://github.com/nuxt-layers/integrations) — imported reference; verification pending.
-
-### Theme Manager
-
-<a id="ref-8ccd6b0b"></a>
-
-[Theme Manager](https://github.com/nuxt-layers/theme-manager) — imported reference; verification pending.
-
-### theme-manager — app/components/theme-manager/ThemeColourField.vue
-
-<a id="ref-95e68ca1"></a>
-
-`ThemeColourField.vue` — live development lookup: `nuxt-layers/theme-manager`, `app/components/theme-manager/ThemeColourField.vue`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### theme-manager — app/components/theme-manager/ThemeEditorColours.vue
-
-<a id="ref-c0267327"></a>
-
-`ThemeEditorColours.vue` — live development lookup: `nuxt-layers/theme-manager`, `app/components/theme-manager/ThemeEditorColours.vue`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### theme-manager — app/components/theme-manager/ThemePreviewComponents.vue
-
-<a id="ref-b5f7afa5"></a>
-
-`ThemePreviewComponents.vue` — live development lookup: `nuxt-layers/theme-manager`, `app/components/theme-manager/ThemePreviewComponents.vue`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### theme-manager — STORAGE-REGISTER.md
-
-<a id="ref-abb576ad"></a>
-
-`STORAGE-REGISTER.md` — live development lookup: `nuxt-layers/theme-manager`, `STORAGE-REGISTER.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### nuxt-layers/ui
-
-<a id="ref-6f35dd9e"></a>
-
-[`nuxt-layers/ui`](https://github.com/nuxt-layers/ui) — imported reference; verification pending.
-
-### Nuxt Color Mode
-
-<a id="ref-5a839ea2"></a>
-
-[Nuxt Color Mode](https://github.com/nuxt-modules/color-mode) — imported reference; verification pending.
-
-### Colord
-
-<a id="ref-af31f265"></a>
-
-[Colord](https://github.com/omgovich/colord) — imported reference; verification pending.
-
-### mailauth
-
-<a id="ref-7a8524b7"></a>
-
-[mailauth](https://github.com/postalsys/mailauth) — imported reference; verification pending.
-
-### PrimeVue
-
-<a id="ref-86ae7870"></a>
-
-[PrimeVue](https://github.com/primefaces/primevue) — imported reference; verification pending.
-
-### Style Dictionary
-
-<a id="ref-5846c58c"></a>
-
-[Style Dictionary](https://github.com/style-dictionary/style-dictionary) — imported reference; verification pending.
-
-### shadcn-vue
-
-<a id="ref-2c44f99e"></a>
-
-[shadcn-vue](https://github.com/unovue/shadcn-vue) — imported reference; verification pending.
-
-### Pinia
-
-<a id="ref-e0010fdc"></a>
-
-[Pinia](https://github.com/vuejs/pinia) — imported reference; verification pending.
-
-### ICO storage technologies
-
-<a id="ref-e467565a"></a>
-
-[ICO storage technologies](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/how-do-we-comply-with-the-pecr-rules) — imported reference; verification pending.
-
-### OpenVue
-
-<a id="ref-34e655b0"></a>
-
-[OpenVue](https://openvue.dev/) — imported reference; verification pending.
-
-### OWASP ASVS 5
-
-<a id="ref-cb38cea0"></a>
-
-[OWASP ASVS 5](https://owasp.org/projects/asvs/) — imported reference; verification pending.
-
-### Liquid
-
-<a id="ref-e82a3d0b"></a>
-
-[Liquid](https://shopify.github.io/liquid/) — imported reference; verification pending.
-
-### ECMA-402 (2)
-
-<a id="ref-3b3e5ef9"></a>
-
-[ECMA-402](https://tc39.es/ecma402/) — imported reference; verification pending.
-
-### AsyncAPI
-
-<a id="ref-97b55c12"></a>
-
-[AsyncAPI](https://www.asyncapi.com/docs/reference) — imported reference; verification pending.
-
-### ETSI EN 301 549
-
-<a id="ref-5b23dd33"></a>
-
-[ETSI EN 301 549](https://www.etsi.org/technical-groups/hf/) — imported reference; verification pending.
-
-### ISO/IEC 30071-1:2019
-
-<a id="ref-23e1c516"></a>
-
-[ISO/IEC 30071-1:2019](https://www.iso.org/standard/70913.html) — imported reference; verification pending.
-
-### ISO 9241-210:2019
-
-<a id="ref-059e6b51"></a>
-
-[ISO 9241-210:2019](https://www.iso.org/standard/77520.html) — imported reference; verification pending.
-
-### ISO 9241-171:2025
-
-<a id="ref-7b6be755"></a>
-
-[ISO 9241-171:2025](https://www.iso.org/standard/86308.html) — imported reference; verification pending.
-
-### UK Public Sector Accessibility Regulations
-
-<a id="ref-4d3037c4"></a>
-
-[UK Public Sector Accessibility Regulations](https://www.legislation.gov.uk/uksi/2018/952) — imported reference; verification pending.
-
-### UK NCSC
-
-<a id="ref-6248375e"></a>
-
-[UK NCSC](https://www.ncsc.gov.uk/collection/email-security-and-anti-spoofing) — imported reference; verification pending.
-
-### NIST ITS
-
-<a id="ref-6c4b245c"></a>
-
-[NIST ITS](https://www.nist.gov/pml/time-and-frequency-division/time-distribution/internet-time-service-its) — imported reference; verification pending.
-
-### NPL Internet Time Service user guide
-
-<a id="ref-84066cfe"></a>
-
-[NPL Internet Time Service user guide](https://www.npl.co.uk/getattachment/products-and-services/Timing-services/Internet-Time-from-NPL/its_user_guide.pdf?lang=en-GB) — imported reference; verification pending.
-
-### NTP Pool Europe
-
-<a id="ref-342633dd"></a>
-
-[NTP Pool Europe](https://www.ntppool.org/en/zone/europe) — imported reference; verification pending.
-
-### NTP Pool UK
-
-<a id="ref-feb02964"></a>
-
-[NTP Pool UK](https://www.ntppool.org/uk/zone/uk) — imported reference; verification pending.
-
-### RFC Editor
-
-<a id="ref-f34bf5a1"></a>
-
-[RFC Editor](https://www.rfc-editor.org/) — imported reference; verification pending.
-
-### IETF RFC 8633
-
-<a id="ref-bd1a09d8"></a>
-
-[IETF RFC 8633](https://www.rfc-editor.org/rfc/rfc8633) — imported reference; verification pending.
-
-### RFC 9110 (2)
-
-<a id="ref-96cfb1e6"></a>
-
-[RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — imported reference; verification pending.
-
-### W3C Design Tokens Community Group 2025.10
-
-<a id="ref-58aea18f"></a>
-
-[W3C Design Tokens Community Group 2025.10](https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/) — imported reference; verification pending.
-
-### W3C internationalisation
-
-<a id="ref-bd589cf9"></a>
-
-[W3C internationalisation](https://www.w3.org/International/) — imported reference; verification pending.
-
-### CSS Color 4
-
-<a id="ref-a582bbf2"></a>
-
-[CSS Color 4](https://www.w3.org/TR/css-color-4/) — imported reference; verification pending.
-
-### CSS Color Adjustment
-
-<a id="ref-0faec43f"></a>
-
-[CSS Color Adjustment](https://www.w3.org/TR/css-color-adjust-1/) — imported reference; verification pending.
-
-### W3C CSS Custom Properties
-
-<a id="ref-63ef0de9"></a>
-
-[W3C CSS Custom Properties](https://www.w3.org/TR/css-variables-1/) — imported reference; verification pending.
-
-### Media Queries 5
-
-<a id="ref-d71ad712"></a>
-
-[Media Queries 5](https://www.w3.org/TR/mediaqueries-5/) — imported reference; verification pending.
-
-### WAI-ARIA 1.2
-
-<a id="ref-90f5e4b1"></a>
-
-[WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria/) — imported reference; verification pending.
-
-### APG
-
-<a id="ref-54e6f5b0"></a>
-
-[APG](https://www.w3.org/WAI/ARIA/apg/about/introduction/) — imported reference; verification pending.
-
-### CSA CCM 4.1
-
-<a id="ref-08c52c06"></a>
-
-[CSA CCM 4.1](https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1) — imported reference; verification pending.
-
-### NIST SP 800-137
-
-<a id="ref-e530b140"></a>
-
-[NIST SP 800-137](https://csrc.nist.gov/pubs/sp/800/137/final) — imported reference; verification pending.
-
-### NIST SP 800-209
-
-<a id="ref-71d6aa98"></a>
-
-[NIST SP 800-209](https://csrc.nist.gov/pubs/sp/800/209/final) — imported reference; verification pending.
-
-### 800-53
-
-<a id="ref-ea606756"></a>
-
-[800-53](https://csrc.nist.gov/pubs/sp/800/53/rev-5/upd1/final) — imported reference; verification pending.
-
-### 800-92
-
-<a id="ref-e0cc09ca"></a>
-
-[800-92](https://csrc.nist.gov/pubs/sp/800/92/final) — imported reference; verification pending.
-
-### Google Search Central
-
-<a id="ref-269663c4"></a>
-
-[Google Search Central](https://developers.google.com/search/docs/essentials) — imported reference; verification pending.
-
-### Adyen Node
-
-<a id="ref-11522612"></a>
-
-[Adyen Node](https://github.com/Adyen/adyen-node-api-library) — imported reference; verification pending.
-
-### amqplib
-
-<a id="ref-51fa43fe"></a>
-
-[amqplib](https://github.com/amqp-node/amqplib) — imported reference; verification pending.
-
-### Apache Kafka
-
-<a id="ref-ba32d2a8"></a>
-
-[Apache Kafka](https://github.com/apache/kafka) — imported reference; verification pending.
-
-### Apache Ozone
-
-<a id="ref-c9b86bd5"></a>
-
-[Apache Ozone](https://github.com/apache/ozone) — imported reference; verification pending.
-
-### Apache Pulsar
-
-<a id="ref-fa776b67"></a>
-
-[Apache Pulsar](https://github.com/apache/pulsar) — imported reference; verification pending.
-
-### Apache SkyWalking
-
-<a id="ref-d26c7ff2"></a>
-
-[Apache SkyWalking](https://github.com/apache/skywalking) — imported reference; verification pending.
-
-### Apache Solr
-
-<a id="ref-3a3c8cfe"></a>
-
-[Apache Solr](https://github.com/apache/solr) — imported reference; verification pending.
-
-### @aws-sdk/client-s3 and @aws-sdk/s3-request-presigner
-
-<a id="ref-4c3ccc5f"></a>
-
-[`@aws-sdk/client-s3` and `@aws-sdk/s3-request-presigner`](https://github.com/aws/aws-sdk-js-v3) — imported reference; verification pending.
-
-### @aws-sdk/lib-storage
-
-<a id="ref-aff2a60c"></a>
-
-[`@aws-sdk/lib-storage`](https://github.com/aws/aws-sdk-js-v3/tree/main/lib/lib-storage) — imported reference; verification pending.
-
-### Braintree Node
-
-<a id="ref-1cda7aeb"></a>
-
-[Braintree Node](https://github.com/braintree/braintree_node) — imported reference; verification pending.
-
-### Caddy
-
-<a id="ref-f27c50a1"></a>
-
-[Caddy](https://github.com/caddyserver/caddy) — imported reference; verification pending.
-
-### CNCF CloudEvents 1.0.2
-
-<a id="ref-dc71931f"></a>
-
-[CNCF CloudEvents 1.0.2](https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md) — imported reference; verification pending.
-
-### sitemap.js
-
-<a id="ref-ab62c3cf"></a>
-
-[sitemap.js](https://github.com/ekalinin/sitemap.js) — imported reference; verification pending.
-
-### FormatJS
-
-<a id="ref-35db7b08"></a>
-
-[FormatJS](https://github.com/formatjs/formatjs) — imported reference; verification pending.
-
-### schema-dts
-
-<a id="ref-da16045e"></a>
-
-[schema-dts](https://github.com/google/schema-dts) — imported reference; verification pending.
-
-### Grafana
-
-<a id="ref-2b2ddfe6"></a>
-
-[Grafana](https://github.com/grafana/grafana) — imported reference; verification pending.
-
-### Tempo
-
-<a id="ref-d02585bd"></a>
-
-[Tempo](https://github.com/grafana/tempo) — imported reference; verification pending.
-
-### Graphile Worker
-
-<a id="ref-1ce69cce"></a>
-
-[Graphile Worker](https://github.com/graphile/worker) — imported reference; verification pending.
-
-### nuxt-schema-org
-
-<a id="ref-da234be8"></a>
-
-[nuxt-schema-org](https://github.com/harlan-zw/nuxt-schema-org) — imported reference; verification pending.
-
-### @nuxtjs/seo
-
-<a id="ref-a49dd971"></a>
-
-[`@nuxtjs/seo`](https://github.com/harlan-zw/nuxt-seo) — imported reference; verification pending.
-
-### cron-parser
-
-<a id="ref-e8ea8aef"></a>
-
-[cron-parser](https://github.com/harrisiirak/cron-parser) — imported reference; verification pending.
-
-### Croner
-
-<a id="ref-436c9335"></a>
-
-[Croner](https://github.com/Hexagon/croner) — imported reference; verification pending.
-
-### parse5
-
-<a id="ref-7c78d301"></a>
-
-[parse5](https://github.com/inikulin/parse5) — imported reference; verification pending.
-
-### Jaeger
-
-<a id="ref-217dc578"></a>
-
-[Jaeger](https://github.com/jaegertracing/jaeger) — imported reference; verification pending.
-
-### rrule
-
-<a id="ref-5803e305"></a>
-
-[rrule](https://github.com/jkbrzt/rrule) — imported reference; verification pending.
-
-### tr46
-
-<a id="ref-35d9d4b1"></a>
-
-[`tr46`](https://github.com/jsdom/tr46) — imported reference; verification pending.
-
-### MSW
-
-<a id="ref-203214f1"></a>
-
-[MSW](https://github.com/mswjs/msw) — imported reference; verification pending.
-
-### NATS JetStream
-
-<a id="ref-e3dcd115"></a>
-
-[NATS JetStream](https://github.com/nats-io/nats-server) — imported reference; verification pending.
-
-### NATS.js
-
-<a id="ref-b017e4a4"></a>
-
-[NATS.js](https://github.com/nats-io/nats.js) — imported reference; verification pending.
-
-### node-cron
-
-<a id="ref-fa08cb9a"></a>
-
-[node-cron](https://github.com/node-cron/node-cron) — imported reference; verification pending.
-
-### nuxt-layers/site-hosting
-
-<a id="ref-ba767e08"></a>
-
-[`nuxt-layers/site-hosting`](https://github.com/nuxt-layers/site-hosting) — imported reference; verification pending.
-
-### storage — CONTRACT.md
-
-<a id="ref-a32b30e2"></a>
-
-`nuxt-layers/storage/CONTRACT.md` — live development lookup: `nuxt-layers/storage`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### @nuxtjs/robots
-
-<a id="ref-9c8f6e26"></a>
-
-[`@nuxtjs/robots`](https://github.com/nuxt-modules/robots) — imported reference; verification pending.
-
-### @nuxtjs/sitemap
-
-<a id="ref-8b56e466"></a>
-
-[`@nuxtjs/sitemap`](https://github.com/nuxt-modules/sitemap) — imported reference; verification pending.
-
-### OpenTelemetry Collector
-
-<a id="ref-ea091f93"></a>
-
-[OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) — imported reference; verification pending.
-
-### Collector Contrib
-
-<a id="ref-51c69737"></a>
-
-[Collector Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib) — imported reference; verification pending.
-
-### JS Contrib
-
-<a id="ref-edd7ef97"></a>
-
-[JS Contrib](https://github.com/open-telemetry/opentelemetry-js-contrib) — imported reference; verification pending.
-
-### PayPal TypeScript
-
-<a id="ref-8d3327af"></a>
-
-[PayPal TypeScript](https://github.com/paypal/PayPal-TypeScript-Server-SDK) — imported reference; verification pending.
-
-### PGroonga
-
-<a id="ref-b46ff366"></a>
-
-[PGroonga](https://github.com/pgroonga/pgroonga) — imported reference; verification pending.
-
-### Prometheus Alertmanager
-
-<a id="ref-b4e20705"></a>
-
-[Prometheus Alertmanager](https://github.com/prometheus/alertmanager) — imported reference; verification pending.
-
-### Blackbox Exporter
-
-<a id="ref-920c4404"></a>
-
-[Blackbox Exporter](https://github.com/prometheus/blackbox_exporter) — imported reference; verification pending.
-
-### Node Exporter
-
-<a id="ref-f8cc3d9c"></a>
-
-[Node Exporter](https://github.com/prometheus/node_exporter) — imported reference; verification pending.
-
-### Prometheus
-
-<a id="ref-6b9758b0"></a>
-
-[Prometheus](https://github.com/prometheus/prometheus) — imported reference; verification pending.
-
-### Tantivy
-
-<a id="ref-29ee9c92"></a>
-
-[Tantivy](https://github.com/quickwit-oss/tantivy) — imported reference; verification pending.
-
-### tldts
-
-<a id="ref-879dab13"></a>
-
-[`tldts`](https://github.com/remusao/tldts) — imported reference; verification pending.
-
-### SeaweedFS
-
-<a id="ref-1bd76faa"></a>
-
-[SeaweedFS](https://github.com/seaweedfs/seaweedfs) — imported reference; verification pending.
-
-### p-limit
-
-<a id="ref-69494d09"></a>
-
-[p-limit](https://github.com/sindresorhus/p-limit) — imported reference; verification pending.
-
-### Stripe Node
-
-<a id="ref-cfa45325"></a>
-
-[Stripe Node](https://github.com/stripe/stripe-node) — imported reference; verification pending.
-
-### Traefik Proxy
-
-<a id="ref-b407f18a"></a>
-
-[Traefik Proxy](https://github.com/traefik/traefik) — imported reference; verification pending.
-
-### Valkey
-
-<a id="ref-b3ed39f7"></a>
-
-[Valkey](https://github.com/valkey-io/valkey) — imported reference; verification pending.
-
-### web-push
-
-<a id="ref-0040bd2f"></a>
-
-[web-push](https://github.com/web-push-libs/web-push) — imported reference; verification pending.
-
-### winkNLP
-
-<a id="ref-1a833bc8"></a>
-
-[winkNLP](https://github.com/winkjs/wink-nlp) — imported reference; verification pending.
-
-### WHATWG HTML (2)
-
-<a id="ref-82cafda8"></a>
-
-[WHATWG HTML](https://html.spec.whatwg.org/multipage/) — imported reference; verification pending.
-
-### ICO UK GDPR principles
-
-<a id="ref-1ef72871"></a>
-
-[ICO UK GDPR principles](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/) — imported reference; verification pending.
-
-### ICO data-security guidance
-
-<a id="ref-50823cb6"></a>
-
-[ICO data-security guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/a-guide-to-data-security/) — imported reference; verification pending.
-
-### WHATWG Notifications
-
-<a id="ref-5dadc7d0"></a>
-
-[WHATWG Notifications](https://notifications.spec.whatwg.org/) — imported reference; verification pending.
-
-### Open Graph
-
-<a id="ref-c969b641"></a>
-
-[Open Graph](https://ogp.me/) — imported reference; verification pending.
-
-### OpenID FAPI 2.0
-
-<a id="ref-9cedeefb"></a>
-
-[OpenID FAPI 2.0](https://openid.net/specs/fapi-security-profile-2_0-final.html) — imported reference; verification pending.
-
-### OpenTelemetry (2)
-
-<a id="ref-8c05667e"></a>
-
-[OpenTelemetry](https://opentelemetry.io/docs/specs/otel/overview/) — imported reference; verification pending.
-
-### OpenTelemetry semantic conventions
-
-<a id="ref-d7676645"></a>
-
-[OpenTelemetry semantic conventions](https://opentelemetry.io/docs/specs/semconv/) — imported reference; verification pending.
-
-### OpenTelemetry messaging conventions
-
-<a id="ref-78b1a8a5"></a>
-
-[OpenTelemetry messaging conventions](https://opentelemetry.io/docs/specs/semconv/messaging/messaging-spans/) — imported reference; verification pending.
-
-### Google SRE monitoring guidance
-
-<a id="ref-5e93abcb"></a>
-
-[Google SRE monitoring guidance](https://sre.google/sre-book/monitoring-distributed-systems/) — imported reference; verification pending.
-
-### UK Open Banking Standard
-
-<a id="ref-7eef8d31"></a>
-
-[UK Open Banking Standard](https://standards.openbanking.org.uk/api-specifications/latest/) — imported reference; verification pending.
-
-### WHATWG URL
-
-<a id="ref-021179e7"></a>
-
-[WHATWG URL](https://url.spec.whatwg.org/) — imported reference; verification pending.
-
-### Core Web Vitals (2)
-
-<a id="ref-229d560d"></a>
-
-[Core Web Vitals](https://web.dev/articles/vitals) — imported reference; verification pending.
-
-### AsyncAPI 3.x
-
-<a id="ref-76d90ef6"></a>
-
-[AsyncAPI 3.x](https://www.asyncapi.com/docs/reference/specification/v3.0.0) — imported reference; verification pending.
-
-### Bing
-
-<a id="ref-37f342be"></a>
-
-[Bing](https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a) — imported reference; verification pending.
-
-### Payment Tokenisation
-
-<a id="ref-cde18d45"></a>
-
-[Payment Tokenisation](https://www.emvco.com/emv-technologies/payment-tokenisation/) — imported reference; verification pending.
-
-### ETSI EN 301 549 (2)
-
-<a id="ref-caa40c51"></a>
-
-[ETSI EN 301 549](https://www.etsi.org/technologies/ict-accessibility) — imported reference; verification pending.
-
-### IANA time-zone database
-
-<a id="ref-5a0024a4"></a>
-
-[IANA time-zone database](https://www.iana.org/time-zones) — imported reference; verification pending.
-
-### IndexNow
-
-<a id="ref-f4f8b700"></a>
-
-[IndexNow](https://www.indexnow.org/documentation) — imported reference; verification pending.
-
-### ISO 20022
-
-<a id="ref-6150761d"></a>
-
-[ISO 20022](https://www.iso.org/standard/20022-1) — imported reference; verification pending.
-
-### 27018:2025
-
-<a id="ref-3ffc7c99"></a>
-
-[27018:2025](https://www.iso.org/standard/27018) — imported reference; verification pending.
-
-### ISO/IEC 19464:2014 / OASIS AMQP 1.0
-
-<a id="ref-4c835871"></a>
-
-[ISO/IEC 19464:2014 / OASIS AMQP 1.0](https://www.iso.org/standard/64955.html) — imported reference; verification pending.
-
-### ISO 22313
-
-<a id="ref-bf79b3b2"></a>
-
-[ISO 22313](https://www.iso.org/standard/75107.html) — imported reference; verification pending.
-
-### ISO 8583:2023
-
-<a id="ref-eb08ffb2"></a>
-
-[ISO 8583:2023](https://www.iso.org/standard/79451.html) — imported reference; verification pending.
-
-### ISO/IEC 27040:2024 (2)
-
-<a id="ref-e80bacde"></a>
-
-[ISO/IEC 27040:2024](https://www.iso.org/standard/80194.html) — imported reference; verification pending.
-
-### UK Payment Services Regulations 2017
-
-<a id="ref-23a0a60a"></a>
-
-[UK Payment Services Regulations 2017](https://www.legislation.gov.uk/uksi/2017/752/contents) — imported reference; verification pending.
-
-### UK NCSC cloud audit/alert guidance
-
-<a id="ref-7ea0e60c"></a>
-
-[UK NCSC cloud audit/alert guidance](https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles/principle-13-audit-information-and-alerting-for-customers) — imported reference; verification pending.
-
-### UK NCSC (2)
-
-<a id="ref-0eb55a83"></a>
-
-[UK NCSC](https://www.ncsc.gov.uk/guidance/introduction-logging-security-purposes) — imported reference; verification pending.
-
-### OASIS CAP 1.2
-
-<a id="ref-375d555d"></a>
-
-[OASIS CAP 1.2](https://www.oasis-open.org/standard/cap/) — imported reference; verification pending.
-
-### PCI DSS v4.0.1
-
-<a id="ref-a1ea0e98"></a>
-
-[PCI DSS v4.0.1](https://www.pcisecuritystandards.org/document_library/?class=pcidss&doc=pci_dss) — imported reference; verification pending.
-
-### PCI Secure Software
-
-<a id="ref-fce3c8df"></a>
-
-[PCI Secure Software](https://www.pcisecuritystandards.org/standards/secure-software/) — imported reference; verification pending.
-
-### PostgreSQL full-text search
-
-<a id="ref-9e6cf77c"></a>
-
-[PostgreSQL full-text search](https://www.postgresql.org/docs/current/textsearch.html) — imported reference; verification pending.
-
-### PSR / Pay.UK
-
-<a id="ref-1aaf2ddd"></a>
-
-[PSR / Pay.UK](https://www.psr.org.uk/) — imported reference; verification pending.
-
-### IETF BCP 47
-
-<a id="ref-9d75fa93"></a>
-
-[IETF BCP 47](https://www.rfc-editor.org/info/bcp47/) — imported reference; verification pending.
-
-### RFC 5322
-
-<a id="ref-f42f5514"></a>
-
-[RFC 5322](https://www.rfc-editor.org/info/rfc5322/) — imported reference; verification pending.
-
-### RFC 5545
-
-<a id="ref-f49deb57"></a>
-
-[RFC 5545](https://www.rfc-editor.org/info/rfc5545/) — imported reference; verification pending.
-
-### BCP 47 (4)
-
-<a id="ref-6620842f"></a>
-
-[BCP 47](https://www.rfc-editor.org/info/rfc5646/) — imported reference; verification pending.
-
-### 6376 — www.rfc-editor.org/info/rfc6376
-
-<a id="ref-b9a1b306"></a>
-
-[6376](https://www.rfc-editor.org/info/rfc6376/) — imported reference; verification pending.
-
-### 7208 — www.rfc-editor.org/info/rfc7208
-
-<a id="ref-6cfd91a7"></a>
-
-[7208](https://www.rfc-editor.org/info/rfc7208/) — imported reference; verification pending.
-
-### 7489 — www.rfc-editor.org/info/rfc7489
-
-<a id="ref-600abcac"></a>
-
-[7489](https://www.rfc-editor.org/info/rfc7489/) — imported reference; verification pending.
-
-### RFC 8030
-
-<a id="ref-a70c074d"></a>
-
-[RFC 8030](https://www.rfc-editor.org/info/rfc8030/) — imported reference; verification pending.
-
-### 8058 — www.rfc-editor.org/info/rfc8058
-
-<a id="ref-34d79423"></a>
-
-[8058](https://www.rfc-editor.org/info/rfc8058/) — imported reference; verification pending.
-
-### 8291 — www.rfc-editor.org/info/rfc8291
-
-<a id="ref-b4f08a24"></a>
-
-[8291](https://www.rfc-editor.org/info/rfc8291/) — imported reference; verification pending.
-
-### 8292 — www.rfc-editor.org/info/rfc8292
-
-<a id="ref-d4f2fb1b"></a>
-
-[8292](https://www.rfc-editor.org/info/rfc8292/) — imported reference; verification pending.
-
-### RFC 9557 (3)
-
-<a id="ref-9347444a"></a>
-
-[RFC 9557](https://www.rfc-editor.org/info/rfc9557/) — imported reference; verification pending.
-
-### RFC 9562 (2)
-
-<a id="ref-fa03258e"></a>
-
-[RFC 9562](https://www.rfc-editor.org/info/rfc9562/) — imported reference; verification pending.
-
-### RFC 1034
-
-<a id="ref-1c93287e"></a>
-
-[RFC 1034](https://www.rfc-editor.org/rfc/rfc1034) — imported reference; verification pending.
-
-### 1035 — www.rfc-editor.org/rfc/rfc1035
-
-<a id="ref-1d932a11"></a>
-
-[1035](https://www.rfc-editor.org/rfc/rfc1035) — imported reference; verification pending.
-
-### 2181 — www.rfc-editor.org/rfc/rfc2181
-
-<a id="ref-0fd9b392"></a>
-
-[2181](https://www.rfc-editor.org/rfc/rfc2181) — imported reference; verification pending.
-
-### IETF RFC 3986
-
-<a id="ref-b9ddc4d9"></a>
-
-[IETF RFC 3986](https://www.rfc-editor.org/rfc/rfc3986.html) — imported reference; verification pending.
-
-### 4033–4035
-
-<a id="ref-db921862"></a>
-
-[4033–4035](https://www.rfc-editor.org/rfc/rfc4033) — imported reference; verification pending.
-
-### 5890–5892
-
-<a id="ref-8f0b568c"></a>
-
-[5890–5892](https://www.rfc-editor.org/rfc/rfc5890) — imported reference; verification pending.
-
-### 7239 — www.rfc-editor.org/rfc/rfc7239
-
-<a id="ref-65408751"></a>
-
-[7239](https://www.rfc-editor.org/rfc/rfc7239) — imported reference; verification pending.
-
-### 8555 — www.rfc-editor.org/rfc/rfc8555
-
-<a id="ref-c53bb7e9"></a>
-
-[8555](https://www.rfc-editor.org/rfc/rfc8555) — imported reference; verification pending.
-
-### 8659 — www.rfc-editor.org/rfc/rfc8659
-
-<a id="ref-bb29113c"></a>
-
-[8659](https://www.rfc-editor.org/rfc/rfc8659) — imported reference; verification pending.
-
-### RFC 8820
-
-<a id="ref-ba61cc61"></a>
-
-[RFC 8820](https://www.rfc-editor.org/rfc/rfc8820.html) — imported reference; verification pending.
-
-### 9111 — www.rfc-editor.org/rfc/rfc9111.html
-
-<a id="ref-b67b8213"></a>
-
-[9111](https://www.rfc-editor.org/rfc/rfc9111.html) — imported reference; verification pending.
-
-### IETF RFC 9309
-
-<a id="ref-959f05ca"></a>
-
-[IETF RFC 9309](https://www.rfc-editor.org/rfc/rfc9309.html) — imported reference; verification pending.
-
-### 9525 — www.rfc-editor.org/rfc/rfc9525
-
-<a id="ref-08c3b037"></a>
-
-[9525](https://www.rfc-editor.org/rfc/rfc9525) — imported reference; verification pending.
-
-### RFC 9846
-
-<a id="ref-4e38ad63"></a>
-
-[RFC 9846](https://www.rfc-editor.org/rfc/rfc9846) — imported reference; verification pending.
-
-### Sitemaps.org
-
-<a id="ref-ce86e469"></a>
-
-[Sitemaps.org](https://www.sitemaps.org/protocol.html) — imported reference; verification pending.
-
-### Payment Request
-
-<a id="ref-ea124a00"></a>
-
-[Payment Request](https://www.w3.org/TR/payment-request/) — imported reference; verification pending.
-
-### W3C Push API
-
-<a id="ref-9a875aab"></a>
-
-[W3C Push API](https://www.w3.org/TR/push-api/) — imported reference; verification pending.
-
-### Payment Handler
-
-<a id="ref-790384d0"></a>
-
-[Payment Handler](https://www.w3.org/TR/web-based-payment-handler/) — imported reference; verification pending.
+## External resource register
+
+Entries with unresolved dates, mutable addresses or candidate status do not establish reviewed authority. Revision dates for source snapshots identify the pinned commit; publication dates for dated guidance are not proof of an immutable revision.
+
+| pageRef | linkAddress | Description | publicationStatus | revisionDate |
+| --- | --- | --- | --- | --- |
+| <a id="dagrejsgraphlib"></a><a id="ref-6629c3fb"></a>@dagrejs/graphlib | [https://github.com/dagrejs/graphlib/tree/b68a0f9131f35ce08b59a66f37b90e7d2de792e6](https://github.com/dagrejs/graphlib/tree/b68a0f9131f35ce08b59a66f37b90e7d2de792e6) | Graph data structures and graph algorithms for JavaScript. | Source Revision | 2026-11-24 |
+| <a id="js-temporalpolyfill"></a><a id="ref-6bd89188"></a>@js-temporal/polyfill | [https://github.com/js-temporal/temporal-polyfill/tree/c55b211de913320d8aba32c456bb45914739f414](https://github.com/js-temporal/temporal-polyfill/tree/c55b211de913320d8aba32c456bb45914739f414) | Polyfill for JavaScript Temporal date, time, duration and time-zone APIs. | Source Revision | 2026-09-22 |
+| <a id="nuxtjsrobots"></a><a id="ref-9c8f6e26"></a>@nuxtjs/robots | [https://github.com/nuxt-modules/robots/tree/9f996286f618b31dd102cd28798aea2ddc2340fd](https://github.com/nuxt-modules/robots/tree/9f996286f618b31dd102cd28798aea2ddc2340fd) | Nuxt integration for robots.txt and search crawler directives. | Source Revision | 2026-11-25 |
+| <a id="nuxtjsseo"></a><a id="ref-a49dd971"></a>@nuxtjs/seo | [https://github.com/harlan-zw/nuxt-seo/tree/727238fffa2a36ad4b077f002a48de2077a385fa](https://github.com/harlan-zw/nuxt-seo/tree/727238fffa2a36ad4b077f002a48de2077a385fa) | Search engine optimisation tooling for Nuxt. | Source Revision | 2026-11-25 |
+| <a id="nuxtjssitemap"></a><a id="ref-8b56e466"></a>@nuxtjs/sitemap | [https://github.com/nuxt-modules/sitemap/tree/7b2204bfd9e68964539d2ebd5820e804d39edc8f](https://github.com/nuxt-modules/sitemap/tree/7b2204bfd9e68964539d2ebd5820e804d39edc8f) | Nuxt integration for generating XML sitemaps. | Source Revision | 2026-11-25 |
+| <a id="zxingbrowser"></a><a id="ref-14347dfe"></a>@zxing/browser | [https://github.com/zxing-js/browser/tree/9ad027d88d4533bd6d29f9d8d7e517e23cd361ff](https://github.com/zxing-js/browser/tree/9ad027d88d4533bd6d29f9d8d7e517e23cd361ff) | Browser barcode scanning integration for images and cameras. | Source Revision | 2026-07-06 |
+| <a id="zxinglibrary"></a><a id="ref-fd11603d"></a>@zxing/library | [https://github.com/zxing-js/library/tree/1722d0744fb5e8b47aebfbeb2b648e17c95e8595](https://github.com/zxing-js/library/tree/1722d0744fb5e8b47aebfbeb2b648e17c95e8595) | JavaScript decoding of supported linear and two-dimensional barcodes. | Source Revision | 2026-04-29 |
+| <a id="1edtech-comprehensive-learner-record"></a><a id="clr"></a><a id="ref-02f6e2d9"></a>1EdTech Comprehensive Learner Record | [https://standards.1edtech.org/clr/](https://standards.1edtech.org/clr/) | Interoperable learner records aggregating educational achievements and related credential assertions. | Standards Collection (edition unresolved) | Not established |
+| <a id="1edtech-opencase"></a><a id="ref-9c4e92f0"></a>1EdTech OpenCASE | [https://github.com/1EdTech/OpenCASE/tree/92a49ea528e4960f4ff32f9454a499a46d7afc2a](https://github.com/1EdTech/OpenCASE/tree/92a49ea528e4960f4ff32f9454a499a46d7afc2a) | Open implementation resources for exchanging competency and academic standards information. | Source Revision | 2026-11-23 |
+| <a id="acas-working-time-rules"></a><a id="acas"></a><a id="ref-4e72a703"></a>Acas Working Time Rules | [https://www.acas.org.uk/working-time-rules](https://www.acas.org.uk/working-time-rules) | Employment guidance on working hours, rest breaks and applicable working time rules. | Guidance (mutable) | Not established |
+| <a id="activity-streams-20"></a><a id="activitystreams-20"></a><a id="ref-c75695ba"></a>Activity Streams 2.0 | [https://www.w3.org/TR/2017/REC-activitystreams-core-20170523/](https://www.w3.org/TR/2017/REC-activitystreams-core-20170523/) | JSON data model for describing actions, actors and objects in activity feeds. | Recommendation | 2017-05-23 |
+| <a id="activitypub"></a><a id="ref-b5b42c56"></a>ActivityPub | [https://www.w3.org/TR/2018/REC-activitypub-20180123/](https://www.w3.org/TR/2018/REC-activitypub-20180123/) | Federated social networking protocol for publishing content and exchanging activities between servers. | Recommendation | 2018-01-23 |
+| <a id="adaltasnode-csv"></a><a id="ref-a7d6e5ab"></a>adaltas/node-csv | [https://github.com/adaltas/node-csv/tree/c72cc6c89923837a38ab1fc7458d5d786ef0f16b](https://github.com/adaltas/node-csv/tree/c72cc6c89923837a38ab1fc7458d5d786ef0f16b) | Node.js CSV parsing, generation, transformation and streaming tools. | Source Revision | 2026-11-09 |
+| <a id="adobe-leonardo"></a><a id="ref-435cfa63"></a>Adobe Leonardo | [https://github.com/adobe/leonardo/tree/eb6481da40df27654ac8efa42038007f6fad2431](https://github.com/adobe/leonardo/tree/eb6481da40df27654ac8efa42038007f6fad2431) | Contrast-based colour palette generation. | Source Revision | 2026-07-08 |
+| <a id="adyen-node"></a><a id="ref-11522612"></a>Adyen Node | [https://github.com/Adyen/adyen-node-api-library/tree/1c3c3bfeaf83bbbeb0c58e6dab03fc75f62439ec](https://github.com/Adyen/adyen-node-api-library/tree/1c3c3bfeaf83bbbeb0c58e6dab03fc75f62439ec) | Node.js integration client for Adyen payment APIs. | Source Revision | 2026-11-17 |
+| <a id="ajv"></a><a id="ref-a164796d"></a>Ajv | [https://github.com/ajv-validator/ajv/tree/f177fe323420ccb23e1a79445fd470cbf80aee7c](https://github.com/ajv-validator/ajv/tree/f177fe323420ccb23e1a79445fd470cbf80aee7c) | JSON Schema validation for JavaScript and TypeScript. | Source Revision | 2026-04-24 |
+| <a id="ajv-licence"></a><a id="licence"></a><a id="ref-233e5140"></a>Ajv licence | [https://github.com/ajv-validator/ajv/blob/f177fe323420ccb23e1a79445fd470cbf80aee7c/LICENSE](https://github.com/ajv-validator/ajv/blob/f177fe323420ccb23e1a79445fd470cbf80aee7c/LICENSE) | MIT licence text at the referenced source revision, defining permissions and redistribution conditions. | Licence Text | 2026-04-24 |
+| <a id="ajv-release-v8200"></a><a id="releases"></a><a id="ref-e85dd8b4"></a>Ajv release v8.20.0 | [https://github.com/ajv-validator/ajv/releases/tag/v8.20.0](https://github.com/ajv-validator/ajv/releases/tag/v8.20.0) | Publisher release record for Ajv v8.20.0, documenting the selected published version. | Published Release | 2026-04-24 |
+| <a id="ajv-formats"></a><a id="ref-f211b530"></a>ajv-formats | [https://github.com/ajv-validator/ajv-formats/tree/4ca86d21bd07571a30178cbb3714133db6eada9a](https://github.com/ajv-validator/ajv-formats/tree/4ca86d21bd07571a30178cbb3714133db6eada9a) | Additional standard format validators for Ajv JSON Schema validation. | Source Revision | 2024-04-05 |
+| <a id="akoma-ntoso-legaldocml"></a><a id="akoma-ntoso"></a><a id="ref-330d3d9a"></a>Akoma Ntoso LegalDocML | [https://www.oasis-open.org/committees/legaldocml/](https://www.oasis-open.org/committees/legaldocml/) | Structured XML representation of legislative, judicial and parliamentary documents; specific OASIS edition unresolved. | Standards Collection (edition unresolved) | Not established |
+| <a id="amqplib"></a><a id="ref-51fa43fe"></a>amqplib | [https://github.com/amqp-node/amqplib/tree/7dc9f33afdfcfca2ce1a60c596ffc1b6b174c273](https://github.com/amqp-node/amqplib/tree/7dc9f33afdfcfca2ce1a60c596ffc1b6b174c273) | Node.js AMQP 0-9-1 messaging client. | Source Revision | 2026-11-25 |
+| <a id="ansiniso-z3919-2005-r2010"></a><a id="z3919"></a><a id="ref-0ab87b96"></a>ANSI/NISO Z39.19-2005 (R2010) | [https://www.niso.org/publications/ansiniso-z3919-2005-r2010](https://www.niso.org/publications/ansiniso-z3919-2005-r2010) | Guidelines for constructing, formatting and managing monolingual controlled vocabularies. | Reaffirmed Standard | 2010 |
+| <a id="apache-age"></a><a id="ref-0f60ec0d"></a>Apache AGE | [https://github.com/apache/age/tree/2c8be68f4559a9acb78733bbb3a2fa22c98ac80e](https://github.com/apache/age/tree/2c8be68f4559a9acb78733bbb3a2fa22c98ac80e) | PostgreSQL extension providing property graph storage and openCypher queries. | Source Revision | 2026-11-23 |
+| <a id="apache-arrow-js"></a><a id="apache-arrow-js-apache-20"></a><a id="ref-50a9f435"></a>Apache Arrow JS | [https://github.com/apache/arrow-js/tree/5aa020540217b1aef9571cd3c9473627cd909e2f](https://github.com/apache/arrow-js/tree/5aa020540217b1aef9571cd3c9473627cd909e2f) | Columnar data representation and interchange for JavaScript. | Source Revision | 2026-11-17 |
+| <a id="apache-echarts"></a><a id="ref-1aa1e4a8"></a>Apache ECharts | [https://github.com/apache/echarts/tree/34f4d927eafe251f26f63afd3aeefa30f2feba30](https://github.com/apache/echarts/tree/34f4d927eafe251f26f63afd3aeefa30f2feba30) | Interactive charts and data visualisation for web applications. | Source Revision | 2026-10-04 |
+| <a id="apache-jena"></a><a id="ref-7ab49d9e"></a>Apache Jena | [https://github.com/apache/jena/tree/b8375c286a409dcadb4d5821d888db01375f3644](https://github.com/apache/jena/tree/b8375c286a409dcadb4d5821d888db01375f3644) | Java framework for RDF storage, querying, inference and semantic data processing. | Source Revision | 2026-11-25 |
+| <a id="apache-kafka"></a><a id="ref-ba32d2a8"></a>Apache Kafka | [https://github.com/apache/kafka/tree/892ab86c1782df51fdb280af55ec77c8c9672ef7](https://github.com/apache/kafka/tree/892ab86c1782df51fdb280af55ec77c8c9672ef7) | Distributed event streaming and durable partitioned logs. | Source Revision | 2026-11-26 |
+| <a id="apache-lucene"></a><a id="ref-6f0b2c64"></a>Apache Lucene | [https://github.com/apache/lucene/tree/82cf7465bb8f9d4346c0fe6ccb868fb29fe449f0](https://github.com/apache/lucene/tree/82cf7465bb8f9d4346c0fe6ccb868fb29fe449f0) | Java indexing and information retrieval library for full-text search. | Source Revision | 2026-11-26 |
+| <a id="apache-ozone"></a><a id="ref-c9b86bd5"></a>Apache Ozone | [https://github.com/apache/ozone/tree/9a78fdaf26f45d05e27170af88d72bb37026d7e4](https://github.com/apache/ozone/tree/9a78fdaf26f45d05e27170af88d72bb37026d7e4) | Distributed object storage for large-scale data systems. | Source Revision | 2026-11-26 |
+| <a id="apache-pulsar"></a><a id="ref-fa776b67"></a>Apache Pulsar | [https://github.com/apache/pulsar/tree/6d381d0efbfbe5a807d6684f060f984dc37cd86c](https://github.com/apache/pulsar/tree/6d381d0efbfbe5a807d6684f060f984dc37cd86c) | Distributed messaging and event streaming platform. | Source Revision | 2026-11-26 |
+| <a id="apache-skywalking"></a><a id="ref-d26c7ff2"></a>Apache SkyWalking | [https://github.com/apache/skywalking/tree/28d097d8f126457b2cdd9b06b3b9a61f099cdcdd](https://github.com/apache/skywalking/tree/28d097d8f126457b2cdd9b06b3b9a61f099cdcdd) | Application performance monitoring and distributed observability. | Source Revision | 2026-11-26 |
+| <a id="apache-solr"></a><a id="ref-3a3c8cfe"></a>Apache Solr | [https://github.com/apache/solr/tree/91ef2d0d501519b3480664b671c99d0deabc4bd5](https://github.com/apache/solr/tree/91ef2d0d501519b3480664b671c99d0deabc4bd5) | Search server built on Apache Lucene. | Source Revision | 2026-11-25 |
+| <a id="apache-superset"></a><a id="apache-20"></a><a id="ref-995938e7"></a>Apache Superset | [https://github.com/apache/superset/tree/3758941b250d5c6f05e3ab2b114283932692167e](https://github.com/apache/superset/tree/3758941b250d5c6f05e3ab2b114283932692167e) | Business intelligence dashboards and interactive data exploration. | Source Revision | 2026-11-26 |
+| <a id="apm-body-of-knowledge-eighth-edition"></a><a id="apm-body-of-knowledge-8"></a><a id="ref-de28455b"></a>APM Body of Knowledge eighth edition | [https://www.apm.org.uk/book-shop/apm-body-of-knowledge-8th-edition/](https://www.apm.org.uk/book-shop/apm-body-of-knowledge-8th-edition/) | Professional knowledge and practices for project, programme and portfolio management. | Published Guide | 2025 |
+| <a id="aria-authoring-practices-guide"></a><a id="aria-apg"></a><a id="apg"></a><a id="ref-f076dce5"></a><a id="ref-54e6f5b0"></a>ARIA Authoring Practices Guide | [https://github.com/w3c/aria-practices/tree/f14b2490a6728cda85fd7feafbd148b3c3eaf038/content](https://github.com/w3c/aria-practices/tree/f14b2490a6728cda85fd7feafbd148b3c3eaf038/content) | Non-normative accessible interaction patterns, keyboard behaviour and ARIA implementation examples. | Published Guidance | 2026-11-13 |
+| <a id="ark-ui"></a><a id="ref-7d9e57d5"></a>Ark UI | [https://github.com/chakra-ui/ark/tree/8f309fba594ad66f23380945240522630e51481a](https://github.com/chakra-ui/ark/tree/8f309fba594ad66f23380945240522630e51481a) | Headless interface components across supported frameworks. | Source Revision | 2026-11-26 |
+| <a id="arquero"></a><a id="arquero-bsd-3"></a><a id="ref-f1b942ab"></a>Arquero | [https://github.com/uwdata/arquero/tree/b80c2f6cd533b4c4fd8907de6724d62b962ae496](https://github.com/uwdata/arquero/tree/b80c2f6cd533b4c4fd8907de6724d62b962ae496) | JavaScript tabular data transformation and query operations. | Source Revision | 2026-11-16 |
+| <a id="asyncapi-300"></a><a id="asyncapi"></a><a id="ref-97b55c12"></a><a id="asyncapi-3x"></a><a id="ref-76d90ef6"></a>AsyncAPI 3.0.0 | [https://www.asyncapi.com/docs/reference/specification/v3.0.0](https://www.asyncapi.com/docs/reference/specification/v3.0.0) | Machine-readable descriptions of message-driven APIs, channels, operations and messages. | Published Specification | 2023-12-05 |
+| <a id="atag-20"></a><a id="ref-9dbe26fd"></a>ATAG 2.0 | [https://www.w3.org/TR/2015/REC-ATAG20-20150924/](https://www.w3.org/TR/2015/REC-ATAG20-20150924/) | Accessibility guidelines for authoring tools and their support for creating accessible content. | Recommendation | 2015-09-24 |
+| <a id="aws-sdk-for-javascript-v3"></a><a id="aws-sdkclient-s3-and-aws-sdks3-request-presigner"></a><a id="ref-4c3ccc5f"></a>AWS SDK for JavaScript v3 | [https://github.com/aws/aws-sdk-js-v3/tree/52cc2b5879170fc8478f603804df5608a25e40c0](https://github.com/aws/aws-sdk-js-v3/tree/52cc2b5879170fc8478f603804df5608a25e40c0) | Modular AWS JavaScript clients including S3 and signed request utilities. | Source Revision | 2026-11-26 |
+| <a id="aws-sdk-lib-storage"></a><a id="aws-sdklib-storage"></a><a id="ref-aff2a60c"></a>AWS SDK lib-storage | [https://github.com/aws/aws-sdk-js-v3/tree/52cc2b5879170fc8478f603804df5608a25e40c0/lib/lib-storage](https://github.com/aws/aws-sdk-js-v3/tree/52cc2b5879170fc8478f603804df5608a25e40c0/lib/lib-storage) | Managed multipart uploads to S3-compatible storage from JavaScript. | Source Revision | 2026-11-26 |
+| <a id="axe-core"></a><a id="ref-802ea31e"></a>axe-core | [https://github.com/dequelabs/axe-core/tree/32d9bd503128d4b52d818ca89140c1debe5d70d5](https://github.com/dequelabs/axe-core/tree/32d9bd503128d4b52d818ca89140c1debe5d70d5) | Automated accessibility checks for web content. | Source Revision | 2026-11-23 |
+| <a id="bigjs"></a><a id="ref-fcbb731f"></a>big.js | [https://github.com/MikeMcl/big.js/tree/cdbc06f1d5ae9be429b97f433ee884cf9ad28072](https://github.com/MikeMcl/big.js/tree/cdbc06f1d5ae9be429b97f433ee884cf9ad28072) | Arbitrary-precision decimal arithmetic in JavaScript. | Source Revision | 2025-04-22 |
+| <a id="bing-webmaster-guidelines"></a><a id="bing"></a><a id="ref-37f342be"></a>Bing Webmaster Guidelines | [https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a](https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a) | Search indexing, crawler access and website quality guidance for Bing. | Technical Guidance (mutable) | Not established |
+| <a id="bitstring-status-list-10"></a><a id="status-list"></a><a id="ref-9e32bc04"></a>Bitstring Status List 1.0 | [https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/](https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/) | Compact credential status representation for publishing suspension and revocation information. | Recommendation | 2025-05-15 |
+| <a id="bpmn-js"></a><a id="ref-a01cd8e1"></a>bpmn-js | [https://github.com/bpmn-io/bpmn-js/tree/3327bcf5c823dd45c43c0936eceaf046181b6869](https://github.com/bpmn-io/bpmn-js/tree/3327bcf5c823dd45c43c0936eceaf046181b6869) | Browser-based BPMN diagram rendering and modelling. | Source Revision | 2026-11-23 |
+| <a id="bpmn-moddle"></a><a id="ref-9e223261"></a>bpmn-moddle | [https://github.com/bpmn-io/bpmn-moddle/tree/6288b948a74ac871870763787e5d37fe02df28d3](https://github.com/bpmn-io/bpmn-moddle/tree/6288b948a74ac871870763787e5d37fe02df28d3) | BPMN 2.0 XML parsing and serialisation using a metamodel. | Source Revision | 2026-11-17 |
+| <a id="braintree-node"></a><a id="ref-1cda7aeb"></a>Braintree Node | [https://github.com/braintree/braintree_node/tree/5d24276b0a8345735c657c45af13b93af40e945d](https://github.com/braintree/braintree_node/tree/5d24276b0a8345735c657c45af13b93af40e945d) | Node.js client for Braintree payment processing. | Source Revision | 2026-10-19 |
+| <a id="bsi-standards-organisation"></a><a id="bsi"></a><a id="ref-0ecd8c5c"></a>BSI Standards Organisation | [https://www.bsigroup.com/](https://www.bsigroup.com/) | British standards body providing standards information and conformity assessment services; particular publication unresolved. | Publisher Portal (mutable) | Not established |
+| <a id="buildingsmart-ifc"></a><a id="ref-8e0ec5a1"></a><a id="iso-16739--buildingsmart-ifc"></a><a id="ref-61020f1c"></a>buildingSMART IFC | [https://technical.buildingsmart.org/standards/ifc/](https://technical.buildingsmart.org/standards/ifc/) | Industry Foundation Classes data model for exchanging building and infrastructure information; specific schema edition unresolved. | Standards Collection (edition unresolved) | Not established |
+| <a id="bwip-js"></a><a id="ref-873f55c9"></a>bwip-js | [https://github.com/metafloor/bwip-js/tree/4dcf6129ba4bcd7de760e7bd4e400bca11473ccf](https://github.com/metafloor/bwip-js/tree/4dcf6129ba4bcd7de760e7bd4e400bca11473ccf) | Generates linear and two-dimensional barcodes. | Source Revision | 2026-08-19 |
+| <a id="caddy"></a><a id="ref-f27c50a1"></a>Caddy | [https://github.com/caddyserver/caddy/tree/679806f92d49e5b494200f2e90a93f228203a418](https://github.com/caddyserver/caddy/tree/679806f92d49e5b494200f2e90a93f228203a418) | Web server and reverse proxy with automatic HTTPS. | Source Revision | 2026-11-24 |
+| <a id="casbin"></a><a id="ref-0bce4034"></a>Casbin | [https://github.com/apache/casbin-node-casbin/tree/1a163fcf7228c1bdaa3509811da40a972da3c230](https://github.com/apache/casbin-node-casbin/tree/1a163fcf7228c1bdaa3509811da40a972da3c230) | Node.js policy-based access control supporting configurable authorisation models. | Source Revision | 2026-11-26 |
+| <a id="casl"></a><a id="ref-6c39db3b"></a>CASL | [https://github.com/stalniy/casl/tree/b3e48c4812505cea798f40e0d3dfe22d691970bc](https://github.com/stalniy/casl/tree/b3e48c4812505cea798f40e0d3dfe22d691970bc) | Declarative ability-based authorisation for JavaScript applications. | Source Revision | 2026-11-24 |
+| <a id="cen-en-16931-e-invoicing-overview"></a><a id="cen-en-16931"></a><a id="ref-58965163"></a>CEN EN 16931 E-invoicing Overview | [https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/einvoicing_en](https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/einvoicing_en) | European electronic invoicing semantic standard overview and implementation context; not the normative standard text. | Government Guidance (mutable) | Not established |
+| <a id="chartjs"></a><a id="ref-54c6128e"></a>Chart.js | [https://github.com/chartjs/Chart.js/tree/1a70769f70c2860641ac92d229d98152683cf14e](https://github.com/chartjs/Chart.js/tree/1a70769f70c2860641ac92d229d98152683cf14e) | Canvas-based charts and interactive data visualisation. | Source Revision | 2026-11-26 |
+| <a id="china-national-network-identity-authentication-public-service-measures"></a><a id="official-cac-measures"></a><a id="ref-0b3f1644"></a>China National Network Identity Authentication Public Service Measures | [https://www.cac.gov.cn/2025-05/23/c_1749711107835487.htm](https://www.cac.gov.cn/2025-05/23/c_1749711107835487.htm) | Measures governing the national network identity authentication public service in China. | Published Regulatory Measures | 2025-05-23 |
+| <a id="cloudflare-network-time-security"></a><a id="cloudflare-nts"></a><a id="ref-920dfdb7"></a>Cloudflare Network Time Security | [https://developers.cloudflare.com/time-services/nts/](https://developers.cloudflare.com/time-services/nts/) | Documentation for authenticated network time synchronisation using NTS. | Service Documentation (mutable) | Not established |
+| <a id="cma-fake-reviews-guidance"></a><a id="ref-ad11aaa1"></a>CMA Fake Reviews Guidance | [https://www.gov.uk/government/publications/fake-reviews](https://www.gov.uk/government/publications/fake-reviews) | Consumer protection guidance on preventing and addressing fake reviews. | Regulatory Guidance (mutable) | 2025-04-04 |
+| <a id="cma-mandatory-delivery-fee-letter"></a><a id="cma-mandatory-delivery-fee-guidance"></a><a id="ref-3c694c71"></a>CMA Mandatory Delivery Fee Letter | [https://www.gov.uk/government/publications/online-retailers-including-mandatory-delivery-fees-in-the-total-price](https://www.gov.uk/government/publications/online-retailers-including-mandatory-delivery-fees-in-the-total-price) | Open letter on upfront inclusion of mandatory delivery charges in total prices. | Published Correspondence (mutable) | 2026-11-02 |
+| <a id="cma207-unfair-commercial-practices"></a><a id="dmcc-act-2024cma"></a><a id="ref-f4839874"></a>CMA207 Unfair Commercial Practices | [https://www.gov.uk/government/publications/unfair-commercial-practices-cma207/unfair-commercial-practices](https://www.gov.uk/government/publications/unfair-commercial-practices-cma207/unfair-commercial-practices) | Guidance on prohibited commercial practices, misleading information and professional diligence. | Regulatory Guidance (mutable) | 2025-11-18 |
+| <a id="cma209-price-transparency"></a><a id="cma209-price-transparency-guidance"></a><a id="ref-9af3c221"></a>CMA209 Price Transparency | [https://www.gov.uk/government/publications/price-transparency-cma209](https://www.gov.uk/government/publications/price-transparency-cma209) | Mandatory charge disclosure and avoidance of drip and partitioned pricing. | Regulatory Guidance (mutable) | 2025-11-18 |
+| <a id="cncf-cloudevents-102"></a><a id="cloudevents"></a><a id="ref-de31eb79"></a><a id="cloudevents-2"></a><a id="ref-4a330c79"></a><a id="ref-dc71931f"></a>CNCF CloudEvents 1.0.2 | [https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md](https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md) | Common event metadata and interoperable event representation across transport protocols. | Published Specification | 2022-02-03 |
+| <a id="colorjs"></a><a id="ref-5cd843eb"></a>Color.js | [https://github.com/color-js/color.js/tree/73cab558d3f15a081f3695e8702a03523cad0ee9](https://github.com/color-js/color.js/tree/73cab558d3f15a081f3695e8702a03523cad0ee9) | Colour space conversion, interpolation and colour calculations. | Source Revision | 2026-11-24 |
+| <a id="colord"></a><a id="ref-af31f265"></a>Colord | [https://github.com/omgovich/colord/tree/42528dbb117310881426a0d82cd6f36775c64884](https://github.com/omgovich/colord/tree/42528dbb117310881426a0d82cd6f36775c64884) | Colour parsing, conversion and manipulation. | Source Revision | 2026-11-26 |
+| <a id="colyseus"></a><a id="ref-8cbc6f4a"></a>Colyseus | [https://github.com/colyseus/colyseus/tree/8ddb8531da217eb100054fd8d869cf109cbc72ce](https://github.com/colyseus/colyseus/tree/8ddb8531da217eb100054fd8d869cf109cbc72ce) | Multiplayer game server framework and synchronised room state. | Source Revision | 2026-11-25 |
+| <a id="comunica"></a><a id="ref-6c3e4b82"></a>Comunica | [https://github.com/comunica/comunica/tree/02d4ceba8cd9482ca7ae3906c65efeaca39ea4a5](https://github.com/comunica/comunica/tree/02d4ceba8cd9482ca7ae3906c65efeaca39ea4a5) | Modular SPARQL query engine for distributed and local RDF sources. | Source Revision | 2026-11-25 |
+| <a id="contentauthc2pa-rs"></a><a id="ref-b0c3f033"></a>contentauth/c2pa-rs | [https://github.com/contentauth/c2pa-rs/tree/adf4d6f21be3e0b89679b1a496aea7924bbe5ba4](https://github.com/contentauth/c2pa-rs/tree/adf4d6f21be3e0b89679b1a496aea7924bbe5ba4) | Rust implementation for creating and validating C2PA content provenance manifests. | Source Revision | 2026-11-26 |
+| <a id="convert-units"></a><a id="ref-443004fe"></a>convert-units | [https://github.com/convert-units/convert-units/tree/f2b0cb4fdf2d449a1bc8fc68c65ba866f72dc9e7](https://github.com/convert-units/convert-units/tree/f2b0cb4fdf2d449a1bc8fc68c65ba866f72dc9e7) | Converts quantities between supported units of measurement. | Source Revision | 2026-07-19 |
+| <a id="credo"></a><a id="ref-7ce15ee8"></a>Credo | [https://github.com/openwallet-foundation/credo-ts/tree/4a8f28bf15c0517e0ad22ba37344fbfbad34ba73](https://github.com/openwallet-foundation/credo-ts/tree/4a8f28bf15c0517e0ad22ba37344fbfbad34ba73) | TypeScript framework for digital identity agents and credential exchange. | Source Revision | 2026-11-26 |
+| <a id="cron-parser"></a><a id="ref-e8ea8aef"></a>cron-parser | [https://github.com/harrisiirak/cron-parser/tree/d18d49cc7c53ffcd32fe68752066bc1bf6a4e8fa](https://github.com/harrisiirak/cron-parser/tree/d18d49cc7c53ffcd32fe68752066bc1bf6a4e8fa) | Cron expression parsing and schedule occurrence calculation. | Source Revision | 2026-11-26 |
+| <a id="croner"></a><a id="ref-436c9335"></a>Croner | [https://github.com/Hexagon/croner/tree/bee697a8f9631fec3a27cb47185674ca7e3802dc](https://github.com/Hexagon/croner/tree/bee697a8f9631fec3a27cb47185674ca7e3802dc) | JavaScript cron scheduling and expression evaluation. | Source Revision | 2026-11-14 |
+| <a id="csa-cloud-controls-matrix-v41"></a><a id="csa-ccm-41"></a><a id="ref-08c52c06"></a>CSA Cloud Controls Matrix v4.1 | [https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1](https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1) | Cloud security controls and associated assessment questionnaire for cloud assurance. | Published Framework | 2026-01 |
+| <a id="css-color-adjustment-level-1"></a><a id="css-color-adjustment"></a><a id="ref-0faec43f"></a>CSS Color Adjustment Level 1 | [https://www.w3.org/TR/2025/CR-css-color-adjust-1-20251216/](https://www.w3.org/TR/2025/CR-css-color-adjust-1-20251216/) | Candidate Recommendation Snapshot defining browser colour adjustment, colour schemes and forced-colour preferences. | Candidate Recommendation Snapshot | 2025-12-16 |
+| <a id="css-color-level-4"></a><a id="css-color-4"></a><a id="ref-a582bbf2"></a>CSS Color Level 4 | [https://www.w3.org/TR/2026/CRD-css-color-4-20261123/](https://www.w3.org/TR/2026/CRD-css-color-4-20261123/) | Candidate Recommendation Draft defining colour values, colour spaces, interpolation and gamut mapping. | Candidate Recommendation Draft | 2026-11-23 |
+| <a id="css-custom-properties-level-1"></a><a id="w3c-css-custom-properties"></a><a id="ref-63ef0de9"></a>CSS Custom Properties Level 1 | [https://www.w3.org/TR/2022/CR-css-variables-1-20220616/](https://www.w3.org/TR/2022/CR-css-variables-1-20220616/) | Candidate Recommendation Snapshot defining cascading custom properties and variable substitution in CSS. | Candidate Recommendation Snapshot | 2022-06-16 |
+| <a id="csvw-metadata-vocabulary"></a><a id="csvw"></a><a id="ref-f6e15c97"></a>CSVW Metadata Vocabulary | [https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/](https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/) | Metadata vocabulary for interpreting, validating and transforming tabular data. | Recommendation | 2015-12-17 |
+| <a id="culori"></a><a id="ref-2150b3bd"></a>Culori | [https://github.com/danburzo/culori/tree/66f00498ca04b2b4a4b11a55561c2522b573e6b9](https://github.com/danburzo/culori/tree/66f00498ca04b2b4a4b11a55561c2522b573e6b9) | JavaScript colour conversion, interpolation, difference and blending operations. | Source Revision | 2026-11-04 |
+| <a id="cure53dompurify"></a><a id="ref-975d5876"></a>cure53/DOMPurify | [https://github.com/cure53/DOMPurify/tree/ae76059e4c91285e297567b898d73a0e246498d8](https://github.com/cure53/DOMPurify/tree/ae76059e4c91285e297567b898d73a0e246498d8) | Sanitises HTML, SVG and MathML to mitigate cross-site scripting. | Source Revision | 2026-11-24 |
+| <a id="cytoscapejs"></a><a id="ref-b58f56eb"></a>Cytoscape.js | [https://github.com/cytoscape/cytoscape.js/tree/b768734100fa49d24f5652361e4f2f3bdbcbce86](https://github.com/cytoscape/cytoscape.js/tree/b768734100fa49d24f5652361e4f2f3bdbcbce86) | Graph visualisation, layout and analysis for JavaScript applications. | Source Revision | 2026-11-10 |
+| <a id="dagre"></a><a id="ref-41707161"></a>Dagre | [https://github.com/dagrejs/dagre/tree/29db69b74d65c494aafb4364a1cef65704f67552](https://github.com/dagrejs/dagre/tree/29db69b74d65c494aafb4364a1cef65704f67552) | Automatic directed graph layout for diagram visualisation. | Source Revision | 2026-11-24 |
+| <a id="data-on-the-web-best-practices"></a><a id="ref-b37ccf4d"></a>Data on the Web Best Practices | [https://www.w3.org/TR/2017/REC-dwbp-20170131/](https://www.w3.org/TR/2017/REC-dwbp-20170131/) | Guidance for discoverable, reusable and trustworthy web data publication. | Recommendation | 2017-01-31 |
+| <a id="dcat-3"></a><a id="ref-00ce33b2"></a>DCAT 3 | [https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/](https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/) | RDF vocabulary for interoperable catalogues describing datasets, distributions and data services. | Recommendation | 2024-08-22 |
+| <a id="decentralized-identityveramo"></a><a id="ref-869a7671"></a>decentralized-identity/veramo | [https://github.com/decentralized-identity/veramo/tree/ac953d9a28db1faa57266636de7c4ed891bf1b0b](https://github.com/decentralized-identity/veramo/tree/ac953d9a28db1faa57266636de7c4ed891bf1b0b) | Modular digital identity and verifiable credential agent framework. | Source Revision | 2026-11-11 |
+| <a id="decimaljs"></a><a id="ref-992a7688"></a>decimal.js | [https://github.com/MikeMcl/decimal.js/tree/b1d1e311eb272b16f5b2ca0e0d1f4c4fa8558edf](https://github.com/MikeMcl/decimal.js/tree/b1d1e311eb272b16f5b2ca0e0d1f4c4fa8558edf) | Arbitrary-precision decimal arithmetic for JavaScript. | Source Revision | 2026-08-30 |
+| <a id="decimaljs-v1060-source"></a><a id="releases-7"></a><a id="ref-0e653797"></a>decimal.js v10.6.0 source | [https://github.com/MikeMcl/decimal.js/tree/1a6e845004b29a3b7dcef78fe92b8d786634f4e2](https://github.com/MikeMcl/decimal.js/tree/1a6e845004b29a3b7dcef78fe92b8d786634f4e2) | Version-tagged source for arbitrary-precision decimal arithmetic. | Tagged Source Revision | 2025-07-06 |
+| <a id="design-tokens-format-202510"></a><a id="w3c-design-tokens-community-group-202510"></a><a id="ref-58aea18f"></a>Design Tokens Format 2025.10 | [https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/](https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/) | Final Community Group Report defining an interoperable format for exchanging design tokens between tools. | Final Community Group Report | 2025-10-28 |
+| <a id="diagram-js"></a><a id="ref-8ca9c849"></a>diagram-js | [https://github.com/bpmn-io/diagram-js/tree/d923b5262e6ee1e51c362b56b2836cd4c4d780d1](https://github.com/bpmn-io/diagram-js/tree/d923b5262e6ee1e51c362b56b2836cd4c4d780d1) | Extensible diagram rendering and editing infrastructure. | Source Revision | 2026-11-23 |
+| <a id="digital-bazaar-vc-js"></a><a id="ref-31b4fab4"></a>Digital Bazaar vc-js | [https://github.com/digitalbazaar/vc/tree/7ddb985a67e42afeb24ef833a5b45ecb72d7771d](https://github.com/digitalbazaar/vc/tree/7ddb985a67e42afeb24ef833a5b45ecb72d7771d) | JavaScript interfaces for issuing and verifying verifiable credentials and presentations. | Source Revision | 2026-02-05 |
+| <a id="dinerojs-v2"></a><a id="ref-2390acb0"></a>Dinero.js v2 | [https://github.com/dinerojs/dinero.js/tree/76b969e519dc44675d4af898d25629995d0b16f2](https://github.com/dinerojs/dinero.js/tree/76b969e519dc44675d4af898d25629995d0b16f2) | Monetary value representation and arithmetic with currency and precision handling. | Source Revision | 2026-07-06 |
+| <a id="dmn-moddle"></a><a id="ref-0652c71f"></a>dmn-moddle | [https://github.com/bpmn-io/dmn-moddle/tree/5984f63a738eeef8fa562d625d3bec66a6a8f721](https://github.com/bpmn-io/dmn-moddle/tree/5984f63a738eeef8fa562d625d3bec66a6a8f721) | DMN XML parsing and serialisation through a decision-model metamodel. | Source Revision | 2026-11-17 |
+| <a id="drizzle-orm"></a><a id="ref-03cb5387"></a>Drizzle ORM | [https://github.com/drizzle-team/drizzle-orm/tree/3bcb6a27ec1f4f1602aeeb0af2f5aec61010d72d](https://github.com/drizzle-team/drizzle-orm/tree/3bcb6a27ec1f4f1602aeeb0af2f5aec61010d72d) | TypeScript relational database ORM and typed SQL query interfaces. | Source Revision | 2026-11-13 |
+| <a id="dublin-core-metadata-terms"></a><a id="dublin-core"></a><a id="ref-9657f4eb"></a>Dublin Core Metadata Terms | [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/) | Metadata vocabulary for identifying, describing and relating information resources. | Published Specification | 2020-01-20 |
+| <a id="duckdb"></a><a id="mit"></a><a id="ref-5a2f744a"></a>DuckDB | [https://github.com/duckdb/duckdb/tree/5e6f4fb9e29e016342351b80f17beb3d686c3c5a](https://github.com/duckdb/duckdb/tree/5e6f4fb9e29e016342351b80f17beb3d686c3c5a) | Embedded analytical SQL database for columnar query processing. | Source Revision | 2026-11-26 |
+| <a id="dxf-parser"></a><a id="ref-77137ff7"></a>dxf-parser | [https://github.com/gdsestimating/dxf-parser/tree/0df7a37a4207a1f925b8d0bfffc270ff121446b4](https://github.com/gdsestimating/dxf-parser/tree/0df7a37a4207a1f925b8d0bfffc270ff121446b4) | Parses DXF drawing files into JavaScript objects. | Source Revision | 2023-03-15 |
+| <a id="eclipse-rdf4j"></a><a id="ref-da697d6a"></a>Eclipse RDF4J | [https://github.com/eclipse-rdf4j/rdf4j/tree/e33f368d84d28941becf5249fb0a52aef426ee51](https://github.com/eclipse-rdf4j/rdf4j/tree/e33f368d84d28941becf5249fb0a52aef426ee51) | Java RDF processing framework with repositories, query and storage interfaces. | Source Revision | 2026-11-24 |
+| <a id="ecma-262-17th-edition"></a><a id="ecma-262"></a><a id="ref-a2caee72"></a>ECMA-262 17th edition | [https://ecma-international.org/publications-and-standards/standards/ecma-262/](https://ecma-international.org/publications-and-standards/standards/ecma-262/) | ECMAScript language syntax, semantics, execution and standard built-in objects. | Ecma Standard (edition-specific landing page unresolved) | 2026-06 |
+| <a id="ecma-402-13th-edition"></a><a id="ecma-402"></a><a id="ref-2632494a"></a><a id="ecma-402-2"></a><a id="ref-3b3e5ef9"></a>ECMA-402 13th edition | [https://402.ecma-international.org/13.0/](https://402.ecma-international.org/13.0/) | ECMAScript internationalisation APIs for locale-sensitive formatting, comparison and segmentation. | Ecma Standard | 2026-06 |
+| <a id="ehrc-associations-code-chapter-12"></a><a id="equality-act-2010--ehrc-associations-code-2026"></a><a id="ref-0a6f3ef2"></a>EHRC Associations Code Chapter 12 | [https://www.equalityhumanrights.com/guidance/codes-practice/code-practice-services-public-functions-and-associations/chapter-twelve](https://www.equalityhumanrights.com/guidance/codes-practice/code-practice-services-public-functions-and-associations/chapter-twelve) | Code of practice guidance relating to associations and equality duties; edition and legal status require confirmation. | Code of Practice (revision unresolved) | Not established |
+| <a id="elk"></a><a id="ref-0a6b05e3"></a>ELK | [https://github.com/liveontologies/elk-reasoner/tree/cc556787886e1ace3ccfef3423dd2a727de91053](https://github.com/liveontologies/elk-reasoner/tree/cc556787886e1ace3ccfef3423dd2a727de91053) | Reasoning engine for ontologies within the OWL EL profile. | Source Revision | 2024-07-11 |
+| <a id="embla-carousel"></a><a id="ref-d781d400"></a>Embla Carousel | [https://github.com/davidjerleke/embla-carousel/tree/0423b61463dd6f095d7aca810a49bbf194d6c291](https://github.com/davidjerleke/embla-carousel/tree/0423b61463dd6f095d7aca810a49bbf194d6c291) | Extensible carousel scrolling and interaction engine. | Source Revision | 2026-10-12 |
+| <a id="emvco-emv-3-d-secure"></a><a id="ref-c2950d2a"></a>EMVCo EMV 3-D Secure | [https://www.emvco.com/emv-technologies/3-d-secure/](https://www.emvco.com/emv-technologies/3-d-secure/) | Card-not-present payment authentication technology and specification overview. | Technology Overview (edition unresolved) | Not established |
+| <a id="emvco-payment-tokenisation"></a><a id="payment-tokenisation"></a><a id="ref-cde18d45"></a>EMVCo Payment Tokenisation | [https://www.emvco.com/emv-technologies/payment-tokenisation/](https://www.emvco.com/emv-technologies/payment-tokenisation/) | Payment token technology replacing primary account numbers with restricted-use payment identifiers. | Technology Overview (edition unresolved) | Not established |
+| <a id="etsi-en-301-549-v411"></a><a id="en-301-549"></a><a id="ref-8d4e272c"></a><a id="en-301-549-2"></a><a id="ref-19a33201"></a><a id="etsi-en-301-549"></a><a id="ref-5b23dd33"></a><a id="etsi-en-301-549-2"></a><a id="ref-caa40c51"></a>ETSI EN 301 549 v4.1.1 | [https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf) | Accessibility requirements for ICT products and services. | European Standard | 2026-09 |
+| <a id="etsi-ts-119-461-v211"></a><a id="etsi-ts-119-461"></a><a id="ref-aa9c2495"></a>ETSI TS 119 461 V2.1.1 | [https://www.etsi.org/deliver/etsi_ts/119400_119499/119461/02.01.01_60/ts_119461v020101p.pdf](https://www.etsi.org/deliver/etsi_ts/119400_119499/119461/02.01.01_60/ts_119461v020101p.pdf) | Policy and security requirements for identity proofing by trust service components. | Technical Specification | 2025-02 |
+| <a id="eu-age-verification-blueprint"></a><a id="ref-4e03dcef"></a>EU Age Verification Blueprint | [https://ec.europa.eu/digital-building-blocks/sites/pages/viewpage.action?pageId=930451135](https://ec.europa.eu/digital-building-blocks/sites/pages/viewpage.action?pageId=930451135) | European Commission implementation resources for privacy-preserving age verification. | Implementation Resource (revision unresolved) | Not established |
+| <a id="eu-consumer-rights-directive-201183eu"></a><a id="consumer-rights-directive-201183eu"></a><a id="ref-64a0157c"></a>EU Consumer Rights Directive 2011/83/EU | [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083) | Consumer information, distance contracting, withdrawal and additional payment requirements. | EU Directive (original text) | 2011-11-22 |
+| <a id="eu-digital-content-directive-eu-2019770"></a><a id="digital-content-directive-2019770"></a><a id="ref-204c0f81"></a>EU Digital Content Directive (EU) 2019/770 | [https://eur-lex.europa.eu/eli/dir/2019/770/oj](https://eur-lex.europa.eu/eli/dir/2019/770/oj) | Consumer contract conformity and remedies for digital content and digital services. | EU Directive (original text) | 2019-05-22 |
+| <a id="eu-digital-services-act-eu-20222065"></a><a id="eu-dsa"></a><a id="eu-digital-services-act"></a><a id="ref-744b86ab"></a><a id="ref-cdee1332"></a>EU Digital Services Act (EU) 2022/2065 | [https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng](https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng) | Obligations for intermediary services and online platforms, including transparency, notices and marketplace accountability. | EU Regulation (original text) | 2022-10-27 |
+| <a id="eu-ecodesign-for-sustainable-products-regulation-eu-20241781"></a><a id="ecodesign-for-sustainable-products-regulation-eu-20241781"></a><a id="ref-0bdb0938"></a>EU Ecodesign for Sustainable Products Regulation (EU) 2024/1781 | [https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng](https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng) | Framework for ecodesign requirements and digital product passports. | EU Regulation (original text) | 2024-06-28 |
+| <a id="eu-european-digital-identity-framework-amendment"></a><a id="eu-eidas-as-amended-by-regulation-eu-20241183"></a><a id="ref-b214f716"></a>EU European Digital Identity Framework Amendment | [https://eur-lex.europa.eu/eli/reg/2024/1183/oj](https://eur-lex.europa.eu/eli/reg/2024/1183/oj) | Amends Regulation 910/2014 to establish the European Digital Identity Framework and wallet requirements; consolidated base text requires separate reconciliation. | EU Regulation (original amending text) | 2024-04-30 |
+| <a id="eu-gdpr-eu-2016679"></a><a id="eu-gdpr"></a><a id="ref-240df94d"></a>EU GDPR (EU) 2016/679 | [https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/) | Personal data processing principles, individual rights, controller and processor obligations and safeguards. | EU Regulation (original text) | 2016-05-04 |
+| <a id="eu-general-product-safety-regulation-eu-2023988"></a><a id="eu-gpsr"></a><a id="ref-7dded1f0"></a>EU General Product Safety Regulation (EU) 2023/988 | [https://eur-lex.europa.eu/eli/reg/2023/988/oj/eng](https://eur-lex.europa.eu/eli/reg/2023/988/oj/eng) | General consumer product safety, traceability, recalls and online marketplace obligations. | EU Regulation (original text) | 2023-05-23 |
+| <a id="eu-price-indication-directive-986ec"></a><a id="eu-price-indication-directive-986ec-article-6a"></a><a id="ref-56467f9a"></a>EU Price Indication Directive 98/6/EC | [https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A01998L0006-20220528](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A01998L0006-20220528) | Consumer price and unit-price disclosure, including prior-price rules for reductions under Article 6a. | EU Directive (consolidated text) | 2022-05-28 |
+| <a id="eu-working-time-directive-200388ec"></a><a id="eu-directive-200388ec"></a><a id="ref-d5b5ce71"></a>EU Working Time Directive 2003/88/EC | [https://eur-lex.europa.eu/eli/dir/2003/88/oj/eng](https://eur-lex.europa.eu/eli/dir/2003/88/oj/eng) | Minimum requirements for working time, rest periods, annual leave and night work. | EU Directive (original text) | 2003-11-18 |
+| <a id="eur-lex"></a><a id="ref-c887e4a3"></a>EUR-Lex | [https://eur-lex.europa.eu/](https://eur-lex.europa.eu/) | Official access portal for European Union law and legal publications. | Reference Portal (mutable) | Not established |
+| <a id="european-accessibility-act-eu-2019882"></a><a id="european-accessibility-act-directive-2019882"></a><a id="ref-ff7812f9"></a>European Accessibility Act (EU) 2019/882 | [https://eur-lex.europa.eu/eli/dir/2019/882/oj](https://eur-lex.europa.eu/eli/dir/2019/882/oj) | Accessibility requirements for specified products and services, including electronic commerce. | EU Directive (original text) | 2019-06-07 |
+| <a id="fast-check"></a><a id="ref-ca191d3a"></a>fast-check | [https://github.com/dubzzz/fast-check/tree/f2cd0407222d320a0dfc2d794eb7d5d7c6cc1fb4](https://github.com/dubzzz/fast-check/tree/f2cd0407222d320a0dfc2d794eb7d5d7c6cc1fb4) | Property-based testing with generated inputs and counterexample shrinking. | Source Revision | 2026-11-26 |
+| <a id="fast-check-licence"></a><a id="licence-4"></a><a id="ref-ee707759"></a>fast-check licence | [https://github.com/dubzzz/fast-check/blob/f2cd0407222d320a0dfc2d794eb7d5d7c6cc1fb4/packages/packaged/LICENSE](https://github.com/dubzzz/fast-check/blob/f2cd0407222d320a0dfc2d794eb7d5d7c6cc1fb4/packages/packaged/LICENSE) | MIT licence text at the referenced source revision, defining permissions and redistribution conditions. | Licence Text | 2026-11-26 |
+| <a id="fast-check-release-v4110"></a><a id="releases-3"></a><a id="ref-0d998955"></a>fast-check release v4.11.0 | [https://github.com/dubzzz/fast-check/releases/tag/v4.11.0](https://github.com/dubzzz/fast-check/releases/tag/v4.11.0) | Publisher release record for fast-check v4.11.0, documenting the selected published version. | Published Release | 2026-11-21 |
+| <a id="fast-xml-parser"></a><a id="ref-20fa1cfe"></a>fast-xml-parser | [https://github.com/NaturalIntelligence/fast-xml-parser/tree/d92f44ff1046c42f6d67889737365e75ba664cf4](https://github.com/NaturalIntelligence/fast-xml-parser/tree/d92f44ff1046c42f6d67889737365e75ba664cf4) | JavaScript XML parsing, validation and serialisation. | Source Revision | 2026-11-14 |
+| <a id="fastifyfastify"></a><a id="ref-93b515aa"></a>fastify/fastify | [https://github.com/fastify/fastify/tree/a94dc370a08975eeb41597e4aa7f4202bcf8942c](https://github.com/fastify/fastify/tree/a94dc370a08975eeb41597e4aa7f4202bcf8942c) | Node.js HTTP server framework with plugins and schema validation. | Source Revision | 2026-11-26 |
+| <a id="fca-strong-customer-authentication"></a><a id="fca-sca-requirements"></a><a id="ref-26f2dc21"></a>FCA Strong Customer Authentication | [https://www.fca.org.uk/firms/strong-customer-authentication](https://www.fca.org.uk/firms/strong-customer-authentication) | Regulatory guidance on strong customer authentication in payment services. | Regulatory Guidance (mutable) | Not established |
+| <a id="feed"></a><a id="ref-d69fea58"></a>feed | [https://github.com/jpmonette/feed/tree/cbad18d8afb6ea9fc38d460fdf56a2713c313aed](https://github.com/jpmonette/feed/tree/cbad18d8afb6ea9fc38d460fdf56a2713c313aed) | Generates RSS, Atom and JSON Feed syndication documents. | Source Revision | 2026-09-12 |
+| <a id="flexsearch"></a><a id="ref-788e2bc4"></a>FlexSearch | [https://github.com/nextapps-de/flexsearch/tree/f7ed963096a0792da7b2fd63bb7114b3fbac55ed](https://github.com/nextapps-de/flexsearch/tree/f7ed963096a0792da7b2fd63bb7114b3fbac55ed) | JavaScript full-text indexing and retrieval. | Source Revision | 2026-05-29 |
+| <a id="floating-ui"></a><a id="ref-07622d6a"></a>Floating UI | [https://github.com/floating-ui/floating-ui/tree/c3042f1f37d96dfadff1d8894daa31e120d89ed4](https://github.com/floating-ui/floating-ui/tree/c3042f1f37d96dfadff1d8894daa31e120d89ed4) | Positioning and interaction utilities for floating interface elements. | Source Revision | 2026-11-12 |
+| <a id="flowable-community-engine"></a><a id="ref-cdb01dc1"></a>Flowable community engine | [https://github.com/flowable/flowable-engine/tree/2af890cdccdaf9b53d07eb92ab8ffb79918c82c5](https://github.com/flowable/flowable-engine/tree/2af890cdccdaf9b53d07eb92ab8ffb79918c82c5) | Workflow, case and decision execution engines for BPMN, CMMN and DMN. | Source Revision | 2026-11-23 |
+| <a id="formatjs"></a><a id="ref-35db7b08"></a>FormatJS | [https://github.com/formatjs/formatjs/tree/318404a329859fa99a501806ef32d5d76ea5e825](https://github.com/formatjs/formatjs/tree/318404a329859fa99a501806ef32d5d76ea5e825) | Internationalised message formatting and locale-aware utilities. | Source Revision | 2026-11-26 |
+| <a id="frappe-gantt"></a><a id="ref-35a3dd1c"></a>Frappe Gantt | [https://github.com/frappe/gantt/tree/5c83708d300a99d9142edea0d4d52f421e3a2e68](https://github.com/frappe/gantt/tree/5c83708d300a99d9142edea0d4d52f421e3a2e68) | Interactive Gantt chart rendering for task schedules and dependencies. | Source Revision | 2026-03-05 |
+| <a id="fullcalendar-licensing"></a><a id="fullcalendar"></a><a id="ref-bbe12301"></a>FullCalendar Licensing | [https://fullcalendar.io/license](https://fullcalendar.io/license) | Publisher information distinguishing licensing terms for standard and premium calendar functionality. | Licence Guidance (mutable) | Not established |
+| <a id="google-core-web-vitals-search-guidance"></a><a id="core-web-vitals"></a><a id="ref-ef90706c"></a>Google Core Web Vitals Search Guidance | [https://developers.google.com/search/docs/appearance/core-web-vitals](https://developers.google.com/search/docs/appearance/core-web-vitals) | Explains the relevance of Core Web Vitals to search and page experience. | Technical Guidance (mutable) | Not established |
+| <a id="google-public-ntp"></a><a id="ref-cd43de38"></a>Google Public NTP | [https://developers.google.com/time/](https://developers.google.com/time/) | Public network time service documentation including leap smear behaviour. | Service Documentation (mutable) | Not established |
+| <a id="google-public-ntp-faq"></a><a id="ref-77e72150"></a>Google Public NTP FAQ | [https://developers.google.com/time/faq](https://developers.google.com/time/faq) | Operational explanations of Google public time service and leap smear compatibility. | Service Documentation (mutable) | Not established |
+| <a id="google-review-snippet-guidance"></a><a id="ref-e70dbec3"></a>Google Review Snippet Guidance | [https://developers.google.com/search/docs/appearance/structured-data/review-snippet](https://developers.google.com/search/docs/appearance/structured-data/review-snippet) | Search eligibility and structured data guidance for review snippets. | Technical Guidance (mutable) | Not established |
+| <a id="google-search-essentials"></a><a id="google-search-central"></a><a id="ref-269663c4"></a>Google Search Essentials | [https://developers.google.com/search/docs/essentials](https://developers.google.com/search/docs/essentials) | Technical eligibility requirements and practices for Google Search. | Technical Guidance (mutable) | Not established |
+| <a id="google-sre-monitoring-distributed-systems"></a><a id="google-sre-monitoring-guidance"></a><a id="ref-5e93abcb"></a>Google SRE Monitoring Distributed Systems | [https://sre.google/sre-book/monitoring-distributed-systems/](https://sre.google/sre-book/monitoring-distributed-systems/) | Monitoring guidance on service symptoms, causes and the four golden signals. | Book Chapter (online revision unresolved) | Not established |
+| <a id="govuk-design-system-components"></a><a id="govuk-design-system"></a><a id="ref-006a3e23"></a>GOV.UK Design System Components | [https://design-system.service.gov.uk/components/](https://design-system.service.gov.uk/components/) | Reusable interface components and accessibility guidance for government services. | Design System Documentation (revision unresolved) | Not established |
+| <a id="govs-002-project-delivery-v21"></a><a id="govs-002"></a><a id="ref-fde4cde0"></a>GovS 002 Project Delivery v2.1 | [https://www.gov.uk/government/publications/project-delivery-functional-standard](https://www.gov.uk/government/publications/project-delivery-functional-standard) | Government standard for governance and management of portfolios, programmes and projects. | Government Standard (mutable landing page) | 2025-09-17 |
+| <a id="gpg-45-v10"></a><a id="ref-076cb1fd"></a>GPG 45 v1.0 | [https://www.gov.uk/government/publications/how-to-check-someones-identity-1-0](https://www.gov.uk/government/publications/how-to-check-someones-identity-1-0) | Methodology for checking identity and determining confidence in digital identities. | Final Guidance (versioned landing page) | 2026-06-09 |
+| <a id="grafana"></a><a id="ref-2b2ddfe6"></a>Grafana | [https://github.com/grafana/grafana/tree/0468badf00592ef7b704c055c7d7601a17784742](https://github.com/grafana/grafana/tree/0468badf00592ef7b704c055c7d7601a17784742) | Observability dashboards and data visualisation. | Source Revision | 2026-11-26 |
+| <a id="graphile-worker"></a><a id="ref-1ce69cce"></a>Graphile Worker | [https://github.com/graphile/worker/tree/b6d167b00eadb1c2c717fa058df36ebebf5b31cd](https://github.com/graphile/worker/tree/b6d167b00eadb1c2c717fa058df36ebebf5b31cd) | PostgreSQL-backed asynchronous job execution. | Source Revision | 2026-11-25 |
+| <a id="graphology"></a><a id="ref-9126475c"></a>Graphology | [https://github.com/graphology/graphology/tree/01bb37e39c66ff4eddaf3b0beda40903a663e627](https://github.com/graphology/graphology/tree/01bb37e39c66ff4eddaf3b0beda40903a663e627) | JavaScript graph data structures and graph analysis interfaces. | Source Revision | 2026-11-10 |
+| <a id="gs1-epcis-and-core-business-vocabulary"></a><a id="gs1-epciscbv"></a><a id="ref-1bbbdbc6"></a>GS1 EPCIS and Core Business Vocabulary | [https://ref.gs1.org/standards/](https://ref.gs1.org/standards/) | Standards for exchanging supply-chain visibility events and consistent business vocabulary values. | Standards Collection (edition unresolved) | Not established |
+| <a id="gs1-global-trade-item-number"></a><a id="gs1"></a><a id="ref-cfd8716d"></a>GS1 Global Trade Item Number | [https://www.gs1.org/standards/id-keys/gtin](https://www.gs1.org/standards/id-keys/gtin) | Identification system for uniquely identifying trade items across supply chains. | Identifier Guidance (mutable) | Not established |
+| <a id="h3"></a><a id="ref-21adf099"></a>H3 | [https://github.com/h3js/h3/tree/2f29b875617e8daf39d25118f7474fd4c24fbfe1](https://github.com/h3js/h3/tree/2f29b875617e8daf39d25118f7474fd4c24fbfe1) | JavaScript HTTP framework for request handling and server applications. | Source Revision | 2026-11-10 |
+| <a id="hmrc-vat-notice-700"></a><a id="uk-vat-notice-700"></a><a id="ref-04660002"></a>HMRC VAT Notice 700 | [https://www.gov.uk/guidance/vat-guide-notice-700](https://www.gov.uk/guidance/vat-guide-notice-700) | VAT accounting, invoicing, tax points and record-keeping guidance. | HMRC Notice (mutable) | 2026-11-25 |
+| <a id="hmrc-vat-notice-70063"></a><a id="vat-notice-70063"></a><a id="ref-4ffba2c0"></a>HMRC VAT Notice 700/63 | [https://www.gov.uk/guidance/electronic-invoicing-notice-70063](https://www.gov.uk/guidance/electronic-invoicing-notice-70063) | Requirements and guidance for electronic VAT invoice issuance, receipt and storage. | HMRC Notice (mutable) | 2022-05-26 |
+| <a id="howlerjs"></a><a id="ref-2c4519a8"></a>howler.js | [https://github.com/goldfire/howler.js/tree/1d3053576a860e9854645493ad6c4a72c6cc6e45](https://github.com/goldfire/howler.js/tree/1d3053576a860e9854645493ad6c4a72c6cc6e45) | Browser audio playback and management. | Source Revision | 2025-11-23 |
+| <a id="hse-hsg136-workplace-transport-safety"></a><a id="uk-hse-hsg136"></a><a id="ref-48fbb6c5"></a>HSE HSG136 Workplace Transport Safety | [https://www.hse.gov.uk/pubns/books/hsg136.htm](https://www.hse.gov.uk/pubns/books/hsg136.htm) | Third edition guidance on managing risks from workplace vehicles, sites and drivers. | Published Guidance | 2014 |
+| <a id="hse-puwer-overview"></a><a id="puwer"></a><a id="ref-b9135934"></a>HSE PUWER Overview | [https://www.hse.gov.uk/work-equipment-machinery/puwer-overview.htm](https://www.hse.gov.uk/work-equipment-machinery/puwer-overview.htm) | Overview of obligations for safe provision, maintenance and use of work equipment. | Regulatory Guidance (mutable) | Not established |
+| <a id="html-to-text"></a><a id="ref-29efde1f"></a>html-to-text | [https://github.com/html-to-text/node-html-to-text/tree/1c39d9885075836a7e45d0236c7a5541dede8e52](https://github.com/html-to-text/node-html-to-text/tree/1c39d9885075836a7e45d0236c7a5541dede8e52) | Converts HTML content into plain text. | Source Revision | 2026-08-19 |
+| <a id="i18next"></a><a id="ref-b4adce2a"></a>i18next | [https://github.com/i18next/i18next/tree/83e6f680ab2bfda438888f251990fb6f7a639869](https://github.com/i18next/i18next/tree/83e6f680ab2bfda438888f251990fb6f7a639869) | Internationalisation framework for translation resources and locale-aware messages. | Source Revision | 2026-11-25 |
+| <a id="iana-time-zone-database"></a><a id="ref-5a0024a4"></a>IANA Time Zone Database | [https://www.iana.org/time-zones](https://www.iana.org/time-zones) | Time-zone rules and historical civil time offsets; specific release requires identification. | Data Release Index (revision unresolved) | Not established |
+| <a id="iaqg-9100-series-certification"></a><a id="iaqg-9100-family"></a><a id="ref-65f665ce"></a>IAQG 9100 Series Certification | [https://iaqg.org/certification/](https://iaqg.org/certification/) | Aerospace quality management certification information and associated 9100-series requirements. | Certification Guidance (mutable) | Not established |
+| <a id="ias-16-property-plant-and-equipment"></a><a id="ifrs-ias-16-property-plant-and-equipment"></a><a id="ref-c58a72c6"></a>IAS 16 Property, Plant and Equipment | [https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/](https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/) | Accounting recognition, measurement and depreciation of tangible non-current assets. | Accounting Standard (edition unresolved) | Not established |
+| <a id="ias-19-employee-benefits"></a><a id="ifrs-ias-19-employee-benefits"></a><a id="ref-1cff7d12"></a>IAS 19 Employee Benefits | [https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/](https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/) | Accounting and disclosure for employee benefits, including post-employment obligations. | Accounting Standard (edition unresolved) | Not established |
+| <a id="ias-2-inventories"></a><a id="ifrs-ias-2-inventories"></a><a id="ref-6460bcc1"></a>IAS 2 Inventories | [https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/](https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/) | Accounting for inventory cost, net realisable value and recognition of inventory expense. | Accounting Standard (edition unresolved) | Not established |
+| <a id="ico-childrens-code"></a><a id="ref-84e500ba"></a>ICO Children's Code | [https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/) | Age-appropriate design code and guidance for online services likely to be accessed by children. | Statutory Code and Guidance (edition unresolved) | Not established |
+| <a id="ico-data-use-and-access-act-guidance"></a><a id="data-use-and-access-act-2025"></a><a id="ref-490b08ec"></a>ICO Data (Use and Access) Act Guidance | [https://ico.org.uk/about-the-ico/what-we-do/legislation-we-cover/data-use-and-access-act-2025/](https://ico.org.uk/about-the-ico/what-we-do/legislation-we-cover/data-use-and-access-act-2025/) | Regulator information on changes introduced by the Data (Use and Access) Act. | Regulatory Overview (mutable) | Not established |
+| <a id="ico-data-protection-by-design-and-default"></a><a id="ico"></a><a id="ref-4ec87ed3"></a><a id="uk-gdpr--ico-privacy-by-design"></a><a id="ref-eca8d5ee"></a>ICO Data Protection by Design and Default | [https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default/](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default/) | Technical and organisational safeguards throughout the lifecycle of personal data processing. | Regulatory Guidance (mutable) | 2026-02-05 |
+| <a id="ico-data-protection-principles"></a><a id="uk-ico-uk-gdpr-guidance"></a><a id="ref-200f0715"></a>ICO Data Protection Principles | [https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/) | Guidance on the principles governing lawful and accountable personal data processing. | Regulatory Guidance (mutable; revision unresolved) | Not established |
+| <a id="ico-data-protection-principles-index"></a><a id="ico-uk-gdpr-principles"></a><a id="ref-1ef72871"></a>ICO Data Protection Principles Index | [https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/) | Index of regulatory guidance on the principles of personal data processing. | Guidance Index (mutable) | Not established |
+| <a id="ico-data-security"></a><a id="ico-guide-to-data-security"></a><a id="ref-223a59b6"></a><a id="ico-data-security-guidance"></a><a id="ref-50823cb6"></a>ICO Data Security | [https://ico.org.uk/for-organisations/uk-GDPR-guidance-and-resources/security/a-guide-to-data-security/](https://ico.org.uk/for-organisations/uk-GDPR-guidance-and-resources/security/a-guide-to-data-security/) | Guidance on risk-appropriate security measures protecting personal data. | Regulatory Guidance (mutable; revision unresolved) | Not established |
+| <a id="ico-monitoring-workers"></a><a id="ico-workplace-monitoring"></a><a id="ref-3056c706"></a>ICO Monitoring Workers | [https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/monitoring-workers/](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/monitoring-workers/) | Data protection considerations for workplace monitoring and employee information. | Regulatory Guidance (under review) | Not established |
+| <a id="ico-organisation-guidance"></a><a id="ico-guidance"></a><a id="ref-ec0bfbca"></a>ICO Organisation Guidance | [https://ico.org.uk/for-organisations/](https://ico.org.uk/for-organisations/) | Regulatory guidance collection for organisations processing personal information. | Guidance Collection (mutable) | Not established |
+| <a id="ico-pecr-guidance"></a><a id="pecr-and-ico-storageaccess-guidance"></a><a id="ref-9cfff74f"></a>ICO PECR Guidance | [https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/) | Guidance collection covering electronic communications privacy, direct marketing and storage or access technologies. | Guidance Collection (mutable) | Not established |
+| <a id="ico-right-to-be-informed"></a><a id="ico-transparency"></a><a id="ref-bf472f50"></a>ICO Right to Be Informed | [https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-be-informed/](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-be-informed/) | Guidance on providing individuals with transparent information about personal data processing. | Regulatory Guidance (mutable; revision unresolved) | Not established |
+| <a id="ico-right-to-erasure"></a><a id="ref-a39263d9"></a>ICO Right to Erasure | [https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-erasure/](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-erasure/) | Guidance on erasure requests, applicable grounds and exceptions. | Regulatory Guidance (mutable; revision unresolved) | Not established |
+| <a id="ico-storage-and-access-technologies"></a><a id="ico-storage-technologies"></a><a id="ref-e467565a"></a>ICO Storage and Access Technologies | [https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/how-do-we-comply-with-the-pecr-rules](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/how-do-we-comply-with-the-pecr-rules) | Guidance on compliance with PECR for storing or accessing information on user devices. | Regulatory Guidance (mutable) | 2026-04-29 |
+| <a id="ico-storage-limitation"></a><a id="ico-uk-gdpr-storage-limitation-guidance"></a><a id="ref-c8eb2286"></a><a id="uk-gdpr--ico-guidance"></a><a id="ref-c472f3ba"></a>ICO Storage Limitation | [https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/storage-limitation/](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/storage-limitation/) | Guidance on limiting personal data retention to necessary periods and reviewing continued retention. | Regulatory Guidance (mutable; revision unresolved) | Not established |
+| <a id="ico-uk-gdpr-guidance"></a><a id="uk-gdpr-and-ico-guidance"></a><a id="ref-f4808d92"></a>ICO UK GDPR Guidance | [https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/) | Guidance collection on UK data protection obligations, rights and accountability. | Guidance Collection (mutable) | Not established |
+| <a id="iec-61508"></a><a id="ref-d3eacdcd"></a>IEC 61508 | [https://webstore.iec.ch/en/publication/5515](https://webstore.iec.ch/en/publication/5515) | Functional safety requirements for electrical, electronic and programmable electronic safety-related systems; applicable part and edition require confirmation. | Standard (part and edition unresolved) | Not established |
+| <a id="ilo-normlex"></a><a id="ref-8665fc5e"></a>ILO NORMLEX | [https://normlex.ilo.org/](https://normlex.ilo.org/) | Database of international labour standards, ratifications and supervisory materials. | Reference Database (mutable) | Not established |
+| <a id="imagemagickimagemagick"></a><a id="ref-d82a64c2"></a>ImageMagick/ImageMagick | [https://github.com/ImageMagick/ImageMagick/tree/e6dfa7261e5b02b903a4e7bf7e221fedfb875ea1](https://github.com/ImageMagick/ImageMagick/tree/e6dfa7261e5b02b903a4e7bf7e221fedfb875ea1) | Image conversion, processing and manipulation across raster formats. | Source Revision | 2026-11-26 |
+| <a id="indexnow-protocol"></a><a id="indexnow"></a><a id="ref-f4f8b700"></a>IndexNow Protocol | [https://www.indexnow.org/documentation](https://www.indexnow.org/documentation) | Protocol for notifying participating search engines about added, changed or deleted URLs. | Protocol Documentation (mutable) | Not established |
+| <a id="information-commissioners-office"></a><a id="ico-2"></a><a id="ref-6086d074"></a>Information Commissioner's Office | [https://ico.org.uk/](https://ico.org.uk/) | UK data protection and information rights regulator portal. | Regulator Portal (mutable) | Not established |
+| <a id="isa-88--iec-61512"></a><a id="ref-9df5576d"></a>ISA-88 / IEC 61512 | [https://www.isa.org/standards-and-publications/isa-standards/find-isa-standards-by-topic](https://www.isa.org/standards-and-publications/isa-standards/find-isa-standards-by-topic) | Batch control models, terminology and procedural control concepts. | Standards Collection (edition unresolved) | Not established |
+| <a id="isa-95--iec-62264"></a><a id="ref-0adde009"></a>ISA-95 / IEC 62264 | [https://www.isa.org/standards-and-publications/isa-standards/isa-95-standard](https://www.isa.org/standards-and-publications/isa-standards/isa-95-standard) | Enterprise and manufacturing operations integration models and information exchanges. | Standards Collection (edition unresolved) | Not established |
+| <a id="isaiec-62443"></a><a id="ref-27e1aba9"></a>ISA/IEC 62443 | [https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards) | Industrial automation and control system cybersecurity requirements across products, systems and organisations. | Standards Collection (edition unresolved) | Not established |
+| <a id="iso-100022018"></a><a id="ref-2c14157c"></a>ISO 10002:2018 | [https://www.iso.org/standard/10002](https://www.iso.org/standard/10002) | Guidance for designing, operating and improving customer complaints handling processes. | International Standard | 2018 |
+| <a id="iso-100032018"></a><a id="ref-f48d39fc"></a>ISO 10003:2018 | [https://www.iso.org/standard/71581.html](https://www.iso.org/standard/71581.html) | Guidance for external resolution of customer disputes that remain unresolved by complaints handling. | International Standard | 2018 |
+| <a id="iso-100072017"></a><a id="iso-10007"></a><a id="ref-cb28cb4b"></a>ISO 10007:2017 | [https://www.iso.org/standard/70400.html](https://www.iso.org/standard/70400.html) | Configuration management guidance for products and services throughout their lifecycles. | International Standard | 2017 |
+| <a id="iso-100082022"></a><a id="ref-e69ef762"></a>ISO 10008:2022 | [https://www.iso.org/standard/80594.html](https://www.iso.org/standard/80594.html) | Guidance for transparent, secure and effective business-to-consumer electronic commerce transactions. | International Standard | 2022 |
+| <a id="iso-10303-12024"></a><a id="iso-10303-step"></a><a id="ref-56e608e1"></a>ISO 10303-1:2024 | [https://www.iso.org/standard/83105.html](https://www.iso.org/standard/83105.html) | Architectural principles for industrial product information representation and exchange across the STEP standards series. | International Standard | 2024 |
+| <a id="iso-10872019"></a><a id="1087--wwwisoorgstandard62330html"></a><a id="ref-d3820482"></a>ISO 1087:2019 | [https://www.iso.org/standard/62330.html](https://www.iso.org/standard/62330.html) | Common vocabulary for terminology work and terminology science. | International Standard | 2019 |
+| <a id="iso-121002010"></a><a id="iso-12100"></a><a id="ref-80776f19"></a>ISO 12100:2010 | [https://www.iso.org/standard/51528.html](https://www.iso.org/standard/51528.html) | Machinery safety design principles, lifecycle hazard identification, risk assessment and risk reduction. | International Standard | 2010 |
+| <a id="iso-13849-12023"></a><a id="iso-13849"></a><a id="ref-5d4a77a3"></a>ISO 13849-1:2023 | [https://www.iso.org/standard/73481.html](https://www.iso.org/standard/73481.html) | Design and integration requirements for safety-related machinery control systems, including software. | International Standard | 2023 |
+| <a id="iso-15489-12016"></a><a id="iso-15489-12016-2"></a><a id="ref-10531447"></a><a id="ref-cbe31bfd"></a>ISO 15489-1:2016 | [https://www.iso.org/standard/62542.html](https://www.iso.org/standard/62542.html) | Principles for creating, capturing and managing records, their metadata, controls and responsibilities. | International Standard | 2016 |
+| <a id="iso-16175-12020"></a><a id="ref-0260c838"></a>ISO 16175-1:2020 | [https://www.iso.org/standard/74294.html](https://www.iso.org/standard/74294.html) | Functional requirements and guidance for applications managing digital records. | International Standard | 2020 |
+| <a id="iso-190112026"></a><a id="ref-d863f5c5"></a>ISO 19011:2026 | [https://www.iso.org/standard/19011](https://www.iso.org/standard/19011) | Guidance on management system audit principles, audit programmes and conducting audits. | International Standard | 2026 |
+| <a id="iso-194402020"></a><a id="194402020"></a><a id="ref-5a452a1d"></a>ISO 19440:2020 | [https://www.iso.org/standard/74491.html](https://www.iso.org/standard/74491.html) | Enterprise modelling constructs for describing organisational structure, operations and implementation domains. | International Standard | 2020 |
+| <a id="iso-20022-12026"></a><a id="iso-20022"></a><a id="ref-6150761d"></a>ISO 20022-1:2026 | [https://www.iso.org/standard/20022-1](https://www.iso.org/standard/20022-1) | Metamodel underlying the universal financial industry message scheme. | International Standard | 2026 |
+| <a id="iso-204882018"></a><a id="ref-69c33b8f"></a>ISO 20488:2018 | [https://www.iso.org/standard/68193.html](https://www.iso.org/standard/68193.html) | Principles and requirements for collecting, moderating and publishing online consumer reviews. | International Standard | 2018 |
+| <a id="iso-215022020"></a><a id="ref-3ab1f251"></a>ISO 21502:2020 | [https://www.iso.org/standard/74947.html](https://www.iso.org/standard/74947.html) | Project management guidance applicable across delivery approaches and project lifecycles. | International Standard | 2020 |
+| <a id="iso-223012019"></a><a id="ref-85e985cf"></a>ISO 22301:2019 | [https://www.iso.org/standard/75106.html](https://www.iso.org/standard/75106.html) | Requirements for business continuity management systems, including preparation for disruption and recovery. | International Standard | 2019 |
+| <a id="iso-223132020"></a><a id="iso-22313"></a><a id="ref-bf79b3b2"></a>ISO 22313:2020 | [https://www.iso.org/standard/75107.html](https://www.iso.org/standard/75107.html) | Guidance on applying ISO 22301 business continuity management system requirements. | International Standard | 2020 |
+| <a id="iso-22400-12014"></a><a id="iso-22400"></a><a id="ref-a2579280"></a>ISO 22400-1:2014 | [https://www.iso.org/standard/56847.html](https://www.iso.org/standard/56847.html) | Manufacturing operations performance indicator concepts, terminology and construction criteria. | International Standard | 2014 |
+| <a id="iso-23081-1-2017"></a><a id="iso-23081"></a><a id="ref-36977534"></a>ISO 23081-1:2017 | [https://www.iso.org/standard/73172.html](https://www.iso.org/standard/73172.html) | Principles for records management metadata supporting authenticity, integrity, reliability and usability. | International Standard | 2017 |
+| <a id="iso-23081-2-2021"></a>ISO 23081-2:2021 | [https://www.iso.org/standard/81600.html](https://www.iso.org/standard/81600.html) | Conceptual model and implementation guidance for defining and managing records metadata. | International Standard | 2021 |
+| <a id="iso-23247-12021"></a><a id="iso-23247"></a><a id="ref-9ad284d4"></a>ISO 23247-1:2021 | [https://www.iso.org/standard/75066.html](https://www.iso.org/standard/75066.html) | Foundational concepts and requirements for manufacturing digital twin frameworks. | International Standard | 2021 |
+| <a id="iso-280002022"></a><a id="iso-28000"></a><a id="ref-c7f3ad87"></a>ISO 28000:2022 | [https://www.iso.org/standard/79612.html](https://www.iso.org/standard/79612.html) | Security management system requirements, including supply chain security. | International Standard | 2022 |
+| <a id="iso-304142025"></a><a id="iso-30414"></a><a id="ref-c0c6fe85"></a>ISO 30414:2025 | [https://www.iso.org/standard/30414](https://www.iso.org/standard/30414) | Requirements and recommendations for human capital reporting and disclosure. | International Standard | 2025 |
+| <a id="iso-310002018"></a><a id="iso-31000"></a><a id="iso-310002018-2"></a><a id="ref-262af923"></a><a id="ref-731cfbd0"></a><a id="ref-a5666aad"></a>ISO 31000:2018 | [https://www.iso.org/standard/31000](https://www.iso.org/standard/31000) | Risk management principles, framework and processes for identifying, assessing, treating and monitoring organisational risks. | International Standard | 2018 |
+| <a id="iso-3166-1-2020"></a><a id="iso-3166"></a><a id="ref-92c03402"></a>ISO 3166-1:2020 | [https://www.iso.org/standard/72482.html](https://www.iso.org/standard/72482.html) | Alphabetic and numeric country identifiers for interoperable geographic data. | International Standard | 2020 |
+| <a id="iso-3166-2-2020"></a>ISO 3166-2:2020 | [https://www.iso.org/standard/72483.html](https://www.iso.org/standard/72483.html) | Identifiers for principal country subdivisions. | International Standard | 2020 |
+| <a id="iso-3166-3-2020"></a>ISO 3166-3:2020 | [https://www.iso.org/standard/72484.html](https://www.iso.org/standard/72484.html) | Identifiers for formerly used country names to support interpretation of historical data. | International Standard | 2020 |
+| <a id="iso-31700-12023"></a><a id="ref-d1c9e7cb"></a>ISO 31700-1:2023 | [https://www.iso.org/standard/84977.html](https://www.iso.org/standard/84977.html) | High-level privacy-by-design requirements for consumer goods and services. | International Standard | 2023 |
+| <a id="iso-373012021"></a><a id="ref-3537977c"></a>ISO 37301:2021 | [https://www.iso.org/standard/75080.html](https://www.iso.org/standard/75080.html) | Requirements and guidance for establishing and improving organisational compliance management systems. | International Standard | 2021 |
+| <a id="iso-373022025"></a><a id="ref-48476530"></a>ISO 37302:2025 | [https://www.iso.org/standard/37302](https://www.iso.org/standard/37302) | Framework and indicators for evaluating and improving compliance management system effectiveness. | International Standard | 2025 |
+| <a id="iso-42172015"></a><a id="iso-4217"></a><a id="ref-e1f7a7d3"></a>ISO 4217:2015 | [https://www.iso.org/standard/64758.html](https://www.iso.org/standard/64758.html) | Defines alphabetic and numeric currency codes and the relationship between currencies and their minor units. | International Standard | 2015 |
+| <a id="iso-450012018"></a><a id="iso-45001"></a><a id="ref-6c90b51f"></a>ISO 45001:2018 | [https://www.iso.org/standard/45001](https://www.iso.org/standard/45001) | Requirements for occupational health and safety management systems, including prevention of work-related injury and ill health. | International Standard | 2018 |
+| <a id="iso-7042022"></a><a id="704--wwwisoorgstandard79077html"></a><a id="ref-e23b09be"></a>ISO 704:2022 | [https://www.iso.org/standard/79077.html](https://www.iso.org/standard/79077.html) | Principles for constructing terminology, relating concepts and designations, and writing definitions. | International Standard | 2022 |
+| <a id="iso-85832023"></a><a id="ref-eb08ffb2"></a>ISO 8583:2023 | [https://www.iso.org/standard/79451.html](https://www.iso.org/standard/79451.html) | Interchange message specifications for financial transactions originating from payment cards. | International Standard | 2023 |
+| <a id="iso-8601-12019"></a><a id="8601--wwwisoorgstandard70907html"></a><a id="ref-bea40961"></a>ISO 8601-1:2019 | [https://www.iso.org/standard/70907.html](https://www.iso.org/standard/70907.html) | Basic representations of Gregorian calendar dates, times and UTC offsets for information interchange. | International Standard | 2019 |
+| <a id="iso-8601-1-2019-amd-1-2022"></a>ISO 8601-1:2019/Amd 1:2022 | [https://www.iso.org/standard/81801.html](https://www.iso.org/standard/81801.html) | Technical corrections to the basic date and time representation rules. | Published Amendment | 2022 |
+| <a id="iso-8601-2-2019"></a><a id="iso-8601"></a><a id="ref-8bda6c42"></a>ISO 8601-2:2019 | [https://www.iso.org/standard/70908.html](https://www.iso.org/standard/70908.html) | Extended date and time representations for information interchange. | International Standard | 2019 |
+| <a id="iso-8601-2-2019-amd-1-2025"></a>ISO 8601-2:2019/Amd 1:2025 | [https://www.iso.org/standard/86124.html](https://www.iso.org/standard/86124.html) | Canonical expressions, extended time scale components and date-time arithmetic. | Published Amendment | 2025 |
+| <a id="iso-90012026"></a><a id="iso-9001"></a><a id="ref-0f984f81"></a>ISO 9001:2026 | [https://www.iso.org/standard/9001](https://www.iso.org/standard/9001) | Quality management system requirements for consistent products and services, customer satisfaction and improvement. | International Standard | 2026 |
+| <a id="iso-9241-1712025"></a><a id="ref-7b6be755"></a>ISO 9241-171:2025 | [https://www.iso.org/standard/86308.html](https://www.iso.org/standard/86308.html) | Ergonomic guidance for accessible software and user interaction. | International Standard | 2025 |
+| <a id="iso-9241-2102019"></a><a id="ref-059e6b51"></a>ISO 9241-210:2019 | [https://www.iso.org/standard/77520.html](https://www.iso.org/standard/77520.html) | Human-centred design principles and activities for interactive systems. | International Standard | 2019 |
+| <a id="isoiec-11179-32023"></a><a id="11179--wwwisoorgstandard78915html"></a><a id="ref-a1ff3730"></a>ISO/IEC 11179-3:2023 | [https://www.iso.org/standard/78915.html](https://www.iso.org/standard/78915.html) | Metadata registry conceptual metamodel covering identification, definition, registration, classification and mapping. | International Standard | 2023 |
+| <a id="isoiec-170242026"></a><a id="ref-8462151b"></a>ISO/IEC 17024:2026 | [https://www.iso.org/standard/17024](https://www.iso.org/standard/17024) | Requirements for bodies certifying individuals against defined competence schemes. | International Standard | 2026 |
+| <a id="isoiec-170252017"></a><a id="isoiec-17025"></a><a id="ref-02cfc7b8"></a>ISO/IEC 17025:2017 | [https://www.iso.org/standard/66912.html](https://www.iso.org/standard/66912.html) | Requirements for competent, impartial and consistent testing and calibration laboratories; March 2018 corrected edition. | International Standard | 2017 |
+| <a id="isoiec-18013-52021"></a><a id="ref-99ba669d"></a>ISO/IEC 18013-5:2021 | [https://www.iso.org/standard/69084.html](https://www.iso.org/standard/69084.html) | Mobile driving licence interfaces and interoperability for secure exchange of licence information. | International Standard | 2021 |
+| <a id="isoiec-194642014"></a><a id="isoiec-194642014--oasis-amqp-10"></a><a id="ref-4c835871"></a>ISO/IEC 19464:2014 | [https://www.iso.org/standard/64955.html](https://www.iso.org/standard/64955.html) | AMQP 1.0 wire protocol specification for interoperable message transfer. | International Standard | 2014 |
+| <a id="isoiec-195102013"></a><a id="ref-f8fda418"></a>ISO/IEC 19510:2013 | [https://webstore.iec.ch/en/publication/10695](https://webstore.iec.ch/en/publication/10695) | Business Process Model and Notation standard corresponding to OMG BPMN 2.0.1. | International Standard | 2013 |
+| <a id="isoiec-199872024"></a><a id="gs1-epcis-20--isoiec-19987"></a><a id="ref-f0921dba"></a>ISO/IEC 19987:2024 | [https://www.iso.org/standard/85557.html](https://www.iso.org/standard/85557.html) | GS1 EPCIS version 2.0 for sharing visibility events about physical and digital objects across enterprises. | International Standard | 2024 |
+| <a id="isoiec-250102023"></a><a id="ref-0b5d630d"></a>ISO/IEC 25010:2023 | [https://www.iso.org/standard/78176.html](https://www.iso.org/standard/78176.html) | Nine-characteristic product quality model for specifying, measuring and evaluating ICT and software products. | International Standard | 2023 |
+| <a id="isoiec-250122008"></a><a id="isoiec-25012"></a><a id="ref-35a58970"></a>ISO/IEC 25012:2008 | [https://www.iso.org/standard/35736.html](https://www.iso.org/standard/35736.html) | Data quality characteristics for evaluating data held in computer systems. | International Standard | 2008 |
+| <a id="isoiec-250242015"></a><a id="25024--wwwisoorgstandard35749html"></a><a id="ref-273d2272"></a>ISO/IEC 25024:2015 | [https://www.iso.org/standard/35749.html](https://www.iso.org/standard/35749.html) | Measures and methods for evaluating data quality characteristics. | International Standard | 2015 |
+| <a id="isoiec-270012022"></a><a id="ref-42fa42bb"></a>ISO/IEC 27001:2022 | [https://www.iso.org/standard/27001](https://www.iso.org/standard/27001) | Requirements for establishing, operating and continually improving an information security management system. | International Standard | 2022 |
+| <a id="isoiec-270022022"></a><a id="ref-d1765e3f"></a>ISO/IEC 27002:2022 | [https://www.iso.org/standard/75652.html](https://www.iso.org/standard/75652.html) | Information security control objectives and implementation guidance; March 2022 corrected edition. | International Standard | 2022 |
+| <a id="isoiec-270172026"></a><a id="ref-48fc8ac4"></a>ISO/IEC 27017:2026 | [https://www.iso.org/standard/27017](https://www.iso.org/standard/27017) | Cloud-specific information security controls and guidance for providers and customers, extending ISO/IEC 27002. | International Standard | 2026 |
+| <a id="isoiec-270182025"></a><a id="270182025"></a><a id="ref-3ffc7c99"></a>ISO/IEC 27018:2025 | [https://www.iso.org/standard/27018](https://www.iso.org/standard/27018) | Guidance for protecting personal information processed by public cloud service providers. | International Standard | 2025 |
+| <a id="isoiec-270402024"></a><a id="isoiec-270402024-2"></a><a id="ref-fbbdfd70"></a><a id="ref-e80bacde"></a>ISO/IEC 27040:2024 | [https://www.iso.org/standard/80194.html](https://www.iso.org/standard/80194.html) | Technical requirements and guidance for protecting stored data, storage infrastructure, media and associated management activities. | International Standard | 2024 |
+| <a id="isoiec-277012025"></a><a id="ref-b948c1e2"></a>ISO/IEC 27701:2025 | [https://www.iso.org/standard/27701](https://www.iso.org/standard/27701) | Requirements and guidance for privacy information management systems operated by personal information controllers and processors. | International Standard | 2025 |
+| <a id="isoiec-291002024"></a><a id="ref-f7fc907f"></a>ISO/IEC 29100:2024 | [https://www.iso.org/standard/85938.html](https://www.iso.org/standard/85938.html) | Privacy framework defining terminology, processing roles, safeguards and privacy principles. | International Standard | 2024 |
+| <a id="isoiec-291342023"></a><a id="ref-2e509cbb"></a>ISO/IEC 29134:2023 | [https://www.iso.org/standard/86012.html](https://www.iso.org/standard/86012.html) | Guidance for conducting and documenting privacy impact assessments. | International Standard | 2023 |
+| <a id="isoiec-30071-12019"></a><a id="ref-23e1c516"></a>ISO/IEC 30071-1:2019 | [https://www.iso.org/standard/70913.html](https://www.iso.org/standard/70913.html) | Code of practice for incorporating accessibility into ICT product and service development. | International Standard | 2019 |
+| <a id="isoiec-30107-32023"></a><a id="ref-453a05ff"></a>ISO/IEC 30107-3:2023 | [https://www.iso.org/standard/79520.html](https://www.iso.org/standard/79520.html) | Testing and reporting methods for biometric presentation attack detection. | International Standard | 2023 |
+| <a id="isoiec-420012023"></a><a id="ref-573b7368"></a>ISO/IEC 42001:2023 | [https://www.iso.org/standard/42001](https://www.iso.org/standard/42001) | Requirements for establishing, operating and improving an artificial intelligence management system. | International Standard | 2023 |
+| <a id="isoiec-9075-12023"></a><a id="isoiec-90752023"></a><a id="ref-b335bb8b"></a>ISO/IEC 9075-1:2023 | [https://www.iso.org/standard/76583.html](https://www.iso.org/standard/76583.html) | SQL conceptual framework, terminology and notation supporting the database language specification series. | International Standard | 2023 |
+| <a id="isoiec-ts-275602023"></a><a id="ref-7e7ff696"></a>ISO/IEC TS 27560:2023 | [https://www.iso.org/standard/80392.html](https://www.iso.org/standard/80392.html) | Interoperable information structures for consent records and receipts concerning personal information processing. | Technical Specification | 2023 |
+| <a id="isoiec-ts-290032018"></a><a id="ref-58f59639"></a>ISO/IEC TS 29003:2018 | [https://www.iso.org/standard/62290.html](https://www.iso.org/standard/62290.html) | Identity proofing levels and requirements for establishing a person's identity. | Technical Specification | 2018 |
+| <a id="isoiecieee-152882023"></a><a id="ref-b6981e72"></a>ISO/IEC/IEEE 15288:2023 | [https://www.iso.org/standard/81702.html](https://www.iso.org/standard/81702.html) | Common engineering processes and terminology for system lifecycles. | International Standard | 2023 |
+| <a id="isoiecieee-420102022"></a><a id="420102022"></a><a id="ref-e85f94dc"></a>ISO/IEC/IEEE 42010:2022 | [https://www.iso.org/standard/74393.html](https://www.iso.org/standard/74393.html) | Requirements for architecture descriptions, viewpoints, model kinds and architecture description frameworks. | International Standard | 2022 |
+| <a id="isotr-23081-3-2011"></a>ISO/TR 23081-3:2011 | [https://www.iso.org/standard/57121.html](https://www.iso.org/standard/57121.html) | Self-assessment method for evaluating records metadata capture, management and implementation readiness. | Technical Report | 2011 |
+| <a id="jaeger"></a><a id="ref-217dc578"></a>Jaeger | [https://github.com/jaegertracing/jaeger/tree/9d2db5134028fb6f26b1b4f2f7a8549003c430b6](https://github.com/jaegertracing/jaeger/tree/9d2db5134028fb6f26b1b4f2f7a8549003c430b6) | Distributed tracing collection, storage and inspection. | Source Revision | 2026-11-26 |
+| <a id="jose"></a><a id="ref-1841a1db"></a>jose | [https://github.com/panva/jose/tree/f4457b3e3c5a40359b40ad6fa9721d11aa2a2bd0](https://github.com/panva/jose/tree/f4457b3e3c5a40359b40ad6fa9721d11aa2a2bd0) | JavaScript implementation of JOSE signing, encryption, keys and JSON Web Tokens. | Source Revision | 2026-11-24 |
+| <a id="json-forms"></a><a id="ref-e4419c3b"></a>JSON Forms | [https://github.com/eclipsesource/jsonforms/tree/fe789f416c47c7e6685fcec93cea333ba9b7725e](https://github.com/eclipsesource/jsonforms/tree/fe789f416c47c7e6685fcec93cea333ba9b7725e) | Schema-driven form generation and validation. | Source Revision | 2026-11-25 |
+| <a id="json-schema-ref-parser"></a><a id="ref-0de61a46"></a>JSON Schema $Ref Parser | [https://github.com/APIDevTools/json-schema-ref-parser/tree/0da9875d5f4e05cd2b20f944c3e5bb4a4db21a42](https://github.com/APIDevTools/json-schema-ref-parser/tree/0da9875d5f4e05cd2b20f944c3e5bb4a4db21a42) | Resolves, bundles and dereferences JSON Schema references. | Source Revision | 2026-11-24 |
+| <a id="json-schema-draft-2020-12"></a><a id="ref-91353e48"></a><a id="json-schema"></a><a id="ref-d64cb24d"></a><a id="json-schema-2020-12"></a><a id="ref-eba7d5b7"></a>JSON Schema Draft 2020-12 | [https://json-schema.org/draft/2020-12/](https://json-schema.org/draft/2020-12/) | Schema vocabularies for describing and validating JSON instances, including references and structural constraints. | Published Draft | 2022-06-16 |
+| <a id="json-ld-11"></a><a id="w3c-json-ld-11"></a><a id="w3c-json-ld-11-2"></a><a id="ref-6d20146d"></a><a id="ref-a03bb42b"></a>JSON-LD 1.1 | [https://www.w3.org/TR/2020/REC-json-ld11-20200716/](https://www.w3.org/TR/2020/REC-json-ld11-20200716/) | JSON serialisation of linked data, including contextual mappings to RDF identifiers. | Recommendation | 2020-07-16 |
+| <a id="json-logic-js"></a><a id="ref-03dffb0e"></a>json-logic-js | [https://github.com/jwadhams/json-logic-js/tree/c5c73601c90b11e98f6846609bac4dec203d1c18](https://github.com/jwadhams/json-logic-js/tree/c5c73601c90b11e98f6846609bac4dec203d1c18) | Evaluates portable logic expressions represented as JSON. | Source Revision | 2024-07-09 |
+| <a id="json-rules-engine"></a><a id="ref-801e24d6"></a>json-rules-engine | [https://github.com/CacheControl/json-rules-engine/tree/e1f1fda81bb384752531dc29a3817672df51d439](https://github.com/CacheControl/json-rules-engine/tree/e1f1fda81bb384752531dc29a3817672df51d439) | Evaluates declarative JSON business rules against supplied facts. | Source Revision | 2026-02-16 |
+| <a id="jsonata"></a><a id="ref-50222d38"></a>JSONata | [https://github.com/jsonata-js/jsonata/tree/d19d8d7cb1a63d33a4a2b06abd20f42c0693f764](https://github.com/jsonata-js/jsonata/tree/d19d8d7cb1a63d33a4a2b06abd20f42c0693f764) | Expression language for querying and transforming JSON data. | Source Revision | 2026-11-26 |
+| <a id="jsondiffpatch"></a><a id="ref-c9b7030c"></a>jsondiffpatch | [https://github.com/benjamine/jsondiffpatch/tree/ce76b39942891bbbeb60bf6a2ab3b7cbdb758923](https://github.com/benjamine/jsondiffpatch/tree/ce76b39942891bbbeb60bf6a2ab3b7cbdb758923) | Computes and applies structured differences between JSON objects. | Source Revision | 2026-10-29 |
+| <a id="jsonldjs"></a><a id="ref-81b207aa"></a>jsonld.js | [https://github.com/digitalbazaar/jsonld.js/tree/7a93609e475edeebef372ba17ae8e3508b4a324f](https://github.com/digitalbazaar/jsonld.js/tree/7a93609e475edeebef372ba17ae8e3508b4a324f) | JSON-LD processing including expansion, compaction and RDF conversion. | Source Revision | 2026-03-04 |
+| <a id="jstat"></a><a id="ref-5404073e"></a>jStat | [https://github.com/jstat/jstat/tree/72f367f6dbd45c2d903053ee3f9981489912cad4](https://github.com/jstat/jstat/tree/72f367f6dbd45c2d903053ee3f9981489912cad4) | Statistical distributions, descriptive statistics and numerical analysis. | Source Revision | 2022-12-28 |
+| <a id="kaplay"></a><a id="ref-ff99b3e5"></a>KAPLAY | [https://github.com/kaplayjs/kaplay/tree/8a1c549cb76a125d5583171a2b3123a8daa40a79](https://github.com/kaplayjs/kaplay/tree/8a1c549cb76a125d5583171a2b3123a8daa40a79) | JavaScript framework for interactive two-dimensional games. | Source Revision | 2026-11-26 |
+| <a id="klaro"></a><a id="ref-69ebde60"></a>Klaro | [https://github.com/kiprotect/klaro/tree/db9f1aca906a392990c58c58475366a091012ea7](https://github.com/kiprotect/klaro/tree/db9f1aca906a392990c58c58475366a091012ea7) | Consent management for website services and tracking technologies. | Source Revision | 2025-03-27 |
+| <a id="konvajs"></a><a id="ref-cd3db9fd"></a>Konva.js | [https://github.com/konvajs/konva/tree/5e0c9d44bc8073972e413a44ace1034d3e887398](https://github.com/konvajs/konva/tree/5e0c9d44bc8073972e413a44ace1034d3e887398) | Interactive two-dimensional graphics and scene management using HTML canvas. | Source Revision | 2026-11-25 |
+| <a id="kosit-xml-validator"></a><a id="ref-59f88986"></a>KoSIT XML Validator | [https://github.com/itplr-kosit/validator/tree/6ac5167f2acad27df31263867e61d6698815c043](https://github.com/itplr-kosit/validator/tree/6ac5167f2acad27df31263867e61d6698815c043) | Configurable XML document validation using schemas and business rules. | Source Revision | 2026-08-20 |
+| <a id="kysely"></a><a id="ref-af839a5b"></a>Kysely | [https://github.com/kysely-org/kysely/tree/a5bd19a8ebe2a6c22d4901b6cc7b9082b1419a76](https://github.com/kysely-org/kysely/tree/a5bd19a8ebe2a6c22d4901b6cc7b9082b1419a76) | Type-safe SQL query builder for TypeScript. | Source Revision | 2026-11-22 |
+| <a id="kysely-licence"></a><a id="licence-5"></a><a id="ref-07831dfa"></a>Kysely licence | [https://github.com/kysely-org/kysely/blob/a5bd19a8ebe2a6c22d4901b6cc7b9082b1419a76/LICENSE](https://github.com/kysely-org/kysely/blob/a5bd19a8ebe2a6c22d4901b6cc7b9082b1419a76/LICENSE) | MIT licence text at the referenced source revision, defining permissions and redistribution conditions. | Licence Text | 2026-11-22 |
+| <a id="kysely-release-v0299"></a><a id="releases-4"></a><a id="ref-752685c6"></a>Kysely release v0.29.9 | [https://github.com/kysely-org/kysely/releases/tag/v0.29.9](https://github.com/kysely-org/kysely/releases/tag/v0.29.9) | Publisher release record for Kysely v0.29.9, documenting the selected published version. | Published Release | 2026-11-12 |
+| <a id="lexical"></a><a id="ref-9d228cd0"></a>Lexical | [https://github.com/meta/lexical/tree/3e90c0fd3487a5b6e82ce25bb9962e1b4e7ac4a6](https://github.com/meta/lexical/tree/3e90c0fd3487a5b6e82ce25bb9962e1b4e7ac4a6) | Extensible structured text editor framework. | Source Revision | 2026-11-26 |
+| <a id="libavif"></a><a id="ref-7c93a53d"></a>libavif | [https://github.com/AOMediaCodec/libavif/tree/b09d410e184fe4a01f680afbc6896b8b7b515e4a](https://github.com/AOMediaCodec/libavif/tree/b09d410e184fe4a01f680afbc6896b8b7b515e4a) | Encoding and decoding AVIF images using AV1 compression. | Source Revision | 2026-11-26 |
+| <a id="libheif"></a><a id="ref-1c228439"></a>libheif | [https://github.com/strukturag/libheif/tree/12a259a5882dd99d45ec5fc77e296a3b620d1e2e](https://github.com/strukturag/libheif/tree/12a259a5882dd99d45ec5fc77e296a3b620d1e2e) | Encoding and decoding HEIF and AVIF image containers. | Source Revision | 2026-10-26 |
+| <a id="libjpeg-turbo"></a><a id="ref-bdc85c2a"></a>libjpeg-turbo | [https://github.com/libjpeg-turbo/libjpeg-turbo/tree/5b2e0e9269f1fff760d867be97b7ba5f79188227](https://github.com/libjpeg-turbo/libjpeg-turbo/tree/5b2e0e9269f1fff760d867be97b7ba5f79188227) | Optimised JPEG image encoding and decoding. | Source Revision | 2026-11-24 |
+| <a id="libpg_query"></a><a id="ref-7d7aa078"></a>libpg_query | [https://github.com/pganalyze/libpg_query/tree/86b593ba91e3a04e71127f8c8629da2c0708ba91](https://github.com/pganalyze/libpg_query/tree/86b593ba91e3a04e71127f8c8629da2c0708ba91) | Exposes PostgreSQL SQL parsing facilities outside the database server. | Source Revision | 2026-11-25 |
+| <a id="libsodiumjs"></a><a id="ref-704cdd6c"></a>libsodium.js | [https://github.com/jedisct1/libsodium.js/tree/1f541855af3ccacbdac9aa87199999eb68b730a2](https://github.com/jedisct1/libsodium.js/tree/1f541855af3ccacbdac9aa87199999eb68b730a2) | JavaScript bindings for libsodium cryptographic primitives. | Source Revision | 2026-10-28 |
+| <a id="libwebp-v160-source-merge"></a><a id="libwebp"></a><a id="ref-93a0df01"></a>libwebp v1.6.0 source merge | [https://chromium.googlesource.com/webm/libwebp.git/%2B/08b51dd130a2e934a1ff5cdc063bd51fc0e956e6](https://chromium.googlesource.com/webm/libwebp.git/%2B/08b51dd130a2e934a1ff5cdc063bd51fc0e956e6) | WebP image encoding and decoding library and command-line tools. | Source Revision | 2025-07-09 |
+| <a id="liquid-template-engine"></a><a id="liquid"></a><a id="ref-e82a3d0b"></a>Liquid Template Engine | [https://github.com/Shopify/liquid/tree/15a2e32d186f713643fe86202da8da44a7bb058b](https://github.com/Shopify/liquid/tree/15a2e32d186f713643fe86202da8da44a7bb058b) | Template language and engine for rendering text with objects, filters and tags. | Source Revision | 2026-11-17 |
+| <a id="lovellsharp"></a><a id="ref-d872f398"></a>lovell/sharp | [https://github.com/lovell/sharp/tree/eb94f150f494ee931aa9d301470952e20ffb5d99](https://github.com/lovell/sharp/tree/eb94f150f494ee931aa9d301470952e20ffb5d99) | Node.js image resizing, transformation and format conversion using libvips. | Source Revision | 2026-11-24 |
+| <a id="lucide"></a><a id="ref-c5624441"></a>Lucide | [https://github.com/lucide-icons/lucide/tree/9cb3934c3628dfe3fbb34bc4c12209b2cee3a49f](https://github.com/lucide-icons/lucide/tree/9cb3934c3628dfe3fbb34bc4c12209b2cee3a49f) | Consistent SVG icon collection and framework integrations. | Source Revision | 2026-11-26 |
+| <a id="mailauth"></a><a id="ref-7a8524b7"></a>mailauth | [https://github.com/postalsys/mailauth/tree/2d9747c5df4570643dda0390e769c7af41282282](https://github.com/postalsys/mailauth/tree/2d9747c5df4570643dda0390e769c7af41282282) | Email authentication analysis including SPF, DKIM and DMARC. | Source Revision | 2026-11-17 |
+| <a id="maplibre-gl-js"></a><a id="ref-e72b5ce4"></a>MapLibre GL JS | [https://github.com/maplibre/maplibre-gl-js/tree/623531a8dd6a6ad1cade8048f93afdd6edd7bb0b](https://github.com/maplibre/maplibre-gl-js/tree/623531a8dd6a6ad1cade8048f93afdd6edd7bb0b) | WebGL rendering of interactive maps and vector tiles. | Source Revision | 2026-11-26 |
+| <a id="markdown-itmarkdown-it"></a><a id="ref-13106d1e"></a>markdown-it/markdown-it | [https://github.com/markdown-it/markdown-it/tree/a8c00d474ec9b304fad9b71c16d6fa8b4909279e](https://github.com/markdown-it/markdown-it/tree/a8c00d474ec9b304fad9b71c16d6fa8b4909279e) | Extensible Markdown parsing and HTML rendering. | Source Revision | 2026-10-16 |
+| <a id="matterjs"></a><a id="ref-8b79b6db"></a>Matter.js | [https://github.com/matter-js/matter.js/tree/4df4e187278d412f7f8f54c23230ab3fb1167c66](https://github.com/matter-js/matter.js/tree/4df4e187278d412f7f8f54c23230ab3fb1167c66) | Two-dimensional rigid-body physics simulation. | Source Revision | 2026-11-26 |
+| <a id="mdn-window-postmessage"></a><a id="mdn-postmessage"></a><a id="ref-05da9414"></a>MDN Window postMessage | [https://github.com/mdn/content/blob/7a7bbec489b457159a0597779a7eb3d3d950612d/files/en-us/web/api/window/postmessage/index.md](https://github.com/mdn/content/blob/7a7bbec489b457159a0597779a7eb3d3d950612d/files/en-us/web/api/window/postmessage/index.md) | Browser API guidance for cross-origin window messaging and origin validation. | Documentation Source Revision | 2026-11-26 |
+| <a id="media-queries-level-5"></a><a id="media-queries-5"></a><a id="ref-d71ad712"></a>Media Queries Level 5 | [https://www.w3.org/TR/2026/WD-mediaqueries-5-20260219/](https://www.w3.org/TR/2026/WD-mediaqueries-5-20260219/) | Working Draft defining media queries for adapting presentation to device characteristics and user preferences. | Working Draft | 2026-02-19 |
+| <a id="mermaid"></a><a id="ref-42e5762a"></a>Mermaid | [https://github.com/mermaid-js/mermaid/tree/6374e521f43fde5cfc60d65410c1aa033af29aaf](https://github.com/mermaid-js/mermaid/tree/6374e521f43fde5cfc60d65410c1aa033af29aaf) | Text-based diagram syntax and rendering for technical documentation. | Source Revision | 2026-11-23 |
+| <a id="mikekovarikexifr"></a><a id="ref-949f5fcb"></a>MikeKovarik/exifr | [https://github.com/MikeKovarik/exifr/tree/6cbf6e921688faf7723e1f2e0b9e672d1f0aa21c](https://github.com/MikeKovarik/exifr/tree/6cbf6e921688faf7723e1f2e0b9e672d1f0aa21c) | Extracts image metadata, including EXIF and GPS information. | Source Revision | 2021-08-05 |
+| <a id="minisearch"></a><a id="ref-58227ec0"></a>MiniSearch | [https://github.com/lucaong/minisearch/tree/3d239d1c3ae7aef1bf5d8945dd7b5f0709f646f5](https://github.com/lucaong/minisearch/tree/3d239d1c3ae7aef1bf5d8945dd7b5f0709f646f5) | In-memory JavaScript full-text indexing and search. | Source Revision | 2025-09-16 |
+| <a id="mjml"></a><a id="ref-21d35814"></a>MJML | [https://github.com/mjmlio/mjml/tree/40ddfbb4c04e13dd9572aa0d5b1c58826a163289](https://github.com/mjmlio/mjml/tree/40ddfbb4c04e13dd9572aa0d5b1c58826a163289) | Markup language and compiler for responsive HTML email. | Source Revision | 2026-10-23 |
+| <a id="moddle-xml"></a><a id="ref-0e4b8fa5"></a>moddle-xml | [https://github.com/bpmn-io/moddle-xml/tree/5688f200cfdfc50d9e4d23454927fc92095b0406](https://github.com/bpmn-io/moddle-xml/tree/5688f200cfdfc50d9e4d23454927fc92095b0406) | XML reading and writing for metamodel-based objects. | Source Revision | 2026-11-17 |
+| <a id="mozillapdfjs"></a><a id="ref-48219085"></a>mozilla/pdf.js | [https://github.com/mozilla/pdf.js/tree/ac7d3717e478133747f47819816c743b296a2e9c](https://github.com/mozilla/pdf.js/tree/ac7d3717e478133747f47819816c743b296a2e9c) | JavaScript PDF parsing and rendering for web browsers. | Source Revision | 2026-11-26 |
+| <a id="msw"></a><a id="ref-203214f1"></a>MSW | [https://github.com/mswjs/msw/tree/0f87d4695dbd90ca661b6f42c508acf846bf5f51](https://github.com/mswjs/msw/tree/0f87d4695dbd90ca661b6f42c508acf846bf5f51) | Network request interception and mock responses for development and testing. | Source Revision | 2026-11-26 |
+| <a id="mtconnect-28-fundamentals"></a><a id="mtconnect"></a><a id="ref-43c83bef"></a>MTConnect 2.8 Fundamentals | [https://model.mtconnect.org/Version2.8/Fundamentals/](https://model.mtconnect.org/Version2.8/Fundamentals/) | Fundamental information models and conventions for interoperable manufacturing equipment data. | Versioned Specification (date unresolved) | Not established |
+| <a id="n3js"></a><a id="ref-8c4508c1"></a>N3.js | [https://github.com/rdfjs/N3.js/tree/6b42d44a5e35df9d5068a23372fb19293ca5aa11](https://github.com/rdfjs/N3.js/tree/6b42d44a5e35df9d5068a23372fb19293ca5aa11) | RDF parsing, writing and in-memory quad storage for JavaScript. | Source Revision | 2026-11-23 |
+| <a id="nano-id"></a><a id="ref-affc7039"></a>Nano ID | [https://github.com/ai/nanoid/tree/ad8bc48da1da1e07398c8ad830c9020f6a8d10d2](https://github.com/ai/nanoid/tree/ad8bc48da1da1e07398c8ad830c9020f6a8d10d2) | Compact random identifier generation for JavaScript. | Source Revision | 2026-11-25 |
+| <a id="nats-jetstream"></a><a id="ref-e3dcd115"></a>NATS JetStream | [https://github.com/nats-io/nats-server/tree/4d459637232a0d157265aaf4d3ccddaa7fb0b98c](https://github.com/nats-io/nats-server/tree/4d459637232a0d157265aaf4d3ccddaa7fb0b98c) | Messaging server providing publish-subscribe, request-reply and JetStream persistence. | Source Revision | 2026-11-26 |
+| <a id="natsjs"></a><a id="ref-b017e4a4"></a>NATS.js | [https://github.com/nats-io/nats.js/tree/343dfe5fa81fd5bd44fd236747f94b8eb6370a86](https://github.com/nats-io/nats.js/tree/343dfe5fa81fd5bd44fd236747f94b8eb6370a86) | JavaScript client for NATS messaging and JetStream. | Source Revision | 2026-11-20 |
+| <a id="ncsc-cloud-principle-13"></a><a id="uk-ncsc-cloud-auditalert-guidance"></a><a id="ref-7ea0e60c"></a>NCSC Cloud Principle 13 | [https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles/principle-13-audit-information-and-alerting-for-customers](https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles/principle-13-audit-information-and-alerting-for-customers) | Cloud customer access to audit information and security alerting. | Guidance (mutable) | Not established |
+| <a id="ncsc-cloud-security-principles"></a><a id="uk-ncsc-cloud-security-principles"></a><a id="ref-ca1f56e2"></a>NCSC Cloud Security Principles | [https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles](https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles) | Security principles for assessing cloud services and their operational safeguards. | Guidance Collection (mutable) | Not established |
+| <a id="ncsc-cyber-security-design-principles"></a><a id="ncsc"></a><a id="ref-a05159fd"></a>NCSC Cyber Security Design Principles | [https://www.ncsc.gov.uk/collection/cyber-security-design-principles/cyber-security-design-principles](https://www.ncsc.gov.uk/collection/cyber-security-design-principles/cyber-security-design-principles) | Design principles for building and maintaining secure systems. | Guidance Collection (mutable) | Not established |
+| <a id="ncsc-email-security-and-anti-spoofing"></a><a id="uk-ncsc"></a><a id="ref-6248375e"></a>NCSC Email Security and Anti-spoofing | [https://www.ncsc.gov.uk/collection/email-security-and-anti-spoofing](https://www.ncsc.gov.uk/collection/email-security-and-anti-spoofing) | Email security guidance including sender authentication and anti-spoofing controls. | Guidance Collection (mutable) | Not established |
+| <a id="ncsc-identity-and-access-management"></a><a id="uk-ncsc-iam-guidance"></a><a id="ref-e3eec99e"></a>NCSC Identity and Access Management | [https://www.ncsc.gov.uk/guidance/introduction-identity-and-access-management](https://www.ncsc.gov.uk/guidance/introduction-identity-and-access-management) | Guidance on establishing and managing identities, authentication and access controls. | Guidance (mutable) | Not established |
+| <a id="ncsc-secure-design-and-development"></a><a id="uk-ncsc-secure-design"></a><a id="ref-c1b4f35f"></a>NCSC Secure Design and Development | [https://www.ncsc.gov.uk/collection/software-security-code-of-practice-implementation-guidance/theme-1-secure-design-development](https://www.ncsc.gov.uk/collection/software-security-code-of-practice-implementation-guidance/theme-1-secure-design-development) | Implementation guidance for secure software design and development practices. | Guidance (mutable) | Not established |
+| <a id="ncsc-security-logging"></a><a id="uk-ncsc-2"></a><a id="ref-0eb55a83"></a>NCSC Security Logging | [https://www.ncsc.gov.uk/guidance/introduction-logging-security-purposes](https://www.ncsc.gov.uk/guidance/introduction-logging-security-purposes) | Guidance on security logging to support detection and incident readiness. | Guidance (mutable) | Not established |
+| <a id="ncsc-software-security-code-implementation-guidance"></a><a id="uk-ncsc-guidance"></a><a id="ref-28c93158"></a>NCSC Software Security Code Implementation Guidance | [https://www.ncsc.gov.uk/collection/software-security-code-of-practice-implementation-guidance](https://www.ncsc.gov.uk/collection/software-security-code-of-practice-implementation-guidance) | Implementation guidance supporting the UK Software Security Code of Practice. | Guidance Collection (mutable) | Not established |
+| <a id="niso-iso-25964-schema-resources"></a><a id="25964--wwwnisoorgschemasiso25964"></a><a id="ref-926d8bf3"></a>NISO ISO 25964 Schema Resources | [https://www.niso.org/schemas/iso25964](https://www.niso.org/schemas/iso25964) | Supporting schema resources for thesaurus representation and interoperability under ISO 25964. | Schema Resource Collection (revision unresolved) | Not established |
+| <a id="nist-ai-rmf-10"></a><a id="ref-14aaf1d9"></a>NIST AI RMF 1.0 | [https://doi.org/10.6028/NIST.AI.100-1](https://doi.org/10.6028/NIST.AI.100-1) | Voluntary framework for identifying, assessing and managing artificial intelligence risks. | Final Publication | 2023-01-26 |
+| <a id="nist-internet-time-service"></a><a id="nist-its"></a><a id="ref-6c4b245c"></a>NIST Internet Time Service | [https://www.nist.gov/pml/time-and-frequency-division/time-distribution/internet-time-service-its](https://www.nist.gov/pml/time-and-frequency-division/time-distribution/internet-time-service-its) | National time distribution service information for network clock synchronisation. | Service Documentation (mutable) | Not established |
+| <a id="nist-oscal"></a><a id="ref-350ad366"></a>NIST OSCAL | [https://pages.nist.gov/OSCAL/](https://pages.nist.gov/OSCAL/) | Machine-readable formats for security control catalogues, system security plans and assessment information. | Specification Collection (revision unresolved) | Not established |
+| <a id="nist-privacy-framework-10"></a><a id="nist-privacy-framework"></a><a id="ref-5af1de6f"></a>NIST Privacy Framework 1.0 | [https://www.nist.gov/privacy-framework/privacy-framework](https://www.nist.gov/privacy-framework/privacy-framework) | Version 1.0 framework for identifying and managing privacy risks through organisational outcomes and controls. | Published Framework | 2020-01 |
+| <a id="nist-sp-800-137"></a><a id="ref-e530b140"></a>NIST SP 800-137 | [https://csrc.nist.gov/pubs/sp/800/137/final](https://csrc.nist.gov/pubs/sp/800/137/final) | Guidance for continuous monitoring of security controls, threats, vulnerabilities and organisational risk. | Final Publication | 2011-09 |
+| <a id="nist-sp-800-177-rev-1"></a><a id="ref-5475a9f6"></a>NIST SP 800-177 Rev. 1 | [https://csrc.nist.gov/pubs/sp/800/177/r1/final](https://csrc.nist.gov/pubs/sp/800/177/r1/final) | Guidance for trustworthy email, including domain authentication, transport security and message protection. | Final Publication | 2019-02 |
+| <a id="nist-sp-800-209"></a><a id="ref-71d6aa98"></a>NIST SP 800-209 | [https://csrc.nist.gov/pubs/sp/800/209/final](https://csrc.nist.gov/pubs/sp/800/209/final) | Security guidance for storage infrastructure, including access control, isolation, data protection and recovery. | Final Publication | 2020-10 |
+| <a id="nist-sp-800-53-rev-5"></a><a id="nist-sp-800-53-rev-5-au-2au-3au-6au-9au-11"></a><a id="800-53"></a><a id="ref-3fd80945"></a><a id="ref-5d98a8a6"></a><a id="ref-ea606756"></a>NIST SP 800-53 Rev. 5 | [https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) | Security and privacy control catalogue, including audit event selection, record content, review, protection and retention (AU-2, AU-3, AU-6, AU-9 and AU-11); December 2020 corrected edition. | Final Publication | 2020-12 |
+| <a id="sp-800-63-4"></a><a id="ref-cec2c001"></a><a id="nist-sp-800-63-4"></a><a id="ref-ec4142c5"></a>NIST SP 800-63-4 | [https://csrc.nist.gov/pubs/sp/800/63/4/final](https://csrc.nist.gov/pubs/sp/800/63/4/final) | Framework for digital identity risk assessment and selection of identity proofing, authentication and federation assurance levels. | Final Publication | 2025-07 |
+| <a id="nist-sp-800-63a-4"></a><a id="ref-06a5f395"></a>NIST SP 800-63A-4 | [https://csrc.nist.gov/pubs/sp/800/63/a/4/final](https://csrc.nist.gov/pubs/sp/800/63/a/4/final) | Requirements for identity proofing, evidence validation, applicant verification and enrolment at defined assurance levels. | Final Publication | 2025-07 |
+| <a id="nist-sp-800-63b-4"></a><a id="nist-sp-800-63b-4-2"></a><a id="ref-a2396bfc"></a><a id="ref-49bba49c"></a>NIST SP 800-63B-4 | [https://csrc.nist.gov/pubs/sp/800/63/b/4/final](https://csrc.nist.gov/pubs/sp/800/63/b/4/final) | Authentication assurance requirements, authenticator lifecycle management and session security. | Final Publication | 2025-07 |
+| <a id="nist-sp-800-63c-4"></a><a id="ref-98d5a047"></a>NIST SP 800-63C-4 | [https://csrc.nist.gov/pubs/sp/800/63/c/4/final](https://csrc.nist.gov/pubs/sp/800/63/c/4/final) | Requirements for federated identity, assertion protection and federation assurance levels. | Final Publication | 2025-07 |
+| <a id="nist-sp-800-82-rev-3"></a><a id="nist-sp-800-82"></a><a id="ref-f29f0b65"></a>NIST SP 800-82 Rev. 3 | [https://csrc.nist.gov/pubs/sp/800/82/r3/final](https://csrc.nist.gov/pubs/sp/800/82/r3/final) | Security guidance for operational technology systems, accounting for safety, reliability and operational constraints. | Final Publication | 2023-09 |
+| <a id="nist-sp-800-88-rev-2"></a><a id="ref-ee67b17c"></a>NIST SP 800-88 Rev. 2 | [https://csrc.nist.gov/pubs/sp/800/88/r2/final](https://csrc.nist.gov/pubs/sp/800/88/r2/final) | Guidance for establishing media sanitisation programmes and preventing recovery of sensitive information from storage media. | Final Publication | 2025-09 |
+| <a id="nist-sp-800-92"></a><a id="800-92"></a><a id="ref-e0cc09ca"></a>NIST SP 800-92 | [https://csrc.nist.gov/pubs/sp/800/92/final](https://csrc.nist.gov/pubs/sp/800/92/final) | Guidance for enterprise security log management infrastructure and operational processes. | Final Publication | 2006-09 |
+| <a id="nist-ssdf-sp-800-218"></a><a id="ref-10dcdd0a"></a>NIST SSDF SP 800-218 | [https://csrc.nist.gov/pubs/sp/800/218/final](https://csrc.nist.gov/pubs/sp/800/218/final) | Secure Software Development Framework version 1.1, defining practices for reducing software vulnerabilities throughout development. | Final Publication | 2022-02 |
+| <a id="node-cron"></a><a id="ref-fa08cb9a"></a>node-cron | [https://github.com/node-cron/node-cron/tree/da425dd8a314c82ebf32d77f3d64a1a9b97a50ad](https://github.com/node-cron/node-cron/tree/da425dd8a314c82ebf32d77f3d64a1a9b97a50ad) | Cron expression-based task scheduling in Node.js. | Source Revision | 2026-11-07 |
+| <a id="node-pg-migrate"></a><a id="ref-5221a10b"></a>node-pg-migrate | [https://github.com/salsita/node-pg-migrate/tree/b75e306622018bd60029f561386fc2538c4979c5](https://github.com/salsita/node-pg-migrate/tree/b75e306622018bd60029f561386fc2538c4979c5) | Versioned PostgreSQL schema migration tooling for Node.js. | Source Revision | 2026-11-18 |
+| <a id="node-postgres--pg"></a><a id="ref-be910869"></a>node-postgres / pg | [https://github.com/brianc/node-postgres/tree/2a5850fb0db18f5e40a642bbb4a4743de412ab54](https://github.com/brianc/node-postgres/tree/2a5850fb0db18f5e40a642bbb4a4743de412ab54) | Node.js PostgreSQL client providing queries, connections and pooling. | Source Revision | 2026-10-23 |
+| <a id="node-postgres-licence"></a><a id="licence-2"></a><a id="ref-a4e3b77c"></a>node-postgres licence | [https://github.com/brianc/node-postgres/blob/2a5850fb0db18f5e40a642bbb4a4743de412ab54/LICENSE](https://github.com/brianc/node-postgres/blob/2a5850fb0db18f5e40a642bbb4a4743de412ab54/LICENSE) | MIT licence text at the referenced source revision, defining permissions and redistribution conditions. | Licence Text | 2026-10-23 |
+| <a id="node-postgres-npm-version-index"></a><a id="package-versions"></a><a id="ref-386f723d"></a>node-postgres npm version index | [https://www.npmjs.com/package/pg?activeTab=versions](https://www.npmjs.com/package/pg?activeTab=versions) | Registry index of published pg package versions; access and applicable version unresolved. | Candidate Registry Index (access blocked) | Not established |
+| <a id="nodejsundici"></a><a id="ref-edd6cbb9"></a>nodejs/undici | [https://github.com/nodejs/undici/tree/245306dc31b22316600bc963120f34714ebcdd0a](https://github.com/nodejs/undici/tree/245306dc31b22316600bc963120f34714ebcdd0a) | Node.js HTTP client and Fetch API implementation. | Source Revision | 2026-11-25 |
+| <a id="nodemailer"></a><a id="ref-0c44f600"></a>Nodemailer | [https://github.com/nodemailer/nodemailer/tree/2c0920938da17ed50eaa3d68f28fcb873c2ae388](https://github.com/nodemailer/nodemailer/tree/2c0920938da17ed50eaa3d68f28fcb873c2ae388) | Email message construction and delivery using SMTP and other transports. | Source Revision | 2026-11-26 |
+| <a id="npl-internet-time-service-user-guide-v2"></a><a id="npl-internet-time-service-user-guide"></a><a id="ref-84066cfe"></a>NPL Internet Time Service User Guide v2 | [https://www.npl.co.uk/getattachment/7c097457-5a1f-436f-af7b-930634680c5d/its_user_guide.pdf?lang=en-US](https://www.npl.co.uk/getattachment/7c097457-5a1f-436f-af7b-930634680c5d/its_user_guide.pdf?lang=en-US) | Historical guide to synchronising computer clocks with NPL using NTP; not evidence of current service availability. | Historical Published Guide | 2007-04 |
+| <a id="ntp-pool-europe"></a><a id="ref-342633dd"></a>NTP Pool Europe | [https://www.ntppool.org/en/zone/europe](https://www.ntppool.org/en/zone/europe) | Regional pool information for network time servers in Europe. | Service Directory (mutable) | Not established |
+| <a id="ntp-pool-uk"></a><a id="ref-feb02964"></a>NTP Pool UK | [https://www.ntppool.org/uk/zone/uk](https://www.ntppool.org/uk/zone/uk) | Country-specific pool information for network time servers in the United Kingdom. | Service Directory (mutable) | Not established |
+| <a id="nuxt"></a><a id="nuxt-4"></a><a id="ref-b554353a"></a>Nuxt | [https://github.com/nuxt/nuxt/tree/03c8441d1f410b6be5bc1758cfe880e764f09cf9](https://github.com/nuxt/nuxt/tree/03c8441d1f410b6be5bc1758cfe880e764f09cf9) | Vue application framework supporting server rendering and modular composition. | Source Revision | 2026-11-25 |
+| <a id="nuxt-color-mode"></a><a id="ref-5a839ea2"></a>Nuxt Color Mode | [https://github.com/nuxt-modules/color-mode/tree/04347dc9e9dfe414431775fee616664830ee10ea](https://github.com/nuxt-modules/color-mode/tree/04347dc9e9dfe414431775fee616664830ee10ea) | Nuxt colour scheme preference and appearance integration. | Source Revision | 2026-11-26 |
+| <a id="nuxt-ui"></a><a id="nuxt-ui-v4"></a><a id="ref-b0f34541"></a>Nuxt UI | [https://github.com/nuxt/ui/tree/657697d97a83b8ebb06f05bfa9dc18b276da5d4f](https://github.com/nuxt/ui/tree/657697d97a83b8ebb06f05bfa9dc18b276da5d4f) | Vue and Nuxt interface components and theming. | Source Revision | 2026-11-26 |
+| <a id="nuxt-schema-org"></a><a id="ref-da234be8"></a>nuxt-schema-org | [https://github.com/harlan-zw/nuxt-schema-org/tree/e06c4a916f1f0f73c0af29c52a16b60cf2304dd2](https://github.com/harlan-zw/nuxt-schema-org/tree/e06c4a916f1f0f73c0af29c52a16b60cf2304dd2) | Schema.org structured data integration for Nuxt. | Source Revision | 2026-11-26 |
+| <a id="oasis-cap-12"></a><a id="ref-375d555d"></a>OASIS CAP 1.2 | [https://docs.oasis-open.org/emergency/cap/v1.2/CAP-v1.2.html](https://docs.oasis-open.org/emergency/cap/v1.2/CAP-v1.2.html) | Common Alerting Protocol XML format for interoperable emergency alerts and warnings. | OASIS Standard | 2010-07-01 |
+| <a id="oasis-dita-13-base-edition"></a><a id="oasis-dita-13"></a><a id="ref-87ed8fd7"></a>OASIS DITA 1.3 Base Edition | [https://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/dita-v1.3-os-part1-base.html](https://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/dita-v1.3-os-part1-base.html) | Topic-based structured authoring, content reuse and publishing model. | OASIS Standard | 2015-12-17 |
+| <a id="oasis-ubl-24"></a><a id="ref-4462b3df"></a>OASIS UBL 2.4 | [https://docs.oasis-open.org/ubl/os-UBL-2.4/UBL-2.4.html](https://docs.oasis-open.org/ubl/os-UBL-2.4/UBL-2.4.html) | XML business document vocabulary for commercial exchanges including ordering and invoicing. | OASIS Standard | 2024-06-20 |
+| <a id="oauth4webapi"></a><a id="ref-419a0c6b"></a>oauth4webapi | [https://github.com/panva/oauth4webapi/tree/aa7e6e889fd64a325adbef651419326e8a3266e7](https://github.com/panva/oauth4webapi/tree/aa7e6e889fd64a325adbef651419326e8a3266e7) | OAuth and OpenID Connect protocol operations using web-standard APIs. | Source Revision | 2026-11-20 |
+| <a id="odrl-information-model-22"></a><a id="odrl"></a><a id="ref-4d3f2257"></a>ODRL Information Model 2.2 | [https://www.w3.org/TR/2018/REC-odrl-model-20180215/](https://www.w3.org/TR/2018/REC-odrl-model-20180215/) | Interoperable model for expressing permissions, prohibitions and duties relating to assets and services. | Recommendation | 2018-02-15 |
+| <a id="oecd-consumer-protection-in-e-commerce-2016"></a><a id="ref-49844874"></a>OECD Consumer Protection in E-commerce (2016) | [https://www.oecd.org/en/publications/oecd-recommendation-of-the-council-on-consumer-protection-in-e-commerce_9789264255258-en.html](https://www.oecd.org/en/publications/oecd-recommendation-of-the-council-on-consumer-protection-in-e-commerce_9789264255258-en.html) | Recommendation concerning consumer protection, fair practices and dispute resolution in electronic commerce. | OECD Recommendation | 2016 |
+| <a id="ofcom"></a><a id="ref-9f221536"></a>Ofcom | [https://www.ofcom.org.uk/](https://www.ofcom.org.uk/) | UK communications and online safety regulator portal. | Regulator Portal (mutable) | Not established |
+| <a id="ofcom-age-assurance-duties"></a><a id="ofcom-age-assurance"></a><a id="ref-6a67f3f6"></a>Ofcom Age Assurance Duties | [https://www.ofcom.org.uk/online-safety/protecting-children/age-assurance](https://www.ofcom.org.uk/online-safety/protecting-children/age-assurance) | Guidance on age assurance and protection of children under the Online Safety Act. | Regulatory Guidance (mutable) | Not established |
+| <a id="ofcom-illegal-content-duties"></a><a id="ref-2c7500e0"></a>Ofcom Illegal Content Duties | [https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/illegal-content-duties-under-the-online-safety-act](https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/illegal-content-duties-under-the-online-safety-act) | Guidance on risk assessment and illegal-content safety duties for regulated online services. | Regulatory Guidance (mutable) | Not established |
+| <a id="ofcom-online-safety-regulatory-documents"></a><a id="ofcom-2"></a><a id="ref-5c4b49fe"></a>Ofcom Online Safety Regulatory Documents | [https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/online-safety-regulatory-documents](https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/online-safety-regulatory-documents) | Index of online safety codes, risk assessment guidance and superseded versions. | Regulatory Publication Index (mutable) | Not established |
+| <a id="ofetch"></a><a id="ref-e2925973"></a>ofetch | [https://github.com/unjs/ofetch/tree/1dbc37fd1ceab832fc7c90cad81b1091c95ba563](https://github.com/unjs/ofetch/tree/1dbc37fd1ceab832fc7c90cad81b1091c95ba563) | Fetch wrapper with response parsing, interceptors and retry options. | Source Revision | 2026-07-08 |
+| <a id="ogc-geosparql-11"></a><a id="geosparql"></a><a id="ref-a6c83f6b"></a>OGC GeoSPARQL 1.1 | [https://docs.ogc.org/is/22-047r1/22-047r1.html](https://docs.ogc.org/is/22-047r1/22-047r1.html) | RDF vocabulary and SPARQL extensions for representing and querying geospatial data. | OGC Standard | 2024-01-29 |
+| <a id="ogc-imdf-100"></a><a id="ogc-imdf"></a><a id="ref-a915c4e3"></a>OGC IMDF 1.0.0 | [https://docs.ogc.org/cs/20-094/20-094.html](https://docs.ogc.org/cs/20-094/20-094.html) | Indoor geographic data model for mapping, orientation, navigation and discovery. | Community Standard | 2021-02-18 |
+| <a id="ogc-indoorgml-20-part-1"></a><a id="ogc-indoorgml-20"></a><a id="ref-a08315c4"></a>OGC IndoorGML 2.0 Part 1 | [https://docs.ogc.org/is/22-045r5/22-045r5.html](https://docs.ogc.org/is/22-045r5/22-045r5.html) | Conceptual model for indoor spaces, connectivity and navigation relationships. | OGC Standard | 2025-06-26 |
+| <a id="omg-bpmn-202"></a><a id="ref-c5383867"></a>OMG BPMN 2.0.2 | [https://www.omg.org/spec/BPMN/2.0.2](https://www.omg.org/spec/BPMN/2.0.2) | Notation, metamodel and interchange definitions for business process models. | Formal Specification | 2014-01 |
+| <a id="omg-cmmn-11"></a><a id="cmmn-11"></a><a id="ref-ec91d39f"></a>OMG CMMN 1.1 | [https://www.omg.org/spec/CMMN/1.1](https://www.omg.org/spec/CMMN/1.1) | Notation and metamodel for case management and adaptive case execution. | Formal Specification | 2016-12 |
+| <a id="omg-dmn-15"></a><a id="ref-023bac16"></a>OMG DMN 1.5 | [https://www.omg.org/spec/DMN/1.5](https://www.omg.org/spec/DMN/1.5) | Decision models, decision tables and expression semantics for business decisions. | Formal Specification | 2024-08 |
+| <a id="omg-dmn-16"></a><a id="ref-e234bdf1"></a><a id="omg-dmn-16-2"></a><a id="ref-9c3f04c4"></a>OMG DMN 1.6 | [https://www.omg.org/spec/DMN/1.6](https://www.omg.org/spec/DMN/1.6) | Decision modelling and interchange specification for decision requirements and executable logic. | Formal Specification | 2026-09 |
+| <a id="ont-api"></a><a id="ref-9bb6c5a8"></a>ONT-API | [https://github.com/owlcs/ont-api/tree/c5ec3062c72aa73b370dc8d802c7cf6a85289c4f](https://github.com/owlcs/ont-api/tree/c5ec3062c72aa73b370dc8d802c7cf6a85289c4f) | Java ontology manipulation interfaces integrating OWL API and RDF graph models. | Source Revision | 2026-09-09 |
+| <a id="opc-ua-overview"></a><a id="opc-ua--iec-62541"></a><a id="ref-ec7aad39"></a>OPC UA Overview | [https://opcfoundation.org/faq/](https://opcfoundation.org/faq/) | Overview of the OPC Unified Architecture industrial information exchange framework; not the normative IEC 62541 text. | Publisher FAQ (mutable) | Not established |
+| <a id="open-badges-30"></a><a id="open-badges"></a><a id="ref-66d66724"></a>Open Badges 3.0 | [https://standards.1edtech.org/open-badges/specifications/standards/v3p0](https://standards.1edtech.org/open-badges/specifications/standards/v3p0) | Interoperable digital achievement credentials describing issuers, recipients, achievements and evidence. | Final Specification (revision of online text unresolved) | 2024-06 |
+| <a id="open-graph-protocol"></a><a id="open-graph"></a><a id="ref-c969b641"></a>Open Graph Protocol | [https://ogp.me/](https://ogp.me/) | Metadata vocabulary for representing web pages as objects in social sharing contexts. | Protocol (revision unresolved) | Not established |
+| <a id="openapi-311"></a><a id="openapi"></a><a id="ref-da6a3c81"></a><a id="openapi-2"></a><a id="ref-e4aeda6d"></a><a id="openapi-3"></a><a id="ref-496ea603"></a><a id="openapi-4"></a><a id="ref-5c332c57"></a><a id="ref-e6b991a3"></a>OpenAPI 3.1.1 | [https://spec.openapis.org/oas/v3.1.1.html](https://spec.openapis.org/oas/v3.1.1.html) | Machine-readable descriptions of HTTP APIs, operations, parameters, responses, schemas and security requirements. | Published Specification | 2024-10-24 |
+| <a id="openid-connect-core-10"></a><a id="oidc-core-10"></a><a id="ref-e11b90d4"></a>OpenID Connect Core 1.0 | [https://openid.net/specs/openid-connect-core-1_0.html](https://openid.net/specs/openid-connect-core-1_0.html) | Authentication layer over OAuth 2.0 defining identity tokens, claims and user information; includes errata set 2. | Final Specification | 2023-12-15 |
+| <a id="openid-fapi-20-security-profile"></a><a id="openid-fapi-20"></a><a id="ref-9cedeefb"></a>OpenID FAPI 2.0 Security Profile | [https://openid.net/specs/fapi-security-profile-2_0-final.html](https://openid.net/specs/fapi-security-profile-2_0-final.html) | OAuth-based security profile for high-security API access. | Final Specification | 2025-02-22 |
+| <a id="openid-for-verifiable-credential-issuance-10"></a><a id="openid4vci"></a><a id="ref-704de6a5"></a>OpenID for Verifiable Credential Issuance 1.0 | [https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0-final.html](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0-final.html) | Protocol for issuing verifiable credentials to wallets using OAuth-based authorisation. | Final Specification | 2025-09-16 |
+| <a id="openid-for-verifiable-presentations-10"></a><a id="openid4vp"></a><a id="ref-305f6f43"></a>OpenID for Verifiable Presentations 1.0 | [https://openid.net/specs/openid-4-verifiable-presentations-1_0-final.html](https://openid.net/specs/openid-4-verifiable-presentations-1_0-final.html) | Protocol for requesting and presenting digital credentials to verifiers. | Final Specification | 2025-07-09 |
+| <a id="openid-client"></a><a id="ref-67858133"></a>openid-client | [https://github.com/panva/openid-client/tree/85bfad5ae62f14fd2f5a737931c313efa97b8a81](https://github.com/panva/openid-client/tree/85bfad5ae62f14fd2f5a737931c313efa97b8a81) | OAuth 2.0 and OpenID Connect client protocol implementation. | Source Revision | 2026-11-20 |
+| <a id="openid4vc-haip-10"></a><a id="ref-83f0e8eb"></a>OpenID4VC HAIP 1.0 | [https://openid.net/specs/openid4vc-high-assurance-interoperability-profile-1_0-final.html](https://openid.net/specs/openid4vc-high-assurance-interoperability-profile-1_0-final.html) | Interoperability profile for high-assurance digital credential issuance and presentation. | Final Specification | 2025-12-24 |
+| <a id="openlayers"></a><a id="ref-a2227ac8"></a>OpenLayers | [https://github.com/openlayers/openlayers/tree/a6c12de9b70291f52f462770b2f5a0230f34763c](https://github.com/openlayers/openlayers/tree/a6c12de9b70291f52f462770b2f5a0230f34763c) | Interactive web maps supporting raster, vector and geographic data sources. | Source Revision | 2026-11-26 |
+| <a id="opensearch"></a><a id="ref-133dccf8"></a>OpenSearch | [https://github.com/opensearch-project/OpenSearch/tree/c51b5442159391f3d58fb27c5b6d71aede802317](https://github.com/opensearch-project/OpenSearch/tree/c51b5442159391f3d58fb27c5b6d71aede802317) | Distributed search and analytics engine for indexed data. | Source Revision | 2026-11-26 |
+| <a id="opentelemetry-architecture-overview"></a><a id="opentelemetry-2"></a><a id="ref-8c05667e"></a>OpenTelemetry Architecture Overview | [https://github.com/open-telemetry/opentelemetry-specification/blob/4e01937ed7d734e5f4feb8ffba89f1b6b960ab59/specification/overview.md](https://github.com/open-telemetry/opentelemetry-specification/blob/4e01937ed7d734e5f4feb8ffba89f1b6b960ab59/specification/overview.md) | Overview of client architecture, APIs, SDKs and semantic conventions. | Documentation Source Revision | 2026-11-25 |
+| <a id="opentelemetry-collector"></a><a id="ref-ea091f93"></a>OpenTelemetry Collector | [https://github.com/open-telemetry/opentelemetry-collector/tree/4c6c46bf6bc6344e4507e5dec2028893f5045767](https://github.com/open-telemetry/opentelemetry-collector/tree/4c6c46bf6bc6344e4507e5dec2028893f5045767) | Receives, processes and exports telemetry through configurable pipelines. | Source Revision | 2026-11-26 |
+| <a id="opentelemetry-collector-contrib"></a><a id="collector-contrib"></a><a id="ref-51c69737"></a>OpenTelemetry Collector Contrib | [https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/5e76fa72b949a44df55dca19713fa6588fc494e9](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/5e76fa72b949a44df55dca19713fa6588fc494e9) | Additional OpenTelemetry Collector receivers, processors and exporters. | Source Revision | 2026-11-26 |
+| <a id="opentelemetry-error-recording"></a><a id="opentelemetry-error-conventions"></a><a id="ref-a60f637a"></a>OpenTelemetry Error Recording | [https://github.com/open-telemetry/semantic-conventions/blob/cb629e688f3df8aca08b597bed3144afc9e44aaa/docs/general/recording-errors.md](https://github.com/open-telemetry/semantic-conventions/blob/cb629e688f3df8aca08b597bed3144afc9e44aaa/docs/general/recording-errors.md) | Recommendations for recording errors on spans, metrics and exceptions. | Development | 2026-11-26 |
+| <a id="opentelemetry-js"></a><a id="ref-8e380f73"></a>OpenTelemetry JS | [https://github.com/open-telemetry/opentelemetry-js/tree/3a84fa9fe237a95cd03a44460639218eb9c64e76](https://github.com/open-telemetry/opentelemetry-js/tree/3a84fa9fe237a95cd03a44460639218eb9c64e76) | OpenTelemetry JavaScript APIs and SDKs for generating and exporting telemetry. | Source Revision | 2026-11-26 |
+| <a id="opentelemetry-js-contrib"></a><a id="js-contrib"></a><a id="ref-edd7ef97"></a>OpenTelemetry JS Contrib | [https://github.com/open-telemetry/opentelemetry-js-contrib/tree/f7737ee224ee13a24d389cf5ef42cec169e3843a](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/f7737ee224ee13a24d389cf5ef42cec169e3843a) | Additional JavaScript OpenTelemetry instrumentation and integrations. | Source Revision | 2026-11-26 |
+| <a id="opentelemetry-messaging-spans"></a><a id="opentelemetry-messaging-conventions"></a><a id="ref-78b1a8a5"></a>OpenTelemetry Messaging Spans | [https://github.com/open-telemetry/semantic-conventions/blob/cb629e688f3df8aca08b597bed3144afc9e44aaa/docs/messaging/messaging-spans.md](https://github.com/open-telemetry/semantic-conventions/blob/cb629e688f3df8aca08b597bed3144afc9e44aaa/docs/messaging/messaging-spans.md) | Span conventions for messaging operations, producers and consumers. | Development | 2026-11-26 |
+| <a id="opentelemetry-semantic-conventions"></a><a id="ref-d7676645"></a>OpenTelemetry Semantic Conventions | [https://github.com/open-telemetry/semantic-conventions/blob/cb629e688f3df8aca08b597bed3144afc9e44aaa/docs/README.md](https://github.com/open-telemetry/semantic-conventions/blob/cb629e688f3df8aca08b597bed3144afc9e44aaa/docs/README.md) | Common telemetry attribute and signal conventions with differing individual stability levels. | Specification Source Revision | 2026-11-26 |
+| <a id="opentelemetry-specification"></a><a id="opentelemetry"></a><a id="ref-de6a7a46"></a>OpenTelemetry Specification | [https://github.com/open-telemetry/opentelemetry-specification/blob/4e01937ed7d734e5f4feb8ffba89f1b6b960ab59/specification/README.md](https://github.com/open-telemetry/opentelemetry-specification/blob/4e01937ed7d734e5f4feb8ffba89f1b6b960ab59/specification/README.md) | Specification of telemetry APIs, SDKs, signals and interoperability. | Specification Source Revision | 2026-11-25 |
+| <a id="openvue"></a><a id="ref-34e655b0"></a>OpenVue | [https://openvue.dev/introduction](https://openvue.dev/introduction) | Vue component suite derived from PrimeVue; applicable version unresolved. | Candidate Documentation (mutable) | Not established |
+| <a id="openwallet-foundation-labsidentity-common-ts"></a><a id="ref-40727472"></a>openwallet-foundation-labs/identity-common-ts | [https://github.com/openwallet-foundation-labs/identity-common-ts/tree/6306cd19d7f5335e7a31dd1b43ca418c51cdcaf7](https://github.com/openwallet-foundation-labs/identity-common-ts/tree/6306cd19d7f5335e7a31dd1b43ca418c51cdcaf7) | Shared TypeScript utilities for digital identity implementations. | Source Revision | 2026-11-26 |
+| <a id="openwallet-foundation-labsmdoc-ts"></a><a id="ref-d11f656b"></a>openwallet-foundation-labs/mdoc-ts | [https://github.com/openwallet-foundation-labs/mdoc-ts/tree/c7f087234618b79144cb4668510d1e57bba744ed](https://github.com/openwallet-foundation-labs/mdoc-ts/tree/c7f087234618b79144cb4668510d1e57bba744ed) | TypeScript implementation tooling for mobile documents. | Source Revision | 2026-09-28 |
+| <a id="or-tools"></a><a id="ref-7011995a"></a>OR-Tools | [https://github.com/google/or-tools/tree/ffea732ce3b6f928e117914521b1f4be67ebcad9](https://github.com/google/or-tools/tree/ffea732ce3b6f928e117914521b1f4be67ebcad9) | Combinatorial optimisation toolkit for routing, scheduling and constraint programming. | Source Revision | 2026-11-23 |
+| <a id="orestbidacookieconsent"></a><a id="ref-008bcb87"></a>orestbida/cookieconsent | [https://github.com/orestbida/cookieconsent/tree/ba52891b9c6bbd803bdeca25109fe3be3143770a](https://github.com/orestbida/cookieconsent/tree/ba52891b9c6bbd803bdeca25109fe3be3143770a) | Browser cookie consent interface and category-based consent management. | Source Revision | 2026-11-22 |
+| <a id="organization-ontology"></a><a id="ref-3a7e011a"></a>Organization Ontology | [https://www.w3.org/TR/2014/REC-vocab-org-20140116/](https://www.w3.org/TR/2014/REC-vocab-org-20140116/) | Linked data vocabulary for modelling organisations, organisational units, roles and memberships. | Recommendation | 2014-01-16 |
+| <a id="owasp-asvs-50"></a><a id="ref-b9e2aae7"></a><a id="owasp-asvs"></a><a id="ref-5303bf5b"></a><a id="owasp-asvs-50-2"></a><a id="ref-f6bc94d9"></a><a id="owasp-asvs-5"></a><a id="ref-cb38cea0"></a><a id="owasp-asvs-500"></a><a id="ref-a1c367d2"></a>OWASP ASVS 5.0.0 | [https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf](https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf) | Versioned application security requirements for designing, developing and verifying web applications and services. | Stable Release | 2025-05 |
+| <a id="owasp-asvs-500-v16"></a><a id="owasp-asvs-50-ch-16"></a><a id="ref-f0c6e4e1"></a>OWASP ASVS 5.0.0 V16 | [https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x25-V16-Security-Logging-and-Error-Handling.md](https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x25-V16-Security-Logging-and-Error-Handling.md) | Application security verification requirements for logging and error handling. | Versioned Standard Chapter | 2025 |
+| <a id="owasp-micro-frontend-security-cheat-sheet"></a><a id="owasp-micro-frontend-security"></a><a id="ref-a097180d"></a>OWASP Micro Frontend Security Cheat Sheet | [https://cheatsheetseries.owasp.org/cheatsheets/Micro_Frontend_Security_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Micro_Frontend_Security_Cheat_Sheet.html) | Security guidance for distributed frontend composition and trust boundaries. | Technical Guidance (revision unresolved) | Not established |
+| <a id="owl-2-overview"></a><a id="owl-2"></a><a id="ref-7854321a"></a>OWL 2 Overview | [https://www.w3.org/TR/2012/REC-owl2-overview-20121211/](https://www.w3.org/TR/2012/REC-owl2-overview-20121211/) | Overview of the ontology language, its semantics, syntaxes and profiles. | Recommendation | 2012-12-11 |
+| <a id="owl-2-profiles"></a><a id="ref-c8ffae91"></a>OWL 2 Profiles | [https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/](https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/) | Defines constrained ontology language profiles supporting efficient reasoning and querying. | Recommendation | 2012-12-11 |
+| <a id="owlapi"></a><a id="ref-5eeb6944"></a>OWLAPI | [https://github.com/owlcs/owlapi/tree/dee53400f3da0fe009bd50af1285b28095fa5178](https://github.com/owlcs/owlapi/tree/dee53400f3da0fe009bd50af1285b28095fa5178) | Java interfaces for creating, parsing and manipulating OWL ontologies. | Source Revision | 2026-11-02 |
+| <a id="oxigraph"></a><a id="ref-6a0f1548"></a>Oxigraph | [https://github.com/oxigraph/oxigraph/tree/b4771318482859182d62280b8f3affbff76b8cf0](https://github.com/oxigraph/oxigraph/tree/b4771318482859182d62280b8f3affbff76b8cf0) | RDF graph database and SPARQL query engine. | Source Revision | 2026-11-26 |
+| <a id="p-limit"></a><a id="ref-69494d09"></a>p-limit | [https://github.com/sindresorhus/p-limit/tree/a8a6fbec4e0e866d6d779b10889bb4f5567e70eb](https://github.com/sindresorhus/p-limit/tree/a8a6fbec4e0e866d6d779b10889bb4f5567e70eb) | Limits concurrency of promise-returning operations. | Source Revision | 2026-09-18 |
+| <a id="p-queue"></a><a id="ref-3d468f2d"></a>p-queue | [https://github.com/sindresorhus/p-queue/tree/7f272ab5ff2254c0dc2537b7977e88ede1cd55e8](https://github.com/sindresorhus/p-queue/tree/7f272ab5ff2254c0dc2537b7977e88ede1cd55e8) | Promise task queue with configurable concurrency and rate constraints. | Source Revision | 2026-10-12 |
+| <a id="p-retry"></a><a id="ref-0286fae8"></a>p-retry | [https://github.com/sindresorhus/p-retry/tree/ac3c4cdb7f015e1f71825e4274e2323a49b615eb](https://github.com/sindresorhus/p-retry/tree/ac3c4cdb7f015e1f71825e4274e2323a49b615eb) | Retry handling for asynchronous operations with configurable backoff. | Source Revision | 2026-11-02 |
+| <a id="parse5"></a><a id="ref-7c78d301"></a>parse5 | [https://github.com/inikulin/parse5/tree/2412bb99d81d2c1566154608cdc2bb3bcba87f1c](https://github.com/inikulin/parse5/tree/2412bb99d81d2c1566154608cdc2bb3bcba87f1c) | HTML parsing and serialisation following the HTML standard. | Source Revision | 2026-11-24 |
+| <a id="payment-request-api"></a><a id="payment-request"></a><a id="ref-ea124a00"></a>Payment Request API | [https://www.w3.org/TR/2022/REC-payment-request-20220908/](https://www.w3.org/TR/2022/REC-payment-request-20220908/) | Browser API for coordinating payment method selection and payment information exchange between merchants and users. | Recommendation | 2022-09-08 |
+| <a id="paypal-typescript"></a><a id="ref-8d3327af"></a>PayPal TypeScript | [https://github.com/paypal/PayPal-TypeScript-Server-SDK/tree/b02a9b9c8f53418d6278928fa41b174803037277](https://github.com/paypal/PayPal-TypeScript-Server-SDK/tree/b02a9b9c8f53418d6278928fa41b174803037277) | TypeScript server client for PayPal payment APIs. | Source Revision | 2026-08-21 |
+| <a id="pci-dss-v401"></a><a id="pci-dss-401"></a><a id="ref-b32c0c68"></a><a id="pci-dss"></a><a id="ref-3cb45b85"></a><a id="ref-a1ea0e98"></a>PCI DSS v4.0.1 | [https://www.pcisecuritystandards.org/document_library/?class=pcidss&doc=pci_dss](https://www.pcisecuritystandards.org/document_library/?class=pcidss&doc=pci_dss) | Security requirements for environments storing, processing or transmitting payment account data. | Industry Security Standard (versioned catalogue) | 2024-06 |
+| <a id="pci-secure-software-standard-overview"></a><a id="pci-secure-software"></a><a id="ref-fce3c8df"></a>PCI Secure Software Standard Overview | [https://www.pcisecuritystandards.org/standards/secure-software/](https://www.pcisecuritystandards.org/standards/secure-software/) | Security assessment framework for payment software and associated software security requirements. | Standards Overview (edition unresolved) | Not established |
+| <a id="pci-security-standards-council"></a><a id="pci-ssc"></a><a id="ref-eb8cbb26"></a>PCI Security Standards Council | [https://www.pcisecuritystandards.org/](https://www.pcisecuritystandards.org/) | Industry body publishing payment security standards and supporting resources. | Publisher Portal (mutable) | Not established |
+| <a id="pci-ssc-faq-1588"></a><a id="saq-a-eligibility-guidance"></a><a id="ref-107edc57"></a>PCI SSC FAQ 1588 | [https://www.pcisecuritystandards.org/faqs/1588/](https://www.pcisecuritystandards.org/faqs/1588/) | Clarifies script-attack protection eligibility criteria for e-commerce merchants using embedded payment forms. | Published Guidance | 2025-02 |
+| <a id="pci-ssc-payment-page-security-announcement"></a><a id="payment-page-security-guidance"></a><a id="ref-4fbd01ef"></a>PCI SSC Payment Page Security Announcement | [https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming](https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming) | Announcement of implementation guidance on payment-page script management and tamper detection under PCI DSS requirements 6.4.3 and 11.6.1. | Published Guidance Announcement | 2025-03-10 |
+| <a id="pdf-lib"></a><a id="ref-87054181"></a>pdf-lib | [https://github.com/Hopding/pdf-lib/tree/93dd36e85aa659a3bca09867d2d8fac172501fbe](https://github.com/Hopding/pdf-lib/tree/93dd36e85aa659a3bca09867d2d8fac172501fbe) | JavaScript library for creating and modifying PDF documents. | Source Revision | 2021-11-12 |
+| <a id="pdfua-standards-overview"></a><a id="pdfua"></a><a id="ref-85fea736"></a>PDF/UA Standards Overview | [https://pdfa.org/pdf-standards/](https://pdfa.org/pdf-standards/) | Overview of PDF accessibility standards for tagged and accessible electronic documents; specific ISO edition unresolved. | Standards Overview (edition unresolved) | Not established |
+| <a id="pdfcpupdfcpu"></a><a id="ref-3f43e44c"></a>pdfcpu/pdfcpu | [https://github.com/pdfcpu/pdfcpu/tree/a21a372de6864eccd9e554df63c7950dfd1a4b47](https://github.com/pdfcpu/pdfcpu/tree/a21a372de6864eccd9e554df63c7950dfd1a4b47) | Go library and command-line tools for PDF validation and manipulation. | Source Revision | 2026-10-28 |
+| <a id="pdfkit"></a><a id="ref-6a49fbae"></a>PDFKit | [https://github.com/foliojs/pdfkit/tree/ad00f9c1296b394703e86a84c52cceaf474c1097](https://github.com/foliojs/pdfkit/tree/ad00f9c1296b394703e86a84c52cceaf474c1097) | Programmatic PDF document generation. | Source Revision | 2026-11-26 |
+| <a id="peppol-bis-billing-30"></a><a id="peppol-bis-billing"></a><a id="ref-363ab64c"></a>Peppol BIS Billing 3.0 | [https://docs.peppol.eu/poacc/billing/3.0/bis/](https://docs.peppol.eu/poacc/billing/3.0/bis/) | Business interoperability specification for electronic invoices and credit notes; maintenance release unresolved. | Versioned Specification (maintenance revision unresolved) | Not established |
+| <a id="peppol-bis-ordering"></a><a id="openpeppol-bis-ordering"></a><a id="ref-ad195287"></a>Peppol BIS Ordering | [https://docs.peppol.eu/poacc/upgrade-3/profiles/28-ordering/](https://docs.peppol.eu/poacc/upgrade-3/profiles/28-ordering/) | Business interoperability profile for electronic orders and associated responses. | Specification (revision unresolved) | Not established |
+| <a id="pg_cron"></a><a id="ref-54c57554"></a>pg_cron | [https://github.com/citusdata/pg_cron/tree/5cedfa472ccc83567aa23ec645925ed8489a7797](https://github.com/citusdata/pg_cron/tree/5cedfa472ccc83567aa23ec645925ed8489a7797) | PostgreSQL extension for scheduling database jobs using cron expressions. | Source Revision | 2026-09-08 |
+| <a id="pg-boss"></a><a id="ref-fc345c0f"></a>pg-boss | [https://github.com/timgit/pg-boss/tree/b2198aa65138585f8bb160658e38249c94115aad](https://github.com/timgit/pg-boss/tree/b2198aa65138585f8bb160658e38249c94115aad) | PostgreSQL-backed job queue for asynchronous Node.js processing. | Source Revision | 2026-11-25 |
+| <a id="pgbackrest"></a><a id="ref-82a8bc20"></a>pgBackRest | [https://github.com/pgbackrest/pgbackrest/tree/8a4119022064832298006d95a5105255385da61e](https://github.com/pgbackrest/pgbackrest/tree/8a4119022064832298006d95a5105255385da61e) | PostgreSQL backup, restoration and write-ahead log archiving tooling. | Source Revision | 2026-11-23 |
+| <a id="pgbouncer"></a><a id="ref-dd9ecc22"></a>PgBouncer | [https://github.com/pgbouncer/pgbouncer/tree/23347f670c2296837012fd9a04f1bb2ac6fdcd45](https://github.com/pgbouncer/pgbouncer/tree/23347f670c2296837012fd9a04f1bb2ac6fdcd45) | Lightweight PostgreSQL connection pooler. | Source Revision | 2026-11-25 |
+| <a id="pgmq"></a><a id="ref-c40afaea"></a>PGMQ | [https://github.com/pgmq/pgmq/tree/51468f6ba2afeb4a4a9a67e9a532f37b590a0929](https://github.com/pgmq/pgmq/tree/51468f6ba2afeb4a4a9a67e9a532f37b590a0929) | PostgreSQL-based durable message queue with visibility timeouts. | Source Revision | 2026-11-18 |
+| <a id="pgroonga"></a><a id="ref-b46ff366"></a>PGroonga | [https://github.com/pgroonga/pgroonga/tree/0950aa34adda4b29df6b17855d900b73d16d026f](https://github.com/pgroonga/pgroonga/tree/0950aa34adda4b29df6b17855d900b73d16d026f) | PostgreSQL extension for multilingual full-text indexing and retrieval. | Source Revision | 2026-11-25 |
+| <a id="pgvector"></a><a id="ref-863156a4"></a>pgvector | [https://github.com/pgvector/pgvector/tree/e8f84dcc55dd2cace82dfadcdd7929781c3f708c](https://github.com/pgvector/pgvector/tree/e8f84dcc55dd2cace82dfadcdd7929781c3f708c) | PostgreSQL extension for vector storage and similarity search. | Source Revision | 2026-11-24 |
+| <a id="phaser"></a><a id="ref-224449af"></a>Phaser | [https://github.com/phaserjs/phaser/tree/02d8931b626d9764c133cbb3fbf99966c03c757c](https://github.com/phaserjs/phaser/tree/02d8931b626d9764c133cbb3fbf99966c03c757c) | Browser-based two-dimensional game framework. | Source Revision | 2026-08-21 |
+| <a id="photoswipe"></a><a id="ref-a7210fa7"></a>PhotoSwipe | [https://github.com/dimsemenov/PhotoSwipe/tree/cd41cb587a460634e4cae53134f3d01d06e284a6](https://github.com/dimsemenov/PhotoSwipe/tree/cd41cb587a460634e4cae53134f3d01d06e284a6) | Interactive image gallery and lightbox viewer. | Source Revision | 2025-12-04 |
+| <a id="pinia"></a><a id="ref-e0010fdc"></a>Pinia | [https://github.com/vuejs/pinia/tree/cc4f2bc9b0936421e7c7e330c0b34ef5fe4a590d](https://github.com/vuejs/pinia/tree/cc4f2bc9b0936421e7c7e330c0b34ef5fe4a590d) | Vue application state management. | Source Revision | 2026-11-26 |
+| <a id="pino"></a><a id="ref-5f05d959"></a>Pino | [https://github.com/pinojs/pino/tree/b5fac264351ca662b0961becc657743a23feb0c4](https://github.com/pinojs/pino/tree/b5fac264351ca662b0961becc657743a23feb0c4) | Structured JSON logging library for Node.js. | Source Revision | 2026-11-22 |
+| <a id="pixijs"></a><a id="ref-28692586"></a>PixiJS | [https://github.com/pixijs/pixijs/tree/39abe1020d0b0dd24fb878ae15a26e446c4e5191](https://github.com/pixijs/pixijs/tree/39abe1020d0b0dd24fb878ae15a26e446c4e5191) | Accelerated two-dimensional graphics rendering. | Source Revision | 2026-11-26 |
+| <a id="playwright"></a><a id="ref-12180955"></a>Playwright | [https://github.com/microsoft/playwright/tree/c2ebabaf153d7191c8ce959a20d622b9faa57025](https://github.com/microsoft/playwright/tree/c2ebabaf153d7191c8ce959a20d622b9faa57025) | Cross-browser automation and end-to-end web application testing. | Source Revision | 2026-11-26 |
+| <a id="playwright-licence"></a><a id="licence-6"></a><a id="ref-3a3d345b"></a>Playwright licence | [https://github.com/microsoft/playwright/blob/c2ebabaf153d7191c8ce959a20d622b9faa57025/LICENSE](https://github.com/microsoft/playwright/blob/c2ebabaf153d7191c8ce959a20d622b9faa57025/LICENSE) | Apache License 2.0 licence text at the referenced source revision, defining permissions and redistribution conditions. | Licence Text | 2026-11-26 |
+| <a id="playwright-release-v1651"></a><a id="releases-6"></a><a id="ref-cea8728c"></a>Playwright release v1.65.1 | [https://github.com/microsoft/playwright/releases/tag/v1.65.1](https://github.com/microsoft/playwright/releases/tag/v1.65.1) | Publisher release record for Playwright v1.65.1, documenting the selected published version. | Published Release | 2026-11-13 |
+| <a id="pmbok-guide-eighth-edition"></a><a id="pmi-pmbok-8"></a><a id="ref-1336ea6a"></a>PMBOK Guide eighth edition | [https://www.pmi.org/standards/pmbok](https://www.pmi.org/standards/pmbok) | Project management principles, performance domains and delivery practices. | Published Guide | 2025-11 |
+| <a id="polygon-clipping"></a><a id="ref-2a683b8b"></a>polygon-clipping | [https://github.com/mfogel/polygon-clipping/tree/82b0ac2c35304bfea9cac24eabcbda32a808ee55](https://github.com/mfogel/polygon-clipping/tree/82b0ac2c35304bfea9cac24eabcbda32a808ee55) | Boolean geometric operations on polygons and multipolygons. | Source Revision | 2024-04-19 |
+| <a id="postgresjs"></a><a id="ref-624c1eac"></a>Postgres.js | [https://github.com/porsager/postgres/tree/18c462947be677b721fdef222479cdef0d7b690d](https://github.com/porsager/postgres/tree/18c462947be677b721fdef222479cdef0d7b690d) | JavaScript PostgreSQL client with tagged-template query interfaces. | Source Revision | 2026-11-23 |
+| <a id="postgresql-full-text-search"></a><a id="ref-9e6cf77c"></a>PostgreSQL Full-text Search | [https://www.postgresql.org/docs/current/textsearch.html](https://www.postgresql.org/docs/current/textsearch.html) | Documentation for text search configuration, document indexing, querying and ranking; database major version unresolved. | Technical Documentation (mutable) | Not established |
+| <a id="postgresql-licence"></a><a id="postgresql"></a><a id="ref-fa79609e"></a>PostgreSQL Licence | [https://www.postgresql.org/about/licence/](https://www.postgresql.org/about/licence/) | Permissive PostgreSQL software licence governing use, copying, modification and distribution. | Licence Text (mutable page) | Not established |
+| <a id="pri-nadcap-accreditation"></a><a id="pri-nadcap"></a><a id="ref-cdf75efb"></a>PRI Nadcap Accreditation | [https://www.p-r-i.org/nadcap/accreditation](https://www.p-r-i.org/nadcap/accreditation) | Accreditation programme for critical manufacturing processes in aerospace and related industries. | Accreditation Guidance (mutable) | Not established |
+| <a id="primevue"></a><a id="ref-86ae7870"></a>PrimeVue | [https://github.com/primefaces/primevue/tree/36965f13dc40597deeb16192a8568308cbeb70d9](https://github.com/primefaces/primevue/tree/36965f13dc40597deeb16192a8568308cbeb70d9) | Vue interface component library. | Source Revision | 2026-09-24 |
+| <a id="prometheus"></a><a id="ref-6b9758b0"></a>Prometheus | [https://github.com/prometheus/prometheus/tree/1e794b83ad0d1df86c26fc607f87197734b9d9d9](https://github.com/prometheus/prometheus/tree/1e794b83ad0d1df86c26fc607f87197734b9d9d9) | Time-series metrics collection, storage, querying and alert evaluation. | Source Revision | 2026-11-26 |
+| <a id="prometheus-alertmanager"></a><a id="ref-b4e20705"></a>Prometheus Alertmanager | [https://github.com/prometheus/alertmanager/tree/916c3717e181bd40808322371ef49d522d379d3f](https://github.com/prometheus/alertmanager/tree/916c3717e181bd40808322371ef49d522d379d3f) | Groups, deduplicates, routes and suppresses monitoring alerts. | Source Revision | 2026-11-26 |
+| <a id="prometheus-blackbox-exporter"></a><a id="blackbox-exporter"></a><a id="ref-920c4404"></a>Prometheus Blackbox Exporter | [https://github.com/prometheus/blackbox_exporter/tree/5fe9752e66a145b963b457b67cd7447b09b74b96](https://github.com/prometheus/blackbox_exporter/tree/5fe9752e66a145b963b457b67cd7447b09b74b96) | External endpoint probing and availability metrics for Prometheus. | Source Revision | 2026-11-25 |
+| <a id="prometheus-javascript-client"></a><a id="prom-client"></a><a id="ref-e1a3131d"></a>Prometheus JavaScript Client | [https://github.com/prometheus/client_js/tree/21a3b86ebbace3d39a4f5307c588b0a5fc6ae51d](https://github.com/prometheus/client_js/tree/21a3b86ebbace3d39a4f5307c588b0a5fc6ae51d) | Node.js metrics instrumentation and Prometheus exposition; formerly published as prom-client. | Source Revision | 2026-10-10 |
+| <a id="prometheus-node-exporter"></a><a id="node-exporter"></a><a id="ref-f8cc3d9c"></a>Prometheus Node Exporter | [https://github.com/prometheus/node_exporter/tree/0192dd896337e6eeb5935024cd5d8aec431caf3a](https://github.com/prometheus/node_exporter/tree/0192dd896337e6eeb5935024cd5d8aec431caf3a) | Exports operating system and hardware metrics for Prometheus. | Source Revision | 2026-11-19 |
+| <a id="prosemirror"></a><a id="ref-e64171fe"></a>ProseMirror | [https://code.haverbeke.berlin/prosemirror/prosemirror](https://code.haverbeke.berlin/prosemirror/prosemirror) | Modular structured rich-text editing framework; canonical source access blocked. | Candidate Source (access blocked) | Not established |
+| <a id="protégé"></a><a id="ref-2649f4d9"></a>Protégé | [https://github.com/protegeproject/protege/tree/bf03cccc65ea664e139d6829bba6d209ef58ee55](https://github.com/protegeproject/protege/tree/bf03cccc65ea664e139d6829bba6d209ef58ee55) | Ontology authoring and knowledge modelling application. | Source Revision | 2026-09-23 |
+| <a id="prov-o"></a><a id="ref-20aa2e25"></a>PROV-O | [https://www.w3.org/TR/2013/REC-prov-o-20130430/](https://www.w3.org/TR/2013/REC-prov-o-20130430/) | Ontology for describing provenance through entities, activities, agents and their relationships. | Recommendation | 2013-04-30 |
+| <a id="psr-payment-systems-regulator"></a><a id="psr--payuk"></a><a id="ref-1aaf2ddd"></a>PSR Payment Systems Regulator | [https://www.psr.org.uk/](https://www.psr.org.uk/) | UK payment systems regulator information; separate Pay.UK resource requires reconciliation. | Regulator Portal (mutable) | Not established |
+| <a id="push-api"></a><a id="w3c-push-api"></a><a id="ref-9a875aab"></a>Push API | [https://www.w3.org/TR/2026/WD-push-api-20261121/](https://www.w3.org/TR/2026/WD-push-api-20261121/) | Working Draft defining delivery of push messages to web applications through push services and service workers. | Working Draft | 2026-11-21 |
+| <a id="pyshacl"></a><a id="ref-4293e39b"></a>pySHACL | [https://github.com/RDFLib/pySHACL/tree/df57bd4390bd397811d7c2d3b7cf0e49cd21c189](https://github.com/RDFLib/pySHACL/tree/df57bd4390bd397811d7c2d3b7cf0e49cd21c189) | Python SHACL validation of RDF graphs. | Source Revision | 2026-10-28 |
+| <a id="qpdfqpdf"></a><a id="ref-097546f2"></a>qpdf/qpdf | [https://github.com/qpdf/qpdf/tree/4eba95899886e851cc41d76886483b347612f2a8](https://github.com/qpdf/qpdf/tree/4eba95899886e851cc41d76886483b347612f2a8) | PDF structural transformations, inspection and encryption management. | Source Revision | 2026-09-26 |
+| <a id="rate-limiter-flexible"></a><a id="ref-99f82842"></a>rate-limiter-flexible | [https://github.com/animir/node-rate-limiter-flexible/tree/e6b853d2a01a2d90f031b071c8c543bbca82931d](https://github.com/animir/node-rate-limiter-flexible/tree/e6b853d2a01a2d90f031b071c8c543bbca82931d) | Rate limiting and request accounting with interchangeable storage backends. | Source Revision | 2026-11-25 |
+| <a id="rbush"></a><a id="ref-d7bd767e"></a>RBush | [https://github.com/mourner/rbush/tree/e59712716a84dda2e31f9b471b32faa178d8056f](https://github.com/mourner/rbush/tree/e59712716a84dda2e31f9b471b32faa178d8056f) | R-tree spatial indexing of two-dimensional points and rectangles. | Source Revision | 2026-04-03 |
+| <a id="rdf-11-concepts-and-abstract-syntax"></a><a id="rdfrdfs"></a><a id="ref-1d5b21c8"></a>RDF 1.1 Concepts and Abstract Syntax | [https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) | Defines triples, graphs, datasets and identifiers for representing resource information. | Recommendation | 2014-02-25 |
+| <a id="rdf-schema-11"></a>RDF Schema 1.1 | [https://www.w3.org/TR/2014/REC-rdf-schema-20140225/](https://www.w3.org/TR/2014/REC-rdf-schema-20140225/) | Vocabulary for describing RDF classes, properties and their relationships. | Recommendation | 2014-02-25 |
+| <a id="rdflib"></a><a id="ref-94601d7a"></a>RDFLib | [https://github.com/RDFLib/rdflib/tree/90a67c7bb3196255ddb4a1a8f3b7b3f325e55eea](https://github.com/RDFLib/rdflib/tree/90a67c7bb3196255ddb4a1a8f3b7b3f325e55eea) | Python library for RDF graphs, serialisation and SPARQL queries. | Source Revision | 2026-11-23 |
+| <a id="rehype-sanitize"></a><a id="ref-b4b1b93d"></a>rehype-sanitize | [https://github.com/rehypejs/rehype-sanitize/tree/b3ee205aeda4e0fc276cb6664b2d6d339305fcd6](https://github.com/rehypejs/rehype-sanitize/tree/b3ee205aeda4e0fc276cb6664b2d6d339305fcd6) | Schema-based sanitisation of HTML syntax trees. | Source Revision | 2023-09-28 |
+| <a id="reka-ui"></a><a id="ref-12355446"></a>Reka UI | [https://github.com/unovue/reka-ui/tree/af61dacc6b7f6c7177fa0724d1f257f0f27d56c8](https://github.com/unovue/reka-ui/tree/af61dacc6b7f6c7177fa0724d1f257f0f27d56c8) | Headless accessible Vue interface primitives. | Source Revision | 2026-11-26 |
+| <a id="remark"></a><a id="ref-19502e95"></a>remark | [https://github.com/remarkjs/remark/tree/1146b3a274fc1f4607111e5d6607a3a769a0e89a](https://github.com/remarkjs/remark/tree/1146b3a274fc1f4607111e5d6607a3a769a0e89a) | Markdown parsing, transformation and serialisation through syntax trees. | Source Revision | 2026-09-27 |
+| <a id="retejs"></a><a id="ref-945fde25"></a>Rete.js | [https://github.com/retejs/rete/tree/2aae19950180dc12725306f06c0440f64473bd21](https://github.com/retejs/rete/tree/2aae19950180dc12725306f06c0440f64473bd21) | Framework for visual node-based editing and graph processing. | Source Revision | 2025-06-30 |
+| <a id="rfc-10017"></a><a id="ref-5dce7cd2"></a>RFC 10017 | [https://www.rfc-editor.org/info/rfc10017/](https://www.rfc-editor.org/info/rfc10017/) | OAuth 2.0 best practices for browser-based applications, addressing browser threats and secure application architectures. | Best Current Practice | 2026-08 |
+| <a id="rfc-10051"></a><a id="rfc-10051-2"></a><a id="ref-d6226711"></a><a id="ref-30c13a68"></a>RFC 10051 | [https://www.rfc-editor.org/info/rfc10051/](https://www.rfc-editor.org/info/rfc10051/) | Extends iCalendar VTODO for task scheduling, status tracking, process control and project management. | Published RFC | 2026-10 |
+| <a id="rfc-1034"></a><a id="ref-1c93287e"></a>RFC 1034 | [https://www.rfc-editor.org/info/rfc1034/](https://www.rfc-editor.org/info/rfc1034/) | DNS architecture, namespace, delegation and resolution concepts. | Internet Standard | 1987-11 |
+| <a id="rfc-1035"></a><a id="1035--wwwrfc-editororgrfcrfc1035"></a><a id="ref-1d932a11"></a>RFC 1035 | [https://www.rfc-editor.org/info/rfc1035/](https://www.rfc-editor.org/info/rfc1035/) | DNS message formats, resource records and protocol implementation. | Internet Standard | 1987-11 |
+| <a id="rfc-2181"></a><a id="2181--wwwrfc-editororgrfcrfc2181"></a><a id="ref-0fd9b392"></a>RFC 2181 | [https://www.rfc-editor.org/info/rfc2181/](https://www.rfc-editor.org/info/rfc2181/) | Clarifications of DNS record sets, authoritative data and protocol behaviour. | Published RFC | 1997-07 |
+| <a id="rfc-3339"></a><a id="rfc-3339-2"></a><a id="rfc-3339-3"></a><a id="ref-9e9b8c6e"></a><a id="ref-3519482a"></a><a id="ref-3379bb69"></a>RFC 3339 | [https://www.rfc-editor.org/info/rfc3339/](https://www.rfc-editor.org/info/rfc3339/) | Internet timestamp syntax and UTC offsets for interoperable date and time exchange. | Published RFC | 2002-07 |
+| <a id="rfc-3986"></a><a id="ietf-rfc-3986"></a><a id="ref-74dd789a"></a><a id="ref-b9ddc4d9"></a>RFC 3986 | [https://www.rfc-editor.org/info/rfc3986/](https://www.rfc-editor.org/info/rfc3986/) | Defines generic URI syntax, reference resolution and normalisation. | Internet Standard | 2005-01 |
+| <a id="rfc-4033"></a><a id="40334035"></a><a id="ref-db921862"></a>RFC 4033 | [https://www.rfc-editor.org/info/rfc4033/](https://www.rfc-editor.org/info/rfc4033/) | DNSSEC security architecture and requirements. | Published RFC | 2005-03 |
+| <a id="rfc-4034"></a>RFC 4034 | [https://www.rfc-editor.org/info/rfc4034/](https://www.rfc-editor.org/info/rfc4034/) | DNSSEC resource records for signatures, keys and authenticated denial of existence. | Published RFC | 2005-03 |
+| <a id="rfc-4035"></a>RFC 4035 | [https://www.rfc-editor.org/info/rfc4035/](https://www.rfc-editor.org/info/rfc4035/) | DNSSEC protocol extensions and signature validation. | Published RFC | 2005-03 |
+| <a id="rfc-4287"></a><a id="rfc-4287-atom"></a><a id="ref-30a598c3"></a>RFC 4287 | [https://www.rfc-editor.org/info/rfc4287/](https://www.rfc-editor.org/info/rfc4287/) | Defines the Atom XML syndication format for publishing and exchanging web feeds. | Published RFC | 2005-12 |
+| <a id="rfc-4647"></a>RFC 4647 | [https://www.rfc-editor.org/info/rfc4647/](https://www.rfc-editor.org/info/rfc4647/) | BCP 47 language-tag matching, filtering and lookup. | Best Current Practice | 2006-09 |
+| <a id="rfc-4791"></a><a id="rfc-4791-caldav"></a><a id="ref-7d20fd52"></a>RFC 4791 | [https://www.rfc-editor.org/info/rfc4791/](https://www.rfc-editor.org/info/rfc4791/) | Defines CalDAV access to calendar collections and scheduling objects using WebDAV. | Published RFC | 2007-03 |
+| <a id="rfc-5322"></a><a id="ref-f42f5514"></a>RFC 5322 | [https://www.rfc-editor.org/info/rfc5322/](https://www.rfc-editor.org/info/rfc5322/) | Syntax and structure of internet email messages, including header fields. | Published RFC | 2008-10 |
+| <a id="rfc-5545"></a><a id="ietf-rfc-5545"></a><a id="rfc-5545-vtodo"></a><a id="ref-65b641d1"></a><a id="ref-bb0f57a8"></a><a id="ref-f49deb57"></a>RFC 5545 | [https://www.rfc-editor.org/info/rfc5545/](https://www.rfc-editor.org/info/rfc5545/) | Defines iCalendar representations of events, tasks (VTODO), recurrence, time zones and scheduling data. | Published RFC | 2009-09 |
+| <a id="bcp-47"></a><a id="ref-699eef87"></a><a id="rfc-5646"></a><a id="bcp-47-2"></a><a id="bcp-47-3"></a><a id="ietf-bcp-47"></a><a id="bcp-47-4"></a><a id="ref-cd91c32e"></a><a id="ref-783347a1"></a><a id="ref-9d75fa93"></a><a id="ref-6620842f"></a>RFC 5646 | [https://www.rfc-editor.org/info/rfc5646/](https://www.rfc-editor.org/info/rfc5646/) | BCP 47 syntax and registry rules for identifying languages with language tags. | Best Current Practice | 2009-09 |
+| <a id="rfc-5890"></a><a id="58905892"></a><a id="ref-8f0b568c"></a>RFC 5890 | [https://www.rfc-editor.org/info/rfc5890/](https://www.rfc-editor.org/info/rfc5890/) | Internationalised domain-name terminology and IDNA document framework. | Informational RFC | 2010-08 |
+| <a id="rfc-5891"></a>RFC 5891 | [https://www.rfc-editor.org/info/rfc5891/](https://www.rfc-editor.org/info/rfc5891/) | IDNA registration and lookup protocol for internationalised domain names. | Published RFC | 2010-08 |
+| <a id="rfc-5892"></a>RFC 5892 | [https://www.rfc-editor.org/info/rfc5892/](https://www.rfc-editor.org/info/rfc5892/) | Unicode code-point eligibility and contextual rules for IDNA. | Published RFC | 2010-08 |
+| <a id="rfc-6265"></a><a id="ietf-rfc-6265"></a><a id="ref-56be08c7"></a>RFC 6265 | [https://www.rfc-editor.org/info/rfc6265/](https://www.rfc-editor.org/info/rfc6265/) | Defines HTTP cookies, their exchange between user agents and servers, and associated security considerations. | Published RFC | 2011-04 |
+| <a id="rfc-6376"></a><a id="6376--wwwrfc-editororginforfc6376"></a><a id="ref-b9a1b306"></a>RFC 6376 | [https://www.rfc-editor.org/info/rfc6376/](https://www.rfc-editor.org/info/rfc6376/) | DomainKeys Identified Mail signatures for authenticating email using domain-controlled public keys. | Published RFC | 2011-09 |
+| <a id="rfc-7208"></a><a id="7208--wwwrfc-editororginforfc7208"></a><a id="ref-6cfd91a7"></a>RFC 7208 | [https://www.rfc-editor.org/info/rfc7208/](https://www.rfc-editor.org/info/rfc7208/) | Sender Policy Framework for authorising sending hosts to use email domains. | Published RFC | 2014-04 |
+| <a id="rfc-7239"></a><a id="7239--wwwrfc-editororgrfcrfc7239"></a><a id="ref-65408751"></a>RFC 7239 | [https://www.rfc-editor.org/info/rfc7239/](https://www.rfc-editor.org/info/rfc7239/) | Forwarded HTTP header for communicating proxy traversal information. | Published RFC | 2014-06 |
+| <a id="rfc-7643"></a><a id="scim-rfc-7643"></a><a id="ref-affc95fc"></a>RFC 7643 | [https://www.rfc-editor.org/info/rfc7643/](https://www.rfc-editor.org/info/rfc7643/) | Defines the SCIM core schema for interoperable representation of users, groups and identity attributes. | Published RFC | 2015-09 |
+| <a id="rfc-7644"></a><a id="ref-aefc9469"></a>RFC 7644 | [https://www.rfc-editor.org/info/rfc7644/](https://www.rfc-editor.org/info/rfc7644/) | Defines the SCIM HTTP protocol for provisioning and managing identity resources. | Published RFC | 2015-09 |
+| <a id="rfc-8030"></a><a id="ref-a70c074d"></a>RFC 8030 | [https://www.rfc-editor.org/info/rfc8030/](https://www.rfc-editor.org/info/rfc8030/) | HTTP push protocol for delivery of events through push services. | Published RFC | 2016-12 |
+| <a id="rfc-8058"></a><a id="8058--wwwrfc-editororginforfc8058"></a><a id="ref-34d79423"></a>RFC 8058 | [https://www.rfc-editor.org/info/rfc8058/](https://www.rfc-editor.org/info/rfc8058/) | One-click unsubscribe signalling for mailing-list email headers. | Published RFC | 2017-01 |
+| <a id="rfc-8291"></a><a id="8291--wwwrfc-editororginforfc8291"></a><a id="ref-b4f08a24"></a>RFC 8291 | [https://www.rfc-editor.org/info/rfc8291/](https://www.rfc-editor.org/info/rfc8291/) | Encryption of web push message payloads. | Published RFC | 2017-11 |
+| <a id="rfc-8292"></a><a id="8292--wwwrfc-editororginforfc8292"></a><a id="ref-d4f2fb1b"></a>RFC 8292 | [https://www.rfc-editor.org/info/rfc8292/](https://www.rfc-editor.org/info/rfc8292/) | Voluntary identification of application servers to web push services. | Published RFC | 2017-11 |
+| <a id="rfc-8555"></a><a id="8555--wwwrfc-editororgrfcrfc8555"></a><a id="ref-c53bb7e9"></a>RFC 8555 | [https://www.rfc-editor.org/info/rfc8555/](https://www.rfc-editor.org/info/rfc8555/) | ACME protocol for automated certificate issuance and management. | Published RFC | 2019-03 |
+| <a id="rfc-8633"></a><a id="ietf-rfc-8633"></a><a id="ref-bd1a09d8"></a>RFC 8633 | [https://www.rfc-editor.org/info/rfc8633/](https://www.rfc-editor.org/info/rfc8633/) | Guidance for secure, accurate and resilient operation of Network Time Protocol deployments. | Best Current Practice | 2019-07 |
+| <a id="rfc-8659"></a><a id="8659--wwwrfc-editororgrfcrfc8659"></a><a id="ref-bb29113c"></a>RFC 8659 | [https://www.rfc-editor.org/info/rfc8659/](https://www.rfc-editor.org/info/rfc8659/) | DNS CAA records restricting authorised certificate issuers. | Published RFC | 2019-11 |
+| <a id="rfc-8785"></a><a id="ref-5035f615"></a>RFC 8785 | [https://www.rfc-editor.org/info/rfc8785/](https://www.rfc-editor.org/info/rfc8785/) | Defines deterministic JSON serialisation for interoperable hashing and digital signatures. | Informational RFC | 2020-06 |
+| <a id="rfc-8820"></a><a id="ref-ba61cc61"></a>RFC 8820 | [https://www.rfc-editor.org/info/rfc8820/](https://www.rfc-editor.org/info/rfc8820/) | Guidance on URI design and ownership boundaries. | Best Current Practice | 2020-06 |
+| <a id="rfc-8984"></a><a id="rfc-8984-jscalendar"></a><a id="ref-0b86704e"></a>RFC 8984 | [https://www.rfc-editor.org/info/rfc8984/](https://www.rfc-editor.org/info/rfc8984/) | Defines JSCalendar, a JSON representation of calendar events and tasks. | Published RFC | 2021-07 |
+| <a id="rfc-9110"></a><a id="rfc-9110-2"></a><a id="ref-5a7fc9e7"></a><a id="ref-96cfb1e6"></a>RFC 9110 | [https://www.rfc-editor.org/info/rfc9110/](https://www.rfc-editor.org/info/rfc9110/) | Defines HTTP semantics, including request methods, response status codes, representation metadata and content negotiation. | Internet Standard | 2022-06 |
+| <a id="rfc-9111"></a><a id="9111--wwwrfc-editororgrfcrfc9111html"></a><a id="ref-b67b8213"></a>RFC 9111 | [https://www.rfc-editor.org/info/rfc9111/](https://www.rfc-editor.org/info/rfc9111/) | HTTP caching rules, cache controls and validation. | Internet Standard | 2022-06 |
+| <a id="rfc-9253"></a><a id="ref-65b0873b"></a>RFC 9253 | [https://www.rfc-editor.org/info/rfc9253/](https://www.rfc-editor.org/info/rfc9253/) | Extends iCalendar with relationships between calendar components. | Published RFC | 2022-08 |
+| <a id="rfc-9309"></a><a id="rfc-9309-robots"></a><a id="ietf-rfc-9309"></a><a id="ref-6f11a863"></a><a id="ref-959f05ca"></a>RFC 9309 | [https://www.rfc-editor.org/info/rfc9309/](https://www.rfc-editor.org/info/rfc9309/) | Defines the robots.txt protocol for communicating crawler access preferences. | Published RFC | 2022-09 |
+| <a id="rfc-9457-2"></a><a id="ref-f546b9ec"></a><a id="rfc-9457"></a><a id="rfc-9457-3"></a><a id="ref-f226fdcc"></a><a id="ref-7754416d"></a>RFC 9457 | [https://www.rfc-editor.org/info/rfc9457/](https://www.rfc-editor.org/info/rfc9457/) | Defines machine-readable HTTP API error representations using problem details. | Published RFC | 2023-07 |
+| <a id="rfc-9525"></a><a id="9525--wwwrfc-editororgrfcrfc9525"></a><a id="ref-08c3b037"></a>RFC 9525 | [https://www.rfc-editor.org/info/rfc9525/](https://www.rfc-editor.org/info/rfc9525/) | TLS service identity verification and certificate identifier matching. | Published RFC | 2023-11 |
+| <a id="rfc-9557"></a><a id="rfc-9557-2"></a><a id="rfc-9557-3"></a><a id="ref-0ad4fc7e"></a><a id="ref-a17e8f95"></a><a id="ref-9347444a"></a>RFC 9557 | [https://www.rfc-editor.org/info/rfc9557/](https://www.rfc-editor.org/info/rfc9557/) | Extends RFC 3339 timestamps with additional information, including named time zones. | Published RFC | 2024-04 |
+| <a id="rfc-9562"></a><a id="rfc-9562-2"></a><a id="ref-fdce2c42"></a><a id="ref-fa03258e"></a>RFC 9562 | [https://www.rfc-editor.org/info/rfc9562/](https://www.rfc-editor.org/info/rfc9562/) | Defines UUID formats and generation methods, including time-ordered UUID version 7. | Published RFC | 2024-05 |
+| <a id="rfc-9700"></a><a id="ietf-rfc-9700"></a><a id="ref-7f8e07b3"></a><a id="ref-b15d3374"></a>RFC 9700 | [https://www.rfc-editor.org/info/rfc9700/](https://www.rfc-editor.org/info/rfc9700/) | OAuth 2.0 security best practices, including protections against token theft, redirect abuse and authorisation flow attacks. | Best Current Practice | 2025-01 |
+| <a id="rfc-9846"></a><a id="rfc-8446"></a><a id="ref-0296369e"></a><a id="ref-4e38ad63"></a>RFC 9846 | [https://www.rfc-editor.org/info/rfc9846/](https://www.rfc-editor.org/info/rfc9846/) | Defines TLS 1.3 for authenticated, confidential and integrity-protected communications; supersedes RFC 8446. | Published RFC | 2026-07 |
+| <a id="rfc-9901"></a><a id="ietf-rfc-9901"></a><a id="ref-54a09287"></a>RFC 9901 | [https://datatracker.ietf.org/doc/rfc9901/](https://datatracker.ietf.org/doc/rfc9901/) | Selective disclosure of claims in JSON Web Tokens using cryptographic digests and disclosures. | Proposed Standard | 2025-11 |
+| <a id="rfc-9989"></a><a id="7489--wwwrfc-editororginforfc7489"></a><a id="ref-600abcac"></a>RFC 9989 | [https://www.rfc-editor.org/rfc/rfc9989.html](https://www.rfc-editor.org/rfc/rfc9989.html) | DMARC domain-level email authentication alignment, policy and message disposition. | Published RFC | 2026-05 |
+| <a id="rfc-9990"></a>RFC 9990 | [https://www.rfc-editor.org/rfc/rfc9990.html](https://www.rfc-editor.org/rfc/rfc9990.html) | DMARC aggregate reporting format and delivery requirements. | Published RFC | 2026-05 |
+| <a id="rfc-9991"></a>RFC 9991 | [https://www.rfc-editor.org/rfc/rfc9991.html](https://www.rfc-editor.org/rfc/rfc9991.html) | DMARC message-specific failure reporting mechanisms and safeguards. | Published RFC | 2026-05 |
+| <a id="rfc-editor"></a><a id="ref-f34bf5a1"></a>RFC Editor | [https://www.rfc-editor.org/](https://www.rfc-editor.org/) | Publication and archival service for RFC documents and associated metadata. | Publication Portal (mutable) | Not established |
+| <a id="robot"></a><a id="ref-a91eaa59"></a>ROBOT | [https://github.com/ontodev/robot/tree/37d514d2ac8970b6ce7b9f5cfe83ba08dc97e9d8](https://github.com/ontodev/robot/tree/37d514d2ac8970b6ce7b9f5cfe83ba08dc97e9d8) | Command-line ontology processing, validation and release preparation. | Source Revision | 2026-10-01 |
+| <a id="rrule"></a><a id="ref-5803e305"></a>rrule | [https://github.com/jkbrzt/rrule/tree/1626fd86ea6c47cbe181cd3ed8b7ecde6f250b5a](https://github.com/jkbrzt/rrule/tree/1626fd86ea6c47cbe181cd3ed8b7ecde6f250b5a) | Recurrence rule parsing and occurrence generation for calendar schedules. | Source Revision | 2026-11-23 |
+| <a id="rss-2011"></a><a id="rss-20"></a><a id="ref-8ed599f6"></a>RSS 2.0.11 | [https://www.rssboard.org/rss-2-0-11](https://www.rssboard.org/rss-2-0-11) | XML syndication format for publishing channels and content items. | Published Specification | 2009-03-30 |
+| <a id="santa-clara-principles"></a><a id="ref-fd0ea290"></a>Santa Clara Principles | [https://santaclaraprinciples.org/](https://santaclaraprinciples.org/) | Civil society principles for transparency and accountability in content moderation. | Published Principles (edition unresolved) | Not established |
+| <a id="schema-dts"></a><a id="ref-da16045e"></a>schema-dts | [https://github.com/google/schema-dts/tree/0dc1d1f518af5a727ada9d162c714ddf74710686](https://github.com/google/schema-dts/tree/0dc1d1f518af5a727ada9d162c714ddf74710686) | TypeScript definitions for Schema.org structured data. | Source Revision | 2026-11-01 |
+| <a id="schemaorg-pricespecification"></a><a id="schemaorg-offerpricespecification"></a><a id="ref-4faf18ac"></a>Schema.org PriceSpecification | [https://schema.org/PriceSpecification](https://schema.org/PriceSpecification) | Structured data type for monetary prices and pricing conditions; Offer references require separate reconciliation. | Vocabulary Term (revision unresolved) | Not established |
+| <a id="schemaorg-product"></a><a id="schemaorg"></a><a id="ref-eeffaa51"></a>Schema.org Product | [https://schema.org/Product](https://schema.org/Product) | Structured data vocabulary for describing products and services. | Vocabulary Term (revision unresolved) | Not established |
+| <a id="schemaorg-productgroup"></a><a id="schemaorg-productproductgroup"></a><a id="ref-80058408"></a>Schema.org ProductGroup | [https://schema.org/ProductGroup](https://schema.org/ProductGroup) | Structured data type grouping product variants with shared characteristics. | Vocabulary Term (revision unresolved) | Not established |
+| <a id="schemaorg-review"></a><a id="ref-573c4eea"></a>Schema.org Review | [https://schema.org/Review](https://schema.org/Review) | Structured data type describing reviews, ratings and reviewed items. | Vocabulary Term (revision unresolved) | Not established |
+| <a id="schemaorg-vocabulary"></a><a id="schemaorg-2"></a><a id="ref-30a88a32"></a>Schema.org Vocabulary | [https://schema.org/](https://schema.org/) | Shared vocabulary for structured descriptions of entities and their relationships on the web. | Vocabulary (revision unresolved) | Not established |
+| <a id="seaweedfs"></a><a id="ref-1bd76faa"></a>SeaweedFS | [https://github.com/seaweedfs/seaweedfs/tree/8d975574d42135838e57be50c13fddd2a6272e04](https://github.com/seaweedfs/seaweedfs/tree/8d975574d42135838e57be50c13fddd2a6272e04) | Distributed file and object storage with S3-compatible interfaces. | Source Revision | 2026-11-26 |
+| <a id="semantic-versioning-200"></a><a id="ref-9679b8dc"></a>Semantic Versioning 2.0.0 | [https://semver.org/spec/v2.0.0.html](https://semver.org/spec/v2.0.0.html) | Version numbering rules communicating incompatible changes, compatible features and bug fixes. | Published Specification | Not established |
+| <a id="shacl"></a><a id="ref-6dc528a5"></a>SHACL | [https://www.w3.org/TR/2017/REC-shacl-20170720/](https://www.w3.org/TR/2017/REC-shacl-20170720/) | Constraint language for validating RDF graphs and describing permissible data structures. | Recommendation | 2017-07-20 |
+| <a id="shacl-engine"></a><a id="ref-7316cf52"></a>shacl-engine | [https://github.com/rdf-ext/shacl-engine/tree/6418118d2c3403dd1b073b374924c8dc931b8739](https://github.com/rdf-ext/shacl-engine/tree/6418118d2c3403dd1b073b374924c8dc931b8739) | JavaScript SHACL validation engine for RDF datasets. | Source Revision | 2026-10-11 |
+| <a id="shadcn-vue"></a><a id="ref-2c44f99e"></a>shadcn-vue | [https://github.com/unovue/shadcn-vue/tree/57b3c1d95c74bd64fb58dffa629f6d0c135c290e](https://github.com/unovue/shadcn-vue/tree/57b3c1d95c74bd64fb58dffa629f6d0c135c290e) | Reusable Vue component source and installation tooling. | Source Revision | 2026-11-25 |
+| <a id="simple-statistics"></a><a id="ref-7d8342de"></a>simple-statistics | [https://github.com/simple-statistics/simple-statistics/tree/361180e44f52604802a5ca655db7fc07ec29188a](https://github.com/simple-statistics/simple-statistics/tree/361180e44f52604802a5ca655db7fc07ec29188a) | JavaScript statistical calculations and data analysis. | Source Revision | 2026-11-26 |
+| <a id="simplewebauthn"></a><a id="ref-b7bc28fb"></a>SimpleWebAuthn | [https://github.com/MasterKale/SimpleWebAuthn/tree/01d1a640d5ded4fced0b45a9d806fd0ff44ad244](https://github.com/MasterKale/SimpleWebAuthn/tree/01d1a640d5ded4fced0b45a9d806fd0ff44ad244) | Browser and server utilities for WebAuthn registration and authentication ceremonies. | Source Revision | 2026-11-06 |
+| <a id="sindresorhusfile-type"></a><a id="ref-e88cf18e"></a>sindresorhus/file-type | [https://github.com/sindresorhus/file-type/tree/9b7912ae4753442312d36aff810abc8c151388dd](https://github.com/sindresorhus/file-type/tree/9b7912ae4753442312d36aff810abc8c151388dd) | Identifies supported binary file formats using file signatures. | Source Revision | 2026-11-14 |
+| <a id="sitemapjs"></a><a id="ref-ab62c3cf"></a>sitemap.js | [https://github.com/ekalinin/sitemap.js/tree/15cce38b75f43119978381c0fcbcf7fd2f5d2fe9](https://github.com/ekalinin/sitemap.js/tree/15cce38b75f43119978381c0fcbcf7fd2f5d2fe9) | Generates and parses XML sitemaps. | Source Revision | 2026-10-19 |
+| <a id="sitemaps-protocol"></a><a id="sitemapsorg"></a><a id="ref-ce86e469"></a>Sitemaps Protocol | [https://www.sitemaps.org/protocol.html](https://www.sitemaps.org/protocol.html) | XML format and submission conventions for communicating site URLs to crawlers. | Protocol Documentation (revision unresolved) | Not established |
+| <a id="skos"></a><a id="ref-ceaf9e24"></a>SKOS | [https://www.w3.org/TR/2009/REC-skos-reference-20090818/](https://www.w3.org/TR/2009/REC-skos-reference-20090818/) | RDF vocabulary for interoperable thesauri, taxonomies and concept schemes. | Recommendation | 2009-08-18 |
+| <a id="sortablejs"></a><a id="ref-e7023281"></a>SortableJS | [https://github.com/SortableJS/Sortable/tree/48b626bbc61afbb0f179730c1dd3cca3dcc8b788](https://github.com/SortableJS/Sortable/tree/48b626bbc61afbb0f179730c1dd3cca3dcc8b788) | Drag-and-drop ordering of lists and elements. | Source Revision | 2026-03-24 |
+| <a id="sparql-11-query-language"></a><a id="sparql-11"></a><a id="ref-5f7e8b5e"></a>SPARQL 1.1 Query Language | [https://www.w3.org/TR/2013/REC-sparql11-query-20130321/](https://www.w3.org/TR/2013/REC-sparql11-query-20130321/) | Query syntax and semantics for retrieving and analysing RDF graph data. | Recommendation | 2013-03-21 |
+| <a id="sphereon-oid4vc"></a><a id="ref-04362b5f"></a>Sphereon OID4VC | [https://github.com/Sphereon-Opensource/OID4VC/tree/a6137fb4acf991b70a1979f0527743f5eb68cf4c](https://github.com/Sphereon-Opensource/OID4VC/tree/a6137fb4acf991b70a1979f0527743f5eb68cf4c) | OpenID-based verifiable credential issuance and presentation tooling. | Source Revision | 2026-07-03 |
+| <a id="stripe-node"></a><a id="ref-cfa45325"></a>Stripe Node | [https://github.com/stripe/stripe-node/tree/87e14697b014981d9beb2bf617ac5cf412106e34](https://github.com/stripe/stripe-node/tree/87e14697b014981d9beb2bf617ac5cf412106e34) | Node.js client for Stripe payment and billing APIs. | Source Revision | 2026-11-24 |
+| <a id="style-dictionary"></a><a id="ref-5846c58c"></a>Style Dictionary | [https://github.com/style-dictionary/style-dictionary/tree/795233d9bee6a7b5787d685d75d626df3399d24d](https://github.com/style-dictionary/style-dictionary/tree/795233d9bee6a7b5787d685d75d626df3399d24d) | Transforms design tokens into platform-specific outputs. | Source Revision | 2026-11-03 |
+| <a id="svg-2"></a><a id="ref-2d692224"></a>SVG 2 | [https://www.w3.org/TR/2026/CR-SVG2-20261006/](https://www.w3.org/TR/2026/CR-SVG2-20261006/) | Candidate Recommendation Snapshot defining scalable vector graphics, graphical elements, rendering and interaction. | Candidate Recommendation Snapshot | 2026-10-06 |
+| <a id="svgjs"></a><a id="ref-0b3f539d"></a>SVG.js | [https://github.com/svgdotjs/svg.js/tree/4b8809b1554c44a84f8992cdbda60480336cc040](https://github.com/svgdotjs/svg.js/tree/4b8809b1554c44a84f8992cdbda60480336cc040) | JavaScript API for creating, manipulating and animating SVG graphics. | Source Revision | 2026-08-04 |
+| <a id="tailwind-css"></a><a id="ref-d67bae77"></a>Tailwind CSS | [https://github.com/tailwindlabs/tailwindcss/tree/f95406ebb8d9c53d377e0ebb5467c318704c93cf](https://github.com/tailwindlabs/tailwindcss/tree/f95406ebb8d9c53d377e0ebb5467c318704c93cf) | Utility-based CSS generation and responsive styling. | Source Revision | 2026-11-25 |
+| <a id="tanstack-query"></a><a id="ref-51cb5e45"></a>TanStack Query | [https://github.com/TanStack/query/tree/635aad6a95b08dffc91ba1973c043b219f085cd6](https://github.com/TanStack/query/tree/635aad6a95b08dffc91ba1973c043b219f085cd6) | Asynchronous server-state fetching, caching and synchronisation. | Source Revision | 2026-11-26 |
+| <a id="tanstack-table"></a><a id="ref-af94a8b1"></a>TanStack Table | [https://github.com/TanStack/table/tree/6d48b56fa6391526b9e38214e13b46e90d5e9501](https://github.com/TanStack/table/tree/6d48b56fa6391526b9e38214e13b46e90d5e9501) | Headless table state and interaction logic for sorting, filtering and pagination. | Source Revision | 2026-11-24 |
+| <a id="tantivy"></a><a id="ref-29ee9c92"></a>Tantivy | [https://github.com/quickwit-oss/tantivy/tree/9b91b2993efe54184fabaff03072705a8c7bc293](https://github.com/quickwit-oss/tantivy/tree/9b91b2993efe54184fabaff03072705a8c7bc293) | Rust full-text search engine library. | Source Revision | 2026-11-26 |
+| <a id="tarteaucitronjs"></a><a id="ref-1dca5d3a"></a>tarteaucitron.js | [https://github.com/AmauriC/tarteaucitron.js/tree/ad5118efefb0f60a7b171ae638936bfceac0ec5e](https://github.com/AmauriC/tarteaucitron.js/tree/ad5118efefb0f60a7b171ae638936bfceac0ec5e) | Browser consent management for controlling third-party services and trackers. | Source Revision | 2026-11-19 |
+| <a id="tempo"></a><a id="ref-d02585bd"></a>Tempo | [https://github.com/grafana/tempo/tree/ca3437fe40fc62ad452480e653946a75fd68ab54](https://github.com/grafana/tempo/tree/ca3437fe40fc62ad452480e653946a75fd68ab54) | Distributed trace storage and retrieval backend. | Source Revision | 2026-11-26 |
+| <a id="temporal-server"></a><a id="ref-77f2db20"></a>Temporal Server | [https://github.com/temporalio/temporal/tree/c2ec24c01c519234de9dd01881b968c1b14473f2](https://github.com/temporalio/temporal/tree/c2ec24c01c519234de9dd01881b968c1b14473f2) | Durable workflow orchestration server with persisted execution state. | Source Revision | 2026-11-26 |
+| <a id="temporal-typescript-sdk"></a><a id="ref-83603142"></a>Temporal TypeScript SDK | [https://github.com/temporalio/sdk-typescript/tree/8447c6928c773072a94d5f206a34465e3d9ea7df](https://github.com/temporalio/sdk-typescript/tree/8447c6928c773072a94d5f206a34465e3d9ea7df) | TypeScript SDK for Temporal workflow execution, activities and clients. | Source Revision | 2026-11-25 |
+| <a id="temporal-typescript-sdk-developer-guide"></a><a id="temporal-typescript-sdk-docs"></a><a id="ref-5ba4ac29"></a>Temporal TypeScript SDK developer guide | [https://github.com/temporalio/documentation/blob/3fc1d2fa21889f0ceb70018b4353f5678e0de8d6/docs/develop/typescript/index.mdx](https://github.com/temporalio/documentation/blob/3fc1d2fa21889f0ceb70018b4353f5678e0de8d6/docs/develop/typescript/index.mdx) | Developer guidance on workflows, activities, clients, testing and failure detection. | Documentation Source Revision | 2026-11-26 |
+| <a id="temporal-ui"></a><a id="ref-5d38eb94"></a>Temporal UI | [https://github.com/temporalio/ui/tree/7397b8ad72325958d33939d685298420abedbe89](https://github.com/temporalio/ui/tree/7397b8ad72325958d33939d685298420abedbe89) | Web interface for inspecting and managing Temporal workflow executions. | Source Revision | 2026-11-25 |
+| <a id="testcontainers-node"></a><a id="ref-68d019ff"></a>Testcontainers Node | [https://github.com/testcontainers/testcontainers-node/tree/b4f0592a8cb70c2fd78073b456fe4ebb6dc7c2f1](https://github.com/testcontainers/testcontainers-node/tree/b4f0592a8cb70c2fd78073b456fe4ebb6dc7c2f1) | Node.js tooling for provisioning disposable containerised integration test dependencies. | Source Revision | 2026-11-19 |
+| <a id="threejs"></a><a id="ref-343bd568"></a>Three.js | [https://github.com/mrdoob/three.js/tree/6c4e631a1fb1afb4b1857b7adbf5fd99d39e150f](https://github.com/mrdoob/three.js/tree/6c4e631a1fb1afb4b1857b7adbf5fd99d39e150f) | Three-dimensional graphics, scenes and rendering for web applications. | Source Revision | 2026-11-26 |
+| <a id="tldts"></a><a id="ref-879dab13"></a>tldts | [https://github.com/remusao/tldts/tree/763f223c930f6b58489959a5a4347224aa43aea0](https://github.com/remusao/tldts/tree/763f223c930f6b58489959a5a4347224aa43aea0) | Parses hostnames and identifies public suffixes and registrable domains. | Source Revision | 2026-11-26 |
+| <a id="tr46"></a><a id="ref-35d9d4b1"></a>tr46 | [https://github.com/jsdom/tr46/tree/bd303c13dc7ebc716c232f03cb80c79071e7a7f7](https://github.com/jsdom/tr46/tree/bd303c13dc7ebc716c232f03cb80c79071e7a7f7) | Unicode domain name processing according to Unicode Technical Standard 46. | Source Revision | 2026-10-29 |
+| <a id="traefik-proxy"></a><a id="ref-b407f18a"></a>Traefik Proxy | [https://github.com/traefik/traefik/tree/8fcaa7cda47c139b76e02ab3d115c168d093ac04](https://github.com/traefik/traefik/tree/8fcaa7cda47c139b76e02ab3d115c168d093ac04) | Reverse proxy and ingress routing with service discovery. | Source Revision | 2026-11-25 |
+| <a id="turfjs"></a><a id="ref-825259cb"></a>Turf.js | [https://github.com/Turfjs/turf/tree/938a6c6318b444636e086985c0d29cec19f5329b](https://github.com/Turfjs/turf/tree/938a6c6318b444636e086985c0d29cec19f5329b) | Geospatial analysis and geometry operations using GeoJSON. | Source Revision | 2026-11-17 |
+| <a id="typebox"></a><a id="ref-5dcbcc2b"></a>TypeBox | [https://github.com/sinclairzx81/typebox/tree/13586809ca01e8b003bc2481c61b0d9f9553b1c8](https://github.com/sinclairzx81/typebox/tree/13586809ca01e8b003bc2481c61b0d9f9553b1c8) | JSON Schema construction with TypeScript static type inference. | Source Revision | 2026-11-16 |
+| <a id="uk-consumer-contracts-regulations-2013"></a><a id="consumer-contracts-regulations-2013"></a><a id="ref-5ffaf50f"></a>UK Consumer Contracts Regulations 2013 | [https://www.legislation.gov.uk/uksi/2013/3134/contents](https://www.legislation.gov.uk/uksi/2013/3134/contents) | Consumer information, cancellation and payment obligations for applicable contracts. | UK Statutory Instrument (revised text; revision unresolved) | Not established |
+| <a id="uk-consumer-contracts-regulations-2013-regulation-14"></a><a id="consumer-contracts-regulations-2013-regulation-14"></a><a id="ref-99f389eb"></a>UK Consumer Contracts Regulations 2013 Regulation 14 | [https://www.legislation.gov.uk/uksi/2013/3134/regulation/14](https://www.legislation.gov.uk/uksi/2013/3134/regulation/14) | Specific rules on electronic ordering and acknowledgement of payment obligations. | UK Statutory Instrument Provision (revision unresolved) | Not established |
+| <a id="uk-consumer-rights-act-2015"></a><a id="consumer-rights-act-2015"></a><a id="ref-2e48fac8"></a>UK Consumer Rights Act 2015 | [https://www.legislation.gov.uk/ukpga/2015/15/contents](https://www.legislation.gov.uk/ukpga/2015/15/contents) | Consumer contract rights and remedies for goods, services and digital content. | UK Act (revised text; revision unresolved) | Not established |
+| <a id="uk-consumer-subscription-contracts-cancellation-and-information-regulations-2026"></a><a id="draft-2026-implementing-regulations"></a><a id="ref-5974714b"></a>UK Consumer Subscription Contracts (Cancellation and Information) Regulations 2026 | [https://www.legislation.gov.uk/ukdsi/2026/9780348287912/data.html](https://www.legislation.gov.uk/ukdsi/2026/9780348287912/data.html) | Draft instrument specifying subscription cancellation, cooling-off and information obligations; not enacted authority. | Draft Statutory Instrument | 2026 |
+| <a id="uk-data-use-and-access-act-2025"></a><a id="data-use-and-access-act-2025-2"></a><a id="ref-9bd32f02"></a>UK Data (Use and Access) Act 2025 | [https://www.legislation.gov.uk/ukpga/2025/18/contents](https://www.legislation.gov.uk/ukpga/2025/18/contents) | Legislation modifying data access, digital verification, data protection and related regulatory arrangements. | UK Act (revised text; revision unresolved) | Not established |
+| <a id="uk-data-protection-act-2018"></a><a id="uk-gdpr--data-protection-act-2018"></a><a id="ref-de03a85c"></a>UK Data Protection Act 2018 | [https://www.legislation.gov.uk/ukpga/2018/12/contents](https://www.legislation.gov.uk/ukpga/2018/12/contents) | UK statutory data protection provisions supplementing the UK GDPR; the separate UK GDPR text still requires reconciliation. | UK Act (revised text; revision unresolved) | Not established |
+| <a id="uk-data-standards-authority-metadata-resources"></a><a id="data-standards-authority"></a><a id="ref-44ad251a"></a>UK Data Standards Authority Metadata Resources | [https://www.gov.uk/government/collections/metadata-standards-for-sharing-and-publishing-data](https://www.gov.uk/government/collections/metadata-standards-for-sharing-and-publishing-data) | Government collection of metadata standards for sharing and publishing data. | Guidance Collection (mutable) | Not established |
+| <a id="uk-digital-markets-competition-and-consumers-act-2024"></a><a id="digital-markets-competition-and-consumers-act-2024"></a><a id="digital-markets-competition-and-consumers-act-2024-part-4-chapter-2"></a><a id="ref-49097836"></a><a id="ref-9160e94a"></a><a id="ref-de55a252"></a>UK Digital Markets, Competition and Consumers Act 2024 | [https://www.legislation.gov.uk/ukpga/2024/13/2026-09-30](https://www.legislation.gov.uk/ukpga/2024/13/2026-09-30) | Digital competition and consumer protection, including Part 4 and Chapter 2 subscription contracts. | UK Act (revised text) | 2026-09-30 |
+| <a id="uk-digital-verification-services-trust-framework-10"></a><a id="ref-4e7751af"></a>UK Digital Verification Services Trust Framework 1.0 | [https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0](https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0) | Versioned statutory trust framework defining requirements for digital verification service providers. | Published Framework | 2026-06-09 |
+| <a id="uk-e-invoicing-implementation-roadmap"></a><a id="uk-e-invoicing-roadmap"></a><a id="ref-ae63f45d"></a>UK E-invoicing Implementation Roadmap | [https://www.gov.uk/government/publications/e-invoicing-implementation-roadmap/roadmap-for-e-invoicing-implementation](https://www.gov.uk/government/publications/e-invoicing-implementation-roadmap/roadmap-for-e-invoicing-implementation) | Government plans, milestones and proposed interoperability requirements for electronic VAT invoices. | Government Roadmap (mutable) | 2026-10-28 |
+| <a id="uk-equality-act-2010"></a><a id="equality-act-2010"></a><a id="ref-517049ab"></a>UK Equality Act 2010 | [https://www.legislation.gov.uk/ukpga/2010/15/contents](https://www.legislation.gov.uk/ukpga/2010/15/contents) | Equality duties, discrimination protections and reasonable adjustments. | UK Act (revised text; revision unresolved) | Not established |
+| <a id="uk-government-data-quality-framework"></a><a id="data-quality-framework"></a><a id="ref-386eb998"></a>UK Government Data Quality Framework | [https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance](https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance) | Framework for assessing and improving data quality throughout the data lifecycle. | Government Guidance (mutable) | 2020-12-03 |
+| <a id="uk-legislation-portal"></a><a id="uk-legislationgovuk"></a><a id="ref-472de5bf"></a>UK Legislation Portal | [https://www.legislation.gov.uk/](https://www.legislation.gov.uk/) | Official repository of UK legislation and revised legislative texts. | Reference Portal (mutable) | Not established |
+| <a id="uk-office-for-product-safety-and-standards"></a><a id="uk-opss"></a><a id="ref-05827b16"></a>UK Office for Product Safety and Standards | [https://www.gov.uk/government/organisations/office-for-product-safety-and-standards](https://www.gov.uk/government/organisations/office-for-product-safety-and-standards) | Government body responsible for product safety and standards information. | Regulator Portal (mutable) | Not established |
+| <a id="uk-online-safety-act-2023"></a><a id="online-safety-act-2023"></a><a id="ref-3c5edd48"></a>UK Online Safety Act 2023 | [https://www.legislation.gov.uk/ukpga/2023/50/contents](https://www.legislation.gov.uk/ukpga/2023/50/contents) | Regulatory duties for covered online services, including risk assessments and illegal-content safeguards. | UK Act (revised text; revision unresolved) | Not established |
+| <a id="uk-online-safety-act-schedule-1-paragraph-7"></a><a id="online-safety-act-schedule-1-paragraph-7"></a><a id="ref-1795b9a8"></a>UK Online Safety Act Schedule 1 Paragraph 7 | [https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/paragraph/7](https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/paragraph/7) | Specific statutory provision within the schedule of exemptions for user-to-user services. | UK Act Provision (revision unresolved) | Not established |
+| <a id="uk-open-banking-standard"></a><a id="ref-7eef8d31"></a>UK Open Banking Standard | [https://standards.openbanking.org.uk/api-specifications/latest/](https://standards.openbanking.org.uk/api-specifications/latest/) | API specifications for consent-based account information and payment initiation; applicable version unresolved. | Standards Collection (edition unresolved) | Not established |
+| <a id="uk-payment-services-regulations-2017"></a><a id="ref-23a0a60a"></a>UK Payment Services Regulations 2017 | [https://www.legislation.gov.uk/uksi/2017/752/contents](https://www.legislation.gov.uk/uksi/2017/752/contents) | Regulation of payment services, providers, customer rights and security obligations. | UK Statutory Instrument (revised text; revision unresolved) | Not established |
+| <a id="uk-price-marking-order-2004"></a><a id="price-marking-order-2004"></a><a id="ref-2e09325b"></a>UK Price Marking Order 2004 | [https://www.legislation.gov.uk/uksi/2004/102/2026-04-06?view=plain](https://www.legislation.gov.uk/uksi/2004/102/2026-04-06?view=plain) | Requirements for displaying selling and unit prices of goods offered to consumers. | UK Statutory Instrument (revised text) | 2026-04-06 |
+| <a id="uk-public-sector-accessibility-regulations-2018"></a><a id="public-sector-accessibility-regulations"></a><a id="ref-20c7b15f"></a><a id="uk-public-sector-accessibility-regulations"></a><a id="ref-4d3037c4"></a>UK Public Sector Accessibility Regulations 2018 | [https://www.legislation.gov.uk/uksi/2018/952/contents](https://www.legislation.gov.uk/uksi/2018/952/contents) | Accessibility requirements for covered public-sector websites and mobile applications. | UK Statutory Instrument (revised text; revision unresolved) | Not established |
+| <a id="uk-software-security-code-of-practice"></a><a id="ref-6d9f6678"></a>UK Software Security Code of Practice | [https://www.gov.uk/government/publications/software-security-code-of-practice](https://www.gov.uk/government/publications/software-security-code-of-practice) | Voluntary principles for secure software development, maintenance and communication. | Government Guidance (mutable) | 2026-01-15 |
+| <a id="uk-subscription-contracts-guidance"></a><a id="government-subscription-guidance"></a><a id="ref-5391a4ef"></a>UK Subscription Contracts Guidance | [https://www.gov.uk/government/publications/subscription-contracts](https://www.gov.uk/government/publications/subscription-contracts) | Guidance for businesses and consumers on subscription contracts under the DMCC Act. | Government Guidance (mutable) | 2026-10-19 |
+| <a id="uk-working-time-regulations-1998"></a><a id="uk-working-time-regulations"></a><a id="ref-38005802"></a>UK Working Time Regulations 1998 | [https://www.legislation.gov.uk/uksi/1998/1833/2026-10-01?view=extent&wrap=true](https://www.legislation.gov.uk/uksi/1998/1833/2026-10-01?view=extent&wrap=true) | Working time limits, rest periods, night work and annual leave requirements. | UK Statutory Instrument (revised text) | 2026-10-01 |
+| <a id="uncefact-recommendation-20"></a><a id="ref-6322e766"></a><a id="uncefact-recommendation-20-2"></a><a id="ref-66b68de6"></a>UN/CEFACT Recommendation 20 | [https://unece.org/code-list-recommendations](https://unece.org/code-list-recommendations) | Codes for units of measure used in international trade; referenced code-list revision remains unresolved. | Recommendation (revision unresolved) | Not established |
+| <a id="uncefact-transport-models"></a><a id="ref-4b03c321"></a>UN/CEFACT Transport Models | [https://unece.org/trade/uncefact/mainstandards](https://unece.org/trade/uncefact/mainstandards) | Reference data models and standards supporting international transport and trade information exchange. | Standards Collection (edition unresolved) | Not established |
+| <a id="uncitral-electronic-commerce-model-texts"></a><a id="ref-08c4cd5b"></a>UNCITRAL Electronic Commerce Model Texts | [https://uncitral.un.org/en/texts/ecommerce](https://uncitral.un.org/en/texts/ecommerce) | Model laws and conventions for legal recognition of electronic transactions and transferable records. | Legal Instruments Collection (instrument unresolved) | Not established |
+| <a id="unhead"></a><a id="ref-1a0ac221"></a>Unhead | [https://github.com/unjs/unhead/tree/fdcf0d95731e686a381b460abb7408a53e19a21a](https://github.com/unjs/unhead/tree/fdcf0d95731e686a381b460abb7408a53e19a21a) | Reactive document head and metadata management. | Source Revision | 2026-11-26 |
+| <a id="unicode-cldr-48"></a><a id="unicode-cldr"></a><a id="ref-ba99ff23"></a>Unicode CLDR 48 | [https://cldr.unicode.org/downloads/cldr-48](https://cldr.unicode.org/downloads/cldr-48) | Locale data release covering language, regional formatting, calendars and related conventions. | Stable Release | 2025-10-29 |
+| <a id="unicode-technical-standard-35"></a><a id="unicode-cldr-2"></a><a id="ref-0ea5a429"></a>Unicode Technical Standard 35 | [https://unicode.org/reports/tr35/](https://unicode.org/reports/tr35/) | Locale Data Markup Language defining locale data structures and formatting conventions; revision unresolved. | Technical Standard (revision unresolved) | Not established |
+| <a id="unified"></a><a id="ref-72271435"></a>unified | [https://github.com/unifiedjs/unified/tree/dfaf172e8be10a021e375ab05acf595f65f5acf0](https://github.com/unifiedjs/unified/tree/dfaf172e8be10a021e375ab05acf595f65f5acf0) | Plugin-based processing of structured content through syntax trees. | Source Revision | 2026-10-03 |
+| <a id="us-16-cfr-part-465-2025-edition"></a><a id="16-cfr-part-465"></a><a id="ref-614b3b8a"></a>US 16 CFR Part 465 (2025 edition) | [https://www.govinfo.gov/content/pkg/CFR-2025-title16-vol1/xhtml/CFR-2025-title16-vol1-part465.html](https://www.govinfo.gov/content/pkg/CFR-2025-title16-vol1/xhtml/CFR-2025-title16-vol1-part465.html) | Federal Trade Commission rules concerning consumer reviews and testimonials. | US Regulation (annual codification) | 2025-01-01 |
+| <a id="us-department-of-labor-hours-recordkeeping"></a><a id="us-flsa29-cfr-part-516"></a><a id="ref-992b2fc2"></a>US Department of Labor Hours Recordkeeping | [https://www.dol.gov/general/topic/workhours/hoursrecordkeeping](https://www.dol.gov/general/topic/workhours/hoursrecordkeeping) | Overview of employer obligations to retain working time and wage records; not the normative CFR text. | Regulatory Guidance (mutable) | Not established |
+| <a id="uuid"></a><a id="ref-346e6d77"></a>uuid | [https://github.com/uuidjs/uuid/tree/766d0d29c1646f37cb2261bbee723f0daf94e44a](https://github.com/uuidjs/uuid/tree/766d0d29c1646f37cb2261bbee723f0daf94e44a) | JavaScript generation, parsing and validation of UUIDs. | Source Revision | 2026-11-01 |
+| <a id="valhalla"></a><a id="ref-1d240d0a"></a>Valhalla | [https://github.com/valhalla/valhalla/tree/4d8b2061b566412ce61eb8a2001b7cfa2392356a](https://github.com/valhalla/valhalla/tree/4d8b2061b566412ce61eb8a2001b7cfa2392356a) | Open-source multimodal routing and geographic navigation engine. | Source Revision | 2026-11-26 |
+| <a id="valibot"></a><a id="ref-5f5b30fe"></a>Valibot | [https://github.com/open-circle/valibot/tree/40fae9405d79ca477fdaade624600a567940dcbf](https://github.com/open-circle/valibot/tree/40fae9405d79ca477fdaade624600a567940dcbf) | Modular runtime schema validation and TypeScript type inference. | Source Revision | 2026-11-20 |
+| <a id="valkey"></a><a id="ref-b3ed39f7"></a>Valkey | [https://github.com/valkey-io/valkey/tree/b8d6a54e7a5eb2adf7e71a18a8731e83f548d767](https://github.com/valkey-io/valkey/tree/b8d6a54e7a5eb2adf7e71a18a8731e83f548d767) | In-memory data store supporting caching and data structure operations. | Source Revision | 2026-11-26 |
+| <a id="veevalidate"></a><a id="ref-bd5a7590"></a>VeeValidate | [https://github.com/logaretm/vee-validate/tree/7d8cc524f9204655ad00a466090738e43b44ff2a](https://github.com/logaretm/vee-validate/tree/7d8cc524f9204655ad00a466090738e43b44ff2a) | Vue form state management and validation. | Source Revision | 2026-03-04 |
+| <a id="veevalidate-release-v4151"></a><a id="releases-5"></a><a id="ref-bab408af"></a>VeeValidate release v4.15.1 | [https://github.com/logaretm/vee-validate/releases/tag/v4.15.1](https://github.com/logaretm/vee-validate/releases/tag/v4.15.1) | Publisher release record for VeeValidate v4.15.1, documenting the selected published version. | Published Release | 2025-06-07 |
+| <a id="vega-lite"></a><a id="vega-lite-bsd-3"></a><a id="ref-89e960d9"></a>Vega-Lite | [https://github.com/vega/vega-lite/tree/2e892a15c227f72022c2d7c04135e375a1bdae04](https://github.com/vega/vega-lite/tree/2e892a15c227f72022c2d7c04135e375a1bdae04) | Declarative grammar for statistical graphics and visualisation. | Source Revision | 2026-11-24 |
+| <a id="verifiable-credentials-data-model-20"></a><a id="vc-20"></a><a id="verifiable-credentials-20"></a><a id="ref-5dd6d5dc"></a><a id="ref-51933823"></a>Verifiable Credentials Data Model 2.0 | [https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/](https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/) | Interoperable data model for expressing credentials and presentations exchanged among issuers, holders and verifiers. | Recommendation | 2025-05-15 |
+| <a id="verifiable-credentials-jose-and-cose"></a><a id="josecose"></a><a id="ref-a1b9773e"></a>Verifiable Credentials JOSE and COSE | [https://www.w3.org/TR/2026/REC-vc-jose-cose-20261013/](https://www.w3.org/TR/2026/REC-vc-jose-cose-20261013/) | Cryptographic protection of verifiable credentials and presentations using JOSE, selective disclosure and COSE. | Recommendation | 2026-10-13 |
+| <a id="virustotalyara-x"></a><a id="ref-2243e7b5"></a>VirusTotal/yara-x | [https://github.com/VirusTotal/yara-x/tree/312998592a6ecd48b5e776b5d978dc5a6c3c373f](https://github.com/VirusTotal/yara-x/tree/312998592a6ecd48b5e776b5d978dc5a6c3c373f) | Rule-based identification and classification of files and binary content. | Source Revision | 2026-11-26 |
+| <a id="vitest"></a><a id="ref-c28ef17c"></a>Vitest | [https://github.com/vitest-dev/vitest/tree/0fa77146055effb7e376615e4ed2286b24613da7](https://github.com/vitest-dev/vitest/tree/0fa77146055effb7e376615e4ed2286b24613da7) | Vite-integrated JavaScript and TypeScript test framework. | Source Revision | 2026-11-26 |
+| <a id="vitest-licence"></a><a id="licence-8"></a><a id="ref-4d04db1e"></a>Vitest licence | [https://github.com/vitest-dev/vitest/blob/0fa77146055effb7e376615e4ed2286b24613da7/LICENSE](https://github.com/vitest-dev/vitest/blob/0fa77146055effb7e376615e4ed2286b24613da7/LICENSE) | MIT licence text at the referenced source revision, defining permissions and redistribution conditions. | Licence Text | 2026-11-26 |
+| <a id="vitest-release-v512"></a><a id="releases-9"></a><a id="ref-1a4e4c3b"></a>Vitest release v5.1.2 | [https://github.com/vitest-dev/vitest/releases/tag/v5.1.2](https://github.com/vitest-dev/vitest/releases/tag/v5.1.2) | Publisher release record for Vitest v5.1.2, documenting the selected published version. | Published Release | 2026-11-25 |
+| <a id="vroom"></a><a id="ref-3f30cade"></a>VROOM | [https://github.com/VROOM-Project/vroom/tree/877c2dd572fb780ab95a6b546fddacc6f474d71e](https://github.com/VROOM-Project/vroom/tree/877c2dd572fb780ab95a6b546fddacc6f474d71e) | Vehicle routing optimisation supporting capacity, time windows and delivery constraints. | Source Revision | 2026-11-17 |
+| <a id="vue"></a><a id="vue-3"></a><a id="ref-cf2779ac"></a>Vue | [https://github.com/vuejs/core/tree/d690dee2dbbc21ff293777e4b8d6e1b3ff494022](https://github.com/vuejs/core/tree/d690dee2dbbc21ff293777e4b8d6e1b3ff494022) | Reactive component framework and rendering runtime. | Source Revision | 2026-11-26 |
+| <a id="vue-datepicker"></a><a id="ref-4266aecd"></a>Vue Datepicker | [https://github.com/Vuepic/vue-datepicker/tree/1bf0be7cfc3b7769d54ae9ddab14003ac9953b88](https://github.com/Vuepic/vue-datepicker/tree/1bf0be7cfc3b7769d54ae9ddab14003ac9953b88) | Vue date and time selection components. | Source Revision | 2026-11-23 |
+| <a id="vue-flow"></a><a id="ref-1c63f8c8"></a>Vue Flow | [https://github.com/bcakmakoglu/vue-flow/tree/8f609f99842cd97717dfb6e849fecce4a1b8c67f](https://github.com/bcakmakoglu/vue-flow/tree/8f609f99842cd97717dfb6e849fecce4a1b8c67f) | Vue components for interactive node and edge diagrams. | Source Revision | 2026-11-17 |
+| <a id="vue-i18n"></a><a id="ref-4941c780"></a>Vue I18n | [https://github.com/intlify/vue-i18n/tree/c149dc0c1e92a581382998c9eeaea6b6df34c5fc](https://github.com/intlify/vue-i18n/tree/c149dc0c1e92a581382998c9eeaea6b6df34c5fc) | Vue internationalisation, translation and locale-aware formatting. | Source Revision | 2026-11-26 |
+| <a id="vuedraggablenext"></a><a id="ref-33185db5"></a>vue.draggable.next | [https://github.com/SortableJS/vue.draggable.next/tree/8687d34f3182a1a0bfb138e995609f32ffe3ce6b](https://github.com/SortableJS/vue.draggable.next/tree/8687d34f3182a1a0bfb138e995609f32ffe3ce6b) | Vue integration for SortableJS drag-and-drop lists. | Source Revision | 2021-08-25 |
+| <a id="vueuse"></a><a id="ref-9507482e"></a>VueUse | [https://github.com/vueuse/vueuse/tree/6680e578f1499c2071dcbf2c8e94dd0aa235745c](https://github.com/vueuse/vueuse/tree/6680e578f1499c2071dcbf2c8e94dd0aa235745c) | Reusable Vue composition utilities for reactive application behaviour. | Source Revision | 2026-11-23 |
+| <a id="w3c-data-privacy-vocabulary-community-group"></a><a id="w3c-dpv-community-group"></a><a id="ref-38ce7b0b"></a>W3C Data Privacy Vocabulary Community Group | [https://www.w3.org/community/dpvcg/](https://www.w3.org/community/dpvcg/) | Community group developing vocabularies for privacy, personal data processing and related concepts. | Community Group Portal (revision unresolved) | Not established |
+| <a id="w3c-internationalisation-resources"></a><a id="w3c-i18n"></a><a id="ref-7ea69d75"></a><a id="w3c-internationalisation"></a><a id="ref-bd589cf9"></a>W3C Internationalisation Resources | [https://www.w3.org/International/](https://www.w3.org/International/) | Internationalisation specifications and implementation guidance for multilingual web content. | Resource Collection (mutable) | Not established |
+| <a id="w3c-trace-context"></a><a id="ref-e45806bf"></a>W3C Trace Context | [https://www.w3.org/TR/2021/REC-trace-context-1-20211123/](https://www.w3.org/TR/2021/REC-trace-context-1-20211123/) | HTTP trace context headers and formats for propagating request correlation across distributed services. | Recommendation | 2021-11-23 |
+| <a id="w3c-web-payments-publications"></a><a id="w3c-web-payments"></a><a id="ref-f7183568"></a>W3C Web Payments Publications | [https://www.w3.org/groups/wg/payments/publications/](https://www.w3.org/groups/wg/payments/publications/) | Working-group publication index for browser payment specifications. | Publication Index (mutable) | Not established |
+| <a id="wai-aria-12"></a><a id="wai-aria"></a><a id="ref-67eee3fb"></a><a id="ref-90f5e4b1"></a>WAI-ARIA 1.2 | [https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/) | Semantic roles, states and properties for exposing accessible user interface information to assistive technologies. | Recommendation | 2023-06-06 |
+| <a id="wcag-22"></a><a id="w3c-wcag-22"></a><a id="w3c-wcag-22-aa"></a><a id="ref-0d1f555e"></a><a id="ref-eb11cf7e"></a><a id="ref-bc717cde"></a>WCAG 2.2 | [https://www.w3.org/TR/2024/REC-WCAG22-20241212/](https://www.w3.org/TR/2024/REC-WCAG22-20241212/) | Web accessibility success criteria and conformance requirements, including the platform's Level AA baseline. | Recommendation | 2024-12-12 |
+| <a id="web-based-payment-handler-api"></a><a id="payment-handler"></a><a id="ref-790384d0"></a>Web-based Payment Handler API | [https://www.w3.org/TR/2026/WD-web-based-payment-handler-20261116/](https://www.w3.org/TR/2026/WD-web-based-payment-handler-20261116/) | Working Draft defining web application capabilities for handling browser-mediated payment requests. | Working Draft | 2026-11-16 |
+| <a id="web-push"></a><a id="ref-0040bd2f"></a>web-push | [https://github.com/web-push-libs/web-push/tree/5cecd530ab2a0fc1ac45210232392c8c6877b01f](https://github.com/web-push-libs/web-push/tree/5cecd530ab2a0fc1ac45210232392c8c6877b01f) | Node.js delivery of encrypted Web Push messages to browser subscriptions. | Source Revision | 2026-11-10 |
+| <a id="webdev-core-web-vitals"></a><a id="core-web-vitals-2"></a><a id="ref-229d560d"></a>Web.dev Core Web Vitals | [https://web.dev/articles/vitals](https://web.dev/articles/vitals) | Defines user experience metrics for loading, responsiveness and visual stability. | Technical Guidance (mutable) | 2024-10-31 |
+| <a id="webauthn-level-3"></a><a id="w3c-webauthn"></a><a id="ref-389dc62a"></a>WebAuthn Level 3 | [https://www.w3.org/TR/2026/REC-webauthn-3-20260825/](https://www.w3.org/TR/2026/REC-webauthn-3-20260825/) | Public-key credential registration and authentication APIs for origin-bound, phishing-resistant authentication. | Recommendation | 2026-08-25 |
+| <a id="whatwg-html"></a><a id="whatwg-html-2"></a><a id="ref-36db7adb"></a><a id="ref-82cafda8"></a>WHATWG HTML | [https://github.com/whatwg/html/blob/0162cee0c42a82267354d38fbc6a2503ee295b77/source](https://github.com/whatwg/html/blob/0162cee0c42a82267354d38fbc6a2503ee295b77/source) | Defines HTML document semantics, parsing, browser processing and web application APIs. | Living Standard | 2026-11-26 |
+| <a id="whatwg-notifications"></a><a id="ref-5dadc7d0"></a>WHATWG Notifications | [https://github.com/whatwg/notifications/blob/b5ae3f28540948e333e6a57eafbf4b9b4556d905/notifications.bs](https://github.com/whatwg/notifications/blob/b5ae3f28540948e333e6a57eafbf4b9b4556d905/notifications.bs) | Defines web notification permissions, display, lifecycle and interaction APIs. | Living Standard | 2026-11-12 |
+| <a id="whatwg-url"></a><a id="ref-021179e7"></a>WHATWG URL | [https://github.com/whatwg/url/blob/4f461b81a748443b235840599cea6290df40329a/url.bs](https://github.com/whatwg/url/blob/4f461b81a748443b235840599cea6290df40329a/url.bs) | Defines interoperable URL parsing, serialisation, origins and URL APIs. | Living Standard | 2026-11-19 |
+| <a id="whelk"></a><a id="ref-a943427f"></a>Whelk | [https://github.com/INCATools/whelk/tree/ab85577b96d3e09ab6800d14af5542ff12a627dd](https://github.com/INCATools/whelk/tree/ab85577b96d3e09ab6800d14af5542ff12a627dd) | Ontology reasoning tooling for supported OWL description logic constructs. | Source Revision | 2026-10-24 |
+| <a id="winknlp"></a><a id="ref-1a833bc8"></a>winkNLP | [https://github.com/winkjs/wink-nlp/tree/c2fa2f1554a64de12dd76421cb6199ded1b6b062](https://github.com/winkjs/wink-nlp/tree/c2fa2f1554a64de12dd76421cb6199ded1b6b062) | Natural language processing including tokenisation and linguistic annotation. | Source Revision | 2025-06-30 |
+| <a id="xmlbuilder2"></a><a id="ref-65876386"></a>xmlbuilder2 | [https://github.com/oozcitak/xmlbuilder2/tree/10b65492d4c47a3a7c88e430be5b1d7bbd0ac85a](https://github.com/oozcitak/xmlbuilder2/tree/10b65492d4c47a3a7c88e430be5b1d7bbd0ac85a) | XML document construction and serialisation for JavaScript. | Source Revision | 2026-02-03 |
+| <a id="xstate"></a><a id="ref-2318841b"></a>XState | [https://github.com/statelyai/xstate/tree/5af51b11198fa170c17a40d5d4ed4b67224e51ba](https://github.com/statelyai/xstate/tree/5af51b11198fa170c17a40d5d4ed4b67224e51ba) | State machines, statecharts and actor-based orchestration for JavaScript and TypeScript. | Source Revision | 2026-11-24 |
+| <a id="xstate-licence"></a><a id="licence-7"></a><a id="ref-b4555479"></a>XState licence | [https://github.com/statelyai/xstate/blob/5af51b11198fa170c17a40d5d4ed4b67224e51ba/LICENSE](https://github.com/statelyai/xstate/blob/5af51b11198fa170c17a40d5d4ed4b67224e51ba/LICENSE) | MIT licence text at the referenced source revision, defining permissions and redistribution conditions. | Licence Text | 2026-11-24 |
+| <a id="xstate-release-xstate5334"></a><a id="releases-8"></a><a id="ref-4a134806"></a>XState release xstate@5.33.4 | [https://github.com/statelyai/xstate/releases/tag/xstate%405.33.4](https://github.com/statelyai/xstate/releases/tag/xstate%405.33.4) | Publisher release record for XState xstate@5.33.4, documenting the selected published version. | Published Release | 2026-11-07 |
+| <a id="xyflow"></a><a id="xyflow-vue"></a><a id="ref-f612adca"></a>xyflow | [https://github.com/xyflow/xyflow/tree/9635a064f9d44cc10c460e3a0c9ca20ad0852450](https://github.com/xyflow/xyflow/tree/9635a064f9d44cc10c460e3a0c9ca20ad0852450) | Interactive node-based diagrams and flow editors; the cited repository contains React Flow and Svelte Flow. | Source Revision | 2026-11-23 |
+| <a id="yjs"></a><a id="ref-22280e1e"></a>Yjs | [https://github.com/yjs/yjs/tree/15b0a622be2523d5060f78c57c4f7dba6a5e7132](https://github.com/yjs/yjs/tree/15b0a622be2523d5060f78c57c4f7dba6a5e7132) | Conflict-free replicated data types for collaborative editing and synchronisation. | Source Revision | 2026-11-23 |
+| <a id="zagjs"></a><a id="ref-2994486b"></a>Zag.js | [https://github.com/chakra-ui/zag/tree/cb967cd6678242c7455d3a35d4e2b6209306eb03](https://github.com/chakra-ui/zag/tree/cb967cd6678242c7455d3a35d4e2b6209306eb03) | State-machine-based interaction logic for interface components. | Source Revision | 2026-11-22 |
+| <a id="zod"></a><a id="ref-1e3efac4"></a>Zod | [https://github.com/colinhacks/zod/tree/d40c329910436e528d3c26cb1b9179e05abebf05](https://github.com/colinhacks/zod/tree/d40c329910436e528d3c26cb1b9179e05abebf05) | TypeScript-oriented runtime schema validation and type inference. | Source Revision | 2026-11-22 |
+| <a id="zod-licence"></a><a id="licence-3"></a><a id="ref-82f19076"></a>Zod licence | [https://github.com/colinhacks/zod/blob/d40c329910436e528d3c26cb1b9179e05abebf05/LICENSE](https://github.com/colinhacks/zod/blob/d40c329910436e528d3c26cb1b9179e05abebf05/LICENSE) | MIT licence text at the referenced source revision, defining permissions and redistribution conditions. | Licence Text | 2026-11-22 |
+| <a id="zod-release-v467"></a><a id="releases-2"></a><a id="ref-c2c04073"></a>Zod release v4.6.7 | [https://github.com/colinhacks/zod/releases/tag/v4.6.7](https://github.com/colinhacks/zod/releases/tag/v4.6.7) | Publisher release record for Zod v4.6.7, documenting the selected published version. | Published Release | 2026-10-12 |

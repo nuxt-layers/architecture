@@ -17,6 +17,9 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 
 | pageRef | linkAddress | Description | publicationStatus | revisionDate |
 | --- | --- | --- | --- | --- |
+| <a id="dagrejsgraphlib"></a><a id="ref-6629c3fb"></a>@dagrejs/graphlib | [https://github.com/dagrejs/graphlib/tree/b68a0f9131f35ce08b59a66f37b90e7d2de792e6](https://github.com/dagrejs/graphlib/tree/b68a0f9131f35ce08b59a66f37b90e7d2de792e6) | Graph data structures and graph algorithms for JavaScript. | Source Revision | 2026-11-24 |
+| <a id="js-temporalpolyfill"></a><a id="ref-6bd89188"></a>@js-temporal/polyfill | [https://github.com/js-temporal/temporal-polyfill/tree/c55b211de913320d8aba32c456bb45914739f414](https://github.com/js-temporal/temporal-polyfill/tree/c55b211de913320d8aba32c456bb45914739f414) | Polyfill for JavaScript Temporal date, time, duration and time-zone APIs. | Source Revision | 2026-09-22 |
+| <a id="1edtech-opencase"></a><a id="ref-9c4e92f0"></a>1EdTech OpenCASE | [https://github.com/1EdTech/OpenCASE/tree/92a49ea528e4960f4ff32f9454a499a46d7afc2a](https://github.com/1EdTech/OpenCASE/tree/92a49ea528e4960f4ff32f9454a499a46d7afc2a) | Open implementation resources for exchanging competency and academic standards information. | Source Revision | 2026-11-23 |
 | <a id="activity-streams-20"></a><a id="activitystreams-20"></a><a id="ref-c75695ba"></a>Activity Streams 2.0 | [https://www.w3.org/TR/2017/REC-activitystreams-core-20170523/](https://www.w3.org/TR/2017/REC-activitystreams-core-20170523/) | JSON data model for describing actions, actors and objects in activity feeds. | Recommendation | 2017-05-23 |
 | <a id="activitypub"></a><a id="ref-b5b42c56"></a>ActivityPub | [https://www.w3.org/TR/2018/REC-activitypub-20180123/](https://www.w3.org/TR/2018/REC-activitypub-20180123/) | Federated social networking protocol for publishing content and exchanging activities between servers. | Recommendation | 2018-01-23 |
 | <a id="adaltasnode-csv"></a><a id="ref-a7d6e5ab"></a>adaltas/node-csv | [https://github.com/adaltas/node-csv/tree/c72cc6c89923837a38ab1fc7458d5d786ef0f16b](https://github.com/adaltas/node-csv/tree/c72cc6c89923837a38ab1fc7458d5d786ef0f16b) | Node.js CSV parsing, generation, transformation and streaming tools. | Source Revision | 2026-11-09 |
@@ -24,23 +27,41 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="ajv-formats"></a><a id="ref-f211b530"></a>ajv-formats | [https://github.com/ajv-validator/ajv-formats/tree/4ca86d21bd07571a30178cbb3714133db6eada9a](https://github.com/ajv-validator/ajv-formats/tree/4ca86d21bd07571a30178cbb3714133db6eada9a) | Additional standard format validators for Ajv JSON Schema validation. | Source Revision | 2024-04-05 |
 | <a id="apache-age"></a><a id="ref-0f60ec0d"></a>Apache AGE | [https://github.com/apache/age/tree/2c8be68f4559a9acb78733bbb3a2fa22c98ac80e](https://github.com/apache/age/tree/2c8be68f4559a9acb78733bbb3a2fa22c98ac80e) | PostgreSQL extension providing property graph storage and openCypher queries. | Source Revision | 2026-11-23 |
 | <a id="apache-echarts"></a><a id="ref-1aa1e4a8"></a>Apache ECharts | [https://github.com/apache/echarts/tree/34f4d927eafe251f26f63afd3aeefa30f2feba30](https://github.com/apache/echarts/tree/34f4d927eafe251f26f63afd3aeefa30f2feba30) | Interactive charts and data visualisation for web applications. | Source Revision | 2026-10-04 |
+| <a id="apache-jena"></a><a id="ref-7ab49d9e"></a>Apache Jena | [https://github.com/apache/jena/tree/b8375c286a409dcadb4d5821d888db01375f3644](https://github.com/apache/jena/tree/b8375c286a409dcadb4d5821d888db01375f3644) | Java framework for RDF storage, querying, inference and semantic data processing. | Source Revision | 2026-11-25 |
+| <a id="apache-lucene"></a><a id="ref-6f0b2c64"></a>Apache Lucene | [https://github.com/apache/lucene/tree/82cf7465bb8f9d4346c0fe6ccb868fb29fe449f0](https://github.com/apache/lucene/tree/82cf7465bb8f9d4346c0fe6ccb868fb29fe449f0) | Java indexing and information retrieval library for full-text search. | Source Revision | 2026-11-26 |
 | <a id="aria-authoring-practices-guide"></a><a id="aria-apg"></a><a id="apg"></a><a id="ref-f076dce5"></a><a id="ref-54e6f5b0"></a>ARIA Authoring Practices Guide | [https://github.com/w3c/aria-practices/tree/f14b2490a6728cda85fd7feafbd148b3c3eaf038/content](https://github.com/w3c/aria-practices/tree/f14b2490a6728cda85fd7feafbd148b3c3eaf038/content) | Non-normative accessible interaction patterns, keyboard behaviour and ARIA implementation examples. | Published Guidance | 2026-11-13 |
 | <a id="atag-20"></a><a id="ref-9dbe26fd"></a>ATAG 2.0 | [https://www.w3.org/TR/2015/REC-ATAG20-20150924/](https://www.w3.org/TR/2015/REC-ATAG20-20150924/) | Accessibility guidelines for authoring tools and their support for creating accessible content. | Recommendation | 2015-09-24 |
+| <a id="axe-core"></a><a id="ref-802ea31e"></a>axe-core | [https://github.com/dequelabs/axe-core/tree/32d9bd503128d4b52d818ca89140c1debe5d70d5](https://github.com/dequelabs/axe-core/tree/32d9bd503128d4b52d818ca89140c1debe5d70d5) | Automated accessibility checks for web content. | Source Revision | 2026-11-23 |
+| <a id="bigjs"></a><a id="ref-fcbb731f"></a>big.js | [https://github.com/MikeMcl/big.js/tree/cdbc06f1d5ae9be429b97f433ee884cf9ad28072](https://github.com/MikeMcl/big.js/tree/cdbc06f1d5ae9be429b97f433ee884cf9ad28072) | Arbitrary-precision decimal arithmetic in JavaScript. | Source Revision | 2025-04-22 |
 | <a id="bitstring-status-list-10"></a><a id="status-list"></a><a id="ref-9e32bc04"></a>Bitstring Status List 1.0 | [https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/](https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/) | Compact credential status representation for publishing suspension and revocation information. | Recommendation | 2025-05-15 |
+| <a id="bpmn-js"></a><a id="ref-a01cd8e1"></a>bpmn-js | [https://github.com/bpmn-io/bpmn-js/tree/3327bcf5c823dd45c43c0936eceaf046181b6869](https://github.com/bpmn-io/bpmn-js/tree/3327bcf5c823dd45c43c0936eceaf046181b6869) | Browser-based BPMN diagram rendering and modelling. | Source Revision | 2026-11-23 |
+| <a id="bpmn-moddle"></a><a id="ref-9e223261"></a>bpmn-moddle | [https://github.com/bpmn-io/bpmn-moddle/tree/6288b948a74ac871870763787e5d37fe02df28d3](https://github.com/bpmn-io/bpmn-moddle/tree/6288b948a74ac871870763787e5d37fe02df28d3) | BPMN 2.0 XML parsing and serialisation using a metamodel. | Source Revision | 2026-11-17 |
 | <a id="bwip-js"></a><a id="ref-873f55c9"></a>bwip-js | [https://github.com/metafloor/bwip-js/tree/4dcf6129ba4bcd7de760e7bd4e400bca11473ccf](https://github.com/metafloor/bwip-js/tree/4dcf6129ba4bcd7de760e7bd4e400bca11473ccf) | Generates linear and two-dimensional barcodes. | Source Revision | 2026-08-19 |
+| <a id="casbin"></a><a id="ref-0bce4034"></a>Casbin | [https://github.com/apache/casbin-node-casbin/tree/1a163fcf7228c1bdaa3509811da40a972da3c230](https://github.com/apache/casbin-node-casbin/tree/1a163fcf7228c1bdaa3509811da40a972da3c230) | Node.js policy-based access control supporting configurable authorisation models. | Source Revision | 2026-11-26 |
+| <a id="casl"></a><a id="ref-6c39db3b"></a>CASL | [https://github.com/stalniy/casl/tree/b3e48c4812505cea798f40e0d3dfe22d691970bc](https://github.com/stalniy/casl/tree/b3e48c4812505cea798f40e0d3dfe22d691970bc) | Declarative ability-based authorisation for JavaScript applications. | Source Revision | 2026-11-24 |
+| <a id="comunica"></a><a id="ref-6c3e4b82"></a>Comunica | [https://github.com/comunica/comunica/tree/02d4ceba8cd9482ca7ae3906c65efeaca39ea4a5](https://github.com/comunica/comunica/tree/02d4ceba8cd9482ca7ae3906c65efeaca39ea4a5) | Modular SPARQL query engine for distributed and local RDF sources. | Source Revision | 2026-11-25 |
 | <a id="contentauthc2pa-rs"></a><a id="ref-b0c3f033"></a>contentauth/c2pa-rs | [https://github.com/contentauth/c2pa-rs/tree/adf4d6f21be3e0b89679b1a496aea7924bbe5ba4](https://github.com/contentauth/c2pa-rs/tree/adf4d6f21be3e0b89679b1a496aea7924bbe5ba4) | Rust implementation for creating and validating C2PA content provenance manifests. | Source Revision | 2026-11-26 |
+| <a id="convert-units"></a><a id="ref-443004fe"></a>convert-units | [https://github.com/convert-units/convert-units/tree/f2b0cb4fdf2d449a1bc8fc68c65ba866f72dc9e7](https://github.com/convert-units/convert-units/tree/f2b0cb4fdf2d449a1bc8fc68c65ba866f72dc9e7) | Converts quantities between supported units of measurement. | Source Revision | 2026-07-19 |
+| <a id="credo"></a><a id="ref-7ce15ee8"></a>Credo | [https://github.com/openwallet-foundation/credo-ts/tree/4a8f28bf15c0517e0ad22ba37344fbfbad34ba73](https://github.com/openwallet-foundation/credo-ts/tree/4a8f28bf15c0517e0ad22ba37344fbfbad34ba73) | TypeScript framework for digital identity agents and credential exchange. | Source Revision | 2026-11-26 |
 | <a id="css-color-adjustment-level-1"></a><a id="css-color-adjustment"></a><a id="ref-0faec43f"></a>CSS Color Adjustment Level 1 | [https://www.w3.org/TR/2025/CR-css-color-adjust-1-20251216/](https://www.w3.org/TR/2025/CR-css-color-adjust-1-20251216/) | Candidate Recommendation Snapshot defining browser colour adjustment, colour schemes and forced-colour preferences. | Candidate Recommendation Snapshot | 2025-12-16 |
 | <a id="css-color-level-4"></a><a id="css-color-4"></a><a id="ref-a582bbf2"></a>CSS Color Level 4 | [https://www.w3.org/TR/2026/CRD-css-color-4-20261123/](https://www.w3.org/TR/2026/CRD-css-color-4-20261123/) | Candidate Recommendation Draft defining colour values, colour spaces, interpolation and gamut mapping. | Candidate Recommendation Draft | 2026-11-23 |
 | <a id="css-custom-properties-level-1"></a><a id="w3c-css-custom-properties"></a><a id="ref-63ef0de9"></a>CSS Custom Properties Level 1 | [https://www.w3.org/TR/2022/CR-css-variables-1-20220616/](https://www.w3.org/TR/2022/CR-css-variables-1-20220616/) | Candidate Recommendation Snapshot defining cascading custom properties and variable substitution in CSS. | Candidate Recommendation Snapshot | 2022-06-16 |
 | <a id="csvw-metadata-vocabulary"></a><a id="csvw"></a><a id="ref-f6e15c97"></a>CSVW Metadata Vocabulary | [https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/](https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/) | Metadata vocabulary for interpreting, validating and transforming tabular data. | Recommendation | 2015-12-17 |
 | <a id="cure53dompurify"></a><a id="ref-975d5876"></a>cure53/DOMPurify | [https://github.com/cure53/DOMPurify/tree/ae76059e4c91285e297567b898d73a0e246498d8](https://github.com/cure53/DOMPurify/tree/ae76059e4c91285e297567b898d73a0e246498d8) | Sanitises HTML, SVG and MathML to mitigate cross-site scripting. | Source Revision | 2026-11-24 |
 | <a id="cytoscapejs"></a><a id="ref-b58f56eb"></a>Cytoscape.js | [https://github.com/cytoscape/cytoscape.js/tree/b768734100fa49d24f5652361e4f2f3bdbcbce86](https://github.com/cytoscape/cytoscape.js/tree/b768734100fa49d24f5652361e4f2f3bdbcbce86) | Graph visualisation, layout and analysis for JavaScript applications. | Source Revision | 2026-11-10 |
+| <a id="dagre"></a><a id="ref-41707161"></a>Dagre | [https://github.com/dagrejs/dagre/tree/29db69b74d65c494aafb4364a1cef65704f67552](https://github.com/dagrejs/dagre/tree/29db69b74d65c494aafb4364a1cef65704f67552) | Automatic directed graph layout for diagram visualisation. | Source Revision | 2026-11-24 |
 | <a id="data-on-the-web-best-practices"></a><a id="ref-b37ccf4d"></a>Data on the Web Best Practices | [https://www.w3.org/TR/2017/REC-dwbp-20170131/](https://www.w3.org/TR/2017/REC-dwbp-20170131/) | Guidance for discoverable, reusable and trustworthy web data publication. | Recommendation | 2017-01-31 |
 | <a id="dcat-3"></a><a id="ref-00ce33b2"></a>DCAT 3 | [https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/](https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/) | RDF vocabulary for interoperable catalogues describing datasets, distributions and data services. | Recommendation | 2024-08-22 |
 | <a id="decimaljs"></a><a id="ref-992a7688"></a>decimal.js | [https://github.com/MikeMcl/decimal.js/tree/b1d1e311eb272b16f5b2ca0e0d1f4c4fa8558edf](https://github.com/MikeMcl/decimal.js/tree/b1d1e311eb272b16f5b2ca0e0d1f4c4fa8558edf) | Arbitrary-precision decimal arithmetic for JavaScript. | Source Revision | 2026-08-30 |
 | <a id="design-tokens-format-202510"></a><a id="w3c-design-tokens-community-group-202510"></a><a id="ref-58aea18f"></a>Design Tokens Format 2025.10 | [https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/](https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/) | Final Community Group Report defining an interoperable format for exchanging design tokens between tools. | Final Community Group Report | 2025-10-28 |
+| <a id="diagram-js"></a><a id="ref-8ca9c849"></a>diagram-js | [https://github.com/bpmn-io/diagram-js/tree/d923b5262e6ee1e51c362b56b2836cd4c4d780d1](https://github.com/bpmn-io/diagram-js/tree/d923b5262e6ee1e51c362b56b2836cd4c4d780d1) | Extensible diagram rendering and editing infrastructure. | Source Revision | 2026-11-23 |
+| <a id="digital-bazaar-vc-js"></a><a id="ref-31b4fab4"></a>Digital Bazaar vc-js | [https://github.com/digitalbazaar/vc/tree/7ddb985a67e42afeb24ef833a5b45ecb72d7771d](https://github.com/digitalbazaar/vc/tree/7ddb985a67e42afeb24ef833a5b45ecb72d7771d) | JavaScript interfaces for issuing and verifying verifiable credentials and presentations. | Source Revision | 2026-02-05 |
+| <a id="dinerojs-v2"></a><a id="ref-2390acb0"></a>Dinero.js v2 | [https://github.com/dinerojs/dinero.js/tree/76b969e519dc44675d4af898d25629995d0b16f2](https://github.com/dinerojs/dinero.js/tree/76b969e519dc44675d4af898d25629995d0b16f2) | Monetary value representation and arithmetic with currency and precision handling. | Source Revision | 2026-07-06 |
+| <a id="dmn-moddle"></a><a id="ref-0652c71f"></a>dmn-moddle | [https://github.com/bpmn-io/dmn-moddle/tree/5984f63a738eeef8fa562d625d3bec66a6a8f721](https://github.com/bpmn-io/dmn-moddle/tree/5984f63a738eeef8fa562d625d3bec66a6a8f721) | DMN XML parsing and serialisation through a decision-model metamodel. | Source Revision | 2026-11-17 |
 | <a id="drizzle-orm"></a><a id="ref-03cb5387"></a>Drizzle ORM | [https://github.com/drizzle-team/drizzle-orm/tree/3bcb6a27ec1f4f1602aeeb0af2f5aec61010d72d](https://github.com/drizzle-team/drizzle-orm/tree/3bcb6a27ec1f4f1602aeeb0af2f5aec61010d72d) | TypeScript relational database ORM and typed SQL query interfaces. | Source Revision | 2026-11-13 |
 | <a id="dxf-parser"></a><a id="ref-77137ff7"></a>dxf-parser | [https://github.com/gdsestimating/dxf-parser/tree/0df7a37a4207a1f925b8d0bfffc270ff121446b4](https://github.com/gdsestimating/dxf-parser/tree/0df7a37a4207a1f925b8d0bfffc270ff121446b4) | Parses DXF drawing files into JavaScript objects. | Source Revision | 2023-03-15 |
+| <a id="eclipse-rdf4j"></a><a id="ref-da697d6a"></a>Eclipse RDF4J | [https://github.com/eclipse-rdf4j/rdf4j/tree/e33f368d84d28941becf5249fb0a52aef426ee51](https://github.com/eclipse-rdf4j/rdf4j/tree/e33f368d84d28941becf5249fb0a52aef426ee51) | Java RDF processing framework with repositories, query and storage interfaces. | Source Revision | 2026-11-24 |
+| <a id="elk"></a><a id="ref-0a6b05e3"></a>ELK | [https://github.com/liveontologies/elk-reasoner/tree/cc556787886e1ace3ccfef3423dd2a727de91053](https://github.com/liveontologies/elk-reasoner/tree/cc556787886e1ace3ccfef3423dd2a727de91053) | Reasoning engine for ontologies within the OWL EL profile. | Source Revision | 2024-07-11 |
 | <a id="eu-consumer-rights-directive-201183eu"></a><a id="consumer-rights-directive-201183eu"></a><a id="ref-64a0157c"></a>EU Consumer Rights Directive 2011/83/EU | [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083) | Consumer information, distance contracting, withdrawal and additional payment requirements. | EU Directive (original text) | 2011-11-22 |
 | <a id="eu-digital-content-directive-eu-2019770"></a><a id="digital-content-directive-2019770"></a><a id="ref-204c0f81"></a>EU Digital Content Directive (EU) 2019/770 | [https://eur-lex.europa.eu/eli/dir/2019/770/oj](https://eur-lex.europa.eu/eli/dir/2019/770/oj) | Consumer contract conformity and remedies for digital content and digital services. | EU Directive (original text) | 2019-05-22 |
 | <a id="eu-digital-services-act-eu-20222065"></a><a id="eu-dsa"></a><a id="eu-digital-services-act"></a><a id="ref-744b86ab"></a><a id="ref-cdee1332"></a>EU Digital Services Act (EU) 2022/2065 | [https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng](https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng) | Obligations for intermediary services and online platforms, including transparency, notices and marketplace accountability. | EU Regulation (original text) | 2022-10-27 |
@@ -51,7 +72,11 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="european-accessibility-act-eu-2019882"></a><a id="european-accessibility-act-directive-2019882"></a><a id="ref-ff7812f9"></a>European Accessibility Act (EU) 2019/882 | [https://eur-lex.europa.eu/eli/dir/2019/882/oj](https://eur-lex.europa.eu/eli/dir/2019/882/oj) | Accessibility requirements for specified products and services, including electronic commerce. | EU Directive (original text) | 2019-06-07 |
 | <a id="fast-check"></a><a id="ref-ca191d3a"></a>fast-check | [https://github.com/dubzzz/fast-check/tree/f2cd0407222d320a0dfc2d794eb7d5d7c6cc1fb4](https://github.com/dubzzz/fast-check/tree/f2cd0407222d320a0dfc2d794eb7d5d7c6cc1fb4) | Property-based testing with generated inputs and counterexample shrinking. | Source Revision | 2026-11-26 |
 | <a id="fast-xml-parser"></a><a id="ref-20fa1cfe"></a>fast-xml-parser | [https://github.com/NaturalIntelligence/fast-xml-parser/tree/d92f44ff1046c42f6d67889737365e75ba664cf4](https://github.com/NaturalIntelligence/fast-xml-parser/tree/d92f44ff1046c42f6d67889737365e75ba664cf4) | JavaScript XML parsing, validation and serialisation. | Source Revision | 2026-11-14 |
+| <a id="feed"></a><a id="ref-d69fea58"></a>feed | [https://github.com/jpmonette/feed/tree/cbad18d8afb6ea9fc38d460fdf56a2713c313aed](https://github.com/jpmonette/feed/tree/cbad18d8afb6ea9fc38d460fdf56a2713c313aed) | Generates RSS, Atom and JSON Feed syndication documents. | Source Revision | 2026-09-12 |
+| <a id="flowable-community-engine"></a><a id="ref-cdb01dc1"></a>Flowable community engine | [https://github.com/flowable/flowable-engine/tree/2af890cdccdaf9b53d07eb92ab8ffb79918c82c5](https://github.com/flowable/flowable-engine/tree/2af890cdccdaf9b53d07eb92ab8ffb79918c82c5) | Workflow, case and decision execution engines for BPMN, CMMN and DMN. | Source Revision | 2026-11-23 |
+| <a id="frappe-gantt"></a><a id="ref-35a3dd1c"></a>Frappe Gantt | [https://github.com/frappe/gantt/tree/5c83708d300a99d9142edea0d4d52f421e3a2e68](https://github.com/frappe/gantt/tree/5c83708d300a99d9142edea0d4d52f421e3a2e68) | Interactive Gantt chart rendering for task schedules and dependencies. | Source Revision | 2026-03-05 |
 | <a id="graphology"></a><a id="ref-9126475c"></a>Graphology | [https://github.com/graphology/graphology/tree/01bb37e39c66ff4eddaf3b0beda40903a663e627](https://github.com/graphology/graphology/tree/01bb37e39c66ff4eddaf3b0beda40903a663e627) | JavaScript graph data structures and graph analysis interfaces. | Source Revision | 2026-11-10 |
+| <a id="i18next"></a><a id="ref-b4adce2a"></a>i18next | [https://github.com/i18next/i18next/tree/83e6f680ab2bfda438888f251990fb6f7a639869](https://github.com/i18next/i18next/tree/83e6f680ab2bfda438888f251990fb6f7a639869) | Internationalisation framework for translation resources and locale-aware messages. | Source Revision | 2026-11-25 |
 | <a id="imagemagickimagemagick"></a><a id="ref-d82a64c2"></a>ImageMagick/ImageMagick | [https://github.com/ImageMagick/ImageMagick/tree/e6dfa7261e5b02b903a4e7bf7e221fedfb875ea1](https://github.com/ImageMagick/ImageMagick/tree/e6dfa7261e5b02b903a4e7bf7e221fedfb875ea1) | Image conversion, processing and manipulation across raster formats. | Source Revision | 2026-11-26 |
 | <a id="iso-100022018"></a><a id="ref-2c14157c"></a>ISO 10002:2018 | [https://www.iso.org/standard/10002](https://www.iso.org/standard/10002) | Guidance for designing, operating and improving customer complaints handling processes. | International Standard | 2018 |
 | <a id="iso-100032018"></a><a id="ref-f48d39fc"></a>ISO 10003:2018 | [https://www.iso.org/standard/71581.html](https://www.iso.org/standard/71581.html) | Guidance for external resolution of customer disputes that remain unresolved by complaints handling. | International Standard | 2018 |
@@ -120,9 +145,15 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="isoiecieee-152882023"></a><a id="ref-b6981e72"></a>ISO/IEC/IEEE 15288:2023 | [https://www.iso.org/standard/81702.html](https://www.iso.org/standard/81702.html) | Common engineering processes and terminology for system lifecycles. | International Standard | 2023 |
 | <a id="isoiecieee-420102022"></a><a id="420102022"></a><a id="ref-e85f94dc"></a>ISO/IEC/IEEE 42010:2022 | [https://www.iso.org/standard/74393.html](https://www.iso.org/standard/74393.html) | Requirements for architecture descriptions, viewpoints, model kinds and architecture description frameworks. | International Standard | 2022 |
 | <a id="isotr-23081-3-2011"></a>ISO/TR 23081-3:2011 | [https://www.iso.org/standard/57121.html](https://www.iso.org/standard/57121.html) | Self-assessment method for evaluating records metadata capture, management and implementation readiness. | Technical Report | 2011 |
+| <a id="jose"></a><a id="ref-1841a1db"></a>jose | [https://github.com/panva/jose/tree/f4457b3e3c5a40359b40ad6fa9721d11aa2a2bd0](https://github.com/panva/jose/tree/f4457b3e3c5a40359b40ad6fa9721d11aa2a2bd0) | JavaScript implementation of JOSE signing, encryption, keys and JSON Web Tokens. | Source Revision | 2026-11-24 |
 | <a id="json-schema-ref-parser"></a><a id="ref-0de61a46"></a>JSON Schema $Ref Parser | [https://github.com/APIDevTools/json-schema-ref-parser/tree/0da9875d5f4e05cd2b20f944c3e5bb4a4db21a42](https://github.com/APIDevTools/json-schema-ref-parser/tree/0da9875d5f4e05cd2b20f944c3e5bb4a4db21a42) | Resolves, bundles and dereferences JSON Schema references. | Source Revision | 2026-11-24 |
 | <a id="json-ld-11"></a><a id="w3c-json-ld-11"></a><a id="w3c-json-ld-11-2"></a><a id="ref-6d20146d"></a><a id="ref-a03bb42b"></a>JSON-LD 1.1 | [https://www.w3.org/TR/2020/REC-json-ld11-20200716/](https://www.w3.org/TR/2020/REC-json-ld11-20200716/) | JSON serialisation of linked data, including contextual mappings to RDF identifiers. | Recommendation | 2020-07-16 |
+| <a id="json-logic-js"></a><a id="ref-03dffb0e"></a>json-logic-js | [https://github.com/jwadhams/json-logic-js/tree/c5c73601c90b11e98f6846609bac4dec203d1c18](https://github.com/jwadhams/json-logic-js/tree/c5c73601c90b11e98f6846609bac4dec203d1c18) | Evaluates portable logic expressions represented as JSON. | Source Revision | 2024-07-09 |
+| <a id="json-rules-engine"></a><a id="ref-801e24d6"></a>json-rules-engine | [https://github.com/CacheControl/json-rules-engine/tree/e1f1fda81bb384752531dc29a3817672df51d439](https://github.com/CacheControl/json-rules-engine/tree/e1f1fda81bb384752531dc29a3817672df51d439) | Evaluates declarative JSON business rules against supplied facts. | Source Revision | 2026-02-16 |
+| <a id="jsonata"></a><a id="ref-50222d38"></a>JSONata | [https://github.com/jsonata-js/jsonata/tree/d19d8d7cb1a63d33a4a2b06abd20f42c0693f764](https://github.com/jsonata-js/jsonata/tree/d19d8d7cb1a63d33a4a2b06abd20f42c0693f764) | Expression language for querying and transforming JSON data. | Source Revision | 2026-11-26 |
 | <a id="jsondiffpatch"></a><a id="ref-c9b7030c"></a>jsondiffpatch | [https://github.com/benjamine/jsondiffpatch/tree/ce76b39942891bbbeb60bf6a2ab3b7cbdb758923](https://github.com/benjamine/jsondiffpatch/tree/ce76b39942891bbbeb60bf6a2ab3b7cbdb758923) | Computes and applies structured differences between JSON objects. | Source Revision | 2026-10-29 |
+| <a id="jsonldjs"></a><a id="ref-81b207aa"></a>jsonld.js | [https://github.com/digitalbazaar/jsonld.js/tree/7a93609e475edeebef372ba17ae8e3508b4a324f](https://github.com/digitalbazaar/jsonld.js/tree/7a93609e475edeebef372ba17ae8e3508b4a324f) | JSON-LD processing including expansion, compaction and RDF conversion. | Source Revision | 2026-03-04 |
+| <a id="klaro"></a><a id="ref-69ebde60"></a>Klaro | [https://github.com/kiprotect/klaro/tree/db9f1aca906a392990c58c58475366a091012ea7](https://github.com/kiprotect/klaro/tree/db9f1aca906a392990c58c58475366a091012ea7) | Consent management for website services and tracking technologies. | Source Revision | 2025-03-27 |
 | <a id="konvajs"></a><a id="ref-cd3db9fd"></a>Konva.js | [https://github.com/konvajs/konva/tree/5e0c9d44bc8073972e413a44ace1034d3e887398](https://github.com/konvajs/konva/tree/5e0c9d44bc8073972e413a44ace1034d3e887398) | Interactive two-dimensional graphics and scene management using HTML canvas. | Source Revision | 2026-11-25 |
 | <a id="kosit-xml-validator"></a><a id="ref-59f88986"></a>KoSIT XML Validator | [https://github.com/itplr-kosit/validator/tree/6ac5167f2acad27df31263867e61d6698815c043](https://github.com/itplr-kosit/validator/tree/6ac5167f2acad27df31263867e61d6698815c043) | Configurable XML document validation using schemas and business rules. | Source Revision | 2026-08-20 |
 | <a id="kysely"></a><a id="ref-af839a5b"></a>Kysely | [https://github.com/kysely-org/kysely/tree/a5bd19a8ebe2a6c22d4901b6cc7b9082b1419a76](https://github.com/kysely-org/kysely/tree/a5bd19a8ebe2a6c22d4901b6cc7b9082b1419a76) | Type-safe SQL query builder for TypeScript. | Source Revision | 2026-11-22 |
@@ -130,12 +161,17 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="libheif"></a><a id="ref-1c228439"></a>libheif | [https://github.com/strukturag/libheif/tree/12a259a5882dd99d45ec5fc77e296a3b620d1e2e](https://github.com/strukturag/libheif/tree/12a259a5882dd99d45ec5fc77e296a3b620d1e2e) | Encoding and decoding HEIF and AVIF image containers. | Source Revision | 2026-10-26 |
 | <a id="libjpeg-turbo"></a><a id="ref-bdc85c2a"></a>libjpeg-turbo | [https://github.com/libjpeg-turbo/libjpeg-turbo/tree/5b2e0e9269f1fff760d867be97b7ba5f79188227](https://github.com/libjpeg-turbo/libjpeg-turbo/tree/5b2e0e9269f1fff760d867be97b7ba5f79188227) | Optimised JPEG image encoding and decoding. | Source Revision | 2026-11-24 |
 | <a id="libpg_query"></a><a id="ref-7d7aa078"></a>libpg_query | [https://github.com/pganalyze/libpg_query/tree/86b593ba91e3a04e71127f8c8629da2c0708ba91](https://github.com/pganalyze/libpg_query/tree/86b593ba91e3a04e71127f8c8629da2c0708ba91) | Exposes PostgreSQL SQL parsing facilities outside the database server. | Source Revision | 2026-11-25 |
+| <a id="libsodiumjs"></a><a id="ref-704cdd6c"></a>libsodium.js | [https://github.com/jedisct1/libsodium.js/tree/1f541855af3ccacbdac9aa87199999eb68b730a2](https://github.com/jedisct1/libsodium.js/tree/1f541855af3ccacbdac9aa87199999eb68b730a2) | JavaScript bindings for libsodium cryptographic primitives. | Source Revision | 2026-10-28 |
 | <a id="lovellsharp"></a><a id="ref-d872f398"></a>lovell/sharp | [https://github.com/lovell/sharp/tree/eb94f150f494ee931aa9d301470952e20ffb5d99](https://github.com/lovell/sharp/tree/eb94f150f494ee931aa9d301470952e20ffb5d99) | Node.js image resizing, transformation and format conversion using libvips. | Source Revision | 2026-11-24 |
 | <a id="maplibre-gl-js"></a><a id="ref-e72b5ce4"></a>MapLibre GL JS | [https://github.com/maplibre/maplibre-gl-js/tree/623531a8dd6a6ad1cade8048f93afdd6edd7bb0b](https://github.com/maplibre/maplibre-gl-js/tree/623531a8dd6a6ad1cade8048f93afdd6edd7bb0b) | WebGL rendering of interactive maps and vector tiles. | Source Revision | 2026-11-26 |
 | <a id="markdown-itmarkdown-it"></a><a id="ref-13106d1e"></a>markdown-it/markdown-it | [https://github.com/markdown-it/markdown-it/tree/a8c00d474ec9b304fad9b71c16d6fa8b4909279e](https://github.com/markdown-it/markdown-it/tree/a8c00d474ec9b304fad9b71c16d6fa8b4909279e) | Extensible Markdown parsing and HTML rendering. | Source Revision | 2026-10-16 |
 | <a id="media-queries-level-5"></a><a id="media-queries-5"></a><a id="ref-d71ad712"></a>Media Queries Level 5 | [https://www.w3.org/TR/2026/WD-mediaqueries-5-20260219/](https://www.w3.org/TR/2026/WD-mediaqueries-5-20260219/) | Working Draft defining media queries for adapting presentation to device characteristics and user preferences. | Working Draft | 2026-02-19 |
+| <a id="mermaid"></a><a id="ref-42e5762a"></a>Mermaid | [https://github.com/mermaid-js/mermaid/tree/6374e521f43fde5cfc60d65410c1aa033af29aaf](https://github.com/mermaid-js/mermaid/tree/6374e521f43fde5cfc60d65410c1aa033af29aaf) | Text-based diagram syntax and rendering for technical documentation. | Source Revision | 2026-11-23 |
 | <a id="mikekovarikexifr"></a><a id="ref-949f5fcb"></a>MikeKovarik/exifr | [https://github.com/MikeKovarik/exifr/tree/6cbf6e921688faf7723e1f2e0b9e672d1f0aa21c](https://github.com/MikeKovarik/exifr/tree/6cbf6e921688faf7723e1f2e0b9e672d1f0aa21c) | Extracts image metadata, including EXIF and GPS information. | Source Revision | 2021-08-05 |
+| <a id="moddle-xml"></a><a id="ref-0e4b8fa5"></a>moddle-xml | [https://github.com/bpmn-io/moddle-xml/tree/5688f200cfdfc50d9e4d23454927fc92095b0406](https://github.com/bpmn-io/moddle-xml/tree/5688f200cfdfc50d9e4d23454927fc92095b0406) | XML reading and writing for metamodel-based objects. | Source Revision | 2026-11-17 |
 | <a id="mozillapdfjs"></a><a id="ref-48219085"></a>mozilla/pdf.js | [https://github.com/mozilla/pdf.js/tree/ac7d3717e478133747f47819816c743b296a2e9c](https://github.com/mozilla/pdf.js/tree/ac7d3717e478133747f47819816c743b296a2e9c) | JavaScript PDF parsing and rendering for web browsers. | Source Revision | 2026-11-26 |
+| <a id="n3js"></a><a id="ref-8c4508c1"></a>N3.js | [https://github.com/rdfjs/N3.js/tree/6b42d44a5e35df9d5068a23372fb19293ca5aa11](https://github.com/rdfjs/N3.js/tree/6b42d44a5e35df9d5068a23372fb19293ca5aa11) | RDF parsing, writing and in-memory quad storage for JavaScript. | Source Revision | 2026-11-23 |
+| <a id="nano-id"></a><a id="ref-affc7039"></a>Nano ID | [https://github.com/ai/nanoid/tree/ad8bc48da1da1e07398c8ad830c9020f6a8d10d2](https://github.com/ai/nanoid/tree/ad8bc48da1da1e07398c8ad830c9020f6a8d10d2) | Compact random identifier generation for JavaScript. | Source Revision | 2026-11-25 |
 | <a id="nist-sp-800-137"></a><a id="ref-e530b140"></a>NIST SP 800-137 | [https://csrc.nist.gov/pubs/sp/800/137/final](https://csrc.nist.gov/pubs/sp/800/137/final) | Guidance for continuous monitoring of security controls, threats, vulnerabilities and organisational risk. | Final Publication | 2011-09 |
 | <a id="nist-sp-800-177-rev-1"></a><a id="ref-5475a9f6"></a>NIST SP 800-177 Rev. 1 | [https://csrc.nist.gov/pubs/sp/800/177/r1/final](https://csrc.nist.gov/pubs/sp/800/177/r1/final) | Guidance for trustworthy email, including domain authentication, transport security and message protection. | Final Publication | 2019-02 |
 | <a id="nist-sp-800-209"></a><a id="ref-71d6aa98"></a>NIST SP 800-209 | [https://csrc.nist.gov/pubs/sp/800/209/final](https://csrc.nist.gov/pubs/sp/800/209/final) | Security guidance for storage infrastructure, including access control, isolation, data protection and recovery. | Final Publication | 2020-10 |
@@ -151,18 +187,25 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="node-pg-migrate"></a><a id="ref-5221a10b"></a>node-pg-migrate | [https://github.com/salsita/node-pg-migrate/tree/b75e306622018bd60029f561386fc2538c4979c5](https://github.com/salsita/node-pg-migrate/tree/b75e306622018bd60029f561386fc2538c4979c5) | Versioned PostgreSQL schema migration tooling for Node.js. | Source Revision | 2026-11-18 |
 | <a id="node-postgres--pg"></a><a id="ref-be910869"></a>node-postgres / pg | [https://github.com/brianc/node-postgres/tree/2a5850fb0db18f5e40a642bbb4a4743de412ab54](https://github.com/brianc/node-postgres/tree/2a5850fb0db18f5e40a642bbb4a4743de412ab54) | Node.js PostgreSQL client providing queries, connections and pooling. | Source Revision | 2026-10-23 |
 | <a id="odrl-information-model-22"></a><a id="odrl"></a><a id="ref-4d3f2257"></a>ODRL Information Model 2.2 | [https://www.w3.org/TR/2018/REC-odrl-model-20180215/](https://www.w3.org/TR/2018/REC-odrl-model-20180215/) | Interoperable model for expressing permissions, prohibitions and duties relating to assets and services. | Recommendation | 2018-02-15 |
+| <a id="ont-api"></a><a id="ref-9bb6c5a8"></a>ONT-API | [https://github.com/owlcs/ont-api/tree/c5ec3062c72aa73b370dc8d802c7cf6a85289c4f](https://github.com/owlcs/ont-api/tree/c5ec3062c72aa73b370dc8d802c7cf6a85289c4f) | Java ontology manipulation interfaces integrating OWL API and RDF graph models. | Source Revision | 2026-09-09 |
+| <a id="openid-client"></a><a id="ref-67858133"></a>openid-client | [https://github.com/panva/openid-client/tree/85bfad5ae62f14fd2f5a737931c313efa97b8a81](https://github.com/panva/openid-client/tree/85bfad5ae62f14fd2f5a737931c313efa97b8a81) | OAuth 2.0 and OpenID Connect client protocol implementation. | Source Revision | 2026-11-20 |
 | <a id="openlayers"></a><a id="ref-a2227ac8"></a>OpenLayers | [https://github.com/openlayers/openlayers/tree/a6c12de9b70291f52f462770b2f5a0230f34763c](https://github.com/openlayers/openlayers/tree/a6c12de9b70291f52f462770b2f5a0230f34763c) | Interactive web maps supporting raster, vector and geographic data sources. | Source Revision | 2026-11-26 |
 | <a id="opensearch"></a><a id="ref-133dccf8"></a>OpenSearch | [https://github.com/opensearch-project/OpenSearch/tree/c51b5442159391f3d58fb27c5b6d71aede802317](https://github.com/opensearch-project/OpenSearch/tree/c51b5442159391f3d58fb27c5b6d71aede802317) | Distributed search and analytics engine for indexed data. | Source Revision | 2026-11-26 |
 | <a id="opentelemetry-js"></a><a id="ref-8e380f73"></a>OpenTelemetry JS | [https://github.com/open-telemetry/opentelemetry-js/tree/3a84fa9fe237a95cd03a44460639218eb9c64e76](https://github.com/open-telemetry/opentelemetry-js/tree/3a84fa9fe237a95cd03a44460639218eb9c64e76) | OpenTelemetry JavaScript APIs and SDKs for generating and exporting telemetry. | Source Revision | 2026-11-26 |
 | <a id="or-tools"></a><a id="ref-7011995a"></a>OR-Tools | [https://github.com/google/or-tools/tree/ffea732ce3b6f928e117914521b1f4be67ebcad9](https://github.com/google/or-tools/tree/ffea732ce3b6f928e117914521b1f4be67ebcad9) | Combinatorial optimisation toolkit for routing, scheduling and constraint programming. | Source Revision | 2026-11-23 |
+| <a id="orestbidacookieconsent"></a><a id="ref-008bcb87"></a>orestbida/cookieconsent | [https://github.com/orestbida/cookieconsent/tree/ba52891b9c6bbd803bdeca25109fe3be3143770a](https://github.com/orestbida/cookieconsent/tree/ba52891b9c6bbd803bdeca25109fe3be3143770a) | Browser cookie consent interface and category-based consent management. | Source Revision | 2026-11-22 |
 | <a id="organization-ontology"></a><a id="ref-3a7e011a"></a>Organization Ontology | [https://www.w3.org/TR/2014/REC-vocab-org-20140116/](https://www.w3.org/TR/2014/REC-vocab-org-20140116/) | Linked data vocabulary for modelling organisations, organisational units, roles and memberships. | Recommendation | 2014-01-16 |
 | <a id="owasp-asvs-500"></a><a id="ref-a1c367d2"></a>OWASP ASVS 5.0.0 | [https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf](https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf) | Versioned application security requirements for designing, developing and verifying web applications and services. | Stable Release | 2025-05 |
 | <a id="owl-2-overview"></a><a id="owl-2"></a><a id="ref-7854321a"></a>OWL 2 Overview | [https://www.w3.org/TR/2012/REC-owl2-overview-20121211/](https://www.w3.org/TR/2012/REC-owl2-overview-20121211/) | Overview of the ontology language, its semantics, syntaxes and profiles. | Recommendation | 2012-12-11 |
 | <a id="owl-2-profiles"></a><a id="ref-c8ffae91"></a>OWL 2 Profiles | [https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/](https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/) | Defines constrained ontology language profiles supporting efficient reasoning and querying. | Recommendation | 2012-12-11 |
+| <a id="owlapi"></a><a id="ref-5eeb6944"></a>OWLAPI | [https://github.com/owlcs/owlapi/tree/dee53400f3da0fe009bd50af1285b28095fa5178](https://github.com/owlcs/owlapi/tree/dee53400f3da0fe009bd50af1285b28095fa5178) | Java interfaces for creating, parsing and manipulating OWL ontologies. | Source Revision | 2026-11-02 |
+| <a id="oxigraph"></a><a id="ref-6a0f1548"></a>Oxigraph | [https://github.com/oxigraph/oxigraph/tree/b4771318482859182d62280b8f3affbff76b8cf0](https://github.com/oxigraph/oxigraph/tree/b4771318482859182d62280b8f3affbff76b8cf0) | RDF graph database and SPARQL query engine. | Source Revision | 2026-11-26 |
+| <a id="p-queue"></a><a id="ref-3d468f2d"></a>p-queue | [https://github.com/sindresorhus/p-queue/tree/7f272ab5ff2254c0dc2537b7977e88ede1cd55e8](https://github.com/sindresorhus/p-queue/tree/7f272ab5ff2254c0dc2537b7977e88ede1cd55e8) | Promise task queue with configurable concurrency and rate constraints. | Source Revision | 2026-10-12 |
 | <a id="payment-request-api"></a><a id="payment-request"></a><a id="ref-ea124a00"></a>Payment Request API | [https://www.w3.org/TR/2022/REC-payment-request-20220908/](https://www.w3.org/TR/2022/REC-payment-request-20220908/) | Browser API for coordinating payment method selection and payment information exchange between merchants and users. | Recommendation | 2022-09-08 |
 | <a id="pdf-lib"></a><a id="ref-87054181"></a>pdf-lib | [https://github.com/Hopding/pdf-lib/tree/93dd36e85aa659a3bca09867d2d8fac172501fbe](https://github.com/Hopding/pdf-lib/tree/93dd36e85aa659a3bca09867d2d8fac172501fbe) | JavaScript library for creating and modifying PDF documents. | Source Revision | 2021-11-12 |
 | <a id="pdfcpupdfcpu"></a><a id="ref-3f43e44c"></a>pdfcpu/pdfcpu | [https://github.com/pdfcpu/pdfcpu/tree/a21a372de6864eccd9e554df63c7950dfd1a4b47](https://github.com/pdfcpu/pdfcpu/tree/a21a372de6864eccd9e554df63c7950dfd1a4b47) | Go library and command-line tools for PDF validation and manipulation. | Source Revision | 2026-10-28 |
 | <a id="pg_cron"></a><a id="ref-54c57554"></a>pg_cron | [https://github.com/citusdata/pg_cron/tree/5cedfa472ccc83567aa23ec645925ed8489a7797](https://github.com/citusdata/pg_cron/tree/5cedfa472ccc83567aa23ec645925ed8489a7797) | PostgreSQL extension for scheduling database jobs using cron expressions. | Source Revision | 2026-09-08 |
+| <a id="pg-boss"></a><a id="ref-fc345c0f"></a>pg-boss | [https://github.com/timgit/pg-boss/tree/b2198aa65138585f8bb160658e38249c94115aad](https://github.com/timgit/pg-boss/tree/b2198aa65138585f8bb160658e38249c94115aad) | PostgreSQL-backed job queue for asynchronous Node.js processing. | Source Revision | 2026-11-25 |
 | <a id="pgbackrest"></a><a id="ref-82a8bc20"></a>pgBackRest | [https://github.com/pgbackrest/pgbackrest/tree/8a4119022064832298006d95a5105255385da61e](https://github.com/pgbackrest/pgbackrest/tree/8a4119022064832298006d95a5105255385da61e) | PostgreSQL backup, restoration and write-ahead log archiving tooling. | Source Revision | 2026-11-23 |
 | <a id="pgbouncer"></a><a id="ref-dd9ecc22"></a>PgBouncer | [https://github.com/pgbouncer/pgbouncer/tree/23347f670c2296837012fd9a04f1bb2ac6fdcd45](https://github.com/pgbouncer/pgbouncer/tree/23347f670c2296837012fd9a04f1bb2ac6fdcd45) | Lightweight PostgreSQL connection pooler. | Source Revision | 2026-11-25 |
 | <a id="pgmq"></a><a id="ref-c40afaea"></a>PGMQ | [https://github.com/pgmq/pgmq/tree/51468f6ba2afeb4a4a9a67e9a532f37b590a0929](https://github.com/pgmq/pgmq/tree/51468f6ba2afeb4a4a9a67e9a532f37b590a0929) | PostgreSQL-based durable message queue with visibility timeouts. | Source Revision | 2026-11-18 |
@@ -171,12 +214,19 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="playwright"></a><a id="ref-12180955"></a>Playwright | [https://github.com/microsoft/playwright/tree/c2ebabaf153d7191c8ce959a20d622b9faa57025](https://github.com/microsoft/playwright/tree/c2ebabaf153d7191c8ce959a20d622b9faa57025) | Cross-browser automation and end-to-end web application testing. | Source Revision | 2026-11-26 |
 | <a id="polygon-clipping"></a><a id="ref-2a683b8b"></a>polygon-clipping | [https://github.com/mfogel/polygon-clipping/tree/82b0ac2c35304bfea9cac24eabcbda32a808ee55](https://github.com/mfogel/polygon-clipping/tree/82b0ac2c35304bfea9cac24eabcbda32a808ee55) | Boolean geometric operations on polygons and multipolygons. | Source Revision | 2024-04-19 |
 | <a id="postgresjs"></a><a id="ref-624c1eac"></a>Postgres.js | [https://github.com/porsager/postgres/tree/18c462947be677b721fdef222479cdef0d7b690d](https://github.com/porsager/postgres/tree/18c462947be677b721fdef222479cdef0d7b690d) | JavaScript PostgreSQL client with tagged-template query interfaces. | Source Revision | 2026-11-23 |
+| <a id="protégé"></a><a id="ref-2649f4d9"></a>Protégé | [https://github.com/protegeproject/protege/tree/bf03cccc65ea664e139d6829bba6d209ef58ee55](https://github.com/protegeproject/protege/tree/bf03cccc65ea664e139d6829bba6d209ef58ee55) | Ontology authoring and knowledge modelling application. | Source Revision | 2026-09-23 |
 | <a id="prov-o"></a><a id="ref-20aa2e25"></a>PROV-O | [https://www.w3.org/TR/2013/REC-prov-o-20130430/](https://www.w3.org/TR/2013/REC-prov-o-20130430/) | Ontology for describing provenance through entities, activities, agents and their relationships. | Recommendation | 2013-04-30 |
 | <a id="push-api"></a><a id="w3c-push-api"></a><a id="ref-9a875aab"></a>Push API | [https://www.w3.org/TR/2026/WD-push-api-20261121/](https://www.w3.org/TR/2026/WD-push-api-20261121/) | Working Draft defining delivery of push messages to web applications through push services and service workers. | Working Draft | 2026-11-21 |
+| <a id="pyshacl"></a><a id="ref-4293e39b"></a>pySHACL | [https://github.com/RDFLib/pySHACL/tree/df57bd4390bd397811d7c2d3b7cf0e49cd21c189](https://github.com/RDFLib/pySHACL/tree/df57bd4390bd397811d7c2d3b7cf0e49cd21c189) | Python SHACL validation of RDF graphs. | Source Revision | 2026-10-28 |
 | <a id="qpdfqpdf"></a><a id="ref-097546f2"></a>qpdf/qpdf | [https://github.com/qpdf/qpdf/tree/4eba95899886e851cc41d76886483b347612f2a8](https://github.com/qpdf/qpdf/tree/4eba95899886e851cc41d76886483b347612f2a8) | PDF structural transformations, inspection and encryption management. | Source Revision | 2026-09-26 |
+| <a id="rate-limiter-flexible"></a><a id="ref-99f82842"></a>rate-limiter-flexible | [https://github.com/animir/node-rate-limiter-flexible/tree/e6b853d2a01a2d90f031b071c8c543bbca82931d](https://github.com/animir/node-rate-limiter-flexible/tree/e6b853d2a01a2d90f031b071c8c543bbca82931d) | Rate limiting and request accounting with interchangeable storage backends. | Source Revision | 2026-11-25 |
 | <a id="rbush"></a><a id="ref-d7bd767e"></a>RBush | [https://github.com/mourner/rbush/tree/e59712716a84dda2e31f9b471b32faa178d8056f](https://github.com/mourner/rbush/tree/e59712716a84dda2e31f9b471b32faa178d8056f) | R-tree spatial indexing of two-dimensional points and rectangles. | Source Revision | 2026-04-03 |
 | <a id="rdf-11-concepts-and-abstract-syntax"></a><a id="rdfrdfs"></a><a id="ref-1d5b21c8"></a>RDF 1.1 Concepts and Abstract Syntax | [https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) | Defines triples, graphs, datasets and identifiers for representing resource information. | Recommendation | 2014-02-25 |
 | <a id="rdf-schema-11"></a>RDF Schema 1.1 | [https://www.w3.org/TR/2014/REC-rdf-schema-20140225/](https://www.w3.org/TR/2014/REC-rdf-schema-20140225/) | Vocabulary for describing RDF classes, properties and their relationships. | Recommendation | 2014-02-25 |
+| <a id="rdflib"></a><a id="ref-94601d7a"></a>RDFLib | [https://github.com/RDFLib/rdflib/tree/90a67c7bb3196255ddb4a1a8f3b7b3f325e55eea](https://github.com/RDFLib/rdflib/tree/90a67c7bb3196255ddb4a1a8f3b7b3f325e55eea) | Python library for RDF graphs, serialisation and SPARQL queries. | Source Revision | 2026-11-23 |
+| <a id="rehype-sanitize"></a><a id="ref-b4b1b93d"></a>rehype-sanitize | [https://github.com/rehypejs/rehype-sanitize/tree/b3ee205aeda4e0fc276cb6664b2d6d339305fcd6](https://github.com/rehypejs/rehype-sanitize/tree/b3ee205aeda4e0fc276cb6664b2d6d339305fcd6) | Schema-based sanitisation of HTML syntax trees. | Source Revision | 2023-09-28 |
+| <a id="remark"></a><a id="ref-19502e95"></a>remark | [https://github.com/remarkjs/remark/tree/1146b3a274fc1f4607111e5d6607a3a769a0e89a](https://github.com/remarkjs/remark/tree/1146b3a274fc1f4607111e5d6607a3a769a0e89a) | Markdown parsing, transformation and serialisation through syntax trees. | Source Revision | 2026-09-27 |
+| <a id="retejs"></a><a id="ref-945fde25"></a>Rete.js | [https://github.com/retejs/rete/tree/2aae19950180dc12725306f06c0440f64473bd21](https://github.com/retejs/rete/tree/2aae19950180dc12725306f06c0440f64473bd21) | Framework for visual node-based editing and graph processing. | Source Revision | 2025-06-30 |
 | <a id="rfc-10017"></a><a id="ref-5dce7cd2"></a>RFC 10017 | [https://www.rfc-editor.org/info/rfc10017/](https://www.rfc-editor.org/info/rfc10017/) | OAuth 2.0 best practices for browser-based applications, addressing browser threats and secure application architectures. | Best Current Practice | 2026-08 |
 | <a id="rfc-10051"></a><a id="rfc-10051-2"></a><a id="ref-d6226711"></a><a id="ref-30c13a68"></a>RFC 10051 | [https://www.rfc-editor.org/info/rfc10051/](https://www.rfc-editor.org/info/rfc10051/) | Extends iCalendar VTODO for task scheduling, status tracking, process control and project management. | Published RFC | 2026-10 |
 | <a id="rfc-1034"></a><a id="ref-1c93287e"></a>RFC 1034 | [https://www.rfc-editor.org/info/rfc1034/](https://www.rfc-editor.org/info/rfc1034/) | DNS architecture, namespace, delegation and resolution concepts. | Internet Standard | 1987-11 |
@@ -225,13 +275,18 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="rfc-9989"></a><a id="7489--wwwrfc-editororginforfc7489"></a><a id="ref-600abcac"></a>RFC 9989 | [https://www.rfc-editor.org/rfc/rfc9989.html](https://www.rfc-editor.org/rfc/rfc9989.html) | DMARC domain-level email authentication alignment, policy and message disposition. | Published RFC | 2026-05 |
 | <a id="rfc-9990"></a>RFC 9990 | [https://www.rfc-editor.org/rfc/rfc9990.html](https://www.rfc-editor.org/rfc/rfc9990.html) | DMARC aggregate reporting format and delivery requirements. | Published RFC | 2026-05 |
 | <a id="rfc-9991"></a>RFC 9991 | [https://www.rfc-editor.org/rfc/rfc9991.html](https://www.rfc-editor.org/rfc/rfc9991.html) | DMARC message-specific failure reporting mechanisms and safeguards. | Published RFC | 2026-05 |
+| <a id="robot"></a><a id="ref-a91eaa59"></a>ROBOT | [https://github.com/ontodev/robot/tree/37d514d2ac8970b6ce7b9f5cfe83ba08dc97e9d8](https://github.com/ontodev/robot/tree/37d514d2ac8970b6ce7b9f5cfe83ba08dc97e9d8) | Command-line ontology processing, validation and release preparation. | Source Revision | 2026-10-01 |
 | <a id="shacl"></a><a id="ref-6dc528a5"></a>SHACL | [https://www.w3.org/TR/2017/REC-shacl-20170720/](https://www.w3.org/TR/2017/REC-shacl-20170720/) | Constraint language for validating RDF graphs and describing permissible data structures. | Recommendation | 2017-07-20 |
+| <a id="shacl-engine"></a><a id="ref-7316cf52"></a>shacl-engine | [https://github.com/rdf-ext/shacl-engine/tree/6418118d2c3403dd1b073b374924c8dc931b8739](https://github.com/rdf-ext/shacl-engine/tree/6418118d2c3403dd1b073b374924c8dc931b8739) | JavaScript SHACL validation engine for RDF datasets. | Source Revision | 2026-10-11 |
+| <a id="simplewebauthn"></a><a id="ref-b7bc28fb"></a>SimpleWebAuthn | [https://github.com/MasterKale/SimpleWebAuthn/tree/01d1a640d5ded4fced0b45a9d806fd0ff44ad244](https://github.com/MasterKale/SimpleWebAuthn/tree/01d1a640d5ded4fced0b45a9d806fd0ff44ad244) | Browser and server utilities for WebAuthn registration and authentication ceremonies. | Source Revision | 2026-11-06 |
 | <a id="sindresorhusfile-type"></a><a id="ref-e88cf18e"></a>sindresorhus/file-type | [https://github.com/sindresorhus/file-type/tree/9b7912ae4753442312d36aff810abc8c151388dd](https://github.com/sindresorhus/file-type/tree/9b7912ae4753442312d36aff810abc8c151388dd) | Identifies supported binary file formats using file signatures. | Source Revision | 2026-11-14 |
 | <a id="skos"></a><a id="ref-ceaf9e24"></a>SKOS | [https://www.w3.org/TR/2009/REC-skos-reference-20090818/](https://www.w3.org/TR/2009/REC-skos-reference-20090818/) | RDF vocabulary for interoperable thesauri, taxonomies and concept schemes. | Recommendation | 2009-08-18 |
 | <a id="sparql-11-query-language"></a><a id="sparql-11"></a><a id="ref-5f7e8b5e"></a>SPARQL 1.1 Query Language | [https://www.w3.org/TR/2013/REC-sparql11-query-20130321/](https://www.w3.org/TR/2013/REC-sparql11-query-20130321/) | Query syntax and semantics for retrieving and analysing RDF graph data. | Recommendation | 2013-03-21 |
 | <a id="svg-2"></a><a id="ref-2d692224"></a>SVG 2 | [https://www.w3.org/TR/2026/CR-SVG2-20261006/](https://www.w3.org/TR/2026/CR-SVG2-20261006/) | Candidate Recommendation Snapshot defining scalable vector graphics, graphical elements, rendering and interaction. | Candidate Recommendation Snapshot | 2026-10-06 |
 | <a id="svgjs"></a><a id="ref-0b3f539d"></a>SVG.js | [https://github.com/svgdotjs/svg.js/tree/4b8809b1554c44a84f8992cdbda60480336cc040](https://github.com/svgdotjs/svg.js/tree/4b8809b1554c44a84f8992cdbda60480336cc040) | JavaScript API for creating, manipulating and animating SVG graphics. | Source Revision | 2026-08-04 |
+| <a id="tanstack-query"></a><a id="ref-51cb5e45"></a>TanStack Query | [https://github.com/TanStack/query/tree/635aad6a95b08dffc91ba1973c043b219f085cd6](https://github.com/TanStack/query/tree/635aad6a95b08dffc91ba1973c043b219f085cd6) | Asynchronous server-state fetching, caching and synchronisation. | Source Revision | 2026-11-26 |
 | <a id="tanstack-table"></a><a id="ref-af94a8b1"></a>TanStack Table | [https://github.com/TanStack/table/tree/6d48b56fa6391526b9e38214e13b46e90d5e9501](https://github.com/TanStack/table/tree/6d48b56fa6391526b9e38214e13b46e90d5e9501) | Headless table state and interaction logic for sorting, filtering and pagination. | Source Revision | 2026-11-24 |
+| <a id="tarteaucitronjs"></a><a id="ref-1dca5d3a"></a>tarteaucitron.js | [https://github.com/AmauriC/tarteaucitron.js/tree/ad5118efefb0f60a7b171ae638936bfceac0ec5e](https://github.com/AmauriC/tarteaucitron.js/tree/ad5118efefb0f60a7b171ae638936bfceac0ec5e) | Browser consent management for controlling third-party services and trackers. | Source Revision | 2026-11-19 |
 | <a id="temporal-server"></a><a id="ref-77f2db20"></a>Temporal Server | [https://github.com/temporalio/temporal/tree/c2ec24c01c519234de9dd01881b968c1b14473f2](https://github.com/temporalio/temporal/tree/c2ec24c01c519234de9dd01881b968c1b14473f2) | Durable workflow orchestration server with persisted execution state. | Source Revision | 2026-11-26 |
 | <a id="temporal-typescript-sdk"></a><a id="ref-83603142"></a>Temporal TypeScript SDK | [https://github.com/temporalio/sdk-typescript/tree/8447c6928c773072a94d5f206a34465e3d9ea7df](https://github.com/temporalio/sdk-typescript/tree/8447c6928c773072a94d5f206a34465e3d9ea7df) | TypeScript SDK for Temporal workflow execution, activities and clients. | Source Revision | 2026-11-25 |
 | <a id="temporal-ui"></a><a id="ref-5d38eb94"></a>Temporal UI | [https://github.com/temporalio/ui/tree/7397b8ad72325958d33939d685298420abedbe89](https://github.com/temporalio/ui/tree/7397b8ad72325958d33939d685298420abedbe89) | Web interface for inspecting and managing Temporal workflow executions. | Source Revision | 2026-11-25 |
@@ -242,6 +297,7 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="uk-digital-markets-competition-and-consumers-act-2024"></a><a id="digital-markets-competition-and-consumers-act-2024"></a><a id="digital-markets-competition-and-consumers-act-2024-part-4-chapter-2"></a><a id="ref-49097836"></a><a id="ref-9160e94a"></a><a id="ref-de55a252"></a>UK Digital Markets, Competition and Consumers Act 2024 | [https://www.legislation.gov.uk/ukpga/2024/13/2026-09-30](https://www.legislation.gov.uk/ukpga/2024/13/2026-09-30) | Digital competition and consumer protection, including Part 4 and Chapter 2 subscription contracts. | UK Act (revised text) | 2026-09-30 |
 | <a id="uk-price-marking-order-2004"></a><a id="price-marking-order-2004"></a><a id="ref-2e09325b"></a>UK Price Marking Order 2004 | [https://www.legislation.gov.uk/uksi/2004/102/2026-04-06?view=plain](https://www.legislation.gov.uk/uksi/2004/102/2026-04-06?view=plain) | Requirements for displaying selling and unit prices of goods offered to consumers. | UK Statutory Instrument (revised text) | 2026-04-06 |
 | <a id="uk-working-time-regulations-1998"></a><a id="uk-working-time-regulations"></a><a id="ref-38005802"></a>UK Working Time Regulations 1998 | [https://www.legislation.gov.uk/uksi/1998/1833/2026-10-01?view=extent&wrap=true](https://www.legislation.gov.uk/uksi/1998/1833/2026-10-01?view=extent&wrap=true) | Working time limits, rest periods, night work and annual leave requirements. | UK Statutory Instrument (revised text) | 2026-10-01 |
+| <a id="unified"></a><a id="ref-72271435"></a>unified | [https://github.com/unifiedjs/unified/tree/dfaf172e8be10a021e375ab05acf595f65f5acf0](https://github.com/unifiedjs/unified/tree/dfaf172e8be10a021e375ab05acf595f65f5acf0) | Plugin-based processing of structured content through syntax trees. | Source Revision | 2026-10-03 |
 | <a id="uuid"></a><a id="ref-346e6d77"></a>uuid | [https://github.com/uuidjs/uuid/tree/766d0d29c1646f37cb2261bbee723f0daf94e44a](https://github.com/uuidjs/uuid/tree/766d0d29c1646f37cb2261bbee723f0daf94e44a) | JavaScript generation, parsing and validation of UUIDs. | Source Revision | 2026-11-01 |
 | <a id="valhalla"></a><a id="ref-1d240d0a"></a>Valhalla | [https://github.com/valhalla/valhalla/tree/4d8b2061b566412ce61eb8a2001b7cfa2392356a](https://github.com/valhalla/valhalla/tree/4d8b2061b566412ce61eb8a2001b7cfa2392356a) | Open-source multimodal routing and geographic navigation engine. | Source Revision | 2026-11-26 |
 | <a id="veevalidate"></a><a id="ref-bd5a7590"></a>VeeValidate | [https://github.com/logaretm/vee-validate/tree/7d8cc524f9204655ad00a466090738e43b44ff2a](https://github.com/logaretm/vee-validate/tree/7d8cc524f9204655ad00a466090738e43b44ff2a) | Vue form state management and validation. | Source Revision | 2026-03-04 |
@@ -250,6 +306,8 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="virustotalyara-x"></a><a id="ref-2243e7b5"></a>VirusTotal/yara-x | [https://github.com/VirusTotal/yara-x/tree/312998592a6ecd48b5e776b5d978dc5a6c3c373f](https://github.com/VirusTotal/yara-x/tree/312998592a6ecd48b5e776b5d978dc5a6c3c373f) | Rule-based identification and classification of files and binary content. | Source Revision | 2026-11-26 |
 | <a id="vitest"></a><a id="ref-c28ef17c"></a>Vitest | [https://github.com/vitest-dev/vitest/tree/0fa77146055effb7e376615e4ed2286b24613da7](https://github.com/vitest-dev/vitest/tree/0fa77146055effb7e376615e4ed2286b24613da7) | Vite-integrated JavaScript and TypeScript test framework. | Source Revision | 2026-11-26 |
 | <a id="vroom"></a><a id="ref-3f30cade"></a>VROOM | [https://github.com/VROOM-Project/vroom/tree/877c2dd572fb780ab95a6b546fddacc6f474d71e](https://github.com/VROOM-Project/vroom/tree/877c2dd572fb780ab95a6b546fddacc6f474d71e) | Vehicle routing optimisation supporting capacity, time windows and delivery constraints. | Source Revision | 2026-11-17 |
+| <a id="vue-flow"></a><a id="ref-1c63f8c8"></a>Vue Flow | [https://github.com/bcakmakoglu/vue-flow/tree/8f609f99842cd97717dfb6e849fecce4a1b8c67f](https://github.com/bcakmakoglu/vue-flow/tree/8f609f99842cd97717dfb6e849fecce4a1b8c67f) | Vue components for interactive node and edge diagrams. | Source Revision | 2026-11-17 |
+| <a id="vueuse"></a><a id="ref-9507482e"></a>VueUse | [https://github.com/vueuse/vueuse/tree/6680e578f1499c2071dcbf2c8e94dd0aa235745c](https://github.com/vueuse/vueuse/tree/6680e578f1499c2071dcbf2c8e94dd0aa235745c) | Reusable Vue composition utilities for reactive application behaviour. | Source Revision | 2026-11-23 |
 | <a id="w3c-trace-context"></a><a id="ref-e45806bf"></a>W3C Trace Context | [https://www.w3.org/TR/2021/REC-trace-context-1-20211123/](https://www.w3.org/TR/2021/REC-trace-context-1-20211123/) | HTTP trace context headers and formats for propagating request correlation across distributed services. | Recommendation | 2021-11-23 |
 | <a id="wai-aria-12"></a><a id="wai-aria"></a><a id="ref-67eee3fb"></a><a id="ref-90f5e4b1"></a>WAI-ARIA 1.2 | [https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/) | Semantic roles, states and properties for exposing accessible user interface information to assistive technologies. | Recommendation | 2023-06-06 |
 | <a id="wcag-22"></a><a id="w3c-wcag-22"></a><a id="w3c-wcag-22-aa"></a><a id="ref-0d1f555e"></a><a id="ref-eb11cf7e"></a><a id="ref-bc717cde"></a>WCAG 2.2 | [https://www.w3.org/TR/2024/REC-WCAG22-20241212/](https://www.w3.org/TR/2024/REC-WCAG22-20241212/) | Web accessibility success criteria and conformance requirements, including the platform's Level AA baseline. | Recommendation | 2024-12-12 |
@@ -258,8 +316,11 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="whatwg-html"></a><a id="whatwg-html-2"></a><a id="ref-36db7adb"></a><a id="ref-82cafda8"></a>WHATWG HTML | [https://github.com/whatwg/html/blob/0162cee0c42a82267354d38fbc6a2503ee295b77/source](https://github.com/whatwg/html/blob/0162cee0c42a82267354d38fbc6a2503ee295b77/source) | Defines HTML document semantics, parsing, browser processing and web application APIs. | Living Standard | 2026-11-26 |
 | <a id="whatwg-notifications"></a><a id="ref-5dadc7d0"></a>WHATWG Notifications | [https://github.com/whatwg/notifications/blob/b5ae3f28540948e333e6a57eafbf4b9b4556d905/notifications.bs](https://github.com/whatwg/notifications/blob/b5ae3f28540948e333e6a57eafbf4b9b4556d905/notifications.bs) | Defines web notification permissions, display, lifecycle and interaction APIs. | Living Standard | 2026-11-12 |
 | <a id="whatwg-url"></a><a id="ref-021179e7"></a>WHATWG URL | [https://github.com/whatwg/url/blob/4f461b81a748443b235840599cea6290df40329a/url.bs](https://github.com/whatwg/url/blob/4f461b81a748443b235840599cea6290df40329a/url.bs) | Defines interoperable URL parsing, serialisation, origins and URL APIs. | Living Standard | 2026-11-19 |
+| <a id="whelk"></a><a id="ref-a943427f"></a>Whelk | [https://github.com/INCATools/whelk/tree/ab85577b96d3e09ab6800d14af5542ff12a627dd](https://github.com/INCATools/whelk/tree/ab85577b96d3e09ab6800d14af5542ff12a627dd) | Ontology reasoning tooling for supported OWL description logic constructs. | Source Revision | 2026-10-24 |
+| <a id="xmlbuilder2"></a><a id="ref-65876386"></a>xmlbuilder2 | [https://github.com/oozcitak/xmlbuilder2/tree/10b65492d4c47a3a7c88e430be5b1d7bbd0ac85a](https://github.com/oozcitak/xmlbuilder2/tree/10b65492d4c47a3a7c88e430be5b1d7bbd0ac85a) | XML document construction and serialisation for JavaScript. | Source Revision | 2026-02-03 |
 | <a id="xstate"></a><a id="ref-2318841b"></a>XState | [https://github.com/statelyai/xstate/tree/5af51b11198fa170c17a40d5d4ed4b67224e51ba](https://github.com/statelyai/xstate/tree/5af51b11198fa170c17a40d5d4ed4b67224e51ba) | State machines, statecharts and actor-based orchestration for JavaScript and TypeScript. | Source Revision | 2026-11-24 |
 | <a id="xyflow"></a><a id="xyflow-vue"></a><a id="ref-f612adca"></a>xyflow | [https://github.com/xyflow/xyflow/tree/9635a064f9d44cc10c460e3a0c9ca20ad0852450](https://github.com/xyflow/xyflow/tree/9635a064f9d44cc10c460e3a0c9ca20ad0852450) | Interactive node-based diagrams and flow editors; the cited repository contains React Flow and Svelte Flow. | Source Revision | 2026-11-23 |
+| <a id="yjs"></a><a id="ref-22280e1e"></a>Yjs | [https://github.com/yjs/yjs/tree/15b0a622be2523d5060f78c57c4f7dba6a5e7132](https://github.com/yjs/yjs/tree/15b0a622be2523d5060f78c57c4f7dba6a5e7132) | Conflict-free replicated data types for collaborative editing and synchronisation. | Source Revision | 2026-11-23 |
 | <a id="zod"></a><a id="ref-1e3efac4"></a>Zod | [https://github.com/colinhacks/zod/tree/d40c329910436e528d3c26cb1b9179e05abebf05](https://github.com/colinhacks/zod/tree/d40c329910436e528d3c26cb1b9179e05abebf05) | TypeScript-oriented runtime schema validation and type inference. | Source Revision | 2026-11-22 |
 
 ## Consolidated reference inventory
@@ -782,12 +843,6 @@ IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-i
 
 [OWASP ASVS](https://github.com/OWASP/ASVS) — imported reference; verification pending.
 
-### Yjs
-
-<a id="ref-22280e1e"></a>
-
-[Yjs](https://github.com/yjs/yjs) — imported reference; verification pending.
-
 ### IAQG 9100 family
 
 <a id="ref-65f665ce"></a>
@@ -980,227 +1035,17 @@ IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-i
 
 [OpenPeppol BIS Ordering](https://docs.peppol.eu/poacc/upgrade-3/profiles/28-ordering/) — imported reference; verification pending.
 
-### 1EdTech OpenCASE
-
-<a id="ref-9c4e92f0"></a>
-
-[1EdTech OpenCASE](https://github.com/1EdTech/OpenCASE) — imported reference; verification pending.
-
-### tarteaucitron.js
-
-<a id="ref-1dca5d3a"></a>
-
-[tarteaucitron.js](https://github.com/AmauriC/tarteaucitron.js) — imported reference; verification pending.
-
-### Casbin
-
-<a id="ref-0bce4034"></a>
-
-[Casbin](https://github.com/apache/casbin-node-casbin) — imported reference; verification pending.
-
-### Apache Jena
-
-<a id="ref-7ab49d9e"></a>
-
-[Apache Jena](https://github.com/apache/jena) — imported reference; verification pending.
-
-### Apache Lucene
-
-<a id="ref-6f0b2c64"></a>
-
-[Apache Lucene](https://github.com/apache/lucene) — imported reference; verification pending.
-
-### Vue Flow
-
-<a id="ref-1c63f8c8"></a>
-
-[Vue Flow](https://github.com/bcakmakoglu/vue-flow) — imported reference; verification pending.
-
-### bpmn-js
-
-<a id="ref-a01cd8e1"></a>
-
-[bpmn-js](https://github.com/bpmn-io/bpmn-js) — imported reference; verification pending.
-
-### bpmn-moddle
-
-<a id="ref-9e223261"></a>
-
-[bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) — imported reference; verification pending.
-
-### diagram-js
-
-<a id="ref-8ca9c849"></a>
-
-[diagram-js](https://github.com/bpmn-io/diagram-js) — imported reference; verification pending.
-
-### dmn-moddle
-
-<a id="ref-0652c71f"></a>
-
-[dmn-moddle](https://github.com/bpmn-io/dmn-moddle) — imported reference; verification pending.
-
-### moddle-xml
-
-<a id="ref-0e4b8fa5"></a>
-
-[moddle-xml](https://github.com/bpmn-io/moddle-xml) — imported reference; verification pending.
-
-### json-rules-engine
-
-<a id="ref-801e24d6"></a>
-
-[json-rules-engine](https://github.com/CacheControl/json-rules-engine) — imported reference; verification pending.
-
 ### CloudEvents (2)
 
 <a id="ref-4a330c79"></a>
 
 [CloudEvents](https://github.com/cloudevents/spec) — imported reference; verification pending.
 
-### Comunica
-
-<a id="ref-6c3e4b82"></a>
-
-[Comunica](https://github.com/comunica/comunica) — imported reference; verification pending.
-
-### convert-units
-
-<a id="ref-443004fe"></a>
-
-[convert-units](https://github.com/convert-units/convert-units) — imported reference; verification pending.
-
-### Dagre
-
-<a id="ref-41707161"></a>
-
-[Dagre](https://github.com/dagrejs/dagre) — imported reference; verification pending.
-
-### @dagrejs/graphlib
-
-<a id="ref-6629c3fb"></a>
-
-[@dagrejs/graphlib](https://github.com/dagrejs/graphlib) — imported reference; verification pending.
-
-### axe-core
-
-<a id="ref-802ea31e"></a>
-
-[axe-core](https://github.com/dequelabs/axe-core) — imported reference; verification pending.
-
-### jsonld.js
-
-<a id="ref-81b207aa"></a>
-
-[jsonld.js](https://github.com/digitalbazaar/jsonld.js) — imported reference; verification pending.
-
-### Digital Bazaar vc-js
-
-<a id="ref-31b4fab4"></a>
-
-[Digital Bazaar vc-js](https://github.com/digitalbazaar/vc) — imported reference; verification pending.
-
-### Dinero.js v2
-
-<a id="ref-2390acb0"></a>
-
-[Dinero.js v2](https://github.com/dinerojs/dinero.js) — imported reference; verification pending.
-
-### Eclipse RDF4J
-
-<a id="ref-da697d6a"></a>
-
-[Eclipse RDF4J](https://github.com/eclipse-rdf4j/rdf4j) — imported reference; verification pending.
-
 ### Lexical
 
 <a id="ref-9d228cd0"></a>
 
 [Lexical](https://github.com/facebook/lexical) — imported reference; verification pending.
-
-### Flowable community engine
-
-<a id="ref-cdb01dc1"></a>
-
-[Flowable community engine](https://github.com/flowable/flowable-engine) — imported reference; verification pending.
-
-### Frappe Gantt
-
-<a id="ref-35a3dd1c"></a>
-
-[Frappe Gantt](https://github.com/frappe/gantt) — imported reference; verification pending.
-
-### i18next
-
-<a id="ref-b4adce2a"></a>
-
-[i18next](https://github.com/i18next/i18next) — imported reference; verification pending.
-
-### Whelk
-
-<a id="ref-a943427f"></a>
-
-[Whelk](https://github.com/INCATools/whelk) — imported reference; verification pending.
-
-### libsodium.js
-
-<a id="ref-704cdd6c"></a>
-
-[libsodium.js](https://github.com/jedisct1/libsodium.js) — imported reference; verification pending.
-
-### feed
-
-<a id="ref-d69fea58"></a>
-
-[feed](https://github.com/jpmonette/feed) — imported reference; verification pending.
-
-### @js-temporal/polyfill
-
-<a id="ref-6bd89188"></a>
-
-[@js-temporal/polyfill](https://github.com/js-temporal/temporal-polyfill) — imported reference; verification pending.
-
-### JSONata
-
-<a id="ref-50222d38"></a>
-
-[JSONata](https://github.com/jsonata-js/jsonata) — imported reference; verification pending.
-
-### json-logic-js
-
-<a id="ref-03dffb0e"></a>
-
-[json-logic-js](https://github.com/jwadhams/json-logic-js) — imported reference; verification pending.
-
-### Klaro
-
-<a id="ref-69ebde60"></a>
-
-[Klaro](https://github.com/kiprotect/klaro) — imported reference; verification pending.
-
-### ELK
-
-<a id="ref-0a6b05e3"></a>
-
-[ELK](https://github.com/liveontologies/elk-reasoner) — imported reference; verification pending.
-
-### SimpleWebAuthn
-
-<a id="ref-b7bc28fb"></a>
-
-[SimpleWebAuthn](https://github.com/MasterKale/SimpleWebAuthn) — imported reference; verification pending.
-
-### Mermaid
-
-<a id="ref-42e5762a"></a>
-
-[Mermaid](https://github.com/mermaid-js/mermaid) — imported reference; verification pending.
-
-### big.js
-
-<a id="ref-fcbb731f"></a>
-
-[big.js](https://github.com/MikeMcl/big.js) — imported reference; verification pending.
 
 ### app/app.vue
 
@@ -1243,144 +1088,6 @@ Publisher published root `CONTRACT.md` — live development lookup: `nuxt-layers
 <a id="ref-90073eba"></a>
 
 Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRACT.md` (#screens). Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### ROBOT
-
-<a id="ref-a91eaa59"></a>
-
-[ROBOT](https://github.com/ontodev/robot) — imported reference; verification pending.
-
-### xmlbuilder2
-
-<a id="ref-65876386"></a>
-
-[xmlbuilder2](https://github.com/oozcitak/xmlbuilder2) — imported reference; verification pending.
-
-### Credo
-
-<a id="ref-7ce15ee8"></a>
-
-[Credo](https://github.com/openwallet-foundation/credo-ts) — imported reference; verification pending.
-
-### orestbida/cookieconsent
-
-<a id="ref-008bcb87"></a>
-
-[orestbida/cookieconsent](https://github.com/orestbida/cookieconsent) — imported reference; verification pending.
-
-### ONT-API
-
-<a id="ref-9bb6c5a8"></a>
-
-[ONT-API](https://github.com/owlcs/ont-api) — imported reference; verification pending.
-
-### OWLAPI
-
-<a id="ref-5eeb6944"></a>
-
-[OWLAPI](https://github.com/owlcs/owlapi) — imported reference; verification pending.
-
-### Oxigraph
-
-<a id="ref-6a0f1548"></a>
-
-[Oxigraph](https://github.com/oxigraph/oxigraph) — imported reference; verification pending.
-
-### jose
-
-<a id="ref-1841a1db"></a>
-
-[jose](https://github.com/panva/jose) — imported reference; verification pending.
-
-### openid-client
-
-<a id="ref-67858133"></a>
-
-[openid-client](https://github.com/panva/openid-client) — imported reference; verification pending.
-
-### Protégé
-
-<a id="ref-2649f4d9"></a>
-
-[Protégé](https://github.com/protegeproject/protege) — imported reference; verification pending.
-
-### shacl-engine
-
-<a id="ref-7316cf52"></a>
-
-[shacl-engine](https://github.com/rdf-ext/shacl-engine) — imported reference; verification pending.
-
-### N3.js
-
-<a id="ref-8c4508c1"></a>
-
-[N3.js](https://github.com/rdfjs/N3.js) — imported reference; verification pending.
-
-### pySHACL
-
-<a id="ref-4293e39b"></a>
-
-[pySHACL](https://github.com/RDFLib/pySHACL) — imported reference; verification pending.
-
-### RDFLib
-
-<a id="ref-94601d7a"></a>
-
-[RDFLib](https://github.com/RDFLib/rdflib) — imported reference; verification pending.
-
-### rehype-sanitize
-
-<a id="ref-b4b1b93d"></a>
-
-[rehype-sanitize](https://github.com/rehypejs/rehype-sanitize) — imported reference; verification pending.
-
-### remark
-
-<a id="ref-19502e95"></a>
-
-[remark](https://github.com/remarkjs/remark) — imported reference; verification pending.
-
-### Rete.js
-
-<a id="ref-945fde25"></a>
-
-[Rete.js](https://github.com/retejs/rete) — imported reference; verification pending.
-
-### p-queue
-
-<a id="ref-3d468f2d"></a>
-
-[p-queue](https://github.com/sindresorhus/p-queue) — imported reference; verification pending.
-
-### CASL
-
-<a id="ref-6c39db3b"></a>
-
-[CASL](https://github.com/stalniy/casl) — imported reference; verification pending.
-
-### TanStack Query
-
-<a id="ref-51cb5e45"></a>
-
-[TanStack Query](https://github.com/TanStack/query) — imported reference; verification pending.
-
-### pg-boss
-
-<a id="ref-fc345c0f"></a>
-
-[pg-boss](https://github.com/timgit/pg-boss) — imported reference; verification pending.
-
-### unified
-
-<a id="ref-72271435"></a>
-
-[unified](https://github.com/unifiedjs/unified) — imported reference; verification pending.
-
-### VueUse
-
-<a id="ref-9507482e"></a>
-
-[VueUse](https://github.com/vueuse/vueuse) — imported reference; verification pending.
 
 ### Data (Use and Access) Act 2025
 
@@ -1687,18 +1394,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-bbe12301"></a>
 
 [FullCalendar](https://fullcalendar.io/license) — imported reference; verification pending.
-
-### Nano ID
-
-<a id="ref-affc7039"></a>
-
-[Nano ID](https://github.com/ai/nanoid) — imported reference; verification pending.
-
-### rate-limiter-flexible
-
-<a id="ref-99f82842"></a>
-
-[rate-limiter-flexible](https://github.com/animir/node-rate-limiter-flexible) — imported reference; verification pending.
 
 ### Apache Arrow JS Apache-2.0
 

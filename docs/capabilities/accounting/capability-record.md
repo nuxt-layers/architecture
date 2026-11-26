@@ -494,7 +494,7 @@ Review and approve the **dual-mode accounting authority model** and the scope of
 5. How are customer/supplier party records, legal entities, tenant/group ownership, invoice recipients and debtor/creditor accounts mapped without requiring Identity enrolment?
 6. Which accounting standards and tax jurisdictions apply to each legal/accounting entity? IAS 2 (inventory), IAS 16 (property, plant and equipment) and IAS 19 (employee benefits) are **reference examples**, not universally applicable platform rules; verify local reporting frameworks before implementing policy.
 
-**Technical references for later validation:** [IFRS IAS 2 Inventories](../../../RESOURCES.md#ref-6460bcc1); [IFRS IAS 16 Property, Plant and Equipment](../../../RESOURCES.md#ref-c58a72c6); [IFRS IAS 19 Employee Benefits](../../../RESOURCES.md#ref-1cff7d12). These are accounting reference materials, not accepted platform ADRs.
+**Technical references for later validation:** [IFRS IAS 2 Inventories](../../../RESOURCES.md#ifrs-ias-2-inventories); [IFRS IAS 16 Property, Plant and Equipment](../../../RESOURCES.md#ifrs-ias-16-property-plant-and-equipment); [IFRS IAS 19 Employee Benefits](../../../RESOURCES.md#ifrs-ias-19-employee-benefits). These are accounting reference materials, not accepted platform ADRs.
 
 ### Logistics, warehouse storage and delivery-cost accounting — additional review notes
 

@@ -91,16 +91,16 @@ The following are **approved conceptual design references**, not a claim of ISO 
 
 | Reference | Reviews design requirement |
 |---|---|
-| **[ISO 20488:2018](../../../RESOURCES.md#ref-69c33b8f)** (primary voluntary review standard) | Neutral collection, moderation/publication, authenticity, clear review sourcing and transparency. A clause-level conformance assessment needs the full licensed text |
+| **[ISO 20488:2018](../../../RESOURCES.md#iso-204882018)** (primary voluntary review standard) | Neutral collection, moderation/publication, authenticity, clear review sourcing and transparency. A clause-level conformance assessment needs the full licensed text |
 | **ISO 10002:2018 / 10003:2018 / 10004:2018** (complaints, external disputes, satisfaction measurement) | Fair correction/appeal pathways and meaningful rating/feedback statistics |
-| **[UK DMCC Act 2024](../../../RESOURCES.md#ref-49097836) and [CMA fake reviews guidance](../../../RESOURCES.md#ref-ad11aaa1)** (relevant provisions from **6 April 2025**) | Reasonable/proportionate fake-review prevention and removal, no concealed incentives or misleading display |
-| **[UK GDPR / ICO privacy by design](../../../RESOURCES.md#ref-eca8d5ee)** | Purpose, minimisation, author disclosure, protected evidence, retention, rights and holds |
+| **[UK DMCC Act 2024](../../../RESOURCES.md#uk-digital-markets-competition-and-consumers-act-2024) and [CMA fake reviews guidance](../../../RESOURCES.md#cma-fake-reviews-guidance)** (relevant provisions from **6 April 2025**) | Reasonable/proportionate fake-review prevention and removal, no concealed incentives or misleading display |
+| **[UK GDPR / ICO privacy by design](../../../RESOURCES.md#uk-gdpr--ico-privacy-by-design)** | Purpose, minimisation, author disclosure, protected evidence, retention, rights and holds |
 | **EU Unfair Commercial Practices Directive as amended by (EU) 2019/2161; conditional Digital Services Act obligations** | Transparent authenticity/verification claims, sourcing and, where a host is in scope, notice/action/appeal |
-| **US FTC [16 CFR Part 465](../../../RESOURCES.md#ref-614b3b8a)** (effective **21 October 2024**) | False endorsements, undisclosed insiders, prohibited incentives and unlawful suppression |
-| **[W3C WCAG 2.2](../../../RESOURCES.md#ref-0d1f555e) AA; WAI-ARIA 1.2** | Accessible review/rating forms, moderation queues, status announcements and keyboard interactions |
-| **W3C [PROV-O](../../../RESOURCES.md#ref-20aa2e25)** (optional encoding) | Model attributed versioned evidence and source lineage without requiring RDF |
-| **[Schema.org Review](../../../RESOURCES.md#ref-573c4eea), Rating and AggregateRating; [Google review snippet guidance](../../../RESOURCES.md#ref-e70dbec3)** | Publish truthful, visible, authorised source-linked metadata through SEO/Publisher; respect provider eligibility, including self-serving review limits |
-| **[OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2) L2 (L3 for critical), ISO/IEC 27001:2022 and ISO/IEC 27701:2025** | Secure input, access, code redemption, privacy/security governance and attributable controls; no implied certification |
+| **US FTC [16 CFR Part 465](../../../RESOURCES.md#16-cfr-part-465)** (effective **21 October 2024**) | False endorsements, undisclosed insiders, prohibited incentives and unlawful suppression |
+| **[W3C WCAG 2.2](../../../RESOURCES.md#w3c-wcag-22) AA; WAI-ARIA 1.2** | Accessible review/rating forms, moderation queues, status announcements and keyboard interactions |
+| **W3C [PROV-O](../../../RESOURCES.md#prov-o)** (optional encoding) | Model attributed versioned evidence and source lineage without requiring RDF |
+| **[Schema.org Review](../../../RESOURCES.md#schemaorg-review), Rating and AggregateRating; [Google review snippet guidance](../../../RESOURCES.md#google-review-snippet-guidance)** | Publish truthful, visible, authorised source-linked metadata through SEO/Publisher; respect provider eligibility, including self-serving review limits |
+| **[OWASP ASVS 5](../../../RESOURCES.md#owasp-asvs-500) L2 (L3 for critical), ISO/IEC 27001:2022 and ISO/IEC 27701:2025** | Secure input, access, code redemption, privacy/security governance and attributable controls; no implied certification |
 
 Acceptance evidence should link **applicable reference → qualified obligation → Reviews contract action → responsible owner → scenario/result**. Update versions, licensing and legal scope at implementation and release. Immutable law/security controls cannot be weakened by tenant Configuration.
 
@@ -110,18 +110,18 @@ Acceptance evidence should link **applicable reference → qualified obligation 
 
 | Purpose | Preferred or conditional option, source and licence |
 |---|---|
-| Public input validation | **[Zod](../../../RESOURCES.md#ref-1e3efac4)** (MIT), preferred; [Ajv](../../../RESOURCES.md#ref-a164796d) (MIT) *only* for JSON Schema/event interoperability |
-| PostgreSQL driver and queries | **[node-postgres (`pg`)](../../../RESOURCES.md#ref-be910869)** (MIT), **[Kysely](../../../RESOURCES.md#ref-af839a5b)** (MIT), preferred; [Drizzle ORM core](../../../RESOURCES.md#ref-03cb5387) (Apache-2.0) an *alternative*, not an additional required ORM |
-| Review-code generation | **[Nano ID](../../../RESOURCES.md#ref-affc7039)** (MIT) or Node Web Crypto for high-entropy opaque codes; [jose](../../../RESOURCES.md#ref-1841a1db) (MIT) only where signed tokens are justified. Signed tokens still require durable replay/revocation control |
-| Safe text and abuse | [DOMPurify](../../../RESOURCES.md#ref-975d5876) (Apache-2.0 OR MPL-2.0) if approved rich text/HTML is needed; otherwise prefer safe plain text and reuse Content Security. [rate-limiter-flexible](../../../RESOURCES.md#ref-99f82842) (ISC), conditional where host limiter is insufficient |
-| Optional Nuxt GUI | [VueUse](../../../RESOURCES.md#ref-9507482e) (MIT); [vee-validate](../../../RESOURCES.md#ref-bd5a7590) (MIT) for complex forms; [TanStack Query](../../../RESOURCES.md#ref-51cb5e45) (MIT) only if built-in `useFetch/useAsyncData` is inadequate |
-| Acceptance | [Vitest](../../../RESOURCES.md#ref-c28ef17c) (MIT) and [Playwright](../../../RESOURCES.md#ref-12180955) (Apache-2.0) through established CI |
+| Public input validation | **[Zod](../../../RESOURCES.md#zod)** (MIT), preferred; [Ajv](../../../RESOURCES.md#ajv) (MIT) *only* for JSON Schema/event interoperability |
+| PostgreSQL driver and queries | **[node-postgres (`pg`)](../../../RESOURCES.md#node-postgres--pg)** (MIT), **[Kysely](../../../RESOURCES.md#kysely)** (MIT), preferred; [Drizzle ORM core](../../../RESOURCES.md#drizzle-orm) (Apache-2.0) an *alternative*, not an additional required ORM |
+| Review-code generation | **[Nano ID](../../../RESOURCES.md#nano-id)** (MIT) or Node Web Crypto for high-entropy opaque codes; [jose](../../../RESOURCES.md#jose) (MIT) only where signed tokens are justified. Signed tokens still require durable replay/revocation control |
+| Safe text and abuse | [DOMPurify](../../../RESOURCES.md#cure53dompurify) (Apache-2.0 OR MPL-2.0) if approved rich text/HTML is needed; otherwise prefer safe plain text and reuse Content Security. [rate-limiter-flexible](../../../RESOURCES.md#rate-limiter-flexible) (ISC), conditional where host limiter is insufficient |
+| Optional Nuxt GUI | [VueUse](../../../RESOURCES.md#vueuse) (MIT); [vee-validate](../../../RESOURCES.md#veevalidate) (MIT) for complex forms; [TanStack Query](../../../RESOURCES.md#tanstack-query) (MIT) only if built-in `useFetch/useAsyncData` is inadequate |
+| Acceptance | [Vitest](../../../RESOURCES.md#vitest) (MIT) and [Playwright](../../../RESOURCES.md#playwright) (Apache-2.0) through established CI |
 
 No required Redis/Valkey, Elasticsearch/OpenSearch, Neo4j, hosted review SaaS, independent event broker or undisclosed enterprise-only feature. PostgreSQL holds the review store, own outbox and bounded aggregates. Search owns search indexing; Workflow/Scheduler own orchestration; Message Queue owns event delivery; Integrations owns external review adapters. Avoid separate AI sentiment/fraud scoring engines before explainable, governed evidence and human review exist.
 
 ## Optional GUI and host composition — REV-G01
 
-**Owner-approved conceptual presentation:** the representative [application-test-template](../../../RESOURCES.md#ref-f1f7cc47) offers `/` home, `/admin` test dashboard, collapsible responsive capability sidebar, and a Theme Manager link to `/theme-manager`. A derived host can add **Capabilities → Reviews**, pointing to its proposed `/reviews` dashboard, plus an optional Reviews tile on `/admin`. All listed paths are **illustrative**, not shipped exports. The reference host's **Not signed in** placeholder and Theme Manager's unauthenticated local **test** mode are **not production authorisation**.
+**Owner-approved conceptual presentation:** the representative [application-test-template](../../../RESOURCES.md#application-test-template) offers `/` home, `/admin` test dashboard, collapsible responsive capability sidebar, and a Theme Manager link to `/theme-manager`. A derived host can add **Capabilities → Reviews**, pointing to its proposed `/reviews` dashboard, plus an optional Reviews tile on `/admin`. All listed paths are **illustrative**, not shipped exports. The reference host's **Not signed in** placeholder and Theme Manager's unauthenticated local **test** mode are **not production authorisation**.
 
 | Screen/entry point | Audience and public-contract behaviour |
 |---|---|

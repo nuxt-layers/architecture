@@ -13,39 +13,19 @@ Add further references only after confirming that the target repository, revisio
 The [catalogue](docs/catalogue.md) names the capabilities; repositories are held under the [`nuxt-layers` organisation](https://github.com/nuxt-layers), where available.
 
 
+## Verified external resources
+
+| pageRef | linkAddress | Description |
+| --- | --- | --- |
+| <a id="isoiec-270402024"></a><a id="isoiec-270402024-2"></a><a id="ref-fbbdfd70"></a><a id="ref-e80bacde"></a>ISO/IEC 27040:2024 | [https://www.iso.org/standard/80194.html](https://www.iso.org/standard/80194.html) | Technical requirements and guidance for protecting stored data, storage infrastructure, media and associated management activities. |
+| <a id="nist-sp-800-53-rev-5"></a><a id="nist-sp-800-53-rev-5-au-2au-3au-6au-9au-11"></a><a id="800-53"></a><a id="ref-3fd80945"></a><a id="ref-5d98a8a6"></a><a id="ref-ea606756"></a>NIST SP 800-53 Rev. 5 | [https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) | Security and privacy control catalogue, including audit event selection, record content, review, protection and retention (AU-2, AU-3, AU-6, AU-9 and AU-11); December 2020 corrected edition. |
+| <a id="nist-sp-800-88-rev-2"></a><a id="ref-ee67b17c"></a>NIST SP 800-88 Rev. 2 | [https://csrc.nist.gov/pubs/sp/800/88/r2/final](https://csrc.nist.gov/pubs/sp/800/88/r2/final) | Guidance for establishing media sanitisation programmes and preventing recovery of sensitive information from storage media. |
+| <a id="nist-ssdf-sp-800-218"></a><a id="ref-10dcdd0a"></a>NIST SSDF SP 800-218 | [https://csrc.nist.gov/pubs/sp/800/218/final](https://csrc.nist.gov/pubs/sp/800/218/final) | Secure Software Development Framework version 1.1, defining practices for reducing software vulnerabilities throughout development. |
+| <a id="owasp-asvs-500"></a><a id="ref-a1c367d2"></a>OWASP ASVS 5.0.0 | [https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf](https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf) | Versioned application security requirements for designing, developing and verifying web applications and services. |
+
 ## Consolidated reference inventory
 
 Imported design citations are retained here for provenance. External availability and version pins have not been independently reverified; do not treat unverified entries as accepted dependencies.
-
-### OWASP ASVS 5.0.0
-
-<a id="ref-a1c367d2"></a>
-
-[OWASP ASVS 5.0.0](https://asvs.owasp.org/) — imported reference; verification pending.
-
-### ISO/IEC 27040:2024
-
-<a id="ref-fbbdfd70"></a>
-
-[ISO/IEC 27040:2024](https://committee.iso.org/standard/80194.html) — imported reference; verification pending.
-
-### NIST SSDF SP 800-218
-
-<a id="ref-10dcdd0a"></a>
-
-[NIST SSDF SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final) — imported reference; verification pending.
-
-### NIST SP 800-53 Rev. 5
-
-<a id="ref-3fd80945"></a>
-
-[NIST SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/final) — imported reference; verification pending.
-
-### NIST SP 800-88 Rev. 2
-
-<a id="ref-ee67b17c"></a>
-
-[NIST SP 800-88 Rev. 2](https://csrc.nist.gov/pubs/sp/800/88/r2/final) — imported reference; verification pending.
 
 ### Temporal TypeScript SDK docs
 
@@ -460,12 +440,6 @@ root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-4fbd01ef"></a>
 
 [payment-page security guidance](https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming) — imported reference; verification pending.
-
-### NIST SP 800-53 Rev. 5 AU-2/AU-3/AU-6/AU-9/AU-11
-
-<a id="ref-5d98a8a6"></a>
-
-[NIST SP 800-53 Rev. 5 AU-2/AU-3/AU-6/AU-9/AU-11](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) — imported reference; verification pending.
 
 ### NIST SP 800-63-4
 
@@ -3617,12 +3591,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 
 [NIST SP 800-209](https://csrc.nist.gov/pubs/sp/800/209/final) — imported reference; verification pending.
 
-### 800-53
-
-<a id="ref-ea606756"></a>
-
-[800-53](https://csrc.nist.gov/pubs/sp/800/53/rev-5/upd1/final) — imported reference; verification pending.
-
 ### 800-92
 
 <a id="ref-e0cc09ca"></a>
@@ -4090,12 +4058,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 <a id="ref-eb08ffb2"></a>
 
 [ISO 8583:2023](https://www.iso.org/standard/79451.html) — imported reference; verification pending.
-
-### ISO/IEC 27040:2024 (2)
-
-<a id="ref-e80bacde"></a>
-
-[ISO/IEC 27040:2024](https://www.iso.org/standard/80194.html) — imported reference; verification pending.
 
 ### UK Payment Services Regulations 2017
 

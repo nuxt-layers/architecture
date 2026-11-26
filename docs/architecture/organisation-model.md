@@ -3,7 +3,7 @@
 **Catalogue name:** `organisation-model` · **Canonical record:** `docs/architecture/organisation-model.md`  
 **Status:** Owner-approved **conceptual design**, OM-D01–OM-D06 (22 November 2026); **non-normative**, not an implemented or released artefact. No separate implementation repository or published root `CONTRACT.md` was verified.  
 **Artefact classification:** architecture / organisational archetype model (CLS-05, owner-approved 24 November 2026). No independent package, service or database is approved. A future definition-owning capability requires a separate evidence-based classification decision.  
-**Authority:** Accepted ADRs and normative [Capability Standard](../capability-standard.md) prevail. Opening `architecture/master` `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint `master` `361566988ac53c55f6135e8acfa46cd5b013d7a0`. Review protocol (former document: review protocol).
+**Authority:** Accepted ADRs and normative [Capability Standard](../standards/capability-standard.md) prevail. Opening `architecture/master` `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint `master` `361566988ac53c55f6135e8acfa46cd5b013d7a0`. Review protocol (former document: review protocol).
 
 ## Purpose, classification and ownership
 

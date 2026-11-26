@@ -17,7 +17,12 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 
 | pageRef | linkAddress | Description |
 | --- | --- | --- |
+| <a id="activity-streams-20"></a><a id="activitystreams-20"></a><a id="ref-c75695ba"></a>Activity Streams 2.0 | [https://www.w3.org/TR/2017/REC-activitystreams-core-20170523/](https://www.w3.org/TR/2017/REC-activitystreams-core-20170523/) | JSON data model for describing actions, actors and objects in activity feeds. |
+| <a id="activitypub"></a><a id="ref-b5b42c56"></a>ActivityPub | [https://www.w3.org/TR/2018/REC-activitypub-20180123/](https://www.w3.org/TR/2018/REC-activitypub-20180123/) | Federated social networking protocol for publishing content and exchanging activities between servers. |
+| <a id="atag-20"></a><a id="ref-9dbe26fd"></a>ATAG 2.0 | [https://www.w3.org/TR/2015/REC-ATAG20-20150924/](https://www.w3.org/TR/2015/REC-ATAG20-20150924/) | Accessibility guidelines for authoring tools and their support for creating accessible content. |
 | <a id="bitstring-status-list-10"></a><a id="status-list"></a><a id="ref-9e32bc04"></a>Bitstring Status List 1.0 | [https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/](https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/) | Compact credential status representation for publishing suspension and revocation information. |
+| <a id="csvw-metadata-vocabulary"></a><a id="csvw"></a><a id="ref-f6e15c97"></a>CSVW Metadata Vocabulary | [https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/](https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/) | Metadata vocabulary for interpreting, validating and transforming tabular data. |
+| <a id="data-on-the-web-best-practices"></a><a id="ref-b37ccf4d"></a>Data on the Web Best Practices | [https://www.w3.org/TR/2017/REC-dwbp-20170131/](https://www.w3.org/TR/2017/REC-dwbp-20170131/) | Guidance for discoverable, reusable and trustworthy web data publication. |
 | <a id="dcat-3"></a><a id="ref-00ce33b2"></a>DCAT 3 | [https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/](https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/) | RDF vocabulary for interoperable catalogues describing datasets, distributions and data services. |
 | <a id="iso-100022018"></a><a id="ref-2c14157c"></a>ISO 10002:2018 | [https://www.iso.org/standard/10002](https://www.iso.org/standard/10002) | Guidance for designing, operating and improving customer complaints handling processes. |
 | <a id="iso-100032018"></a><a id="ref-f48d39fc"></a>ISO 10003:2018 | [https://www.iso.org/standard/71581.html](https://www.iso.org/standard/71581.html) | Guidance for external resolution of customer disputes that remain unresolved by complaints handling. |
@@ -99,8 +104,14 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="nist-sp-800-88-rev-2"></a><a id="ref-ee67b17c"></a>NIST SP 800-88 Rev. 2 | [https://csrc.nist.gov/pubs/sp/800/88/r2/final](https://csrc.nist.gov/pubs/sp/800/88/r2/final) | Guidance for establishing media sanitisation programmes and preventing recovery of sensitive information from storage media. |
 | <a id="nist-sp-800-92"></a><a id="800-92"></a><a id="ref-e0cc09ca"></a>NIST SP 800-92 | [https://csrc.nist.gov/pubs/sp/800/92/final](https://csrc.nist.gov/pubs/sp/800/92/final) | Guidance for enterprise security log management infrastructure and operational processes. |
 | <a id="nist-ssdf-sp-800-218"></a><a id="ref-10dcdd0a"></a>NIST SSDF SP 800-218 | [https://csrc.nist.gov/pubs/sp/800/218/final](https://csrc.nist.gov/pubs/sp/800/218/final) | Secure Software Development Framework version 1.1, defining practices for reducing software vulnerabilities throughout development. |
+| <a id="odrl-information-model-22"></a><a id="odrl"></a><a id="ref-4d3f2257"></a>ODRL Information Model 2.2 | [https://www.w3.org/TR/2018/REC-odrl-model-20180215/](https://www.w3.org/TR/2018/REC-odrl-model-20180215/) | Interoperable model for expressing permissions, prohibitions and duties relating to assets and services. |
+| <a id="organization-ontology"></a><a id="ref-3a7e011a"></a>Organization Ontology | [https://www.w3.org/TR/2014/REC-vocab-org-20140116/](https://www.w3.org/TR/2014/REC-vocab-org-20140116/) | Linked data vocabulary for modelling organisations, organisational units, roles and memberships. |
 | <a id="owasp-asvs-500"></a><a id="ref-a1c367d2"></a>OWASP ASVS 5.0.0 | [https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf](https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf) | Versioned application security requirements for designing, developing and verifying web applications and services. |
+| <a id="owl-2-overview"></a><a id="owl-2"></a><a id="ref-7854321a"></a>OWL 2 Overview | [https://www.w3.org/TR/2012/REC-owl2-overview-20121211/](https://www.w3.org/TR/2012/REC-owl2-overview-20121211/) | Overview of the ontology language, its semantics, syntaxes and profiles. |
+| <a id="owl-2-profiles"></a><a id="ref-c8ffae91"></a>OWL 2 Profiles | [https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/](https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/) | Defines constrained ontology language profiles supporting efficient reasoning and querying. |
 | <a id="prov-o"></a><a id="ref-20aa2e25"></a>PROV-O | [https://www.w3.org/TR/2013/REC-prov-o-20130430/](https://www.w3.org/TR/2013/REC-prov-o-20130430/) | Ontology for describing provenance through entities, activities, agents and their relationships. |
+| <a id="rdf-11-concepts-and-abstract-syntax"></a><a id="rdfrdfs"></a><a id="ref-1d5b21c8"></a>RDF 1.1 Concepts and Abstract Syntax | [https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) | Defines triples, graphs, datasets and identifiers for representing resource information. |
+| <a id="rdf-schema-11"></a>RDF Schema 1.1 | [https://www.w3.org/TR/2014/REC-rdf-schema-20140225/](https://www.w3.org/TR/2014/REC-rdf-schema-20140225/) | Vocabulary for describing RDF classes, properties and their relationships. |
 | <a id="rfc-10017"></a><a id="ref-5dce7cd2"></a>RFC 10017 | [https://www.rfc-editor.org/info/rfc10017/](https://www.rfc-editor.org/info/rfc10017/) | OAuth 2.0 best practices for browser-based applications, addressing browser threats and secure application architectures. |
 | <a id="rfc-10051"></a><a id="rfc-10051-2"></a><a id="ref-d6226711"></a><a id="ref-30c13a68"></a>RFC 10051 | [https://www.rfc-editor.org/info/rfc10051/](https://www.rfc-editor.org/info/rfc10051/) | Extends iCalendar VTODO for task scheduling, status tracking, process control and project management. |
 | <a id="rfc-1034"></a><a id="ref-1c93287e"></a>RFC 1034 | [https://www.rfc-editor.org/info/rfc1034/](https://www.rfc-editor.org/info/rfc1034/) | DNS architecture, namespace, delegation and resolution concepts. |
@@ -149,9 +160,12 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="rfc-9989"></a><a id="7489--wwwrfc-editororginforfc7489"></a><a id="ref-600abcac"></a>RFC 9989 | [https://www.rfc-editor.org/rfc/rfc9989.html](https://www.rfc-editor.org/rfc/rfc9989.html) | DMARC domain-level email authentication alignment, policy and message disposition. |
 | <a id="rfc-9990"></a>RFC 9990 | [https://www.rfc-editor.org/rfc/rfc9990.html](https://www.rfc-editor.org/rfc/rfc9990.html) | DMARC aggregate reporting format and delivery requirements. |
 | <a id="rfc-9991"></a>RFC 9991 | [https://www.rfc-editor.org/rfc/rfc9991.html](https://www.rfc-editor.org/rfc/rfc9991.html) | DMARC message-specific failure reporting mechanisms and safeguards. |
+| <a id="shacl"></a><a id="ref-6dc528a5"></a>SHACL | [https://www.w3.org/TR/2017/REC-shacl-20170720/](https://www.w3.org/TR/2017/REC-shacl-20170720/) | Constraint language for validating RDF graphs and describing permissible data structures. |
 | <a id="skos"></a><a id="ref-ceaf9e24"></a>SKOS | [https://www.w3.org/TR/2009/REC-skos-reference-20090818/](https://www.w3.org/TR/2009/REC-skos-reference-20090818/) | RDF vocabulary for interoperable thesauri, taxonomies and concept schemes. |
+| <a id="sparql-11-query-language"></a><a id="sparql-11"></a><a id="ref-5f7e8b5e"></a>SPARQL 1.1 Query Language | [https://www.w3.org/TR/2013/REC-sparql11-query-20130321/](https://www.w3.org/TR/2013/REC-sparql11-query-20130321/) | Query syntax and semantics for retrieving and analysing RDF graph data. |
 | <a id="verifiable-credentials-data-model-20"></a><a id="vc-20"></a><a id="verifiable-credentials-20"></a><a id="ref-5dd6d5dc"></a><a id="ref-51933823"></a>Verifiable Credentials Data Model 2.0 | [https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/](https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/) | Interoperable data model for expressing credentials and presentations exchanged among issuers, holders and verifiers. |
 | <a id="verifiable-credentials-jose-and-cose"></a><a id="josecose"></a><a id="ref-a1b9773e"></a>Verifiable Credentials JOSE and COSE | [https://www.w3.org/TR/2026/REC-vc-jose-cose-20261013/](https://www.w3.org/TR/2026/REC-vc-jose-cose-20261013/) | Cryptographic protection of verifiable credentials and presentations using JOSE, selective disclosure and COSE. |
+| <a id="w3c-trace-context"></a><a id="ref-e45806bf"></a>W3C Trace Context | [https://www.w3.org/TR/2021/REC-trace-context-1-20211123/](https://www.w3.org/TR/2021/REC-trace-context-1-20211123/) | HTTP trace context headers and formats for propagating request correlation across distributed services. |
 | <a id="wai-aria-12"></a><a id="wai-aria"></a><a id="ref-67eee3fb"></a><a id="ref-90f5e4b1"></a>WAI-ARIA 1.2 | [https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/) | Semantic roles, states and properties for exposing accessible user interface information to assistive technologies. |
 | <a id="wcag-22"></a><a id="w3c-wcag-22"></a><a id="w3c-wcag-22-aa"></a><a id="ref-0d1f555e"></a><a id="ref-eb11cf7e"></a><a id="ref-bc717cde"></a>WCAG 2.2 | [https://www.w3.org/TR/2024/REC-WCAG22-20241212/](https://www.w3.org/TR/2024/REC-WCAG22-20241212/) | Web accessibility success criteria and conformance requirements, including the platform's Level AA baseline. |
 
@@ -446,24 +460,6 @@ root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-fa79609e"></a>
 
 [PostgreSQL](https://www.postgresql.org/about/licence/) — imported reference; verification pending.
-
-### SHACL
-
-<a id="ref-6dc528a5"></a>
-
-[SHACL](https://www.w3.org/TR/shacl/) — imported reference; verification pending.
-
-### W3C Trace Context
-
-<a id="ref-e45806bf"></a>
-
-[W3C Trace Context](https://www.w3.org/TR/trace-context/) — imported reference; verification pending.
-
-### Organization Ontology
-
-<a id="ref-3a7e011a"></a>
-
-[Organization Ontology](https://www.w3.org/TR/vocab-org/) — imported reference; verification pending.
 
 ### payment-page security guidance
 
@@ -1281,12 +1277,6 @@ IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-i
 
 [PRI Nadcap](https://www.p-r-i.org/nadcap/accreditation) — imported reference; verification pending.
 
-### ODRL
-
-<a id="ref-4d3f2257"></a>
-
-[ODRL](https://www.w3.org/TR/odrl-model/) — imported reference; verification pending.
-
 ### SVG 2
 
 <a id="ref-2d692224"></a>
@@ -2049,54 +2039,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [W3C DPV Community Group](https://www.w3.org/community/dpvcg/) — imported reference; verification pending.
 
-### ActivityPub
-
-<a id="ref-b5b42c56"></a>
-
-[ActivityPub](https://www.w3.org/TR/activitypub/) — imported reference; verification pending.
-
-### ActivityStreams 2.0
-
-<a id="ref-c75695ba"></a>
-
-[ActivityStreams 2.0](https://www.w3.org/TR/activitystreams-core/) — imported reference; verification pending.
-
-### ATAG 2.0
-
-<a id="ref-9dbe26fd"></a>
-
-[ATAG 2.0](https://www.w3.org/TR/ATAG20/) — imported reference; verification pending.
-
-### Data on the Web Best Practices
-
-<a id="ref-b37ccf4d"></a>
-
-[Data on the Web Best Practices](https://www.w3.org/TR/dwbp/) — imported reference; verification pending.
-
-### OWL 2
-
-<a id="ref-7854321a"></a>
-
-[OWL 2](https://www.w3.org/TR/owl-overview/) — imported reference; verification pending.
-
-### OWL 2 Profiles
-
-<a id="ref-c8ffae91"></a>
-
-[OWL 2 Profiles](https://www.w3.org/TR/owl2-profiles/) — imported reference; verification pending.
-
-### RDF/RDFS
-
-<a id="ref-1d5b21c8"></a>
-
-[RDF/RDFS](https://www.w3.org/TR/rdf11-concepts/) — imported reference; verification pending.
-
-### SPARQL 1.1
-
-<a id="ref-5f7e8b5e"></a>
-
-[SPARQL 1.1](https://www.w3.org/TR/sparql11-query/) — imported reference; verification pending.
-
 ### IETF RFC 9901
 
 <a id="ref-54a09287"></a>
@@ -2450,12 +2392,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-9c3f04c4"></a>
 
 [OMG DMN 1.6](https://www.omg.org/spec/DMN/1.6) — imported reference; verification pending.
-
-### CSVW
-
-<a id="ref-f6e15c97"></a>
-
-[CSVW](https://www.w3.org/TR/tabular-metadata/) — imported reference; verification pending.
 
 ### W3C WebAuthn
 

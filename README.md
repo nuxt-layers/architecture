@@ -21,8 +21,8 @@ The ecosystem consists of bounded capabilities with public contracts. Nuxt Layer
 Where documents conflict, authority descends in this order:
 
 1. an accepted Architecture Decision Record, for the decision it settles;
-2. the [Architecture](docs/architecture.md) overview;
-3. the [Capability Standard](docs/capability-standard.md);
+2. the [Architecture](docs/standards/architecture-standard.md) overview;
+3. the [Capability Standard](docs/standards/capability-standard.md);
 4. the cross-cutting baselines: identity, security, privacy, presentation;
 5. approved conceptual artefact designs, for intended responsibilities and boundaries;
 6. owner-maintained implemented contracts and technical specifications, for supported integration and implementation detail;
@@ -39,18 +39,18 @@ This repository holds governing architecture and approved conceptual designs. Ea
 | Document | Covers |
 |---|---|
 | [Platform Charter](docs/platform-charter.md) | The platform's aims, principles and blueprint review objectives |
-| [Architecture](docs/architecture.md) | The model, invariants, deployment, routes, security and privacy in brief |
-| [Capability Standard](docs/capability-standard.md) | Capabilities, implementations, repositories, contracts, manifests, testing and consumption |
-| [Identity and Access](docs/identity.md) | Identity, groups, memberships, ownership and authorisation |
-| [Security](docs/security.md) | The security baseline and data-store controls |
-| [Privacy](docs/privacy.md) | Data protection by design |
-| [Presentation, Internationalisation and Accessibility](docs/presentation.md) | Design tokens, languages, WCAG and the screen checklist |
+| [Architecture](docs/standards/architecture-standard.md) | The model, invariants, deployment, routes, security and privacy in brief |
+| [Capability Standard](docs/standards/capability-standard.md) | Capabilities, implementations, repositories, contracts, manifests, testing and consumption |
+| [Identity and Access](docs/standards/identity-and-access-standard.md) | Identity, groups, memberships, ownership and authorisation |
+| [Security](docs/standards/security-standard.md) | The security baseline and data-store controls |
+| [Privacy](docs/standards/privacy-standard.md) | Data protection by design |
+| [Presentation, Internationalisation and Accessibility](docs/standards/presentation-standard.md) | Design tokens, languages, WCAG and the screen checklist |
 | [Artefact Catalogue](docs/catalogue.md) | All 99 conceptual artefacts and governing boundaries |
 | [Architecture index](docs/architecture-index.json) | Machine-readable discovery and relationships |
 | [Artefact definition](docs/artefact-definition.md) | Common schema and conceptual/implementation boundaries |
-| [Common Engineering Standard](docs/engineering-standard.md) | Cross-artefact engineering requirements |
-| [Nuxt Layer Standard](docs/nuxt-layer-standard.md) | Nuxt-specific requirements |
-| [Composition Standard](docs/composition-standard.md) | Host assembly requirements |
-| [TypeScript Package Standard](docs/typescript-package-standard.md) | Package-specific requirements |
+| [Common Engineering Standard](docs/standards/engineering-standard.md) | Cross-artefact engineering requirements |
+| [Nuxt Layer Standard](docs/standards/nuxt-layer-standard.md) | Nuxt-specific requirements |
+| [Composition Standard](docs/standards/composition-standard.md) | Host assembly requirements |
+| [TypeScript Package Standard](docs/standards/typescript-package-standard.md) | Package-specific requirements |
 | [Decisions](docs/decisions/) | One file per Architecture Decision Record, in number order; ADR-0008 governs development integration, ADR-0013 the development toolchain baseline, ADR-0014 hosting and storage providers, ADR-0015 infrastructure integration libraries, and ADR-0016 controlled specialisation |
 | [Resources](RESOURCES.md) | Verified, accessible external documents relied on |

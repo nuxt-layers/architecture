@@ -115,7 +115,7 @@ The approved conceptual inventory covers all eight artefact kinds. The [architec
 5. Identity owns users, groups, the single-parent group hierarchy and memberships; Profile owns personal data; Authentication owns sessions; Authorisation owns access decisions. Every human identity has one system-managed personal group.
 6. Every protected operation is authorised on the server. Security follows OWASP ASVS 5.0 Level 2, with applicable Level 3 controls for security-sensitive operations.
 7. Presentation meets WCAG 2.2 AA, supports internationalisation and uses Theme Manager's semantic vocabulary. Privacy, data minimisation, retention and consent apply across capabilities.
-8. Separate deployment is optional; the default architecture is a modular monolith. Capability ownership, implementation and deployment are distinct; refer to the [Capability Standard](capability-standard.md).
+8. Separate deployment is optional; the default architecture is a modular monolith. Capability ownership, implementation and deployment are distinct; refer to the [Capability Standard](standards/capability-standard.md).
 
 ### Reviews and external reputation providers
 
@@ -158,7 +158,7 @@ A repository is created only once these are established:
 7. security, privacy, accessibility and internationalisation obligations;
 8. independent contract, integration and consumer acceptance tests.
 
-The group model is defined in [Identity and Access](identity.md) ([ADR-0003](decisions/ADR-0003-group-model-and-identity-first.md)).
+The group model is defined in [Identity and Access](standards/identity-and-access-standard.md) ([ADR-0003](decisions/ADR-0003-group-model-and-identity-first.md)).
 
 ## Tenant governance, policy authority and commercial onboarding (ADR-0017/ADR-0018)
 

@@ -48,6 +48,6 @@ The approved conceptual blueprint and conceptual schema are consolidated here. A
 ## Guardrails
 
 - External Markdown references remain restricted to `RESOURCES.md` and reviewed references must be revision-specific.
-- The [group model](../identity.md) remains central under ADR-0003.
+- The [group model](../standards/identity-and-access-standard.md) remains central under ADR-0003.
 - Do not duplicate live contracts or import implementation evidence into the architecture repository.
 - A generated catalogue is a discovery view, not a competing specification.

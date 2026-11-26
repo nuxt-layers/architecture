@@ -26,6 +26,7 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="iso-121002010"></a><a id="iso-12100"></a><a id="ref-80776f19"></a>ISO 12100:2010 | [https://www.iso.org/standard/51528.html](https://www.iso.org/standard/51528.html) | Machinery safety design principles, lifecycle hazard identification, risk assessment and risk reduction. |
 | <a id="iso-13849-12023"></a><a id="iso-13849"></a><a id="ref-5d4a77a3"></a>ISO 13849-1:2023 | [https://www.iso.org/standard/73481.html](https://www.iso.org/standard/73481.html) | Design and integration requirements for safety-related machinery control systems, including software. |
 | <a id="iso-15489-12016"></a><a id="iso-15489-12016-2"></a><a id="ref-10531447"></a><a id="ref-cbe31bfd"></a>ISO 15489-1:2016 | [https://www.iso.org/standard/62542.html](https://www.iso.org/standard/62542.html) | Principles for creating, capturing and managing records, their metadata, controls and responsibilities. |
+| <a id="iso-16175-12020"></a><a id="ref-0260c838"></a>ISO 16175-1:2020 | [https://www.iso.org/standard/74294.html](https://www.iso.org/standard/74294.html) | Functional requirements and guidance for applications managing digital records. |
 | <a id="iso-190112026"></a><a id="ref-d863f5c5"></a>ISO 19011:2026 | [https://www.iso.org/standard/19011](https://www.iso.org/standard/19011) | Guidance on management system audit principles, audit programmes and conducting audits. |
 | <a id="iso-194402020"></a><a id="194402020"></a><a id="ref-5a452a1d"></a>ISO 19440:2020 | [https://www.iso.org/standard/74491.html](https://www.iso.org/standard/74491.html) | Enterprise modelling constructs for describing organisational structure, operations and implementation domains. |
 | <a id="iso-20022-12026"></a><a id="iso-20022"></a><a id="ref-6150761d"></a>ISO 20022-1:2026 | [https://www.iso.org/standard/20022-1](https://www.iso.org/standard/20022-1) | Metamodel underlying the universal financial industry message scheme. |
@@ -41,6 +42,7 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="iso-31700-12023"></a><a id="ref-d1c9e7cb"></a>ISO 31700-1:2023 | [https://www.iso.org/standard/84977.html](https://www.iso.org/standard/84977.html) | High-level privacy-by-design requirements for consumer goods and services. |
 | <a id="iso-373012021"></a><a id="ref-3537977c"></a>ISO 37301:2021 | [https://www.iso.org/standard/75080.html](https://www.iso.org/standard/75080.html) | Requirements and guidance for establishing and improving organisational compliance management systems. |
 | <a id="iso-373022025"></a><a id="ref-48476530"></a>ISO 37302:2025 | [https://www.iso.org/standard/37302](https://www.iso.org/standard/37302) | Framework and indicators for evaluating and improving compliance management system effectiveness. |
+| <a id="iso-42172015"></a><a id="iso-4217"></a><a id="ref-e1f7a7d3"></a>ISO 4217:2015 | [https://www.iso.org/standard/64758.html](https://www.iso.org/standard/64758.html) | Defines alphabetic and numeric currency codes and the relationship between currencies and their minor units. |
 | <a id="iso-450012018"></a><a id="iso-45001"></a><a id="ref-6c90b51f"></a>ISO 45001:2018 | [https://www.iso.org/standard/45001](https://www.iso.org/standard/45001) | Requirements for occupational health and safety management systems, including prevention of work-related injury and ill health. |
 | <a id="iso-7042022"></a><a id="704--wwwisoorgstandard79077html"></a><a id="ref-e23b09be"></a>ISO 704:2022 | [https://www.iso.org/standard/79077.html](https://www.iso.org/standard/79077.html) | Principles for constructing terminology, relating concepts and designations, and writing definitions. |
 | <a id="iso-85832023"></a><a id="ref-eb08ffb2"></a>ISO 8583:2023 | [https://www.iso.org/standard/79451.html](https://www.iso.org/standard/79451.html) | Interchange message specifications for financial transactions originating from payment cards. |
@@ -86,6 +88,25 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="nist-sp-800-92"></a><a id="800-92"></a><a id="ref-e0cc09ca"></a>NIST SP 800-92 | [https://csrc.nist.gov/pubs/sp/800/92/final](https://csrc.nist.gov/pubs/sp/800/92/final) | Guidance for enterprise security log management infrastructure and operational processes. |
 | <a id="nist-ssdf-sp-800-218"></a><a id="ref-10dcdd0a"></a>NIST SSDF SP 800-218 | [https://csrc.nist.gov/pubs/sp/800/218/final](https://csrc.nist.gov/pubs/sp/800/218/final) | Secure Software Development Framework version 1.1, defining practices for reducing software vulnerabilities throughout development. |
 | <a id="owasp-asvs-500"></a><a id="ref-a1c367d2"></a>OWASP ASVS 5.0.0 | [https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf](https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf) | Versioned application security requirements for designing, developing and verifying web applications and services. |
+| <a id="rfc-10017"></a><a id="ref-5dce7cd2"></a>RFC 10017 | [https://www.rfc-editor.org/info/rfc10017/](https://www.rfc-editor.org/info/rfc10017/) | OAuth 2.0 best practices for browser-based applications, addressing browser threats and secure application architectures. |
+| <a id="rfc-10051"></a><a id="rfc-10051-2"></a><a id="ref-d6226711"></a><a id="ref-30c13a68"></a>RFC 10051 | [https://www.rfc-editor.org/info/rfc10051/](https://www.rfc-editor.org/info/rfc10051/) | Extends iCalendar VTODO for task scheduling, status tracking, process control and project management. |
+| <a id="rfc-3986"></a><a id="ietf-rfc-3986"></a><a id="ref-74dd789a"></a><a id="ref-b9ddc4d9"></a>RFC 3986 | [https://www.rfc-editor.org/info/rfc3986/](https://www.rfc-editor.org/info/rfc3986/) | Defines generic URI syntax, reference resolution and normalisation. |
+| <a id="rfc-4287"></a><a id="rfc-4287-atom"></a><a id="ref-30a598c3"></a>RFC 4287 | [https://www.rfc-editor.org/info/rfc4287/](https://www.rfc-editor.org/info/rfc4287/) | Defines the Atom XML syndication format for publishing and exchanging web feeds. |
+| <a id="rfc-4791"></a><a id="rfc-4791-caldav"></a><a id="ref-7d20fd52"></a>RFC 4791 | [https://www.rfc-editor.org/info/rfc4791/](https://www.rfc-editor.org/info/rfc4791/) | Defines CalDAV access to calendar collections and scheduling objects using WebDAV. |
+| <a id="rfc-5545"></a><a id="ietf-rfc-5545"></a><a id="rfc-5545-vtodo"></a><a id="ref-65b641d1"></a><a id="ref-bb0f57a8"></a><a id="ref-f49deb57"></a>RFC 5545 | [https://www.rfc-editor.org/info/rfc5545/](https://www.rfc-editor.org/info/rfc5545/) | Defines iCalendar representations of events, tasks (VTODO), recurrence, time zones and scheduling data. |
+| <a id="rfc-6265"></a><a id="ietf-rfc-6265"></a><a id="ref-56be08c7"></a>RFC 6265 | [https://www.rfc-editor.org/info/rfc6265/](https://www.rfc-editor.org/info/rfc6265/) | Defines HTTP cookies, their exchange between user agents and servers, and associated security considerations. |
+| <a id="rfc-7643"></a><a id="scim-rfc-7643"></a><a id="ref-affc95fc"></a>RFC 7643 | [https://www.rfc-editor.org/info/rfc7643/](https://www.rfc-editor.org/info/rfc7643/) | Defines the SCIM core schema for interoperable representation of users, groups and identity attributes. |
+| <a id="rfc-7644"></a><a id="ref-aefc9469"></a>RFC 7644 | [https://www.rfc-editor.org/info/rfc7644/](https://www.rfc-editor.org/info/rfc7644/) | Defines the SCIM HTTP protocol for provisioning and managing identity resources. |
+| <a id="rfc-8633"></a><a id="ietf-rfc-8633"></a><a id="ref-bd1a09d8"></a>RFC 8633 | [https://www.rfc-editor.org/info/rfc8633/](https://www.rfc-editor.org/info/rfc8633/) | Guidance for secure, accurate and resilient operation of Network Time Protocol deployments. |
+| <a id="rfc-8785"></a><a id="ref-5035f615"></a>RFC 8785 | [https://www.rfc-editor.org/info/rfc8785/](https://www.rfc-editor.org/info/rfc8785/) | Defines deterministic JSON serialisation for interoperable hashing and digital signatures. |
+| <a id="rfc-8984"></a><a id="rfc-8984-jscalendar"></a><a id="ref-0b86704e"></a>RFC 8984 | [https://www.rfc-editor.org/info/rfc8984/](https://www.rfc-editor.org/info/rfc8984/) | Defines JSCalendar, a JSON representation of calendar events and tasks. |
+| <a id="rfc-9110"></a><a id="rfc-9110-2"></a><a id="ref-5a7fc9e7"></a><a id="ref-96cfb1e6"></a>RFC 9110 | [https://www.rfc-editor.org/info/rfc9110/](https://www.rfc-editor.org/info/rfc9110/) | Defines HTTP semantics, including request methods, response status codes, representation metadata and content negotiation. |
+| <a id="rfc-9309"></a><a id="rfc-9309-robots"></a><a id="ietf-rfc-9309"></a><a id="ref-6f11a863"></a><a id="ref-959f05ca"></a>RFC 9309 | [https://www.rfc-editor.org/info/rfc9309/](https://www.rfc-editor.org/info/rfc9309/) | Defines the robots.txt protocol for communicating crawler access preferences. |
+| <a id="rfc-9457"></a><a id="rfc-9457-3"></a><a id="ref-f226fdcc"></a><a id="ref-7754416d"></a>RFC 9457 | [https://www.rfc-editor.org/info/rfc9457/](https://www.rfc-editor.org/info/rfc9457/) | Defines machine-readable HTTP API error representations using problem details. |
+| <a id="rfc-9557"></a><a id="rfc-9557-2"></a><a id="rfc-9557-3"></a><a id="ref-0ad4fc7e"></a><a id="ref-a17e8f95"></a><a id="ref-9347444a"></a>RFC 9557 | [https://www.rfc-editor.org/info/rfc9557/](https://www.rfc-editor.org/info/rfc9557/) | Extends RFC 3339 timestamps with additional information, including named time zones. |
+| <a id="rfc-9562"></a><a id="rfc-9562-2"></a><a id="ref-fdce2c42"></a><a id="ref-fa03258e"></a>RFC 9562 | [https://www.rfc-editor.org/info/rfc9562/](https://www.rfc-editor.org/info/rfc9562/) | Defines UUID formats and generation methods, including time-ordered UUID version 7. |
+| <a id="rfc-9700"></a><a id="ietf-rfc-9700"></a><a id="ref-7f8e07b3"></a><a id="ref-b15d3374"></a>RFC 9700 | [https://www.rfc-editor.org/info/rfc9700/](https://www.rfc-editor.org/info/rfc9700/) | OAuth 2.0 security best practices, including protections against token theft, redirect abuse and authorisation flow attacks. |
+| <a id="rfc-9846"></a><a id="rfc-8446"></a><a id="ref-0296369e"></a><a id="ref-4e38ad63"></a>RFC 9846 | [https://www.rfc-editor.org/info/rfc9846/](https://www.rfc-editor.org/info/rfc9846/) | Defines TLS 1.3 for authenticated, confidential and integrity-protected communications; supersedes RFC 8446. |
 
 ## Consolidated reference inventory
 
@@ -384,24 +405,6 @@ root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-9e9b8c6e"></a>
 
 [RFC 3339](https://www.rfc-editor.org/info/rfc3339/) — imported reference; verification pending.
-
-### RFC 8446
-
-<a id="ref-0296369e"></a>
-
-[RFC 8446](https://www.rfc-editor.org/info/rfc8446/) — imported reference; verification pending.
-
-### RFC 8785
-
-<a id="ref-5035f615"></a>
-
-[RFC 8785](https://www.rfc-editor.org/rfc/rfc8785.html) — imported reference; verification pending.
-
-### RFC 9457
-
-<a id="ref-f226fdcc"></a>
-
-[RFC 9457](https://www.rfc-editor.org/rfc/rfc9457.html) — imported reference; verification pending.
 
 ### PROV-O
 
@@ -810,18 +813,6 @@ nuxt-layers/configuration — live development lookup: `nuxt-layers/configuratio
 <a id="ref-107edc57"></a>
 
 [SAQ A eligibility guidance](https://www.pcisecuritystandards.org/faqs/1588/) — imported reference; verification pending.
-
-### RFC 10017
-
-<a id="ref-5dce7cd2"></a>
-
-[RFC 10017](https://www.rfc-editor.org/rfc/rfc10017.html) — imported reference; verification pending.
-
-### RFC 9700
-
-<a id="ref-7f8e07b3"></a>
-
-[RFC 9700](https://www.rfc-editor.org/rfc/rfc9700.html) — imported reference; verification pending.
 
 ### W3C Web Payments
 
@@ -1284,12 +1275,6 @@ IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-i
 <a id="ref-cdf75efb"></a>
 
 [PRI Nadcap](https://www.p-r-i.org/nadcap/accreditation) — imported reference; verification pending.
-
-### RFC 9457 (3)
-
-<a id="ref-7754416d"></a>
-
-[RFC 9457](https://www.rfc-editor.org/rfc/rfc9457) — imported reference; verification pending.
 
 ### ODRL
 
@@ -1945,12 +1930,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) — imported reference; verification pending.
 
-### ISO 4217
-
-<a id="ref-e1f7a7d3"></a>
-
-[ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) — imported reference; verification pending.
-
 ### ISO 8601
 
 <a id="ref-8bda6c42"></a>
@@ -2089,53 +2068,11 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [BCP 47](https://www.rfc-editor.org/info/bcp47) — imported reference; verification pending.
 
-### IETF RFC 6265
-
-<a id="ref-56be08c7"></a>
-
-[IETF RFC 6265](https://www.rfc-editor.org/info/rfc6265/) — imported reference; verification pending.
-
-### RFC 3986
-
-<a id="ref-74dd789a"></a>
-
-[RFC 3986](https://www.rfc-editor.org/rfc/rfc3986) — imported reference; verification pending.
-
-### RFC 4287 Atom
-
-<a id="ref-30a598c3"></a>
-
-[RFC 4287 Atom](https://www.rfc-editor.org/rfc/rfc4287) — imported reference; verification pending.
-
 ### BCP 47 (3)
 
 <a id="ref-783347a1"></a>
 
 [BCP 47](https://www.rfc-editor.org/rfc/rfc5646) — imported reference; verification pending.
-
-### RFC 9110
-
-<a id="ref-5a7fc9e7"></a>
-
-[RFC 9110](https://www.rfc-editor.org/rfc/rfc9110) — imported reference; verification pending.
-
-### RFC 9309 robots
-
-<a id="ref-6f11a863"></a>
-
-[RFC 9309 robots](https://www.rfc-editor.org/rfc/rfc9309) — imported reference; verification pending.
-
-### RFC 9562
-
-<a id="ref-fdce2c42"></a>
-
-[RFC 9562](https://www.rfc-editor.org/rfc/rfc9562) — imported reference; verification pending.
-
-### IETF RFC 9700
-
-<a id="ref-b15d3374"></a>
-
-[IETF RFC 9700](https://www.rfc-editor.org/rfc/rfc9700) — imported reference; verification pending.
 
 ### RSS 2.0
 
@@ -2226,12 +2163,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-bc717cde"></a>
 
 [W3C WCAG 2.2 AA](https://www.w3.org/TR/wcag22/) — imported reference; verification pending.
-
-### ISO 16175-1:2020
-
-<a id="ref-0260c838"></a>
-
-[ISO 16175-1:2020](https://committee.iso.org/sites/tc46sc11/home/projects/published/records-systems-design-and-requi.html) — imported reference; verification pending.
 
 ### IETF RFC 9901
 
@@ -2587,35 +2518,17 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [OMG DMN 1.6](https://www.omg.org/spec/DMN/1.6) — imported reference; verification pending.
 
-### RFC 10051
-
-<a id="ref-d6226711"></a>
-
-[RFC 10051](https://www.rfc-editor.org/rfc/rfc10051) — imported reference; verification pending.
-
 ### RFC 3339 (2)
 
 <a id="ref-3519482a"></a>
 
 [RFC 3339](https://www.rfc-editor.org/rfc/rfc3339) — imported reference; verification pending.
 
-### IETF RFC 5545
-
-<a id="ref-65b641d1"></a>
-
-[IETF RFC 5545](https://www.rfc-editor.org/rfc/rfc5545) — imported reference; verification pending.
-
 ### RFC 9253
 
 <a id="ref-65b0873b"></a>
 
 [RFC 9253](https://www.rfc-editor.org/rfc/rfc9253) — imported reference; verification pending.
-
-### RFC 9557
-
-<a id="ref-0ad4fc7e"></a>
-
-[RFC 9557](https://www.rfc-editor.org/rfc/rfc9557) — imported reference; verification pending.
 
 ### CSVW
 
@@ -2785,53 +2698,11 @@ Identity — live development lookup: `nuxt-layers/identity`, `CONTRACT.md`. Ret
 
 [PCI SSC](https://www.pcisecuritystandards.org/) — imported reference; verification pending.
 
-### RFC 10051 (2)
-
-<a id="ref-30c13a68"></a>
-
-[RFC 10051](https://www.rfc-editor.org/rfc/rfc10051.html) — imported reference; verification pending.
-
 ### RFC 3339 (3)
 
 <a id="ref-3379bb69"></a>
 
 [RFC 3339](https://www.rfc-editor.org/rfc/rfc3339.html) — imported reference; verification pending.
-
-### RFC 4791 CalDAV
-
-<a id="ref-7d20fd52"></a>
-
-[RFC 4791 CalDAV](https://www.rfc-editor.org/rfc/rfc4791.html) — imported reference; verification pending.
-
-### RFC 5545 VTODO
-
-<a id="ref-bb0f57a8"></a>
-
-[RFC 5545 `VTODO`](https://www.rfc-editor.org/rfc/rfc5545.html) — imported reference; verification pending.
-
-### SCIM RFC 7643
-
-<a id="ref-affc95fc"></a>
-
-[SCIM RFC 7643](https://www.rfc-editor.org/rfc/rfc7643) — imported reference; verification pending.
-
-### RFC 7644
-
-<a id="ref-aefc9469"></a>
-
-[RFC 7644](https://www.rfc-editor.org/rfc/rfc7644) — imported reference; verification pending.
-
-### RFC 8984 JSCalendar
-
-<a id="ref-0b86704e"></a>
-
-[RFC 8984 JSCalendar](https://www.rfc-editor.org/rfc/rfc8984.html) — imported reference; verification pending.
-
-### RFC 9557 (2)
-
-<a id="ref-a17e8f95"></a>
-
-[RFC 9557](https://www.rfc-editor.org/rfc/rfc9557.html) — imported reference; verification pending.
 
 ### W3C i18n
 
@@ -3216,18 +3087,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 <a id="ref-f34bf5a1"></a>
 
 [RFC Editor](https://www.rfc-editor.org/) — imported reference; verification pending.
-
-### IETF RFC 8633
-
-<a id="ref-bd1a09d8"></a>
-
-[IETF RFC 8633](https://www.rfc-editor.org/rfc/rfc8633) — imported reference; verification pending.
-
-### RFC 9110 (2)
-
-<a id="ref-96cfb1e6"></a>
-
-[RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — imported reference; verification pending.
 
 ### W3C Design Tokens Community Group 2025.10
 
@@ -3775,12 +3634,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 
 [RFC 5322](https://www.rfc-editor.org/info/rfc5322/) — imported reference; verification pending.
 
-### RFC 5545
-
-<a id="ref-f49deb57"></a>
-
-[RFC 5545](https://www.rfc-editor.org/info/rfc5545/) — imported reference; verification pending.
-
 ### BCP 47 (4)
 
 <a id="ref-6620842f"></a>
@@ -3829,18 +3682,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 
 [8292](https://www.rfc-editor.org/info/rfc8292/) — imported reference; verification pending.
 
-### RFC 9557 (3)
-
-<a id="ref-9347444a"></a>
-
-[RFC 9557](https://www.rfc-editor.org/info/rfc9557/) — imported reference; verification pending.
-
-### RFC 9562 (2)
-
-<a id="ref-fa03258e"></a>
-
-[RFC 9562](https://www.rfc-editor.org/info/rfc9562/) — imported reference; verification pending.
-
 ### RFC 1034
 
 <a id="ref-1c93287e"></a>
@@ -3858,12 +3699,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 <a id="ref-0fd9b392"></a>
 
 [2181](https://www.rfc-editor.org/rfc/rfc2181) — imported reference; verification pending.
-
-### IETF RFC 3986
-
-<a id="ref-b9ddc4d9"></a>
-
-[IETF RFC 3986](https://www.rfc-editor.org/rfc/rfc3986.html) — imported reference; verification pending.
 
 ### 4033–4035
 
@@ -3907,23 +3742,11 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 
 [9111](https://www.rfc-editor.org/rfc/rfc9111.html) — imported reference; verification pending.
 
-### IETF RFC 9309
-
-<a id="ref-959f05ca"></a>
-
-[IETF RFC 9309](https://www.rfc-editor.org/rfc/rfc9309.html) — imported reference; verification pending.
-
 ### 9525 — www.rfc-editor.org/rfc/rfc9525
 
 <a id="ref-08c3b037"></a>
 
 [9525](https://www.rfc-editor.org/rfc/rfc9525) — imported reference; verification pending.
-
-### RFC 9846
-
-<a id="ref-4e38ad63"></a>
-
-[RFC 9846](https://www.rfc-editor.org/rfc/rfc9846) — imported reference; verification pending.
 
 ### Sitemaps.org
 

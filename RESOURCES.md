@@ -19,6 +19,7 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | --- | --- | --- | --- | --- |
 | <a id="activity-streams-20"></a><a id="activitystreams-20"></a><a id="ref-c75695ba"></a>Activity Streams 2.0 | [https://www.w3.org/TR/2017/REC-activitystreams-core-20170523/](https://www.w3.org/TR/2017/REC-activitystreams-core-20170523/) | JSON data model for describing actions, actors and objects in activity feeds. | Recommendation | 2017-05-23 |
 | <a id="activitypub"></a><a id="ref-b5b42c56"></a>ActivityPub | [https://www.w3.org/TR/2018/REC-activitypub-20180123/](https://www.w3.org/TR/2018/REC-activitypub-20180123/) | Federated social networking protocol for publishing content and exchanging activities between servers. | Recommendation | 2018-01-23 |
+| <a id="aria-authoring-practices-guide"></a><a id="aria-apg"></a><a id="apg"></a><a id="ref-f076dce5"></a><a id="ref-54e6f5b0"></a>ARIA Authoring Practices Guide | [https://github.com/w3c/aria-practices/tree/f14b2490a6728cda85fd7feafbd148b3c3eaf038/content](https://github.com/w3c/aria-practices/tree/f14b2490a6728cda85fd7feafbd148b3c3eaf038/content) | Non-normative accessible interaction patterns, keyboard behaviour and ARIA implementation examples. | Published Guidance | 2026-11-13 |
 | <a id="atag-20"></a><a id="ref-9dbe26fd"></a>ATAG 2.0 | [https://www.w3.org/TR/2015/REC-ATAG20-20150924/](https://www.w3.org/TR/2015/REC-ATAG20-20150924/) | Accessibility guidelines for authoring tools and their support for creating accessible content. | Recommendation | 2015-09-24 |
 | <a id="bitstring-status-list-10"></a><a id="status-list"></a><a id="ref-9e32bc04"></a>Bitstring Status List 1.0 | [https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/](https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/) | Compact credential status representation for publishing suspension and revocation information. | Recommendation | 2025-05-15 |
 | <a id="css-color-adjustment-level-1"></a><a id="css-color-adjustment"></a><a id="ref-0faec43f"></a>CSS Color Adjustment Level 1 | [https://www.w3.org/TR/2025/CR-css-color-adjust-1-20251216/](https://www.w3.org/TR/2025/CR-css-color-adjust-1-20251216/) | Candidate Recommendation Snapshot defining browser colour adjustment, colour schemes and forced-colour preferences. | Candidate Recommendation Snapshot | 2025-12-16 |
@@ -178,6 +179,9 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="wcag-22"></a><a id="w3c-wcag-22"></a><a id="w3c-wcag-22-aa"></a><a id="ref-0d1f555e"></a><a id="ref-eb11cf7e"></a><a id="ref-bc717cde"></a>WCAG 2.2 | [https://www.w3.org/TR/2024/REC-WCAG22-20241212/](https://www.w3.org/TR/2024/REC-WCAG22-20241212/) | Web accessibility success criteria and conformance requirements, including the platform's Level AA baseline. | Recommendation | 2024-12-12 |
 | <a id="web-based-payment-handler-api"></a><a id="payment-handler"></a><a id="ref-790384d0"></a>Web-based Payment Handler API | [https://www.w3.org/TR/2026/WD-web-based-payment-handler-20261116/](https://www.w3.org/TR/2026/WD-web-based-payment-handler-20261116/) | Working Draft defining web application capabilities for handling browser-mediated payment requests. | Working Draft | 2026-11-16 |
 | <a id="webauthn-level-3"></a><a id="w3c-webauthn"></a><a id="ref-389dc62a"></a>WebAuthn Level 3 | [https://www.w3.org/TR/2026/REC-webauthn-3-20260825/](https://www.w3.org/TR/2026/REC-webauthn-3-20260825/) | Public-key credential registration and authentication APIs for origin-bound, phishing-resistant authentication. | Recommendation | 2026-08-25 |
+| <a id="whatwg-html"></a><a id="whatwg-html-2"></a><a id="ref-36db7adb"></a><a id="ref-82cafda8"></a>WHATWG HTML | [https://github.com/whatwg/html/blob/0162cee0c42a82267354d38fbc6a2503ee295b77/source](https://github.com/whatwg/html/blob/0162cee0c42a82267354d38fbc6a2503ee295b77/source) | Defines HTML document semantics, parsing, browser processing and web application APIs. | Living Standard | 2026-11-26 |
+| <a id="whatwg-notifications"></a><a id="ref-5dadc7d0"></a>WHATWG Notifications | [https://github.com/whatwg/notifications/blob/b5ae3f28540948e333e6a57eafbf4b9b4556d905/notifications.bs](https://github.com/whatwg/notifications/blob/b5ae3f28540948e333e6a57eafbf4b9b4556d905/notifications.bs) | Defines web notification permissions, display, lifecycle and interaction APIs. | Living Standard | 2026-11-12 |
+| <a id="whatwg-url"></a><a id="ref-021179e7"></a>WHATWG URL | [https://github.com/whatwg/url/blob/4f461b81a748443b235840599cea6290df40329a/url.bs](https://github.com/whatwg/url/blob/4f461b81a748443b235840599cea6290df40329a/url.bs) | Defines interoperable URL parsing, serialisation, origins and URL APIs. | Living Standard | 2026-11-19 |
 
 ## Consolidated reference inventory
 
@@ -1749,12 +1753,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [VueUse](https://github.com/vueuse/vueuse) — imported reference; verification pending.
 
-### WHATWG HTML
-
-<a id="ref-36db7adb"></a>
-
-[WHATWG HTML](https://html.spec.whatwg.org/) — imported reference; verification pending.
-
 ### Data (Use and Access) Act 2025
 
 <a id="ref-490b08ec"></a>
@@ -2397,12 +2395,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [OMG DMN 1.6](https://www.omg.org/spec/DMN/1.6) — imported reference; verification pending.
 
-### ARIA APG
-
-<a id="ref-f076dce5"></a>
-
-[ARIA APG](https://www.w3.org/WAI/ARIA/apg/) — imported reference; verification pending.
-
 ### OWASP Micro Frontend Security
 
 <a id="ref-a097180d"></a>
@@ -2943,12 +2935,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 
 [W3C internationalisation](https://www.w3.org/International/) — imported reference; verification pending.
 
-### APG
-
-<a id="ref-54e6f5b0"></a>
-
-[APG](https://www.w3.org/WAI/ARIA/apg/about/introduction/) — imported reference; verification pending.
-
 ### CSA CCM 4.1
 
 <a id="ref-08c52c06"></a>
@@ -3273,12 +3259,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 
 [winkNLP](https://github.com/winkjs/wink-nlp) — imported reference; verification pending.
 
-### WHATWG HTML (2)
-
-<a id="ref-82cafda8"></a>
-
-[WHATWG HTML](https://html.spec.whatwg.org/multipage/) — imported reference; verification pending.
-
 ### ICO UK GDPR principles
 
 <a id="ref-1ef72871"></a>
@@ -3290,12 +3270,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 <a id="ref-50823cb6"></a>
 
 [ICO data-security guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/a-guide-to-data-security/) — imported reference; verification pending.
-
-### WHATWG Notifications
-
-<a id="ref-5dadc7d0"></a>
-
-[WHATWG Notifications](https://notifications.spec.whatwg.org/) — imported reference; verification pending.
 
 ### Open Graph
 
@@ -3338,12 +3312,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 <a id="ref-7eef8d31"></a>
 
 [UK Open Banking Standard](https://standards.openbanking.org.uk/api-specifications/latest/) — imported reference; verification pending.
-
-### WHATWG URL
-
-<a id="ref-021179e7"></a>
-
-[WHATWG URL](https://url.spec.whatwg.org/) — imported reference; verification pending.
 
 ### Core Web Vitals (2)
 

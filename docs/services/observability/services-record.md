@@ -4,7 +4,7 @@
 
 **Identity:** `observability`; proposed **Platform capability** (governing catalogue classification remains a candidate until separately adopted). **Conceptual status:** owner-approved OBS-01–OBS-10 and refinements on 22 November 2026. **Implementation status:** no verified `nuxt-layers/observability` repository, root `CONTRACT.md`, running service or independently tested consumer. This is an **approved conceptual specification, not a published executable API or a claim of certification**.
 
-**Authority and evidence:** Accepted ADRs and the normative [Capability Standard](../../capability-standard.md) prevail over this blueprint. Opening/current checked governing `architecture-rules/master`: `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint `master`: `361566988ac53c55f6135e8acfa46cd5b013d7a0`. draft PR #111. An organisation name search found no implementation repository; this does not prove global absence. Separate implementation, CI, compliance and merge evidence remains outstanding.
+**Authority and evidence:** Accepted ADRs and the normative [Capability Standard](../../standards/capability-standard.md) prevail over this blueprint. Opening/current checked governing `architecture-rules/master`: `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint `master`: `361566988ac53c55f6135e8acfa46cd5b013d7a0`. draft PR #111. An organisation name search found no implementation repository; this does not prove global absence. Separate implementation, CI, compliance and merge evidence remains outstanding.
 
 ## Purpose, ownership and boundary
 

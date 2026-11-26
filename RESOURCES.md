@@ -17,6 +17,8 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 
 | pageRef | linkAddress | Description |
 | --- | --- | --- |
+| <a id="bitstring-status-list-10"></a><a id="status-list"></a><a id="ref-9e32bc04"></a>Bitstring Status List 1.0 | [https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/](https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/) | Compact credential status representation for publishing suspension and revocation information. |
+| <a id="dcat-3"></a><a id="ref-00ce33b2"></a>DCAT 3 | [https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/](https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/) | RDF vocabulary for interoperable catalogues describing datasets, distributions and data services. |
 | <a id="iso-100022018"></a><a id="ref-2c14157c"></a>ISO 10002:2018 | [https://www.iso.org/standard/10002](https://www.iso.org/standard/10002) | Guidance for designing, operating and improving customer complaints handling processes. |
 | <a id="iso-100032018"></a><a id="ref-f48d39fc"></a>ISO 10003:2018 | [https://www.iso.org/standard/71581.html](https://www.iso.org/standard/71581.html) | Guidance for external resolution of customer disputes that remain unresolved by complaints handling. |
 | <a id="iso-100072017"></a><a id="iso-10007"></a><a id="ref-cb28cb4b"></a>ISO 10007:2017 | [https://www.iso.org/standard/70400.html](https://www.iso.org/standard/70400.html) | Configuration management guidance for products and services throughout their lifecycles. |
@@ -84,6 +86,7 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="isoiecieee-152882023"></a><a id="ref-b6981e72"></a>ISO/IEC/IEEE 15288:2023 | [https://www.iso.org/standard/81702.html](https://www.iso.org/standard/81702.html) | Common engineering processes and terminology for system lifecycles. |
 | <a id="isoiecieee-420102022"></a><a id="420102022"></a><a id="ref-e85f94dc"></a>ISO/IEC/IEEE 42010:2022 | [https://www.iso.org/standard/74393.html](https://www.iso.org/standard/74393.html) | Requirements for architecture descriptions, viewpoints, model kinds and architecture description frameworks. |
 | <a id="isotr-23081-3-2011"></a>ISO/TR 23081-3:2011 | [https://www.iso.org/standard/57121.html](https://www.iso.org/standard/57121.html) | Self-assessment method for evaluating records metadata capture, management and implementation readiness. |
+| <a id="json-ld-11"></a><a id="w3c-json-ld-11"></a><a id="w3c-json-ld-11-2"></a><a id="ref-6d20146d"></a><a id="ref-a03bb42b"></a>JSON-LD 1.1 | [https://www.w3.org/TR/2020/REC-json-ld11-20200716/](https://www.w3.org/TR/2020/REC-json-ld11-20200716/) | JSON serialisation of linked data, including contextual mappings to RDF identifiers. |
 | <a id="nist-sp-800-137"></a><a id="ref-e530b140"></a>NIST SP 800-137 | [https://csrc.nist.gov/pubs/sp/800/137/final](https://csrc.nist.gov/pubs/sp/800/137/final) | Guidance for continuous monitoring of security controls, threats, vulnerabilities and organisational risk. |
 | <a id="nist-sp-800-177-rev-1"></a><a id="ref-5475a9f6"></a>NIST SP 800-177 Rev. 1 | [https://csrc.nist.gov/pubs/sp/800/177/r1/final](https://csrc.nist.gov/pubs/sp/800/177/r1/final) | Guidance for trustworthy email, including domain authentication, transport security and message protection. |
 | <a id="nist-sp-800-209"></a><a id="ref-71d6aa98"></a>NIST SP 800-209 | [https://csrc.nist.gov/pubs/sp/800/209/final](https://csrc.nist.gov/pubs/sp/800/209/final) | Security guidance for storage infrastructure, including access control, isolation, data protection and recovery. |
@@ -97,6 +100,7 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="nist-sp-800-92"></a><a id="800-92"></a><a id="ref-e0cc09ca"></a>NIST SP 800-92 | [https://csrc.nist.gov/pubs/sp/800/92/final](https://csrc.nist.gov/pubs/sp/800/92/final) | Guidance for enterprise security log management infrastructure and operational processes. |
 | <a id="nist-ssdf-sp-800-218"></a><a id="ref-10dcdd0a"></a>NIST SSDF SP 800-218 | [https://csrc.nist.gov/pubs/sp/800/218/final](https://csrc.nist.gov/pubs/sp/800/218/final) | Secure Software Development Framework version 1.1, defining practices for reducing software vulnerabilities throughout development. |
 | <a id="owasp-asvs-500"></a><a id="ref-a1c367d2"></a>OWASP ASVS 5.0.0 | [https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf](https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf) | Versioned application security requirements for designing, developing and verifying web applications and services. |
+| <a id="prov-o"></a><a id="ref-20aa2e25"></a>PROV-O | [https://www.w3.org/TR/2013/REC-prov-o-20130430/](https://www.w3.org/TR/2013/REC-prov-o-20130430/) | Ontology for describing provenance through entities, activities, agents and their relationships. |
 | <a id="rfc-10017"></a><a id="ref-5dce7cd2"></a>RFC 10017 | [https://www.rfc-editor.org/info/rfc10017/](https://www.rfc-editor.org/info/rfc10017/) | OAuth 2.0 best practices for browser-based applications, addressing browser threats and secure application architectures. |
 | <a id="rfc-10051"></a><a id="rfc-10051-2"></a><a id="ref-d6226711"></a><a id="ref-30c13a68"></a>RFC 10051 | [https://www.rfc-editor.org/info/rfc10051/](https://www.rfc-editor.org/info/rfc10051/) | Extends iCalendar VTODO for task scheduling, status tracking, process control and project management. |
 | <a id="rfc-1034"></a><a id="ref-1c93287e"></a>RFC 1034 | [https://www.rfc-editor.org/info/rfc1034/](https://www.rfc-editor.org/info/rfc1034/) | DNS architecture, namespace, delegation and resolution concepts. |
@@ -145,6 +149,11 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="rfc-9989"></a><a id="7489--wwwrfc-editororginforfc7489"></a><a id="ref-600abcac"></a>RFC 9989 | [https://www.rfc-editor.org/rfc/rfc9989.html](https://www.rfc-editor.org/rfc/rfc9989.html) | DMARC domain-level email authentication alignment, policy and message disposition. |
 | <a id="rfc-9990"></a>RFC 9990 | [https://www.rfc-editor.org/rfc/rfc9990.html](https://www.rfc-editor.org/rfc/rfc9990.html) | DMARC aggregate reporting format and delivery requirements. |
 | <a id="rfc-9991"></a>RFC 9991 | [https://www.rfc-editor.org/rfc/rfc9991.html](https://www.rfc-editor.org/rfc/rfc9991.html) | DMARC message-specific failure reporting mechanisms and safeguards. |
+| <a id="skos"></a><a id="ref-ceaf9e24"></a>SKOS | [https://www.w3.org/TR/2009/REC-skos-reference-20090818/](https://www.w3.org/TR/2009/REC-skos-reference-20090818/) | RDF vocabulary for interoperable thesauri, taxonomies and concept schemes. |
+| <a id="verifiable-credentials-data-model-20"></a><a id="vc-20"></a><a id="verifiable-credentials-20"></a><a id="ref-5dd6d5dc"></a><a id="ref-51933823"></a>Verifiable Credentials Data Model 2.0 | [https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/](https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/) | Interoperable data model for expressing credentials and presentations exchanged among issuers, holders and verifiers. |
+| <a id="verifiable-credentials-jose-and-cose"></a><a id="josecose"></a><a id="ref-a1b9773e"></a>Verifiable Credentials JOSE and COSE | [https://www.w3.org/TR/2026/REC-vc-jose-cose-20261013/](https://www.w3.org/TR/2026/REC-vc-jose-cose-20261013/) | Cryptographic protection of verifiable credentials and presentations using JOSE, selective disclosure and COSE. |
+| <a id="wai-aria-12"></a><a id="wai-aria"></a><a id="ref-67eee3fb"></a><a id="ref-90f5e4b1"></a>WAI-ARIA 1.2 | [https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/) | Semantic roles, states and properties for exposing accessible user interface information to assistive technologies. |
+| <a id="wcag-22"></a><a id="w3c-wcag-22"></a><a id="w3c-wcag-22-aa"></a><a id="ref-0d1f555e"></a><a id="ref-eb11cf7e"></a><a id="ref-bc717cde"></a>WCAG 2.2 | [https://www.w3.org/TR/2024/REC-WCAG22-20241212/](https://www.w3.org/TR/2024/REC-WCAG22-20241212/) | Web accessibility success criteria and conformance requirements, including the platform's Level AA baseline. |
 
 ## Consolidated reference inventory
 
@@ -438,23 +447,11 @@ root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [PostgreSQL](https://www.postgresql.org/about/licence/) — imported reference; verification pending.
 
-### PROV-O
-
-<a id="ref-20aa2e25"></a>
-
-[PROV-O](https://www.w3.org/TR/prov-o/) — imported reference; verification pending.
-
 ### SHACL
 
 <a id="ref-6dc528a5"></a>
 
 [SHACL](https://www.w3.org/TR/shacl/) — imported reference; verification pending.
-
-### SKOS
-
-<a id="ref-ceaf9e24"></a>
-
-[SKOS](https://www.w3.org/TR/skos-reference/) — imported reference; verification pending.
 
 ### W3C Trace Context
 
@@ -467,12 +464,6 @@ root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-3a7e011a"></a>
 
 [Organization Ontology](https://www.w3.org/TR/vocab-org/) — imported reference; verification pending.
-
-### W3C WCAG 2.2
-
-<a id="ref-0d1f555e"></a>
-
-[W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/) — imported reference; verification pending.
 
 ### payment-page security guidance
 
@@ -851,24 +842,6 @@ nuxt-layers/configuration — live development lookup: `nuxt-layers/configuratio
 <a id="ref-f7183568"></a>
 
 [W3C Web Payments](https://www.w3.org/groups/wg/payments/publications/) — imported reference; verification pending.
-
-### Status List
-
-<a id="ref-9e32bc04"></a>
-
-[Status List](https://www.w3.org/TR/vc-bitstring-status-list/) — imported reference; verification pending.
-
-### VC 2.0
-
-<a id="ref-5dd6d5dc"></a>
-
-[VC 2.0](https://www.w3.org/TR/vc-data-model/) — imported reference; verification pending.
-
-### JOSE/COSE
-
-<a id="ref-a1b9773e"></a>
-
-[JOSE/COSE](https://www.w3.org/TR/vc-jose-cose/) — imported reference; verification pending.
 
 ### libwebp
 
@@ -1319,18 +1292,6 @@ IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-i
 <a id="ref-2d692224"></a>
 
 [SVG 2](https://www.w3.org/TR/SVG2/) — imported reference; verification pending.
-
-### WAI-ARIA
-
-<a id="ref-67eee3fb"></a>
-
-[WAI-ARIA](https://www.w3.org/TR/wai-aria-1.2/) — imported reference; verification pending.
-
-### WCAG 2.2
-
-<a id="ref-eb11cf7e"></a>
-
-[WCAG 2.2](https://www.w3.org/TR/wcag/) — imported reference; verification pending.
 
 ### ECMA-402
 
@@ -2112,18 +2073,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [Data on the Web Best Practices](https://www.w3.org/TR/dwbp/) — imported reference; verification pending.
 
-### W3C JSON-LD 1.1
-
-<a id="ref-6d20146d"></a>
-
-[W3C JSON-LD 1.1](https://www.w3.org/TR/json-ld/) — imported reference; verification pending.
-
-### W3C JSON-LD 1.1 (2)
-
-<a id="ref-a03bb42b"></a>
-
-[W3C JSON-LD 1.1](https://www.w3.org/TR/json-ld11/) — imported reference; verification pending.
-
 ### OWL 2
 
 <a id="ref-7854321a"></a>
@@ -2147,24 +2096,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-5f7e8b5e"></a>
 
 [SPARQL 1.1](https://www.w3.org/TR/sparql11-query/) — imported reference; verification pending.
-
-### Verifiable Credentials 2.0
-
-<a id="ref-51933823"></a>
-
-[Verifiable Credentials 2.0](https://www.w3.org/TR/vc-data-model-2.0/) — imported reference; verification pending.
-
-### DCAT 3
-
-<a id="ref-00ce33b2"></a>
-
-[DCAT 3](https://www.w3.org/TR/vocab-dcat-3/) — imported reference; verification pending.
-
-### W3C WCAG 2.2 AA
-
-<a id="ref-bc717cde"></a>
-
-[W3C WCAG 2.2 AA](https://www.w3.org/TR/wcag22/) — imported reference; verification pending.
 
 ### IETF RFC 9901
 
@@ -3107,12 +3038,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 <a id="ref-d71ad712"></a>
 
 [Media Queries 5](https://www.w3.org/TR/mediaqueries-5/) — imported reference; verification pending.
-
-### WAI-ARIA 1.2
-
-<a id="ref-90f5e4b1"></a>
-
-[WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria/) — imported reference; verification pending.
 
 ### APG
 

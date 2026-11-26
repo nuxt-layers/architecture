@@ -40,7 +40,7 @@ if (existsSync(adrDir)) {
     .map(name => name.slice(0, 8)));
 } else if (adrArg >= 0) fail('Governing ADR directory not found');
 else console.warn('Governing ADR validation deferred: supply --governing-root');
-const dirs = { architecture:'architecture', capability:'capabilities', composition:'compositions', infrastructure:'infrastructure', library:'libraries', presentation:'presentation', service:'services', adapter:'adapters' };
+const dirs = { capability:'capabilities', composition:'compositions', library:'libraries', presentation:'presentation', service:'services', adapter:'adapters' };
 const types = new Set(['composition','specialisation','framework-extension','event-publication','event-subscription','information-exchange','ownership','interface-consumption']);
 for (const { path, record: r } of records) {
   check(r.profile === 'conceptual' && r.schemaVersion === 1, 'Invalid conceptual profile: ' + r.id);

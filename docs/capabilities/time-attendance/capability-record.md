@@ -2,7 +2,7 @@
 
 **Identifier:** `time-attendance` · **Classification:** Domain capability candidate · **Design status:** **conceptually complete for owner-approved scope**, 23 November 2026 (Employment EMP-03; TA-01–TA-06; subsequent approved standards, permissive-library, cross-cutting and GUI recommendations). **Delivery status:** no verified implementation repository, released package, published root `CONTRACT.md`, tested GUI or operational acceptance. **Merge status:** draft PR #143, **not merged**; separate owner approval and pre-merge validation required.
 
-**Authority:** [governing architecture-rules](../../../RESOURCES.md#ref-6d4a7ae1), accepted ADRs and [Capability Standard](../../capability-standard.md) prevail. Initial governing baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`, blueprint `8874cccf2f4faaa23b765a9a0a377a77951bc3da`; [Employment EMP-03](../employment/capability-record.md). This record specifies **idealised public business interfaces**, not exported functions, fixed routes, implemented providers, conformity certification or legal advice.
+**Authority:** [governing architecture-rules](../../../RESOURCES.md#ref-6d4a7ae1), accepted ADRs and [Capability Standard](../../standards/capability-standard.md) prevail. Initial governing baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`, blueprint `8874cccf2f4faaa23b765a9a0a377a77951bc3da`; [Employment EMP-03](../employment/capability-record.md). This record specifies **idealised public business interfaces**, not exported functions, fixed routes, implemented providers, conformity certification or legal advice.
 
 ## Purpose, ownership and exclusions
 

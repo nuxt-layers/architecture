@@ -1,6 +1,6 @@
 # Publisher — capability specification
 
-**Classification:** Platform capability. **Conceptual status:** Complete; owner-approved Publisher decisions (22 November 2026). **Implementation and merge:** Separate verification and explicit merge approval required. **Authority:** Accepted ADRs (particularly 0009, 0012, 0017 and 0018) and the [Capability Standard](../../capability-standard.md) prevail over this blueprint.
+**Classification:** Platform capability. **Conceptual status:** Complete; owner-approved Publisher decisions (22 November 2026). **Implementation and merge:** Separate verification and explicit merge approval required. **Authority:** Accepted ADRs (particularly 0009, 0012, 0017 and 0018) and the [Capability Standard](../../standards/capability-standard.md) prevail over this blueprint.
 
 **Evidence:** [Publisher published root `CONTRACT.md`](../../../RESOURCES.md#ref-332e0d6b), implementation `master` `3f4c60a256a6bea9ba9836e58138efbbc69097af` (contract blob `6d51c98cf2fcd40e0de4f476540a63b260f76b42`); documented, **not runtime-verified**. Governing opening baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint opening baseline `361566988ac53c55f6135e8acfa46cd5b013d7a0`. Review protocol (former document: review protocol).
 

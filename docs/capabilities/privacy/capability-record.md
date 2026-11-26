@@ -2,7 +2,7 @@
 
 **Identity:** `privacy` · **Classification:** Foundation · **Directory:** `docs/capabilities/privacy/` · **Conceptual status:** PRIV-01–08 and eight supplementary refinements owner-approved on 22 November 2026; not implemented · **Review:** draft PR #120 · **22 November 2026**.
 
-**Opening evidence:** [governing architecture-rules `d7f7c2ee0512`](../../../RESOURCES.md#ref-29a27a7a), [blueprint `361566988ac5`](../../../RESOURCES.md#ref-ba586c9b), normative [privacy baseline](../../privacy.md), [capability standard](../../capability-standard.md) and accepted ADRs, notably ADR-0012, ADR-0017 and ADR-0018. The implementation repository `nuxt-layers/privacy` exists at `master` `e72e335f222e3c56229f6cafd78100fd1b3bdc4c`, but has only a minimal README and no root `CONTRACT.md` verified. **All interfaces below are idealised, not published runtime APIs.** Existing neighbouring conceptual decisions retain their individual approval statuses.
+**Opening evidence:** [governing architecture-rules `d7f7c2ee0512`](../../../RESOURCES.md#ref-29a27a7a), [blueprint `361566988ac5`](../../../RESOURCES.md#ref-ba586c9b), normative [privacy baseline](../../standards/privacy-standard.md), [capability standard](../../standards/capability-standard.md) and accepted ADRs, notably ADR-0012, ADR-0017 and ADR-0018. The implementation repository `nuxt-layers/privacy` exists at `master` `e72e335f222e3c56229f6cafd78100fd1b3bdc4c`, but has only a minimal README and no root `CONTRACT.md` verified. **All interfaces below are idealised, not published runtime APIs.** Existing neighbouring conceptual decisions retain their individual approval statuses.
 
 ## Purpose and independent responsibility
 

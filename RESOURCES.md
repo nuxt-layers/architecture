@@ -18,27 +18,47 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | pageRef | linkAddress | Description |
 | --- | --- | --- |
 | <a id="iso-100022018"></a><a id="ref-2c14157c"></a>ISO 10002:2018 | [https://www.iso.org/standard/10002](https://www.iso.org/standard/10002) | Guidance for designing, operating and improving customer complaints handling processes. |
+| <a id="iso-100032018"></a><a id="ref-f48d39fc"></a>ISO 10003:2018 | [https://www.iso.org/standard/71581.html](https://www.iso.org/standard/71581.html) | Guidance for external resolution of customer disputes that remain unresolved by complaints handling. |
 | <a id="iso-100072017"></a><a id="iso-10007"></a><a id="ref-cb28cb4b"></a>ISO 10007:2017 | [https://www.iso.org/standard/70400.html](https://www.iso.org/standard/70400.html) | Configuration management guidance for products and services throughout their lifecycles. |
 | <a id="iso-100082022"></a><a id="ref-e69ef762"></a>ISO 10008:2022 | [https://www.iso.org/standard/80594.html](https://www.iso.org/standard/80594.html) | Guidance for transparent, secure and effective business-to-consumer electronic commerce transactions. |
+| <a id="iso-10303-12024"></a><a id="iso-10303-step"></a><a id="ref-56e608e1"></a>ISO 10303-1:2024 | [https://www.iso.org/standard/83105.html](https://www.iso.org/standard/83105.html) | Architectural principles for industrial product information representation and exchange across the STEP standards series. |
+| <a id="iso-10872019"></a><a id="1087--wwwisoorgstandard62330html"></a><a id="ref-d3820482"></a>ISO 1087:2019 | [https://www.iso.org/standard/62330.html](https://www.iso.org/standard/62330.html) | Common vocabulary for terminology work and terminology science. |
 | <a id="iso-121002010"></a><a id="iso-12100"></a><a id="ref-80776f19"></a>ISO 12100:2010 | [https://www.iso.org/standard/51528.html](https://www.iso.org/standard/51528.html) | Machinery safety design principles, lifecycle hazard identification, risk assessment and risk reduction. |
+| <a id="iso-13849-12023"></a><a id="iso-13849"></a><a id="ref-5d4a77a3"></a>ISO 13849-1:2023 | [https://www.iso.org/standard/73481.html](https://www.iso.org/standard/73481.html) | Design and integration requirements for safety-related machinery control systems, including software. |
 | <a id="iso-15489-12016"></a><a id="iso-15489-12016-2"></a><a id="ref-10531447"></a><a id="ref-cbe31bfd"></a>ISO 15489-1:2016 | [https://www.iso.org/standard/62542.html](https://www.iso.org/standard/62542.html) | Principles for creating, capturing and managing records, their metadata, controls and responsibilities. |
 | <a id="iso-190112026"></a><a id="ref-d863f5c5"></a>ISO 19011:2026 | [https://www.iso.org/standard/19011](https://www.iso.org/standard/19011) | Guidance on management system audit principles, audit programmes and conducting audits. |
 | <a id="iso-194402020"></a><a id="194402020"></a><a id="ref-5a452a1d"></a>ISO 19440:2020 | [https://www.iso.org/standard/74491.html](https://www.iso.org/standard/74491.html) | Enterprise modelling constructs for describing organisational structure, operations and implementation domains. |
+| <a id="iso-215022020"></a><a id="ref-3ab1f251"></a>ISO 21502:2020 | [https://www.iso.org/standard/74947.html](https://www.iso.org/standard/74947.html) | Project management guidance applicable across delivery approaches and project lifecycles. |
 | <a id="iso-223012019"></a><a id="ref-85e985cf"></a>ISO 22301:2019 | [https://www.iso.org/standard/75106.html](https://www.iso.org/standard/75106.html) | Requirements for business continuity management systems, including preparation for disruption and recovery. |
 | <a id="iso-22400-12014"></a><a id="iso-22400"></a><a id="ref-a2579280"></a>ISO 22400-1:2014 | [https://www.iso.org/standard/56847.html](https://www.iso.org/standard/56847.html) | Manufacturing operations performance indicator concepts, terminology and construction criteria. |
+| <a id="iso-23247-12021"></a><a id="iso-23247"></a><a id="ref-9ad284d4"></a>ISO 23247-1:2021 | [https://www.iso.org/standard/75066.html](https://www.iso.org/standard/75066.html) | Foundational concepts and requirements for manufacturing digital twin frameworks. |
+| <a id="iso-280002022"></a><a id="iso-28000"></a><a id="ref-c7f3ad87"></a>ISO 28000:2022 | [https://www.iso.org/standard/79612.html](https://www.iso.org/standard/79612.html) | Security management system requirements, including supply chain security. |
+| <a id="iso-304142025"></a><a id="iso-30414"></a><a id="ref-c0c6fe85"></a>ISO 30414:2025 | [https://www.iso.org/standard/30414](https://www.iso.org/standard/30414) | Requirements and recommendations for human capital reporting and disclosure. |
 | <a id="iso-310002018"></a><a id="iso-31000"></a><a id="iso-310002018-2"></a><a id="ref-262af923"></a><a id="ref-731cfbd0"></a><a id="ref-a5666aad"></a>ISO 31000:2018 | [https://www.iso.org/standard/31000](https://www.iso.org/standard/31000) | Risk management principles, framework and processes for identifying, assessing, treating and monitoring organisational risks. |
+| <a id="iso-31700-12023"></a><a id="ref-d1c9e7cb"></a>ISO 31700-1:2023 | [https://www.iso.org/standard/84977.html](https://www.iso.org/standard/84977.html) | High-level privacy-by-design requirements for consumer goods and services. |
+| <a id="iso-373012021"></a><a id="ref-3537977c"></a>ISO 37301:2021 | [https://www.iso.org/standard/75080.html](https://www.iso.org/standard/75080.html) | Requirements and guidance for establishing and improving organisational compliance management systems. |
 | <a id="iso-373022025"></a><a id="ref-48476530"></a>ISO 37302:2025 | [https://www.iso.org/standard/37302](https://www.iso.org/standard/37302) | Framework and indicators for evaluating and improving compliance management system effectiveness. |
+| <a id="iso-7042022"></a><a id="704--wwwisoorgstandard79077html"></a><a id="ref-e23b09be"></a>ISO 704:2022 | [https://www.iso.org/standard/79077.html](https://www.iso.org/standard/79077.html) | Principles for constructing terminology, relating concepts and designations, and writing definitions. |
 | <a id="iso-8601-12019"></a><a id="8601--wwwisoorgstandard70907html"></a><a id="ref-bea40961"></a>ISO 8601-1:2019 | [https://www.iso.org/standard/70907.html](https://www.iso.org/standard/70907.html) | Basic representations of Gregorian calendar dates, times and UTC offsets for information interchange. |
+| <a id="iso-90012026"></a><a id="iso-9001"></a><a id="ref-0f984f81"></a>ISO 9001:2026 | [https://www.iso.org/standard/9001](https://www.iso.org/standard/9001) | Quality management system requirements for consistent products and services, customer satisfaction and improvement. |
 | <a id="isoiec-11179-32023"></a><a id="11179--wwwisoorgstandard78915html"></a><a id="ref-a1ff3730"></a>ISO/IEC 11179-3:2023 | [https://www.iso.org/standard/78915.html](https://www.iso.org/standard/78915.html) | Metadata registry conceptual metamodel covering identification, definition, registration, classification and mapping. |
+| <a id="isoiec-170242026"></a><a id="ref-8462151b"></a>ISO/IEC 17024:2026 | [https://www.iso.org/standard/17024](https://www.iso.org/standard/17024) | Requirements for bodies certifying individuals against defined competence schemes. |
 | <a id="isoiec-170252017"></a><a id="isoiec-17025"></a><a id="ref-02cfc7b8"></a>ISO/IEC 17025:2017 | [https://www.iso.org/standard/66912.html](https://www.iso.org/standard/66912.html) | Requirements for competent, impartial and consistent testing and calibration laboratories; March 2018 corrected edition. |
+| <a id="isoiec-199872024"></a><a id="gs1-epcis-20--isoiec-19987"></a><a id="ref-f0921dba"></a>ISO/IEC 19987:2024 | [https://www.iso.org/standard/85557.html](https://www.iso.org/standard/85557.html) | GS1 EPCIS version 2.0 for sharing visibility events about physical and digital objects across enterprises. |
 | <a id="isoiec-250102023"></a><a id="ref-0b5d630d"></a>ISO/IEC 25010:2023 | [https://www.iso.org/standard/78176.html](https://www.iso.org/standard/78176.html) | Nine-characteristic product quality model for specifying, measuring and evaluating ICT and software products. |
+| <a id="isoiec-250122008"></a><a id="isoiec-25012"></a><a id="ref-35a58970"></a>ISO/IEC 25012:2008 | [https://www.iso.org/standard/35736.html](https://www.iso.org/standard/35736.html) | Data quality characteristics for evaluating data held in computer systems. |
+| <a id="isoiec-250242015"></a><a id="25024--wwwisoorgstandard35749html"></a><a id="ref-273d2272"></a>ISO/IEC 25024:2015 | [https://www.iso.org/standard/35749.html](https://www.iso.org/standard/35749.html) | Measures and methods for evaluating data quality characteristics. |
 | <a id="isoiec-270012022"></a><a id="ref-42fa42bb"></a>ISO/IEC 27001:2022 | [https://www.iso.org/standard/27001](https://www.iso.org/standard/27001) | Requirements for establishing, operating and continually improving an information security management system. |
 | <a id="isoiec-270022022"></a><a id="ref-d1765e3f"></a>ISO/IEC 27002:2022 | [https://www.iso.org/standard/75652.html](https://www.iso.org/standard/75652.html) | Information security control objectives and implementation guidance; March 2022 corrected edition. |
 | <a id="isoiec-270172026"></a><a id="ref-48fc8ac4"></a>ISO/IEC 27017:2026 | [https://www.iso.org/standard/27017](https://www.iso.org/standard/27017) | Cloud-specific information security controls and guidance for providers and customers, extending ISO/IEC 27002. |
 | <a id="isoiec-270402024"></a><a id="isoiec-270402024-2"></a><a id="ref-fbbdfd70"></a><a id="ref-e80bacde"></a>ISO/IEC 27040:2024 | [https://www.iso.org/standard/80194.html](https://www.iso.org/standard/80194.html) | Technical requirements and guidance for protecting stored data, storage infrastructure, media and associated management activities. |
 | <a id="isoiec-277012025"></a><a id="ref-b948c1e2"></a>ISO/IEC 27701:2025 | [https://www.iso.org/standard/27701](https://www.iso.org/standard/27701) | Requirements and guidance for privacy information management systems operated by personal information controllers and processors. |
+| <a id="isoiec-291002024"></a><a id="ref-f7fc907f"></a>ISO/IEC 29100:2024 | [https://www.iso.org/standard/85938.html](https://www.iso.org/standard/85938.html) | Privacy framework defining terminology, processing roles, safeguards and privacy principles. |
+| <a id="isoiec-291342023"></a><a id="ref-2e509cbb"></a>ISO/IEC 29134:2023 | [https://www.iso.org/standard/86012.html](https://www.iso.org/standard/86012.html) | Guidance for conducting and documenting privacy impact assessments. |
 | <a id="isoiec-420012023"></a><a id="ref-573b7368"></a>ISO/IEC 42001:2023 | [https://www.iso.org/standard/42001](https://www.iso.org/standard/42001) | Requirements for establishing, operating and improving an artificial intelligence management system. |
 | <a id="isoiec-9075-12023"></a><a id="isoiec-90752023"></a><a id="ref-b335bb8b"></a>ISO/IEC 9075-1:2023 | [https://www.iso.org/standard/76583.html](https://www.iso.org/standard/76583.html) | SQL conceptual framework, terminology and notation supporting the database language specification series. |
+| <a id="isoiec-ts-275602023"></a><a id="ref-7e7ff696"></a>ISO/IEC TS 27560:2023 | [https://www.iso.org/standard/80392.html](https://www.iso.org/standard/80392.html) | Interoperable information structures for consent records and receipts concerning personal information processing. |
+| <a id="isoiecieee-152882023"></a><a id="ref-b6981e72"></a>ISO/IEC/IEEE 15288:2023 | [https://www.iso.org/standard/81702.html](https://www.iso.org/standard/81702.html) | Common engineering processes and terminology for system lifecycles. |
 | <a id="isoiecieee-420102022"></a><a id="420102022"></a><a id="ref-e85f94dc"></a>ISO/IEC/IEEE 42010:2022 | [https://www.iso.org/standard/74393.html](https://www.iso.org/standard/74393.html) | Requirements for architecture descriptions, viewpoints, model kinds and architecture description frameworks. |
 | <a id="nist-sp-800-137"></a><a id="ref-e530b140"></a>NIST SP 800-137 | [https://csrc.nist.gov/pubs/sp/800/137/final](https://csrc.nist.gov/pubs/sp/800/137/final) | Guidance for continuous monitoring of security controls, threats, vulnerabilities and organisational risk. |
 | <a id="nist-sp-800-177-rev-1"></a><a id="ref-5475a9f6"></a>NIST SP 800-177 Rev. 1 | [https://csrc.nist.gov/pubs/sp/800/177/r1/final](https://csrc.nist.gov/pubs/sp/800/177/r1/final) | Guidance for trustworthy email, including domain authentication, transport security and message protection. |
@@ -1222,48 +1242,6 @@ IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-i
 
 [ISA/IEC 62443](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards) — imported reference; verification pending.
 
-### ISO 13849
-
-<a id="ref-5d4a77a3"></a>
-
-[ISO 13849](https://www.iso.org/standard/73481.html) — imported reference; verification pending.
-
-### ISO 23247
-
-<a id="ref-9ad284d4"></a>
-
-[ISO 23247](https://www.iso.org/standard/75066.html) — imported reference; verification pending.
-
-### ISO 37301:2021
-
-<a id="ref-3537977c"></a>
-
-[ISO 37301:2021](https://www.iso.org/standard/75080.html) — imported reference; verification pending.
-
-### ISO 28000
-
-<a id="ref-c7f3ad87"></a>
-
-[ISO 28000](https://www.iso.org/standard/79612.html) — imported reference; verification pending.
-
-### ISO 10303 STEP
-
-<a id="ref-56e608e1"></a>
-
-[ISO 10303 STEP](https://www.iso.org/standard/83105.html) — imported reference; verification pending.
-
-### GS1 EPCIS 2.0 / ISO/IEC 19987
-
-<a id="ref-f0921dba"></a>
-
-[GS1 EPCIS 2.0 / ISO/IEC 19987](https://www.iso.org/standard/85557.html) — imported reference; verification pending.
-
-### ISO 9001
-
-<a id="ref-0f984f81"></a>
-
-[ISO 9001](https://www.iso.org/standard/9001) — imported reference; verification pending.
-
 ### UK legislation.gov.uk
 
 <a id="ref-472de5bf"></a>
@@ -1966,66 +1944,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) — imported reference; verification pending.
 
-### ISO/IEC 17024:2026
-
-<a id="ref-8462151b"></a>
-
-[ISO/IEC 17024:2026](https://www.iso.org/standard/17024) — imported reference; verification pending.
-
-### 1087 — www.iso.org/standard/62330.html
-
-<a id="ref-d3820482"></a>
-
-[1087](https://www.iso.org/standard/62330.html) — imported reference; verification pending.
-
-### ISO 10003:2018
-
-<a id="ref-f48d39fc"></a>
-
-[ISO 10003:2018](https://www.iso.org/standard/71581.html) — imported reference; verification pending.
-
-### ISO 21502:2020
-
-<a id="ref-3ab1f251"></a>
-
-[ISO 21502:2020](https://www.iso.org/standard/74947.html) — imported reference; verification pending.
-
-### 704 — www.iso.org/standard/79077.html
-
-<a id="ref-e23b09be"></a>
-
-[704](https://www.iso.org/standard/79077.html) — imported reference; verification pending.
-
-### ISO/IEC TS 27560:2023
-
-<a id="ref-7e7ff696"></a>
-
-[ISO/IEC TS 27560:2023](https://www.iso.org/standard/80392.html) — imported reference; verification pending.
-
-### ISO/IEC/IEEE 15288:2023
-
-<a id="ref-b6981e72"></a>
-
-[ISO/IEC/IEEE 15288:2023](https://www.iso.org/standard/81702.html) — imported reference; verification pending.
-
-### ISO 31700-1:2023
-
-<a id="ref-d1c9e7cb"></a>
-
-[ISO 31700-1:2023](https://www.iso.org/standard/84977.html) — imported reference; verification pending.
-
-### ISO/IEC 29100:2024
-
-<a id="ref-f7fc907f"></a>
-
-[ISO/IEC 29100:2024](https://www.iso.org/standard/85938.html) — imported reference; verification pending.
-
-### ISO/IEC 29134:2023
-
-<a id="ref-2e509cbb"></a>
-
-[ISO/IEC 29134:2023](https://www.iso.org/standard/86012.html) — imported reference; verification pending.
-
 ### Consumer Rights Act 2015
 
 <a id="ref-2e48fac8"></a>
@@ -2619,24 +2537,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-614b3b8a"></a>
 
 [16 CFR Part 465](https://www.govinfo.gov/content/pkg/CFR-2025-title16-vol1/xhtml/CFR-2025-title16-vol1-part465.html) — imported reference; verification pending.
-
-### ISO 30414
-
-<a id="ref-c0c6fe85"></a>
-
-[ISO 30414](https://www.iso.org/standard/30414) — imported reference; verification pending.
-
-### ISO/IEC 25012
-
-<a id="ref-35a58970"></a>
-
-[ISO/IEC 25012](https://www.iso.org/standard/35736.html) — imported reference; verification pending.
-
-### 25024 — www.iso.org/standard/35749.html
-
-<a id="ref-273d2272"></a>
-
-[25024](https://www.iso.org/standard/35749.html) — imported reference; verification pending.
 
 ### ISO 45001
 

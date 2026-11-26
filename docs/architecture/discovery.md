@@ -66,3 +66,15 @@ The host declares and validates selected providers for each operation: trusted c
 IAM bootstrap must use separately authorised host operations, not require a normal authenticated session to establish the first principal. Revocation and evidence receipt must not synchronously depend on their own source change; use source outbox and bounded reconciliation. Audit capture rules distinguish required durable evidence from independent custody acknowledgement; no recursive Audit-of-Audit call chain. Workflow and source transitions use version-bound outcomes rather than each waiting for the other's commit. Billing/Invoice/Accounting acknowledgements and Privacy disposition receipts are asynchronous or independently read back; deduplicate by source revision and operation identity. Event feedback loops require explicit causation, consumer-effect deduplication, bounded retries and termination conditions.
 
 Before implementation acceptance, require a complete per-selected-host manifest of actual required/optional contract IDs and versions, provider bindings, package imports and Nuxt extends; reject unknown mandatory providers, incompatible versions and combined cycles. Validate bootstrapping, synchronous calls and event feedback separately. No root implementation contracts were re-audited for this conceptual pass, so full package/extension and runtime validation remains an explicit acceptance gate rather than a claimed result.
+
+## Architectural relationships
+
+- [application-composition](application-composition.md): Host generates inventory from explicitly selected trusted artefacts.
+- [identity](../capabilities/identity/capability-record.md): Discovery must distinguish refusal-only operation and trusted identity context.
+- [authorisation](../capabilities/authorisation/capability-record.md): Per-operation permission remains independently evaluated.
+- [publisher](../capabilities/publisher/capability-record.md): Document-type registration remains source-owned.
+- [configuration](../capabilities/configuration/capability-record.md): Declarations and effective values remain source-owned.
+
+### Unresolved matters
+
+- Selected-host contract, package and extension graphs: Actual dependencies and compatibility require implemented contract and host evidence; conceptual information exchanges do not prove them.

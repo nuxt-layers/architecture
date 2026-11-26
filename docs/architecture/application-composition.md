@@ -124,3 +124,16 @@ Acceptance: duplicate delivery does not double charge, late correction changes o
 | Legal Compliance/Privacy → source owners | Qualified duties, constraints, rights/hold instructions | Owner applies disposition and returns qualified receipt; unknown is not global completion |
 
 The table establishes semantic compatibility requirements for these high-risk exchanges, not proof that every consumer's eventual TypeScript/API schema is compatible. Validate all declared contract versions and required inputs at implementation acceptance, using the discovery graph and independent consumer fixtures.
+
+## Architectural relationships
+
+- [page-builder](../presentation/page-builder/presentation-record.md): Host supplies trusted context and routes; Page Builder supplies optional authoring and rendering.
+- [organisation-console](../presentation/organisation-console/presentation-record.md): Host supplies shell and trusted context; Console presents owner-routed actions.
+- [publisher](../capabilities/publisher/capability-record.md): Approved navigation composition uses source-owned menu definitions and optional discovery.
+- [metadata](../capabilities/metadata/capability-record.md): Approved navigation composition uses source-owned menu definitions and optional discovery.
+- [discovery](discovery.md): Host validates selected artefacts and declared relationships without inferring readiness or permissions.
+- [persistence](persistence.md): Host supplies provider connections; source owners retain persistence responsibility.
+
+### Unresolved matters
+
+- Audit and Help reciprocal navigation proposals: Record explicitly distinguishes proposals from approved runtime interfaces.

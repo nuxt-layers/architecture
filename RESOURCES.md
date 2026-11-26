@@ -18,8 +18,17 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | pageRef | linkAddress | Description |
 | --- | --- | --- |
 | <a id="isoiec-270402024"></a><a id="isoiec-270402024-2"></a><a id="ref-fbbdfd70"></a><a id="ref-e80bacde"></a>ISO/IEC 27040:2024 | [https://www.iso.org/standard/80194.html](https://www.iso.org/standard/80194.html) | Technical requirements and guidance for protecting stored data, storage infrastructure, media and associated management activities. |
+| <a id="nist-sp-800-137"></a><a id="ref-e530b140"></a>NIST SP 800-137 | [https://csrc.nist.gov/pubs/sp/800/137/final](https://csrc.nist.gov/pubs/sp/800/137/final) | Guidance for continuous monitoring of security controls, threats, vulnerabilities and organisational risk. |
+| <a id="nist-sp-800-177-rev-1"></a><a id="ref-5475a9f6"></a>NIST SP 800-177 Rev. 1 | [https://csrc.nist.gov/pubs/sp/800/177/r1/final](https://csrc.nist.gov/pubs/sp/800/177/r1/final) | Guidance for trustworthy email, including domain authentication, transport security and message protection. |
+| <a id="nist-sp-800-209"></a><a id="ref-71d6aa98"></a>NIST SP 800-209 | [https://csrc.nist.gov/pubs/sp/800/209/final](https://csrc.nist.gov/pubs/sp/800/209/final) | Security guidance for storage infrastructure, including access control, isolation, data protection and recovery. |
 | <a id="nist-sp-800-53-rev-5"></a><a id="nist-sp-800-53-rev-5-au-2au-3au-6au-9au-11"></a><a id="800-53"></a><a id="ref-3fd80945"></a><a id="ref-5d98a8a6"></a><a id="ref-ea606756"></a>NIST SP 800-53 Rev. 5 | [https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) | Security and privacy control catalogue, including audit event selection, record content, review, protection and retention (AU-2, AU-3, AU-6, AU-9 and AU-11); December 2020 corrected edition. |
+| <a id="nist-sp-800-63-4"></a><a id="ref-ec4142c5"></a>NIST SP 800-63-4 | [https://csrc.nist.gov/pubs/sp/800/63/4/final](https://csrc.nist.gov/pubs/sp/800/63/4/final) | Framework for digital identity risk assessment and selection of identity proofing, authentication and federation assurance levels. |
+| <a id="nist-sp-800-63a-4"></a><a id="ref-06a5f395"></a>NIST SP 800-63A-4 | [https://csrc.nist.gov/pubs/sp/800/63/a/4/final](https://csrc.nist.gov/pubs/sp/800/63/a/4/final) | Requirements for identity proofing, evidence validation, applicant verification and enrolment at defined assurance levels. |
+| <a id="nist-sp-800-63b-4"></a><a id="nist-sp-800-63b-4-2"></a><a id="ref-a2396bfc"></a><a id="ref-49bba49c"></a>NIST SP 800-63B-4 | [https://csrc.nist.gov/pubs/sp/800/63/b/4/final](https://csrc.nist.gov/pubs/sp/800/63/b/4/final) | Authentication assurance requirements, authenticator lifecycle management and session security. |
+| <a id="nist-sp-800-63c-4"></a><a id="ref-98d5a047"></a>NIST SP 800-63C-4 | [https://csrc.nist.gov/pubs/sp/800/63/c/4/final](https://csrc.nist.gov/pubs/sp/800/63/c/4/final) | Requirements for federated identity, assertion protection and federation assurance levels. |
+| <a id="nist-sp-800-82-rev-3"></a><a id="nist-sp-800-82"></a><a id="ref-f29f0b65"></a>NIST SP 800-82 Rev. 3 | [https://csrc.nist.gov/pubs/sp/800/82/r3/final](https://csrc.nist.gov/pubs/sp/800/82/r3/final) | Security guidance for operational technology systems, accounting for safety, reliability and operational constraints. |
 | <a id="nist-sp-800-88-rev-2"></a><a id="ref-ee67b17c"></a>NIST SP 800-88 Rev. 2 | [https://csrc.nist.gov/pubs/sp/800/88/r2/final](https://csrc.nist.gov/pubs/sp/800/88/r2/final) | Guidance for establishing media sanitisation programmes and preventing recovery of sensitive information from storage media. |
+| <a id="nist-sp-800-92"></a><a id="800-92"></a><a id="ref-e0cc09ca"></a>NIST SP 800-92 | [https://csrc.nist.gov/pubs/sp/800/92/final](https://csrc.nist.gov/pubs/sp/800/92/final) | Guidance for enterprise security log management infrastructure and operational processes. |
 | <a id="nist-ssdf-sp-800-218"></a><a id="ref-10dcdd0a"></a>NIST SSDF SP 800-218 | [https://csrc.nist.gov/pubs/sp/800/218/final](https://csrc.nist.gov/pubs/sp/800/218/final) | Secure Software Development Framework version 1.1, defining practices for reducing software vulnerabilities throughout development. |
 | <a id="owasp-asvs-500"></a><a id="ref-a1c367d2"></a>OWASP ASVS 5.0.0 | [https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf](https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf) | Versioned application security requirements for designing, developing and verifying web applications and services. |
 
@@ -440,24 +449,6 @@ root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-4fbd01ef"></a>
 
 [payment-page security guidance](https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming) — imported reference; verification pending.
-
-### NIST SP 800-63-4
-
-<a id="ref-ec4142c5"></a>
-
-[NIST SP 800-63-4](https://csrc.nist.gov/pubs/sp/800/63/4/final) — imported reference; verification pending.
-
-### NIST SP 800-63B-4
-
-<a id="ref-a2396bfc"></a>
-
-[NIST SP 800-63B-4](https://csrc.nist.gov/pubs/sp/800/63/b/4/final) — imported reference; verification pending.
-
-### NIST SP 800-63B-4 (2)
-
-<a id="ref-49bba49c"></a>
-
-[NIST SP 800-63B-4](https://csrc.nist.gov/pubs/sp/800/63/B/4/final) — imported reference; verification pending.
 
 ### RFC 9457 (2)
 
@@ -896,24 +887,6 @@ nuxt-layers/configuration — live development lookup: `nuxt-layers/configuratio
 <a id="ref-de31eb79"></a>
 
 [CloudEvents](https://cloudevents.io/) — imported reference; verification pending.
-
-### NIST SP 800-63A-4
-
-<a id="ref-06a5f395"></a>
-
-[NIST SP 800-63A-4](https://csrc.nist.gov/pubs/sp/800/63/A/4/final) — imported reference; verification pending.
-
-### NIST SP 800-63C-4
-
-<a id="ref-98d5a047"></a>
-
-[NIST SP 800-63C-4](https://csrc.nist.gov/pubs/sp/800/63/C/4/final) — imported reference; verification pending.
-
-### NIST SP 800-82
-
-<a id="ref-f29f0b65"></a>
-
-[NIST SP 800-82](https://csrc.nist.gov/pubs/sp/800/82/r3/final) — imported reference; verification pending.
 
 ### OGC IMDF
 
@@ -3189,12 +3162,6 @@ root implementation `CONTRACT.md` — live development lookup: `nuxt-layers/rich
 
 [OASIS DITA 1.3](https://www.oasis-open.org/2016/02/01/members-approve-dita-1-3-as-oasis-standard-for-authoring-and-publishing/) — imported reference; verification pending.
 
-### NIST SP 800-177 Rev. 1
-
-<a id="ref-5475a9f6"></a>
-
-[NIST SP 800-177 Rev. 1](https://csrc.nist.gov/pubs/sp/800/177/r1/final) — imported reference; verification pending.
-
 ### GOV.UK Design System
 
 <a id="ref-006a3e23"></a>
@@ -3578,24 +3545,6 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 <a id="ref-08c52c06"></a>
 
 [CSA CCM 4.1](https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1) — imported reference; verification pending.
-
-### NIST SP 800-137
-
-<a id="ref-e530b140"></a>
-
-[NIST SP 800-137](https://csrc.nist.gov/pubs/sp/800/137/final) — imported reference; verification pending.
-
-### NIST SP 800-209
-
-<a id="ref-71d6aa98"></a>
-
-[NIST SP 800-209](https://csrc.nist.gov/pubs/sp/800/209/final) — imported reference; verification pending.
-
-### 800-92
-
-<a id="ref-e0cc09ca"></a>
-
-[800-92](https://csrc.nist.gov/pubs/sp/800/92/final) — imported reference; verification pending.
 
 ### Google Search Central
 

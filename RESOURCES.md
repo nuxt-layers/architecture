@@ -626,42 +626,6 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 
 Imported design citations are retained here for provenance. External availability and version pins have not been independently reverified; do not treat unverified entries as accepted dependencies.
 
-### application-test-template
-
-<a id="ref-f1f7cc47"></a>
-
-[application-test-template](https://github.com/nuxt-layers-test/application-test-template) — imported reference; verification pending.
-
-### Nuxt config
-
-<a id="ref-68dbcd7d"></a>
-
-[Nuxt config](https://github.com/nuxt-layers-test/application-test-template/blob/master/nuxt.config.ts) — imported reference; verification pending.
-
-### application-test-template (2)
-
-<a id="ref-8c941ad8"></a>
-
-[application-test-template](https://github.com/nuxt-layers-test/application-test-template/blob/master/README.md) — imported reference; verification pending.
-
-### Host / infrastructure
-
-<a id="ref-d90cb4c3"></a>
-
-[Host / infrastructure](https://github.com/nuxt-layers/infrastructure) — imported reference; verification pending.
-
-### the implementation repository — github.com/nuxt-layers/temporal-gateway
-
-<a id="ref-b86d6231"></a>
-
-[the implementation repository](https://github.com/nuxt-layers/temporal-gateway) — imported reference; verification pending.
-
-### theme-manager — CONTRACT.md
-
-<a id="ref-484ee610"></a>
-
-root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
 ### prom-client
 
 <a id="ref-e1a3131d"></a>
@@ -673,96 +637,6 @@ root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-0e653797"></a>
 
 [releases](https://github.com/MikeMcl/decimal.js/releases) — imported reference; verification pending.
-
-### application-test-template (3)
-
-<a id="ref-422f5f81"></a>
-
-[application-test-template](https://github.com/nuxt-layers-test/application-test-template/tree/8b7b142b84b5ec2379d4e2e727914fe344187d64) — imported reference; verification pending.
-
-### architecture-blueprint-review
-
-<a id="ref-65ca7e1f"></a>
-
-[architecture-blueprint-review](https://github.com/nuxt-layers/architecture/tree/81795d39f64842cc9cbe9a87c94920b065223a52) — imported reference; verification pending.
-
-### Architecture
-
-<a id="ref-fc464cfb"></a>
-
-[Architecture](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/architecture.md) — imported reference; verification pending.
-
-### Capability Standard
-
-<a id="ref-34db2318"></a>
-
-[Capability Standard](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/capability-standard.md) — imported reference; verification pending.
-
-### Catalogue
-
-<a id="ref-01dc54d7"></a>
-
-[Catalogue](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/catalogue.md) — imported reference; verification pending.
-
-### Identity and Access
-
-<a id="ref-2422d9a0"></a>
-
-[Identity and Access](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/identity.md) — imported reference; verification pending.
-
-### Platform Charter
-
-<a id="ref-0b57a3a1"></a>
-
-[Platform Charter](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/platform-charter.md) — imported reference; verification pending.
-
-### Privacy
-
-<a id="ref-aa4c8a40"></a>
-
-[Privacy](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/privacy.md) — imported reference; verification pending.
-
-### Security
-
-<a id="ref-52073f28"></a>
-
-[Security](https://github.com/nuxt-layers/architecture/blob/2eea557fa3acbf9412fea065d2a3cdda42a764fc/docs/security.md) — imported reference; verification pending.
-
-### architecture-rules
-
-<a id="ref-89262ce1"></a>
-
-[architecture-rules](https://github.com/nuxt-layers/architecture/tree/2eea557fa3acbf9412fea065d2a3cdda42a764fc) — imported reference; verification pending.
-
-### nuxt-layers/authentication
-
-<a id="ref-fdb04048"></a>
-
-[`nuxt-layers/authentication`](https://github.com/nuxt-layers/authentication) — imported reference; verification pending.
-
-### Authentication root CONTRACT.md
-
-<a id="ref-d29a15b2"></a>
-
-[Authentication root `CONTRACT.md`](https://github.com/nuxt-layers/authentication/blob/ffb92d8c033ebb8bcb5043e3fa5acadac9e1d825/CONTRACT.md) — imported reference; verification pending.
-
-### nuxt-layers/authorisation
-
-<a id="ref-007802f8"></a>
-
-[`nuxt-layers/authorisation`](https://github.com/nuxt-layers/authorisation) — imported reference; verification pending.
-
-### Authorisation root development contract
-
-<a id="ref-923ed968"></a>
-
-[Authorisation root development contract](https://github.com/nuxt-layers/authorisation/blob/eedfcc6c974f8f15df38b554c394b82164bec4bc/CONTRACT.md) — imported reference; verification pending.
-
-### configuration — CONTRACT.md
-
-<a id="ref-2a7cb25d"></a>
-
-nuxt-layers/configuration — live development lookup: `nuxt-layers/configuration`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
 
 ### package versions
 
@@ -776,18 +650,6 @@ nuxt-layers/configuration — live development lookup: `nuxt-layers/configuratio
 
 [libwebp](https://chromium.googlesource.com/webm/libwebp) — imported reference; verification pending.
 
-### architecture-rules (2)
-
-<a id="ref-6d4a7ae1"></a>
-
-[architecture-rules](https://github.com/nuxt-layers/architecture) — imported reference; verification pending.
-
-### iam-integration — CONTRACT.md
-
-<a id="ref-9921c1a9"></a>
-
-IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-integration`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
 ### ProseMirror
 
 <a id="ref-e64171fe"></a>
@@ -799,48 +661,6 @@ IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-i
 <a id="ref-9d228cd0"></a>
 
 [Lexical](https://github.com/facebook/lexical) — imported reference; verification pending.
-
-### app/app.vue
-
-<a id="ref-a4ce9d0c"></a>
-
-[`app/app.vue`](https://github.com/nuxt-layers-test/application-test-template/blob/master/app/app.vue) — imported reference; verification pending.
-
-### app/pages/admin.vue
-
-<a id="ref-96cb2d87"></a>
-
-[`app/pages/admin.vue`](https://github.com/nuxt-layers-test/application-test-template/blob/master/app/pages/admin.vue) — imported reference; verification pending.
-
-### blueprint 361566988ac5
-
-<a id="ref-ba586c9b"></a>
-
-[blueprint `361566988ac5`](https://github.com/nuxt-layers/architecture/commit/361566988ac53c55f6135e8acfa46cd5b013d7a0) — imported reference; verification pending.
-
-### governing architecture-rules d7f7c2ee0512
-
-<a id="ref-29a27a7a"></a>
-
-[governing architecture-rules `d7f7c2ee0512`](https://github.com/nuxt-layers/architecture/commit/d7f7c2ee051244b8c81325f5ff1267568d99aab1) — imported reference; verification pending.
-
-### profile — CONTRACT.md
-
-<a id="ref-d369f0ce"></a>
-
-`nuxt-layers/profile/CONTRACT.md` — live development lookup: `nuxt-layers/profile`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### publisher — CONTRACT.md
-
-<a id="ref-332e0d6b"></a>
-
-Publisher published root `CONTRACT.md` — live development lookup: `nuxt-layers/publisher`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### theme-manager — CONTRACT.md #screens
-
-<a id="ref-90073eba"></a>
-
-Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRACT.md` (#screens). Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
 
 ### H3
 
@@ -866,36 +686,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [draft 2026 implementing regulations](https://www.legislation.gov.uk/ukdsi/2026/9780348287912/data.html) — imported reference; verification pending.
 
-### authentication — CONTRACT.md
-
-<a id="ref-d271ccbf"></a>
-
-Authentication — live development lookup: `nuxt-layers/authentication`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### authorisation — CONTRACT.md
-
-<a id="ref-4753322f"></a>
-
-Authorisation — live development lookup: `nuxt-layers/authorisation`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### identity — CONTRACT.md
-
-<a id="ref-59d75cad"></a>
-
-Identity — live development lookup: `nuxt-layers/identity`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### nuxt-layers/rich-text
-
-<a id="ref-19783b8e"></a>
-
-[`nuxt-layers/rich-text`](https://github.com/nuxt-layers/rich-text) — imported reference; verification pending.
-
-### rich-text — CONTRACT.md
-
-<a id="ref-81a9491d"></a>
-
-root implementation `CONTRACT.md` — live development lookup: `nuxt-layers/rich-text`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
 ### OWASP ASVS 5.0, ch. 16
 
 <a id="ref-f0c6e4e1"></a>
@@ -908,90 +698,6 @@ root implementation `CONTRACT.md` — live development lookup: `nuxt-layers/rich
 
 [Culori](https://github.com/Evercoder/culori) — imported reference; verification pending.
 
-### blueprint
-
-<a id="ref-d6e3a458"></a>
-
-[blueprint](https://github.com/nuxt-layers/architecture) — imported reference; verification pending.
-
-### catalogue (2)
-
-<a id="ref-55413c2e"></a>
-
-[catalogue](https://github.com/nuxt-layers/architecture/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/catalogue.md) — imported reference; verification pending.
-
-### ADR-0012
-
-<a id="ref-d77f0ab1"></a>
-
-[ADR-0012](https://github.com/nuxt-layers/architecture/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/decisions/ADR-0012-trivial-composition.md) — imported reference; verification pending.
-
-### ADR-0016
-
-<a id="ref-e16bba79"></a>
-
-[ADR-0016](https://github.com/nuxt-layers/architecture/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/decisions/ADR-0016-controlled-layer-specialisation-and-composition.md) — imported reference; verification pending.
-
-### Privacy (2)
-
-<a id="ref-6b21b67d"></a>
-
-[Privacy](https://github.com/nuxt-layers/architecture/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/privacy.md) — imported reference; verification pending.
-
-### Security §§16.5–16.6
-
-<a id="ref-04b4e257"></a>
-
-[Security §§16.5–16.6](https://github.com/nuxt-layers/architecture/blob/eaca8cfd33e292a43e9552ad8e2946295e168472/docs/security.md) — imported reference; verification pending.
-
-### clock — CONTRACT.md
-
-<a id="ref-738239a9"></a>
-
-CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### nuxt-layers/integrations
-
-<a id="ref-4c7783cf"></a>
-
-[nuxt-layers/integrations](https://github.com/nuxt-layers/integrations) — imported reference; verification pending.
-
-### Theme Manager
-
-<a id="ref-8ccd6b0b"></a>
-
-[Theme Manager](https://github.com/nuxt-layers/theme-manager) — imported reference; verification pending.
-
-### theme-manager — app/components/theme-manager/ThemeColourField.vue
-
-<a id="ref-95e68ca1"></a>
-
-`ThemeColourField.vue` — live development lookup: `nuxt-layers/theme-manager`, `app/components/theme-manager/ThemeColourField.vue`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### theme-manager — app/components/theme-manager/ThemeEditorColours.vue
-
-<a id="ref-c0267327"></a>
-
-`ThemeEditorColours.vue` — live development lookup: `nuxt-layers/theme-manager`, `app/components/theme-manager/ThemeEditorColours.vue`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### theme-manager — app/components/theme-manager/ThemePreviewComponents.vue
-
-<a id="ref-b5f7afa5"></a>
-
-`ThemePreviewComponents.vue` — live development lookup: `nuxt-layers/theme-manager`, `app/components/theme-manager/ThemePreviewComponents.vue`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### theme-manager — STORAGE-REGISTER.md
-
-<a id="ref-abb576ad"></a>
-
-`STORAGE-REGISTER.md` — live development lookup: `nuxt-layers/theme-manager`, `STORAGE-REGISTER.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
-
-### nuxt-layers/ui
-
-<a id="ref-6f35dd9e"></a>
-
-[`nuxt-layers/ui`](https://github.com/nuxt-layers/ui) — imported reference; verification pending.
-
 ### OpenVue
 
 <a id="ref-34e655b0"></a>
@@ -1003,16 +709,4 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 <a id="ref-84066cfe"></a>
 
 [NPL Internet Time Service user guide](https://www.npl.co.uk/getattachment/products-and-services/Timing-services/Internet-Time-from-NPL/its_user_guide.pdf?lang=en-GB) — imported reference; verification pending.
-
-### nuxt-layers/site-hosting
-
-<a id="ref-ba767e08"></a>
-
-[`nuxt-layers/site-hosting`](https://github.com/nuxt-layers/site-hosting) — imported reference; verification pending.
-
-### storage — CONTRACT.md
-
-<a id="ref-a32b30e2"></a>
-
-`nuxt-layers/storage/CONTRACT.md` — live development lookup: `nuxt-layers/storage`, `CONTRACT.md`. Retrieve the current accepted revision under ADR-0008; this is not a verified historical pin.
 

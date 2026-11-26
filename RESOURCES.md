@@ -90,19 +90,45 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="owasp-asvs-500"></a><a id="ref-a1c367d2"></a>OWASP ASVS 5.0.0 | [https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf](https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf) | Versioned application security requirements for designing, developing and verifying web applications and services. |
 | <a id="rfc-10017"></a><a id="ref-5dce7cd2"></a>RFC 10017 | [https://www.rfc-editor.org/info/rfc10017/](https://www.rfc-editor.org/info/rfc10017/) | OAuth 2.0 best practices for browser-based applications, addressing browser threats and secure application architectures. |
 | <a id="rfc-10051"></a><a id="rfc-10051-2"></a><a id="ref-d6226711"></a><a id="ref-30c13a68"></a>RFC 10051 | [https://www.rfc-editor.org/info/rfc10051/](https://www.rfc-editor.org/info/rfc10051/) | Extends iCalendar VTODO for task scheduling, status tracking, process control and project management. |
+| <a id="rfc-1034"></a><a id="ref-1c93287e"></a>RFC 1034 | [https://www.rfc-editor.org/info/rfc1034/](https://www.rfc-editor.org/info/rfc1034/) | DNS architecture, namespace, delegation and resolution concepts. |
+| <a id="rfc-1035"></a><a id="1035--wwwrfc-editororgrfcrfc1035"></a><a id="ref-1d932a11"></a>RFC 1035 | [https://www.rfc-editor.org/info/rfc1035/](https://www.rfc-editor.org/info/rfc1035/) | DNS message formats, resource records and protocol implementation. |
+| <a id="rfc-2181"></a><a id="2181--wwwrfc-editororgrfcrfc2181"></a><a id="ref-0fd9b392"></a>RFC 2181 | [https://www.rfc-editor.org/info/rfc2181/](https://www.rfc-editor.org/info/rfc2181/) | Clarifications of DNS record sets, authoritative data and protocol behaviour. |
+| <a id="rfc-3339"></a><a id="rfc-3339-2"></a><a id="rfc-3339-3"></a><a id="ref-9e9b8c6e"></a><a id="ref-3519482a"></a><a id="ref-3379bb69"></a>RFC 3339 | [https://www.rfc-editor.org/info/rfc3339/](https://www.rfc-editor.org/info/rfc3339/) | Internet timestamp syntax and UTC offsets for interoperable date and time exchange. |
 | <a id="rfc-3986"></a><a id="ietf-rfc-3986"></a><a id="ref-74dd789a"></a><a id="ref-b9ddc4d9"></a>RFC 3986 | [https://www.rfc-editor.org/info/rfc3986/](https://www.rfc-editor.org/info/rfc3986/) | Defines generic URI syntax, reference resolution and normalisation. |
+| <a id="rfc-4033"></a><a id="40334035"></a><a id="ref-db921862"></a>RFC 4033 | [https://www.rfc-editor.org/info/rfc4033/](https://www.rfc-editor.org/info/rfc4033/) | DNSSEC security architecture and requirements. |
+| <a id="rfc-4034"></a>RFC 4034 | [https://www.rfc-editor.org/info/rfc4034/](https://www.rfc-editor.org/info/rfc4034/) | DNSSEC resource records for signatures, keys and authenticated denial of existence. |
+| <a id="rfc-4035"></a>RFC 4035 | [https://www.rfc-editor.org/info/rfc4035/](https://www.rfc-editor.org/info/rfc4035/) | DNSSEC protocol extensions and signature validation. |
 | <a id="rfc-4287"></a><a id="rfc-4287-atom"></a><a id="ref-30a598c3"></a>RFC 4287 | [https://www.rfc-editor.org/info/rfc4287/](https://www.rfc-editor.org/info/rfc4287/) | Defines the Atom XML syndication format for publishing and exchanging web feeds. |
+| <a id="rfc-4647"></a>RFC 4647 | [https://www.rfc-editor.org/info/rfc4647/](https://www.rfc-editor.org/info/rfc4647/) | BCP 47 language-tag matching, filtering and lookup. |
 | <a id="rfc-4791"></a><a id="rfc-4791-caldav"></a><a id="ref-7d20fd52"></a>RFC 4791 | [https://www.rfc-editor.org/info/rfc4791/](https://www.rfc-editor.org/info/rfc4791/) | Defines CalDAV access to calendar collections and scheduling objects using WebDAV. |
+| <a id="rfc-5322"></a><a id="ref-f42f5514"></a>RFC 5322 | [https://www.rfc-editor.org/info/rfc5322/](https://www.rfc-editor.org/info/rfc5322/) | Syntax and structure of internet email messages, including header fields. |
 | <a id="rfc-5545"></a><a id="ietf-rfc-5545"></a><a id="rfc-5545-vtodo"></a><a id="ref-65b641d1"></a><a id="ref-bb0f57a8"></a><a id="ref-f49deb57"></a>RFC 5545 | [https://www.rfc-editor.org/info/rfc5545/](https://www.rfc-editor.org/info/rfc5545/) | Defines iCalendar representations of events, tasks (VTODO), recurrence, time zones and scheduling data. |
+| <a id="rfc-5646"></a><a id="bcp-47-2"></a><a id="bcp-47-3"></a><a id="ietf-bcp-47"></a><a id="bcp-47-4"></a><a id="ref-cd91c32e"></a><a id="ref-783347a1"></a><a id="ref-9d75fa93"></a><a id="ref-6620842f"></a>RFC 5646 | [https://www.rfc-editor.org/info/rfc5646/](https://www.rfc-editor.org/info/rfc5646/) | BCP 47 syntax and registry rules for identifying languages with language tags. |
+| <a id="rfc-5890"></a><a id="58905892"></a><a id="ref-8f0b568c"></a>RFC 5890 | [https://www.rfc-editor.org/info/rfc5890/](https://www.rfc-editor.org/info/rfc5890/) | Internationalised domain-name terminology and IDNA document framework. |
+| <a id="rfc-5891"></a>RFC 5891 | [https://www.rfc-editor.org/info/rfc5891/](https://www.rfc-editor.org/info/rfc5891/) | IDNA registration and lookup protocol for internationalised domain names. |
+| <a id="rfc-5892"></a>RFC 5892 | [https://www.rfc-editor.org/info/rfc5892/](https://www.rfc-editor.org/info/rfc5892/) | Unicode code-point eligibility and contextual rules for IDNA. |
 | <a id="rfc-6265"></a><a id="ietf-rfc-6265"></a><a id="ref-56be08c7"></a>RFC 6265 | [https://www.rfc-editor.org/info/rfc6265/](https://www.rfc-editor.org/info/rfc6265/) | Defines HTTP cookies, their exchange between user agents and servers, and associated security considerations. |
+| <a id="rfc-6376"></a><a id="6376--wwwrfc-editororginforfc6376"></a><a id="ref-b9a1b306"></a>RFC 6376 | [https://www.rfc-editor.org/info/rfc6376/](https://www.rfc-editor.org/info/rfc6376/) | DomainKeys Identified Mail signatures for authenticating email using domain-controlled public keys. |
+| <a id="rfc-7208"></a><a id="7208--wwwrfc-editororginforfc7208"></a><a id="ref-6cfd91a7"></a>RFC 7208 | [https://www.rfc-editor.org/info/rfc7208/](https://www.rfc-editor.org/info/rfc7208/) | Sender Policy Framework for authorising sending hosts to use email domains. |
+| <a id="rfc-7239"></a><a id="7239--wwwrfc-editororgrfcrfc7239"></a><a id="ref-65408751"></a>RFC 7239 | [https://www.rfc-editor.org/info/rfc7239/](https://www.rfc-editor.org/info/rfc7239/) | Forwarded HTTP header for communicating proxy traversal information. |
 | <a id="rfc-7643"></a><a id="scim-rfc-7643"></a><a id="ref-affc95fc"></a>RFC 7643 | [https://www.rfc-editor.org/info/rfc7643/](https://www.rfc-editor.org/info/rfc7643/) | Defines the SCIM core schema for interoperable representation of users, groups and identity attributes. |
 | <a id="rfc-7644"></a><a id="ref-aefc9469"></a>RFC 7644 | [https://www.rfc-editor.org/info/rfc7644/](https://www.rfc-editor.org/info/rfc7644/) | Defines the SCIM HTTP protocol for provisioning and managing identity resources. |
+| <a id="rfc-8030"></a><a id="ref-a70c074d"></a>RFC 8030 | [https://www.rfc-editor.org/info/rfc8030/](https://www.rfc-editor.org/info/rfc8030/) | HTTP push protocol for delivery of events through push services. |
+| <a id="rfc-8058"></a><a id="8058--wwwrfc-editororginforfc8058"></a><a id="ref-34d79423"></a>RFC 8058 | [https://www.rfc-editor.org/info/rfc8058/](https://www.rfc-editor.org/info/rfc8058/) | One-click unsubscribe signalling for mailing-list email headers. |
+| <a id="rfc-8291"></a><a id="8291--wwwrfc-editororginforfc8291"></a><a id="ref-b4f08a24"></a>RFC 8291 | [https://www.rfc-editor.org/info/rfc8291/](https://www.rfc-editor.org/info/rfc8291/) | Encryption of web push message payloads. |
+| <a id="rfc-8292"></a><a id="8292--wwwrfc-editororginforfc8292"></a><a id="ref-d4f2fb1b"></a>RFC 8292 | [https://www.rfc-editor.org/info/rfc8292/](https://www.rfc-editor.org/info/rfc8292/) | Voluntary identification of application servers to web push services. |
+| <a id="rfc-8555"></a><a id="8555--wwwrfc-editororgrfcrfc8555"></a><a id="ref-c53bb7e9"></a>RFC 8555 | [https://www.rfc-editor.org/info/rfc8555/](https://www.rfc-editor.org/info/rfc8555/) | ACME protocol for automated certificate issuance and management. |
 | <a id="rfc-8633"></a><a id="ietf-rfc-8633"></a><a id="ref-bd1a09d8"></a>RFC 8633 | [https://www.rfc-editor.org/info/rfc8633/](https://www.rfc-editor.org/info/rfc8633/) | Guidance for secure, accurate and resilient operation of Network Time Protocol deployments. |
+| <a id="rfc-8659"></a><a id="8659--wwwrfc-editororgrfcrfc8659"></a><a id="ref-bb29113c"></a>RFC 8659 | [https://www.rfc-editor.org/info/rfc8659/](https://www.rfc-editor.org/info/rfc8659/) | DNS CAA records restricting authorised certificate issuers. |
 | <a id="rfc-8785"></a><a id="ref-5035f615"></a>RFC 8785 | [https://www.rfc-editor.org/info/rfc8785/](https://www.rfc-editor.org/info/rfc8785/) | Defines deterministic JSON serialisation for interoperable hashing and digital signatures. |
+| <a id="rfc-8820"></a><a id="ref-ba61cc61"></a>RFC 8820 | [https://www.rfc-editor.org/info/rfc8820/](https://www.rfc-editor.org/info/rfc8820/) | Guidance on URI design and ownership boundaries. |
 | <a id="rfc-8984"></a><a id="rfc-8984-jscalendar"></a><a id="ref-0b86704e"></a>RFC 8984 | [https://www.rfc-editor.org/info/rfc8984/](https://www.rfc-editor.org/info/rfc8984/) | Defines JSCalendar, a JSON representation of calendar events and tasks. |
 | <a id="rfc-9110"></a><a id="rfc-9110-2"></a><a id="ref-5a7fc9e7"></a><a id="ref-96cfb1e6"></a>RFC 9110 | [https://www.rfc-editor.org/info/rfc9110/](https://www.rfc-editor.org/info/rfc9110/) | Defines HTTP semantics, including request methods, response status codes, representation metadata and content negotiation. |
+| <a id="rfc-9111"></a><a id="9111--wwwrfc-editororgrfcrfc9111html"></a><a id="ref-b67b8213"></a>RFC 9111 | [https://www.rfc-editor.org/info/rfc9111/](https://www.rfc-editor.org/info/rfc9111/) | HTTP caching rules, cache controls and validation. |
+| <a id="rfc-9253"></a><a id="ref-65b0873b"></a>RFC 9253 | [https://www.rfc-editor.org/info/rfc9253/](https://www.rfc-editor.org/info/rfc9253/) | Extends iCalendar with relationships between calendar components. |
 | <a id="rfc-9309"></a><a id="rfc-9309-robots"></a><a id="ietf-rfc-9309"></a><a id="ref-6f11a863"></a><a id="ref-959f05ca"></a>RFC 9309 | [https://www.rfc-editor.org/info/rfc9309/](https://www.rfc-editor.org/info/rfc9309/) | Defines the robots.txt protocol for communicating crawler access preferences. |
 | <a id="rfc-9457"></a><a id="rfc-9457-3"></a><a id="ref-f226fdcc"></a><a id="ref-7754416d"></a>RFC 9457 | [https://www.rfc-editor.org/info/rfc9457/](https://www.rfc-editor.org/info/rfc9457/) | Defines machine-readable HTTP API error representations using problem details. |
+| <a id="rfc-9525"></a><a id="9525--wwwrfc-editororgrfcrfc9525"></a><a id="ref-08c3b037"></a>RFC 9525 | [https://www.rfc-editor.org/info/rfc9525/](https://www.rfc-editor.org/info/rfc9525/) | TLS service identity verification and certificate identifier matching. |
 | <a id="rfc-9557"></a><a id="rfc-9557-2"></a><a id="rfc-9557-3"></a><a id="ref-0ad4fc7e"></a><a id="ref-a17e8f95"></a><a id="ref-9347444a"></a>RFC 9557 | [https://www.rfc-editor.org/info/rfc9557/](https://www.rfc-editor.org/info/rfc9557/) | Extends RFC 3339 timestamps with additional information, including named time zones. |
 | <a id="rfc-9562"></a><a id="rfc-9562-2"></a><a id="ref-fdce2c42"></a><a id="ref-fa03258e"></a>RFC 9562 | [https://www.rfc-editor.org/info/rfc9562/](https://www.rfc-editor.org/info/rfc9562/) | Defines UUID formats and generation methods, including time-ordered UUID version 7. |
 | <a id="rfc-9700"></a><a id="ietf-rfc-9700"></a><a id="ref-7f8e07b3"></a><a id="ref-b15d3374"></a>RFC 9700 | [https://www.rfc-editor.org/info/rfc9700/](https://www.rfc-editor.org/info/rfc9700/) | OAuth 2.0 security best practices, including protections against token theft, redirect abuse and authorisation flow attacks. |
@@ -399,12 +425,6 @@ root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-fa79609e"></a>
 
 [PostgreSQL](https://www.postgresql.org/about/licence/) — imported reference; verification pending.
-
-### RFC 3339
-
-<a id="ref-9e9b8c6e"></a>
-
-[RFC 3339](https://www.rfc-editor.org/info/rfc3339/) — imported reference; verification pending.
 
 ### PROV-O
 
@@ -2062,18 +2082,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [PMI PMBOK 8](https://www.pmi.org/standards/pmbok) — imported reference; verification pending.
 
-### BCP 47 (2)
-
-<a id="ref-cd91c32e"></a>
-
-[BCP 47](https://www.rfc-editor.org/info/bcp47) — imported reference; verification pending.
-
-### BCP 47 (3)
-
-<a id="ref-783347a1"></a>
-
-[BCP 47](https://www.rfc-editor.org/rfc/rfc5646) — imported reference; verification pending.
-
 ### RSS 2.0
 
 <a id="ref-8ed599f6"></a>
@@ -2518,18 +2526,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [OMG DMN 1.6](https://www.omg.org/spec/DMN/1.6) — imported reference; verification pending.
 
-### RFC 3339 (2)
-
-<a id="ref-3519482a"></a>
-
-[RFC 3339](https://www.rfc-editor.org/rfc/rfc3339) — imported reference; verification pending.
-
-### RFC 9253
-
-<a id="ref-65b0873b"></a>
-
-[RFC 9253](https://www.rfc-editor.org/rfc/rfc9253) — imported reference; verification pending.
-
 ### CSVW
 
 <a id="ref-f6e15c97"></a>
@@ -2697,12 +2693,6 @@ Identity — live development lookup: `nuxt-layers/identity`, `CONTRACT.md`. Ret
 <a id="ref-eb8cbb26"></a>
 
 [PCI SSC](https://www.pcisecuritystandards.org/) — imported reference; verification pending.
-
-### RFC 3339 (3)
-
-<a id="ref-3379bb69"></a>
-
-[RFC 3339](https://www.rfc-editor.org/rfc/rfc3339.html) — imported reference; verification pending.
 
 ### W3C i18n
 
@@ -3622,131 +3612,11 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 
 [PSR / Pay.UK](https://www.psr.org.uk/) — imported reference; verification pending.
 
-### IETF BCP 47
-
-<a id="ref-9d75fa93"></a>
-
-[IETF BCP 47](https://www.rfc-editor.org/info/bcp47/) — imported reference; verification pending.
-
-### RFC 5322
-
-<a id="ref-f42f5514"></a>
-
-[RFC 5322](https://www.rfc-editor.org/info/rfc5322/) — imported reference; verification pending.
-
-### BCP 47 (4)
-
-<a id="ref-6620842f"></a>
-
-[BCP 47](https://www.rfc-editor.org/info/rfc5646/) — imported reference; verification pending.
-
-### 6376 — www.rfc-editor.org/info/rfc6376
-
-<a id="ref-b9a1b306"></a>
-
-[6376](https://www.rfc-editor.org/info/rfc6376/) — imported reference; verification pending.
-
-### 7208 — www.rfc-editor.org/info/rfc7208
-
-<a id="ref-6cfd91a7"></a>
-
-[7208](https://www.rfc-editor.org/info/rfc7208/) — imported reference; verification pending.
-
 ### 7489 — www.rfc-editor.org/info/rfc7489
 
 <a id="ref-600abcac"></a>
 
 [7489](https://www.rfc-editor.org/info/rfc7489/) — imported reference; verification pending.
-
-### RFC 8030
-
-<a id="ref-a70c074d"></a>
-
-[RFC 8030](https://www.rfc-editor.org/info/rfc8030/) — imported reference; verification pending.
-
-### 8058 — www.rfc-editor.org/info/rfc8058
-
-<a id="ref-34d79423"></a>
-
-[8058](https://www.rfc-editor.org/info/rfc8058/) — imported reference; verification pending.
-
-### 8291 — www.rfc-editor.org/info/rfc8291
-
-<a id="ref-b4f08a24"></a>
-
-[8291](https://www.rfc-editor.org/info/rfc8291/) — imported reference; verification pending.
-
-### 8292 — www.rfc-editor.org/info/rfc8292
-
-<a id="ref-d4f2fb1b"></a>
-
-[8292](https://www.rfc-editor.org/info/rfc8292/) — imported reference; verification pending.
-
-### RFC 1034
-
-<a id="ref-1c93287e"></a>
-
-[RFC 1034](https://www.rfc-editor.org/rfc/rfc1034) — imported reference; verification pending.
-
-### 1035 — www.rfc-editor.org/rfc/rfc1035
-
-<a id="ref-1d932a11"></a>
-
-[1035](https://www.rfc-editor.org/rfc/rfc1035) — imported reference; verification pending.
-
-### 2181 — www.rfc-editor.org/rfc/rfc2181
-
-<a id="ref-0fd9b392"></a>
-
-[2181](https://www.rfc-editor.org/rfc/rfc2181) — imported reference; verification pending.
-
-### 4033–4035
-
-<a id="ref-db921862"></a>
-
-[4033–4035](https://www.rfc-editor.org/rfc/rfc4033) — imported reference; verification pending.
-
-### 5890–5892
-
-<a id="ref-8f0b568c"></a>
-
-[5890–5892](https://www.rfc-editor.org/rfc/rfc5890) — imported reference; verification pending.
-
-### 7239 — www.rfc-editor.org/rfc/rfc7239
-
-<a id="ref-65408751"></a>
-
-[7239](https://www.rfc-editor.org/rfc/rfc7239) — imported reference; verification pending.
-
-### 8555 — www.rfc-editor.org/rfc/rfc8555
-
-<a id="ref-c53bb7e9"></a>
-
-[8555](https://www.rfc-editor.org/rfc/rfc8555) — imported reference; verification pending.
-
-### 8659 — www.rfc-editor.org/rfc/rfc8659
-
-<a id="ref-bb29113c"></a>
-
-[8659](https://www.rfc-editor.org/rfc/rfc8659) — imported reference; verification pending.
-
-### RFC 8820
-
-<a id="ref-ba61cc61"></a>
-
-[RFC 8820](https://www.rfc-editor.org/rfc/rfc8820.html) — imported reference; verification pending.
-
-### 9111 — www.rfc-editor.org/rfc/rfc9111.html
-
-<a id="ref-b67b8213"></a>
-
-[9111](https://www.rfc-editor.org/rfc/rfc9111.html) — imported reference; verification pending.
-
-### 9525 — www.rfc-editor.org/rfc/rfc9525
-
-<a id="ref-08c3b037"></a>
-
-[9525](https://www.rfc-editor.org/rfc/rfc9525) — imported reference; verification pending.
 
 ### Sitemaps.org
 

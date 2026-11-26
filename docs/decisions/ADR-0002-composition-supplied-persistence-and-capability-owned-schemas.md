@@ -11,7 +11,7 @@
 
 Several capabilities need durable relational storage: authentication (credentials, sessions, MFA factors), identity, authorisation, theme management and future domain capabilities.
 
-The [Architecture](../architecture.md) already establishes that the host is the composition root, PostgreSQL is the preferred relational database, infrastructure is replaceable where practical, no consumer depends on another capability's internal schema, and the dependency graph is acyclic (invariants 2, 3 and 9).
+The [Architecture](../standards/architecture-standard.md) already establishes that the host is the composition root, PostgreSQL is the preferred relational database, infrastructure is replaceable where practical, no consumer depends on another capability's internal schema, and the dependency graph is acyclic (invariants 2, 3 and 9).
 
 Two approaches were considered for giving capabilities a database:
 

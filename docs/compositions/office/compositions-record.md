@@ -3,7 +3,7 @@
 **Status:** **Conceptual design complete and owner-approved** on 22 November 2026 (OFF-01–OFF-05 and subsequent contract, standards, library, reciprocal-interface and GUI recommendations). This is not an implemented capability, published Office API, verified integration or permission to merge.  
 **Classification:** Organisational **archetype and optional host composition**, not an independent data-owning capability, stateless library or mandatory Nuxt layer. Retain the catalogue name and this conceptual directory.  
 **Evidence:** No `nuxt-layers/office` implementation repository or published root `CONTRACT.md` was verified. Relevant actual source interfaces must be taken from each owner's published root `CONTRACT.md`. Office draft PR #112; review protocol (former document: review protocol).  
-**Opening baselines:** `architecture-rules/master` `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; `architecture-blueprint-review/master` `361566988ac53c55f6135e8acfa46cd5b013d7a0`. Governing [Capability Standard](../../capability-standard.md) and accepted ADR-0003, -0009, -0012, -0016, -0017 and -0018 take precedence.
+**Opening baselines:** `architecture-rules/master` `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; `architecture-blueprint-review/master` `361566988ac53c55f6135e8acfa46cd5b013d7a0`. Governing [Capability Standard](../../standards/capability-standard.md) and accepted ADR-0003, -0009, -0012, -0016, -0017 and -0018 take precedence.
 
 ## Purpose, scope and authority
 

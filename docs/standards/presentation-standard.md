@@ -1,4 +1,4 @@
-# Presentation, Internationalisation and Accessibility
+# Presentation, Internationalisation and Accessibility Standard
 
 > **In short:** every screen is built from Theme Manager's semantic tokens, works in any language through BCP 47, CLDR and ECMA-402, meets WCAG 2.2 AA in light and dark mode, and uses semantic HTML. Preferences never break accessibility, and every screen passes the checklist in §8.
 
@@ -24,7 +24,7 @@ Internationalisation is a standard platform capability, built on these standards
 - **Unicode CLDR** locale data, through **ECMA-402** (the JavaScript `Intl` API), formats dates, times, numbers, currencies, plurals, lists and sorting; nothing is formatted by hand;
 - the **W3C Internationalization** guidance applies to markup: language and direction declared, and right-to-left scripts not prevented.
 
-Applications and reusable capabilities MUST keep user-facing text out of domain logic and make that text localisable. They MUST declare the document language correctly and support locale-aware formatting. Capabilities publish codes and `messageKey`s, never wording ([ADR-0009](decisions/ADR-0009-headless-capability-layers.md)). Each presentation part, `ui` and any kit MUST own the message catalogue for what it draws; the application MAY override any message and MUST NOT be forced to maintain one large translation catalogue.
+Applications and reusable capabilities MUST keep user-facing text out of domain logic and make that text localisable. They MUST declare the document language correctly and support locale-aware formatting. Capabilities publish codes and `messageKey`s, never wording ([ADR-0009](../decisions/ADR-0009-headless-capability-layers.md)). Each presentation part, `ui` and any kit MUST own the message catalogue for what it draws; the application MAY override any message and MUST NOT be forced to maintain one large translation catalogue.
 
 Locale-aware routing and translated metadata SHOULD be supported where public content requires them. An application MAY initially enable only one locale, but its architecture MUST NOT unnecessarily prevent additional locales.
 
@@ -48,7 +48,7 @@ Metadata, canonical URLs, locale alternates and structured data SHOULD be genera
 
 ## 6. Layer responsibilities
 
-`ui` owns reusable presentation primitives and their accessibility behaviour; each layer's presentation part owns its own screens ([ADR-0009](decisions/ADR-0009-headless-capability-layers.md)). Theme Manager alone owns the effective theme and its token vocabulary.
+`ui` owns reusable presentation primitives and their accessibility behaviour; each layer's presentation part owns its own screens ([ADR-0009](../decisions/ADR-0009-headless-capability-layers.md)). Theme Manager alone owns the effective theme and its token vocabulary.
 
 Internationalisation, semantic metadata and user-preference persistence MAY be separately bounded capabilities or integrations where their responsibilities justify separation. Their public contracts MUST remain independent of any single replaceable implementation library.
 

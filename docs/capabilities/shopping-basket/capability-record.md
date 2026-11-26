@@ -2,7 +2,7 @@
 
 **Identity:** `shopping-basket` · **Classification:** Domain capability (conceptual candidate).  
 **Decision:** SB-01–SB-08 and the subsequent public-contract, standards, open-source, Error Normalisation/Logging/Audit/Reporting and GUI recommendations **owner-approved on 23 November 2026**. **Conceptual design complete**; implementation, independent acceptance, legal compliance, release and merge **not verified**.  
-**Authority:** Accepted [Architecture Rules](../../../RESOURCES.md#ref-6d4a7ae1), [Capability Standard](../../capability-standard.md), ADR-0002, ADR-0008, ADR-0009, ADR-0012 and applicable privacy/policy ADRs. This record is a **planned conceptual contract**, not the published root `CONTRACT.md` of an implementation.  
+**Authority:** Accepted [Architecture Rules](../../../RESOURCES.md#ref-6d4a7ae1), [Capability Standard](../../standards/capability-standard.md), ADR-0002, ADR-0008, ADR-0009, ADR-0012 and applicable privacy/policy ADRs. This record is a **planned conceptual contract**, not the published root `CONTRACT.md` of an implementation.  
 **Review:** Initial concept merged in PR #140; approved refinements maintained in draft PR #141. Governing baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`. Refer to version control for evolution, not separate competing specifications.
 
 ## 1. Purpose, ownership and release scope

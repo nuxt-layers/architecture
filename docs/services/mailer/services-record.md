@@ -4,7 +4,7 @@
 
 **Status:** Conceptual design complete and owner-approved on 21 November 2026 (MLR-01–MLR-10, approved standards, commercially permissive library recommendations, Logging/Audit/Reporting relationships and advisory GUI). **Implementation, runtime contract, legal conformity and merge readiness are not verified.**
 
-**Review:** Draft PR #90 · Review protocol (former document: review protocol). The authoritative baseline remains accepted ADRs and the [governing Capability Standard](../../capability-standard.md). This working blueprint does not amend governing rules.
+**Review:** Draft PR #90 · Review protocol (former document: review protocol). The authoritative baseline remains accepted ADRs and the [governing Capability Standard](../../standards/capability-standard.md). This working blueprint does not amend governing rules.
 
 ## 1. Purpose and ownership
 

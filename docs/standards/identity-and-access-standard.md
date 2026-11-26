@@ -1,6 +1,6 @@
-# Identity and Access
+# Identity and Access Standard
 
-> **In short:** who someone is, what groups they belong to, and what they may do, as separate capabilities. Identity owns identities, groups, the hierarchy and memberships; Authentication owns sign-in and sessions; Profile owns personal data; Authorisation decides. Groups form a forest with one parent each, every person has a personal group, and nothing is inherited through the hierarchy unless a rule says so. This replaces the identity and authorisation architecture and the group model definition ([ADR-0003](decisions/ADR-0003-group-model-and-identity-first.md), [ADR-0005](decisions/ADR-0005-iam-suite.md)).
+> **In short:** who someone is, what groups they belong to, and what they may do, as separate capabilities. Identity owns identities, groups, the hierarchy and memberships; Authentication owns sign-in and sessions; Profile owns personal data; Authorisation decides. Groups form a forest with one parent each, every person has a personal group, and nothing is inherited through the hierarchy unless a rule says so. This replaces the identity and authorisation architecture and the group model definition ([ADR-0003](../decisions/ADR-0003-group-model-and-identity-first.md), [ADR-0005](../decisions/ADR-0005-iam-suite.md)).
 
 **Status:** Normative
 
@@ -33,7 +33,7 @@ A person may belong directly to any number of groups, in any trees, besides thei
 
 ## 6. Ownership
 
-Every domain resource has an explicit ownership and access model for its domain and isolation context. A resource may record an owning group and, separately, its creator; the creator's identifier never implies continuing access, so a company's report stays the company's when its author leaves. Capabilities own their data and refer to others by public identifiers, never by cross-schema keys ([ADR-0002](decisions/ADR-0002-composition-supplied-persistence-and-capability-owned-schemas.md)).
+Every domain resource has an explicit ownership and access model for its domain and isolation context. A resource may record an owning group and, separately, its creator; the creator's identifier never implies continuing access, so a company's report stays the company's when its author leaves. Capabilities own their data and refer to others by public identifiers, never by cross-schema keys ([ADR-0002](../decisions/ADR-0002-composition-supplied-persistence-and-capability-owned-schemas.md)).
 
 ## 7. Authorisation
 
@@ -55,14 +55,14 @@ Domain capabilities associate their entities with groups by public identifier. T
 
 ## 11. Acceptance
 
-Tests cover: atomic personal-group provisioning and exactly one personal group; many direct memberships; zero or one parent and many children; rejecting cycles and second parents; no implicit inheritance; isolation between tenants and companies; a creator leaving without ownership moving; membership-derived revocation on pause, suspension and departure, including caches and sessions; retained roles inactive during pause and suspension; no effective assignments after departure; independent grants evaluated separately without bypassing account or tenant restrictions; paused membership notifications and assignments suppressed; and refusal of unauthorised membership and hierarchy changes. The baseline is the platform's security requirements ([Security](security.md)).
+Tests cover: atomic personal-group provisioning and exactly one personal group; many direct memberships; zero or one parent and many children; rejecting cycles and second parents; no implicit inheritance; isolation between tenants and companies; a creator leaving without ownership moving; membership-derived revocation on pause, suspension and departure, including caches and sessions; retained roles inactive during pause and suspension; no effective assignments after departure; independent grants evaluated separately without bypassing account or tenant restrictions; paused membership notifications and assignments suppressed; and refusal of unauthorised membership and hierarchy changes. The baseline is the platform's security requirements ([Security](security-standard.md)).
 
 Changing an invariant here needs an accepted ADR, with its migration and compatibility assessed first.
 
 
 ## 12. Tenant hierarchy and accountable digital control (ADR-0017)
 
-**Normative on acceptance of [ADR-0017](decisions/ADR-0017-tenant-hierarchy-and-accountable-digital-control.md).** A tenant is an isolation boundary, independent from its groups and from the application's deployment, legal entity and subscription payer. Identity owns tenant parent relationships as an **acyclic, single-direct-parent tenant tree** separately from the §4 **group forest**; no parentage, creation or payment implies authorisation, membership, tenant-data disclosure or financial responsibility. Group hierarchy remains single-parent with no implicit inheritance.
+**Normative on acceptance of [ADR-0017](../decisions/ADR-0017-tenant-hierarchy-and-accountable-digital-control.md).** A tenant is an isolation boundary, independent from its groups and from the application's deployment, legal entity and subscription payer. Identity owns tenant parent relationships as an **acyclic, single-direct-parent tenant tree** separately from the §4 **group forest**; no parentage, creation or payment implies authorisation, membership, tenant-data disclosure or financial responsibility. Group hierarchy remains single-parent with no implicit inheritance.
 
 An active tenant MUST have one or more verified, active **human digital governance owners**, and support joint owners and protected transfer. Creator provenance, digital ownership, the real-world controlling organisation, its officers/shareholders, delegated administrators and bill-to party are distinct. Ordinary changes MUST refuse removal of the last valid human tenant owner. If human owners become unavailable, an explicitly restricted and reviewed recovery state is required; an invented owner or ordinary operator superuser bypass is prohibited. Identity owns the resulting **digital** owner state; applicable company/organisation control evidence is established through the approved legal/governance authority, not by role-label assertion.
 

@@ -265,7 +265,7 @@ A **versioned, declarative plugin descriptor** (schema defined through documente
 
 ## System-wide mandatory server-side authorisation — owner confirmation (18 November 2026)
 
-**Status: owner-confirmed system-wide requirement; already established by the governing [Architecture](../../architecture.md) invariant "Access is decided on the server. Client-side checks are for the experience only", and by normative contract/security obligations.** This review records the mandate explicitly for Integrations; it does not create a new governing ADR or replace Authorisation.
+**Status: owner-confirmed system-wide requirement; already established by the governing [Architecture](../../standards/architecture-standard.md) invariant "Access is decided on the server. Client-side checks are for the experience only", and by normative contract/security obligations.** This review records the mandate explicitly for Integrations; it does not create a new governing ADR or replace Authorisation.
 
 Every protected read, query, command, write, export, administrative operation, plugin invocation, asynchronous/background action and disclosure must validate the relevant trusted caller/service principal, tenant/organisation context, requested action, target resource, applicable policy and current Authorisation decision **at the trusted server/enforcement boundary** before executing or returning protected information. Missing, denied, expired, ambiguous or unavailable decisions **fail closed**. Actions performed by scheduled jobs or external callbacks use their independently authorised trusted service/event context, not an impersonated browser user or a webhook's bare assertion. Domain capabilities enforce their own invariants as well.
 

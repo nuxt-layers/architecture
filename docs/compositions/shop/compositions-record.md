@@ -3,7 +3,7 @@
 **Identity:** `shop` · **Classification:** Application composition with optional reusable presentation, **not a data-owning Domain capability**.  
 **Conceptual status:** **Complete — SHOP-01–05 and subsequent contract, standards, library, operational-boundary and GUI recommendations owner-approved on 23 November 2026.** Completeness means the *conceptual design* is settled; it does **not** mean the runtime, published implementation contracts, test evidence, legal compliance or merge have been approved.  
 **Implementation status:** No `nuxt-layers/shop` repository, executable Shop API, deployed screens or root `CONTRACT.md` has been verified. This specification describes **planned logical interfaces**, not shipped functions or routes.  
-**Review:** Shop draft PR #134. Opening governing `architecture-rules/master` `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; opening blueprint `master` `85c67c33e3e93d12bed5ffc14f78fb7d7bff8995`. Governing accepted ADRs, the [Capability Standard](../../capability-standard.md) and approved source-owner public contracts take precedence.
+**Review:** Shop draft PR #134. Opening governing `architecture-rules/master` `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; opening blueprint `master` `85c67c33e3e93d12bed5ffc14f78fb7d7bff8995`. Governing accepted ADRs, the [Capability Standard](../../standards/capability-standard.md) and approved source-owner public contracts take precedence.
 
 ## 1. Purpose, ownership and modes
 

@@ -8,7 +8,7 @@
 
 ## Why
 
-One person can establish several businesses, join a club and a council, and administer subsidiaries without sharing their confidential records. A contractor can create a digital company representation while the legitimate organisation remains entitled to direct its digital operations. Current [Identity and Access](../identity.md) and ADR-0003 establish a single-parent **group** forest, not a tenant parentage contract. ADR-0005 governs group founding/ownership, not an independently verified corporate controller.
+One person can establish several businesses, join a club and a council, and administer subsidiaries without sharing their confidential records. A contractor can create a digital company representation while the legitimate organisation remains entitled to direct its digital operations. Current [Identity and Access](../standards/identity-and-access-standard.md) and ADR-0003 establish a single-parent **group** forest, not a tenant parentage contract. ADR-0005 governs group founding/ownership, not an independently verified corporate controller.
 
 ## The decision
 

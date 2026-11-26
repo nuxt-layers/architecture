@@ -1,4 +1,4 @@
-# Privacy
+# Privacy Standard
 
 > **In short:** data protection is designed in, not added as a banner. Capabilities collect only what their purpose needs, classify every storage and tracking technology, ask for consent before anything that needs it, and support access, export, correction, deletion and retention without manual searching.
 
@@ -34,7 +34,7 @@ A genuinely stateless library does not need a register; its contract states that
 
 Reusable capability contracts SHOULD avoid hard-coding the rules of one jurisdiction. Applications MAY provide policies or adapters for the jurisdictions they need to support.
 
-The first applications are designed for UK data-protection and electronic-communications law, keeping room for other jurisdictions. UK law governs their data wherever it is stored; it may be hosted or stored outside the UK under [ADR-0014](decisions/ADR-0014-hosting-and-storage-providers.md).
+The first applications are designed for UK data-protection and electronic-communications law, keeping room for other jurisdictions. UK law governs their data wherever it is stored; it may be hosted or stored outside the UK under [ADR-0014](../decisions/ADR-0014-hosting-and-storage-providers.md).
 
 ## 7. User rights and lifecycle
 
@@ -49,4 +49,4 @@ Privacy and security overlap, but they are not the same. Authorisation controls 
 
 Data about directors, shareholders, controllers, administrators, disputed owner claims or recovery approvals is personal data where it relates to identifiable individuals. Every affected owner SHALL purpose-limit, minimise, protect, retain and disclose that evidence according to verified lawful grounds and applicable holds. A claimant's company role alone is not a grant to disclose another subject's identity or company resources; independent recovery and portable export MUST respect affected individuals' rights and applicable third-party restrictions.
 
-Legal/privacy **obligations**, applicable **operational controls**, consent and preference decisions, and published **privacy/cookie notices** are distinct. Publisher/Content Editor may manage authorised notice versions; publication is not evidence that tracking consent was obtained or that a lawful retention/disposal decision was enforced. The Privacy capability supplies specialist consent/retention and data-subject constraints through published contracts; each data-owning capability enforces the applicable constraints. Jurisdictional/legal uncertainty must be surfaced for review rather than falsely marked compliant. See [ADR-0018](decisions/ADR-0018-policy-governance-and-commercial-entitlements.md) and [ADR-0017](decisions/ADR-0017-tenant-hierarchy-and-accountable-digital-control.md).
+Legal/privacy **obligations**, applicable **operational controls**, consent and preference decisions, and published **privacy/cookie notices** are distinct. Publisher/Content Editor may manage authorised notice versions; publication is not evidence that tracking consent was obtained or that a lawful retention/disposal decision was enforced. The Privacy capability supplies specialist consent/retention and data-subject constraints through published contracts; each data-owning capability enforces the applicable constraints. Jurisdictional/legal uncertainty must be surfaced for review rather than falsely marked compliant. See [ADR-0018](../decisions/ADR-0018-policy-governance-and-commercial-entitlements.md) and [ADR-0017](../decisions/ADR-0017-tenant-hierarchy-and-accountable-digital-control.md).

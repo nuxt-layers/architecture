@@ -25,7 +25,7 @@ Two risks follow if this is left open. A capability may adopt a store whose own 
    - **Erasure covers both.** Account closure and erasure requests reach the sign-in identifier in Authentication as well as Profile's record; conceptual process requirements follow ADR-0004; the implemented process is specified in `iam-integration`.
 7. **Data region follows the tenant.** A tenant's data region, once set, applies to every store holding that tenant's data, including derived copies and backups.
 
-The concrete controls are in [Security](../security.md) §16.
+The concrete controls are in [Security](../standards/security-standard.md) §16.
 
 ## What follows
 
@@ -38,5 +38,5 @@ The concrete controls are in [Security](../security.md) §16.
 ## Guardrails
 
 - A capability that adds a store documents it in its `CONTRACT.md` and threat model, with the store's port, what it holds, its system of record and its erasure path.
-- Isolation tests ([Security](../security.md) §6) cover every store a capability uses, not only PostgreSQL.
+- Isolation tests ([Security](../standards/security-standard.md) §6) cover every store a capability uses, not only PostgreSQL.
 - Changes to these rules require a new ADR.

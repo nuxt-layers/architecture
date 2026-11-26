@@ -1,6 +1,6 @@
-# Security
+# Security Standard
 
-> **In short:** the platform's security baseline (OWASP ASVS 5.0 Level 2, with Level 3 where it matters), how the programme is organised, and the controls every capability and data store must meet. It replaces the security architecture and the data store security standard ([ADR-0006](decisions/ADR-0006-polyglot-persistence-and-data-store-security.md)).
+> **In short:** the platform's security baseline (OWASP ASVS 5.0 Level 2, with Level 3 where it matters), how the programme is organised, and the controls every capability and data store must meet. It replaces the security architecture and the data store security standard ([ADR-0006](../decisions/ADR-0006-polyglot-persistence-and-data-store-security.md)).
 
 **Status:** Normative
 
@@ -109,7 +109,7 @@ Paid certification, commercial security products and external assurance are not 
 
 ISO/IEC 27001 certification, Cyber Essentials certification, NHS DSPT/DTAC, HITRUST, health-sector controls, independent penetration testing, specialist SIEM services or external KMS services become mandatory only when application risk, data classification, contractual obligation or applicable law requires them.
 
-This does not apply to hosting and storage providers, whose independent assurance is required before use ([ADR-0014](decisions/ADR-0014-hosting-and-storage-providers.md)).
+This does not apply to hosting and storage providers, whose independent assurance is required before use ([ADR-0014](../decisions/ADR-0014-hosting-and-storage-providers.md)).
 
 The architecture SHOULD avoid preventable design choices that would make later adoption of such controls disproportionately difficult.
 
@@ -129,7 +129,7 @@ Certification, penetration testing and external assurance MAY provide additional
 
 ## 16. Data stores
 
-This section applies to every capability that stores data, in any kind of store, with [Privacy](privacy.md) §3 and §6.
+This section applies to every capability that stores data, in any kind of store, with [Privacy](privacy-standard.md) §3 and §6.
 
 ### 16.1 Inventory
 
@@ -183,9 +183,9 @@ Each capability MUST document, in its contract, every store it uses:
 ### 16.6 Privacy lifecycle
 
 1. Erasure and anonymisation MUST reach every store, including derived copies, caches and search indexes, within the capability's documented period. Backups age out on a documented schedule.
-2. Anonymisation of a person is by unlinking ([ADR-0005](decisions/ADR-0005-iam-suite.md)): stores outside Profile hold only opaque identifiers, so removing Profile's link is sufficient unless a capability documents personal data of its own.
+2. Anonymisation of a person is by unlinking ([ADR-0005](../decisions/ADR-0005-iam-suite.md)): stores outside Profile hold only opaque identifiers, so removing Profile's link is sufficient unless a capability documents personal data of its own.
 3. Retention periods MUST be documented per store and enforced by the capability.
-4. A tenant's data region MUST be honoured by every store holding that tenant's data, including derived copies and backups. A capability that cannot honour a region refuses to store that tenant's data rather than storing it elsewhere. Providers outside the UK follow [ADR-0014](decisions/ADR-0014-hosting-and-storage-providers.md).
+4. A tenant's data region MUST be honoured by every store holding that tenant's data, including derived copies and backups. A capability that cannot honour a region refuses to store that tenant's data rather than storing it elsewhere. Providers outside the UK follow [ADR-0014](../decisions/ADR-0014-hosting-and-storage-providers.md).
 
 ### 16.7 Verification
 
@@ -196,6 +196,6 @@ Each capability's threat model and control register MUST reference this standard
 
 Tenant parentage, application/platform administration, an organisational role, creation, payment and subscription rights MUST NOT silently confer access to another tenant's resources. Every authorised cross-tenant administrative action requires explicit scope, risk-appropriate assurance, expiry/revocation and attributable records. Routine platform operator access must not act as permanent unrestricted 'god-user' customer access; privileged bootstrap and break-glass procedures remain separate and protected.
 
-Every active tenant requires verified accountable human digital governance, with at least one active owner. Normal last-owner removal must be refused; exceptional loss triggers restricted independently reviewed recovery, not an arbitrary new owner. Contested recovery requires legitimate authority evidence, anti-fraud assessment, appropriate step-up/independent approval, notifications and Audit evidence. Actor and policy version provenance must prevent an administrator weakening an ownership-transfer rule and exploiting that weaker rule immediately. Domain-owned portable exports remain subject to privacy, security, legal holds and scope checks. See [ADR-0017](decisions/ADR-0017-tenant-hierarchy-and-accountable-digital-control.md).
+Every active tenant requires verified accountable human digital governance, with at least one active owner. Normal last-owner removal must be refused; exceptional loss triggers restricted independently reviewed recovery, not an arbitrary new owner. Contested recovery requires legitimate authority evidence, anti-fraud assessment, appropriate step-up/independent approval, notifications and Audit evidence. Actor and policy version provenance must prevent an administrator weakening an ownership-transfer rule and exploiting that weaker rule immediately. Domain-owned portable exports remain subject to privacy, security, legal holds and scope checks. See [ADR-0017](../decisions/ADR-0017-tenant-hierarchy-and-accountable-digital-control.md).
 
-Security policy decisions MUST preserve non-configurable floors, source and effective versions, permitted changes, conflict/unknown states and owning enforcement. Pricing/Subscription entitlements and technical resource provision are distinct from Authorisation decisions and must not bypass access checks. Unknown payment/provisioning/required quota-policy outcomes MUST NOT be represented as successful or safe. See [ADR-0018](decisions/ADR-0018-policy-governance-and-commercial-entitlements.md).
+Security policy decisions MUST preserve non-configurable floors, source and effective versions, permitted changes, conflict/unknown states and owning enforcement. Pricing/Subscription entitlements and technical resource provision are distinct from Authorisation decisions and must not bypass access checks. Unknown payment/provisioning/required quota-policy outcomes MUST NOT be represented as successful or safe. See [ADR-0018](../decisions/ADR-0018-policy-governance-and-commercial-entitlements.md).

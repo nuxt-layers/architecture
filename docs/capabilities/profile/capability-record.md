@@ -2,7 +2,7 @@
 
 **Capability:** `profile` · **Class:** Foundation · **Conceptual status:** owner-approved design principles and review specification; implementation alignment and review acceptance outstanding · **Review:** draft PR #123, 22 November 2026. This file is the **single current statement** of the Profile design. Earlier discussion and superseded proposals remain in Git history, not appended as competing requirements.
 
-**Authority and evidence:** [architecture-rules](../../../RESOURCES.md#ref-6d4a7ae1) master `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint master `361566988ac53c55f6135e8acfa46cd5b013d7a0`, both rechecked 22 November 2026. Accepted governance and the [Capability Standard](../../capability-standard.md) take precedence. Published implementation evidence: [`nuxt-layers/profile/CONTRACT.md`](../../../RESOURCES.md#ref-d369f0ce), repository master `dcb758c477f46f16d3934a00f98101aff1e9412d`, **contract v2, in active development**. Published behaviour is documented, **not independently runtime-verified**.
+**Authority and evidence:** [architecture-rules](../../../RESOURCES.md#ref-6d4a7ae1) master `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint master `361566988ac53c55f6135e8acfa46cd5b013d7a0`, both rechecked 22 November 2026. Accepted governance and the [Capability Standard](../../standards/capability-standard.md) take precedence. Published implementation evidence: [`nuxt-layers/profile/CONTRACT.md`](../../../RESOURCES.md#ref-d369f0ce), repository master `dcb758c477f46f16d3934a00f98101aff1e9412d`, **contract v2, in active development**. Published behaviour is documented, **not independently runtime-verified**.
 
 ## Purpose and authoritative boundary
 

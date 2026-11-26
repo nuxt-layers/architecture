@@ -10,13 +10,13 @@
 
 ## Why
 
-The [group model](../identity.md) was added as a proposed extension to the Identity and Authorisation architecture. It defines personal (unary) groups, single-parent group hierarchies, membership lifecycle, the separation of ownership from creator provenance and of tenants from groups, the absence of implicit hierarchy inheritance, and revocation on departure. It required an accepted ADR before its invariants became normative. It is now part of [Identity and Access](../identity.md).
+The [group model](../standards/identity-and-access-standard.md) was added as a proposed extension to the Identity and Authorisation architecture. It defines personal (unary) groups, single-parent group hierarchies, membership lifecycle, the separation of ownership from creator provenance and of tenants from groups, the absence of implicit hierarchy inheritance, and revocation on departure. It required an accepted ADR before its invariants became normative. It is now part of [Identity and Access](../standards/identity-and-access-standard.md).
 
 The group model is a shared boundary; capability-specific implementation and development order belong to the owning repositories.
 
 ## The decision
 
-1. The group model is **accepted as normative architecture**. Its invariants and acceptance criteria ([Identity and Access](../identity.md) §3 to §11) apply to Identity, Authorisation and any capability that associates domain entities with groups.
+1. The group model is **accepted as normative architecture**. Its invariants and acceptance criteria ([Identity and Access](../standards/identity-and-access-standard.md) §3 to §11) apply to Identity, Authorisation and any capability that associates domain entities with groups.
 2. Identity owns the group and membership model; other capabilities consume the public contract and must not duplicate Identity's authority.
 3. Development sequencing belongs to the separate development register and owner-specific implementation plans, not this ADR (ADR-0004).
 

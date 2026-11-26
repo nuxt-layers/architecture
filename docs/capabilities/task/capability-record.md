@@ -1,6 +1,6 @@
 # Task — conceptual capability specification
 
-**Identity:** `task` · **Class:** Platform capability · **Design status:** owner-approved conceptual specification, 23 November 2026 (TASK-01–14 and agreed refinements). **Implementation:** no verified `nuxt-layers/task` repository or published root `CONTRACT.md`; the names below are *idealised public operations*, not shipped APIs. **Authority:** [architecture-rules](../../../RESOURCES.md#ref-6d4a7ae1), accepted ADRs including [ADR-0012](../../decisions/ADR-0012-trivial-composition.md), and the [Capability Standard](../../capability-standard.md).
+**Identity:** `task` · **Class:** Platform capability · **Design status:** owner-approved conceptual specification, 23 November 2026 (TASK-01–14 and agreed refinements). **Implementation:** no verified `nuxt-layers/task` repository or published root `CONTRACT.md`; the names below are *idealised public operations*, not shipped APIs. **Authority:** [architecture-rules](../../../RESOURCES.md#ref-6d4a7ae1), accepted ADRs including [ADR-0012](../../decisions/ADR-0012-trivial-composition.md), and the [Capability Standard](../../standards/capability-standard.md).
 
 ## Purpose and boundaries
 

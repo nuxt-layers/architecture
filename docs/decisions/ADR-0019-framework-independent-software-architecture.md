@@ -9,7 +9,7 @@ Responsibility, packaging, composition and deployment are independent. Nuxt-spec
 
 ## The decision
 
-- Apply the [Common Engineering Standard](../engineering-standard.md) to maintained software artefacts and the Capability, Nuxt Layer, Composition and TypeScript Package standards cumulatively where relevant.
+- Apply the [Common Engineering Standard](../standards/engineering-standard.md) to maintained software artefacts and the Capability, Nuxt Layer, Composition and TypeScript Package standards cumulatively where relevant.
 - Recognise eight artefact kinds: architecture, capability, composition, infrastructure, library, presentation, service and adapter. Kind, classification, ownership, implementation and deployment are distinct.
 - Preserve ownership, public boundaries, acyclic dependencies, provider-neutral ports, security and the modular-monolith default. Technical services may own bounded technical facts; presentation may own presentation-specific state but not business facts. Infrastructure owns environment provisioning and operational authority, not domain persistence.
 - Independently consumable artefacts publish a self-contained root CONTRACT.md. Adopt a common validated artefact.json through a separately reconciled schema and compatibility migration; retain existing capability.json and published identifiers until that migration is approved.
@@ -19,7 +19,7 @@ Responsibility, packaging, composition and deployment are independent. Nuxt-spec
 
 ## Adopting it
 
-The architecture and applicable engineering requirements are accepted. The [Common Engineering Standard](../engineering-standard.md), [Nuxt Layer Standard](../nuxt-layer-standard.md), [Composition Standard](../composition-standard.md) and [TypeScript Package Standard](../typescript-package-standard.md) apply cumulatively. The [Artefact Definition](../artefact-definition.md) and conceptual schema are adopted through the consolidation PR under ADR-0004 and ADR-0010. Implementation descriptor compatibility migration remains separately gated.
+The architecture and applicable engineering requirements are accepted. The [Common Engineering Standard](../standards/engineering-standard.md), [Nuxt Layer Standard](../standards/nuxt-layer-standard.md), [Composition Standard](../standards/composition-standard.md) and [TypeScript Package Standard](../standards/typescript-package-standard.md) apply cumulatively. The [Artefact Definition](../artefact-definition.md) and conceptual schema are adopted through the consolidation PR under ADR-0004 and ADR-0010. Implementation descriptor compatibility migration remains separately gated.
 
 ## Guardrails
 

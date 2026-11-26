@@ -5,7 +5,7 @@
 **Review status:** **Owner-approved conceptual design, COURSE-01–12.** No implementation, live public contract, legal compliance or acceptance evidence is claimed.  
 **Reviewed:** 17 November 2026.  
 **Opening authority:** `nuxt-layers/architecture-rules/master` `2b5c0628e88b9698c9ad6ad57cc5315c8f879953`; blueprint `master` `41ce9f3ffba9063407a6af0d0672dcbbd6a8b299`.  
-**Evidence:** Governing `docs/catalogue.md` defines Course as “Structured learning offering and outcomes”; separately defines Enrolment as “Course/learner participation and allocation” and Training as “Verified training participation, competencies and completion records”. Normative `docs/architecture.md` and `docs/capability-standard.md` establish ownership, explicit acyclic public interfaces, server authorisation, provider-neutral composition and optional presentation. The target record was an empty pro-forma; `nuxt-layers/course` was not found at review time. All service names below are **conceptual**, not an asserted implemented API.
+**Evidence:** Governing `docs/catalogue.md` defines Course as “Structured learning offering and outcomes”; separately defines Enrolment as “Course/learner participation and allocation” and Training as “Verified training participation, competencies and completion records”. Normative `docs/standards/architecture-standard.md` and `docs/standards/capability-standard.md` establish ownership, explicit acyclic public interfaces, server authorisation, provider-neutral composition and optional presentation. The target record was an empty pro-forma; `nuxt-layers/course` was not found at review time. All service names below are **conceptual**, not an asserted implemented API.
 
 ## Capability Name
 

@@ -2,7 +2,7 @@
 
 **Identity:** `pricing` · **Classification:** Domain capability **candidate** in the governing catalogue; owner-approved conceptual Domain design (22 November 2026). **Status:** conceptual specification complete, subject to cross-review reconciliation and separate PR/merge approval. No implementation repository or published root `CONTRACT.md` verified; no code, tests, deployment, certification or legal compliance claimed.
 
-**Authority and evidence:** [Architecture Rules](../../../RESOURCES.md#ref-6d4a7ae1), [Capability Standard](../../capability-standard.md), [governing catalogue](../../catalogue.md), review protocol (former document: review protocol). Governing `master` checked at `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint `master` at `361566988ac53c55f6135e8acfa46cd5b013d7a0`. This record is the current conceptual source; Git history retains earlier discussion and superseded drafts. Accepted ADRs and normative governance prevail.
+**Authority and evidence:** [Architecture Rules](../../../RESOURCES.md#ref-6d4a7ae1), [Capability Standard](../../standards/capability-standard.md), [governing catalogue](../../catalogue.md), review protocol (former document: review protocol). Governing `master` checked at `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint `master` at `361566988ac53c55f6135e8acfa46cd5b013d7a0`. This record is the current conceptual source; Git history retains earlier discussion and superseded drafts. Accepted ADRs and normative governance prevail.
 
 ## Purpose and ownership
 

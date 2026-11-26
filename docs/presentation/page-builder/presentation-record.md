@@ -4,7 +4,7 @@
 
 **Identity:** `page-builder` · **Classification:** Presentation artefact candidate. **Status:** Conceptual design complete and owner-approved (24 November 2026): PB-01–PB-37 and STD-PB-01–07. Implementation, governing adoption, published root `CONTRACT.md`, independent acceptance and merge are separate and unverified. Review PR #152.
 
-**Authority:** [Capability Standard](../../capability-standard.md) (master blob 0c2b9fe03534796041fd0bb240c1c088ccf0b7ee, checked 24 November 2026), governing catalogue and applicable accepted ADRs, including 0001, 0002, 0009, 0011, 0012 and 0016. Apply governing tenant and policy requirements (ADR-0017/0018). [Working catalogue](../../catalogue.md) · [Register](../../architecture-index.json). Pre-merge reconciliation: governing master d7f7c2ee051244b8c81325f5ff1267568d99aab1; blueprint master 666a08c8e77375e2124f856077e8f808abde483e. The governing catalogue does not yet list Page Builder; this is a non-normative candidate, not governing adoption.
+**Authority:** [Capability Standard](../../standards/capability-standard.md) (master blob 0c2b9fe03534796041fd0bb240c1c088ccf0b7ee, checked 24 November 2026), governing catalogue and applicable accepted ADRs, including 0001, 0002, 0009, 0011, 0012 and 0016. Apply governing tenant and policy requirements (ADR-0017/0018). [Working catalogue](../../catalogue.md) · [Register](../../architecture-index.json). Pre-merge reconciliation: governing master d7f7c2ee051244b8c81325f5ff1267568d99aab1; blueprint master 666a08c8e77375e2124f856077e8f808abde483e. The governing catalogue does not yet list Page Builder; this is a non-normative candidate, not governing adoption.
 
 ## 1. Purpose, ownership and scope
 

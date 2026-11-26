@@ -2,7 +2,7 @@
 
 **Identifier:** `time-attendance` · **Classification:** Domain capability candidate · **Design status:** **conceptually complete for owner-approved scope**, 23 November 2026 (Employment EMP-03; TA-01–TA-06; subsequent approved standards, permissive-library, cross-cutting and GUI recommendations). **Delivery status:** no verified implementation repository, released package, published root `CONTRACT.md`, tested GUI or operational acceptance. **Merge status:** draft PR #143, **not merged**; separate owner approval and pre-merge validation required.
 
-**Authority:** [governing architecture-rules](../../../RESOURCES.md#ref-6d4a7ae1), accepted ADRs and [Capability Standard](../../standards/capability-standard.md) prevail. Initial governing baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`, blueprint `8874cccf2f4faaa23b765a9a0a377a77951bc3da`; [Employment EMP-03](../employment/capability-record.md). This record specifies **idealised public business interfaces**, not exported functions, fixed routes, implemented providers, conformity certification or legal advice.
+**Authority:** [governing architecture-rules](../../../RESOURCES.md#architecture-rules-2), accepted ADRs and [Capability Standard](../../standards/capability-standard.md) prevail. Initial governing baseline `d7f7c2ee051244b8c81325f5ff1267568d99aab1`, blueprint `8874cccf2f4faaa23b765a9a0a377a77951bc3da`; [Employment EMP-03](../employment/capability-record.md). This record specifies **idealised public business interfaces**, not exported functions, fixed routes, implemented providers, conformity certification or legal advice.
 
 ## Purpose, ownership and exclusions
 
@@ -121,19 +121,19 @@ Error Normalisation produces no events, Audit receipts, log submissions or repor
 
 | Reference | Design use |
 |---|---|
-| [ISO 8601-1:2019](../../../RESOURCES.md#ref-bea40961), [RFC 3339](../../../RESOURCES.md#ref-3519482a), [RFC 9557](../../../RESOURCES.md#ref-0ad4fc7e) | Portable time interchange; retain original zone/offset and occurrence versus receipt times through Clock. |
-| [ISO 15489-1:2016](../../../RESOURCES.md#ref-10531447) | Reliable, authentic, attributable source/approval history, correction lineage, controlled retention/disposal. |
-| [ISO 30414](../../../RESOURCES.md#ref-c0c6fe85), [ISO 45001](../../../RESOURCES.md#ref-6c90b51f), [ILO NORMLEX](../../../RESOURCES.md#ref-8665fc5e) | Qualified workforce indicators, fatigue/rest evidence and international working-time principles; not universal mandatory law or assumed ILO ratification. |
-| [ISO/IEC 27001](../../../RESOURCES.md#ref-42fa42bb), [ISO/IEC 27701](../../../RESOURCES.md#ref-b948c1e2), [NIST SP 800-63-4](../../../RESOURCES.md#ref-ec4142c5), [NIST SP 800-53 Rev. 5](../../../RESOURCES.md#ref-5d98a8a6) | Security/privacy governance, identity assurance, audit and control evidence, minimised disclosure. |
-| [OWASP ASVS 5](../../../RESOURCES.md#ref-a1c367d2), [WCAG 2.2 AA](../../../RESOURCES.md#ref-0d1f555e), [WAI-ARIA 1.2](../../../RESOURCES.md#ref-67eee3fb), [ETSI EN 301 549](../../../RESOURCES.md#ref-aa9c2495) | Existing ASVS L2 (L3 where risk-critical) and WCAG 2.2 AA platform baselines; accessible screens and deployment-specific ICT obligations. |
-| [UK Working Time Regulations](../../../RESOURCES.md#ref-38005802), [Acas](../../../RESOURCES.md#ref-4e72a703), [ICO workplace monitoring](../../../RESOURCES.md#ref-3056c706) | UK-specific hours/rest and proportionate employee monitoring as applicable; guidance is not itself law. |
-| [EU Directive 2003/88/EC](../../../RESOURCES.md#ref-d5b5ce71); [US FLSA/29 CFR Part 516](../../../RESOURCES.md#ref-992b2fc2) | Jurisdiction- and coverage-qualified working-time, weekly hours and records; national/state rules may differ. |
+| [ISO 8601-1:2019](../../../RESOURCES.md#8601--wwwisoorgstandard70907html), [RFC 3339](../../../RESOURCES.md#rfc-3339-2), [RFC 9557](../../../RESOURCES.md#rfc-9557) | Portable time interchange; retain original zone/offset and occurrence versus receipt times through Clock. |
+| [ISO 15489-1:2016](../../../RESOURCES.md#iso-15489-12016) | Reliable, authentic, attributable source/approval history, correction lineage, controlled retention/disposal. |
+| [ISO 30414](../../../RESOURCES.md#iso-30414), [ISO 45001](../../../RESOURCES.md#iso-45001), [ILO NORMLEX](../../../RESOURCES.md#ilo-normlex) | Qualified workforce indicators, fatigue/rest evidence and international working-time principles; not universal mandatory law or assumed ILO ratification. |
+| [ISO/IEC 27001](../../../RESOURCES.md#isoiec-270012022), [ISO/IEC 27701](../../../RESOURCES.md#isoiec-277012025), [NIST SP 800-63-4](../../../RESOURCES.md#nist-sp-800-63-4), [NIST SP 800-53 Rev. 5](../../../RESOURCES.md#nist-sp-800-53-rev-5-au-2au-3au-6au-9au-11) | Security/privacy governance, identity assurance, audit and control evidence, minimised disclosure. |
+| [OWASP ASVS 5](../../../RESOURCES.md#owasp-asvs-500), [WCAG 2.2 AA](../../../RESOURCES.md#w3c-wcag-22), [WAI-ARIA 1.2](../../../RESOURCES.md#wai-aria), [ETSI EN 301 549](../../../RESOURCES.md#etsi-ts-119-461) | Existing ASVS L2 (L3 where risk-critical) and WCAG 2.2 AA platform baselines; accessible screens and deployment-specific ICT obligations. |
+| [UK Working Time Regulations](../../../RESOURCES.md#uk-working-time-regulations), [Acas](../../../RESOURCES.md#acas), [ICO workplace monitoring](../../../RESOURCES.md#ico-workplace-monitoring) | UK-specific hours/rest and proportionate employee monitoring as applicable; guidance is not itself law. |
+| [EU Directive 2003/88/EC](../../../RESOURCES.md#eu-directive-200388ec); [US FLSA/29 CFR Part 516](../../../RESOURCES.md#us-flsa29-cfr-part-516) | Jurisdiction- and coverage-qualified working-time, weekly hours and records; national/state rules may differ. |
 
 Use native accessible HTML before ARIA, Theme Manager semantic tokens, Clock/Localisation and responsive keyboard/screen-reader error/status handling. Citation of a standard does not establish certification or legislative compliance.
 
 ## Optional GUI and representative host
 
-**Approved TA-06:** headless core remains complete; optional presentation provides worker, reviewer and operator views. [`application-test-template`](../../../RESOURCES.md#ref-f1f7cc47) demonstrates the host-owned `/` home, `/admin` test workspace, collapsible **Capabilities** sidebar with `/theme-manager` entry, branded toolbar and Theme Manager Appearance controls. Its `themeManager.mode='test'` and **Not signed in** label are development fixtures, **not** real IAM. [Theme Manager root contract](../../../RESOURCES.md#ref-484ee610) describes the existing screen ownership and limits.
+**Approved TA-06:** headless core remains complete; optional presentation provides worker, reviewer and operator views. [`application-test-template`](../../../RESOURCES.md#application-test-template) demonstrates the host-owned `/` home, `/admin` test workspace, collapsible **Capabilities** sidebar with `/theme-manager` entry, branded toolbar and Theme Manager Appearance controls. Its `themeManager.mode='test'` and **Not signed in** label are development fixtures, **not** real IAM. [Theme Manager root contract](../../../RESOURCES.md#theme-manager--contractmd) describes the existing screen ownership and limits.
 
 **Recommended host navigation:** one **Capabilities → Time & Attendance** entry and optional `/admin` card → capability-owned `/time-attendance` dashboard. Routes below are **proposed defaults**, not shipped URLs. The **host** owns sidebar, routing mount, brand and real caller composition. The **capability** owns its screen content and invokes only authorised public time contracts; other capabilities retain IAM, theme and reporting authority.
 
@@ -158,16 +158,16 @@ Views may be **dashboard panels**, not eight compulsory route components. First 
 
 | Need | Preferred candidate | Role and condition |
 |---|---|---|
-| Database | [node-postgres `pg`](../../../RESOURCES.md#ref-be910869) (MIT) | ADR-0012 PostgreSQL pool; capability owns transaction, records, atomic outbox. |
-| Query complexity | [Kysely](../../../RESOURCES.md#ref-af839a5b) (MIT) | Optional if plain parameterised SQL becomes unwieldy; no second ORM by default. |
-| Contract validation | [Zod](../../../RESOURCES.md#ref-1e3efac4) (MIT) | One runtime validator; [Valibot](../../../RESOURCES.md#ref-5f5b30fe) or [Ajv](../../../RESOURCES.md#ref-a164796d) (MIT) only if a specific alternative is better. |
-| Temporal processing | Existing Clock capability / [Temporal polyfill](../../../RESOURCES.md#ref-6bd89188) | Reuse Clock public API, not another time calculation authority. |
-| Accessible data screens | [TanStack Table](../../../RESOURCES.md#ref-af94a8b1) (MIT), optional [Reka UI](../../../RESOURCES.md#ref-12355446) (MIT) / [Vue Datepicker](../../../RESOURCES.md#ref-4266aecd) (MIT) | Only when the existing UI/Theme Manager does not already supply an adequate control; accessibility must be verified. |
-| Testing | [fast-check](../../../RESOURCES.md#ref-ca191d3a) (MIT), existing [Playwright](../../../RESOURCES.md#ref-12180955) (Apache-2.0) | Property tests for overlaps/DST/revision/replay; CI/user performs acceptance. |
-| Technical diagnostics | [OpenTelemetry JS](../../../RESOURCES.md#ref-8e380f73) (Apache-2.0), [Pino](../../../RESOURCES.md#ref-5f05d959) (MIT) | Only via platform Observability/Logging, not a parallel attendance pipeline. |
-| Jobs | [pg-boss](../../../RESOURCES.md#ref-fc345c0f) (MIT) | An *alternative for platform Scheduler/MQ evaluation*, not a Time & Attendance direct dependency. |
+| Database | [node-postgres `pg`](../../../RESOURCES.md#node-postgres--pg) (MIT) | ADR-0012 PostgreSQL pool; capability owns transaction, records, atomic outbox. |
+| Query complexity | [Kysely](../../../RESOURCES.md#kysely) (MIT) | Optional if plain parameterised SQL becomes unwieldy; no second ORM by default. |
+| Contract validation | [Zod](../../../RESOURCES.md#zod) (MIT) | One runtime validator; [Valibot](../../../RESOURCES.md#valibot) or [Ajv](../../../RESOURCES.md#ajv) (MIT) only if a specific alternative is better. |
+| Temporal processing | Existing Clock capability / [Temporal polyfill](../../../RESOURCES.md#js-temporalpolyfill) | Reuse Clock public API, not another time calculation authority. |
+| Accessible data screens | [TanStack Table](../../../RESOURCES.md#tanstack-table) (MIT), optional [Reka UI](../../../RESOURCES.md#reka-ui) (MIT) / [Vue Datepicker](../../../RESOURCES.md#vue-datepicker) (MIT) | Only when the existing UI/Theme Manager does not already supply an adequate control; accessibility must be verified. |
+| Testing | [fast-check](../../../RESOURCES.md#fast-check) (MIT), existing [Playwright](../../../RESOURCES.md#playwright) (Apache-2.0) | Property tests for overlaps/DST/revision/replay; CI/user performs acceptance. |
+| Technical diagnostics | [OpenTelemetry JS](../../../RESOURCES.md#opentelemetry-js) (Apache-2.0), [Pino](../../../RESOURCES.md#pino) (MIT) | Only via platform Observability/Logging, not a parallel attendance pipeline. |
+| Jobs | [pg-boss](../../../RESOURCES.md#pg-boss) (MIT) | An *alternative for platform Scheduler/MQ evaluation*, not a Time & Attendance direct dependency. |
 
-Reject open-core or proprietary attendance platforms and paid scheduler plugins as core dependencies; standard [FullCalendar](../../../RESOURCES.md#ref-bbe12301) is MIT but its premium scheduling plugins are differently licensed. No Redis, Elasticsearch, Neo4j or second data store is justified by this design.
+Reject open-core or proprietary attendance platforms and paid scheduler plugins as core dependencies; standard [FullCalendar](../../../RESOURCES.md#fullcalendar) is MIT but its premium scheduling plugins are differently licensed. No Redis, Elasticsearch, Neo4j or second data store is justified by this design.
 
 ## Conceptual acceptance, completion and handover
 

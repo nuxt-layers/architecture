@@ -17,7 +17,17 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 
 | pageRef | linkAddress | Description |
 | --- | --- | --- |
+| <a id="iso-194402020"></a><a id="194402020"></a><a id="ref-5a452a1d"></a>ISO 19440:2020 | [https://www.iso.org/standard/74491.html](https://www.iso.org/standard/74491.html) | Enterprise modelling constructs for describing organisational structure, operations and implementation domains. |
+| <a id="iso-223012019"></a><a id="ref-85e985cf"></a>ISO 22301:2019 | [https://www.iso.org/standard/75106.html](https://www.iso.org/standard/75106.html) | Requirements for business continuity management systems, including preparation for disruption and recovery. |
+| <a id="iso-8601-12019"></a><a id="8601--wwwisoorgstandard70907html"></a><a id="ref-bea40961"></a>ISO 8601-1:2019 | [https://www.iso.org/standard/70907.html](https://www.iso.org/standard/70907.html) | Basic representations of Gregorian calendar dates, times and UTC offsets for information interchange. |
+| <a id="isoiec-11179-32023"></a><a id="11179--wwwisoorgstandard78915html"></a><a id="ref-a1ff3730"></a>ISO/IEC 11179-3:2023 | [https://www.iso.org/standard/78915.html](https://www.iso.org/standard/78915.html) | Metadata registry conceptual metamodel covering identification, definition, registration, classification and mapping. |
+| <a id="isoiec-270012022"></a><a id="ref-42fa42bb"></a>ISO/IEC 27001:2022 | [https://www.iso.org/standard/27001](https://www.iso.org/standard/27001) | Requirements for establishing, operating and continually improving an information security management system. |
+| <a id="isoiec-270022022"></a><a id="ref-d1765e3f"></a>ISO/IEC 27002:2022 | [https://www.iso.org/standard/75652.html](https://www.iso.org/standard/75652.html) | Information security control objectives and implementation guidance; March 2022 corrected edition. |
+| <a id="isoiec-270172026"></a><a id="ref-48fc8ac4"></a>ISO/IEC 27017:2026 | [https://www.iso.org/standard/27017](https://www.iso.org/standard/27017) | Cloud-specific information security controls and guidance for providers and customers, extending ISO/IEC 27002. |
 | <a id="isoiec-270402024"></a><a id="isoiec-270402024-2"></a><a id="ref-fbbdfd70"></a><a id="ref-e80bacde"></a>ISO/IEC 27040:2024 | [https://www.iso.org/standard/80194.html](https://www.iso.org/standard/80194.html) | Technical requirements and guidance for protecting stored data, storage infrastructure, media and associated management activities. |
+| <a id="isoiec-277012025"></a><a id="ref-b948c1e2"></a>ISO/IEC 27701:2025 | [https://www.iso.org/standard/27701](https://www.iso.org/standard/27701) | Requirements and guidance for privacy information management systems operated by personal information controllers and processors. |
+| <a id="isoiec-9075-12023"></a><a id="isoiec-90752023"></a><a id="ref-b335bb8b"></a>ISO/IEC 9075-1:2023 | [https://www.iso.org/standard/76583.html](https://www.iso.org/standard/76583.html) | SQL conceptual framework, terminology and notation supporting the database language specification series. |
+| <a id="isoiecieee-420102022"></a><a id="420102022"></a><a id="ref-e85f94dc"></a>ISO/IEC/IEEE 42010:2022 | [https://www.iso.org/standard/74393.html](https://www.iso.org/standard/74393.html) | Requirements for architecture descriptions, viewpoints, model kinds and architecture description frameworks. |
 | <a id="nist-sp-800-137"></a><a id="ref-e530b140"></a>NIST SP 800-137 | [https://csrc.nist.gov/pubs/sp/800/137/final](https://csrc.nist.gov/pubs/sp/800/137/final) | Guidance for continuous monitoring of security controls, threats, vulnerabilities and organisational risk. |
 | <a id="nist-sp-800-177-rev-1"></a><a id="ref-5475a9f6"></a>NIST SP 800-177 Rev. 1 | [https://csrc.nist.gov/pubs/sp/800/177/r1/final](https://csrc.nist.gov/pubs/sp/800/177/r1/final) | Guidance for trustworthy email, including domain authentication, transport security and message protection. |
 | <a id="nist-sp-800-209"></a><a id="ref-71d6aa98"></a>NIST SP 800-209 | [https://csrc.nist.gov/pubs/sp/800/209/final](https://csrc.nist.gov/pubs/sp/800/209/final) | Security guidance for storage infrastructure, including access control, isolation, data protection and recovery. |
@@ -299,66 +309,6 @@ root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-6460bcc1"></a>
 
 [IFRS IAS 2 Inventories](https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/) — imported reference; verification pending.
-
-### ISO/IEC 27001:2022
-
-<a id="ref-42fa42bb"></a>
-
-[ISO/IEC 27001:2022](https://www.iso.org/standard/27001) — imported reference; verification pending.
-
-### ISO/IEC 27017:2026
-
-<a id="ref-48fc8ac4"></a>
-
-[ISO/IEC 27017:2026](https://www.iso.org/standard/27017) — imported reference; verification pending.
-
-### ISO/IEC 27701:2025
-
-<a id="ref-b948c1e2"></a>
-
-[ISO/IEC 27701:2025](https://www.iso.org/standard/27701) — imported reference; verification pending.
-
-### 8601 — www.iso.org/standard/70907.html
-
-<a id="ref-bea40961"></a>
-
-[8601](https://www.iso.org/standard/70907.html) — imported reference; verification pending.
-
-### 42010:2022
-
-<a id="ref-e85f94dc"></a>
-
-[42010:2022](https://www.iso.org/standard/74393.html) — imported reference; verification pending.
-
-### 19440:2020
-
-<a id="ref-5a452a1d"></a>
-
-[19440:2020](https://www.iso.org/standard/74491.html) — imported reference; verification pending.
-
-### ISO 22301:2019
-
-<a id="ref-85e985cf"></a>
-
-[ISO 22301:2019](https://www.iso.org/standard/75106.html) — imported reference; verification pending.
-
-### ISO/IEC 27002:2022
-
-<a id="ref-d1765e3f"></a>
-
-[ISO/IEC 27002:2022](https://www.iso.org/standard/75652.html) — imported reference; verification pending.
-
-### ISO/IEC 9075:2023
-
-<a id="ref-b335bb8b"></a>
-
-[ISO/IEC 9075:2023](https://www.iso.org/standard/76583.html) — imported reference; verification pending.
-
-### 11179 — www.iso.org/standard/78915.html
-
-<a id="ref-a1ff3730"></a>
-
-[11179](https://www.iso.org/standard/78915.html) — imported reference; verification pending.
 
 ### UK NCSC Cloud Security Principles
 

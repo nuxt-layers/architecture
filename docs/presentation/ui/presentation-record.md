@@ -4,7 +4,7 @@
 
 **Capability:** `ui` · **Class:** presentation artefact · **Conceptual status:** Owner-approved, 23 November 2026; implementation and acceptance evidence outstanding. **Review:** draft PR #146.
 
-**Authority:** [Accepted ADR-0009](../../decisions/ADR-0009-headless-capability-layers.md) (presentation), [ADR-0011](../../decisions/ADR-0011-shared-rich-text-and-configurable-copy.md) (safe rich text), [ADR-0012](../../decisions/ADR-0012-trivial-composition.md) (consumer contract/composition) and the [normative presentation standard](../../presentation.md). This blueprint does not supersede accepted governance or prove runtime compliance.
+**Authority:** [Accepted ADR-0009](../../decisions/ADR-0009-headless-capability-layers.md) (presentation), [ADR-0011](../../decisions/ADR-0011-shared-rich-text-and-configurable-copy.md) (safe rich text), [ADR-0012](../../decisions/ADR-0012-trivial-composition.md) (consumer contract/composition) and the [normative presentation standard](../../standards/presentation-standard.md). This blueprint does not supersede accepted governance or prove runtime compliance.
 
 ## Purpose, ownership and exclusions
 

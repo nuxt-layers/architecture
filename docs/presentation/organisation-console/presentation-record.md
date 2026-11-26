@@ -6,7 +6,7 @@
 **Classification:** Reusable **presentation/application composition**, not an independently data-owning capability.  
 **Decision:** **OC-01 approved, 22 November 2026:** compose from the host's existing `ui`, Theme Manager and domain-owned presentation. Do **not** create a separate package or Nuxt `extends` dependency without demonstrated cross-host reuse, an independent presentation contract and renewed approval.  
 **Status:** **Conceptual design owner-approved** (name/purpose, classification, proposed public presentation responsibilities, cooperation, security, standards, OSS-selection principles and GUI). **Not implemented:** No separately published Organisation Console root `CONTRACT.md`, independent implementation or acceptance evidence verified. This blueprint is non-normative.  
-**Authority:** [Capability Standard](../../capability-standard.md), [Presentation](../../presentation.md), [Security](../../security.md) and accepted ADR-0009, ADR-0012, ADR-0016, ADR-0017, ADR-0018. Baseline: governing `master` `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint `master` `361566988ac53c55f6135e8acfa46cd5b013d7a0`. The accepted hierarchy takes precedence over this record.
+**Authority:** [Capability Standard](../../standards/capability-standard.md), [Presentation](../../standards/presentation-standard.md), [Security](../../standards/security-standard.md) and accepted ADR-0009, ADR-0012, ADR-0016, ADR-0017, ADR-0018. Baseline: governing `master` `d7f7c2ee051244b8c81325f5ff1267568d99aab1`; blueprint `master` `361566988ac53c55f6135e8acfa46cd5b013d7a0`. The accepted hierarchy takes precedence over this record.
 
 ## Purpose and authority
 

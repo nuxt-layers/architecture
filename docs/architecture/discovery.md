@@ -8,7 +8,7 @@ The [catalogue](../catalogue.md) and [architecture index](../architecture-index.
 
 ## Machine-readable definition
 
-Use the proposed centrally versioned JSON Schema Draft 2020-12 and root artefact.json after governing adoption. Until then retain required Nuxt capability.json and published CONTRACT.md/package exports for non-Nuxt artefacts. Do not create a competing blueprint schema. Descriptor metadata must agree with contracts; package.json owns installation dependencies. Conceptual entries need not imply published packages. Contract IDs/versions, required/optional providers, stable identities and separate inheritance edges support validation, not installation or access.
+Use the adopted centrally versioned JSON Schema Draft 2020-12 for conceptual software artefact descriptors. Governing architectural definitions and the infrastructure specification remain Markdown documents outside the descriptor inventory. Retain required Nuxt capability.json and published CONTRACT.md/package exports until implementation compatibility migration is separately approved. Do not create a competing blueprint schema. Descriptor metadata must agree with contracts; package.json owns installation dependencies. Conceptual entries need not imply published packages. Contract IDs/versions, required/optional providers, stable identities and separate inheritance edges support validation, not installation or access.
 
 ## Application discovery (CD-01–08)
 
@@ -27,7 +27,7 @@ Discovery cannot install code, register routes automatically, execute untrusted 
 - Anonymous users see only owner-approved public content.
 - Inventory reports contract provenance and uncertainty without claiming runtime verification.
 
-CD-01/03/04/06/07/08 are now aligned with the approved discovery direction; CD-02's earlier no-universal-schema recommendation is superseded by the approved schema proposal, not by accepted governance yet. CD-05 remains accepted ADR-0016. Exact descriptor compatibility and implementation acceptance remain outstanding. Potential independent model/metamodel definitions, procedure/case responsibilities and BPMN/DMN/CMMN/flowchart support require separate ownership evidence; do not infer new packages from discovery.
+CD-01/03/04/06/07/08 are now aligned with the approved discovery direction; CD-02's earlier no-universal-schema recommendation is superseded by the adopted conceptual schema. CD-05 remains accepted ADR-0016. Exact descriptor compatibility and implementation acceptance remain outstanding. Potential independent model/metamodel definitions, procedure/case responsibilities and BPMN/DMN/CMMN/flowchart support require separate ownership evidence; do not infer new packages from discovery.
 
 ## FAC-10 — Conceptual dependency evidence and validation
 

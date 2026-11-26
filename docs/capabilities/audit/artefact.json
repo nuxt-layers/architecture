@@ -124,16 +124,6 @@
       "rationale": "Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate."
     },
     {
-      "target": "infrastructure",
-      "type": "information-exchange",
-      "rationale": "Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate."
-    },
-    {
-      "target": "persistence",
-      "type": "information-exchange",
-      "rationale": "Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate."
-    },
-    {
       "target": "logging",
       "type": "information-exchange",
       "rationale": "Diagnostics, safe error projection, derived reporting, search and rendering do not substitute for accountable custody."
@@ -354,11 +344,6 @@
       "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
     },
     {
-      "target": "organisation-model",
-      "type": "information-exchange",
-      "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
-    },
-    {
       "target": "process",
       "type": "information-exchange",
       "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
@@ -457,11 +442,6 @@
       "target": "seo",
       "type": "information-exchange",
       "rationale": "Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation."
-    },
-    {
-      "target": "application-composition",
-      "type": "information-exchange",
-      "rationale": "Optional host-mounted Audit presentation remains separate from headless evidence custody."
     }
   ],
   "governingDecisions": [

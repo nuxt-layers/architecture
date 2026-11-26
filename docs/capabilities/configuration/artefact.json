@@ -69,16 +69,6 @@
       "rationale": "Cooperate through source-owned public boundaries; see canonical record."
     },
     {
-      "target": "infrastructure",
-      "type": "information-exchange",
-      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
-    },
-    {
-      "target": "organisation-model",
-      "type": "information-exchange",
-      "rationale": "Cooperate through source-owned public boundaries; see canonical record."
-    },
-    {
       "target": "message-queue",
       "type": "information-exchange",
       "rationale": "Cooperate through source-owned public boundaries; see canonical record."

@@ -29,11 +29,6 @@
   "requires": [],
   "relationships": [
     {
-      "target": "application-composition",
-      "type": "information-exchange",
-      "rationale": "Source-owned public cooperation; see canonical record."
-    },
-    {
       "target": "ui",
       "type": "information-exchange",
       "rationale": "Source-owned public cooperation; see canonical record."

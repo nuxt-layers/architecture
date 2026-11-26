@@ -78,3 +78,23 @@ Before implementation acceptance, require a complete per-selected-host manifest 
 ### Unresolved matters
 
 - Selected-host contract, package and extension graphs: Actual dependencies and compatibility require implemented contract and host evidence; conceptual information exchanges do not prove them.
+
+## Software artefact references to governing and operational specifications
+
+These are architectural relationships, not software dependencies.
+
+- [accounting](../capabilities/accounting/capability-record.md) → [persistence](../architecture/persistence.md): Accounting owns its schema, transactions and outbox; host supplies resources.
+- [api-gateway](../compositions/api-gateway/compositions-record.md) → [application-composition](../architecture/application-composition.md): Host-owned external API exposure composition.
+- [api-gateway](../compositions/api-gateway/compositions-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [audit](../capabilities/audit/capability-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate.
+- [audit](../capabilities/audit/capability-record.md) → [persistence](../architecture/persistence.md): Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate.
+- [audit](../capabilities/audit/capability-record.md) → [organisation-model](../architecture/organisation-model.md): Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation.
+- [audit](../capabilities/audit/capability-record.md) → [application-composition](../architecture/application-composition.md): Optional host-mounted Audit presentation remains separate from headless evidence custody.
+- [caching](../services/caching/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [clock](../services/clock/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [configuration](../capabilities/configuration/capability-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Cooperate through source-owned public boundaries; see canonical record.
+- [configuration](../capabilities/configuration/capability-record.md) → [organisation-model](../architecture/organisation-model.md): Cooperate through source-owned public boundaries; see canonical record.
+- [gaming](../compositions/gaming/compositions-record.md) → [application-composition](../architecture/application-composition.md): Source-owned public cooperation; see canonical record.
+- [iam-integration](../compositions/iam-integration/compositions-record.md) → [application-composition](../architecture/application-composition.md): Source-owned public cooperation; see canonical record.
+- [message-queue](../services/message-queue/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [observability](../services/observability/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.

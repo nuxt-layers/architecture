@@ -207,11 +207,6 @@
       "target": "checkout",
       "type": "information-exchange",
       "rationale": "Source-owned commercial or project evidence may inform recognition, never automatic posting."
-    },
-    {
-      "target": "persistence",
-      "type": "information-exchange",
-      "rationale": "Accounting owns its schema, transactions and outbox; host supplies resources."
     }
   ],
   "governingDecisions": [

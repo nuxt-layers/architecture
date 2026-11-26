@@ -102,7 +102,7 @@ These are directional, host-composed public contracts, not circular package impo
 | **W3C Verifiable Credentials 2.0** (optional) | Qualified issuer evidence exchanged via Verification, not a universal KYB mandate |
 | **UK GDPR/ICO, UK Online Safety Act and consumer/product rules; EU GDPR, Digital Services Act, General Product Safety Regulation, European accessibility requirements** | **Conditional legislation, not technical standards.** Legal Compliance establishes whether each obligation applies by jurisdiction, product type, platform role and effective date; no universal compliance assertion |
 
-Reference specifications: [W3C WCAG](../../../RESOURCES.md#ref-0d1f555e), [OWASP ASVS](../../../RESOURCES.md#ref-5303bf5b), [GS1](../../../RESOURCES.md#ref-cfd8716d), [Schema.org](../../../RESOURCES.md#ref-eeffaa51), [OpenAPI](../../../RESOURCES.md#ref-da6a3c81), [RFC 9457](../../../RESOURCES.md#ref-7754416d), [CloudEvents](../../../RESOURCES.md#ref-de31eb79), [ISO 27001](../../../RESOURCES.md#ref-42fa42bb), [EU DSA](../../../RESOURCES.md#ref-744b86ab) and [EU GPSR](../../../RESOURCES.md#ref-7dded1f0). Recheck effective editions/harmonisation before implementation. This list is a conceptual interoperability and applicability reference, not proof of certification or legal conformity.
+Reference specifications: [W3C WCAG](../../../RESOURCES.md#w3c-wcag-22), [OWASP ASVS](../../../RESOURCES.md#owasp-asvs), [GS1](../../../RESOURCES.md#gs1), [Schema.org](../../../RESOURCES.md#schemaorg), [OpenAPI](../../../RESOURCES.md#openapi), [RFC 9457](../../../RESOURCES.md#rfc-9457-3), [CloudEvents](../../../RESOURCES.md#cloudevents), [ISO 27001](../../../RESOURCES.md#isoiec-270012022), [EU DSA](../../../RESOURCES.md#eu-dsa) and [EU GPSR](../../../RESOURCES.md#eu-gpsr). Recheck effective editions/harmonisation before implementation. This list is a conceptual interoperability and applicability reference, not proof of certification or legal conformity.
 
 ## Open-source library selection — approved options, not dependencies
 
@@ -110,20 +110,20 @@ Require **complete publicly available required source**, mature active maintenan
 
 | Function | Candidate and licence | Selection |
 |---|---|---|
-| TypeScript runtime validation | [Zod](../../../RESOURCES.md#ref-1e3efac4) — MIT | Preferred where common validation is not already provided |
-| Dynamic JSON Schema validation | [Ajv](../../../RESOURCES.md#ref-a164796d) — MIT | Conditional, for externally defined/category schemas |
-| Marketplace-owned PostgreSQL access | [Kysely](../../../RESOURCES.md#ref-af839a5b) — MIT **or** [Drizzle ORM](../../../RESOURCES.md#ref-03cb5387) — Apache-2.0 | Choose one after platform convention check, not both by default |
-| Exact commercial decimal values | [decimal.js](../../../RESOURCES.md#ref-992a7688) — MIT | Conditional; Billing retains assessed-charge maths |
-| Optional tables and charts | [TanStack Table](../../../RESOURCES.md#ref-af94a8b1) — MIT; [Apache ECharts](../../../RESOURCES.md#ref-1aa1e4a8) — Apache-2.0 | Presentation only, with accessible text/table equivalents |
-| File type hint | [file-type](../../../RESOURCES.md#ref-e88cf18e) — MIT | Advisory only; Media/Content Security own content safety |
-| Existing infrastructure | [PostgreSQL](../../../RESOURCES.md#ref-fa79609e) — permissive PostgreSQL licence | Preferred Marketplace transactional storage and outbox |
-| Optional Search-owned engine | [OpenSearch](../../../RESOURCES.md#ref-133dccf8) — Apache-2.0 | Not a Marketplace-owned service; use Search's selected provider |
+| TypeScript runtime validation | [Zod](../../../RESOURCES.md#zod) — MIT | Preferred where common validation is not already provided |
+| Dynamic JSON Schema validation | [Ajv](../../../RESOURCES.md#ajv) — MIT | Conditional, for externally defined/category schemas |
+| Marketplace-owned PostgreSQL access | [Kysely](../../../RESOURCES.md#kysely) — MIT **or** [Drizzle ORM](../../../RESOURCES.md#drizzle-orm) — Apache-2.0 | Choose one after platform convention check, not both by default |
+| Exact commercial decimal values | [decimal.js](../../../RESOURCES.md#decimaljs) — MIT | Conditional; Billing retains assessed-charge maths |
+| Optional tables and charts | [TanStack Table](../../../RESOURCES.md#tanstack-table) — MIT; [Apache ECharts](../../../RESOURCES.md#apache-echarts) — Apache-2.0 | Presentation only, with accessible text/table equivalents |
+| File type hint | [file-type](../../../RESOURCES.md#sindresorhusfile-type) — MIT | Advisory only; Media/Content Security own content safety |
+| Existing infrastructure | [PostgreSQL](../../../RESOURCES.md#postgresql) — permissive PostgreSQL licence | Preferred Marketplace transactional storage and outbox |
+| Optional Search-owned engine | [OpenSearch](../../../RESOURCES.md#opensearch) — Apache-2.0 | Not a Marketplace-owned service; use Search's selected provider |
 
 Do **not** use Vendure (GPLv3) as a permissively licensed foundation, or presume that Medusa/Meilisearch enterprise-gated offerings meet the user's strict complete-source criterion. Do not introduce Redis, Elasticsearch, Neo4j or another partial-core/source-available product to meet a dependency. Do not add a second order, payment, reporting, IAM, search or workflow system. The shortlist does not mandate installation of any item.
 
 ## Advisory GUI and representative host
 
-Marketplace benefits from **optional GUI screens** while remaining headless. The verified [application test template](../../../RESOURCES.md#ref-f1f7cc47) provides host-owned `/`, `/admin`, an expandable **Capabilities** sidebar with **Theme Manager → /theme-manager**, responsive mobile navigation, top bar and Theme Manager semantic styling. A derived test consumer may add **Marketplace → /marketplace** as a sibling entry, without copying the shell or importing private layer paths. The host owns menus, routing, branding, current venue/seller context and real IAM; Marketplace supplies permission-checked screen/data contributions. Theme Manager's `test` mode is **unauthenticated and local-only**, not production access. Its current root `CONTRACT.md` notes a public-production-composition blocker; do not copy internal providers.
+Marketplace benefits from **optional GUI screens** while remaining headless. The verified [application test template](../../../RESOURCES.md#application-test-template) provides host-owned `/`, `/admin`, an expandable **Capabilities** sidebar with **Theme Manager → /theme-manager**, responsive mobile navigation, top bar and Theme Manager semantic styling. A derived test consumer may add **Marketplace → /marketplace** as a sibling entry, without copying the shell or importing private layer paths. The host owns menus, routing, branding, current venue/seller context and real IAM; Marketplace supplies permission-checked screen/data contributions. Theme Manager's `test` mode is **unauthenticated and local-only**, not production access. Its current root `CONTRACT.md` notes a public-production-composition blocker; do not copy internal providers.
 
 | Screen family (advisory) | User task and contract |
 |---|---|

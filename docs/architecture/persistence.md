@@ -179,3 +179,26 @@ These are **design acceptance requirements**, not executed test results.
 **Conceptually complete for the approved classification:** PERS-01–03, authority and exclusions, owner/host public handover, reciprocal relationships, security, lifecycle and failure, standards, eligible complete-source permissive libraries, GUI disposition and acceptance criteria. No independent Persistence `capability-record.md` or `CONTRACT.md` should be regenerated: the approved directory retirement is intentional.
 
 **Not an implementation/merge sign-off:** check each actual capability root `CONTRACT.md`, host integration, version-pinned licence/SBOM, PostgreSQL 18/driver/extension/pool semantics, tenant/RLS/migration/outbox and backup/restore tests through user/CI; reconcile concurrent conceptual PRs; re-check latest governing/blueprint masters, protected checks and conflicts. This architectural reference does not change normative ADRs or prove compliance. Keep the review PR draft and unmerged until separately authorised.
+
+## Architectural relationships
+
+- [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Infrastructure supplies validated resources and operates provider recovery; source owners validate restored invariants.
+- [application-composition](application-composition.md): Host supplies scoped provider connections through documented ports.
+- [identity](../capabilities/identity/capability-record.md): Protected owner operations use trusted scope, assurance and access decisions.
+- [authentication](../capabilities/authentication/capability-record.md): Protected owner operations use trusted scope, assurance and access decisions.
+- [authorisation](../capabilities/authorisation/capability-record.md): Protected owner operations use trusted scope, assurance and access decisions.
+- [configuration](../capabilities/configuration/capability-record.md): Effective settings and canonical time semantics remain independently owned.
+- [clock](../services/clock/services-record.md): Effective settings and canonical time semantics remain independently owned.
+- [privacy](../capabilities/privacy/capability-record.md): Applicable rights, retention, holds and personal-data authority remain separate.
+- [legal-compliance](../capabilities/legal-compliance/capability-record.md): Applicable rights, retention, holds and personal-data authority remain separate.
+- [profile](../capabilities/profile/capability-record.md): Applicable rights, retention, holds and personal-data authority remain separate.
+- [storage](../services/storage/services-record.md): File and byte operations preserve source ownership.
+- [media](../capabilities/media/capability-record.md): File and byte operations preserve source ownership.
+- [caching](../services/caching/services-record.md): Derived projections, invalidation and erasure do not establish source truth.
+- [search](../services/search/services-record.md): Derived projections, invalidation and erasure do not establish source truth.
+- [message-queue](../services/message-queue/services-record.md): Transport delivers source-owned outbox entries without owning events.
+- [error-normalisation](../libraries/error-normalisation/stateless-library-record.md): Independent error, diagnostic, evidence and reporting boundaries; no shared persistence API.
+- [logging](../services/logging/services-record.md): Independent error, diagnostic, evidence and reporting boundaries; no shared persistence API.
+- [audit](../capabilities/audit/capability-record.md): Independent error, diagnostic, evidence and reporting boundaries; no shared persistence API.
+- [reporting](../capabilities/reporting/capability-record.md): Independent error, diagnostic, evidence and reporting boundaries; no shared persistence API.
+- [observability](../services/observability/services-record.md): Independent error, diagnostic, evidence and reporting boundaries; no shared persistence API.

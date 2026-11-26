@@ -4,7 +4,7 @@
 
 ## Relied on
 
-- [Blueprint PR #39 merged revision](https://github.com/nuxt-layers/architecture/tree/a5a61330722a72792a20a1976f3a305d29f1bb93): historical decision provenance for ADR-0017 and ADR-0018, not a current conceptual specification. The original proposal and review paths are historical; use the accepted ADRs for governing requirements.
+- Current governing requirements for tenant governance and commercial entitlements are defined in [ADR-0017](docs/decisions/ADR-0017-tenant-hierarchy-and-accountable-digital-control.md) and [ADR-0018](docs/decisions/ADR-0018-policy-governance-and-commercial-entitlements.md).
 
 Add further references only after confirming that the target repository, revision and file are accessible.
 

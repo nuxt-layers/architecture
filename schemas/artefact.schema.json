@@ -28,9 +28,7 @@
             "library",
             "adapter",
             "presentation",
-            "architecture",
-            "service",
-            "infrastructure"
+            "service"
           ]
         },
         "subtype": {
@@ -296,29 +294,6 @@
         {
           "if": {
             "properties": {
-              "kind": {
-                "const": "architecture"
-              }
-            },
-            "required": [
-              "kind"
-            ]
-          },
-          "then": {
-            "properties": {
-              "subtype": {
-                "enum": [
-                  "governance",
-                  "operational-role",
-                  "archetype"
-                ]
-              }
-            }
-          }
-        },
-        {
-          "if": {
-            "properties": {
               "subtype": {
                 "const": "stateless"
               }
@@ -417,32 +392,6 @@
               }
             }
           }
-        },
-        {
-          "if": {
-            "properties": {
-              "kind": {
-                "const": "infrastructure"
-              }
-            },
-            "required": [
-              "kind"
-            ]
-          },
-          "then": {
-            "properties": {
-              "subtype": {
-                "const": "deployment"
-              },
-              "ownership": {
-                "enum": [
-                  "none",
-                  "configuration",
-                  "technical"
-                ]
-              }
-            }
-          }
         }
       ]
     },
@@ -472,9 +421,7 @@
             "library",
             "adapter",
             "presentation",
-            "architecture",
-            "service",
-            "infrastructure"
+            "service"
           ]
         },
         "subtype": {
@@ -641,7 +588,7 @@
         },
         "designRecord": {
           "type": "string",
-          "pattern": "^docs/(?:architecture/[a-z0-9-]+\\.md|(?:architecture|capabilities|compositions|infrastructure|libraries|presentation|services|adapters)/[a-z0-9-]+/[a-z0-9-]+\\.md)$"
+          "pattern": "^docs/(?:capabilities|compositions|libraries|presentation|services|adapters)/[a-z0-9-]+/[a-z0-9-]+\\.md$"
         },
         "aliases": {
           "type": "array",
@@ -854,29 +801,6 @@
         {
           "if": {
             "properties": {
-              "kind": {
-                "const": "architecture"
-              }
-            },
-            "required": [
-              "kind"
-            ]
-          },
-          "then": {
-            "properties": {
-              "subtype": {
-                "enum": [
-                  "governance",
-                  "operational-role",
-                  "archetype"
-                ]
-              }
-            }
-          }
-        },
-        {
-          "if": {
-            "properties": {
               "subtype": {
                 "const": "stateless"
               }
@@ -954,32 +878,6 @@
               }
             }
           }
-        },
-        {
-          "if": {
-            "properties": {
-              "kind": {
-                "const": "infrastructure"
-              }
-            },
-            "required": [
-              "kind"
-            ]
-          },
-          "then": {
-            "properties": {
-              "subtype": {
-                "const": "deployment"
-              },
-              "ownership": {
-                "enum": [
-                  "none",
-                  "configuration",
-                  "technical"
-                ]
-              }
-            }
-          }
         }
       ]
     },
@@ -1009,9 +907,7 @@
             "library",
             "adapter",
             "presentation",
-            "architecture",
-            "service",
-            "infrastructure"
+            "service"
           ]
         },
         "subtype": {
@@ -1283,29 +1179,6 @@
         {
           "if": {
             "properties": {
-              "kind": {
-                "const": "architecture"
-              }
-            },
-            "required": [
-              "kind"
-            ]
-          },
-          "then": {
-            "properties": {
-              "subtype": {
-                "enum": [
-                  "governance",
-                  "operational-role",
-                  "archetype"
-                ]
-              }
-            }
-          }
-        },
-        {
-          "if": {
-            "properties": {
               "subtype": {
                 "const": "stateless"
               }
@@ -1401,32 +1274,6 @@
             "properties": {
               "subtype": {
                 "const": "service"
-              }
-            }
-          }
-        },
-        {
-          "if": {
-            "properties": {
-              "kind": {
-                "const": "infrastructure"
-              }
-            },
-            "required": [
-              "kind"
-            ]
-          },
-          "then": {
-            "properties": {
-              "subtype": {
-                "const": "deployment"
-              },
-              "ownership": {
-                "enum": [
-                  "none",
-                  "configuration",
-                  "technical"
-                ]
               }
             }
           }

@@ -8,7 +8,7 @@ The [catalogue](../catalogue.md) and [architecture index](../architecture-index.
 
 ## Machine-readable definition
 
-Use the proposed centrally versioned JSON Schema Draft 2020-12 and root artefact.json after governing adoption. Until then retain required Nuxt capability.json and published CONTRACT.md/package exports for non-Nuxt artefacts. Do not create a competing blueprint schema. Descriptor metadata must agree with contracts; package.json owns installation dependencies. Conceptual entries need not imply published packages. Contract IDs/versions, required/optional providers, stable identities and separate inheritance edges support validation, not installation or access.
+Use the adopted centrally versioned JSON Schema Draft 2020-12 for conceptual software artefact descriptors. Governing architectural definitions and the infrastructure specification remain Markdown documents outside the descriptor inventory. Retain required Nuxt capability.json and published CONTRACT.md/package exports until implementation compatibility migration is separately approved. Do not create a competing blueprint schema. Descriptor metadata must agree with contracts; package.json owns installation dependencies. Conceptual entries need not imply published packages. Contract IDs/versions, required/optional providers, stable identities and separate inheritance edges support validation, not installation or access.
 
 ## Application discovery (CD-01–08)
 
@@ -27,11 +27,11 @@ Discovery cannot install code, register routes automatically, execute untrusted 
 - Anonymous users see only owner-approved public content.
 - Inventory reports contract provenance and uncertainty without claiming runtime verification.
 
-CD-01/03/04/06/07/08 are now aligned with the approved discovery direction; CD-02's earlier no-universal-schema recommendation is superseded by the approved schema proposal, not by accepted governance yet. CD-05 remains accepted ADR-0016. Exact descriptor compatibility and implementation acceptance remain outstanding. Potential independent model/metamodel definitions, procedure/case responsibilities and BPMN/DMN/CMMN/flowchart support require separate ownership evidence; do not infer new packages from discovery.
+CD-01/03/04/06/07/08 are now aligned with the approved discovery direction; CD-02's earlier no-universal-schema recommendation is superseded by the adopted conceptual schema. CD-05 remains accepted ADR-0016. Exact descriptor compatibility and implementation acceptance remain outstanding. Potential independent model/metamodel definitions, procedure/case responsibilities and BPMN/DMN/CMMN/flowchart support require separate ownership evidence; do not infer new packages from discovery.
 
 ## FAC-10 — Conceptual dependency evidence and validation
 
-The primary catalogue/register index all 99 canonical nodes. This is a conceptual graph, not a lockfile or declaration of delivered package dependencies. The record review identified the following specific required contract/implementation edges; the direction is consumer → provider.
+The catalogue and index identify 93 software artefacts; the five governing architectural definitions and infrastructure specification are documented separately. This is a conceptual graph, not a lockfile or declaration of delivered package dependencies. The record review identified the following specific required contract/implementation edges; the direction is consumer → provider.
 
 | Consumer | Provider | Evidence / edge type |
 |---|---|---|
@@ -42,7 +42,7 @@ The primary catalogue/register index all 99 canonical nodes. This is a conceptua
 | iam-integration | profile | required member contract |
 | export | rich-text | required safe-tree input contract |
 
-All endpoints exist in the inventory; the above explicit subgraph was checked by depth-first traversal across 99 nodes and has no directed cycle. No mandatory Nuxt inheritance edge was established by this conceptual review. This does **not** prove the eventual combined package/extension graph acyclic. Unlisted nodes have no extracted fixed edge in this limited subgraph, not a claim that they have no dependencies.
+All endpoints exist in the inventory; the above explicit subgraph was checked by depth-first traversal across the former conceptual inventory and has no directed cycle. No mandatory Nuxt inheritance edge was established by this conceptual review. This does **not** prove the eventual combined package/extension graph acyclic. Unlisted nodes have no extracted fixed edge in this limited subgraph, not a claim that they have no dependencies.
 
 ### Host-bound operation dependencies
 
@@ -66,3 +66,44 @@ The host declares and validates selected providers for each operation: trusted c
 IAM bootstrap must use separately authorised host operations, not require a normal authenticated session to establish the first principal. Revocation and evidence receipt must not synchronously depend on their own source change; use source outbox and bounded reconciliation. Audit capture rules distinguish required durable evidence from independent custody acknowledgement; no recursive Audit-of-Audit call chain. Workflow and source transitions use version-bound outcomes rather than each waiting for the other's commit. Billing/Invoice/Accounting acknowledgements and Privacy disposition receipts are asynchronous or independently read back; deduplicate by source revision and operation identity. Event feedback loops require explicit causation, consumer-effect deduplication, bounded retries and termination conditions.
 
 Before implementation acceptance, require a complete per-selected-host manifest of actual required/optional contract IDs and versions, provider bindings, package imports and Nuxt extends; reject unknown mandatory providers, incompatible versions and combined cycles. Validate bootstrapping, synchronous calls and event feedback separately. No root implementation contracts were re-audited for this conceptual pass, so full package/extension and runtime validation remains an explicit acceptance gate rather than a claimed result.
+
+## Architectural relationships
+
+- [application-composition](application-composition.md): Host generates inventory from explicitly selected trusted artefacts.
+- [identity](../capabilities/identity/capability-record.md): Discovery must distinguish refusal-only operation and trusted identity context.
+- [authorisation](../capabilities/authorisation/capability-record.md): Per-operation permission remains independently evaluated.
+- [publisher](../capabilities/publisher/capability-record.md): Document-type registration remains source-owned.
+- [configuration](../capabilities/configuration/capability-record.md): Declarations and effective values remain source-owned.
+
+### Unresolved matters
+
+- Selected-host contract, package and extension graphs: Actual dependencies and compatibility require implemented contract and host evidence; conceptual information exchanges do not prove them.
+
+## Software artefact references to governing and operational specifications
+
+These are architectural relationships, not software dependencies.
+
+- [accounting](../capabilities/accounting/capability-record.md) → [persistence](../architecture/persistence.md): Accounting owns its schema, transactions and outbox; host supplies resources.
+- [api-gateway](../compositions/api-gateway/compositions-record.md) → [application-composition](../architecture/application-composition.md): Host-owned external API exposure composition.
+- [api-gateway](../compositions/api-gateway/compositions-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [audit](../capabilities/audit/capability-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate.
+- [audit](../capabilities/audit/capability-record.md) → [persistence](../architecture/persistence.md): Source outbox transport and provider custody are distinct from Audit acceptance; qualified evidence and recovery boundaries remain separate.
+- [audit](../capabilities/audit/capability-record.md) → [organisation-model](../architecture/organisation-model.md): Record documents reciprocal risk-selected source evidence or scoped evidence consumption; source authority remains independent. Specific operation and capture tier require reconciliation.
+- [audit](../capabilities/audit/capability-record.md) → [application-composition](../architecture/application-composition.md): Optional host-mounted Audit presentation remains separate from headless evidence custody.
+- [caching](../services/caching/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [clock](../services/clock/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [configuration](../capabilities/configuration/capability-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Cooperate through source-owned public boundaries; see canonical record.
+- [configuration](../capabilities/configuration/capability-record.md) → [organisation-model](../architecture/organisation-model.md): Cooperate through source-owned public boundaries; see canonical record.
+- [gaming](../compositions/gaming/compositions-record.md) → [application-composition](../architecture/application-composition.md): Source-owned public cooperation; see canonical record.
+- [iam-integration](../compositions/iam-integration/compositions-record.md) → [application-composition](../architecture/application-composition.md): Source-owned public cooperation; see canonical record.
+- [message-queue](../services/message-queue/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [observability](../services/observability/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [office](../compositions/office/compositions-record.md) → [organisation-model](../architecture/organisation-model.md): Office is a selected organisational archetype.
+- [organisation-console](../presentation/organisation-console/presentation-record.md) → [organisation-model](../architecture/organisation-model.md): Source-owned public cooperation; see canonical record.
+- [organisation-console](../presentation/organisation-console/presentation-record.md) → [application-composition](../architecture/application-composition.md): Optional host-mounted organisational presentation.
+- [page-builder](../presentation/page-builder/presentation-record.md) → [application-composition](../architecture/application-composition.md): Source-owned public cooperation; see canonical record.
+- [scheduler](../services/scheduler/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [site-hosting](../services/site-hosting/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [storage](../services/storage/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [temporal-gateway](../adapters/temporal-gateway/adapters-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [theme-manager](../presentation/theme-manager/presentation-record.md) → [application-composition](../architecture/application-composition.md): Source-owned public cooperation; see canonical record.

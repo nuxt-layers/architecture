@@ -144,3 +144,18 @@ Infrastructure/host retains privileged ingress, DNS connectivity, reverse proxy,
 Infrastructure owns provisioning, secrets, environment isolation, region-approved S3 buckets, credential rotation and operational provider readiness. Storage owns the public byte-service semantics, technical integrity checks, scoped usage and object-level restore/reconcile outcomes. Object backup is not PostgreSQL, Temporal or infrastructure disaster-recovery ownership. The published four-bucket/30-day backup description is not evidence of actual backup verification; missing restore checkpoints must show unknown. See [Storage's idealised public contract](../../services/storage/services-record.md). Storage design directions STO-01–07 are owner-approved; published implementation contracts and this capability's independent review are unchanged.
 
 **Storage conceptual approval, 23 November 2026:** STO-01–07 approved: Infrastructure continues to provision S3 resources, credentials, regional controls and deployment/backups beyond object custody; Storage owns object-level recovery, verified deletion/restore replay and technical usage/admission. Provider recovery metrics and published 30-day backup claims require operational verification; no implementation change or merge approval implied.
+
+## Architectural relationships
+
+- [persistence](../../architecture/persistence.md): Source-owned public cooperation; see canonical record.
+- [application-composition](../../architecture/application-composition.md): Source-owned public cooperation; see canonical record.
+- [temporal-gateway](../../adapters/temporal-gateway/adapters-record.md): Source-owned public cooperation; see canonical record.
+- [clock](../../services/clock/services-record.md): Source-owned public cooperation; see canonical record.
+- [site-hosting](../../services/site-hosting/services-record.md): Source-owned public cooperation; see canonical record.
+
+### Operational responsibilities
+
+- environment-provisioning: environment provisioning within the stated ownership boundary.
+- provider-connection: provider connection within the stated ownership boundary.
+- operational-readiness: operational readiness within the stated ownership boundary.
+- backup-recovery: backup recovery within the stated ownership boundary.

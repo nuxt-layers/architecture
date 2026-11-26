@@ -63,11 +63,6 @@
       "rationale": "Source-owned public cooperation; see canonical record."
     },
     {
-      "target": "organisation-model",
-      "type": "information-exchange",
-      "rationale": "Source-owned public cooperation; see canonical record."
-    },
-    {
       "target": "subscription",
       "type": "information-exchange",
       "rationale": "Source-owned public cooperation; see canonical record."
@@ -86,11 +81,6 @@
       "target": "reporting",
       "type": "information-exchange",
       "rationale": "Source-owned public cooperation; see canonical record."
-    },
-    {
-      "target": "application-composition",
-      "type": "composition",
-      "rationale": "Optional host-mounted organisational presentation."
     },
     {
       "target": "authentication",

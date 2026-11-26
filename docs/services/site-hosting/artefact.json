@@ -34,11 +34,6 @@
   "requires": [],
   "relationships": [
     {
-      "target": "infrastructure",
-      "type": "information-exchange",
-      "rationale": "Source-owned public cooperation; see canonical record."
-    },
-    {
       "target": "identity",
       "type": "information-exchange",
       "rationale": "Source-owned public cooperation; see canonical record."

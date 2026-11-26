@@ -41,3 +41,26 @@ Order can own purchase/sale framework terms directly related to its commercial c
 **FAC-D08 approved — Accounting:** native minimum is opening balances, balanced journals, corrections, AR/AP, reconciliation, period close, qualified financial reports/export and approved budgets/allocations. Accounting owns recognition, capitalisation/expense, revenue timing, valuation and cost allocation according to the entity's approved applicable reporting basis; Inventory/Manufacturing supply operational quantity and cost evidence, Payroll supplies approved liabilities, Party supplies qualified counterparties. No universal accounting/tax rules, payroll calculation, or duplicate external ledger. Explicit per-entity/book/fact/period authority, controlled cutover, unknown reconciliation and qualified reporting basis are mandatory; unsupported regimes fail closed. Exact jurisdiction, technical provider capabilities and conformance are deployment gates. Reconcile CW-10 against these boundaries without claiming historical decision approval not evidenced.
 
 FAC-12 already resolved in Workflow: no independent emergency bypass of mandatory approvals. FAC-D06–08 are explicitly owner-approved. Canonical Order, Attendance, Training and Accounting specifications implement the approved boundaries.
+
+## Architectural relationships
+
+- [party](../capabilities/party/capability-record.md): Owns scoped counterparty references, not digital identity or legal attestations.
+- [identity](../capabilities/identity/capability-record.md): Retain digital standing, descriptive personal facts and qualified evidence respectively.
+- [profile](../capabilities/profile/capability-record.md): Retain digital standing, descriptive personal facts and qualified evidence respectively.
+- [verification](../capabilities/verification/capability-record.md): Retain digital standing, descriptive personal facts and qualified evidence respectively.
+- [payroll](../capabilities/payroll/capability-record.md): Owns approved pay-run calculation and qualified filing/disbursement evidence.
+- [employment](../capabilities/employment/capability-record.md): Owns engagement, contractual terms and establishment occupancy.
+- [time-attendance](../capabilities/time-attendance/capability-record.md): Owns actual work observations and approved statements.
+- [workforce-scheduling](../capabilities/workforce-scheduling/capability-record.md): Owns planned shifts and rosters, not actual attendance.
+- [scheduler](../services/scheduler/services-record.md): Executes technical triggers, not workforce planning.
+- [accounting](../capabilities/accounting/capability-record.md): Owns ledger recognition, budgets, allocations and qualified valuation.
+- [inventory](../capabilities/inventory/capability-record.md): Supply operational quantity and cost evidence to Accounting.
+- [manufacturing](../capabilities/manufacturing/capability-record.md): Supply operational quantity and cost evidence to Accounting.
+- [order](../capabilities/order/capability-record.md): Owns purchase and sale framework agreements.
+- [attendance](../capabilities/attendance/capability-record.md): Owns generic participation and presence evidence.
+- [training](../capabilities/training/capability-record.md): Owns specialist educational determination.
+- [workflow](../capabilities/workflow/capability-record.md): Cannot bypass mandatory approvals.
+
+### Unresolved matters
+
+- Independent native general agreement owner: Current scope retains qualified external authority outside Order framework agreements; reassess only when justified.

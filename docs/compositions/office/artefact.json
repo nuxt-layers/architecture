@@ -51,11 +51,6 @@
   ],
   "relationships": [
     {
-      "target": "organisation-model",
-      "type": "specialisation",
-      "rationale": "Office is a selected organisational archetype."
-    },
-    {
       "target": "organisation-console",
       "type": "information-exchange",
       "rationale": "Source-owned public cooperation; see canonical record."

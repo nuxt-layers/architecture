@@ -168,3 +168,32 @@ Use source revisions and effective dates for reproducibility, bounded retries, i
 **Resolved conceptual authority:** No further owner decision is needed for those six choices. **Conditional future engineering gate:** evidence that multiple consumers need an independent versioned publication catalogue; identify an existing governance/domain owner for any actual appointments *before* expanding those records. Neither is permission to invent a new capability.
 
 **Implementation/acceptance work (not completed):** Create/publish a root `CONTRACT.md` **only if** a separate implementation is authorised; prove public contract compatibility and ADR-0012 host composition; verify exact dependencies and licences, threat model, schema attacks, tenant isolation, migrations and GUI WCAG/i18n via CI/user testing. Reconcile overlapping unmerged reviews, especially Organisation Console, and current catalogue/register against accepted governing changes. Recheck current `master`, Git conflicts, checks and changed files immediately before merge. No implementation edits, tests/builds or merge have been performed here. **Conceptual record is complete for owner review, not certified implementation or merge approval.**
+
+## Architectural relationships
+
+- [configuration](../capabilities/configuration/capability-record.md): Configuration owns applied archetype selections and overrides.
+- [identity](../capabilities/identity/capability-record.md): Identity owns actual tenant/group references and membership.
+- [authentication](../capabilities/authentication/capability-record.md): Protected operations use trusted assurance where applicable.
+- [authorisation](../capabilities/authorisation/capability-record.md): Suggested role profiles never grant access.
+- [subscription](../capabilities/subscription/capability-record.md): Commercial entitlement is independently determined.
+- [application-composition](application-composition.md): Host assembles selected features and navigation.
+- [organisation-console](../presentation/organisation-console/presentation-record.md): Console presents actual organisation information and optional definition previews.
+- [workflow](../capabilities/workflow/capability-record.md): Operation-specific approval, temporal, disclosure and qualified evidence boundaries.
+- [clock](../services/clock/services-record.md): Operation-specific approval, temporal, disclosure and qualified evidence boundaries.
+- [privacy](../capabilities/privacy/capability-record.md): Operation-specific approval, temporal, disclosure and qualified evidence boundaries.
+- [legal-compliance](../capabilities/legal-compliance/capability-record.md): Operation-specific approval, temporal, disclosure and qualified evidence boundaries.
+- [verification](../capabilities/verification/capability-record.md): Operation-specific approval, temporal, disclosure and qualified evidence boundaries.
+- [metadata](../capabilities/metadata/capability-record.md): Optional vocabulary, translation and derived indexing of definitions.
+- [localisation](../capabilities/localisation/capability-record.md): Optional vocabulary, translation and derived indexing of definitions.
+- [search](../services/search/services-record.md): Optional vocabulary, translation and derived indexing of definitions.
+- [error-normalisation](../libraries/error-normalisation/stateless-library-record.md): Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority.
+- [logging](../services/logging/services-record.md): Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority.
+- [audit](../capabilities/audit/capability-record.md): Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority.
+- [reporting](../capabilities/reporting/capability-record.md): Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority.
+- [observability](../services/observability/services-record.md): Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority.
+- [message-queue](../services/message-queue/services-record.md): Conditional diagnostic, evidence, reporting and transport exchanges preserve source authority.
+
+### Unresolved matters
+
+- Independent definition catalogue and durable publication interfaces: Requires separate evidence-based classification; no independent service or package approved.
+- Owner of actual appointments and reporting chains: Must identify an existing governance or domain owner before expanding the records.

@@ -1,6 +1,6 @@
 # Artefact catalogue
 
-The approved conceptual inventory covers all eight artefact kinds. The [architecture index](architecture-index.json) is the machine-readable discovery view; the linked canonical records define intended boundaries. Neither catalogue nor index asserts implementation readiness. Accepted ADRs and standards take precedence.
+The approved conceptual inventory covers 93 software artefacts across six kinds. The [architecture index](architecture-index.json) is the machine-readable discovery view; the linked canonical records define intended boundaries. Neither catalogue nor index asserts implementation readiness. Accepted ADRs and standards take precedence.
 
 ## Canonical inventory
 
@@ -8,7 +8,6 @@ The approved conceptual inventory covers all eight artefact kinds. The [architec
 |---|---|---|---|---|
 | `accounting` | capability | domain | [Design](capabilities/accounting/capability-record.md) | [Descriptor](capabilities/accounting/artefact.json) |
 | `api-gateway` | composition | technical | [Design](compositions/api-gateway/compositions-record.md) | [Descriptor](compositions/api-gateway/artefact.json) |
-| `application-composition` | architecture | governance | [Design](architecture/application-composition.md) | [Descriptor](architecture/application-composition/artefact.json) |
 | `assessment` | capability | domain | [Design](capabilities/assessment/capability-record.md) | [Descriptor](capabilities/assessment/artefact.json) |
 | `asset` | capability | domain | [Design](capabilities/asset/capability-record.md) | [Descriptor](capabilities/asset/artefact.json) |
 | `attendance` | capability | domain | [Design](capabilities/attendance/capability-record.md) | [Descriptor](capabilities/attendance/artefact.json) |
@@ -26,7 +25,6 @@ The approved conceptual inventory covers all eight artefact kinds. The [architec
 | `content-security` | service | platform | [Design](services/content-security/services-record.md) | [Descriptor](services/content-security/artefact.json) |
 | `course` | capability | domain | [Design](capabilities/course/capability-record.md) | [Descriptor](capabilities/course/artefact.json) |
 | `credentials` | capability | domain | [Design](capabilities/credentials/capability-record.md) | [Descriptor](capabilities/credentials/artefact.json) |
-| `discovery` | architecture | governance | [Design](architecture/discovery.md) | [Descriptor](architecture/discovery/artefact.json) |
 | `employment` | capability | domain | [Design](capabilities/employment/capability-record.md) | [Descriptor](capabilities/employment/artefact.json) |
 | `enrolment` | capability | domain | [Design](capabilities/enrolment/capability-record.md) | [Descriptor](capabilities/enrolment/artefact.json) |
 | `error-normalisation` | library | technical | [Design](libraries/error-normalisation/stateless-library-record.md) | [Descriptor](libraries/error-normalisation/artefact.json) |
@@ -40,7 +38,6 @@ The approved conceptual inventory covers all eight artefact kinds. The [architec
 | `help` | presentation | presentation | [Design](presentation/help/presentation-record.md) | [Descriptor](presentation/help/artefact.json) |
 | `iam-integration` | composition | foundation | [Design](compositions/iam-integration/compositions-record.md) | [Descriptor](compositions/iam-integration/artefact.json) |
 | `identity` | capability | foundation | [Design](capabilities/identity/capability-record.md) | [Descriptor](capabilities/identity/artefact.json) |
-| `infrastructure` | infrastructure | foundation | [Design](infrastructure/infrastructure/infrastructure-record.md) | [Descriptor](infrastructure/infrastructure/artefact.json) |
 | `integrations` | service | platform | [Design](services/integrations/services-record.md) | [Descriptor](services/integrations/artefact.json) |
 | `inventory` | capability | domain | [Design](capabilities/inventory/capability-record.md) | [Descriptor](capabilities/inventory/artefact.json) |
 | `invoice` | capability | domain | [Design](capabilities/invoice/capability-record.md) | [Descriptor](capabilities/invoice/artefact.json) |
@@ -63,12 +60,10 @@ The approved conceptual inventory covers all eight artefact kinds. The [architec
 | `office` | composition | presentation | [Design](compositions/office/compositions-record.md) | [Descriptor](compositions/office/artefact.json) |
 | `order` | capability | domain | [Design](capabilities/order/capability-record.md) | [Descriptor](capabilities/order/artefact.json) |
 | `organisation-console` | presentation | presentation | [Design](presentation/organisation-console/presentation-record.md) | [Descriptor](presentation/organisation-console/artefact.json) |
-| `organisation-model` | architecture | governance | [Design](architecture/organisation-model.md) | [Descriptor](architecture/organisation-model/artefact.json) |
 | `page-builder` | presentation | presentation | [Design](presentation/page-builder/presentation-record.md) | [Descriptor](presentation/page-builder/artefact.json) |
 | `party` | capability | domain | [Design](capabilities/party/capability-record.md) | [Descriptor](capabilities/party/artefact.json) |
 | `payment-gateway` | service | domain | [Design](services/payment-gateway/services-record.md) | [Descriptor](services/payment-gateway/artefact.json) |
 | `payroll` | capability | domain | [Design](capabilities/payroll/capability-record.md) | [Descriptor](capabilities/payroll/artefact.json) |
-| `persistence` | architecture | governance | [Design](architecture/persistence.md) | [Descriptor](architecture/persistence/artefact.json) |
 | `pricing` | capability | domain | [Design](capabilities/pricing/capability-record.md) | [Descriptor](capabilities/pricing/artefact.json) |
 | `privacy` | capability | foundation | [Design](capabilities/privacy/capability-record.md) | [Descriptor](capabilities/privacy/artefact.json) |
 | `process` | capability | platform | [Design](capabilities/process/capability-record.md) | [Descriptor](capabilities/process/artefact.json) |
@@ -80,7 +75,6 @@ The approved conceptual inventory covers all eight artefact kinds. The [architec
 | `quality` | capability | domain | [Design](capabilities/quality/capability-record.md) | [Descriptor](capabilities/quality/artefact.json) |
 | `recruitment` | capability | domain | [Design](capabilities/recruitment/capability-record.md) | [Descriptor](capabilities/recruitment/artefact.json) |
 | `reporting` | capability | platform | [Design](capabilities/reporting/capability-record.md) | [Descriptor](capabilities/reporting/artefact.json) |
-| `responsibility-boundaries` | architecture | governance | [Design](architecture/responsibility-boundaries.md) | [Descriptor](architecture/responsibility-boundaries/artefact.json) |
 | `reviews` | capability | platform | [Design](capabilities/reviews/capability-record.md) | [Descriptor](capabilities/reviews/artefact.json) |
 | `rich-text` | library | technical | [Design](libraries/rich-text/stateless-library-record.md) | [Descriptor](libraries/rich-text/artefact.json) |
 | `scheduler` | service | platform | [Design](services/scheduler/services-record.md) | [Descriptor](services/scheduler/artefact.json) |
@@ -105,6 +99,17 @@ The approved conceptual inventory covers all eight artefact kinds. The [architec
 | `warehouse` | capability | domain | [Design](capabilities/warehouse/capability-record.md) | [Descriptor](capabilities/warehouse/artefact.json) |
 | `workflow` | capability | platform | [Design](capabilities/workflow/capability-record.md) | [Descriptor](capabilities/workflow/artefact.json) |
 | `workforce-scheduling` | capability | domain | [Design](capabilities/workforce-scheduling/capability-record.md) | [Descriptor](capabilities/workforce-scheduling/artefact.json) |
+
+## Architecture and infrastructure
+
+These governing and operational specifications are not software artefacts and have no artefact descriptors.
+
+- [application-composition](architecture/application-composition.md)
+- [discovery](architecture/discovery.md)
+- [infrastructure](infrastructure/infrastructure/infrastructure-record.md)
+- [organisation-model](architecture/organisation-model.md)
+- [persistence](architecture/persistence.md)
+- [responsibility-boundaries](architecture/responsibility-boundaries.md)
 
 ## Governing rules
 

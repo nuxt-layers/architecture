@@ -32,7 +32,7 @@ Reconcile conflicts between conceptual intent and implemented contracts; consume
 
 ## Where things live
 
-This repository holds governing architecture and approved conceptual designs. Each implementation repository owns its root `CONTRACT.md`, detailed technical specifications and implementation. Suite implementation processes stay with the integration owner. Conceptual descriptors and generated indexes support selective discovery ([ADR-0004](docs/decisions/ADR-0004-documentation-placement.md)). Reviewed external references are listed in [Resources](RESOURCES.md). Development plans, progress and implementation verification evidence remain outside this repository ([ADR-0010](docs/decisions/ADR-0010-documentation-style.md)).
+This repository holds governing architecture and approved conceptual designs. Each implementation repository owns its root `CONTRACT.md`, detailed technical specifications and implementation. Suite implementation processes stay with the integration owner. Only software artefacts have conceptual artefact descriptors; governing architecture and infrastructure specifications remain Markdown documents. Conceptual descriptors and generated indexes support selective discovery ([ADR-0004](docs/decisions/ADR-0004-documentation-placement.md)). Reviewed external references are listed in [Resources](RESOURCES.md). Development plans, progress and implementation verification evidence remain outside this repository ([ADR-0010](docs/decisions/ADR-0010-documentation-style.md)).
 
 ## Documents
 
@@ -45,7 +45,7 @@ This repository holds governing architecture and approved conceptual designs. Ea
 | [Security](docs/standards/security-standard.md) | The security baseline and data-store controls |
 | [Privacy](docs/standards/privacy-standard.md) | Data protection by design |
 | [Presentation, Internationalisation and Accessibility](docs/standards/presentation-standard.md) | Design tokens, languages, WCAG and the screen checklist |
-| [Artefact Catalogue](docs/catalogue.md) | All 99 conceptual artefacts and governing boundaries |
+| [Artefact Catalogue](docs/catalogue.md) | All 93 software artefacts and separate governing/operational specifications |
 | [Architecture index](docs/architecture-index.json) | Machine-readable discovery and relationships |
 | [Artefact definition](docs/artefact-definition.md) | Common schema and conceptual/implementation boundaries |
 | [Common Engineering Standard](docs/standards/engineering-standard.md) | Cross-artefact engineering requirements |

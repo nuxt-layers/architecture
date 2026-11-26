@@ -47,11 +47,6 @@
       "target": "workflow",
       "type": "information-exchange",
       "rationale": "Source-owned public cooperation; see canonical record."
-    },
-    {
-      "target": "infrastructure",
-      "type": "information-exchange",
-      "rationale": "Source-owned public cooperation; see canonical record."
     }
   ],
   "governingDecisions": [

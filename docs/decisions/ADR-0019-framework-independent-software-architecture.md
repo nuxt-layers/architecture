@@ -10,7 +10,7 @@ Responsibility, packaging, composition and deployment are independent. Nuxt-spec
 ## The decision
 
 - Apply the [Common Engineering Standard](../standards/engineering-standard.md) to maintained software artefacts and the Capability, Nuxt Layer, Composition and TypeScript Package standards cumulatively where relevant.
-- Recognise eight artefact kinds: architecture, capability, composition, infrastructure, library, presentation, service and adapter. Kind, classification, ownership, implementation and deployment are distinct.
+- Recognise six software artefact kinds: capability, composition, library, presentation, service and adapter. Architecture and infrastructure are governing and operational specifications respectively, not software artefacts; neither has a conceptual artefact descriptor. Kind, classification, ownership, implementation and deployment are distinct.
 - Preserve ownership, public boundaries, acyclic dependencies, provider-neutral ports, security and the modular-monolith default. Technical services may own bounded technical facts; presentation may own presentation-specific state but not business facts. Infrastructure owns environment provisioning and operational authority, not domain persistence.
 - Independently consumable artefacts publish a self-contained root CONTRACT.md. Adopt a common validated artefact.json through a separately reconciled schema and compatibility migration; retain existing capability.json and published identifiers until that migration is approved.
 - Keep one canonical specification per responsibility. Git and pull requests retain superseded proposals and review history. Transfer still-applicable requirements before removing obsolete documents.

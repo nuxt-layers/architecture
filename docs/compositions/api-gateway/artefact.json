@@ -24,22 +24,12 @@
   "requires": [],
   "relationships": [
     {
-      "target": "application-composition",
-      "type": "composition",
-      "rationale": "Host-owned external API exposure composition."
-    },
-    {
       "target": "authentication",
       "type": "information-exchange",
       "rationale": "Source-owned public cooperation; see canonical record."
     },
     {
       "target": "authorisation",
-      "type": "information-exchange",
-      "rationale": "Source-owned public cooperation; see canonical record."
-    },
-    {
-      "target": "infrastructure",
       "type": "information-exchange",
       "rationale": "Source-owned public cooperation; see canonical record."
     }

@@ -4,7 +4,7 @@
 **Design status:** **Owner-approved conceptual specification** (MKT-01–MKT-10, plus seller catalogue submission, account reporting, specialist boundaries, standards, permissive OSS shortlist and advisory GUI). This does **not** establish an implemented or published runtime API, legal compliance, or production readiness.  
 **Runtime status:** No Marketplace implementation repository or root `CONTRACT.md` was verified during this review. Availability, installation, configuration, operation, enablement and authorisation require separate implementation evidence.  
 **Review:** Draft PR #91; opening governing baseline `b920ce0d8b361de000a6739a16123dbdc56df7a7`, blueprint `6dac83a03da8704f7945ee1bc894f2248300445a`. Recheck the latest `master` before merging.  
-**Authority:** Accepted ADRs and [Capability Standard](../../capability-standard.md) govern this non-normative blueprint. Relevant ADRs include 0001, 0009, 0012, 0016, 0017 and 0018.
+**Authority:** Accepted ADRs and [Capability Standard](../../standards/capability-standard.md) govern this non-normative blueprint. Relevant ADRs include 0001, 0009, 0012, 0016, 0017 and 0018.
 
 ## Purpose and ownership
 

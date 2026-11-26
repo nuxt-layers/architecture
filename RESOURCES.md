@@ -21,9 +21,13 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="activitypub"></a><a id="ref-b5b42c56"></a>ActivityPub | [https://www.w3.org/TR/2018/REC-activitypub-20180123/](https://www.w3.org/TR/2018/REC-activitypub-20180123/) | Federated social networking protocol for publishing content and exchanging activities between servers. |
 | <a id="atag-20"></a><a id="ref-9dbe26fd"></a>ATAG 2.0 | [https://www.w3.org/TR/2015/REC-ATAG20-20150924/](https://www.w3.org/TR/2015/REC-ATAG20-20150924/) | Accessibility guidelines for authoring tools and their support for creating accessible content. |
 | <a id="bitstring-status-list-10"></a><a id="status-list"></a><a id="ref-9e32bc04"></a>Bitstring Status List 1.0 | [https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/](https://www.w3.org/TR/2025/REC-vc-bitstring-status-list-20250515/) | Compact credential status representation for publishing suspension and revocation information. |
+| <a id="css-color-adjustment-level-1"></a><a id="css-color-adjustment"></a><a id="ref-0faec43f"></a>CSS Color Adjustment Level 1 | [https://www.w3.org/TR/2025/CR-css-color-adjust-1-20251216/](https://www.w3.org/TR/2025/CR-css-color-adjust-1-20251216/) | Candidate Recommendation Snapshot defining browser colour adjustment, colour schemes and forced-colour preferences. |
+| <a id="css-color-level-4"></a><a id="css-color-4"></a><a id="ref-a582bbf2"></a>CSS Color Level 4 | [https://www.w3.org/TR/2026/CRD-css-color-4-20261123/](https://www.w3.org/TR/2026/CRD-css-color-4-20261123/) | Candidate Recommendation Draft defining colour values, colour spaces, interpolation and gamut mapping. |
+| <a id="css-custom-properties-level-1"></a><a id="w3c-css-custom-properties"></a><a id="ref-63ef0de9"></a>CSS Custom Properties Level 1 | [https://www.w3.org/TR/2022/CR-css-variables-1-20220616/](https://www.w3.org/TR/2022/CR-css-variables-1-20220616/) | Candidate Recommendation Snapshot defining cascading custom properties and variable substitution in CSS. |
 | <a id="csvw-metadata-vocabulary"></a><a id="csvw"></a><a id="ref-f6e15c97"></a>CSVW Metadata Vocabulary | [https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/](https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/) | Metadata vocabulary for interpreting, validating and transforming tabular data. |
 | <a id="data-on-the-web-best-practices"></a><a id="ref-b37ccf4d"></a>Data on the Web Best Practices | [https://www.w3.org/TR/2017/REC-dwbp-20170131/](https://www.w3.org/TR/2017/REC-dwbp-20170131/) | Guidance for discoverable, reusable and trustworthy web data publication. |
 | <a id="dcat-3"></a><a id="ref-00ce33b2"></a>DCAT 3 | [https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/](https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/) | RDF vocabulary for interoperable catalogues describing datasets, distributions and data services. |
+| <a id="design-tokens-format-202510"></a><a id="w3c-design-tokens-community-group-202510"></a><a id="ref-58aea18f"></a>Design Tokens Format 2025.10 | [https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/](https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/) | Final Community Group Report defining an interoperable format for exchanging design tokens between tools. |
 | <a id="iso-100022018"></a><a id="ref-2c14157c"></a>ISO 10002:2018 | [https://www.iso.org/standard/10002](https://www.iso.org/standard/10002) | Guidance for designing, operating and improving customer complaints handling processes. |
 | <a id="iso-100032018"></a><a id="ref-f48d39fc"></a>ISO 10003:2018 | [https://www.iso.org/standard/71581.html](https://www.iso.org/standard/71581.html) | Guidance for external resolution of customer disputes that remain unresolved by complaints handling. |
 | <a id="iso-100072017"></a><a id="iso-10007"></a><a id="ref-cb28cb4b"></a>ISO 10007:2017 | [https://www.iso.org/standard/70400.html](https://www.iso.org/standard/70400.html) | Configuration management guidance for products and services throughout their lifecycles. |
@@ -92,6 +96,7 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="isoiecieee-420102022"></a><a id="420102022"></a><a id="ref-e85f94dc"></a>ISO/IEC/IEEE 42010:2022 | [https://www.iso.org/standard/74393.html](https://www.iso.org/standard/74393.html) | Requirements for architecture descriptions, viewpoints, model kinds and architecture description frameworks. |
 | <a id="isotr-23081-3-2011"></a>ISO/TR 23081-3:2011 | [https://www.iso.org/standard/57121.html](https://www.iso.org/standard/57121.html) | Self-assessment method for evaluating records metadata capture, management and implementation readiness. |
 | <a id="json-ld-11"></a><a id="w3c-json-ld-11"></a><a id="w3c-json-ld-11-2"></a><a id="ref-6d20146d"></a><a id="ref-a03bb42b"></a>JSON-LD 1.1 | [https://www.w3.org/TR/2020/REC-json-ld11-20200716/](https://www.w3.org/TR/2020/REC-json-ld11-20200716/) | JSON serialisation of linked data, including contextual mappings to RDF identifiers. |
+| <a id="media-queries-level-5"></a><a id="media-queries-5"></a><a id="ref-d71ad712"></a>Media Queries Level 5 | [https://www.w3.org/TR/2026/WD-mediaqueries-5-20260219/](https://www.w3.org/TR/2026/WD-mediaqueries-5-20260219/) | Working Draft defining media queries for adapting presentation to device characteristics and user preferences. |
 | <a id="nist-sp-800-137"></a><a id="ref-e530b140"></a>NIST SP 800-137 | [https://csrc.nist.gov/pubs/sp/800/137/final](https://csrc.nist.gov/pubs/sp/800/137/final) | Guidance for continuous monitoring of security controls, threats, vulnerabilities and organisational risk. |
 | <a id="nist-sp-800-177-rev-1"></a><a id="ref-5475a9f6"></a>NIST SP 800-177 Rev. 1 | [https://csrc.nist.gov/pubs/sp/800/177/r1/final](https://csrc.nist.gov/pubs/sp/800/177/r1/final) | Guidance for trustworthy email, including domain authentication, transport security and message protection. |
 | <a id="nist-sp-800-209"></a><a id="ref-71d6aa98"></a>NIST SP 800-209 | [https://csrc.nist.gov/pubs/sp/800/209/final](https://csrc.nist.gov/pubs/sp/800/209/final) | Security guidance for storage infrastructure, including access control, isolation, data protection and recovery. |
@@ -109,7 +114,9 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="owasp-asvs-500"></a><a id="ref-a1c367d2"></a>OWASP ASVS 5.0.0 | [https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf](https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf) | Versioned application security requirements for designing, developing and verifying web applications and services. |
 | <a id="owl-2-overview"></a><a id="owl-2"></a><a id="ref-7854321a"></a>OWL 2 Overview | [https://www.w3.org/TR/2012/REC-owl2-overview-20121211/](https://www.w3.org/TR/2012/REC-owl2-overview-20121211/) | Overview of the ontology language, its semantics, syntaxes and profiles. |
 | <a id="owl-2-profiles"></a><a id="ref-c8ffae91"></a>OWL 2 Profiles | [https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/](https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/) | Defines constrained ontology language profiles supporting efficient reasoning and querying. |
+| <a id="payment-request-api"></a><a id="payment-request"></a><a id="ref-ea124a00"></a>Payment Request API | [https://www.w3.org/TR/2022/REC-payment-request-20220908/](https://www.w3.org/TR/2022/REC-payment-request-20220908/) | Browser API for coordinating payment method selection and payment information exchange between merchants and users. |
 | <a id="prov-o"></a><a id="ref-20aa2e25"></a>PROV-O | [https://www.w3.org/TR/2013/REC-prov-o-20130430/](https://www.w3.org/TR/2013/REC-prov-o-20130430/) | Ontology for describing provenance through entities, activities, agents and their relationships. |
+| <a id="push-api"></a><a id="w3c-push-api"></a><a id="ref-9a875aab"></a>Push API | [https://www.w3.org/TR/2026/WD-push-api-20261121/](https://www.w3.org/TR/2026/WD-push-api-20261121/) | Working Draft defining delivery of push messages to web applications through push services and service workers. |
 | <a id="rdf-11-concepts-and-abstract-syntax"></a><a id="rdfrdfs"></a><a id="ref-1d5b21c8"></a>RDF 1.1 Concepts and Abstract Syntax | [https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) | Defines triples, graphs, datasets and identifiers for representing resource information. |
 | <a id="rdf-schema-11"></a>RDF Schema 1.1 | [https://www.w3.org/TR/2014/REC-rdf-schema-20140225/](https://www.w3.org/TR/2014/REC-rdf-schema-20140225/) | Vocabulary for describing RDF classes, properties and their relationships. |
 | <a id="rfc-10017"></a><a id="ref-5dce7cd2"></a>RFC 10017 | [https://www.rfc-editor.org/info/rfc10017/](https://www.rfc-editor.org/info/rfc10017/) | OAuth 2.0 best practices for browser-based applications, addressing browser threats and secure application architectures. |
@@ -163,11 +170,14 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="shacl"></a><a id="ref-6dc528a5"></a>SHACL | [https://www.w3.org/TR/2017/REC-shacl-20170720/](https://www.w3.org/TR/2017/REC-shacl-20170720/) | Constraint language for validating RDF graphs and describing permissible data structures. |
 | <a id="skos"></a><a id="ref-ceaf9e24"></a>SKOS | [https://www.w3.org/TR/2009/REC-skos-reference-20090818/](https://www.w3.org/TR/2009/REC-skos-reference-20090818/) | RDF vocabulary for interoperable thesauri, taxonomies and concept schemes. |
 | <a id="sparql-11-query-language"></a><a id="sparql-11"></a><a id="ref-5f7e8b5e"></a>SPARQL 1.1 Query Language | [https://www.w3.org/TR/2013/REC-sparql11-query-20130321/](https://www.w3.org/TR/2013/REC-sparql11-query-20130321/) | Query syntax and semantics for retrieving and analysing RDF graph data. |
+| <a id="svg-2"></a><a id="ref-2d692224"></a>SVG 2 | [https://www.w3.org/TR/2026/CR-SVG2-20261006/](https://www.w3.org/TR/2026/CR-SVG2-20261006/) | Candidate Recommendation Snapshot defining scalable vector graphics, graphical elements, rendering and interaction. |
 | <a id="verifiable-credentials-data-model-20"></a><a id="vc-20"></a><a id="verifiable-credentials-20"></a><a id="ref-5dd6d5dc"></a><a id="ref-51933823"></a>Verifiable Credentials Data Model 2.0 | [https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/](https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/) | Interoperable data model for expressing credentials and presentations exchanged among issuers, holders and verifiers. |
 | <a id="verifiable-credentials-jose-and-cose"></a><a id="josecose"></a><a id="ref-a1b9773e"></a>Verifiable Credentials JOSE and COSE | [https://www.w3.org/TR/2026/REC-vc-jose-cose-20261013/](https://www.w3.org/TR/2026/REC-vc-jose-cose-20261013/) | Cryptographic protection of verifiable credentials and presentations using JOSE, selective disclosure and COSE. |
 | <a id="w3c-trace-context"></a><a id="ref-e45806bf"></a>W3C Trace Context | [https://www.w3.org/TR/2021/REC-trace-context-1-20211123/](https://www.w3.org/TR/2021/REC-trace-context-1-20211123/) | HTTP trace context headers and formats for propagating request correlation across distributed services. |
 | <a id="wai-aria-12"></a><a id="wai-aria"></a><a id="ref-67eee3fb"></a><a id="ref-90f5e4b1"></a>WAI-ARIA 1.2 | [https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/) | Semantic roles, states and properties for exposing accessible user interface information to assistive technologies. |
 | <a id="wcag-22"></a><a id="w3c-wcag-22"></a><a id="w3c-wcag-22-aa"></a><a id="ref-0d1f555e"></a><a id="ref-eb11cf7e"></a><a id="ref-bc717cde"></a>WCAG 2.2 | [https://www.w3.org/TR/2024/REC-WCAG22-20241212/](https://www.w3.org/TR/2024/REC-WCAG22-20241212/) | Web accessibility success criteria and conformance requirements, including the platform's Level AA baseline. |
+| <a id="web-based-payment-handler-api"></a><a id="payment-handler"></a><a id="ref-790384d0"></a>Web-based Payment Handler API | [https://www.w3.org/TR/2026/WD-web-based-payment-handler-20261116/](https://www.w3.org/TR/2026/WD-web-based-payment-handler-20261116/) | Working Draft defining web application capabilities for handling browser-mediated payment requests. |
+| <a id="webauthn-level-3"></a><a id="w3c-webauthn"></a><a id="ref-389dc62a"></a>WebAuthn Level 3 | [https://www.w3.org/TR/2026/REC-webauthn-3-20260825/](https://www.w3.org/TR/2026/REC-webauthn-3-20260825/) | Public-key credential registration and authentication APIs for origin-bound, phishing-resistant authentication. |
 
 ## Consolidated reference inventory
 
@@ -1276,12 +1286,6 @@ IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-i
 <a id="ref-cdf75efb"></a>
 
 [PRI Nadcap](https://www.p-r-i.org/nadcap/accreditation) — imported reference; verification pending.
-
-### SVG 2
-
-<a id="ref-2d692224"></a>
-
-[SVG 2](https://www.w3.org/TR/SVG2/) — imported reference; verification pending.
 
 ### ECMA-402
 
@@ -2393,12 +2397,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [OMG DMN 1.6](https://www.omg.org/spec/DMN/1.6) — imported reference; verification pending.
 
-### W3C WebAuthn
-
-<a id="ref-389dc62a"></a>
-
-[W3C WebAuthn](https://www.w3.org/TR/webauthn-3/) — imported reference; verification pending.
-
 ### ARIA APG
 
 <a id="ref-f076dce5"></a>
@@ -2939,41 +2937,11 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 
 [RFC Editor](https://www.rfc-editor.org/) — imported reference; verification pending.
 
-### W3C Design Tokens Community Group 2025.10
-
-<a id="ref-58aea18f"></a>
-
-[W3C Design Tokens Community Group 2025.10](https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/) — imported reference; verification pending.
-
 ### W3C internationalisation
 
 <a id="ref-bd589cf9"></a>
 
 [W3C internationalisation](https://www.w3.org/International/) — imported reference; verification pending.
-
-### CSS Color 4
-
-<a id="ref-a582bbf2"></a>
-
-[CSS Color 4](https://www.w3.org/TR/css-color-4/) — imported reference; verification pending.
-
-### CSS Color Adjustment
-
-<a id="ref-0faec43f"></a>
-
-[CSS Color Adjustment](https://www.w3.org/TR/css-color-adjust-1/) — imported reference; verification pending.
-
-### W3C CSS Custom Properties
-
-<a id="ref-63ef0de9"></a>
-
-[W3C CSS Custom Properties](https://www.w3.org/TR/css-variables-1/) — imported reference; verification pending.
-
-### Media Queries 5
-
-<a id="ref-d71ad712"></a>
-
-[Media Queries 5](https://www.w3.org/TR/mediaqueries-5/) — imported reference; verification pending.
 
 ### APG
 
@@ -3473,20 +3441,3 @@ CONTRACT.md — live development lookup: `nuxt-layers/clock`, `CONTRACT.md`. Ret
 
 [Sitemaps.org](https://www.sitemaps.org/protocol.html) — imported reference; verification pending.
 
-### Payment Request
-
-<a id="ref-ea124a00"></a>
-
-[Payment Request](https://www.w3.org/TR/payment-request/) — imported reference; verification pending.
-
-### W3C Push API
-
-<a id="ref-9a875aab"></a>
-
-[W3C Push API](https://www.w3.org/TR/push-api/) — imported reference; verification pending.
-
-### Payment Handler
-
-<a id="ref-790384d0"></a>
-
-[Payment Handler](https://www.w3.org/TR/web-based-payment-handler/) — imported reference; verification pending.

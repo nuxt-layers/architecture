@@ -3,7 +3,7 @@
 **Name:** `rich-text`  
 **Classification:** Framework-independent **stateless library**, not a responsibility-owning capability, Nuxt layer or service.  
 **Status:** Agreed architecture under accepted ADR-0011 and the normative Capability Standard. This record is a conceptual reconciliation of a **documented, not independently tested** implementation contract; it is not a claim of runtime acceptance.  
-**Canonical implementation repository:** [`nuxt-layers/rich-text`](../../../RESOURCES.md#ref-19783b8e).  
+**Canonical implementation repository:** [`nuxt-layers/rich-text`](../../../RESOURCES.md#nuxt-layersrich-text).  
 **Authority:** [Accepted ADR-0011](../../decisions/ADR-0011-shared-rich-text-and-configurable-copy.md) and [Capability Standard](../../standards/capability-standard.md).  
 **Review:** Draft conceptual PR #104; previous library relocation #102 and standardisation #103.
 
@@ -15,7 +15,7 @@ The library owns only **format syntax and deterministic transformation rules**, 
 
 ## Public inbound contract — published functions and conceptual meaning
 
-The existing [root implementation `CONTRACT.md`](../../../RESOURCES.md#ref-81a9491d) documents these exports; their actual execution was not tested in this review.
+The existing [root implementation `CONTRACT.md`](../../../RESOURCES.md#rich-text--contractmd) documents these exports; their actual execution was not tested in this review.
 
 | Function or input | Caller supplies | Expected interpretation / failure |
 |---|---|---|

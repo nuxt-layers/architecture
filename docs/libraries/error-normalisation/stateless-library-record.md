@@ -103,15 +103,15 @@ These exchanges occur **through the originating caller or host**, not through au
 
 | Source | Application |
 |---|---|
-| [IETF RFC 9457](../../../RESOURCES.md#ref-7754416d), replacing RFC 7807 | Optional safe HTTP Problem Details projection with controlled `type`, `title`, `status`, `detail`, `instance` and extensions; no internal exception leakage |
-| [IETF RFC 9110](../../../RESOURCES.md#ref-5a7fc9e7) | Accurate HTTP status semantics; no inference of business commitment |
-| [OWASP ASVS 5.0, ch. 16](../../../RESOURCES.md#ref-f0c6e4e1) | Secure error handling and diagnostic minimisation; ASVS Level 2 baseline, applicable Level 3 for critical uses |
-| [OpenTelemetry error conventions](../../../RESOURCES.md#ref-a60f637a) | Safe error attributes for callers' metrics and traces; no internal telemetry emission |
-| [W3C WCAG 2.2](../../../RESOURCES.md#ref-0d1f555e) | Downstream SC 3.3.1, 3.3.3, 4.1.3, and where applicable 3.3.4; host presents and announces accessible errors |
-| [ISO/IEC 25010:2023](../../../RESOURCES.md#ref-0b5d630d) | Reliability, fault tolerance, recoverability and testability |
-| [ISO/IEC 29100:2024](../../../RESOURCES.md#ref-f7fc907f) | Privacy framework and minimised disclosure |
-| [ECMA-262](../../../RESOURCES.md#ref-a2caee72) | JavaScript exception and cause semantics |
-| [UK NCSC secure design](../../../RESOURCES.md#ref-c1b4f35f), [ICO data protection by design](../../../RESOURCES.md#ref-4ec87ed3), [UK Software Security Code of Practice](../../../RESOURCES.md#ref-6d9f6678) | National security and privacy guidance; voluntary code where applicable, not automatic certification |
+| [IETF RFC 9457](../../../RESOURCES.md#rfc-9457-3), replacing RFC 7807 | Optional safe HTTP Problem Details projection with controlled `type`, `title`, `status`, `detail`, `instance` and extensions; no internal exception leakage |
+| [IETF RFC 9110](../../../RESOURCES.md#rfc-9110) | Accurate HTTP status semantics; no inference of business commitment |
+| [OWASP ASVS 5.0, ch. 16](../../../RESOURCES.md#owasp-asvs-50-ch-16) | Secure error handling and diagnostic minimisation; ASVS Level 2 baseline, applicable Level 3 for critical uses |
+| [OpenTelemetry error conventions](../../../RESOURCES.md#opentelemetry-error-conventions) | Safe error attributes for callers' metrics and traces; no internal telemetry emission |
+| [W3C WCAG 2.2](../../../RESOURCES.md#w3c-wcag-22) | Downstream SC 3.3.1, 3.3.3, 4.1.3, and where applicable 3.3.4; host presents and announces accessible errors |
+| [ISO/IEC 25010:2023](../../../RESOURCES.md#isoiec-250102023) | Reliability, fault tolerance, recoverability and testability |
+| [ISO/IEC 29100:2024](../../../RESOURCES.md#isoiec-291002024) | Privacy framework and minimised disclosure |
+| [ECMA-262](../../../RESOURCES.md#ecma-262) | JavaScript exception and cause semantics |
+| [UK NCSC secure design](../../../RESOURCES.md#uk-ncsc-secure-design), [ICO data protection by design](../../../RESOURCES.md#ico), [UK Software Security Code of Practice](../../../RESOURCES.md#uk-software-security-code-of-practice) | National security and privacy guidance; voluntary code where applicable, not automatic certification |
 
 Applicable law and accepted governing architecture take precedence. Standards and guidance apply to their actual scope; neither library compliance nor safe formatting establishes legal compliance.
 
@@ -119,7 +119,7 @@ Applicable law and accepted governing architecture take precedence. Standards an
 
 **No production GUI, sidebar item, dashboard or operator console.** The library has no user-managed data or incident lifecycle. Consuming applications use `ui` and `localisation` for accessible validation messages, alerts and recovery actions. Logging, Observability, Audit and Reporting own their respective operational/evidential/analytical screens.
 
-Optionally, a derived local-only test host may add **Error Normalisation** under the collapsible **Capabilities** navigation of [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#ref-f1f7cc47), following Theme Manager's existing dashboard route pattern. A single synthetic-fixture workbench can demonstrate source error, normalised result, public versus technical projection, redaction, retry qualification, unknown codes and incompatible versions. The host owns navigation, Theme Manager-based appearance, WCAG/i18n presentation and test fixtures. Do not add a production route, change the shared template or introduce Nuxt dependencies into the library.
+Optionally, a derived local-only test host may add **Error Normalisation** under the collapsible **Capabilities** navigation of [`nuxt-layers-test/application-test-template`](../../../RESOURCES.md#application-test-template), following Theme Manager's existing dashboard route pattern. A single synthetic-fixture workbench can demonstrate source error, normalised result, public versus technical projection, redaction, retry qualification, unknown codes and incompatible versions. The host owns navigation, Theme Manager-based appearance, WCAG/i18n presentation and test fixtures. Do not add a production route, change the shared template or introduce Nuxt dependencies into the library.
 
 ## Conceptual acceptance and remaining work
 

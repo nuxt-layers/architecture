@@ -146,11 +146,11 @@ An operational logging outage must not alter a valid help lookup. Significant ac
 
 | Standard | Value to Help | Architectural qualification |
 |---|---|---|
-| [W3C WCAG 2.2](../../../RESOURCES.md#ref-0d1f555e) AA and [WAI-ARIA APG](../../../RESOURCES.md#ref-f076dce5) | Keyboard, focus, labels, disclosure, popover/dialog semantics, screen reader support | Use appropriate dialog for interactive help; avoid an interactive tooltip antipattern |
-| [IETF BCP 47 / RFC 5646](../../../RESOURCES.md#ref-699eef87) with Unicode CLDR / ECMA-402 | Language tags, effective/fallback locale, RTL/layout and formatting | Keep preference and translation ownership with existing capabilities |
-| [JSON Schema 2020-12](../../../RESOURCES.md#ref-eba7d5b7) | Versioned validation of public help-context descriptors and mapping declarations | Do not impose an undocumented universal ecosystem manifest |
-| [Semantic Versioning 2.0.0](../../../RESOURCES.md#ref-9679b8dc) | Reuse compatibility ranges where source packages actually follow SemVer | Documentation/content revision and installed application version are separate dimensions |
-| [OASIS DITA 1.3](../../../RESOURCES.md#ref-87ed8fd7) | Established topic modularity, reuse, indirect topic keys, navigation and conditional variants | Study as a design reference; do not require DITA XML or install a second content system |
+| [W3C WCAG 2.2](../../../RESOURCES.md#w3c-wcag-22) AA and [WAI-ARIA APG](../../../RESOURCES.md#aria-apg) | Keyboard, focus, labels, disclosure, popover/dialog semantics, screen reader support | Use appropriate dialog for interactive help; avoid an interactive tooltip antipattern |
+| [IETF BCP 47 / RFC 5646](../../../RESOURCES.md#bcp-47) with Unicode CLDR / ECMA-402 | Language tags, effective/fallback locale, RTL/layout and formatting | Keep preference and translation ownership with existing capabilities |
+| [JSON Schema 2020-12](../../../RESOURCES.md#json-schema-2020-12) | Versioned validation of public help-context descriptors and mapping declarations | Do not impose an undocumented universal ecosystem manifest |
+| [Semantic Versioning 2.0.0](../../../RESOURCES.md#semantic-versioning-200) | Reuse compatibility ranges where source packages actually follow SemVer | Documentation/content revision and installed application version are separate dimensions |
+| [OASIS DITA 1.3](../../../RESOURCES.md#oasis-dita-13) | Established topic modularity, reuse, indirect topic keys, navigation and conditional variants | Study as a design reference; do not require DITA XML or install a second content system |
 | OWASP ASVS 5.0 + existing platform privacy and retention rules | Tenant isolation, authorisation, input validation, safe output and caches | No standards statement by itself proves deployment compliance |
 
 Proposed help-content metadata should make context keys and audience visible without leaking sensitive configuration, and may link to schema.org `TechArticle` or `HowTo` only when the Publisher/SEO owners choose appropriate structured data. Do not reinvent route/URL ownership.
@@ -161,19 +161,19 @@ Candidate packages with public permissive licence evidence (licence, maintainers
 
 | Candidate | Licence | Role and decision |
 |---|---|---|
-| [Ajv](../../../RESOURCES.md#ref-a164796d) | MIT | JSON Schema validation for stable context metadata when JSON Schema is adopted; use existing platform runtime validation otherwise |
-| [@floating-ui/vue](../../../RESOURCES.md#ref-07622d6a) | MIT | Optional accessible placement of help popovers/side panels; does **not** supply dialog keyboard semantics by itself |
-| [unified](../../../RESOURCES.md#ref-72271435) / [remark](../../../RESOURCES.md#ref-19502e95) | MIT | Documentation processing/checking tooling only if needed for metadata import; do not bypass Publisher safe-tree rendering |
-| [MiniSearch](../../../RESOURCES.md#ref-58227ec0) | MIT | Small local/offline authorised index **only when Search owner selects it**; maintenance cadence should be reassessed |
-| [FlexSearch](../../../RESOURCES.md#ref-788e2bc4) | Apache-2.0 | Alternative embedded search engine for Search owner, not a second Help index; check locale/tokenisation requirements |
-| [ofetch](../../../RESOURCES.md#ref-e2925973) | MIT | Optional request client if built-in Nuxt/Nitro facilities do not suffice |
-| [Nuxt UI](../../../RESOURCES.md#ref-b0f34541) | MIT | Optional presentation components only if interoperable with existing `ui` and Theme Manager; avoid parallel theming/component systems |
+| [Ajv](../../../RESOURCES.md#ajv) | MIT | JSON Schema validation for stable context metadata when JSON Schema is adopted; use existing platform runtime validation otherwise |
+| [@floating-ui/vue](../../../RESOURCES.md#floating-ui) | MIT | Optional accessible placement of help popovers/side panels; does **not** supply dialog keyboard semantics by itself |
+| [unified](../../../RESOURCES.md#unified) / [remark](../../../RESOURCES.md#remark) | MIT | Documentation processing/checking tooling only if needed for metadata import; do not bypass Publisher safe-tree rendering |
+| [MiniSearch](../../../RESOURCES.md#minisearch) | MIT | Small local/offline authorised index **only when Search owner selects it**; maintenance cadence should be reassessed |
+| [FlexSearch](../../../RESOURCES.md#flexsearch) | Apache-2.0 | Alternative embedded search engine for Search owner, not a second Help index; check locale/tokenisation requirements |
+| [ofetch](../../../RESOURCES.md#ofetch) | MIT | Optional request client if built-in Nuxt/Nitro facilities do not suffice |
+| [Nuxt UI](../../../RESOURCES.md#nuxt-ui-v4) | MIT | Optional presentation components only if interoperable with existing `ui` and Theme Manager; avoid parallel theming/component systems |
 
 **Prefer existing Nuxt, shared UI, Publisher and Search functionality before any added package.** All packages are candidates, not dependencies or validated runtime versions. No closed-core, hosted-mandatory or freemium product is required. Recheck SPDX/NOTICE and transitive licences, provenance, vulnerability status and maintenance before adoption; permissive source licence alone does not ensure suitable maintenance or no operational lock-in.
 
 ### Specific host GUI layout and routes
 
-The actual [application-test-template](../../../RESOURCES.md#ref-f1f7cc47) currently exposes a shared shell: `/` home; `/admin` dashboard; `/theme-manager` for a capability; collapsible responsive sidebar, top bar Appearance control and authentication-status placeholder. Its `nuxt.config.ts` currently composes Theme Manager in `test` mode, explicitly **not** safe for public deployment. No new Help host route is claimed implemented.
+The actual [application-test-template](../../../RESOURCES.md#application-test-template) currently exposes a shared shell: `/` home; `/admin` dashboard; `/theme-manager` for a capability; collapsible responsive sidebar, top bar Appearance control and authentication-status placeholder. Its `nuxt.config.ts` currently composes Theme Manager in `test` mode, explicitly **not** safe for public deployment. No new Help host route is claimed implemented.
 
 Proposed host-owned navigation when Help is selected:
 

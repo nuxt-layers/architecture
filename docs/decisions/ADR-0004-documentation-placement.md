@@ -18,14 +18,14 @@ A document lives with whoever is responsible for keeping it true.
 
 | Location | Holds |
 |---|---|
-| `nuxt-layers/architecture` | Platform principles, standards, ADRs, approved conceptual designs for all eight artefact kinds, intended public boundaries and relationships, conceptual descriptors and generated discovery indexes. Architectural requirements and acceptance criteria, not execution results |
+| `nuxt-layers/architecture` | Platform principles, standards, ADRs, governing architectural definitions, infrastructure specifications and approved conceptual designs for the six software artefact kinds, including intended public boundaries, relationships, descriptors and generated software artefact discovery indexes. Architectural requirements and acceptance criteria, not execution results or implemented contracts |
 | Owning implementation repository, `nuxt-layers/[ARTEFACT-NAME]` | Root `CONTRACT.md` for independently consumable artefacts, implemented descriptors subject to approved migration, implementation, detailed technical specifications, data models, threat models, storage registers and owner-specific processes |
 | Suite or application implementation repository | Implemented composition contracts, wiring, cross-capability implementation processes and deployment-specific specifications; conceptual suite and application architecture remains central |
 | Implementation and designated test repositories; CI and acceptance environments | Tests, execution results, implementation verification evidence and acceptance reports |
 | Development register, GitHub and implementation `PLAN.md` where needed | Development progress, plans, sequencing decisions and operational delivery management |
 
 1. Accepted ADRs and applicable normative standards govern conceptual designs. Approved conceptual designs govern intended artefact boundaries; implemented public contracts describe actual supported integration. Reconcile divergence explicitly; neither a design nor an index proves implementation or verification.
-2. Each conceptual artefact directory holds its canonical design record and, following schema adoption, an individual `artefact.json` validated against the common schema. Generated indexes are derived, never independent authority.
+2. Each software artefact directory holds its canonical conceptual design specification and an individual `artefact.json` validated against the common schema. Governing architectural definitions and infrastructure specifications remain separately documented in Markdown without artefact descriptors. Generated software artefact indexes are derived, never independent authority.
 3. Actual development status, plans, release and operational status and implementation verification evidence must not be recorded in conceptual descriptors or architecture indexes. A shared schema may define standardised vocabulary for use outside conceptual records.
 4. ADRs remain concise and name the detailed authoritative document where appropriate. Follow [ADR-0010](ADR-0010-documentation-style.md).
 5. Reviewed external architectural documents are recorded in `RESOURCES.md` at verified immutable revisions. Each implementation repository identifies applicable governing ADRs there. Live software dependencies follow current accepted master under ADR-0008.
@@ -49,5 +49,5 @@ The approved conceptual blueprint and conceptual schema are consolidated here. A
 
 - External Markdown references remain restricted to `RESOURCES.md` and reviewed references must be revision-specific.
 - The [group model](../standards/identity-and-access-standard.md) remains central under ADR-0003.
-- Do not duplicate live contracts or import implementation evidence into the architecture repository.
+- Do not store `CONTRACT.md` files, duplicate implemented public contracts or import implementation evidence into the architecture repository. Implemented public contracts remain in their owning implementation repositories.
 - A generated catalogue is a discovery view, not a competing specification.

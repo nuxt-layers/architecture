@@ -29,6 +29,14 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="data-on-the-web-best-practices"></a><a id="ref-b37ccf4d"></a>Data on the Web Best Practices | [https://www.w3.org/TR/2017/REC-dwbp-20170131/](https://www.w3.org/TR/2017/REC-dwbp-20170131/) | Guidance for discoverable, reusable and trustworthy web data publication. | Recommendation | 2017-01-31 |
 | <a id="dcat-3"></a><a id="ref-00ce33b2"></a>DCAT 3 | [https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/](https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/) | RDF vocabulary for interoperable catalogues describing datasets, distributions and data services. | Recommendation | 2024-08-22 |
 | <a id="design-tokens-format-202510"></a><a id="w3c-design-tokens-community-group-202510"></a><a id="ref-58aea18f"></a>Design Tokens Format 2025.10 | [https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/](https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/) | Final Community Group Report defining an interoperable format for exchanging design tokens between tools. | Final Community Group Report | 2025-10-28 |
+| <a id="eu-consumer-rights-directive-201183eu"></a><a id="consumer-rights-directive-201183eu"></a><a id="ref-64a0157c"></a>EU Consumer Rights Directive 2011/83/EU | [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083) | Consumer information, distance contracting, withdrawal and additional payment requirements. | EU Directive (original text) | 2011-11-22 |
+| <a id="eu-digital-content-directive-eu-2019770"></a><a id="digital-content-directive-2019770"></a><a id="ref-204c0f81"></a>EU Digital Content Directive (EU) 2019/770 | [https://eur-lex.europa.eu/eli/dir/2019/770/oj](https://eur-lex.europa.eu/eli/dir/2019/770/oj) | Consumer contract conformity and remedies for digital content and digital services. | EU Directive (original text) | 2019-05-22 |
+| <a id="eu-digital-services-act-eu-20222065"></a><a id="eu-dsa"></a><a id="eu-digital-services-act"></a><a id="ref-744b86ab"></a><a id="ref-cdee1332"></a>EU Digital Services Act (EU) 2022/2065 | [https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng](https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng) | Obligations for intermediary services and online platforms, including transparency, notices and marketplace accountability. | EU Regulation (original text) | 2022-10-27 |
+| <a id="eu-ecodesign-for-sustainable-products-regulation-eu-20241781"></a><a id="ecodesign-for-sustainable-products-regulation-eu-20241781"></a><a id="ref-0bdb0938"></a>EU Ecodesign for Sustainable Products Regulation (EU) 2024/1781 | [https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng](https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng) | Framework for ecodesign requirements and digital product passports. | EU Regulation (original text) | 2024-06-28 |
+| <a id="eu-gdpr-eu-2016679"></a><a id="eu-gdpr"></a><a id="ref-240df94d"></a>EU GDPR (EU) 2016/679 | [https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/) | Personal data processing principles, individual rights, controller and processor obligations and safeguards. | EU Regulation (original text) | 2016-05-04 |
+| <a id="eu-general-product-safety-regulation-eu-2023988"></a><a id="eu-gpsr"></a><a id="ref-7dded1f0"></a>EU General Product Safety Regulation (EU) 2023/988 | [https://eur-lex.europa.eu/eli/reg/2023/988/oj/eng](https://eur-lex.europa.eu/eli/reg/2023/988/oj/eng) | General consumer product safety, traceability, recalls and online marketplace obligations. | EU Regulation (original text) | 2023-05-23 |
+| <a id="eu-price-indication-directive-986ec"></a><a id="eu-price-indication-directive-986ec-article-6a"></a><a id="ref-56467f9a"></a>EU Price Indication Directive 98/6/EC | [https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A01998L0006-20220528](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A01998L0006-20220528) | Consumer price and unit-price disclosure, including prior-price rules for reductions under Article 6a. | EU Directive (consolidated text) | 2022-05-28 |
+| <a id="european-accessibility-act-eu-2019882"></a><a id="european-accessibility-act-directive-2019882"></a><a id="ref-ff7812f9"></a>European Accessibility Act (EU) 2019/882 | [https://eur-lex.europa.eu/eli/dir/2019/882/oj](https://eur-lex.europa.eu/eli/dir/2019/882/oj) | Accessibility requirements for specified products and services, including electronic commerce. | EU Directive (original text) | 2019-06-07 |
 | <a id="iso-100022018"></a><a id="ref-2c14157c"></a>ISO 10002:2018 | [https://www.iso.org/standard/10002](https://www.iso.org/standard/10002) | Guidance for designing, operating and improving customer complaints handling processes. | International Standard | 2018 |
 | <a id="iso-100032018"></a><a id="ref-f48d39fc"></a>ISO 10003:2018 | [https://www.iso.org/standard/71581.html](https://www.iso.org/standard/71581.html) | Guidance for external resolution of customer disputes that remain unresolved by complaints handling. | International Standard | 2018 |
 | <a id="iso-100072017"></a><a id="iso-10007"></a><a id="ref-cb28cb4b"></a>ISO 10007:2017 | [https://www.iso.org/standard/70400.html](https://www.iso.org/standard/70400.html) | Configuration management guidance for products and services throughout their lifecycles. | International Standard | 2017 |
@@ -172,6 +180,9 @@ The [catalogue](docs/catalogue.md) names the capabilities; repositories are held
 | <a id="skos"></a><a id="ref-ceaf9e24"></a>SKOS | [https://www.w3.org/TR/2009/REC-skos-reference-20090818/](https://www.w3.org/TR/2009/REC-skos-reference-20090818/) | RDF vocabulary for interoperable thesauri, taxonomies and concept schemes. | Recommendation | 2009-08-18 |
 | <a id="sparql-11-query-language"></a><a id="sparql-11"></a><a id="ref-5f7e8b5e"></a>SPARQL 1.1 Query Language | [https://www.w3.org/TR/2013/REC-sparql11-query-20130321/](https://www.w3.org/TR/2013/REC-sparql11-query-20130321/) | Query syntax and semantics for retrieving and analysing RDF graph data. | Recommendation | 2013-03-21 |
 | <a id="svg-2"></a><a id="ref-2d692224"></a>SVG 2 | [https://www.w3.org/TR/2026/CR-SVG2-20261006/](https://www.w3.org/TR/2026/CR-SVG2-20261006/) | Candidate Recommendation Snapshot defining scalable vector graphics, graphical elements, rendering and interaction. | Candidate Recommendation Snapshot | 2026-10-06 |
+| <a id="uk-digital-markets-competition-and-consumers-act-2024"></a><a id="digital-markets-competition-and-consumers-act-2024"></a><a id="digital-markets-competition-and-consumers-act-2024-part-4-chapter-2"></a><a id="ref-49097836"></a><a id="ref-9160e94a"></a><a id="ref-de55a252"></a>UK Digital Markets, Competition and Consumers Act 2024 | [https://www.legislation.gov.uk/ukpga/2024/13/2026-09-30](https://www.legislation.gov.uk/ukpga/2024/13/2026-09-30) | Digital competition and consumer protection, including Part 4 and Chapter 2 subscription contracts. | UK Act (revised text) | 2026-09-30 |
+| <a id="uk-price-marking-order-2004"></a><a id="price-marking-order-2004"></a><a id="ref-2e09325b"></a>UK Price Marking Order 2004 | [https://www.legislation.gov.uk/uksi/2004/102/2026-04-06?view=plain](https://www.legislation.gov.uk/uksi/2004/102/2026-04-06?view=plain) | Requirements for displaying selling and unit prices of goods offered to consumers. | UK Statutory Instrument (revised text) | 2026-04-06 |
+| <a id="uk-working-time-regulations-1998"></a><a id="uk-working-time-regulations"></a><a id="ref-38005802"></a>UK Working Time Regulations 1998 | [https://www.legislation.gov.uk/uksi/1998/1833/2026-10-01?view=extent&wrap=true](https://www.legislation.gov.uk/uksi/1998/1833/2026-10-01?view=extent&wrap=true) | Working time limits, rest periods, night work and annual leave requirements. | UK Statutory Instrument (revised text) | 2026-10-01 |
 | <a id="verifiable-credentials-data-model-20"></a><a id="vc-20"></a><a id="verifiable-credentials-20"></a><a id="ref-5dd6d5dc"></a><a id="ref-51933823"></a>Verifiable Credentials Data Model 2.0 | [https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/](https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/) | Interoperable data model for expressing credentials and presentations exchanged among issuers, holders and verifiers. | Recommendation | 2025-05-15 |
 | <a id="verifiable-credentials-jose-and-cose"></a><a id="josecose"></a><a id="ref-a1b9773e"></a>Verifiable Credentials JOSE and COSE | [https://www.w3.org/TR/2026/REC-vc-jose-cose-20261013/](https://www.w3.org/TR/2026/REC-vc-jose-cose-20261013/) | Cryptographic protection of verifiable credentials and presentations using JOSE, selective disclosure and COSE. | Recommendation | 2026-10-13 |
 | <a id="w3c-trace-context"></a><a id="ref-e45806bf"></a>W3C Trace Context | [https://www.w3.org/TR/2021/REC-trace-context-1-20211123/](https://www.w3.org/TR/2021/REC-trace-context-1-20211123/) | HTTP trace context headers and formats for propagating request correlation across distributed services. | Recommendation | 2021-11-23 |
@@ -486,12 +497,6 @@ root contract — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-f546b9ec"></a>
 
 [RFC 9457](https://datatracker.ietf.org/doc/html/rfc9457) — imported reference; verification pending.
-
-### European Accessibility Act (Directive 2019/882)
-
-<a id="ref-ff7812f9"></a>
-
-[European Accessibility Act (Directive 2019/882)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) — imported reference; verification pending.
 
 ### licence
 
@@ -882,18 +887,6 @@ nuxt-layers/configuration — live development lookup: `nuxt-layers/configuratio
 <a id="ref-363ab64c"></a>
 
 [Peppol BIS Billing](https://docs.peppol.eu/poacc/billing/3.0/bis/) — imported reference; verification pending.
-
-### EU DSA
-
-<a id="ref-744b86ab"></a>
-
-[EU DSA](https://eur-lex.europa.eu/eli/reg/2022/2065) — imported reference; verification pending.
-
-### EU GPSR
-
-<a id="ref-7dded1f0"></a>
-
-[EU GPSR](https://eur-lex.europa.eu/eli/reg/2023/988) — imported reference; verification pending.
 
 ### adaltas/node-csv
 
@@ -1326,30 +1319,6 @@ IAM Integration root CONTRACT.md — live development lookup: `nuxt-layers/iam-i
 <a id="ref-ad195287"></a>
 
 [OpenPeppol BIS Ordering](https://docs.peppol.eu/poacc/upgrade-3/profiles/28-ordering/) — imported reference; verification pending.
-
-### EU GDPR
-
-<a id="ref-240df94d"></a>
-
-[EU GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/) — imported reference; verification pending.
-
-### EU Digital Services Act
-
-<a id="ref-cdee1332"></a>
-
-[EU Digital Services Act](https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng) — imported reference; verification pending.
-
-### Ecodesign for Sustainable Products Regulation (EU) 2024/1781
-
-<a id="ref-0bdb0938"></a>
-
-[Ecodesign for Sustainable Products Regulation (EU) 2024/1781](https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng) — imported reference; verification pending.
-
-### EU Price Indication Directive 98/6/EC Article 6a
-
-<a id="ref-56467f9a"></a>
-
-[EU Price Indication Directive 98/6/EC Article 6a](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A31998L0006) — imported reference; verification pending.
 
 ### 1EdTech OpenCASE
 
@@ -1921,29 +1890,11 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 
 [Online Safety Act 2023](https://www.legislation.gov.uk/ukpga/2023/50/contents) — imported reference; verification pending.
 
-### UK Digital Markets, Competition and Consumers Act 2024
-
-<a id="ref-49097836"></a>
-
-[UK Digital Markets, Competition and Consumers Act 2024](https://www.legislation.gov.uk/ukpga/2024/13/contents) — imported reference; verification pending.
-
-### Digital Markets, Competition and Consumers Act 2024
-
-<a id="ref-9160e94a"></a>
-
-[Digital Markets, Competition and Consumers Act 2024](https://www.legislation.gov.uk/ukpga/2024/13/part/4) — imported reference; verification pending.
-
 ### Data (Use and Access) Act 2025 (2)
 
 <a id="ref-9bd32f02"></a>
 
 [Data (Use and Access) Act 2025](https://www.legislation.gov.uk/ukpga/2025/18/contents) — imported reference; verification pending.
-
-### Price Marking Order 2004
-
-<a id="ref-2e09325b"></a>
-
-[Price Marking Order 2004](https://www.legislation.gov.uk/uksi/2004/102/contents) — imported reference; verification pending.
 
 ### public-sector accessibility regulations
 
@@ -2070,18 +2021,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-d5b5ce71"></a>
 
 [EU Directive 2003/88/EC](https://eur-lex.europa.eu/eli/dir/2003/88/oj/eng) — imported reference; verification pending.
-
-### Digital Content Directive 2019/770
-
-<a id="ref-204c0f81"></a>
-
-[Digital Content Directive 2019/770](https://eur-lex.europa.eu/eli/dir/2019/770/oj) — imported reference; verification pending.
-
-### Consumer Rights Directive 2011/83/EU
-
-<a id="ref-64a0157c"></a>
-
-[Consumer Rights Directive 2011/83/EU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083) — imported reference; verification pending.
 
 ### FullCalendar
 
@@ -2370,18 +2309,6 @@ Theme Manager — live development lookup: `nuxt-layers/theme-manager`, `CONTRAC
 <a id="ref-517049ab"></a>
 
 [Equality Act 2010](https://www.legislation.gov.uk/ukpga/2010/15/contents) — imported reference; verification pending.
-
-### Digital Markets, Competition and Consumers Act 2024, Part 4 Chapter 2
-
-<a id="ref-de55a252"></a>
-
-[Digital Markets, Competition and Consumers Act 2024, Part 4 Chapter 2](https://www.legislation.gov.uk/ukpga/2024/13/part/4/chapter/2/enacted) — imported reference; verification pending.
-
-### UK Working Time Regulations
-
-<a id="ref-38005802"></a>
-
-[UK Working Time Regulations](https://www.legislation.gov.uk/uksi/1998/1833/contents) — imported reference; verification pending.
 
 ### Consumer Contracts Regulations 2013
 

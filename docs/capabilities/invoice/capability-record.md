@@ -3,7 +3,7 @@
 **Capability:** `invoice`. **Proposed classification:** Domain candidate; independent authoritative document lifecycle, not a renderer or application composition.  
 **Review:** 18 November 2026. **Owner-approved conceptual design direction to date** (explicit confirmation after the extended review); still non-normative and not implementation acceptance.  
 **Opening authority:** `nuxt-layers/architecture-rules/master@0725f314abc9ad13f1a65247f54a7ff80772f0b2`; `nuxt-layers/architecture-blueprint-review/master@a4e40a5cd82a2f79e8edd872af55c22d472b61cb`. ADR-0017 and ADR-0018 are accepted at the governing baseline.  
-**Evidence:** Current governing `docs/catalogue.md`, `docs/architecture.md`, `docs/capability-standard.md`; current blueprint Billing, Accounting, Order and Integrations records; opening review baseline (former review: invoice review baseline). Organisation repository search for `nuxt-layers/invoice` found no implementation repository. No root Invoice `CONTRACT.md`, runtime, migrations, tests, provider acceptance or production capability is verified. No inferred package-level dependency is approved.
+**Evidence:** Current governing `docs/catalogue.md`, `docs/standards/architecture-standard.md`, `docs/standards/capability-standard.md`; current blueprint Billing, Accounting, Order and Integrations records; opening review baseline (former review: invoice review baseline). Organisation repository search for `nuxt-layers/invoice` found no implementation repository. No root Invoice `CONTRACT.md`, runtime, migrations, tests, provider acceptance or production capability is verified. No inferred package-level dependency is approved.
 
 ## Purpose and independent justification
 

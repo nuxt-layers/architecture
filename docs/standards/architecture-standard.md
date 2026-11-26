@@ -1,4 +1,4 @@
-# Architecture
+# Architecture Standard
 
 > **Summary:** capabilities own defined responsibilities and publish contracts; Nuxt Layers and framework-independent packages may implement them. Applications compose capabilities without access to private implementation. Dependencies run one way, security stays on the server, and the default is a modular monolith. See the [Capability Standard](capability-standard.md).
 
@@ -12,8 +12,8 @@
 | **Nuxt Layers and presentation** | Integrate capability services into Nuxt, with optional separable screens where applicable (ADR-0009); presentation contributions own no domain state |
 | **Framework-independent capabilities** | Implement public business or platform contracts without requiring Nuxt; may expose a Nuxt adapter (ADR-0001, ADR-0012) |
 | **Stateless libraries** | Provide reusable stateless functionality such as `rich-text` without owning a capability (ADR-0011) |
-| **Infrastructure integration libraries** | Framework-independent packages for shared external-system integration, such as `temporal-gateway`; not Nuxt Layers or business capabilities ([ADR-0015](decisions/ADR-0015-infrastructure-integration-libraries.md)) |
-| **Suites** | Capabilities designed together, such as the IAM suite, wired once by their integration package ([ADR-0005](decisions/ADR-0005-iam-suite.md), [ADR-0012](decisions/ADR-0012-trivial-composition.md)) |
+| **Infrastructure integration libraries** | Framework-independent packages for shared external-system integration, such as `temporal-gateway`; not Nuxt Layers or business capabilities ([ADR-0015](../decisions/ADR-0015-infrastructure-integration-libraries.md)) |
+| **Suites** | Capabilities designed together, such as the IAM suite, wired once by their integration package ([ADR-0005](../decisions/ADR-0005-iam-suite.md), [ADR-0012](../decisions/ADR-0012-trivial-composition.md)) |
 | **Applications** | Composition roots: select the latest accepted development revisions, pass connections, secrets, configuration and application decisions, set routes and branding, and deploy. Domain behaviour never defaults to the application |
 
 ## 2. Invariants
@@ -22,7 +22,7 @@
 2. Capabilities interact only through declared public contracts, ports and events, never another capability's private code, storage or schema.
 3. Dependencies form a directed acyclic graph, counting both public-contract dependencies and direct Nuxt extension edges. If two capabilities seem to need each other, move the shared contract to a boundary, use an event or port, or redraw the boundary (ADR-0016).
 4. A dependency targets a capability's contract, not how it is built or deployed: a capability needing access decisions asks for the shared `decide` shape, and the deciding capability learns nothing of its internals.
-5. Prefer contract-based composition to inheritance. A layer MAY deliberately specialise a published extension surface or use Nuxt `extends` for documented configuration/presentation/composition reuse under [ADR-0016](decisions/ADR-0016-controlled-layer-specialisation-and-composition.md). This never grants access to private capability internals or transfers domain ownership. The host still composes capability ports within ADR-0012's budget.
+5. Prefer contract-based composition to inheritance. A layer MAY deliberately specialise a published extension surface or use Nuxt `extends` for documented configuration/presentation/composition reuse under [ADR-0016](../decisions/ADR-0016-controlled-layer-specialisation-and-composition.md). This never grants access to private capability internals or transfers domain ownership. The host still composes capability ports within ADR-0012's budget.
 6. Authentication, Identity and Authorisation are separate capabilities, even where one package wires them together. A person may belong to any number of groups, and access can express ownership by a person or group, roles and permissions, and resource-specific rules.
 7. Access is decided on the server. Client-side checks are for the experience only.
 8. Every persistent resource needing isolation has explicit ownership and access rules.
@@ -38,13 +38,13 @@ The default is a modular monolith: capability separation is logical and contract
 
 A capability's HTTP API and protocol endpoints sit under its own namespace, and the host may switch the API off. Its presentation part's pages can be moved or switched off; every other page belongs to the application, which may separate public pages from administration, for example on different hosts.
 
-Presentation meets WCAG 2.2 AA as a minimum, supports internationalisation even where one locale is enabled, uses semantic HTML and Theme Manager's vocabulary, and provides Schema.org structured data from authoritative data where public. People's preferences may change colour, type, density and layout, never below the accessibility baseline (see the [presentation, internationalisation and accessibility baseline](presentation.md)).
+Presentation meets WCAG 2.2 AA as a minimum, supports internationalisation even where one locale is enabled, uses semantic HTML and Theme Manager's vocabulary, and provides Schema.org structured data from authoritative data where public. People's preferences may change colour, type, density and layout, never below the accessibility baseline (see the [presentation, internationalisation and accessibility baseline](presentation-standard.md)).
 
 ## 5. Security and privacy
 
-The minimum is OWASP ASVS 5.0 Level 2 across the platform, with relevant Level 3 requirements for security-sensitive capabilities and operations. NIST CSF 2.0 structures the security programme, NIST SP 800-218 guides secure development and NIST SP 800-63-4 guides identity assurance. Controls are layered across browser, server, storage, supply chain and deployment. Cost never silently weakens a required control: a deferred control is recorded with its risk treatment ([Security](security.md)).
+The minimum is OWASP ASVS 5.0 Level 2 across the platform, with relevant Level 3 requirements for security-sensitive capabilities and operations. NIST CSF 2.0 structures the security programme, NIST SP 800-218 guides secure development and NIST SP 800-63-4 guides identity assurance. Controls are layered across browser, server, storage, supply chain and deployment. Cost never silently weakens a required control: a deferred control is recorded with its risk treatment ([Security](security-standard.md)).
 
-Privacy follows data protection by design: storage and access technologies, telemetry and third-party integrations are classified by purpose, never introduced implicitly ([Privacy Architecture](privacy.md)).
+Privacy follows data protection by design: storage and access technologies, telemetry and third-party integrations are classified by purpose, never introduced implicitly ([Privacy Architecture](privacy-standard.md)).
 
 ## 6. Change
 

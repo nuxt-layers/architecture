@@ -4,7 +4,7 @@
 
 **Catalogue name:** `message-queue` · **Directory:** `docs/services/message-queue/` · **Classification:** Platform  
 **Conceptual status:** **Complete and owner-approved** (MQ-01–MQ-10, standards, permissive-library evaluation policy, cross-capability interfaces and optional operator GUI, 22 November 2026). **Design review:** PR #94; completed with explicit owner approval. Merge and deployment states are tracked by GitHub, not inferred here.  
-**Authority:** Accepted `architecture-rules` ADRs and [Capability Standard](../../capability-standard.md) take precedence. This is a non-normative design specification, not the implementation's published contract. Reconcile the latest `master` before merge.
+**Authority:** Accepted `architecture-rules` ADRs and [Capability Standard](../../standards/capability-standard.md) take precedence. This is a non-normative design specification, not the implementation's published contract. Reconcile the latest `master` before merge.
 
 ## Purpose, authority and scope
 

@@ -47,11 +47,6 @@
       "target": "ui",
       "type": "information-exchange",
       "rationale": "Source-owned public cooperation; see canonical record."
-    },
-    {
-      "target": "application-composition",
-      "type": "information-exchange",
-      "rationale": "Source-owned public cooperation; see canonical record."
     }
   ],
   "governingDecisions": [

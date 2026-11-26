@@ -31,7 +31,7 @@ CD-01/03/04/06/07/08 are now aligned with the approved discovery direction; CD-0
 
 ## FAC-10 — Conceptual dependency evidence and validation
 
-The primary catalogue/register index all 99 canonical nodes. This is a conceptual graph, not a lockfile or declaration of delivered package dependencies. The record review identified the following specific required contract/implementation edges; the direction is consumer → provider.
+The catalogue and index identify 93 software artefacts; the five governing architectural definitions and infrastructure specification are documented separately. This is a conceptual graph, not a lockfile or declaration of delivered package dependencies. The record review identified the following specific required contract/implementation edges; the direction is consumer → provider.
 
 | Consumer | Provider | Evidence / edge type |
 |---|---|---|
@@ -42,7 +42,7 @@ The primary catalogue/register index all 99 canonical nodes. This is a conceptua
 | iam-integration | profile | required member contract |
 | export | rich-text | required safe-tree input contract |
 
-All endpoints exist in the inventory; the above explicit subgraph was checked by depth-first traversal across 99 nodes and has no directed cycle. No mandatory Nuxt inheritance edge was established by this conceptual review. This does **not** prove the eventual combined package/extension graph acyclic. Unlisted nodes have no extracted fixed edge in this limited subgraph, not a claim that they have no dependencies.
+All endpoints exist in the inventory; the above explicit subgraph was checked by depth-first traversal across the former conceptual inventory and has no directed cycle. No mandatory Nuxt inheritance edge was established by this conceptual review. This does **not** prove the eventual combined package/extension graph acyclic. Unlisted nodes have no extracted fixed edge in this limited subgraph, not a claim that they have no dependencies.
 
 ### Host-bound operation dependencies
 
@@ -98,3 +98,12 @@ These are architectural relationships, not software dependencies.
 - [iam-integration](../compositions/iam-integration/compositions-record.md) → [application-composition](../architecture/application-composition.md): Source-owned public cooperation; see canonical record.
 - [message-queue](../services/message-queue/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
 - [observability](../services/observability/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [office](../compositions/office/compositions-record.md) → [organisation-model](../architecture/organisation-model.md): Office is a selected organisational archetype.
+- [organisation-console](../presentation/organisation-console/presentation-record.md) → [organisation-model](../architecture/organisation-model.md): Source-owned public cooperation; see canonical record.
+- [organisation-console](../presentation/organisation-console/presentation-record.md) → [application-composition](../architecture/application-composition.md): Optional host-mounted organisational presentation.
+- [page-builder](../presentation/page-builder/presentation-record.md) → [application-composition](../architecture/application-composition.md): Source-owned public cooperation; see canonical record.
+- [scheduler](../services/scheduler/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [site-hosting](../services/site-hosting/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [storage](../services/storage/services-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [temporal-gateway](../adapters/temporal-gateway/adapters-record.md) → [infrastructure](../infrastructure/infrastructure/infrastructure-record.md): Source-owned public cooperation; see canonical record.
+- [theme-manager](../presentation/theme-manager/presentation-record.md) → [application-composition](../architecture/application-composition.md): Source-owned public cooperation; see canonical record.

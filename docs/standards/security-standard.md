@@ -81,6 +81,8 @@ Cryptographic design MUST use contemporary, reviewed mechanisms and provider and
 
 Key ownership, rotation, revocation and recovery requirements MUST be explicit where application-managed cryptographic keys exist.
 
+The cryptographic resilience policy in [ADR-0020](../decisions/ADR-0020-cryptographic-agility-and-long-term-security.md) applies upon governing adoption: inventory cryptographic uses, version algorithms and keys, plan migration and assess post-quantum interoperability, compromise recovery and side channels. No custom crypto or P=NP-proof claims. Mandatory local negative isolation/security failures block production release; production-specific verification remains required.
+
 ## 9. Logging and audit
 
 Security-relevant events MUST be auditable at a level proportionate to risk without logging credentials, session secrets, unnecessary personal data or other prohibited sensitive values.

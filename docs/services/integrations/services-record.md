@@ -447,3 +447,7 @@ Integrations may supply replaceable external protocol/provider adapters through 
 ## Time & Attendance reciprocal conceptual note — 23 November 2026
 
 **Status: Time & Attendance TA-01–TA-06 owner-approved conceptually on 23 November 2026; draft PR #143. This does not approve a published integrations interface or implementation.** Optional terminals and timesheet sources provide source-qualified captured evidence and remote revisions through Integrations; Time & Attendance owns designated authority per scope/period, validation, deduplication, corrections, source history and reconciliation. Provider callback or delivery is not an approved attendance statement. See [the proposed source-of-truth and input/output contract](../../capabilities/time-attendance/capability-record.md). Existing approved decisions remain authoritative.
+
+## First reference connector (owner-approved 27 November 2026)
+
+Stripe Sandbox is the first planned reference implementation of the provider-neutral connector architecture. Use registered, versioned trusted server-side adapters, scoped test credential references, capability discovery, enable/disable/revoke/replacement, authenticated callback forwarding, rate-limit and uncertain-outcome reconciliation. Retain deterministic offline fixtures. Test-only access must be zero cost and must reject live credentials; no account or payment commitment is authorised. Payment Gateway retains payment operation authority; no Stripe SDK types leak into shared ports. This is a selection direction, not a shipped connector.

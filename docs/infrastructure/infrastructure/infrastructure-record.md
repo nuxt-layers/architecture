@@ -169,3 +169,24 @@ Approved local choices: SeaweedFS (S3 compatibility; RustFS fallback only on fai
 Stripe Sandbox is the approved first external Integrations reference connector, with deterministic offline simulator retained. No live credentials or real financial transactions; verify test-only connection, signed webhook forwarding, idempotency, plugin lifecycle and scoped merchant isolation. Payment Gateway owns payment facts; Integrations owns connection/plugin lifecycle. See [Integrations](../../services/integrations/services-record.md) and [Payment Gateway](../../services/payment-gateway/services-record.md).
 
 Apply [ADR-0020](../../decisions/ADR-0020-cryptographic-agility-and-long-term-security.md) upon adoption. The detailed requirement register, traceability, implementation plan and acceptance evidence belong to [infrastructure](https://github.com/nuxt-layers/infrastructure), not this governing repository. Local failures block production; no local test proves all external production conditions.
+
+### Cryptographic technology and implementation candidates
+
+The governing policy is ADR-0020 and Security Standard §8; this inventory is discovery guidance, not a universal dependency list. Actual package dependencies and pinned versions belong to consuming owners. Infrastructure owns environment support, protocol compatibility and acceptance evidence. Source snapshots below establish accessible upstream references, not reviewed security assurance or approved release versions.
+
+| Technology / upstream reference | Applicability | Selection |
+|---|---|---|
+| [Node.js crypto](../../../RESOURCES.md#node-crypto) | Native server-side primitives | Preferred |
+| [Web Crypto API](../../../RESOURCES.md#webcrypto-api) | Browser and runtime primitives, secure randomness; specification | Preferred |
+| [OpenSSL](../../../RESOURCES.md#openssl-crypto) | Native cryptography and TLS where supported | Preferred |
+| [@noble/post-quantum](../../../RESOURCES.md#noble-post-quantum) | Portable PQC where native support is insufficient | Conditional |
+| [@noble/ciphers](../../../RESOURCES.md#noble-ciphers) | Reviewed symmetric primitives where needed | Conditional |
+| [@noble/hashes](../../../RESOURCES.md#noble-hashes) | Hash and KDF primitives where needed | Conditional |
+| [@noble/curves](../../../RESOURCES.md#noble-curves) | Classical elliptic-curve primitives where needed | Conditional |
+| [shamir-secret-sharing](../../../RESOURCES.md#shamir-secret-sharing) | Independent threshold recovery custody | Preferred evaluation |
+| [@quxtech/pqc-crypto](../../../RESOURCES.md#quxtech-pqc-crypto) | Higher-level PQC wrapper | Alternative; assurance outstanding |
+| [@digital-defiance/secrets-ts](../../../RESOURCES.md#digital-defiance-secrets-ts) | Threshold recovery alternative | Alternative |
+| [liboqs](../../../RESOURCES.md#liboqs) | Isolated native PQC interoperability | Conditional |
+| [PKCS#11](../../../RESOURCES.md#pkcs11) | Future risk-based hardware token interface; no purchase | Conditional |
+
+Verify exact released versions, complete dependency/licence set, audit scope, side-channel assumptions, supported protocol profiles, negotiation and recovery during implementation. Use standardised TLS implementations; do not compose a bespoke handshake from primitive libraries. No local hardware expenditure.

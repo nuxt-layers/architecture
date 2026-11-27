@@ -208,3 +208,7 @@ Avoid Redis/BullMQ solely for scheduled payment reconciliation, custom card-data
 ## FAC-D01 — Party authority
 
 [Party](../../capabilities/party/capability-record.md) supplies qualified legal merchant/payee/payer references and scoped representation evidence. Gateway retains merchant/provider eligibility and payment execution; Party registration is not provider onboarding, permission to charge or settlement. Wage disbursement is not implied by the approved Gateway scope.
+
+## Reference provider acceptance (owner-approved 27 November 2026)
+
+Stripe Sandbox is the first external interoperability target through Integrations; prefer hosted Stripe Checkout initially, server-side stripe SDK and Stripe CLI local webhook forwarding. Use only synthetic test payment data, test credentials and signed callbacks. Demonstrate authorisation/capture, cancellation, refund, 3DS, declines, duplicate/out-of-order events, idempotency, merchant isolation and reconciliation; retain offline deterministic simulator for failure injection. No real money, live API keys or paid subscription. Exact SDK/API revisions and zero-cost sandbox access require acceptance; no implementation or real settlement is asserted.

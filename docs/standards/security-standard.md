@@ -81,6 +81,15 @@ Cryptographic design MUST use contemporary, reviewed mechanisms and provider and
 
 Key ownership, rotation, revocation and recovery requirements MUST be explicit where application-managed cryptographic keys exist.
 
+The cryptographic resilience policy in [ADR-0020](../decisions/ADR-0020-cryptographic-agility-and-long-term-security.md) applies upon governing adoption.
+
+- Owners MUST inventory cryptographic uses, key ownership, data lifetimes, protocol/dependency versions, provider constraints and migration deadlines. Version algorithm identifiers and key envelopes; document controlled rotation, revocation, re-encryption, historical verification and compromise recovery.
+- Prefer maintained platform/provider primitives and standardised protocols. Assess ML-KEM (FIPS 203), ML-DSA (FIPS 204), SLH-DSA (FIPS 205) and standardised hybrid key establishment according to risk and interoperability; prioritise long-lived confidentiality. Use reviewed authenticated encryption, safe nonce management, appropriate hash/KDF profiles and OS-backed CSPRNG. No custom algorithms or handshakes, silent downgrade or indefinite legacy exceptions.
+- Assess actual negotiated protocols across trust boundaries (TLS, SSH, databases, object storage, execution services, federation, credentials, signed artefacts, integrations and backups). Native crypto API availability does not prove network protocol support. Record unsupported/unknown outcomes, explicit risk acceptance and migration dates.
+- Threshold key recovery MAY use independently held shares, authenticated share transport, controlled reconstruction and verified loss/compromise recovery. Secret sharing does not make underlying computational encryption information-theoretically secure. P versus NP remains unresolved; no P=NP-proof claim or one-time-pad platform cipher. CSPRNG output is not proof of true independent randomness; XOR alone does not authenticate.
+- Assess side channels, timing, entropy, memory exposure and custody. Neither JS/JIT, WASM nor hardware-backed custody guarantees constant-time execution. Review exact dependency versions, licences, provenance, audits and interoperability; hardware purchase is not a local prerequisite.
+- Verify known-answer tests, interoperability, negotiation and downgrade refusal, key rotation/recovery, compromise drills, resource budgets, dependency integrity, automated abuse and negative isolation. Mandatory local security failure blocks release; local success never waives production-specific verification. Infrastructure supplies facilities and qualified evidence; owners retain cryptographic purpose, access and lifecycle authority.
+
 ## 9. Logging and audit
 
 Security-relevant events MUST be auditable at a level proportionate to risk without logging credentials, session secrets, unnecessary personal data or other prohibited sensitive values.

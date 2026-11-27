@@ -159,3 +159,34 @@ Infrastructure owns provisioning, secrets, environment isolation, region-approve
 - provider-connection: provider connection within the stated ownership boundary.
 - operational-readiness: operational readiness within the stated ownership boundary.
 - backup-recovery: backup recovery within the stated ownership boundary.
+
+## Local-first infrastructure acceptance and approved technology direction (27 November 2026)
+
+Full local provisioning and production deployment preparation are required, at zero additional local expenditure; no Hetzner account or paid activation before explicit owner approval of the locally demonstrated MVP. Use production-representative Linux/Docker/Coolify/Traefik locally, synthetic DNS and CA/ACME, and the same role/policy templates and negative isolation suites. Public DNS, certificates, provider assurance and regional controls require separate production verification. Infrastructure remains an operational specification, not a software artefact.
+
+Approved local choices: SeaweedFS (S3 compatibility; RustFS fallback only on failed acceptance), Apache Jena (isolated bounded RDF/OWL inference and SHACL validation, not a second authoritative Metadata store; no unrestricted SPARQL), restic (file/configuration backup), pgBackRest (database-aware PostgreSQL backup/PITR, separate Temporal persistence). Exact versions and compatibility remain acceptance gates. Local S3 must use the same Storage adapter as Hetzner; verify credentials, bucket policies, CORS, presigned URLs, multipart/lifecycle, integrity, negative isolation, persistence and restoration. Infrastructure backups remain separate from application object storage. Local Coolify must prove Site Hosting desired/applied route revisions, DNS proof, TLS readiness, withdrawal and recovery.
+
+Stripe Sandbox is the approved first external Integrations reference connector, with deterministic offline simulator retained. No live credentials or real financial transactions; verify test-only connection, signed webhook forwarding, idempotency, plugin lifecycle and scoped merchant isolation. Payment Gateway owns payment facts; Integrations owns connection/plugin lifecycle. See [Integrations](../../services/integrations/services-record.md) and [Payment Gateway](../../services/payment-gateway/services-record.md).
+
+Apply [ADR-0020](../../decisions/ADR-0020-cryptographic-agility-and-long-term-security.md) upon adoption. The detailed requirement register, traceability, implementation plan and acceptance evidence belong to [infrastructure](https://github.com/nuxt-layers/infrastructure), not this governing repository. Local failures block production; no local test proves all external production conditions.
+
+### Cryptographic technology and implementation candidates
+
+The governing policy is ADR-0020 and Security Standard §8; this inventory is discovery guidance, not a universal dependency list. Actual package dependencies and pinned versions belong to consuming owners. Infrastructure owns environment support, protocol compatibility and acceptance evidence. Source snapshots below establish accessible upstream references, not reviewed security assurance or approved release versions.
+
+| Technology / upstream reference | Applicability | Selection |
+|---|---|---|
+| [Node.js crypto](../../../RESOURCES.md#node-crypto) | Native server-side primitives | Preferred |
+| [Web Crypto API](../../../RESOURCES.md#webcrypto-api) | Browser and runtime primitives, secure randomness; specification | Preferred |
+| [OpenSSL](../../../RESOURCES.md#openssl-crypto) | Native cryptography and TLS where supported | Preferred |
+| [@noble/post-quantum](../../../RESOURCES.md#noble-post-quantum) | Portable PQC where native support is insufficient | Conditional |
+| [@noble/ciphers](../../../RESOURCES.md#noble-ciphers) | Reviewed symmetric primitives where needed | Conditional |
+| [@noble/hashes](../../../RESOURCES.md#noble-hashes) | Hash and KDF primitives where needed | Conditional |
+| [@noble/curves](../../../RESOURCES.md#noble-curves) | Classical elliptic-curve primitives where needed | Conditional |
+| [shamir-secret-sharing](../../../RESOURCES.md#shamir-secret-sharing) | Independent threshold recovery custody | Preferred evaluation |
+| [@quxtech/pqc-crypto](../../../RESOURCES.md#quxtech-pqc-crypto) | Higher-level PQC wrapper | Alternative; assurance outstanding |
+| [@digital-defiance/secrets-ts](../../../RESOURCES.md#digital-defiance-secrets-ts) | Threshold recovery alternative | Alternative |
+| [liboqs](../../../RESOURCES.md#liboqs) | Isolated native PQC interoperability | Conditional |
+| [PKCS#11](../../../RESOURCES.md#pkcs11) | Future risk-based hardware token interface; no purchase | Conditional |
+
+Verify exact released versions, complete dependency/licence set, audit scope, side-channel assumptions, supported protocol profiles, negotiation and recovery during implementation. Use standardised TLS implementations; do not compose a bespoke handshake from primitive libraries. No local hardware expenditure.
